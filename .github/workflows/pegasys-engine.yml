@@ -1,11 +1,8 @@
 name: Auditor Pegasys Chronos Sweep Engine
 
 on:
-  # Triggered remotely via API / WordPress
   repository_dispatch:
     types: [pegasys_hunt_event]
-    
-  # Triggered manually via GitHub Actions Tab UI
   workflow_dispatch:
     inputs:
       alias:
@@ -35,8 +32,6 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -48,7 +43,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Execute Chronos Calculus Deep-Sweep
+      - name: Execute Audit & Print Reasoning
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           NVIDIA_NIM_API_KEY: ${{ secrets.NVIDIA_NIM_API_KEY }}
@@ -57,69 +52,13 @@ jobs:
           INPUT_LOCATION: ${{ inputs.location }}
           INPUT_INDUSTRY: ${{ inputs.industry }}
           INPUT_PAYLOAD: ${{ inputs.payload }}
-        run: |
-          python -c "
-          import os, json
-          from core.compliance import ComplianceSession
-          from core.quantum_clock import QuantumClockEngine
-          from core.inference_router import InferenceEngineRouter
-          from core.prophetic_calculator import PropheticCalculatorEngine
-          from sweep.chronos import FullStackChronosEngine
+        run: python cli_audit.py
 
-          # Safely handle raw payload string from API or manual trigger
-          raw_payload = os.environ.get('EVENT_PAYLOAD')
-          event_data = {}
-          if raw_payload and raw_payload != 'null':
-              try:
-                  parsed = json.loads(raw_payload)
-                  if isinstance(parsed, dict):
-                      event_data = parsed
-              except Exception:
-                  event_data = {}
-
-          # Fallback check ensures event_data is always a valid dictionary
-          alias = event_data.get('alias') or os.environ.get('INPUT_ALIAS') or 'Shinobi_User'
-          location = event_data.get('location') or os.environ.get('INPUT_LOCATION') or 'South Africa'
-          industry = event_data.get('industry') or os.environ.get('INPUT_INDUSTRY') or 'Energy Infrastructure'
-          payload = event_data.get('payload') or os.environ.get('INPUT_PAYLOAD') or 'Systemic Friction Node'
-
-          print(f'=== STARTING PEGASYS AUDIT FOR: {alias} [{location}] ===')
-
-          # Generate Compliance Security & Temporal Clock
-          session = ComplianceSession(alias)
-          token = session.generate_ecta_token(payload)
-          q_cycle = QuantumClockEngine.get_current_cycle()
-          q_header = QuantumClockEngine.get_temporal_header()
-          math_results = PropheticCalculatorEngine.solve_synthesis()
-
-          print(f'Temporal Header: {q_header}')
-          print(f'Calculated SHI: {math_results[\"shi\"]}')
-
-          # Run 10 NVIDIA NIM Sentinel AI Agents across timeline
-          router = InferenceEngineRouter()
-          chronos = FullStackChronosEngine(router)
-          sweep_results = chronos.execute_full_sweep(industry, payload, q_cycle)
-
-          # Output Results to JSON
-          output_data = {
-              'security': token,
-              'quantum_header': q_header,
-              'quantum_cycle': q_cycle,
-              'mathematics': math_results,
-              'chronos_sweep': sweep_results
-          }
-
-          with open('last_audit_results.json', 'w') as f:
-              json.dump(output_data, f, indent=2)
-
-          print('=== AUDIT COMPLETE: last_audit_results.json WRITTEN ===')
-          "
-
-      - name: Commit and Push Updated Audit Results
+      - name: Commit Audit Results
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git pull origin main --rebase || true
           git add last_audit_results.json
-          git commit -m "Update audit results via Pegasys Engine [skip ci]" || exit 0
+          git commit -m "Update audit results [skip ci]" || exit 0
           git push origin main
