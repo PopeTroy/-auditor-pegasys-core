@@ -5,21 +5,9 @@ on:
     types: [pegasys_hunt_event]
   workflow_dispatch:
     inputs:
-      alias:
-        description: 'User Identifier / Alias'
-        required: false
-        default: 'Manual_Shinobi_User'
-      location:
-        description: 'Target Jurisdiction'
-        required: false
-        default: 'South Africa'
-      industry:
-        description: 'Industry Classification'
-        required: false
-        default: 'Energy Infrastructure'
-      payload:
-        description: 'Target Node Paragraph Block'
-        required: false
+      node_payload:
+        description: 'Target Subject / Node Paragraph Block'
+        required: true
         default: 'Grid corruption and capacity constraints causing local downtime.'
 
 permissions:
@@ -43,15 +31,12 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Execute Audit via CLI Script
+      - name: Execute Audit via Single Node Engine
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           NVIDIA_NIM_API_KEY: ${{ secrets.NVIDIA_NIM_API_KEY }}
           EVENT_PAYLOAD: ${{ toJson(github.event.client_payload) }}
-          INPUT_ALIAS: ${{ inputs.alias }}
-          INPUT_LOCATION: ${{ inputs.location }}
-          INPUT_INDUSTRY: ${{ inputs.industry }}
-          INPUT_PAYLOAD: ${{ inputs.payload }}
+          INPUT_NODE: ${{ inputs.node_payload }}
         run: python cli_audit.py
 
       - name: Commit Audit Results
@@ -60,5 +45,5 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git pull origin main --rebase || true
           git add last_audit_results.json
-          git commit -m "Update audit results via CLI [skip ci]" || exit 0
+          git commit -m "Update audit results for single node [skip ci]" || exit 0
           git push origin main
