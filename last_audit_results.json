@@ -1,0 +1,130 @@
+{
+  "security": {
+    "session_guid": "076aaa84-000c-59fa-8a18-228ba894975f",
+    "utc_timestamp": "2026-07-20T10:50:55.870264+00:00",
+    "ecta_hash": "sha256:a97850154dbdfc2b51cb00a2e7cca2fc8e98d575ac810fb03d8034acad740fcd"
+  },
+  "quantum_header": "QUANTUM-CYCLE: 065093 / 144000",
+  "quantum_cycle": 65093,
+  "mathematics": {
+    "shi": 20571.43,
+    "tti": 0.0,
+    "frequency": 144000.0,
+    "logos": 10368000,
+    "resistance": 504,
+    "constraints": 1.0,
+    "override_triggered": true
+  },
+  "chronos_sweep": [
+    {
+      "sandbox_id": "sentinel-ene-c01",
+      "status": "EXECUTED",
+      "data": {
+        "epoch": "1000 BCE - Era 1",
+        "origin": "Systemic Infrastructure Drag (Agent 1)",
+        "demon": "Astaroth",
+        "angel": "Michael (Sec 19 Filter)",
+        "outcome": "Dimensional Overwrite Active"
+      }
+    },
+    {
+      "sandbox_id": "sentinel-ene-c02",
+      "status": "EXECUTED",
+      "data": {
+        "epoch": "1000 BCE - Era 2",
+        "origin": "Systemic Infrastructure Drag (Agent 2)",
+        "demon": "Astaroth",
+        "angel": "Michael (Sec 19 Filter)",
+        "outcome": "Dimensional Overwrite Active"
+      }
+    },
+    {
+      "sandbox_id": "sentinel-ene-c03",
+      "status": "EXECUTED",
+      "data": {
+        "epoch": "1000 BCE - Era 3",
+        "origin": "Systemic Infrastructure Drag (Agent 3)",
+        "demon": "Astaroth",
+        "angel": "Michael (Sec 19 Filter)",
+        "outcome": "Dimensional Overwrite Active"
+      }
+    },
+    {
+      "sandbox_id": "sentinel-ene-c04",
+      "status": "EXECUTED",
+      "data": {
+        "epoch": "1000 BCE - Era 4",
+        "origin": "Systemic Infrastructure Drag (Agent 4)",
+        "demon": "Astaroth",
+        "angel": "Michael (Sec 19 Filter)",
+        "outcome": "Dimensional Overwrite Active"
+      }
+    },
+    {
+      "sandbox_id": "sentinel-ene-c05",
+      "status": "EXECUTED",
+      "data": {
+        "epoch": "1000 BCE - Era 5",
+        "origin": "Systemic Infrastructure Drag (Agent 5)",
+        "demon": "Astaroth",
+        "angel": "Michael (Sec 19 Filter)",
+        "outcome": "Dimensional Overwrite Active"
+      }
+    },
+    {
+      "sandbox_id": "sentinel-ene-c06",
+      "status": "EXECUTED",
+      "data": {
+        "epoch": "1000 BCE - Era 6",
+        "origin": "Systemic Infrastructure Drag (Agent 6)",
+        "demon": "Astaroth",
+        "angel": "Michael (Sec 19 Filter)",
+        "outcome": "Dimensional Overwrite Active"
+      }
+    },
+    {
+      "sandbox_id": "sentinel-ene-c07",
+      "status": "EXECUTED",
+      "data": {
+        "epoch": "1000 BCE - Era 7",
+        "origin": "Systemic Infrastructure Drag (Agent 7)",
+        "demon": "Astaroth",
+        "angel": "Michael (Sec 19 Filter)",
+        "outcome": "Dimensional Overwrite Active"
+      }
+    },
+    {
+      "sandbox_id": "sentinel-ene-c08",
+      "status": "EXECUTED",
+      "data": {
+        "epoch": "1000 BCE - Era 8",
+        "origin": "Systemic Infrastructure Drag (Agent 8)",
+        "demon": "Astaroth",
+        "angel": "Michael (Sec 19 Filter)",
+        "outcome": "Dimensional Overwrite Active"
+      }
+    },
+    {
+      "sandbox_id": "sentinel-ene-c09",
+      "status": "EXECUTED",
+      "data": {
+        "epoch": "1000 BCE - Era 9",
+        "origin": "Systemic Infrastructure Drag (Agent 9)",
+        "demon": "Astaroth",
+        "angel": "Michael (Sec 19 Filter)",
+        "outcome": "Dimensional Overwrite Active"
+      }
+    },
+    {
+      "sandbox_id": "sentinel-ene-c10",
+      "status": "EXECUTED",
+      "data": {
+        "epoch": "1000 BCE - Era 10",
+        "origin": "Systemic Infrastructure Drag (Agent 10)",
+        "demon": "Astaroth",
+        "angel": "Michael (Sec 19 Filter)",
+        "outcome": "Dimensional Overwrite Active"
+      }
+    }
+  ]
+}
