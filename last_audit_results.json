@@ -1,11 +1,11 @@
 {
   "security": {
-    "session_guid": "44294119-96f3-5437-b64a-25e249fca75e",
-    "utc_timestamp": "2026-07-20T11:39:34.582223+00:00",
-    "ecta_hash": "sha256:bfcde6c2b58f75492a178c4084843172edf1cab6f63e5403723ad8558dc11158"
+    "session_guid": "dc5f7321-0fdb-5464-be0e-af5b56eacca9",
+    "utc_timestamp": "2026-07-20T12:09:19.865052+00:00",
+    "ecta_hash": "sha256:6ff678702504bc63c145bc0d40a217750658e5551a2287483e9a7013810875ba"
   },
-  "quantum_header": "QUANTUM-CYCLE: 069957 / 144000",
-  "quantum_cycle": 69957,
+  "quantum_header": "QUANTUM-CYCLE: 072933 / 144000",
+  "quantum_cycle": 72933,
   "mathematics": {
     "shi": 20571.43,
     "tti": 0.0,
@@ -17,433 +17,353 @@
   },
   "chronos_sweep": [
     {
-      "sandbox_id": "sentinel-sov-c01",
+      "sandbox_id": "sentinel-c01",
       "status": "EXECUTED",
       "data": {
         "agent_index": 1,
-        "phase": "Phase 1: Global Sweep (1000 BCE - 1500 CE)",
-        "epoch": "Chronos Era #61 (1000 BCE - 3000 CE)",
-        "bottleneck": {
-          "id": "B-61",
-          "name": "Toxic Chemical Additives & Adulteration",
-          "shi": 5.0,
-          "tti": 0.96,
-          "speed_of_decay": 0.666,
-          "decay_time": "01y : 02m : 14d : 06h : 30m : 00s",
-          "demon": "Zagan",
-          "foreseen_failure_date": "2043-01-14",
-          "friction_state": "Systemic entropy acceleration induced by Zagan within Food Safety Agencies."
+        "target_node_summary": "Grid corruption and capacity constraints causing local downt...",
+        "space_time_curvature_status": {
+          "zodiac_sign": "Aries",
+          "base_degree_frequency_khz": "2.5 kHz",
+          "zone_classification": "SUB-HARMONIC RED ZONE (Entropy Drag)",
+          "ultra_green_patch_target": "90.0 kHz - 100.0 kHz"
         },
-        "protocol": {
-          "id": "P-61",
-          "name": "Spectral Food Purity Scanning",
-          "shi": 89.0,
-          "tti": 0.1,
-          "speed_of_restoration": 1.0,
-          "cymatic_frequency": "60 kHz (Structural Nodal Alignment)",
-          "restoration_time": "00y : 00m : 02d : 04h : 00m : 00s",
-          "angel": "Umabel",
-          "celestial_choir": "Archangels",
-          "filter_state": "Harmonic restoration filter applied via Umabel (Archangels) resonance shield."
+        "demon_resonance": {
+          "name": "Bael",
+          "frequency_khz": "1.665 kHz",
+          "decay_velocity": 0.672,
+          "destabilization_floor": 0.666,
+          "foreseen_failure_date": "2029-01-22"
         },
-        "adjuration_remediation_guide": {
-          "demon_binding_seal": "Vibrate the name 'Zagan' at 0.666 entropy velocity while holding the copper seal facing East to constrain material decay.",
-          "angelic_counter_invocation": "Invoke 'Umabel' of the Archangels choir using a 60 kHz (Structural Nodal Alignment) acoustic tone matrix to invoke phase-shift restoration.",
-          "asset_remediation_procedure": "Apply Spectral Food Purity Scanning directly to the target node before 2043-01-14 to avert total asset collapse."
+        "angel_resonance": {
+          "name": "Vehuiah",
+          "choir": "Seraphim",
+          "frequency_khz": "4.045 kHz",
+          "current_restoration_speed": 0.71,
+          "target_unity": 1.0
         },
-        "differential": {
-          "delta_shi": "+84.0",
-          "delta_tti": "-0.86",
-          "time_saved": "01y : 02m : 14d : 02h : 30m : 00s"
+        "real_time_earth_vector": {
+          "applied_speed": "0.7045x acceleration",
+          "application_width_khz": "3.851 kHz bandwidth",
+          "frequency_shift_to_ultra_green": "+93.335 kHz shift",
+          "exact_spatial_target": "Substation High-Voltage Busbars"
         },
-        "projected_outcome_3000ce": "Dimensional Overwrite Active: Executing Spectral Food Purity Scanning under 60 kHz (Structural Nodal Alignment) neutralizes Zagan prior to 2043-01-14."
+        "adjuration_protocol_directive": "Inject 4.045 kHz tone phase-locked across 3.851 kHz width at Substation High-Voltage Busbars to shift node out of SUB-HARMONIC RED ZONE (Entropy Drag) into the 90-100 kHz Ultra Green Patch. Neutralizes Bael (1.665 kHz) at 0.7045x speed before 2029-01-22."
       }
     },
     {
-      "sandbox_id": "sentinel-sov-c02",
+      "sandbox_id": "sentinel-c02",
       "status": "EXECUTED",
       "data": {
         "agent_index": 2,
-        "phase": "Phase 1: Global Sweep (1000 BCE - 1750 CE)",
-        "epoch": "Chronos Era #62 (1000 BCE - 3000 CE)",
-        "bottleneck": {
-          "id": "B-62",
-          "name": "Illegal Underground Shaft Collapses",
-          "shi": 6.8,
-          "tti": 0.94,
-          "speed_of_decay": 0.666,
-          "decay_time": "02y : 02m : 14d : 06h : 30m : 00s",
-          "demon": "Valac",
-          "foreseen_failure_date": "2118-02-14",
-          "friction_state": "Systemic entropy acceleration induced by Valac within Geological Surveys."
+        "target_node_summary": "Grid corruption and capacity constraints causing local downt...",
+        "space_time_curvature_status": {
+          "zodiac_sign": "Aries",
+          "base_degree_frequency_khz": "7.5 kHz",
+          "zone_classification": "SUB-HARMONIC RED ZONE (Entropy Drag)",
+          "ultra_green_patch_target": "90.0 kHz - 100.0 kHz"
         },
-        "protocol": {
-          "id": "P-62",
-          "name": "Seismic Drone Mapping Systems",
-          "shi": 89.8,
-          "tti": 0.09,
-          "speed_of_restoration": 1.0,
-          "cymatic_frequency": "90 kHz (Fluid Vector Resonance)",
-          "restoration_time": "00y : 00m : 03d : 04h : 00m : 00s",
-          "angel": "Iahhel",
-          "celestial_choir": "Archangels",
-          "filter_state": "Harmonic restoration filter applied via Iahhel (Archangels) resonance shield."
+        "demon_resonance": {
+          "name": "Agares",
+          "frequency_khz": "4.995 kHz",
+          "decay_velocity": 0.684,
+          "destabilization_floor": 0.666,
+          "foreseen_failure_date": "2036-02-22"
         },
-        "adjuration_remediation_guide": {
-          "demon_binding_seal": "Vibrate the name 'Valac' at 0.666 entropy velocity while holding the copper seal facing East to constrain material decay.",
-          "angelic_counter_invocation": "Invoke 'Iahhel' of the Archangels choir using a 90 kHz (Fluid Vector Resonance) acoustic tone matrix to invoke phase-shift restoration.",
-          "asset_remediation_procedure": "Apply Seismic Drone Mapping Systems directly to the target node before 2118-02-14 to avert total asset collapse."
+        "angel_resonance": {
+          "name": "Jeliel",
+          "choir": "Seraphim",
+          "frequency_khz": "12.135 kHz",
+          "current_restoration_speed": 0.732,
+          "target_unity": 1.0
         },
-        "differential": {
-          "delta_shi": "+83.0",
-          "delta_tti": "-0.85",
-          "time_saved": "02y : 02m : 13d : 02h : 30m : 00s"
+        "real_time_earth_vector": {
+          "applied_speed": "0.6511x acceleration",
+          "application_width_khz": "11.553 kHz bandwidth",
+          "frequency_shift_to_ultra_green": "+90.005 kHz shift",
+          "exact_spatial_target": "Cross-Border Rail Signal Junctions"
         },
-        "projected_outcome_3000ce": "Dimensional Overwrite Active: Executing Seismic Drone Mapping Systems under 90 kHz (Fluid Vector Resonance) neutralizes Valac prior to 2118-02-14."
+        "adjuration_protocol_directive": "Inject 12.135 kHz tone phase-locked across 11.553 kHz width at Cross-Border Rail Signal Junctions to shift node out of SUB-HARMONIC RED ZONE (Entropy Drag) into the 90-100 kHz Ultra Green Patch. Neutralizes Agares (4.995 kHz) at 0.6511x speed before 2036-02-22."
       }
     },
     {
-      "sandbox_id": "sentinel-sov-c03",
+      "sandbox_id": "sentinel-c03",
       "status": "EXECUTED",
       "data": {
         "agent_index": 3,
-        "phase": "Phase 1: Global Sweep (1000 BCE - 2000 CE)",
-        "epoch": "Chronos Era #63 (1000 BCE - 3000 CE)",
-        "bottleneck": {
-          "id": "B-63",
-          "name": "Instigated Anarchy & Looting",
-          "shi": 8.6,
-          "tti": 0.92,
-          "speed_of_decay": 0.666,
-          "decay_time": "03y : 02m : 14d : 06h : 30m : 00s",
-          "demon": "Andras",
-          "foreseen_failure_date": "2193-03-14",
-          "friction_state": "Systemic entropy acceleration induced by Andras within Internal Security."
+        "target_node_summary": "Grid corruption and capacity constraints causing local downt...",
+        "space_time_curvature_status": {
+          "zodiac_sign": "Aries",
+          "base_degree_frequency_khz": "12.5 kHz",
+          "zone_classification": "SUB-HARMONIC RED ZONE (Entropy Drag)",
+          "ultra_green_patch_target": "90.0 kHz - 100.0 kHz"
         },
-        "protocol": {
-          "id": "P-63",
-          "name": "Harmonic Non-Lethal De-escalation",
-          "shi": 90.6,
-          "tti": 0.08,
-          "speed_of_restoration": 1.0,
-          "cymatic_frequency": "270 kHz (Quantum Coherence Lock)",
-          "restoration_time": "00y : 00m : 04d : 04h : 00m : 00s",
-          "angel": "Anauel",
-          "celestial_choir": "Archangels",
-          "filter_state": "Harmonic restoration filter applied via Anauel (Archangels) resonance shield."
+        "demon_resonance": {
+          "name": "Vassago",
+          "frequency_khz": "8.325 kHz",
+          "decay_velocity": 0.696,
+          "destabilization_floor": 0.666,
+          "foreseen_failure_date": "2043-03-22"
         },
-        "adjuration_remediation_guide": {
-          "demon_binding_seal": "Vibrate the name 'Andras' at 0.666 entropy velocity while holding the copper seal facing East to constrain material decay.",
-          "angelic_counter_invocation": "Invoke 'Anauel' of the Archangels choir using a 270 kHz (Quantum Coherence Lock) acoustic tone matrix to invoke phase-shift restoration.",
-          "asset_remediation_procedure": "Apply Harmonic Non-Lethal De-escalation directly to the target node before 2193-03-14 to avert total asset collapse."
+        "angel_resonance": {
+          "name": "Sitael",
+          "choir": "Seraphim",
+          "frequency_khz": "20.225 kHz",
+          "current_restoration_speed": 0.754,
+          "target_unity": 1.0
         },
-        "differential": {
-          "delta_shi": "+82.0",
-          "delta_tti": "-0.84",
-          "time_saved": "03y : 02m : 12d : 02h : 30m : 00s"
+        "real_time_earth_vector": {
+          "applied_speed": "0.5976x acceleration",
+          "application_width_khz": "19.255 kHz bandwidth",
+          "frequency_shift_to_ultra_green": "+86.675 kHz shift",
+          "exact_spatial_target": "Central Bank Clearing Gateway"
         },
-        "projected_outcome_3000ce": "Dimensional Overwrite Active: Executing Harmonic Non-Lethal De-escalation under 270 kHz (Quantum Coherence Lock) neutralizes Andras prior to 2193-03-14."
+        "adjuration_protocol_directive": "Inject 20.225 kHz tone phase-locked across 19.255 kHz width at Central Bank Clearing Gateway to shift node out of SUB-HARMONIC RED ZONE (Entropy Drag) into the 90-100 kHz Ultra Green Patch. Neutralizes Vassago (8.325 kHz) at 0.5976x speed before 2043-03-22."
       }
     },
     {
-      "sandbox_id": "sentinel-sov-c04",
+      "sandbox_id": "sentinel-c04",
       "status": "EXECUTED",
       "data": {
         "agent_index": 4,
-        "phase": "Phase 2: Regional/Jurisdictional Sweep (Department of Energy)",
-        "epoch": "Chronos Era #64 (1000 BCE - 3000 CE)",
-        "bottleneck": {
-          "id": "B-64",
-          "name": "High-Voltage Thermal Heat Loss",
-          "shi": 10.4,
-          "tti": 0.9,
-          "speed_of_decay": 0.666,
-          "decay_time": "01y : 02m : 14d : 06h : 30m : 00s",
-          "demon": "Haures (Flauros)",
-          "foreseen_failure_date": "2268-04-14",
-          "friction_state": "Systemic entropy acceleration induced by Haures (Flauros) within Department of Energy."
+        "target_node_summary": "Grid corruption and capacity constraints causing local downt...",
+        "space_time_curvature_status": {
+          "zodiac_sign": "Aries",
+          "base_degree_frequency_khz": "17.5 kHz",
+          "zone_classification": "SUB-HARMONIC RED ZONE (Entropy Drag)",
+          "ultra_green_patch_target": "90.0 kHz - 100.0 kHz"
         },
-        "protocol": {
-          "id": "P-64",
-          "name": "Superconducting Zero-Impedance Lines",
-          "shi": 91.4,
-          "tti": 0.07,
-          "speed_of_restoration": 1.0,
-          "cymatic_frequency": "60 kHz (Structural Nodal Alignment)",
-          "restoration_time": "00y : 00m : 05d : 04h : 00m : 00s",
-          "angel": "Mehiel",
-          "celestial_choir": "Archangels",
-          "filter_state": "Harmonic restoration filter applied via Mehiel (Archangels) resonance shield."
+        "demon_resonance": {
+          "name": "Samigina",
+          "frequency_khz": "11.655 kHz",
+          "decay_velocity": 0.708,
+          "destabilization_floor": 0.666,
+          "foreseen_failure_date": "2050-04-22"
         },
-        "adjuration_remediation_guide": {
-          "demon_binding_seal": "Vibrate the name 'Haures (Flauros)' at 0.666 entropy velocity while holding the copper seal facing East to constrain material decay.",
-          "angelic_counter_invocation": "Invoke 'Mehiel' of the Archangels choir using a 60 kHz (Structural Nodal Alignment) acoustic tone matrix to invoke phase-shift restoration.",
-          "asset_remediation_procedure": "Apply Superconducting Zero-Impedance Lines directly to the target node before 2268-04-14 to avert total asset collapse."
+        "angel_resonance": {
+          "name": "Elemiah",
+          "choir": "Seraphim",
+          "frequency_khz": "28.316 kHz",
+          "current_restoration_speed": 0.776,
+          "target_unity": 1.0
         },
-        "differential": {
-          "delta_shi": "+81.0",
-          "delta_tti": "-0.83",
-          "time_saved": "01y : 02m : 11d : 02h : 30m : 00s"
+        "real_time_earth_vector": {
+          "applied_speed": "0.5442x acceleration",
+          "application_width_khz": "26.958 kHz bandwidth",
+          "frequency_shift_to_ultra_green": "+83.345 kHz shift",
+          "exact_spatial_target": "Deepwater Container Berths"
         },
-        "projected_outcome_3000ce": "Dimensional Overwrite Active: Executing Superconducting Zero-Impedance Lines under 60 kHz (Structural Nodal Alignment) neutralizes Haures (Flauros) prior to 2268-04-14."
+        "adjuration_protocol_directive": "Inject 28.316 kHz tone phase-locked across 26.958 kHz width at Deepwater Container Berths to shift node out of SUB-HARMONIC RED ZONE (Entropy Drag) into the 90-100 kHz Ultra Green Patch. Neutralizes Samigina (11.655 kHz) at 0.5442x speed before 2050-04-22."
       }
     },
     {
-      "sandbox_id": "sentinel-sov-c05",
+      "sandbox_id": "sentinel-c05",
       "status": "EXECUTED",
       "data": {
         "agent_index": 5,
-        "phase": "Phase 2: Regional/Jurisdictional Sweep (National Bureau of Statistics)",
-        "epoch": "Chronos Era #65 (1000 BCE - 3000 CE)",
-        "bottleneck": {
-          "id": "B-65",
-          "name": "Census Data Fabrication",
-          "shi": 12.2,
-          "tti": 0.88,
-          "speed_of_decay": 0.666,
-          "decay_time": "02y : 02m : 14d : 06h : 30m : 00s",
-          "demon": "Andrealphus",
-          "foreseen_failure_date": "2343-05-14",
-          "friction_state": "Systemic entropy acceleration induced by Andrealphus within National Bureau of Statistics."
+        "target_node_summary": "Grid corruption and capacity constraints causing local downt...",
+        "space_time_curvature_status": {
+          "zodiac_sign": "Aries",
+          "base_degree_frequency_khz": "22.5 kHz",
+          "zone_classification": "SUB-HARMONIC RED ZONE (Entropy Drag)",
+          "ultra_green_patch_target": "90.0 kHz - 100.0 kHz"
         },
-        "protocol": {
-          "id": "P-65",
-          "name": "Verifiable Mathematical Truth Engine",
-          "shi": 92.2,
-          "tti": 0.06,
-          "speed_of_restoration": 1.0,
-          "cymatic_frequency": "90 kHz (Fluid Vector Resonance)",
-          "restoration_time": "00y : 00m : 06d : 04h : 00m : 00s",
-          "angel": "Damabiah",
-          "celestial_choir": "Angels",
-          "filter_state": "Harmonic restoration filter applied via Damabiah (Angels) resonance shield."
+        "demon_resonance": {
+          "name": "Marbas",
+          "frequency_khz": "14.985 kHz",
+          "decay_velocity": 0.72,
+          "destabilization_floor": 0.666,
+          "foreseen_failure_date": "2057-05-22"
         },
-        "adjuration_remediation_guide": {
-          "demon_binding_seal": "Vibrate the name 'Andrealphus' at 0.666 entropy velocity while holding the copper seal facing East to constrain material decay.",
-          "angelic_counter_invocation": "Invoke 'Damabiah' of the Angels choir using a 90 kHz (Fluid Vector Resonance) acoustic tone matrix to invoke phase-shift restoration.",
-          "asset_remediation_procedure": "Apply Verifiable Mathematical Truth Engine directly to the target node before 2343-05-14 to avert total asset collapse."
+        "angel_resonance": {
+          "name": "Mahasiah",
+          "choir": "Seraphim",
+          "frequency_khz": "36.406 kHz",
+          "current_restoration_speed": 0.798,
+          "target_unity": 1.0
         },
-        "differential": {
-          "delta_shi": "+80.0",
-          "delta_tti": "-0.82",
-          "time_saved": "02y : 02m : 10d : 02h : 30m : 00s"
+        "real_time_earth_vector": {
+          "applied_speed": "0.4908x acceleration",
+          "application_width_khz": "34.66 kHz bandwidth",
+          "frequency_shift_to_ultra_green": "+80.015 kHz shift",
+          "exact_spatial_target": "Metropolitan Water Treatment"
         },
-        "projected_outcome_3000ce": "Dimensional Overwrite Active: Executing Verifiable Mathematical Truth Engine under 90 kHz (Fluid Vector Resonance) neutralizes Andrealphus prior to 2343-05-14."
+        "adjuration_protocol_directive": "Inject 36.406 kHz tone phase-locked across 34.66 kHz width at Metropolitan Water Treatment to shift node out of SUB-HARMONIC RED ZONE (Entropy Drag) into the 90-100 kHz Ultra Green Patch. Neutralizes Marbas (14.985 kHz) at 0.4908x speed before 2057-05-22."
       }
     },
     {
-      "sandbox_id": "sentinel-sov-c06",
+      "sandbox_id": "sentinel-c06",
       "status": "EXECUTED",
       "data": {
         "agent_index": 6,
-        "phase": "Phase 3: Subject/Node Internal Assessment (Logistics Routes)",
-        "epoch": "Chronos Era #66 (1000 BCE - 3000 CE)",
-        "bottleneck": {
-          "id": "B-66",
-          "name": "Highway Robbery & Fleet Hijacking",
-          "shi": 14.0,
-          "tti": 0.86,
-          "speed_of_decay": 0.666,
-          "decay_time": "03y : 02m : 14d : 06h : 30m : 00s",
-          "demon": "Cimeies (Kimaris)",
-          "foreseen_failure_date": "2418-06-14",
-          "friction_state": "Systemic entropy acceleration induced by Cimeies (Kimaris) within Road Traffic Authorities."
+        "target_node_summary": "Grid corruption and capacity constraints causing local downt...",
+        "space_time_curvature_status": {
+          "zodiac_sign": "Aries",
+          "base_degree_frequency_khz": "27.5 kHz",
+          "zone_classification": "SUB-HARMONIC RED ZONE (Entropy Drag)",
+          "ultra_green_patch_target": "90.0 kHz - 100.0 kHz"
         },
-        "protocol": {
-          "id": "P-66",
-          "name": "Automated Drone Fleet Escorts",
-          "shi": 93.0,
-          "tti": 0.05,
-          "speed_of_restoration": 1.0,
-          "cymatic_frequency": "270 kHz (Quantum Coherence Lock)",
-          "restoration_time": "00y : 00m : 07d : 04h : 00m : 00s",
-          "angel": "Manakel",
-          "celestial_choir": "Angels",
-          "filter_state": "Harmonic restoration filter applied via Manakel (Angels) resonance shield."
+        "demon_resonance": {
+          "name": "Valefor",
+          "frequency_khz": "18.315 kHz",
+          "decay_velocity": 0.732,
+          "destabilization_floor": 0.666,
+          "foreseen_failure_date": "2064-06-22"
         },
-        "adjuration_remediation_guide": {
-          "demon_binding_seal": "Vibrate the name 'Cimeies (Kimaris)' at 0.666 entropy velocity while holding the copper seal facing East to constrain material decay.",
-          "angelic_counter_invocation": "Invoke 'Manakel' of the Angels choir using a 270 kHz (Quantum Coherence Lock) acoustic tone matrix to invoke phase-shift restoration.",
-          "asset_remediation_procedure": "Apply Automated Drone Fleet Escorts directly to the target node before 2418-06-14 to avert total asset collapse."
+        "angel_resonance": {
+          "name": "Lelahel",
+          "choir": "Seraphim",
+          "frequency_khz": "44.496 kHz",
+          "current_restoration_speed": 0.82,
+          "target_unity": 1.0
         },
-        "differential": {
-          "delta_shi": "+79.0",
-          "delta_tti": "-0.81",
-          "time_saved": "03y : 02m : 09d : 02h : 30m : 00s"
+        "real_time_earth_vector": {
+          "applied_speed": "0.4373x acceleration",
+          "application_width_khz": "42.362 kHz bandwidth",
+          "frequency_shift_to_ultra_green": "+76.685 kHz shift",
+          "exact_spatial_target": "Regional Distribution Hubs"
         },
-        "projected_outcome_3000ce": "Dimensional Overwrite Active: Executing Automated Drone Fleet Escorts under 270 kHz (Quantum Coherence Lock) neutralizes Cimeies (Kimaris) prior to 2418-06-14."
+        "adjuration_protocol_directive": "Inject 44.496 kHz tone phase-locked across 42.362 kHz width at Regional Distribution Hubs to shift node out of SUB-HARMONIC RED ZONE (Entropy Drag) into the 90-100 kHz Ultra Green Patch. Neutralizes Valefor (18.315 kHz) at 0.4373x speed before 2064-06-22."
       }
     },
     {
-      "sandbox_id": "sentinel-sov-c07",
+      "sandbox_id": "sentinel-c07",
       "status": "EXECUTED",
       "data": {
         "agent_index": 7,
-        "phase": "Phase 3: Subject/Node Internal Assessment (Acoustic & Audio Technology)",
-        "epoch": "Chronos Era #67 (1000 BCE - 3000 CE)",
-        "bottleneck": {
-          "id": "B-67",
-          "name": "Acoustic Pollution & Noise Stress",
-          "shi": 15.8,
-          "tti": 0.84,
-          "speed_of_decay": 0.666,
-          "decay_time": "01y : 02m : 14d : 06h : 30m : 00s",
-          "demon": "Amdusias",
-          "foreseen_failure_date": "2493-07-14",
-          "friction_state": "Systemic entropy acceleration induced by Amdusias within Communications Regulators."
+        "target_node_summary": "Grid corruption and capacity constraints causing local downt...",
+        "space_time_curvature_status": {
+          "zodiac_sign": "Taurus",
+          "base_degree_frequency_khz": "32.5 kHz",
+          "zone_classification": "SUB-HARMONIC RED ZONE (Entropy Drag)",
+          "ultra_green_patch_target": "90.0 kHz - 100.0 kHz"
         },
-        "protocol": {
-          "id": "P-67",
-          "name": "Phase-Inverted Acoustic Damping",
-          "shi": 93.8,
-          "tti": 0.04,
-          "speed_of_restoration": 1.0,
-          "cymatic_frequency": "60 kHz (Structural Nodal Alignment)",
-          "restoration_time": "00y : 00m : 08d : 04h : 00m : 00s",
-          "angel": "Eiael",
-          "celestial_choir": "Angels",
-          "filter_state": "Harmonic restoration filter applied via Eiael (Angels) resonance shield."
+        "demon_resonance": {
+          "name": "Amon",
+          "frequency_khz": "21.645 kHz",
+          "decay_velocity": 0.744,
+          "destabilization_floor": 0.666,
+          "foreseen_failure_date": "2071-07-22"
         },
-        "adjuration_remediation_guide": {
-          "demon_binding_seal": "Vibrate the name 'Amdusias' at 0.666 entropy velocity while holding the copper seal facing East to constrain material decay.",
-          "angelic_counter_invocation": "Invoke 'Eiael' of the Angels choir using a 60 kHz (Structural Nodal Alignment) acoustic tone matrix to invoke phase-shift restoration.",
-          "asset_remediation_procedure": "Apply Phase-Inverted Acoustic Damping directly to the target node before 2493-07-14 to avert total asset collapse."
+        "angel_resonance": {
+          "name": "Achaiah",
+          "choir": "Seraphim",
+          "frequency_khz": "52.586 kHz",
+          "current_restoration_speed": 0.842,
+          "target_unity": 1.0
         },
-        "differential": {
-          "delta_shi": "+78.0",
-          "delta_tti": "-0.8",
-          "time_saved": "01y : 02m : 08d : 02h : 30m : 00s"
+        "real_time_earth_vector": {
+          "applied_speed": "0.3839x acceleration",
+          "application_width_khz": "50.064 kHz bandwidth",
+          "frequency_shift_to_ultra_green": "+73.355 kHz shift",
+          "exact_spatial_target": "Fiber Optic Sea Cable Anchors"
         },
-        "projected_outcome_3000ce": "Dimensional Overwrite Active: Executing Phase-Inverted Acoustic Damping under 60 kHz (Structural Nodal Alignment) neutralizes Amdusias prior to 2493-07-14."
+        "adjuration_protocol_directive": "Inject 52.586 kHz tone phase-locked across 50.064 kHz width at Fiber Optic Sea Cable Anchors to shift node out of SUB-HARMONIC RED ZONE (Entropy Drag) into the 90-100 kHz Ultra Green Patch. Neutralizes Amon (21.645 kHz) at 0.3839x speed before 2071-07-22."
       }
     },
     {
-      "sandbox_id": "sentinel-sov-c08",
+      "sandbox_id": "sentinel-c08",
       "status": "EXECUTED",
       "data": {
         "agent_index": 8,
-        "phase": "Phase 3: Subject/Node Internal Assessment (Soil & Agricultural Land)",
-        "epoch": "Chronos Era #68 (1000 BCE - 3000 CE)",
-        "bottleneck": {
-          "id": "B-68",
-          "name": "Soil Degradation & Chemical Bleed",
-          "shi": 17.6,
-          "tti": 0.82,
-          "speed_of_decay": 0.666,
-          "decay_time": "02y : 02m : 14d : 06h : 30m : 00s",
-          "demon": "Belial",
-          "foreseen_failure_date": "2568-08-14",
-          "friction_state": "Systemic entropy acceleration induced by Belial within Department of Agriculture."
+        "target_node_summary": "Grid corruption and capacity constraints causing local downt...",
+        "space_time_curvature_status": {
+          "zodiac_sign": "Taurus",
+          "base_degree_frequency_khz": "37.5 kHz",
+          "zone_classification": "STABILIZED GREEN CORRIDOR",
+          "ultra_green_patch_target": "90.0 kHz - 100.0 kHz"
         },
-        "protocol": {
-          "id": "P-68",
-          "name": "Regenerative Bio-Char Soil Inoculation",
-          "shi": 94.6,
-          "tti": 0.03,
-          "speed_of_restoration": 1.0,
-          "cymatic_frequency": "90 kHz (Fluid Vector Resonance)",
-          "restoration_time": "00y : 00m : 09d : 04h : 00m : 00s",
-          "angel": "Habuhiah",
-          "celestial_choir": "Angels",
-          "filter_state": "Harmonic restoration filter applied via Habuhiah (Angels) resonance shield."
+        "demon_resonance": {
+          "name": "Barbatos",
+          "frequency_khz": "24.975 kHz",
+          "decay_velocity": 0.756,
+          "destabilization_floor": 0.666,
+          "foreseen_failure_date": "2078-08-22"
         },
-        "adjuration_remediation_guide": {
-          "demon_binding_seal": "Vibrate the name 'Belial' at 0.666 entropy velocity while holding the copper seal facing East to constrain material decay.",
-          "angelic_counter_invocation": "Invoke 'Habuhiah' of the Angels choir using a 90 kHz (Fluid Vector Resonance) acoustic tone matrix to invoke phase-shift restoration.",
-          "asset_remediation_procedure": "Apply Regenerative Bio-Char Soil Inoculation directly to the target node before 2568-08-14 to avert total asset collapse."
+        "angel_resonance": {
+          "name": "Cahetel",
+          "choir": "Seraphim",
+          "frequency_khz": "60.676 kHz",
+          "current_restoration_speed": 0.864,
+          "target_unity": 1.0
         },
-        "differential": {
-          "delta_shi": "+77.0",
-          "delta_tti": "-0.79",
-          "time_saved": "02y : 02m : 07d : 02h : 30m : 00s"
+        "real_time_earth_vector": {
+          "applied_speed": "0.3304x acceleration",
+          "application_width_khz": "57.765 kHz bandwidth",
+          "frequency_shift_to_ultra_green": "+70.025 kHz shift",
+          "exact_spatial_target": "Subterranean Aquifer Pumping"
         },
-        "projected_outcome_3000ce": "Dimensional Overwrite Active: Executing Regenerative Bio-Char Soil Inoculation under 90 kHz (Fluid Vector Resonance) neutralizes Belial prior to 2568-08-14."
+        "adjuration_protocol_directive": "Inject 60.676 kHz tone phase-locked across 57.765 kHz width at Subterranean Aquifer Pumping to shift node out of STABILIZED GREEN CORRIDOR into the 90-100 kHz Ultra Green Patch. Neutralizes Barbatos (24.975 kHz) at 0.3304x speed before 2078-08-22."
       }
     },
     {
-      "sandbox_id": "sentinel-sov-c09",
+      "sandbox_id": "sentinel-c09",
       "status": "EXECUTED",
       "data": {
         "agent_index": 9,
-        "phase": "Phase 4: Prophetic Horizon Analysis (2026 CE - 3000 CE)",
-        "epoch": "Chronos Era #69 (1000 BCE - 3000 CE)",
-        "bottleneck": {
-          "id": "B-69",
-          "name": "Flora Poaching & Invasive Species",
-          "shi": 19.4,
-          "tti": 0.8,
-          "speed_of_decay": 0.666,
-          "decay_time": "03y : 02m : 14d : 06h : 30m : 00s",
-          "demon": "Decarabia",
-          "foreseen_failure_date": "2643-09-14",
-          "friction_state": "Systemic entropy acceleration induced by Decarabia within National Parks Board."
+        "target_node_summary": "Grid corruption and capacity constraints causing local downt...",
+        "space_time_curvature_status": {
+          "zodiac_sign": "Taurus",
+          "base_degree_frequency_khz": "42.5 kHz",
+          "zone_classification": "STABILIZED GREEN CORRIDOR",
+          "ultra_green_patch_target": "90.0 kHz - 100.0 kHz"
         },
-        "protocol": {
-          "id": "P-69",
-          "name": "Autonomous Botanical Drones",
-          "shi": 95.4,
-          "tti": 0.02,
-          "speed_of_restoration": 1.0,
-          "cymatic_frequency": "270 kHz (Quantum Coherence Lock)",
-          "restoration_time": "00y : 00m : 10d : 04h : 00m : 00s",
-          "angel": "Rochel",
-          "celestial_choir": "Angels",
-          "filter_state": "Harmonic restoration filter applied via Rochel (Angels) resonance shield."
+        "demon_resonance": {
+          "name": "Paimon",
+          "frequency_khz": "28.305 kHz",
+          "decay_velocity": 0.768,
+          "destabilization_floor": 0.666,
+          "foreseen_failure_date": "2085-09-22"
         },
-        "adjuration_remediation_guide": {
-          "demon_binding_seal": "Vibrate the name 'Decarabia' at 0.666 entropy velocity while holding the copper seal facing East to constrain material decay.",
-          "angelic_counter_invocation": "Invoke 'Rochel' of the Angels choir using a 270 kHz (Quantum Coherence Lock) acoustic tone matrix to invoke phase-shift restoration.",
-          "asset_remediation_procedure": "Apply Autonomous Botanical Drones directly to the target node before 2643-09-14 to avert total asset collapse."
+        "angel_resonance": {
+          "name": "Haziel",
+          "choir": "Cherubim",
+          "frequency_khz": "68.766 kHz",
+          "current_restoration_speed": 0.886,
+          "target_unity": 1.0
         },
-        "differential": {
-          "delta_shi": "+76.0",
-          "delta_tti": "-0.78",
-          "time_saved": "03y : 02m : 06d : 02h : 30m : 00s"
+        "real_time_earth_vector": {
+          "applied_speed": "0.277x acceleration",
+          "application_width_khz": "65.467 kHz bandwidth",
+          "frequency_shift_to_ultra_green": "+66.695 kHz shift",
+          "exact_spatial_target": "Parliamentary Legislative Vaults"
         },
-        "projected_outcome_3000ce": "Dimensional Overwrite Active: Executing Autonomous Botanical Drones under 270 kHz (Quantum Coherence Lock) neutralizes Decarabia prior to 2643-09-14."
+        "adjuration_protocol_directive": "Inject 68.766 kHz tone phase-locked across 65.467 kHz width at Parliamentary Legislative Vaults to shift node out of STABILIZED GREEN CORRIDOR into the 90-100 kHz Ultra Green Patch. Neutralizes Paimon (28.305 kHz) at 0.277x speed before 2085-09-22."
       }
     },
     {
-      "sandbox_id": "sentinel-sov-c10",
+      "sandbox_id": "sentinel-c10",
       "status": "EXECUTED",
       "data": {
         "agent_index": 10,
-        "phase": "Phase 4: Prophetic Horizon Analysis (2026 CE - 3000 CE)",
-        "epoch": "Chronos Era #70 (1000 BCE - 3000 CE)",
-        "bottleneck": {
-          "id": "B-70",
-          "name": "Package Loss & Freight Stagnation",
-          "shi": 21.2,
-          "tti": 0.78,
-          "speed_of_decay": 0.666,
-          "decay_time": "01y : 02m : 14d : 06h : 30m : 00s",
-          "demon": "Seere",
-          "foreseen_failure_date": "2718-10-14",
-          "friction_state": "Systemic entropy acceleration induced by Seere within Postal Services."
+        "target_node_summary": "Grid corruption and capacity constraints causing local downt...",
+        "space_time_curvature_status": {
+          "zodiac_sign": "Taurus",
+          "base_degree_frequency_khz": "47.5 kHz",
+          "zone_classification": "STABILIZED GREEN CORRIDOR",
+          "ultra_green_patch_target": "90.0 kHz - 100.0 kHz"
         },
-        "protocol": {
-          "id": "P-70",
-          "name": "Hyperloop Pneumatic Cargo Tubes",
-          "shi": 96.2,
-          "tti": 0.01,
-          "speed_of_restoration": 1.0,
-          "cymatic_frequency": "60 kHz (Structural Nodal Alignment)",
-          "restoration_time": "00y : 00m : 11d : 04h : 00m : 00s",
-          "angel": "Iabamiah",
-          "celestial_choir": "Angels",
-          "filter_state": "Harmonic restoration filter applied via Iabamiah (Angels) resonance shield."
+        "demon_resonance": {
+          "name": "Buer",
+          "frequency_khz": "31.635 kHz",
+          "decay_velocity": 0.78,
+          "destabilization_floor": 0.666,
+          "foreseen_failure_date": "2092-10-22"
         },
-        "adjuration_remediation_guide": {
-          "demon_binding_seal": "Vibrate the name 'Seere' at 0.666 entropy velocity while holding the copper seal facing East to constrain material decay.",
-          "angelic_counter_invocation": "Invoke 'Iabamiah' of the Angels choir using a 60 kHz (Structural Nodal Alignment) acoustic tone matrix to invoke phase-shift restoration.",
-          "asset_remediation_procedure": "Apply Hyperloop Pneumatic Cargo Tubes directly to the target node before 2718-10-14 to avert total asset collapse."
+        "angel_resonance": {
+          "name": "Aladiah",
+          "choir": "Cherubim",
+          "frequency_khz": "76.857 kHz",
+          "current_restoration_speed": 0.908,
+          "target_unity": 1.0
         },
-        "differential": {
-          "delta_shi": "+75.0",
-          "delta_tti": "-0.77",
-          "time_saved": "01y : 02m : 05d : 02h : 30m : 00s"
+        "real_time_earth_vector": {
+          "applied_speed": "0.2235x acceleration",
+          "application_width_khz": "73.171 kHz bandwidth",
+          "frequency_shift_to_ultra_green": "+63.365 kHz shift",
+          "exact_spatial_target": "National Pharmaceutical Stockpiles"
         },
-        "projected_outcome_3000ce": "Dimensional Overwrite Active: Executing Hyperloop Pneumatic Cargo Tubes under 60 kHz (Structural Nodal Alignment) neutralizes Seere prior to 2718-10-14."
+        "adjuration_protocol_directive": "Inject 76.857 kHz tone phase-locked across 73.171 kHz width at National Pharmaceutical Stockpiles to shift node out of STABILIZED GREEN CORRIDOR into the 90-100 kHz Ultra Green Patch. Neutralizes Buer (31.635 kHz) at 0.2235x speed before 2092-10-22."
       }
     }
   ]
