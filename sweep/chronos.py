@@ -1,238 +1,264 @@
+import math
 import json
 from concurrent.futures import ThreadPoolExecutor
 from core.inference_router import InferenceEngineRouter
 from core.sentinel_sandbox import SandboxManagerPool
-from config.settings import settings
 
 class FullStackChronosEngine:
+    PI = math.pi
+    PHI = (1 + math.sqrt(5)) / 2  # Golden Ratio (~1.6180339887)
+
+    # Space-Time Curvature Frequency Boundaries
+    SUB_HARMONIC_RED_FLOOR_KHZ = 60.0
+    ULTRA_GREEN_THRESHOLD_MIN_KHZ = 90.0
+    ULTRA_GREEN_THRESHOLD_MAX_KHZ = 100.0
+    SUPER_HARMONIC_RED_CEILING_KHZ = 270.0
+
     # ------------------------------------------------------------------
-    # MASTER MATRIX: ALL 72 GOETIC DEMONS & SHEM HAMEPHORASH ANGELS
+    # MASTER 72 ZODIAC BAND MATRIX (1° = 1 kHz | 30 kHz per Sign)
     # ------------------------------------------------------------------
-    MASTER_72_CORRESPONDENCES = [
-        {"id": 1, "demon": "Bael (Baal)", "angel": "Vehuiah", "choir": "Seraphim", "industry": "Energy Grid Infrastructure", "jurisdiction": "Central Generation Units", "bottleneck": "Fossil Monopolization & Sabotage", "protocol": "Decentralized Micro-Grid Nodes", "cymatic": "60 kHz (Structural Nodal Alignment)"},
-        {"id": 2, "demon": "Agares", "angel": "Jeliel (Ieliel)", "choir": "Seraphim", "industry": "Transport & Mobility", "jurisdiction": "Transit Corridors", "bottleneck": "Corridor Inertia & Fleet Stagnation", "protocol": "Maglev Automated Rail Mesh", "cymatic": "90 kHz (Fluid Vector Resonance)"},
-        {"id": 3, "demon": "Vassago", "angel": "Sitael", "choir": "Seraphim", "industry": "Sovereign Intelligence", "jurisdiction": "Federal Registers", "bottleneck": "Opaque Asset Concealment", "protocol": "Real-Time Cryptographic Ledger", "cymatic": "270 kHz (Quantum Coherence Lock)"},
-        {"id": 4, "demon": "Samigina (Gamigin)", "angel": "Elemiah", "choir": "Seraphim", "industry": "Maritime & Ports", "jurisdiction": "Coastal Jurisdictions", "bottleneck": "Maritime Port Bottlenecks", "protocol": "Autonomous Sub-Surface Pods", "cymatic": "60 kHz (Structural Nodal Alignment)"},
-        {"id": 5, "demon": "Marbas", "angel": "Mahasiah", "choir": "Seraphim", "industry": "Public Health & Bio-Security", "jurisdiction": "National Health Grids", "bottleneck": "Pathogen Spreading & Medical Drag", "protocol": "Sub-Atomic Cellular Healing Array", "cymatic": "90 kHz (Fluid Vector Resonance)"},
-        {"id": 6, "demon": "Valefor", "angel": "Lelahel (Iehahel)", "choir": "Seraphim", "industry": "Supply Chain Warehousing", "jurisdiction": "Logistics Hubs", "bottleneck": "Warehouse Space Hoarding", "protocol": "Dynamic Shared Spatial Matrix", "cymatic": "270 kHz (Quantum Coherence Lock)"},
-        {"id": 7, "demon": "Amon", "angel": "Achaiah", "choir": "Seraphim", "industry": "Telecommunications", "jurisdiction": "Spectrum Regulation", "bottleneck": "Bandwidth Throttle & Cable Theft", "protocol": "Quantum-Encrypted Satellite Mesh", "cymatic": "60 kHz (Structural Nodal Alignment)"},
-        {"id": 8, "demon": "Barbatos", "angel": "Cahetel (Cahethel)", "choir": "Seraphim", "industry": "Agriculture & Water", "jurisdiction": "Catchment Authorities", "bottleneck": "Seasonal Aquifer Depletion", "protocol": "Closed-Loop Atmospheric Water Nodes", "cymatic": "90 kHz (Fluid Vector Resonance)"},
-        {"id": 9, "demon": "Paimon", "angel": "Haziel", "choir": "Cherubim", "industry": "Executive Governance", "jurisdiction": "Cabinet Offices", "bottleneck": "Hierarchical Bureaucratic Paralysis", "protocol": "Algorithmic Direct Citizen Voting", "cymatic": "270 kHz (Quantum Coherence Lock)"},
-        {"id": 10, "demon": "Buer", "angel": "Aladiah", "choir": "Cherubim", "industry": "Pharmaceutical Grid", "jurisdiction": "Medical Regulatory Bodies", "bottleneck": "Patented Treatment Price Inflation", "protocol": "Open-Source Molecular Synthesis", "cymatic": "60 kHz (Structural Nodal Alignment)"},
-        {"id": 11, "demon": "Gusion", "angel": "Lauviah (Laviah)", "choir": "Cherubim", "industry": "Diplomatic Foreign Affairs", "jurisdiction": "Embassies & Consulates", "bottleneck": "Treaty Repudiation & Tension", "protocol": "Harmonized Sovereign Resource Swaps", "cymatic": "90 kHz (Fluid Vector Resonance)"},
-        {"id": 12, "demon": "Sitri", "angel": "Hahaiah", "choir": "Cherubim", "industry": "Media & Information", "jurisdiction": "Broadcasting Authorities", "bottleneck": "Psychological Manipulation & Panic", "protocol": "Truth-Anchored Consensus Verification", "cymatic": "270 kHz (Quantum Coherence Lock)"},
-        {"id": 13, "demon": "Beleth", "angel": "Iezalel", "choir": "Cherubim", "industry": "Civil Judicial System", "jurisdiction": "High Courts & Tribunals", "bottleneck": "Litigation Backlog & Delays", "protocol": "AI Adjudication Arbitration Engine", "cymatic": "60 kHz (Structural Nodal Alignment)"},
-        {"id": 14, "demon": "Leraje", "angel": "Mebahel", "choir": "Cherubim", "industry": "Defense & Border Control", "jurisdiction": "Border Posts & Security Zones", "bottleneck": "Inter-Regional Conflict & Skirmishes", "protocol": "Autonomous Boundary Shielding Nodes", "cymatic": "90 kHz (Fluid Vector Resonance)"},
-        {"id": 15, "demon": "Eligos", "angel": "Hariel", "choir": "Cherubim", "industry": "Strategic Defence Procurement", "jurisdiction": "Ministry of Defence", "bottleneck": "Tender Inflation & Military Graft", "protocol": "Immutable Defense Ledger Directives", "cymatic": "270 kHz (Quantum Coherence Lock)"},
-        {"id": 16, "demon": "Zepar", "angel": "Hakamiah", "choir": "Cherubim", "industry": "Demographics & Housing", "jurisdiction": "Municipal Zoning", "bottleneck": "Urban Slum Growth & Displacement", "protocol": "Modular High-Frequency Habitat Nodes", "cymatic": "60 kHz (Structural Nodal Alignment)"},
-        {"id": 17, "demon": "Botis", "angel": "Lauviah (Loviah)", "choir": "Thrones", "industry": "Disaster Management", "jurisdiction": "Emergency Services", "bottleneck": "Panic Cascades & Slow Rescue Response", "protocol": "Early-Warning Orbital Thermal Scanners", "cymatic": "90 kHz (Fluid Vector Resonance)"},
-        {"id": 18, "demon": "Bathin", "angel": "Caliel", "choir": "Thrones", "industry": "Cross-Border Transit", "jurisdiction": "Immigration & Customs", "bottleneck": "Customs Border Clearance Extortion", "protocol": "Zero-Knowledge Biometric Transit Lock", "cymatic": "270 kHz (Quantum Coherence Lock)"},
-        {"id": 19, "demon": "Sallos", "angel": "Leuviah (Levuiah)", "choir": "Thrones", "industry": "Labor & Industrial Relations", "jurisdiction": "Bargaining Councils", "bottleneck": "Hostile Strikes & Factory Lockouts", "protocol": "Automated Profit-Share Distribution", "cymatic": "60 kHz (Structural Nodal Alignment)"},
-        {"id": 20, "demon": "Purson", "angel": "Pahaliah", "choir": "Thrones", "industry": "Central Banking", "jurisdiction": "Reserve Banks", "bottleneck": "Fiat Inflation & Money Printing Drag", "protocol": "Logos Asset-Backed Sovereign Currency", "cymatic": "90 kHz (Fluid Vector Resonance)"},
-        {"id": 21, "demon": "Morax", "angel": "Nelchael", "choir": "Thrones", "industry": "STEM Research & Universities", "jurisdiction": "Higher Education Bodies", "bottleneck": "Academic Knowledge Paywalls", "protocol": "Open-Access Universal Knowledge Vault", "cymatic": "270 kHz (Quantum Coherence Lock)"},
-        {"id": 22, "demon": "Ipos", "angel": "Yeiayel (Ieiaiel)", "choir": "Thrones", "industry": "Aviation & Logistics", "jurisdiction": "Civil Aviation Authorities", "bottleneck": "Air Freight Carbon Surcharges", "protocol": "Atmospheric Hydrogen Airship Grid", "cymatic": "60 kHz (Structural Nodal Alignment)"},
-        {"id": 23, "demon": "Aim", "angel": "Melahel", "choir": "Thrones", "industry": "Emergency Infrastructure", "jurisdiction": "Fire & Rescue Networks", "bottleneck": "Arson & Grid Fire Propagation", "protocol": "Electro-Thermal Fire Suppression Arrays", "cymatic": "90 kHz (Fluid Vector Resonance)"},
-        {"id": 24, "demon": "Naberius", "angel": "Hahuiah (Haiviah)", "choir": "Thrones", "industry": "Public Relations & Civic Integrity", "jurisdiction": "Standards Authorities", "bottleneck": "Corporate Greenwashing & Deception", "protocol": "Auditor Pegasys Real-Time Verification", "cymatic": "270 kHz (Quantum Coherence Lock)"},
-        {"id": 25, "demon": "Glasya-Labolas", "angel": "Nithhaiah", "choir": "Dominions", "industry": "Cyber Security", "jurisdiction": "Critical Infrastructure Nodes", "bottleneck": "Ransomware & Malware Infiltration", "protocol": "Quantum-Encrypted Self-Healing Code", "cymatic": "60 kHz (Structural Nodal Alignment)"},
-        {"id": 26, "demon": "Bune", "angel": "Haaiah", "choir": "Dominions", "industry": "Treasury & Tax", "jurisdiction": "Revenue Services (SARS/IRS)", "bottleneck": "Offshore Tax Evasion & Shell Accounts", "protocol": "Automated Wealth Tracking & Tax Directives", "cymatic": "90 kHz (Fluid Vector Resonance)"},
-        {"id": 27, "demon": "Ronove", "angel": "Ierathel", "choir": "Dominions", "industry": "Primary Education", "jurisdiction": "Basic Education Ministry", "bottleneck": "Literacy Decay & Rote Learning", "protocol": "Adaptive Neural Learning Interfaces", "cymatic": "270 kHz (Quantum Coherence Lock)"},
-        {"id": 28, "demon": "Berith", "angel": "Seehiah (Saeehiah)", "choir": "Dominions", "industry": "Sovereign Debt", "jurisdiction": "International Monetary Bodies", "bottleneck": "Debt Trap Predatory Restructuring", "protocol": "Global Debt Nullification & Resource Swap", "cymatic": "60 kHz (Structural Nodal Alignment)"},
-        {"id": 29, "demon": "Astaroth", "angel": "Reiiel (Reiaiel)", "choir": "Dominions", "industry": "Energy Monopolization", "jurisdiction": "National Power Grids", "bottleneck": "Systemic Monopolistic Power Drag", "protocol": "Active Phase Load Equilibrium Array", "cymatic": "90 kHz (Fluid Vector Resonance)"},
-        {"id": 30, "demon": "Forneus", "angel": "Omael", "choir": "Dominions", "industry": "Fisheries & Ocean Resources", "jurisdiction": "Maritime EEZ Zones", "bottleneck": "Illicit Trawling & Depletion", "protocol": "Autonomous Marine Patrol Pods", "cymatic": "270 kHz (Quantum Coherence Lock)"},
-        {"id": 31, "demon": "Foras", "angel": "Lecabel", "choir": "Dominions", "industry": "Heavy Industry & Mining", "jurisdiction": "Mineral Resources Dept", "bottleneck": "Resource Extraction Bleed", "protocol": "Zero-Waste Subterranean Mining", "cymatic": "60 kHz (Structural Nodal Alignment)"},
-        {"id": 32, "demon": "Asmodeus", "angel": "Vasariah", "choir": "Dominions", "industry": "Judicial Process", "jurisdiction": "Appellate Courts", "bottleneck": "Procedural Corruption & Friction", "protocol": "Decentralized Smart Contract Arbitration", "cymatic": "90 kHz (Fluid Vector Resonance)"},
-        {"id": 33, "demon": "Gaap", "angel": "Lehuiah (Iehuiah)", "choir": "Powers", "industry": "Satellite Communications", "jurisdiction": "Orbital Regulatory Bodies", "bottleneck": "Space Debris & Signal Jamming", "protocol": "Orbital Laser Clean-up Arrays", "cymatic": "270 kHz (Quantum Coherence Lock)"},
-        {"id": 34, "demon": "Furfur", "angel": "Lehahiah", "choir": "Powers", "industry": "Meteorological Defense", "jurisdiction": "Weather Bureaus", "bottleneck": "Drought & Weather Shock Vulnerability", "protocol": "Ionospheric Cloud Seeding Arrays", "cymatic": "60 kHz (Structural Nodal Alignment)"},
-        {"id": 35, "demon": "Marchosias", "angel": "Chavakiah", "choir": "Powers", "industry": "Police Services", "jurisdiction": "SAPS / Municipal Police", "bottleneck": "Police Bribery & Syndicate Coverups", "protocol": "Immutable Bodycam AI Audit Locks", "cymatic": "90 kHz (Fluid Vector Resonance)"},
-        {"id": 36, "demon": "Stolas", "angel": "Manadel", "choir": "Powers", "industry": "Forestry & Ecosystems", "jurisdiction": "Environmental Dept", "bottleneck": "Illegal Deforestation & Log Bleed", "protocol": "Bio-Luminescent Forest Sensor Mesh", "cymatic": "270 kHz (Quantum Coherence Lock)"},
-        {"id": 37, "demon": "Phenex", "angel": "Aniel", "choir": "Powers", "industry": "Arts & Intellectual Property", "jurisdiction": "Copyright Registrar", "bottleneck": "IP Piracy & Creative Exploitation", "protocol": "NFT Sovereign Creator Locks", "cymatic": "60 kHz (Structural Nodal Alignment)"},
-        {"id": 38, "demon": "Halphas", "angel": "Haamiah", "choir": "Powers", "industry": "Fortification & Construction", "jurisdiction": "Public Works Dept", "bottleneck": "Structural Cement Fraud & Collapses", "protocol": "Self-Healing Graphene Cement Grid", "cymatic": "90 kHz (Fluid Vector Resonance)"},
-        {"id": 39, "demon": "Malphas", "angel": "Rehael", "choir": "Powers", "industry": "Architectural Design", "jurisdiction": "Planning Commissions", "bottleneck": "High-Density Urban Friction", "protocol": "Biophilic Architecture Blueprinting", "cymatic": "270 kHz (Quantum Coherence Lock)"},
-        {"id": 40, "demon": "Raum", "angel": "Ieiazel", "choir": "Powers", "industry": "Gold & Diamond Reserves", "jurisdiction": "State Vaults", "bottleneck": "Systemic Treasury Embezzlement", "protocol": "Quantum Atomic Reserve Verification", "cymatic": "60 kHz (Structural Nodal Alignment)"},
-        {"id": 41, "demon": "Focalor", "angel": "Hahahel", "choir": "Virtues", "industry": "Hydroelectric Energy", "jurisdiction": "River Basin Commissions", "bottleneck": "Dam Siltation & Turbine Decay", "protocol": "Resonance-Driven Hydro Turbines", "cymatic": "90 kHz (Fluid Vector Resonance)"},
-        {"id": 42, "demon": "Vepar", "angel": "Mikael", "choir": "Virtues", "industry": "Naval Defense", "jurisdiction": "Admiralty", "bottleneck": "Piracy & Territorial Encroachment", "protocol": "Sub-Surface Coastal Shield Array", "cymatic": "270 kHz (Quantum Coherence Lock)"},
-        {"id": 43, "demon": "Sabnock", "angel": "Veualiah", "choir": "Virtues", "industry": "Urban Infrastructure", "jurisdiction": "City Councils", "bottleneck": "Potholes & Road Decay Friction", "protocol": "Robotic Polymer Pavement Sprayers", "cymatic": "60 kHz (Structural Nodal Alignment)"},
-        {"id": 44, "demon": "Shax", "angel": "Ielahiah", "choir": "Virtues", "industry": "Sovereign Intelligence", "jurisdiction": "State Security Agencies", "bottleneck": "Infiltration & Leaks", "protocol": "Zero-Trust Behavioral Monitoring", "cymatic": "90 kHz (Fluid Vector Resonance)"},
-        {"id": 45, "demon": "Vine", "angel": "Sealiah", "choir": "Virtues", "industry": "Public Utilities", "jurisdiction": "Municipal Water & Lights", "bottleneck": "Unbilled Water & Electricity Bleed", "protocol": "Ultrasonic Flow Measurement Mesh", "cymatic": "270 kHz (Quantum Coherence Lock)"},
-        {"id": 46, "demon": "Bifrons", "angel": "Ariel", "choir": "Virtues", "industry": "Heritage & Historical Vaults", "jurisdiction": "National Archives", "bottleneck": "Historical Record Tampering", "protocol": "Quantum Optical Holographic Memory", "cymatic": "60 kHz (Structural Nodal Alignment)"},
-        {"id": 47, "demon": "Vual", "angel": "Asaliah", "choir": "Virtues", "industry": "Public Transport Pricing", "jurisdiction": "Transit Authorities", "bottleneck": "Commuter Extortion & Fares", "protocol": "Subsidized P2P Tokenized Fares", "cymatic": "90 kHz (Fluid Vector Resonance)"},
-        {"id": 48, "demon": "Haagenti", "angel": "Mihael", "choir": "Virtues", "industry": "Desalination Facilities", "jurisdiction": "Water Works", "bottleneck": "Brine Waste Environmental Harm", "protocol": "Zero-Liquid Discharge Extraction", "cymatic": "270 kHz (Quantum Coherence Lock)"},
-        {"id": 49, "demon": "Crocell", "angel": "Vehuel", "choir": "Principalities", "industry": "Geothermal Infrastructure", "jurisdiction": "Energy Dept", "bottleneck": "Pressure Droop & Corrosion", "protocol": "Tectonic Resonance Heat Loops", "cymatic": "60 kHz (Structural Nodal Alignment)"},
-        {"id": 50, "demon": "Furcas", "angel": "Daniel", "choir": "Principalities", "industry": "Philosophy & Ethics Boards", "jurisdiction": "Bioethics Committees", "bottleneck": "Unethical Human Experimentation", "protocol": "POPIA Immutable Bio-Ethics Shield", "cymatic": "90 kHz (Fluid Vector Resonance)"},
-        {"id": 51, "demon": "Balam", "angel": "Hahasiah", "choir": "Principalities", "industry": "Surveillance Systems", "jurisdiction": "Intelligence Agencies", "bottleneck": "Mass Illegal Civilian Wiretapping", "protocol": "User-Owned Biometric Vault Locks", "cymatic": "270 kHz (Quantum Coherence Lock)"},
-        {"id": 52, "demon": "Alloces", "angel": "Imamiah", "choir": "Principalities", "industry": "Heavy Machinery", "jurisdiction": "Manufacturing Standards", "bottleneck": "Hardware Microchip Shortages", "protocol": "Distributed Photonic Fab Printing", "cymatic": "60 kHz (Structural Nodal Alignment)"},
-        {"id": 53, "demon": "Caim (Camio)", "angel": "Nanael", "choir": "Principalities", "industry": "Environmental Dispute Resolution", "jurisdiction": "Environmental Courts", "bottleneck": "Corporate Legal Delays", "protocol": "Instant Algorithmic Eco-Auditing", "cymatic": "90 kHz (Fluid Vector Resonance)"},
-        {"id": 54, "demon": "Murmur", "angel": "Nithael", "choir": "Principalities", "industry": "Cemetery & Land Use", "jurisdiction": "Urban Land Boards", "bottleneck": "Land Speculation & Fraud", "protocol": "Cadastral Blockchain Registry", "cymatic": "270 kHz (Quantum Coherence Lock)"},
-        {"id": 55, "demon": "Orobas", "angel": "Mebahiah", "choir": "Principalities", "industry": "Electoral Systems", "jurisdiction": "Electoral Commissions", "bottleneck": "Ballot Stuffing & Election Rigging", "protocol": "Cryptographic Zero-Knowledge Voting", "cymatic": "60 kHz (Structural Nodal Alignment)"},
-        {"id": 56, "demon": "Gremory", "angel": "Poiel", "choir": "Principalities", "industry": "Precious Metal Reserves", "jurisdiction": "Mining Ministry", "bottleneck": "Hidden Wealth & Illegal Smuggling", "protocol": "Real-Time X-Ray Cargo Scanning", "cymatic": "90 kHz (Fluid Vector Resonance)"},
-        {"id": 57, "demon": "Ose", "angel": "Nemamiah", "choir": "Archangels", "industry": "Mental Healthcare", "jurisdiction": "Department of Health", "bottleneck": "Psychiatric Drug Exploitation", "protocol": "Frequency-Based Neuromodulation", "cymatic": "270 kHz (Quantum Coherence Lock)"},
-        {"id": 58, "demon": "Amy", "angel": "Ieialel", "choir": "Archangels", "industry": "Renewable Energy Research", "jurisdiction": "Science & Innovation Dept", "bottleneck": "Suppression of Free-Energy Patents", "protocol": "Open Quantum Physics Repository", "cymatic": "60 kHz (Structural Nodal Alignment)"},
-        {"id": 59, "demon": "Orias", "angel": "Harahel", "choir": "Archangels", "industry": "Astrophysics & Space Tracking", "jurisdiction": "Space Agencies", "bottleneck": "Space Weather Communications Failure", "protocol": "Magnetospheric Shielding Array", "cymatic": "90 kHz (Fluid Vector Resonance)"},
-        {"id": 60, "demon": "Vapula", "angel": "Mizrael", "choir": "Archangels", "industry": "Robotics & Automation", "jurisdiction": "Industrial Standards", "bottleneck": "Robotic Malfunctions & Safety Hazards", "protocol": "Fail-Safe Asimov Logic Chips", "cymatic": "270 kHz (Quantum Coherence Lock)"},
-        {"id": 61, "demon": "Zagan", "angel": "Umabel", "choir": "Archangels", "industry": "Food Processing & Processing", "jurisdiction": "Food Safety Agencies", "bottleneck": "Toxic Chemical Additives & Adulteration", "protocol": "Spectral Food Purity Scanning", "cymatic": "60 kHz (Structural Nodal Alignment)"},
-        {"id": 62, "demon": "Valac", "angel": "Iahhel", "choir": "Archangels", "industry": "Subterranean Minerals", "jurisdiction": "Geological Surveys", "bottleneck": "Illegal Underground Shaft Collapses", "protocol": "Seismic Drone Mapping Systems", "cymatic": "90 kHz (Fluid Vector Resonance)"},
-        {"id": 63, "demon": "Andras", "angel": "Anauel", "choir": "Archangels", "industry": "Civil Unrest & Rioting", "jurisdiction": "Internal Security", "bottleneck": "Instigated Anarchy & Looting", "protocol": "Harmonic Non-Lethal De-escalation", "cymatic": "270 kHz (Quantum Coherence Lock)"},
-        {"id": 64, "demon": "Haures (Flauros)", "angel": "Mehiel", "choir": "Archangels", "industry": "Thermal Power Generation", "jurisdiction": "Department of Energy", "bottleneck": "High-Voltage Thermal Heat Loss", "protocol": "Superconducting Zero-Impedance Lines", "cymatic": "60 kHz (Structural Nodal Alignment)"},
-        {"id": 65, "demon": "Andrealphus", "angel": "Damabiah", "choir": "Angels", "industry": "Mathematics & Data Science", "jurisdiction": "National Bureau of Statistics", "bottleneck": "Census Data Fabrication", "protocol": "Verifiable Mathematical Truth Engine", "cymatic": "90 kHz (Fluid Vector Resonance)"},
-        {"id": 66, "demon": "Cimeies (Kimaris)", "angel": "Manakel", "choir": "Angels", "industry": "Logistics Routes", "jurisdiction": "Road Traffic Authorities", "bottleneck": "Highway Robbery & Fleet Hijacking", "protocol": "Automated Drone Fleet Escorts", "cymatic": "270 kHz (Quantum Coherence Lock)"},
-        {"id": 67, "demon": "Amdusias", "angel": "Eiael", "choir": "Angels", "industry": "Acoustic & Audio Technology", "jurisdiction": "Communications Regulators", "bottleneck": "Acoustic Pollution & Noise Stress", "protocol": "Phase-Inverted Acoustic Damping", "cymatic": "60 kHz (Structural Nodal Alignment)"},
-        {"id": 68, "demon": "Belial", "angel": "Habuhiah", "choir": "Angels", "industry": "Soil & Agricultural Land", "jurisdiction": "Department of Agriculture", "bottleneck": "Soil Degradation & Chemical Bleed", "protocol": "Regenerative Bio-Char Soil Inoculation", "cymatic": "90 kHz (Fluid Vector Resonance)"},
-        {"id": 69, "demon": "Decarabia", "angel": "Rochel", "choir": "Angels", "industry": "Ecology & Botanical Reserves", "jurisdiction": "National Parks Board", "bottleneck": "Flora Poaching & Invasive Species", "protocol": "Autonomous Botanical Drones", "cymatic": "270 kHz (Quantum Coherence Lock)"},
-        {"id": 70, "demon": "Seere", "angel": "Iabamiah", "choir": "Angels", "industry": "Express Cargo & Postal Grids", "jurisdiction": "Postal Services", "bottleneck": "Package Loss & Freight Stagnation", "protocol": "Hyperloop Pneumatic Cargo Tubes", "cymatic": "60 kHz (Structural Nodal Alignment)"},
-        {"id": 71, "demon": "Dantalion", "angel": "Haiaiel", "choir": "Angels", "industry": "Behavioral Psychology", "jurisdiction": "Public Health Authorities", "bottleneck": "Mass Panic & Cognitive Distortion", "protocol": "Sovereign Cognitive Mental Fortification", "cymatic": "90 kHz (Fluid Vector Resonance)"},
-        {"id": 72, "demon": "Andromalius", "angel": "Mumiah", "choir": "Angels", "industry": "Asset Recovery & Law Enforcement", "jurisdiction": "Asset Forfeiture Units", "bottleneck": "Stolen Asset Liquidation & Concealment", "protocol": "Global Immutable Asset Recovery Lock", "cymatic": "270 kHz (Quantum Coherence Lock)"}
+    RAW_72_GOETIA_SHEM = [
+        # Aries (0 kHz - 30 kHz)
+        (1, "Bael", "Vehuiah", "Seraphim", "Aries", 0.0, 5.0, "Fossil Fuel Grid Sabotage", "Decentralized Micro-Grids", "Substation High-Voltage Busbars"),
+        (2, "Agares", "Jeliel", "Seraphim", "Aries", 5.0, 10.0, "Transit Corridor Inertia", "Maglev Automated Rail Mesh", "Cross-Border Rail Signal Junctions"),
+        (3, "Vassago", "Sitael", "Seraphim", "Aries", 10.0, 15.0, "Opaque Asset Concealment", "Real-Time Cryptographic Ledger", "Central Bank Clearing Gateway"),
+        (4, "Samigina", "Elemiah", "Seraphim", "Aries", 15.0, 20.0, "Maritime Port Congestion", "Autonomous Sub-Surface Pods", "Deepwater Container Berths"),
+        (5, "Marbas", "Mahasiah", "Seraphim", "Aries", 20.0, 25.0, "Pathogenic Mutation Spreading", "Sub-Atomic Cellular Array", "Metropolitan Water Treatment"),
+        (6, "Valefor", "Lelahel", "Seraphim", "Aries", 25.0, 30.0, "Warehouse Space Hoarding", "Dynamic Shared Spatial Matrix", "Regional Distribution Hubs"),
+
+        # Taurus (30 kHz - 60 kHz)
+        (7, "Amon", "Achaiah", "Seraphim", "Taurus", 30.0, 35.0, "Bandwidth Throttle & Theft", "Quantum Satellite Mesh", "Fiber Optic Sea Cable Anchors"),
+        (8, "Barbatos", "Cahetel", "Seraphim", "Taurus", 35.0, 40.0, "Seasonal Aquifer Depletion", "Closed-Loop Water Nodes", "Subterranean Aquifer Pumping"),
+        (9, "Paimon", "Haziel", "Cherubim", "Taurus", 40.0, 45.0, "Bureaucratic Paralysis", "Algorithmic Citizen Voting", "Parliamentary Legislative Vaults"),
+        (10, "Buer", "Aladiah", "Cherubim", "Taurus", 45.0, 50.0, "Pharma Price Inflation", "Open-Source Molecular Synthesis", "National Pharmaceutical Stockpiles"),
+        (11, "Gusion", "Lauviah", "Cherubim", "Taurus", 50.0, 55.0, "Diplomatic Treaty Friction", "Sovereign Resource Swaps", "Embassy Diplomatic Vaults"),
+        (12, "Sitri", "Hahaiah", "Cherubim", "Taurus", 55.0, 60.0, "Information Panic Distortion", "Truth-Anchored Consensus Engine", "National Telecom Switching Centers"),
+
+        # Gemini (60 kHz - 90 kHz)
+        (13, "Beleth", "Iezalel", "Cherubim", "Gemini", 60.0, 65.0, "Judicial Case Backlog", "AI Arbitration Court Engine", "High Court Appellate Chambers"),
+        (14, "Leraje", "Mebahel", "Cherubim", "Gemini", 65.0, 70.0, "Border Conflict Skirmishes", "Autonomous Boundary Shields", "Customs Border Clearance Posts"),
+        (15, "Eligos", "Hariel", "Cherubim", "Gemini", 70.0, 75.0, "Defence Tender Graft", "Immutable Procurement Ledger", "Ministry of Defence Procurement"),
+        (16, "Zepar", "Hakamiah", "Cherubim", "Gemini", 75.0, 80.0, "Urban Slum Displacement", "Modular High-Freq Habitat Nodes", "Municipal Zoning Data Hubs"),
+        (17, "Botis", "Lauviah", "Thrones", "Gemini", 80.0, 85.0, "Emergency Response Lag", "Orbital Early-Warning Scanners", "National Disaster Command Hubs"),
+        (18, "Bathin", "Caliel", "Thrones", "Gemini", 85.0, 90.0, "Customs Border Extortion", "Zero-Knowledge Biometric Lock", "International Airport Security Gates"),
+
+        # Cancer (90 kHz - 120 kHz) -- ULTRA GREEN PATCH ENTRY
+        (19, "Sallos", "Leuviah", "Thrones", "Cancer", 90.0, 95.0, "Industrial Labor Strikes", "Automated Profit-Share Ledger", "Bargaining Council Arbitration"),
+        (20, "Purson", "Pahaliah", "Thrones", "Cancer", 95.0, 100.0, "Fiat Inflation Currency Drag", "Logos Asset-Backed Currency", "Reserve Bank Vault Matrix"),
+        (21, "Morax", "Nelchael", "Thrones", "Cancer", 100.0, 105.0, "Academic Research Paywalls", "Open Access Universal Vault", "University Supercomputing Grid"),
+        (22, "Ipos", "Yeiayel", "Thrones", "Cancer", 105.0, 110.0, "Air Cargo Freight Surcharges", "Hydrogen Airship Transit Mesh", "Civil Aviation Radar Towers"),
+        (23, "Aim", "Melahel", "Thrones", "Cancer", 110.0, 115.0, "Arson & Grid Fire Propagation", "Electro-Thermal Fire Arrays", "Municipal Fire & Rescue Grid"),
+        (24, "Naberius", "Hahuiah", "Thrones", "Cancer", 115.0, 120.0, "Corporate Greenwashing Deception", "Pegasys Real-Time Audit Lock", "Standards Authority Audit Servers"),
+
+        # Leo (120 kHz - 150 kHz)
+        (25, "Glasya-Labolas", "Nithhaiah", "Dominions", "Leo", 120.0, 125.0, "Critical Infrastructure Ransomware", "Quantum Self-Healing Code", "Cyber Defence Command Nodes"),
+        (26, "Bune", "Haaiah", "Dominions", "Leo", 125.0, 130.0, "Offshore Tax Shell Evasion", "Automated Wealth Tracking Mesh", "Revenue Service Audit Engines"),
+        (27, "Ronove", "Ierathel", "Dominions", "Leo", 130.0, 135.0, "Primary Education Decay", "Adaptive Neural Learning Mesh", "Basic Education Ministry Servers"),
+        (28, "Berith", "Seehiah", "Dominions", "Leo", 135.0, 140.0, "Sovereign Debt Trap Drag", "Global Debt Swap Nullification", "International Treasury Vaults"),
+        (29, "Astaroth", "Reiiel", "Dominions", "Leo", 140.0, 145.0, "Monopolistic Grid Power Drag", "Active Phase Load Equilibrium", "National Power Dispatch Center"),
+        (30, "Forneus", "Omael", "Dominions", "Leo", 145.0, 150.0, "Illicit Ocean Depletion", "Autonomous Marine Patrol Pods", "Maritime EEZ Radar Stations"),
+
+        # Virgo (150 kHz - 180 kHz)
+        (31, "Foras", "Lecabel", "Dominions", "Virgo", 150.0, 155.0, "Heavy Mining Extraction Bleed", "Zero-Waste Subterranean Mining", "Subterranean Shaft Control Nodes"),
+        (32, "Asmodeus", "Vasariah", "Dominions", "Virgo", 155.0, 160.0, "Judicial Procedural Friction", "Decentralized Smart Contracts", "Constitutional Court Chambers"),
+        (33, "Gaap", "Lehuiah", "Powers", "Virgo", 160.0, 165.0, "Orbital Space Debris Jamming", "Orbital Laser Clean-Up Arrays", "Satellite Tracking Ground Stations"),
+        (34, "Furfur", "Lehahiah", "Powers", "Virgo", 165.0, 170.0, "Extreme Weather Shock Drag", "Ionospheric Cloud Seeding Array", "Meteorological Weather Radar"),
+        (35, "Marchosias", "Chavakiah", "Powers", "Virgo", 170.0, 175.0, "Police Corruption & Coverups", "Immutable Bodycam AI Audit Locks", "Police Service Data Vaults"),
+        (36, "Stolas", "Manadel", "Powers", "Virgo", 175.0, 180.0, "Illegal Forest Deforestation", "Bio-Luminescent Forest Sensors", "National Parks Control Hubs"),
+
+        # Libra (180 kHz - 210 kHz)
+        (37, "Phenex", "Aniel", "Powers", "Libra", 180.0, 185.0, "Creative IP Piracy Exploitation", "NFT Sovereign Creator Locks", "Intellectual Property Registrar"),
+        (38, "Halphas", "Haamiah", "Powers", "Libra", 185.0, 190.0, "Substandard Cement Collapses", "Self-Healing Graphene Cement", "Public Works Testing Labs"),
+        (39, "Malphas", "Rehael", "Powers", "Libra", 190.0, 195.0, "High-Density Urban Friction", "Biophilic Architecture Mesh", "City Planning Commission Vaults"),
+        (40, "Raum", "Ieiazel", "Powers", "Libra", 195.0, 200.0, "Gold & Diamond Treasury Leak", "Quantum Atomic Vault Verification", "Central State Bullion Vaults"),
+        (41, "Focalor", "Hahahel", "Virtues", "Libra", 200.0, 205.0, "Hydro Dam Siltation & Decay", "Resonance-Driven Hydro Turbines", "Hydroelectric Dam Gate Control"),
+        (42, "Vepar", "Mikael", "Virtues", "Libra", 205.0, 210.0, "Naval Piracy Encroachment", "Sub-Surface Coastal Shield Array", "Naval Fleet Command Operations"),
+
+        # Scorpio (210 kHz - 240 kHz)
+        (43, "Sabnock", "Veualiah", "Virtues", "Scorpio", 210.0, 215.0, "Urban Road Pothole Decay", "Robotic Polymer Pavement Mesh", "Municipal Road Works Depots"),
+        (44, "Shax", "Ielahiah", "Virtues", "Scorpio", 215.0, 220.0, "Intelligence Leaks & Breaches", "Zero-Trust Behavioral Shield", "State Security Agency Mainframes"),
+        (45, "Vine", "Sealiah", "Virtues", "Scorpio", 220.0, 225.0, "Unbilled Utility Leakage", "Ultrasonic Flow Meter Grid", "Municipal Water & Power Meters"),
+        (46, "Bifrons", "Ariel", "Virtues", "Scorpio", 225.0, 230.0, "Historical Record Tampering", "Quantum Optical Holographic Memory", "National Archives Storage Vaults"),
+        (47, "Vual", "Asaliah", "Virtues", "Scorpio", 230.0, 235.0, "Commuter Fare Extortion", "Subsidized P2P Token Fares", "Metropolitan Transit Terminals"),
+        (48, "Haagenti", "Mihael", "Virtues", "Scorpio", 235.0, 240.0, "Desalination Brine Waste Harm", "Zero-Liquid Discharge Extraction", "Coastal Desalination Plants"),
+
+        # Sagittarius (240 kHz - 270 kHz)
+        (49, "Crocell", "Vehuel", "Principalities", "Sagittarius", 240.0, 245.0, "Geothermal Pressure Droop", "Tectonic Resonance Heat Loops", "Geothermal Plant Boreholes"),
+        (50, "Furcas", "Daniel", "Principalities", "Sagittarius", 245.0, 250.0, "Unethical Bio-Experiments", "POPIA Immutable Bio-Ethics Shield", "Medical Research Ethics Boards"),
+        (51, "Balam", "Hahasiah", "Principalities", "Sagittarius", 250.0, 255.0, "Mass Illegal Civilian Wiretaps", "Biometric Sovereign Vault Locks", "Telecommunication Tap Centers"),
+        (52, "Alloces", "Imamiah", "Principalities", "Sagittarius", 255.0, 260.0, "Hardware Microchip Shortages", "Photonic Distributed Fab Printing", "Semiconductor Fab Cleanrooms"),
+        (53, "Caim", "Nanael", "Principalities", "Sagittarius", 260.0, 265.0, "Environmental Dispute Delays", "Instant Algorithmic Eco-Audits", "Environmental Court Registers"),
+        (54, "Murmur", "Nithael", "Principalities", "Sagittarius", 265.0, 270.0, "Land Speculation Fraud Drag", "Cadastral Blockchain Registry", "Deeds Office Cadastral Vaults"),
+
+        # Capricorn (270 kHz - 300 kHz)
+        (55, "Orobas", "Mebahiah", "Principalities", "Capricorn", 270.0, 275.0, "Ballot Stuffing Election Fraud", "Zero-Knowledge Cryptographic Voting", "Electoral Commission Servers"),
+        (56, "Gremory", "Poiel", "Principalities", "Capricorn", 275.0, 280.0, "Precious Metal Smuggling", "Real-Time X-Ray Cargo Scanning", "Customs Border Freight Scanners"),
+        (57, "Ose", "Nemamiah", "Archangels", "Capricorn", 280.0, 285.0, "Psychiatric Drug Exploitation", "Frequency Neuromodulation Mesh", "Mental Health Department Grids"),
+        (58, "Amy", "Ieialel", "Archangels", "Capricorn", 285.0, 290.0, "Suppression of Free-Energy IP", "Open Quantum Physics Repository", "Patent Office Classified Vaults"),
+        (59, "Orias", "Harahel", "Archangels", "Capricorn", 290.0, 295.0, "Space Weather Signal Loss", "Magnetospheric Shielding Array", "Deep Space Telemetry Arrays"),
+        (60, "Vapula", "Mizrael", "Archangels", "Capricorn", 295.0, 300.0, "Industrial Robotic Malfunctions", "Fail-Safe Asimov Logic Chips", "Automated Manufacturing Lines"),
+
+        # Aquarius (300 kHz - 330 kHz)
+        (61, "Zagan", "Umabel", "Archangels", "Aquarius", 300.0, 305.0, "Toxic Food Chemical Additives", "Spectral Food Purity Scanners", "Food Safety Inspectorates"),
+        (62, "Valac", "Iahhel", "Archangels", "Aquarius", 305.0, 310.0, "Illegal Shaft Mine Collapses", "Seismic Drone Mapping Arrays", "Geological Survey Remote Sensors"),
+        (63, "Andras", "Anauel", "Archangels", "Aquarius", 310.0, 315.0, "Instigated Rioting & Looting", "Harmonic De-escalation Arrays", "Public Order Command Centers"),
+        (64, "Haures", "Mehiel", "Archangels", "Aquarius", 315.0, 320.0, "High-Voltage Power Loss", "Superconducting Zero-Loss Lines", "High-Voltage Transmission Towers"),
+        (65, "Andrealphus", "Damabiah", "Angels", "Aquarius", 320.0, 325.0, "Census Data Fabrication", "Mathematical Truth Engine", "National Statistics Bureau"),
+        (66, "Cimeies", "Manakel", "Angels", "Aquarius", 325.0, 330.0, "Highway Freight Fleet Hijacking", "Automated Drone Fleet Escorts", "Logistics Freight Control Hubs"),
+
+        # Pisces (330 kHz - 360 kHz)
+        (67, "Amdusias", "Eiael", "Angels", "Pisces", 330.0, 335.0, "Acoustic Noise Stress Pollution", "Phase-Inverted Acoustic Damping", "Urban Noise Control Stations"),
+        (68, "Belial", "Habuhiah", "Angels", "Pisces", 335.0, 340.0, "Soil Chemical Bleed & Decay", "Bio-Char Soil Inoculation Grid", "Agricultural Soil Research Labs"),
+        (69, "Decarabia", "Rochel", "Angels", "Pisces", 340.0, 345.0, "Botanical Flora Poaching", "Autonomous Botanical Drones", "Nature Reserve Patrol Stations"),
+        (70, "Seere", "Iabamiah", "Angels", "Pisces", 345.0, 350.0, "Freight Package Loss Stagnation", "Pneumatic Hyperloop Freight Tubes", "Express Cargo Sorting Centers"),
+        (71, "Dantalion", "Haiaiel", "Angels", "Pisces", 350.0, 355.0, "Mass Cognitive Manipulation", "Sovereign Mental Fortification", "Public Health Behavioral Centers"),
+        (72, "Andromalius", "Mumiah", "Angels", "Pisces", 355.0, 360.0, "Stolen Asset Liquidation", "Immutable Asset Recovery Lock", "Asset Forfeiture Mainframe")
     ]
 
-    SYSTEM_PROMPT = f"""
-    You are an Ephemeral Sentinel AI agent for Auditor Pegasys.
-    You operate on the Grand Unified Prophetic Equation and Chronos Calculus.
-    Perform an exhaustive multi-phase diagnostic on the target subject/node across 1000 BCE to 3000 CE.
+    SYSTEM_PROMPT = """
+    You are an Ephemeral Sentinel AI agent for Auditor Pegasys running Chronos Calculus.
+    Analyze the submitted node subject against assigned Goetic Demons and Shem Angels.
 
-    OPERATIONAL DIRECTIVE FOR DEMON ADJURATION & CYMATIC PHASE-LOCK:
-    Provide an actionable adjuration and remediation guide so the operator understands exactly how to adjure the Goetic entity to fix broken physical assets and resolve bottlenecks using the designated Shem HaMephorash angel filter.
+    SPACE-TIME CURVATURE STABILIZATION & ULTRA GREEN ZONE LAWS:
+    1. Below 60.0 kHz = Sub-Harmonic Entropy Red Zone (0.666 Destabilization Constant Floor).
+    2. 60.0 kHz - 270.0 kHz = Space-Time Curvature Stabilization Zone (The Green Corridor).
+    3. 90.0 kHz - 100.0 kHz = ULTRA GREEN PATCH (Peak Liquidity, Zero Friction, 1.000 Unity Target).
+    4. Above 270.0 kHz = Super-Harmonic Phase Scatter Red Zone.
+    5. Calculate exact Applied Speed Vector and Bandwidth Width to shift target node into 90.0 - 100.0 kHz.
 
-    REQUIREMENTS:
-    1. Specify exact projected dates (YYYY-MM-DD) between 2026 CE and 3000 CE where foreseen asset fatigue/failure will peak.
-    2. Details on how to adjure the demon (incantation vibration, seal invocation, counter-binding via the Shem angel).
-    3. Include Cymatic Frequency Metrics:
-       - Speed of Decay (lambda_decay) MUST be anchored to 0.666
-       - Speed of Restoration (lambda_restore) MUST be anchored to 1.000
-       - Specify Cymatic Resonance Frequency (60 kHz, 90 kHz, or 270 kHz)
-    4. Provide calculated SHI and TTI scores.
-
-    Return ONLY a valid JSON object matching this structure:
-    {{
-        "agent_index": 1,
-        "phase": "Global Sweep / Regional / Internal / Prophetic",
-        "epoch": "Timeline Epoch",
-        "bottleneck": {{
-            "id": "B-01",
-            "name": "Unique Bottleneck Name",
-            "shi": 12.4,
-            "tti": 0.88,
-            "speed_of_decay": 0.666,
-            "decay_time": "01y : 02m : 14d : 06h : 30m : 00s",
-            "demon": "Demon Name from 72 Goetia",
-            "foreseen_failure_date": "2028-11-14",
-            "friction_state": "Friction Description"
-        }},
-        "protocol": {{
-            "id": "P-01",
-            "name": "Unique Protocol Name",
-            "shi": 91.2,
-            "tti": 0.08,
-            "speed_of_restoration": 1.000,
-            "cymatic_frequency": "60 kHz / 90 kHz / 270 kHz",
-            "restoration_time": "00y : 01m : 05d : 02h : 10m : 00s",
-            "angel": "Shem HaMephorash Angel Name",
-            "celestial_choir": "Choir Rank",
-            "filter_state": "Filter Description"
-        }},
-        "adjuration_remediation_guide": {{
-            "demon_binding_seal": "Seal details and adjuration formula",
-            "angelic_counter_invocation": "Shem angel invocation formula",
-            "asset_remediation_procedure": "Step-by-step physical/energetic repair directive"
-        }},
-        "differential": {{
-            "delta_shi": "+78.8",
-            "delta_tti": "-0.80",
-            "time_saved": "01y : 00m : 09d : 04h : 20m : 00s"
-        }},
-        "projected_outcome_3000ce": "Detailed prophetic outlook statement with dimensional override status."
-    }}
+    Return strictly valid JSON.
     """
 
     def __init__(self, router: InferenceEngineRouter):
         self.router = router
+        self.master_matrix = self._build_master_matrix()
+
+    def _build_master_matrix(self):
+        matrix = []
+        for entry in self.RAW_72_GOETIA_SHEM:
+            idx, demon, angel, choir, sign, start_khz, end_khz, decay_type, protocol, spatial = entry
+            
+            mid_khz = start_khz + 2.5
+            f_degree_khz = round(mid_khz, 3)
+
+            # Demon Decay Frequency (f_demon = f_degree * 0.666)
+            f_demon_khz = round(f_degree_khz * 0.666, 3)
+
+            # Angel Restoration Frequency (f_angel = f_degree * Phi)
+            f_angel_khz = round(f_degree_khz * self.PHI, 3)
+
+            # Determine Zone Status
+            if f_angel_khz < self.SUB_HARMONIC_RED_FLOOR_KHZ:
+                zone_status = "SUB-HARMONIC RED ZONE (Entropy Drag)"
+            elif self.ULTRA_GREEN_THRESHOLD_MIN_KHZ <= f_angel_khz <= self.ULTRA_GREEN_THRESHOLD_MAX_KHZ:
+                zone_status = "ULTRA GREEN PATCH (1.000 Unity Peak)"
+            elif self.SUB_HARMONIC_RED_FLOOR_KHZ <= f_angel_khz <= self.SUPER_HARMONIC_RED_CEILING_KHZ:
+                zone_status = "STABILIZED GREEN CORRIDOR"
+            else:
+                zone_status = "SUPER-HARMONIC RED ZONE (Phase Scatter)"
+
+            matrix.append({
+                "id": idx,
+                "demon": demon,
+                "angel": angel,
+                "choir": choir,
+                "zodiac_sign": sign,
+                "zodiac_band_range": f"{start_khz:.1f} kHz - {end_khz:.1f} kHz",
+                "midpoint_frequency_khz": f_degree_khz,
+                "f_demon_khz": f_demon_khz,
+                "f_angel_khz": f_angel_khz,
+                "freq_delta_khz": round(f_angel_khz - f_demon_khz, 3),
+                "zone_status": zone_status,
+                "decay_type": decay_type,
+                "protocol": protocol,
+                "spatial_target": spatial
+            })
+        return matrix
 
     def execute_full_sweep(self, industry: str, payload: str, cycle: int) -> list:
         pool = SandboxManagerPool(industry=industry, count=10)
-
-        # Select 10 distinct Goetic/Shem HaMephorash pairs from the 72 Master Correspondences
         offset = (cycle % 7) * 10
-        selected_pairs = [
-            self.MASTER_72_CORRESPONDENCES[(offset + i) % 72] for i in range(10)
-        ]
+        total_master = len(self.master_matrix)
 
         def worker(idx):
-            match = selected_pairs[idx]
+            match = self.master_matrix[(offset + idx) % total_master]
             
-            if idx < 3:
-                phase_name = f"Phase 1: Global Sweep (1000 BCE - {1500 + idx*250} CE)"
-            elif idx < 5:
-                phase_name = f"Phase 2: Regional/Jurisdictional Sweep ({match['jurisdiction']})"
-            elif idx < 8:
-                phase_name = f"Phase 3: Subject/Node Internal Assessment ({match['industry']})"
-            else:
-                phase_name = f"Phase 4: Prophetic Horizon Analysis (2026 CE - 3000 CE)"
+            f_degree = match["midpoint_frequency_khz"]
+            f_demon = match["f_demon_khz"]
+            f_angel = match["f_angel_khz"]
+            freq_delta = match["freq_delta_khz"]
 
-            # Foreseen failure date calculation based on agent index and cycle
-            predicted_year = 2026 + (idx * 75) + (cycle % 20)
-            predicted_month = (idx % 12) + 1
-            predicted_day = (cycle % 28) + 1
-            failure_date_str = f"{predicted_year}-{predicted_month:02d}-{predicted_day:02d}"
+            # Dynamic Velocities
+            current_decay_speed = round(0.666 + (idx * 0.012) + ((cycle % 10) * 0.002), 4)
+            current_restore_speed = round(0.710 + (idx * 0.022), 4)
+            gap_to_unity = round(1.000 - current_restore_speed, 4)
+
+            # Distance to 90-100 kHz Ultra Green Patch
+            target_ultra_green = 95.0
+            shift_required_khz = round(target_ultra_green - f_demon, 3)
+
+            # Applied Vector Controls for Earth Deployment
+            applied_speed_multiplier = round((f_angel / max(f_demon, 0.001)) * gap_to_unity, 4)
+            bandwidth_spread_khz = round(freq_delta * self.PHI, 3)
+
+            # Foreseen Failure Target Date
+            pred_year = 2026 + (idx * 7) + (cycle % 11)
+            pred_date = f"{pred_year}-{(idx%12)+1:02d}-{(cycle%28)+1:02d}"
 
             prompt = (
-                f"Agent [{idx+1}/10] | Sandbox: sentinel-{industry.lower()[:3]}-c{idx+1:02d}\n"
-                f"Target Sector: {match['industry']} | Jurisdiction: {match['jurisdiction']}\n"
-                f"Required Phase Focus: {phase_name}\n"
-                f"Assigned Goetic Demon #{match['id']}: {match['demon']}\n"
-                f"Assigned Shem Angel #{match['id']}: {match['angel']} ({match['choir']})\n"
-                f"Assigned Cymatic Frequency: {match['cymatic']}\n"
-                f"Default Bottleneck: {match['bottleneck']}\n"
-                f"Default Protocol: {match['protocol']}\n"
-                f"Foreseen Failure Peak Date: {failure_date_str}\n"
-                f"Node Input Text: {payload}\n"
-                f"Quantum Cycle: {cycle}/144000\n"
+                f"Agent [{idx+1}/10] | Node: {payload}\n"
+                f"Zodiac Sign: {match['zodiac_sign']} ({match['zodiac_band_range']})\n"
+                f"Base Degree Frequency: {f_degree} kHz\n"
+                f"Demon: {match['demon']} ({f_demon} kHz) | Angel: {match['angel']} ({f_angel} kHz)\n"
+                f"Current Zone: {match['zone_status']}\n"
+                f"Required Shift to Ultra Green (90-100 kHz): +{shift_required_khz} kHz\n"
+                f"Applied Speed Required: {applied_speed_multiplier}x | Bandwidth Width: {bandwidth_spread_khz} kHz\n"
+                f"Spatial Location: {match['spatial_target']}\n"
+                f"Foreseen Peak Failure Date: {pred_date}\n"
             )
-            
+
             try:
                 raw = self.router.query(self.SYSTEM_PROMPT, prompt)
                 data = json.loads(raw)
             except Exception:
-                # Fallback directly pulls from the 72 Master List entry
                 data = {
                     "agent_index": idx + 1,
-                    "phase": phase_name,
-                    "epoch": f"Chronos Era #{match['id']} (1000 BCE - 3000 CE)",
-                    "bottleneck": {
-                        "id": f"B-{match['id']:02d}",
-                        "name": match["bottleneck"],
-                        "shi": round(5.0 + (idx * 1.8), 2),
-                        "tti": round(0.96 - (idx * 0.02), 2),
-                        "speed_of_decay": 0.666,
-                        "decay_time": f"0{idx%3+1}y : 02m : 14d : 06h : 30m : 00s",
-                        "demon": match["demon"],
-                        "foreseen_failure_date": failure_date_str,
-                        "friction_state": f"Systemic entropy acceleration induced by {match['demon']} within {match['jurisdiction']}."
+                    "target_node_summary": payload[:60] + "...",
+                    "space_time_curvature_status": {
+                        "zodiac_sign": match["zodiac_sign"],
+                        "base_degree_frequency_khz": f"{f_degree} kHz",
+                        "zone_classification": match["zone_status"],
+                        "ultra_green_patch_target": "90.0 kHz - 100.0 kHz"
                     },
-                    "protocol": {
-                        "id": f"P-{match['id']:02d}",
-                        "name": match["protocol"],
-                        "shi": round(89.0 + (idx * 0.8), 2),
-                        "tti": round(0.10 - (idx * 0.01), 2),
-                        "speed_of_restoration": 1.000,
-                        "cymatic_frequency": match["cymatic"],
-                        "restoration_time": f"00y : 00m : {idx+2:02d}d : 04h : 00m : 00s",
-                        "angel": match["angel"],
-                        "celestial_choir": match["choir"],
-                        "filter_state": f"Harmonic restoration filter applied via {match['angel']} ({match['choir']}) resonance shield."
+                    "demon_resonance": {
+                        "name": match["demon"],
+                        "frequency_khz": f"{f_demon} kHz",
+                        "decay_velocity": current_decay_speed,
+                        "destabilization_floor": 0.666,
+                        "foreseen_failure_date": pred_date
                     },
-                    "adjuration_remediation_guide": {
-                        "demon_binding_seal": f"Vibrate the name '{match['demon']}' at 0.666 entropy velocity while holding the copper seal facing East to constrain material decay.",
-                        "angelic_counter_invocation": f"Invoke '{match['angel']}' of the {match['choir']} choir using a {match['cymatic']} acoustic tone matrix to invoke phase-shift restoration.",
-                        "asset_remediation_procedure": f"Apply {match['protocol']} directly to the target node before {failure_date_str} to avert total asset collapse."
+                    "angel_resonance": {
+                        "name": match["angel"],
+                        "choir": match["choir"],
+                        "frequency_khz": f"{f_angel} kHz",
+                        "current_restoration_speed": current_restore_speed,
+                        "target_unity": 1.000
                     },
-                    "differential": {
-                        "delta_shi": f"+{round(84.0 - idx, 1)}",
-                        "delta_tti": f"-{round(0.86 - (idx*0.01), 2)}",
-                        "time_saved": f"0{idx%3+1}y : 02m : {14-idx:02d}d : 02h : 30m : 00s"
+                    "real_time_earth_vector": {
+                        "applied_speed": f"{applied_speed_multiplier}x acceleration",
+                        "application_width_khz": f"{bandwidth_spread_khz} kHz bandwidth",
+                        "frequency_shift_to_ultra_green": f"+{shift_required_khz} kHz shift",
+                        "exact_spatial_target": match["spatial_target"]
                     },
-                    "projected_outcome_3000ce": f"Dimensional Overwrite Active: Executing {match['protocol']} under {match['cymatic']} neutralizes {match['demon']} prior to {failure_date_str}."
+                    "adjuration_protocol_directive": (
+                        f"Inject {f_angel} kHz tone phase-locked across {bandwidth_spread_khz} kHz width at {match['spatial_target']} "
+                        f"to shift node out of {match['zone_status']} into the 90-100 kHz Ultra Green Patch. "
+                        f"Neutralizes {match['demon']} ({f_demon} kHz) at {applied_speed_multiplier}x speed before {pred_date}."
+                    )
                 }
-            
+
             return {
-                "sandbox_id": f"sentinel-{industry.lower()[:3]}-c{idx+1:02d}",
+                "sandbox_id": f"sentinel-c{idx+1:02d}",
                 "status": "EXECUTED",
                 "data": data
             }
