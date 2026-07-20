@@ -1,8 +1,32 @@
 name: Auditor Pegasys Chronos Sweep Engine
 
 on:
+  # Allows triggering via WordPress / API
   repository_dispatch:
     types: [pegasys_hunt_event]
+  
+  # Allows manual triggering directly from the GitHub Actions Tab UI
+  workflow_dispatch:
+    inputs:
+      alias:
+        description: 'User Identifier / Alias'
+        required: false
+        default: 'Manual_Shinobi_User'
+      location:
+        description: 'Target Jurisdiction'
+        required: false
+        default: 'South Africa'
+      industry:
+        description: 'Industry Classification'
+        required: false
+        default: 'Energy Infrastructure'
+      payload:
+        description: 'Target Node Paragraph Block'
+        required: false
+        default: 'Grid corruption and capacity constraints causing local downtime.'
+
+permissions:
+  contents: write
 
 jobs:
   run-pegasys-audit:
@@ -11,6 +35,8 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
+        with:
+          persist-credentials: true
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -26,7 +52,12 @@ jobs:
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           NVIDIA_NIM_API_KEY: ${{ secrets.NVIDIA_NIM_API_KEY }}
-          CLIENT_PAYLOAD: ${{ toJson(github.event.client_payload) }}
+          # Handles both API Dispatches (WordPress) and Manual Runs from Actions Tab
+          EVENT_PAYLOAD: ${{ toJson(github.event.client_payload) }}
+          INPUT_ALIAS: ${{ inputs.alias }}
+          INPUT_LOCATION: ${{ inputs.location }}
+          INPUT_INDUSTRY: ${{ inputs.industry }}
+          INPUT_PAYLOAD: ${{ inputs.payload }}
         run: |
           python -c "
           import os, json
@@ -36,26 +67,27 @@ jobs:
           from core.prophetic_calculator import PropheticCalculatorEngine
           from sweep.chronos import FullStackChronosEngine
 
-          # Load incoming event payload from WordPress
-          payload_data = json.loads(os.environ.get('CLIENT_PAYLOAD', '{}'))
-          alias = payload_data.get('alias', 'AnonymousUser')
-          location = payload_data.get('location', 'South Africa')
-          industry = payload_data.get('industry', 'Socio-Economic Grid')
-          payload = payload_data.get('payload', 'Systemic Friction Node')
+          # Extract data from dispatch OR manual UI inputs
+          event_data = json.loads(os.environ.get('EVENT_PAYLOAD') or '{}')
+          
+          alias = event_data.get('alias') or os.environ.get('INPUT_ALIAS') or 'Shinobi_User'
+          location = event_data.get('location') or os.environ.get('INPUT_LOCATION') or 'South Africa'
+          industry = event_data.get('industry') or os.environ.get('INPUT_INDUSTRY') or 'Energy Infrastructure'
+          payload = event_data.get('payload') or os.environ.get('INPUT_PAYLOAD') or 'Systemic Friction Node'
 
-          # Generate Compliance & Mathematics
+          # Generate Compliance Security & Temporal Clock
           session = ComplianceSession(alias)
           token = session.generate_ecta_token(payload)
           q_cycle = QuantumClockEngine.get_current_cycle()
           q_header = QuantumClockEngine.get_temporal_header()
           math_results = PropheticCalculatorEngine.solve_synthesis()
 
-          # Run 10 NVIDIA NIM Sentinels
+          # Run 10 NVIDIA NIM Sentinel AI Agents
           router = InferenceEngineRouter()
           chronos = FullStackChronosEngine(router)
           sweep_results = chronos.execute_full_sweep(industry, payload, q_cycle)
 
-          # Write results output
+          # Output Results JSON
           output_data = {
               'security': token,
               'quantum_header': q_header,
@@ -68,10 +100,11 @@ jobs:
               json.dump(output_data, f, indent=2)
           "
 
-      - name: Commit & Push Results
+      - name: Commit and Push Updated Audit Results
         run: |
-          git config --global user.name "Pegasys-Bot"
-          git config --global user.email "pegasys@celsiusmediagroup.co.za"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git pull --rebase
           git add last_audit_results.json
-          git commit -m "Audit Completed via Dispatch [skip ci]" || exit 0
+          git commit -m "Audit Completed via Pegasys Engine [skip ci]" || exit 0
           git push
