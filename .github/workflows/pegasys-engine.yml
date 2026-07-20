@@ -1,8 +1,11 @@
 name: Auditor Pegasys Chronos Sweep Engine
 
 on:
+  # Triggered remotely via API / WordPress
   repository_dispatch:
     types: [pegasys_hunt_event]
+    
+  # Triggered manually via GitHub Actions Tab UI
   workflow_dispatch:
     inputs:
       alias:
@@ -63,7 +66,7 @@ jobs:
           from core.prophetic_calculator import PropheticCalculatorEngine
           from sweep.chronos import FullStackChronosEngine
 
-          # Extract data safely
+          # Safely handle raw payload string from API or manual trigger
           raw_payload = os.environ.get('EVENT_PAYLOAD')
           event_data = {}
           if raw_payload and raw_payload != 'null':
@@ -74,6 +77,7 @@ jobs:
               except Exception:
                   event_data = {}
 
+          # Fallback check ensures event_data is always a valid dictionary
           alias = event_data.get('alias') or os.environ.get('INPUT_ALIAS') or 'Shinobi_User'
           location = event_data.get('location') or os.environ.get('INPUT_LOCATION') or 'South Africa'
           industry = event_data.get('industry') or os.environ.get('INPUT_INDUSTRY') or 'Energy Infrastructure'
@@ -81,6 +85,7 @@ jobs:
 
           print(f'=== STARTING PEGASYS AUDIT FOR: {alias} [{location}] ===')
 
+          # Generate Compliance Security & Temporal Clock
           session = ComplianceSession(alias)
           token = session.generate_ecta_token(payload)
           q_cycle = QuantumClockEngine.get_current_cycle()
@@ -90,10 +95,12 @@ jobs:
           print(f'Temporal Header: {q_header}')
           print(f'Calculated SHI: {math_results[\"shi\"]}')
 
+          # Run 10 NVIDIA NIM Sentinel AI Agents across timeline
           router = InferenceEngineRouter()
           chronos = FullStackChronosEngine(router)
           sweep_results = chronos.execute_full_sweep(industry, payload, q_cycle)
 
+          # Output Results to JSON
           output_data = {
               'security': token,
               'quantum_header': q_header,
@@ -108,11 +115,11 @@ jobs:
           print('=== AUDIT COMPLETE: last_audit_results.json WRITTEN ===')
           "
 
-      - name: Push Results to Repository
+      - name: Commit and Push Updated Audit Results
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git pull origin main --rebase || true
           git add last_audit_results.json
-          git commit -m "Update audit results [skip ci]" || exit 0
+          git commit -m "Update audit results via Pegasys Engine [skip ci]" || exit 0
           git push origin main
