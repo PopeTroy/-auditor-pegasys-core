@@ -1,62 +1,75 @@
 import os
 import json
 import sys
+import uuid
+import hashlib
+from datetime import datetime, timezone
+
 from core.compliance import ComplianceSession
-from core.quantum_clock import QuantumClockEngine
 from core.inference_router import InferenceEngineRouter
 from core.prophetic_calculator import PropheticCalculatorEngine
 from sweep.chronos import FullStackChronosEngine
 
+def calculate_144k_quantum_cycle():
+    """
+    Computes the exact Quantum Cycle within the 24-hour clock (1:6000 ratio).
+    24 Hours = 86,400 Linear UTC Seconds = 144,000 Quantum Cycles.
+    1 Linear Second = 1.666667 Quantum Cycles.
+    """
+    now = datetime.now(timezone.utc)
+    seconds_today = (now.hour * 3600) + (now.minute * 60) + now.second + (now.microsecond / 1_000_000.0)
+    
+    # 1:6000 ratio scaling
+    quantum_cycle = int((seconds_today / 86400.0) * 144000)
+    return quantum_cycle, now.isoformat()
+
 def main():
-    # Parse inputs from environment
+    # 1. Extract Single Subject / Node Input
     raw_payload = os.environ.get('EVENT_PAYLOAD')
-    event_data = {}
+    node_text = ""
+    
     if raw_payload and raw_payload != 'null':
         try:
             parsed = json.loads(raw_payload)
             if isinstance(parsed, dict):
-                event_data = parsed
+                node_text = parsed.get('node_payload') or parsed.get('payload') or ""
         except Exception:
-            event_data = {}
+            node_text = ""
 
-    alias = event_data.get('alias') or os.environ.get('INPUT_ALIAS') or 'Shinobi_User'
-    location = event_data.get('location') or os.environ.get('INPUT_LOCATION') or 'South Africa'
-    industry = event_data.get('industry') or os.environ.get('INPUT_INDUSTRY') or 'Energy Infrastructure'
-    payload = event_data.get('payload') or os.environ.get('INPUT_PAYLOAD') or 'Systemic Friction Node'
+    if not node_text:
+        node_text = os.environ.get('INPUT_NODE') or "Unspecified Sovereign Node"
 
-    print(f"=== [STARTING PEGASYS AUDIT] ===")
-    print(f"User Alias : {alias}")
-    print(f"Location   : {location}")
-    print(f"Industry   : {industry}")
-    print(f"Payload    : {payload}\n")
+    # 2. Compute 1:6000 Quantum Ratio Clock & Unique POPIA/ECTA Session GUID
+    quantum_cycle, utc_iso = calculate_144k_quantum_cycle()
+    
+    # Generate unique Session GUID seeded by node hash + current micro-cycle
+    node_hash = hashlib.sha256(f"{node_text}_{utc_iso}".encode('utf-8')).hexdigest()
+    session_guid = str(uuid.uuid5(uuid.NAMESPACE_DNS, node_hash))
+    ecta_hash = f"sha256:{node_hash}"
 
-    # 1. Security & Clock
-    session = ComplianceSession(alias)
-    token = session.generate_ecta_token(payload)
-    q_cycle = QuantumClockEngine.get_current_cycle()
-    q_header = QuantumClockEngine.get_temporal_header()
+    print(f"=== [AUDITOR PEGASYS SINGLE-NODE HUNT] ===")
+    print(f"SESSION GUID   : {session_guid}")
+    print(f"TEMPORAL LOCK  : QUANTUM-CYCLE: {quantum_cycle:06d} / 144000")
+    print(f"ECTA HASH      : {ecta_hash}")
+    print(f"TARGET NODE    : {node_text[:80]}...\n")
+
+    # 3. Prophetic Calculator & Chronos Sweep
     math_results = PropheticCalculatorEngine.solve_synthesis()
-
-    print(f"[TEMPORAL LOCK] {q_header}")
-    print(f"[SHI MATH] SHI = {math_results['shi']} | TTI = {math_results['tti']} | Freq = {math_results['frequency']} Hz\n")
-
-    # 2. Chronos Deep Sweep
-    print(f"[EXECUTING 10 SENTINEL SWEEP (1000 BCE - 3000 CE)...]")
     router = InferenceEngineRouter()
     chronos = FullStackChronosEngine(router)
-    sweep_results = chronos.execute_full_sweep(industry, payload, q_cycle)
+    
+    # Pass node text to 10 Sentinels
+    sweep_results = chronos.execute_full_sweep("Sovereign Node Diagnostics", node_text, quantum_cycle)
 
-    print("\n=== [REASONING & SWEEP RESULTS] ===")
-    for i, res in enumerate(sweep_results, 1):
-        print(f"Sentinel-{i:02d} | Epoch: {res.get('epoch')} | Demon: {res.get('demon')} | Angel: {res.get('angel')}")
-        print(f"  Friction: {res.get('origin')}")
-        print(f"  Outcome : {res.get('outcome')}\n")
-
-    # 3. Output JSON
+    # 4. Output Clean JSON
     output_data = {
-        'security': token,
-        'quantum_header': q_header,
-        'quantum_cycle': q_cycle,
+        'security': {
+            'session_guid': session_guid,
+            'utc_timestamp': utc_iso,
+            'ecta_hash': ecta_hash
+        },
+        'quantum_header': f"QUANTUM-CYCLE: {quantum_cycle:06d} / 144000",
+        'quantum_cycle': quantum_cycle,
         'mathematics': math_results,
         'chronos_sweep': sweep_results
     }
@@ -64,8 +77,8 @@ def main():
     with open('last_audit_results.json', 'w') as f:
         json.dump(output_data, f, indent=2)
 
-    print("=== [AUDIT COMPLETE: last_audit_results.json WRITTEN] ===")
-    sys.exit(0) # Force immediate exit
+    print("=== [AUDIT COMPLETE: UNIQUE NODE RESULTS WRITTEN] ===")
+    sys.exit(0)
 
 if __name__ == "__main__":
     main()
