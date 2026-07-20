@@ -1,11 +1,8 @@
 name: Auditor Pegasys Chronos Sweep Engine
 
 on:
-  # Allows triggering via WordPress / API
   repository_dispatch:
     types: [pegasys_hunt_event]
-  
-  # Allows manual triggering directly from the GitHub Actions Tab UI
   workflow_dispatch:
     inputs:
       alias:
@@ -52,7 +49,6 @@ jobs:
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           NVIDIA_NIM_API_KEY: ${{ secrets.NVIDIA_NIM_API_KEY }}
-          # Handles both API Dispatches (WordPress) and Manual Runs from Actions Tab
           EVENT_PAYLOAD: ${{ toJson(github.event.client_payload) }}
           INPUT_ALIAS: ${{ inputs.alias }}
           INPUT_LOCATION: ${{ inputs.location }}
@@ -67,9 +63,18 @@ jobs:
           from core.prophetic_calculator import PropheticCalculatorEngine
           from sweep.chronos import FullStackChronosEngine
 
-          # Extract data from dispatch OR manual UI inputs
-          event_data = json.loads(os.environ.get('EVENT_PAYLOAD') or '{}')
-          
+          # Safely handle raw payload string
+          raw_payload = os.environ.get('EVENT_PAYLOAD')
+          event_data = {}
+          if raw_payload and raw_payload != 'null':
+              try:
+                  parsed = json.loads(raw_payload)
+                  if isinstance(parsed, dict):
+                      event_data = parsed
+              except json.JSONDecodeError:
+                  event_data = {}
+
+          # Fallback check ensures event_data is always a dictionary
           alias = event_data.get('alias') or os.environ.get('INPUT_ALIAS') or 'Shinobi_User'
           location = event_data.get('location') or os.environ.get('INPUT_LOCATION') or 'South Africa'
           industry = event_data.get('industry') or os.environ.get('INPUT_INDUSTRY') or 'Energy Infrastructure'
