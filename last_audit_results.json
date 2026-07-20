@@ -1,11 +1,11 @@
 {
   "security": {
-    "session_guid": "076aaa84-000c-59fa-8a18-228ba894975f",
-    "utc_timestamp": "2026-07-20T11:28:33.631416+00:00",
-    "ecta_hash": "sha256:e32a878c5dfbac652358f7f5338471ce7a35996815191c785ba0ff920873d38c"
+    "session_guid": "44294119-96f3-5437-b64a-25e249fca75e",
+    "utc_timestamp": "2026-07-20T11:39:34.582223+00:00",
+    "ecta_hash": "sha256:bfcde6c2b58f75492a178c4084843172edf1cab6f63e5403723ad8558dc11158"
   },
-  "quantum_header": "QUANTUM-CYCLE: 068856 / 144000",
-  "quantum_cycle": 68856,
+  "quantum_header": "QUANTUM-CYCLE: 069957 / 144000",
+  "quantum_cycle": 69957,
   "mathematics": {
     "shi": 20571.43,
     "tti": 0.0,
@@ -17,433 +17,433 @@
   },
   "chronos_sweep": [
     {
-      "sandbox_id": "sentinel-ene-c01",
+      "sandbox_id": "sentinel-sov-c01",
       "status": "EXECUTED",
       "data": {
         "agent_index": 1,
         "phase": "Phase 1: Global Sweep (1000 BCE - 1500 CE)",
-        "epoch": "Chronos Era #41 (1000 BCE - 3000 CE)",
+        "epoch": "Chronos Era #61 (1000 BCE - 3000 CE)",
         "bottleneck": {
-          "id": "B-41",
-          "name": "Dam Siltation & Turbine Decay",
+          "id": "B-61",
+          "name": "Toxic Chemical Additives & Adulteration",
           "shi": 5.0,
           "tti": 0.96,
           "speed_of_decay": 0.666,
           "decay_time": "01y : 02m : 14d : 06h : 30m : 00s",
-          "demon": "Focalor",
-          "foreseen_failure_date": "2042-01-05",
-          "friction_state": "Systemic entropy acceleration induced by Focalor within River Basin Commissions."
+          "demon": "Zagan",
+          "foreseen_failure_date": "2043-01-14",
+          "friction_state": "Systemic entropy acceleration induced by Zagan within Food Safety Agencies."
         },
         "protocol": {
-          "id": "P-41",
-          "name": "Resonance-Driven Hydro Turbines",
+          "id": "P-61",
+          "name": "Spectral Food Purity Scanning",
           "shi": 89.0,
           "tti": 0.1,
           "speed_of_restoration": 1.0,
-          "cymatic_frequency": "90 kHz (Fluid Vector Resonance)",
+          "cymatic_frequency": "60 kHz (Structural Nodal Alignment)",
           "restoration_time": "00y : 00m : 02d : 04h : 00m : 00s",
-          "angel": "Hahahel",
-          "celestial_choir": "Virtues",
-          "filter_state": "Harmonic restoration filter applied via Hahahel (Virtues) resonance shield."
+          "angel": "Umabel",
+          "celestial_choir": "Archangels",
+          "filter_state": "Harmonic restoration filter applied via Umabel (Archangels) resonance shield."
         },
         "adjuration_remediation_guide": {
-          "demon_binding_seal": "Vibrate the name 'Focalor' at 0.666 entropy velocity while holding the copper seal facing East to constrain material decay.",
-          "angelic_counter_invocation": "Invoke 'Hahahel' of the Virtues choir using a 90 kHz (Fluid Vector Resonance) acoustic tone matrix to invoke phase-shift restoration.",
-          "asset_remediation_procedure": "Apply Resonance-Driven Hydro Turbines directly to the target node before 2042-01-05 to avert total asset collapse."
+          "demon_binding_seal": "Vibrate the name 'Zagan' at 0.666 entropy velocity while holding the copper seal facing East to constrain material decay.",
+          "angelic_counter_invocation": "Invoke 'Umabel' of the Archangels choir using a 60 kHz (Structural Nodal Alignment) acoustic tone matrix to invoke phase-shift restoration.",
+          "asset_remediation_procedure": "Apply Spectral Food Purity Scanning directly to the target node before 2043-01-14 to avert total asset collapse."
         },
         "differential": {
           "delta_shi": "+84.0",
           "delta_tti": "-0.86",
           "time_saved": "01y : 02m : 14d : 02h : 30m : 00s"
         },
-        "projected_outcome_3000ce": "Dimensional Overwrite Active: Executing Resonance-Driven Hydro Turbines under 90 kHz (Fluid Vector Resonance) neutralizes Focalor prior to 2042-01-05."
+        "projected_outcome_3000ce": "Dimensional Overwrite Active: Executing Spectral Food Purity Scanning under 60 kHz (Structural Nodal Alignment) neutralizes Zagan prior to 2043-01-14."
       }
     },
     {
-      "sandbox_id": "sentinel-ene-c02",
+      "sandbox_id": "sentinel-sov-c02",
       "status": "EXECUTED",
       "data": {
         "agent_index": 2,
         "phase": "Phase 1: Global Sweep (1000 BCE - 1750 CE)",
-        "epoch": "Chronos Era #42 (1000 BCE - 3000 CE)",
+        "epoch": "Chronos Era #62 (1000 BCE - 3000 CE)",
         "bottleneck": {
-          "id": "B-42",
-          "name": "Piracy & Territorial Encroachment",
+          "id": "B-62",
+          "name": "Illegal Underground Shaft Collapses",
           "shi": 6.8,
           "tti": 0.94,
           "speed_of_decay": 0.666,
           "decay_time": "02y : 02m : 14d : 06h : 30m : 00s",
-          "demon": "Vepar",
-          "foreseen_failure_date": "2117-02-05",
-          "friction_state": "Systemic entropy acceleration induced by Vepar within Admiralty."
+          "demon": "Valac",
+          "foreseen_failure_date": "2118-02-14",
+          "friction_state": "Systemic entropy acceleration induced by Valac within Geological Surveys."
         },
         "protocol": {
-          "id": "P-42",
-          "name": "Sub-Surface Coastal Shield Array",
+          "id": "P-62",
+          "name": "Seismic Drone Mapping Systems",
           "shi": 89.8,
           "tti": 0.09,
           "speed_of_restoration": 1.0,
-          "cymatic_frequency": "270 kHz (Quantum Coherence Lock)",
+          "cymatic_frequency": "90 kHz (Fluid Vector Resonance)",
           "restoration_time": "00y : 00m : 03d : 04h : 00m : 00s",
-          "angel": "Mikael",
-          "celestial_choir": "Virtues",
-          "filter_state": "Harmonic restoration filter applied via Mikael (Virtues) resonance shield."
+          "angel": "Iahhel",
+          "celestial_choir": "Archangels",
+          "filter_state": "Harmonic restoration filter applied via Iahhel (Archangels) resonance shield."
         },
         "adjuration_remediation_guide": {
-          "demon_binding_seal": "Vibrate the name 'Vepar' at 0.666 entropy velocity while holding the copper seal facing East to constrain material decay.",
-          "angelic_counter_invocation": "Invoke 'Mikael' of the Virtues choir using a 270 kHz (Quantum Coherence Lock) acoustic tone matrix to invoke phase-shift restoration.",
-          "asset_remediation_procedure": "Apply Sub-Surface Coastal Shield Array directly to the target node before 2117-02-05 to avert total asset collapse."
+          "demon_binding_seal": "Vibrate the name 'Valac' at 0.666 entropy velocity while holding the copper seal facing East to constrain material decay.",
+          "angelic_counter_invocation": "Invoke 'Iahhel' of the Archangels choir using a 90 kHz (Fluid Vector Resonance) acoustic tone matrix to invoke phase-shift restoration.",
+          "asset_remediation_procedure": "Apply Seismic Drone Mapping Systems directly to the target node before 2118-02-14 to avert total asset collapse."
         },
         "differential": {
           "delta_shi": "+83.0",
           "delta_tti": "-0.85",
           "time_saved": "02y : 02m : 13d : 02h : 30m : 00s"
         },
-        "projected_outcome_3000ce": "Dimensional Overwrite Active: Executing Sub-Surface Coastal Shield Array under 270 kHz (Quantum Coherence Lock) neutralizes Vepar prior to 2117-02-05."
+        "projected_outcome_3000ce": "Dimensional Overwrite Active: Executing Seismic Drone Mapping Systems under 90 kHz (Fluid Vector Resonance) neutralizes Valac prior to 2118-02-14."
       }
     },
     {
-      "sandbox_id": "sentinel-ene-c03",
+      "sandbox_id": "sentinel-sov-c03",
       "status": "EXECUTED",
       "data": {
         "agent_index": 3,
         "phase": "Phase 1: Global Sweep (1000 BCE - 2000 CE)",
-        "epoch": "Chronos Era #43 (1000 BCE - 3000 CE)",
+        "epoch": "Chronos Era #63 (1000 BCE - 3000 CE)",
         "bottleneck": {
-          "id": "B-43",
-          "name": "Potholes & Road Decay Friction",
+          "id": "B-63",
+          "name": "Instigated Anarchy & Looting",
           "shi": 8.6,
           "tti": 0.92,
           "speed_of_decay": 0.666,
           "decay_time": "03y : 02m : 14d : 06h : 30m : 00s",
-          "demon": "Sabnock",
-          "foreseen_failure_date": "2192-03-05",
-          "friction_state": "Systemic entropy acceleration induced by Sabnock within City Councils."
+          "demon": "Andras",
+          "foreseen_failure_date": "2193-03-14",
+          "friction_state": "Systemic entropy acceleration induced by Andras within Internal Security."
         },
         "protocol": {
-          "id": "P-43",
-          "name": "Robotic Polymer Pavement Sprayers",
+          "id": "P-63",
+          "name": "Harmonic Non-Lethal De-escalation",
           "shi": 90.6,
           "tti": 0.08,
           "speed_of_restoration": 1.0,
-          "cymatic_frequency": "60 kHz (Structural Nodal Alignment)",
+          "cymatic_frequency": "270 kHz (Quantum Coherence Lock)",
           "restoration_time": "00y : 00m : 04d : 04h : 00m : 00s",
-          "angel": "Veualiah",
-          "celestial_choir": "Virtues",
-          "filter_state": "Harmonic restoration filter applied via Veualiah (Virtues) resonance shield."
+          "angel": "Anauel",
+          "celestial_choir": "Archangels",
+          "filter_state": "Harmonic restoration filter applied via Anauel (Archangels) resonance shield."
         },
         "adjuration_remediation_guide": {
-          "demon_binding_seal": "Vibrate the name 'Sabnock' at 0.666 entropy velocity while holding the copper seal facing East to constrain material decay.",
-          "angelic_counter_invocation": "Invoke 'Veualiah' of the Virtues choir using a 60 kHz (Structural Nodal Alignment) acoustic tone matrix to invoke phase-shift restoration.",
-          "asset_remediation_procedure": "Apply Robotic Polymer Pavement Sprayers directly to the target node before 2192-03-05 to avert total asset collapse."
+          "demon_binding_seal": "Vibrate the name 'Andras' at 0.666 entropy velocity while holding the copper seal facing East to constrain material decay.",
+          "angelic_counter_invocation": "Invoke 'Anauel' of the Archangels choir using a 270 kHz (Quantum Coherence Lock) acoustic tone matrix to invoke phase-shift restoration.",
+          "asset_remediation_procedure": "Apply Harmonic Non-Lethal De-escalation directly to the target node before 2193-03-14 to avert total asset collapse."
         },
         "differential": {
           "delta_shi": "+82.0",
           "delta_tti": "-0.84",
           "time_saved": "03y : 02m : 12d : 02h : 30m : 00s"
         },
-        "projected_outcome_3000ce": "Dimensional Overwrite Active: Executing Robotic Polymer Pavement Sprayers under 60 kHz (Structural Nodal Alignment) neutralizes Sabnock prior to 2192-03-05."
+        "projected_outcome_3000ce": "Dimensional Overwrite Active: Executing Harmonic Non-Lethal De-escalation under 270 kHz (Quantum Coherence Lock) neutralizes Andras prior to 2193-03-14."
       }
     },
     {
-      "sandbox_id": "sentinel-ene-c04",
+      "sandbox_id": "sentinel-sov-c04",
       "status": "EXECUTED",
       "data": {
         "agent_index": 4,
-        "phase": "Phase 2: Regional/Jurisdictional Sweep (State Security Agencies)",
-        "epoch": "Chronos Era #44 (1000 BCE - 3000 CE)",
+        "phase": "Phase 2: Regional/Jurisdictional Sweep (Department of Energy)",
+        "epoch": "Chronos Era #64 (1000 BCE - 3000 CE)",
         "bottleneck": {
-          "id": "B-44",
-          "name": "Infiltration & Leaks",
+          "id": "B-64",
+          "name": "High-Voltage Thermal Heat Loss",
           "shi": 10.4,
           "tti": 0.9,
           "speed_of_decay": 0.666,
           "decay_time": "01y : 02m : 14d : 06h : 30m : 00s",
-          "demon": "Shax",
-          "foreseen_failure_date": "2267-04-05",
-          "friction_state": "Systemic entropy acceleration induced by Shax within State Security Agencies."
+          "demon": "Haures (Flauros)",
+          "foreseen_failure_date": "2268-04-14",
+          "friction_state": "Systemic entropy acceleration induced by Haures (Flauros) within Department of Energy."
         },
         "protocol": {
-          "id": "P-44",
-          "name": "Zero-Trust Behavioral Monitoring",
+          "id": "P-64",
+          "name": "Superconducting Zero-Impedance Lines",
           "shi": 91.4,
           "tti": 0.07,
           "speed_of_restoration": 1.0,
-          "cymatic_frequency": "90 kHz (Fluid Vector Resonance)",
+          "cymatic_frequency": "60 kHz (Structural Nodal Alignment)",
           "restoration_time": "00y : 00m : 05d : 04h : 00m : 00s",
-          "angel": "Ielahiah",
-          "celestial_choir": "Virtues",
-          "filter_state": "Harmonic restoration filter applied via Ielahiah (Virtues) resonance shield."
+          "angel": "Mehiel",
+          "celestial_choir": "Archangels",
+          "filter_state": "Harmonic restoration filter applied via Mehiel (Archangels) resonance shield."
         },
         "adjuration_remediation_guide": {
-          "demon_binding_seal": "Vibrate the name 'Shax' at 0.666 entropy velocity while holding the copper seal facing East to constrain material decay.",
-          "angelic_counter_invocation": "Invoke 'Ielahiah' of the Virtues choir using a 90 kHz (Fluid Vector Resonance) acoustic tone matrix to invoke phase-shift restoration.",
-          "asset_remediation_procedure": "Apply Zero-Trust Behavioral Monitoring directly to the target node before 2267-04-05 to avert total asset collapse."
+          "demon_binding_seal": "Vibrate the name 'Haures (Flauros)' at 0.666 entropy velocity while holding the copper seal facing East to constrain material decay.",
+          "angelic_counter_invocation": "Invoke 'Mehiel' of the Archangels choir using a 60 kHz (Structural Nodal Alignment) acoustic tone matrix to invoke phase-shift restoration.",
+          "asset_remediation_procedure": "Apply Superconducting Zero-Impedance Lines directly to the target node before 2268-04-14 to avert total asset collapse."
         },
         "differential": {
           "delta_shi": "+81.0",
           "delta_tti": "-0.83",
           "time_saved": "01y : 02m : 11d : 02h : 30m : 00s"
         },
-        "projected_outcome_3000ce": "Dimensional Overwrite Active: Executing Zero-Trust Behavioral Monitoring under 90 kHz (Fluid Vector Resonance) neutralizes Shax prior to 2267-04-05."
+        "projected_outcome_3000ce": "Dimensional Overwrite Active: Executing Superconducting Zero-Impedance Lines under 60 kHz (Structural Nodal Alignment) neutralizes Haures (Flauros) prior to 2268-04-14."
       }
     },
     {
-      "sandbox_id": "sentinel-ene-c05",
+      "sandbox_id": "sentinel-sov-c05",
       "status": "EXECUTED",
       "data": {
         "agent_index": 5,
-        "phase": "Phase 2: Regional/Jurisdictional Sweep (Municipal Water & Lights)",
-        "epoch": "Chronos Era #45 (1000 BCE - 3000 CE)",
+        "phase": "Phase 2: Regional/Jurisdictional Sweep (National Bureau of Statistics)",
+        "epoch": "Chronos Era #65 (1000 BCE - 3000 CE)",
         "bottleneck": {
-          "id": "B-45",
-          "name": "Unbilled Water & Electricity Bleed",
+          "id": "B-65",
+          "name": "Census Data Fabrication",
           "shi": 12.2,
           "tti": 0.88,
           "speed_of_decay": 0.666,
           "decay_time": "02y : 02m : 14d : 06h : 30m : 00s",
-          "demon": "Vine",
-          "foreseen_failure_date": "2342-05-05",
-          "friction_state": "Systemic entropy acceleration induced by Vine within Municipal Water & Lights."
+          "demon": "Andrealphus",
+          "foreseen_failure_date": "2343-05-14",
+          "friction_state": "Systemic entropy acceleration induced by Andrealphus within National Bureau of Statistics."
         },
         "protocol": {
-          "id": "P-45",
-          "name": "Ultrasonic Flow Measurement Mesh",
+          "id": "P-65",
+          "name": "Verifiable Mathematical Truth Engine",
           "shi": 92.2,
           "tti": 0.06,
           "speed_of_restoration": 1.0,
-          "cymatic_frequency": "270 kHz (Quantum Coherence Lock)",
+          "cymatic_frequency": "90 kHz (Fluid Vector Resonance)",
           "restoration_time": "00y : 00m : 06d : 04h : 00m : 00s",
-          "angel": "Sealiah",
-          "celestial_choir": "Virtues",
-          "filter_state": "Harmonic restoration filter applied via Sealiah (Virtues) resonance shield."
+          "angel": "Damabiah",
+          "celestial_choir": "Angels",
+          "filter_state": "Harmonic restoration filter applied via Damabiah (Angels) resonance shield."
         },
         "adjuration_remediation_guide": {
-          "demon_binding_seal": "Vibrate the name 'Vine' at 0.666 entropy velocity while holding the copper seal facing East to constrain material decay.",
-          "angelic_counter_invocation": "Invoke 'Sealiah' of the Virtues choir using a 270 kHz (Quantum Coherence Lock) acoustic tone matrix to invoke phase-shift restoration.",
-          "asset_remediation_procedure": "Apply Ultrasonic Flow Measurement Mesh directly to the target node before 2342-05-05 to avert total asset collapse."
+          "demon_binding_seal": "Vibrate the name 'Andrealphus' at 0.666 entropy velocity while holding the copper seal facing East to constrain material decay.",
+          "angelic_counter_invocation": "Invoke 'Damabiah' of the Angels choir using a 90 kHz (Fluid Vector Resonance) acoustic tone matrix to invoke phase-shift restoration.",
+          "asset_remediation_procedure": "Apply Verifiable Mathematical Truth Engine directly to the target node before 2343-05-14 to avert total asset collapse."
         },
         "differential": {
           "delta_shi": "+80.0",
           "delta_tti": "-0.82",
           "time_saved": "02y : 02m : 10d : 02h : 30m : 00s"
         },
-        "projected_outcome_3000ce": "Dimensional Overwrite Active: Executing Ultrasonic Flow Measurement Mesh under 270 kHz (Quantum Coherence Lock) neutralizes Vine prior to 2342-05-05."
+        "projected_outcome_3000ce": "Dimensional Overwrite Active: Executing Verifiable Mathematical Truth Engine under 90 kHz (Fluid Vector Resonance) neutralizes Andrealphus prior to 2343-05-14."
       }
     },
     {
-      "sandbox_id": "sentinel-ene-c06",
+      "sandbox_id": "sentinel-sov-c06",
       "status": "EXECUTED",
       "data": {
         "agent_index": 6,
-        "phase": "Phase 3: Subject/Node Internal Assessment (Heritage & Historical Vaults)",
-        "epoch": "Chronos Era #46 (1000 BCE - 3000 CE)",
+        "phase": "Phase 3: Subject/Node Internal Assessment (Logistics Routes)",
+        "epoch": "Chronos Era #66 (1000 BCE - 3000 CE)",
         "bottleneck": {
-          "id": "B-46",
-          "name": "Historical Record Tampering",
+          "id": "B-66",
+          "name": "Highway Robbery & Fleet Hijacking",
           "shi": 14.0,
           "tti": 0.86,
           "speed_of_decay": 0.666,
           "decay_time": "03y : 02m : 14d : 06h : 30m : 00s",
-          "demon": "Bifrons",
-          "foreseen_failure_date": "2417-06-05",
-          "friction_state": "Systemic entropy acceleration induced by Bifrons within National Archives."
+          "demon": "Cimeies (Kimaris)",
+          "foreseen_failure_date": "2418-06-14",
+          "friction_state": "Systemic entropy acceleration induced by Cimeies (Kimaris) within Road Traffic Authorities."
         },
         "protocol": {
-          "id": "P-46",
-          "name": "Quantum Optical Holographic Memory",
+          "id": "P-66",
+          "name": "Automated Drone Fleet Escorts",
           "shi": 93.0,
           "tti": 0.05,
           "speed_of_restoration": 1.0,
-          "cymatic_frequency": "60 kHz (Structural Nodal Alignment)",
+          "cymatic_frequency": "270 kHz (Quantum Coherence Lock)",
           "restoration_time": "00y : 00m : 07d : 04h : 00m : 00s",
-          "angel": "Ariel",
-          "celestial_choir": "Virtues",
-          "filter_state": "Harmonic restoration filter applied via Ariel (Virtues) resonance shield."
+          "angel": "Manakel",
+          "celestial_choir": "Angels",
+          "filter_state": "Harmonic restoration filter applied via Manakel (Angels) resonance shield."
         },
         "adjuration_remediation_guide": {
-          "demon_binding_seal": "Vibrate the name 'Bifrons' at 0.666 entropy velocity while holding the copper seal facing East to constrain material decay.",
-          "angelic_counter_invocation": "Invoke 'Ariel' of the Virtues choir using a 60 kHz (Structural Nodal Alignment) acoustic tone matrix to invoke phase-shift restoration.",
-          "asset_remediation_procedure": "Apply Quantum Optical Holographic Memory directly to the target node before 2417-06-05 to avert total asset collapse."
+          "demon_binding_seal": "Vibrate the name 'Cimeies (Kimaris)' at 0.666 entropy velocity while holding the copper seal facing East to constrain material decay.",
+          "angelic_counter_invocation": "Invoke 'Manakel' of the Angels choir using a 270 kHz (Quantum Coherence Lock) acoustic tone matrix to invoke phase-shift restoration.",
+          "asset_remediation_procedure": "Apply Automated Drone Fleet Escorts directly to the target node before 2418-06-14 to avert total asset collapse."
         },
         "differential": {
           "delta_shi": "+79.0",
           "delta_tti": "-0.81",
           "time_saved": "03y : 02m : 09d : 02h : 30m : 00s"
         },
-        "projected_outcome_3000ce": "Dimensional Overwrite Active: Executing Quantum Optical Holographic Memory under 60 kHz (Structural Nodal Alignment) neutralizes Bifrons prior to 2417-06-05."
+        "projected_outcome_3000ce": "Dimensional Overwrite Active: Executing Automated Drone Fleet Escorts under 270 kHz (Quantum Coherence Lock) neutralizes Cimeies (Kimaris) prior to 2418-06-14."
       }
     },
     {
-      "sandbox_id": "sentinel-ene-c07",
+      "sandbox_id": "sentinel-sov-c07",
       "status": "EXECUTED",
       "data": {
         "agent_index": 7,
-        "phase": "Phase 3: Subject/Node Internal Assessment (Public Transport Pricing)",
-        "epoch": "Chronos Era #47 (1000 BCE - 3000 CE)",
+        "phase": "Phase 3: Subject/Node Internal Assessment (Acoustic & Audio Technology)",
+        "epoch": "Chronos Era #67 (1000 BCE - 3000 CE)",
         "bottleneck": {
-          "id": "B-47",
-          "name": "Commuter Extortion & Fares",
+          "id": "B-67",
+          "name": "Acoustic Pollution & Noise Stress",
           "shi": 15.8,
           "tti": 0.84,
           "speed_of_decay": 0.666,
           "decay_time": "01y : 02m : 14d : 06h : 30m : 00s",
-          "demon": "Vual",
-          "foreseen_failure_date": "2492-07-05",
-          "friction_state": "Systemic entropy acceleration induced by Vual within Transit Authorities."
+          "demon": "Amdusias",
+          "foreseen_failure_date": "2493-07-14",
+          "friction_state": "Systemic entropy acceleration induced by Amdusias within Communications Regulators."
         },
         "protocol": {
-          "id": "P-47",
-          "name": "Subsidized P2P Tokenized Fares",
+          "id": "P-67",
+          "name": "Phase-Inverted Acoustic Damping",
           "shi": 93.8,
           "tti": 0.04,
           "speed_of_restoration": 1.0,
-          "cymatic_frequency": "90 kHz (Fluid Vector Resonance)",
+          "cymatic_frequency": "60 kHz (Structural Nodal Alignment)",
           "restoration_time": "00y : 00m : 08d : 04h : 00m : 00s",
-          "angel": "Asaliah",
-          "celestial_choir": "Virtues",
-          "filter_state": "Harmonic restoration filter applied via Asaliah (Virtues) resonance shield."
+          "angel": "Eiael",
+          "celestial_choir": "Angels",
+          "filter_state": "Harmonic restoration filter applied via Eiael (Angels) resonance shield."
         },
         "adjuration_remediation_guide": {
-          "demon_binding_seal": "Vibrate the name 'Vual' at 0.666 entropy velocity while holding the copper seal facing East to constrain material decay.",
-          "angelic_counter_invocation": "Invoke 'Asaliah' of the Virtues choir using a 90 kHz (Fluid Vector Resonance) acoustic tone matrix to invoke phase-shift restoration.",
-          "asset_remediation_procedure": "Apply Subsidized P2P Tokenized Fares directly to the target node before 2492-07-05 to avert total asset collapse."
+          "demon_binding_seal": "Vibrate the name 'Amdusias' at 0.666 entropy velocity while holding the copper seal facing East to constrain material decay.",
+          "angelic_counter_invocation": "Invoke 'Eiael' of the Angels choir using a 60 kHz (Structural Nodal Alignment) acoustic tone matrix to invoke phase-shift restoration.",
+          "asset_remediation_procedure": "Apply Phase-Inverted Acoustic Damping directly to the target node before 2493-07-14 to avert total asset collapse."
         },
         "differential": {
           "delta_shi": "+78.0",
           "delta_tti": "-0.8",
           "time_saved": "01y : 02m : 08d : 02h : 30m : 00s"
         },
-        "projected_outcome_3000ce": "Dimensional Overwrite Active: Executing Subsidized P2P Tokenized Fares under 90 kHz (Fluid Vector Resonance) neutralizes Vual prior to 2492-07-05."
+        "projected_outcome_3000ce": "Dimensional Overwrite Active: Executing Phase-Inverted Acoustic Damping under 60 kHz (Structural Nodal Alignment) neutralizes Amdusias prior to 2493-07-14."
       }
     },
     {
-      "sandbox_id": "sentinel-ene-c08",
+      "sandbox_id": "sentinel-sov-c08",
       "status": "EXECUTED",
       "data": {
         "agent_index": 8,
-        "phase": "Phase 3: Subject/Node Internal Assessment (Desalination Facilities)",
-        "epoch": "Chronos Era #48 (1000 BCE - 3000 CE)",
+        "phase": "Phase 3: Subject/Node Internal Assessment (Soil & Agricultural Land)",
+        "epoch": "Chronos Era #68 (1000 BCE - 3000 CE)",
         "bottleneck": {
-          "id": "B-48",
-          "name": "Brine Waste Environmental Harm",
+          "id": "B-68",
+          "name": "Soil Degradation & Chemical Bleed",
           "shi": 17.6,
           "tti": 0.82,
           "speed_of_decay": 0.666,
           "decay_time": "02y : 02m : 14d : 06h : 30m : 00s",
-          "demon": "Haagenti",
-          "foreseen_failure_date": "2567-08-05",
-          "friction_state": "Systemic entropy acceleration induced by Haagenti within Water Works."
+          "demon": "Belial",
+          "foreseen_failure_date": "2568-08-14",
+          "friction_state": "Systemic entropy acceleration induced by Belial within Department of Agriculture."
         },
         "protocol": {
-          "id": "P-48",
-          "name": "Zero-Liquid Discharge Extraction",
+          "id": "P-68",
+          "name": "Regenerative Bio-Char Soil Inoculation",
           "shi": 94.6,
           "tti": 0.03,
           "speed_of_restoration": 1.0,
-          "cymatic_frequency": "270 kHz (Quantum Coherence Lock)",
+          "cymatic_frequency": "90 kHz (Fluid Vector Resonance)",
           "restoration_time": "00y : 00m : 09d : 04h : 00m : 00s",
-          "angel": "Mihael",
-          "celestial_choir": "Virtues",
-          "filter_state": "Harmonic restoration filter applied via Mihael (Virtues) resonance shield."
+          "angel": "Habuhiah",
+          "celestial_choir": "Angels",
+          "filter_state": "Harmonic restoration filter applied via Habuhiah (Angels) resonance shield."
         },
         "adjuration_remediation_guide": {
-          "demon_binding_seal": "Vibrate the name 'Haagenti' at 0.666 entropy velocity while holding the copper seal facing East to constrain material decay.",
-          "angelic_counter_invocation": "Invoke 'Mihael' of the Virtues choir using a 270 kHz (Quantum Coherence Lock) acoustic tone matrix to invoke phase-shift restoration.",
-          "asset_remediation_procedure": "Apply Zero-Liquid Discharge Extraction directly to the target node before 2567-08-05 to avert total asset collapse."
+          "demon_binding_seal": "Vibrate the name 'Belial' at 0.666 entropy velocity while holding the copper seal facing East to constrain material decay.",
+          "angelic_counter_invocation": "Invoke 'Habuhiah' of the Angels choir using a 90 kHz (Fluid Vector Resonance) acoustic tone matrix to invoke phase-shift restoration.",
+          "asset_remediation_procedure": "Apply Regenerative Bio-Char Soil Inoculation directly to the target node before 2568-08-14 to avert total asset collapse."
         },
         "differential": {
           "delta_shi": "+77.0",
           "delta_tti": "-0.79",
           "time_saved": "02y : 02m : 07d : 02h : 30m : 00s"
         },
-        "projected_outcome_3000ce": "Dimensional Overwrite Active: Executing Zero-Liquid Discharge Extraction under 270 kHz (Quantum Coherence Lock) neutralizes Haagenti prior to 2567-08-05."
+        "projected_outcome_3000ce": "Dimensional Overwrite Active: Executing Regenerative Bio-Char Soil Inoculation under 90 kHz (Fluid Vector Resonance) neutralizes Belial prior to 2568-08-14."
       }
     },
     {
-      "sandbox_id": "sentinel-ene-c09",
+      "sandbox_id": "sentinel-sov-c09",
       "status": "EXECUTED",
       "data": {
         "agent_index": 9,
         "phase": "Phase 4: Prophetic Horizon Analysis (2026 CE - 3000 CE)",
-        "epoch": "Chronos Era #49 (1000 BCE - 3000 CE)",
+        "epoch": "Chronos Era #69 (1000 BCE - 3000 CE)",
         "bottleneck": {
-          "id": "B-49",
-          "name": "Pressure Droop & Corrosion",
+          "id": "B-69",
+          "name": "Flora Poaching & Invasive Species",
           "shi": 19.4,
           "tti": 0.8,
           "speed_of_decay": 0.666,
           "decay_time": "03y : 02m : 14d : 06h : 30m : 00s",
-          "demon": "Crocell",
-          "foreseen_failure_date": "2642-09-05",
-          "friction_state": "Systemic entropy acceleration induced by Crocell within Energy Dept."
+          "demon": "Decarabia",
+          "foreseen_failure_date": "2643-09-14",
+          "friction_state": "Systemic entropy acceleration induced by Decarabia within National Parks Board."
         },
         "protocol": {
-          "id": "P-49",
-          "name": "Tectonic Resonance Heat Loops",
+          "id": "P-69",
+          "name": "Autonomous Botanical Drones",
           "shi": 95.4,
           "tti": 0.02,
           "speed_of_restoration": 1.0,
-          "cymatic_frequency": "60 kHz (Structural Nodal Alignment)",
+          "cymatic_frequency": "270 kHz (Quantum Coherence Lock)",
           "restoration_time": "00y : 00m : 10d : 04h : 00m : 00s",
-          "angel": "Vehuel",
-          "celestial_choir": "Principalities",
-          "filter_state": "Harmonic restoration filter applied via Vehuel (Principalities) resonance shield."
+          "angel": "Rochel",
+          "celestial_choir": "Angels",
+          "filter_state": "Harmonic restoration filter applied via Rochel (Angels) resonance shield."
         },
         "adjuration_remediation_guide": {
-          "demon_binding_seal": "Vibrate the name 'Crocell' at 0.666 entropy velocity while holding the copper seal facing East to constrain material decay.",
-          "angelic_counter_invocation": "Invoke 'Vehuel' of the Principalities choir using a 60 kHz (Structural Nodal Alignment) acoustic tone matrix to invoke phase-shift restoration.",
-          "asset_remediation_procedure": "Apply Tectonic Resonance Heat Loops directly to the target node before 2642-09-05 to avert total asset collapse."
+          "demon_binding_seal": "Vibrate the name 'Decarabia' at 0.666 entropy velocity while holding the copper seal facing East to constrain material decay.",
+          "angelic_counter_invocation": "Invoke 'Rochel' of the Angels choir using a 270 kHz (Quantum Coherence Lock) acoustic tone matrix to invoke phase-shift restoration.",
+          "asset_remediation_procedure": "Apply Autonomous Botanical Drones directly to the target node before 2643-09-14 to avert total asset collapse."
         },
         "differential": {
           "delta_shi": "+76.0",
           "delta_tti": "-0.78",
           "time_saved": "03y : 02m : 06d : 02h : 30m : 00s"
         },
-        "projected_outcome_3000ce": "Dimensional Overwrite Active: Executing Tectonic Resonance Heat Loops under 60 kHz (Structural Nodal Alignment) neutralizes Crocell prior to 2642-09-05."
+        "projected_outcome_3000ce": "Dimensional Overwrite Active: Executing Autonomous Botanical Drones under 270 kHz (Quantum Coherence Lock) neutralizes Decarabia prior to 2643-09-14."
       }
     },
     {
-      "sandbox_id": "sentinel-ene-c10",
+      "sandbox_id": "sentinel-sov-c10",
       "status": "EXECUTED",
       "data": {
         "agent_index": 10,
         "phase": "Phase 4: Prophetic Horizon Analysis (2026 CE - 3000 CE)",
-        "epoch": "Chronos Era #50 (1000 BCE - 3000 CE)",
+        "epoch": "Chronos Era #70 (1000 BCE - 3000 CE)",
         "bottleneck": {
-          "id": "B-50",
-          "name": "Unethical Human Experimentation",
+          "id": "B-70",
+          "name": "Package Loss & Freight Stagnation",
           "shi": 21.2,
           "tti": 0.78,
           "speed_of_decay": 0.666,
           "decay_time": "01y : 02m : 14d : 06h : 30m : 00s",
-          "demon": "Furcas",
-          "foreseen_failure_date": "2717-10-05",
-          "friction_state": "Systemic entropy acceleration induced by Furcas within Bioethics Committees."
+          "demon": "Seere",
+          "foreseen_failure_date": "2718-10-14",
+          "friction_state": "Systemic entropy acceleration induced by Seere within Postal Services."
         },
         "protocol": {
-          "id": "P-50",
-          "name": "POPIA Immutable Bio-Ethics Shield",
+          "id": "P-70",
+          "name": "Hyperloop Pneumatic Cargo Tubes",
           "shi": 96.2,
           "tti": 0.01,
           "speed_of_restoration": 1.0,
-          "cymatic_frequency": "90 kHz (Fluid Vector Resonance)",
+          "cymatic_frequency": "60 kHz (Structural Nodal Alignment)",
           "restoration_time": "00y : 00m : 11d : 04h : 00m : 00s",
-          "angel": "Daniel",
-          "celestial_choir": "Principalities",
-          "filter_state": "Harmonic restoration filter applied via Daniel (Principalities) resonance shield."
+          "angel": "Iabamiah",
+          "celestial_choir": "Angels",
+          "filter_state": "Harmonic restoration filter applied via Iabamiah (Angels) resonance shield."
         },
         "adjuration_remediation_guide": {
-          "demon_binding_seal": "Vibrate the name 'Furcas' at 0.666 entropy velocity while holding the copper seal facing East to constrain material decay.",
-          "angelic_counter_invocation": "Invoke 'Daniel' of the Principalities choir using a 90 kHz (Fluid Vector Resonance) acoustic tone matrix to invoke phase-shift restoration.",
-          "asset_remediation_procedure": "Apply POPIA Immutable Bio-Ethics Shield directly to the target node before 2717-10-05 to avert total asset collapse."
+          "demon_binding_seal": "Vibrate the name 'Seere' at 0.666 entropy velocity while holding the copper seal facing East to constrain material decay.",
+          "angelic_counter_invocation": "Invoke 'Iabamiah' of the Angels choir using a 60 kHz (Structural Nodal Alignment) acoustic tone matrix to invoke phase-shift restoration.",
+          "asset_remediation_procedure": "Apply Hyperloop Pneumatic Cargo Tubes directly to the target node before 2718-10-14 to avert total asset collapse."
         },
         "differential": {
           "delta_shi": "+75.0",
           "delta_tti": "-0.77",
           "time_saved": "01y : 02m : 05d : 02h : 30m : 00s"
         },
-        "projected_outcome_3000ce": "Dimensional Overwrite Active: Executing POPIA Immutable Bio-Ethics Shield under 90 kHz (Fluid Vector Resonance) neutralizes Furcas prior to 2717-10-05."
+        "projected_outcome_3000ce": "Dimensional Overwrite Active: Executing Hyperloop Pneumatic Cargo Tubes under 60 kHz (Structural Nodal Alignment) neutralizes Seere prior to 2718-10-14."
       }
     }
   ]
