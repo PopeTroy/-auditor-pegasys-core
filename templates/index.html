@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auditor Pegasys | Global Diagnostic Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="main-header">
+            <div class="logo-zone">
+                <h1>AUDITOR PEGASYS <span>144K</span></h1>
+                <p>Global Socio-Economic & Infrastructural Diagnostic Engine (1000 BCE – 3000 CE)</p>
+            </div>
+            <div class="quantum-clock-card">
+                <span class="label">TEMPORAL QUANTUM LOCK</span>
+                <span id="quantum-clock-display" class="clock-value">CYCLE 066370 / 144000</span>
+            </div>
+        </header>
+
+        <!-- Control Form -->
+        <section class="control-panel">
+            <div class="form-group">
+                <label>User Alias (POPIA Anonymized):</label>
+                <input type="text" id="input-alias" value="Shinobi_Auditor_01">
+            </div>
+            <div class="form-group">
+                <label>Jurisdiction / Location:</label>
+                <input type="text" id="input-location" value="South Africa">
+            </div>
+            <div class="form-group">
+                <label>Industry Classification:</label>
+                <select id="input-industry">
+                    <option value="Energy & Electrical Infrastructure">Energy & Electrical Infrastructure</option>
+                    <option value="Finance & Sovereign Governance">Finance & Sovereign Governance</option>
+                    <option value="Supply Chain & Global Logistics">Supply Chain & Global Logistics</option>
+                </select>
+            </div>
+            <div class="form-group full-width">
+                <label>Target Node Input Block:</label>
+                <textarea id="input-payload" rows="3">Grid corruption, fossil fuel monopolization, and regional tender friction causing power station tripping and capital flight.</textarea>
+            </div>
+            <button id="btn-run-audit" onclick="triggerAudit()">EXECUTE CHRONOS DEEP-SWEEP</button>
+        </section>
+
+        <!-- Compliance & Security Bar -->
+        <section class="security-banner">
+            <div><strong>SESSION GUID:</strong> <span id="sec-guid">PENDING</span></div>
+            <div><strong>ECTA HASH:</strong> <span id="sec-hash">PENDING</span></div>
+            <div><strong>TIMESTAMP:</strong> <span id="sec-time">PENDING</span></div>
+        </section>
+
+        <!-- Main Dashboard Grid -->
+        <main class="dashboard-grid">
+            <!-- Classification 1: Bottlenecks & Frictions -->
+            <div class="card bottleneck-card">
+                <h2>Systemic Bottlenecks & Frictions</h2>
+                <div class="stat-box">
+                    <span class="stat-label">Baseline System Health Index (SHI)</span>
+                    <span id="val-shi" class="stat-value text-red">13.75</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-label">Time-To-Impedance (TTI Index)</span>
+                    <span id="val-tti" class="stat-value text-yellow">0.87</span>
+                </div>
+                <p class="desc">Active Drivers: <strong>Astaroth (Greed)</strong>, <strong>Bael (Sabotage)</strong>, <strong>Mammon (Extraction)</strong>.</p>
+            </div>
+
+            <!-- Classification 2: Protocols & Filters -->
+            <div class="card protocol-card">
+                <h2>Restoration Protocols & Filters</h2>
+                <div class="stat-box">
+                    <span class="stat-label">Protocol Restoration SHI</span>
+                    <span id="val-restore-shi" class="stat-value text-green">93.85</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-label">Ascension Frequency</span>
+                    <span id="val-freq" class="stat-value text-cyan">1440.00 Hz</span>
+                </div>
+                <p class="desc">Active Angel Filters: <strong>Michael (Sec 19 Shield)</strong>, <strong>Gabriel (ECTA Verification)</strong>.</p>
+            </div>
+
+            <!-- Classification 3: Overall Analysis -->
+            <div class="card analysis-card">
+                <h2>Overall Systemic Analysis</h2>
+                <div class="alert-box text-red-bg">
+                    STATUS: CRITICAL OVERRIDE ACTIVE (SHI &lt; 50.00)
+                </div>
+                <p><strong>Total Time To Systemic Collapse (TTC):</strong></p>
+                <div class="time-counter">00y : 02m : 00d : 00h : 00m : 00s</div>
+                <p class="note">Mega Circuit Overwrite engaged to bypass 3D physical drag.</p>
+            </div>
+        </main>
+
+        <!-- Classification 4: Prophetic Summary & Chronos Deep Sweep (1000 BCE - 3000 CE) -->
+        <section class="card full-width-card">
+            <h2>Chronos Deep Sweep & Prophetic Outlook (1000 BCE – 3000 CE)</h2>
+            <table class="sweep-table">
+                <thead>
+                    <tr>
+                        <th>Sentinel Sandbox</th>
+                        <th>Timeline Epoch</th>
+                        <th>Systemic Friction / Origin</th>
+                        <th>Root Demon</th>
+                        <th>Angel Filter</th>
+                        <th>Projected Outcome</th>
+                    </tr>
+                </thead>
+                <tbody id="sweep-table-body">
+                    <tr><td colspan="6" style="text-align:center;">Click "EXECUTE CHRONOS DEEP-SWEEP" to deploy 10 NVIDIA NIM Sentinel AI Agents...</td></tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <script>
+        async function triggerAudit() {
+            const alias = document.getElementById('input-alias').value;
+            const location = document.getElementById('input-location').value;
+            const industry = document.getElementById('input-industry').value;
+            const payload = document.getElementById('input-payload').value;
+
+            const res = await fetch('/api/audit', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({alias, location, industry, payload})
+            });
+
+            const data = await res.json();
+
+            // Update Security Header
+            document.getElementById('sec-guid').innerText = data.security.session_guid;
+            document.getElementById('sec-hash').innerText = data.security.ecta_hash;
+            document.getElementById('sec-time').innerText = data.security.utc_timestamp;
+            document.getElementById('quantum-clock-display').innerText = data.quantum_header;
+
+            // Update Math
+            document.getElementById('val-shi').innerText = data.mathematics.shi;
+            document.getElementById('val-tti').innerText = data.mathematics.tti;
+            document.getElementById('val-freq').innerText = data.mathematics.frequency + " Hz";
+
+            // Update Table
+            const tbody = document.getElementById('sweep-table-body');
+            tbody.innerHTML = '';
+            data.chronos_sweep.forEach((row, i) => {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                    <td class="text-cyan">Sentinel-${String(i+1).padStart(2, '0')}</td>
+                    <td>${row.epoch || '1000 BCE - 3000 CE'}</td>
+                    <td>${row.origin || row.systemic_origin || 'Friction Origin'}</td>
+                    <td class="text-red">${row.demon || row.root_demon || 'Astaroth'}</td>
+                    <td class="text-green">${row.angel || row.angel_filter || 'Michael'}</td>
+                    <td class="text-yellow">${row.outcome || row.projected_outcome || 'Phase Shift Active'}</td>
+                `;
+                tbody.appendChild(tr);
+            });
+        }
+    </script>
+</body>
+</html>
