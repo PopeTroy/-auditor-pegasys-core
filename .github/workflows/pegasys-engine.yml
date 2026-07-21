@@ -1,4 +1,4 @@
-name: Auditor Pegasys Chronos Sweep Engine
+name: Auditor Pegasys Chronos Engine
 
 on:
   repository_dispatch:
@@ -6,19 +6,19 @@ on:
   workflow_dispatch:
     inputs:
       node_payload:
-        description: 'Target Subject / Node Paragraph Block'
+        description: 'Target Subject / Node'
         required: true
-        default: 'Grid corruption and capacity constraints causing local downtime.'
+        default: 'Sovereign Node Input'
 
 permissions:
   contents: write
 
 jobs:
-  run-pegasys-audit:
+  run-audit:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repository
+      - name: Checkout Code
         uses: actions/checkout@v4
 
       - name: Set up Python
@@ -31,7 +31,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Execute Audit via Single Node Engine
+      - name: Run Chronos Sweep
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           NVIDIA_NIM_API_KEY: ${{ secrets.NVIDIA_NIM_API_KEY }}
@@ -39,11 +39,11 @@ jobs:
           INPUT_NODE: ${{ inputs.node_payload }}
         run: python cli_audit.py
 
-      - name: Commit Audit Results
+      - name: Commit Multi-User Session Results
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git pull origin main --rebase || true
-          git add last_audit_results.json
-          git commit -m "Update audit results for single node [skip ci]" || exit 0
+          git add sessions/ last_audit_results.json
+          git commit -m "Commit session results [skip ci]" || exit 0
           git push origin main
