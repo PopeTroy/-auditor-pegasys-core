@@ -1,11 +1,11 @@
 {
   "security": {
-    "session_guid": "f545e28f-91ca-5af6-af6f-ed87b2eca4b7",
-    "utc_timestamp": "2026-07-21T09:23:20.606536+00:00",
-    "ecta_hash": "sha256:94618c8f82f07f4091cd422af0e96037de3ca6e53120486a6f41a99bcafea748"
+    "session_guid": "f1bc56d3-e063-55c5-89c7-f5300fddac8e",
+    "utc_timestamp": "2026-07-21T09:52:37.547390+00:00",
+    "ecta_hash": "sha256:113f279faece32ed917305d2ffd30b007dfb6fc1d348b90dc10b53886b6dadf7"
   },
-  "quantum_header": "QUANTUM-CYCLE: 056334 / 144000",
-  "quantum_cycle": 56334,
+  "quantum_header": "QUANTUM-CYCLE: 059262 / 144000",
+  "quantum_cycle": 59262,
   "mathematics": {
     "shi": 20571.43,
     "tti": 0.0,
@@ -23,7 +23,117 @@
         "agent_index": 1,
         "chronos_phase": "Phase 1: Ancient Foundation Sweep (1000 BCE - 0 CE)",
         "diagnostic_scope": "Regional / Statutory Policy Friction",
-        "target_node_subject": "Pope Troy ",
+        "target_node_subject": "Bobby Moahi",
+        "biblical_apocalyptic_framework": {
+          "apocalyptic_seal": "First Seal: White Horse",
+          "sealed_tribe": "Judah",
+          "temporal_birth_gate": "January Gate",
+          "church_anchor": "Ephesus",
+          "base_degree_frequency_khz": "2.5 kHz",
+          "zone_classification": "SUB-HARMONIC RED ZONE (Entropy Drag)"
+        },
+        "bottleneck": {
+          "id": "B-01",
+          "name": "Fossil Fuel Monopolization in Bobby Moahi Context",
+          "active_demon_driver": "Bael",
+          "frequency_khz": "1.665 kHz",
+          "decay_velocity": 0.67,
+          "destabilization_constant_floor": 0.666,
+          "predictive_crash_schedule_10_dates_to_3000ce": [
+            "2038-01-15",
+            "2135-02-18",
+            "2232-03-21",
+            "2329-04-24",
+            "2426-05-27",
+            "2523-06-02",
+            "2620-07-05",
+            "2717-08-08",
+            "2814-09-11",
+            "2911-10-14"
+          ]
+        },
+        "protocol": {
+          "id": "P-01",
+          "name": "Decentralized Micro-Grid Nodes Deployment",
+          "ruling_shem_angel": "Vehuiah",
+          "celestial_choir": "Seraphim",
+          "frequency_khz": "4.045 kHz",
+          "current_restoration_speed": 0.71,
+          "equilibrium_target": 1.0,
+          "piezoelectric_gemstone_vector": "Red Jasper & Hematite"
+        },
+        "real_time_earth_vector": {
+          "applied_speed": "0.7045x acceleration",
+          "application_width_khz": "3.851 kHz bandwidth",
+          "frequency_shift_to_ultra_green": "+93.335 kHz shift",
+          "exact_spatial_target": "Substation High-Voltage Busbars"
+        },
+        "prophetic_summary_3000ce": "NVIDIA NIM Sentinel [Regional / Statutory Policy Friction] analyzed 'Bobby Moahi' from 1000 BCE baseline. Under the First Seal: White Horse and January Gate, Bael (1.665 kHz) causes bottleneck friction across 10 predicted failure dates ending 2911-10-14. Applying Decentralized Micro-Grid Nodes via Red Jasper & Hematite at 4.045 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Patch, locking the 1.000 Unity Target."
+      }
+    },
+    {
+      "sandbox_id": "sentinel-c02",
+      "status": "EXECUTED",
+      "data": {
+        "agent_index": 2,
+        "chronos_phase": "Phase 1: Ancient Foundation Sweep (1000 BCE - 0 CE)",
+        "diagnostic_scope": "Regional / Statutory Policy Friction",
+        "target_node_subject": "Bobby Moahi",
+        "biblical_apocalyptic_framework": {
+          "apocalyptic_seal": "First Seal: White Horse",
+          "sealed_tribe": "Judah",
+          "temporal_birth_gate": "January Gate",
+          "church_anchor": "Ephesus",
+          "base_degree_frequency_khz": "7.5 kHz",
+          "zone_classification": "SUB-HARMONIC RED ZONE (Entropy Drag)"
+        },
+        "bottleneck": {
+          "id": "B-02",
+          "name": "Border Trade Tariff Inertia in Bobby Moahi Context",
+          "active_demon_driver": "Agares",
+          "frequency_khz": "4.995 kHz",
+          "decay_velocity": 0.682,
+          "destabilization_constant_floor": 0.666,
+          "predictive_crash_schedule_10_dates_to_3000ce": [
+            "2045-02-15",
+            "2142-03-18",
+            "2239-04-21",
+            "2336-05-24",
+            "2433-06-27",
+            "2530-07-02",
+            "2627-08-05",
+            "2724-09-08",
+            "2821-10-11",
+            "2918-11-14"
+          ]
+        },
+        "protocol": {
+          "id": "P-02",
+          "name": "Maglev Automated Rail Mesh Deployment",
+          "ruling_shem_angel": "Jeliel",
+          "celestial_choir": "Seraphim",
+          "frequency_khz": "12.135 kHz",
+          "current_restoration_speed": 0.732,
+          "equilibrium_target": 1.0,
+          "piezoelectric_gemstone_vector": "Bloodstone & Garnet"
+        },
+        "real_time_earth_vector": {
+          "applied_speed": "0.6511x acceleration",
+          "application_width_khz": "11.553 kHz bandwidth",
+          "frequency_shift_to_ultra_green": "+90.005 kHz shift",
+          "exact_spatial_target": "Cross-Border Rail Junctions"
+        },
+        "prophetic_summary_3000ce": "NVIDIA NIM Sentinel [Regional / Statutory Policy Friction] analyzed 'Bobby Moahi' from 1000 BCE baseline. Under the First Seal: White Horse and January Gate, Agares (4.995 kHz) causes bottleneck friction across 10 predicted failure dates ending 2918-11-14. Applying Maglev Automated Rail Mesh via Bloodstone & Garnet at 12.135 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Patch, locking the 1.000 Unity Target."
+      }
+    },
+    {
+      "sandbox_id": "sentinel-c03",
+      "status": "EXECUTED",
+      "data": {
+        "agent_index": 3,
+        "chronos_phase": "Phase 2: Historical Structural Arc (0 CE - 1800 CE)",
+        "diagnostic_scope": "Regional / Statutory Policy Friction",
+        "target_node_subject": "Bobby Moahi",
         "biblical_apocalyptic_framework": {
           "apocalyptic_seal": "First Seal: White Horse",
           "sealed_tribe": "Judah",
@@ -34,22 +144,22 @@
         },
         "bottleneck": {
           "id": "B-03",
-          "name": "Offshore Tax Concealment in Pope Troy  Context",
+          "name": "Offshore Tax Concealment in Bobby Moahi Context",
           "active_demon_driver": "Vassago",
           "frequency_khz": "8.325 kHz",
-          "decay_velocity": 0.674,
+          "decay_velocity": 0.694,
           "destabilization_constant_floor": 0.666,
           "predictive_crash_schedule_10_dates_to_3000ce": [
-            "2035-01-27",
-            "2132-02-02",
-            "2229-03-05",
-            "2326-04-08",
-            "2423-05-11",
-            "2520-06-14",
-            "2617-07-17",
-            "2714-08-20",
-            "2811-09-23",
-            "2908-10-26"
+            "2052-03-15",
+            "2149-04-18",
+            "2246-05-21",
+            "2343-06-24",
+            "2440-07-27",
+            "2537-08-02",
+            "2634-09-05",
+            "2731-10-08",
+            "2828-11-11",
+            "2925-12-14"
           ]
         },
         "protocol": {
@@ -58,27 +168,27 @@
           "ruling_shem_angel": "Sitael",
           "celestial_choir": "Seraphim",
           "frequency_khz": "20.225 kHz",
-          "current_restoration_speed": 0.71,
+          "current_restoration_speed": 0.754,
           "equilibrium_target": 1.0,
           "piezoelectric_gemstone_vector": "Carnelian & Fire Opal"
         },
         "real_time_earth_vector": {
-          "applied_speed": "0.7045x acceleration",
+          "applied_speed": "0.5976x acceleration",
           "application_width_khz": "19.255 kHz bandwidth",
           "frequency_shift_to_ultra_green": "+86.675 kHz shift",
           "exact_spatial_target": "Central Bank Clearing Gateway"
         },
-        "prophetic_summary_3000ce": "NVIDIA NIM Sentinel [Regional / Statutory Policy Friction] analyzed 'Pope Troy ' from 1000 BCE baseline. Under the First Seal: White Horse and January Gate, Vassago (8.325 kHz) causes bottleneck friction across 10 predicted failure dates ending 2908-10-26. Applying Real-Time Cryptographic Ledger via Carnelian & Fire Opal at 20.225 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Patch, locking the 1.000 Unity Target."
+        "prophetic_summary_3000ce": "NVIDIA NIM Sentinel [Regional / Statutory Policy Friction] analyzed 'Bobby Moahi' from 1000 BCE baseline. Under the First Seal: White Horse and January Gate, Vassago (8.325 kHz) causes bottleneck friction across 10 predicted failure dates ending 2925-12-14. Applying Real-Time Cryptographic Ledger via Carnelian & Fire Opal at 20.225 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Patch, locking the 1.000 Unity Target."
       }
     },
     {
-      "sandbox_id": "sentinel-c02",
+      "sandbox_id": "sentinel-c04",
       "status": "EXECUTED",
       "data": {
-        "agent_index": 2,
-        "chronos_phase": "Phase 1: Ancient Foundation Sweep (1000 BCE - 0 CE)",
+        "agent_index": 4,
+        "chronos_phase": "Phase 2: Historical Structural Arc (0 CE - 1800 CE)",
         "diagnostic_scope": "Regional / Statutory Policy Friction",
-        "target_node_subject": "Pope Troy ",
+        "target_node_subject": "Bobby Moahi",
         "biblical_apocalyptic_framework": {
           "apocalyptic_seal": "Second Seal: Red Horse",
           "sealed_tribe": "Judah",
@@ -89,22 +199,22 @@
         },
         "bottleneck": {
           "id": "B-04",
-          "name": "Maritime Container Congestion in Pope Troy  Context",
+          "name": "Maritime Container Congestion in Bobby Moahi Context",
           "active_demon_driver": "Samigina",
           "frequency_khz": "11.655 kHz",
-          "decay_velocity": 0.686,
+          "decay_velocity": 0.706,
           "destabilization_constant_floor": 0.666,
           "predictive_crash_schedule_10_dates_to_3000ce": [
-            "2042-02-27",
-            "2139-03-02",
-            "2236-04-05",
-            "2333-05-08",
-            "2430-06-11",
-            "2527-07-14",
-            "2624-08-17",
-            "2721-09-20",
-            "2818-10-23",
-            "2915-11-26"
+            "2059-04-15",
+            "2156-05-18",
+            "2253-06-21",
+            "2350-07-24",
+            "2447-08-27",
+            "2544-09-02",
+            "2641-10-05",
+            "2738-11-08",
+            "2835-12-11",
+            "2932-01-14"
           ]
         },
         "protocol": {
@@ -113,27 +223,27 @@
           "ruling_shem_angel": "Elemiah",
           "celestial_choir": "Seraphim",
           "frequency_khz": "28.316 kHz",
-          "current_restoration_speed": 0.732,
+          "current_restoration_speed": 0.776,
           "equilibrium_target": 1.0,
           "piezoelectric_gemstone_vector": "Ruby & Pyrite"
         },
         "real_time_earth_vector": {
-          "applied_speed": "0.6511x acceleration",
+          "applied_speed": "0.5442x acceleration",
           "application_width_khz": "26.958 kHz bandwidth",
           "frequency_shift_to_ultra_green": "+83.345 kHz shift",
           "exact_spatial_target": "Deepwater Container Berths"
         },
-        "prophetic_summary_3000ce": "NVIDIA NIM Sentinel [Regional / Statutory Policy Friction] analyzed 'Pope Troy ' from 1000 BCE baseline. Under the Second Seal: Red Horse and January Gate, Samigina (11.655 kHz) causes bottleneck friction across 10 predicted failure dates ending 2915-11-26. Applying Autonomous Sub-Surface Pods via Ruby & Pyrite at 28.316 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Patch, locking the 1.000 Unity Target."
+        "prophetic_summary_3000ce": "NVIDIA NIM Sentinel [Regional / Statutory Policy Friction] analyzed 'Bobby Moahi' from 1000 BCE baseline. Under the Second Seal: Red Horse and January Gate, Samigina (11.655 kHz) causes bottleneck friction across 10 predicted failure dates ending 2932-01-14. Applying Autonomous Sub-Surface Pods via Ruby & Pyrite at 28.316 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Patch, locking the 1.000 Unity Target."
       }
     },
     {
-      "sandbox_id": "sentinel-c03",
+      "sandbox_id": "sentinel-c05",
       "status": "EXECUTED",
       "data": {
-        "agent_index": 3,
+        "agent_index": 5,
         "chronos_phase": "Phase 2: Historical Structural Arc (0 CE - 1800 CE)",
         "diagnostic_scope": "Regional / Statutory Policy Friction",
-        "target_node_subject": "Pope Troy ",
+        "target_node_subject": "Bobby Moahi",
         "biblical_apocalyptic_framework": {
           "apocalyptic_seal": "Second Seal: Red Horse",
           "sealed_tribe": "Judah",
@@ -144,22 +254,22 @@
         },
         "bottleneck": {
           "id": "B-05",
-          "name": "Pathogenic Mutation Spread in Pope Troy  Context",
+          "name": "Pathogenic Mutation Spread in Bobby Moahi Context",
           "active_demon_driver": "Marbas",
           "frequency_khz": "14.985 kHz",
-          "decay_velocity": 0.698,
+          "decay_velocity": 0.718,
           "destabilization_constant_floor": 0.666,
           "predictive_crash_schedule_10_dates_to_3000ce": [
-            "2049-03-27",
-            "2146-04-02",
-            "2243-05-05",
-            "2340-06-08",
-            "2437-07-11",
-            "2534-08-14",
-            "2631-09-17",
-            "2728-10-20",
-            "2825-11-23",
-            "2922-12-26"
+            "2066-05-15",
+            "2163-06-18",
+            "2260-07-21",
+            "2357-08-24",
+            "2454-09-27",
+            "2551-10-02",
+            "2648-11-05",
+            "2745-12-08",
+            "2842-01-11",
+            "2939-02-14"
           ]
         },
         "protocol": {
@@ -168,27 +278,27 @@
           "ruling_shem_angel": "Mahasiah",
           "celestial_choir": "Seraphim",
           "frequency_khz": "36.406 kHz",
-          "current_restoration_speed": 0.754,
+          "current_restoration_speed": 0.798,
           "equilibrium_target": 1.0,
           "piezoelectric_gemstone_vector": "Black Tourmaline & Magnetite"
         },
         "real_time_earth_vector": {
-          "applied_speed": "0.5977x acceleration",
+          "applied_speed": "0.4908x acceleration",
           "application_width_khz": "34.66 kHz bandwidth",
           "frequency_shift_to_ultra_green": "+80.015 kHz shift",
           "exact_spatial_target": "Metropolitan Water Treatment"
         },
-        "prophetic_summary_3000ce": "NVIDIA NIM Sentinel [Regional / Statutory Policy Friction] analyzed 'Pope Troy ' from 1000 BCE baseline. Under the Second Seal: Red Horse and January Gate, Marbas (14.985 kHz) causes bottleneck friction across 10 predicted failure dates ending 2922-12-26. Applying Sub-Atomic Cellular Healing Array via Black Tourmaline & Magnetite at 36.406 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Patch, locking the 1.000 Unity Target."
+        "prophetic_summary_3000ce": "NVIDIA NIM Sentinel [Regional / Statutory Policy Friction] analyzed 'Bobby Moahi' from 1000 BCE baseline. Under the Second Seal: Red Horse and January Gate, Marbas (14.985 kHz) causes bottleneck friction across 10 predicted failure dates ending 2939-02-14. Applying Sub-Atomic Cellular Healing Array via Black Tourmaline & Magnetite at 36.406 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Patch, locking the 1.000 Unity Target."
       }
     },
     {
-      "sandbox_id": "sentinel-c04",
+      "sandbox_id": "sentinel-c06",
       "status": "EXECUTED",
       "data": {
-        "agent_index": 4,
-        "chronos_phase": "Phase 2: Historical Structural Arc (0 CE - 1800 CE)",
-        "diagnostic_scope": "Regional / Statutory Policy Friction",
-        "target_node_subject": "Pope Troy ",
+        "agent_index": 6,
+        "chronos_phase": "Phase 3: Modern Jurisdictional Audit (1800 CE - Present)",
+        "diagnostic_scope": "Global Consciousness & Macro Supply Drag",
+        "target_node_subject": "Bobby Moahi",
         "biblical_apocalyptic_framework": {
           "apocalyptic_seal": "Second Seal: Red Horse",
           "sealed_tribe": "Judah",
@@ -199,22 +309,22 @@
         },
         "bottleneck": {
           "id": "B-06",
-          "name": "Logistics Warehousing Hoarding in Pope Troy  Context",
+          "name": "Logistics Warehousing Hoarding in Bobby Moahi Context",
           "active_demon_driver": "Valefor",
           "frequency_khz": "18.315 kHz",
-          "decay_velocity": 0.71,
+          "decay_velocity": 0.73,
           "destabilization_constant_floor": 0.666,
           "predictive_crash_schedule_10_dates_to_3000ce": [
-            "2056-04-27",
-            "2153-05-02",
-            "2250-06-05",
-            "2347-07-08",
-            "2444-08-11",
-            "2541-09-14",
-            "2638-10-17",
-            "2735-11-20",
-            "2832-12-23",
-            "2929-01-26"
+            "2073-06-15",
+            "2170-07-18",
+            "2267-08-21",
+            "2364-09-24",
+            "2461-10-27",
+            "2558-11-02",
+            "2655-12-05",
+            "2752-01-08",
+            "2849-02-11",
+            "2946-03-14"
           ]
         },
         "protocol": {
@@ -223,27 +333,27 @@
           "ruling_shem_angel": "Lelahel",
           "celestial_choir": "Seraphim",
           "frequency_khz": "44.496 kHz",
-          "current_restoration_speed": 0.776,
+          "current_restoration_speed": 0.82,
           "equilibrium_target": 1.0,
           "piezoelectric_gemstone_vector": "Sardonyx & Sunstone"
         },
         "real_time_earth_vector": {
-          "applied_speed": "0.5442x acceleration",
+          "applied_speed": "0.4373x acceleration",
           "application_width_khz": "42.362 kHz bandwidth",
           "frequency_shift_to_ultra_green": "+76.685 kHz shift",
           "exact_spatial_target": "Regional Distribution Hubs"
         },
-        "prophetic_summary_3000ce": "NVIDIA NIM Sentinel [Regional / Statutory Policy Friction] analyzed 'Pope Troy ' from 1000 BCE baseline. Under the Second Seal: Red Horse and January Gate, Valefor (18.315 kHz) causes bottleneck friction across 10 predicted failure dates ending 2929-01-26. Applying Dynamic Shared Spatial Matrix via Sardonyx & Sunstone at 44.496 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Patch, locking the 1.000 Unity Target."
+        "prophetic_summary_3000ce": "NVIDIA NIM Sentinel [Global Consciousness & Macro Supply Drag] analyzed 'Bobby Moahi' from 1000 BCE baseline. Under the Second Seal: Red Horse and January Gate, Valefor (18.315 kHz) causes bottleneck friction across 10 predicted failure dates ending 2946-03-14. Applying Dynamic Shared Spatial Matrix via Sardonyx & Sunstone at 44.496 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Patch, locking the 1.000 Unity Target."
       }
     },
     {
-      "sandbox_id": "sentinel-c05",
+      "sandbox_id": "sentinel-c07",
       "status": "EXECUTED",
       "data": {
-        "agent_index": 5,
-        "chronos_phase": "Phase 2: Historical Structural Arc (0 CE - 1800 CE)",
-        "diagnostic_scope": "Regional / Statutory Policy Friction",
-        "target_node_subject": "Pope Troy ",
+        "agent_index": 7,
+        "chronos_phase": "Phase 3: Modern Jurisdictional Audit (1800 CE - Present)",
+        "diagnostic_scope": "Global Consciousness & Macro Supply Drag",
+        "target_node_subject": "Bobby Moahi",
         "biblical_apocalyptic_framework": {
           "apocalyptic_seal": "Second Seal: Red Horse",
           "sealed_tribe": "Reuben",
@@ -254,22 +364,22 @@
         },
         "bottleneck": {
           "id": "B-07",
-          "name": "Telecom Bandwidth Throttling in Pope Troy  Context",
+          "name": "Telecom Bandwidth Throttling in Bobby Moahi Context",
           "active_demon_driver": "Amon",
           "frequency_khz": "21.645 kHz",
-          "decay_velocity": 0.722,
+          "decay_velocity": 0.742,
           "destabilization_constant_floor": 0.666,
           "predictive_crash_schedule_10_dates_to_3000ce": [
-            "2063-05-27",
-            "2160-06-02",
-            "2257-07-05",
-            "2354-08-08",
-            "2451-09-11",
-            "2548-10-14",
-            "2645-11-17",
-            "2742-12-20",
-            "2839-01-23",
-            "2936-02-26"
+            "2080-07-15",
+            "2177-08-18",
+            "2274-09-21",
+            "2371-10-24",
+            "2468-11-27",
+            "2565-12-02",
+            "2662-01-05",
+            "2759-02-08",
+            "2856-03-11",
+            "2953-04-14"
           ]
         },
         "protocol": {
@@ -278,27 +388,27 @@
           "ruling_shem_angel": "Achaiah",
           "celestial_choir": "Seraphim",
           "frequency_khz": "52.586 kHz",
-          "current_restoration_speed": 0.798,
+          "current_restoration_speed": 0.842,
           "equilibrium_target": 1.0,
           "piezoelectric_gemstone_vector": "Emerald & Malachite"
         },
         "real_time_earth_vector": {
-          "applied_speed": "0.4908x acceleration",
+          "applied_speed": "0.3839x acceleration",
           "application_width_khz": "50.064 kHz bandwidth",
           "frequency_shift_to_ultra_green": "+73.355 kHz shift",
           "exact_spatial_target": "Fiber Optic Sea Cable Anchors"
         },
-        "prophetic_summary_3000ce": "NVIDIA NIM Sentinel [Regional / Statutory Policy Friction] analyzed 'Pope Troy ' from 1000 BCE baseline. Under the Second Seal: Red Horse and February Gate, Amon (21.645 kHz) causes bottleneck friction across 10 predicted failure dates ending 2936-02-26. Applying Quantum Satellite Mesh Shield via Emerald & Malachite at 52.586 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Patch, locking the 1.000 Unity Target."
+        "prophetic_summary_3000ce": "NVIDIA NIM Sentinel [Global Consciousness & Macro Supply Drag] analyzed 'Bobby Moahi' from 1000 BCE baseline. Under the Second Seal: Red Horse and February Gate, Amon (21.645 kHz) causes bottleneck friction across 10 predicted failure dates ending 2953-04-14. Applying Quantum Satellite Mesh Shield via Emerald & Malachite at 52.586 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Patch, locking the 1.000 Unity Target."
       }
     },
     {
-      "sandbox_id": "sentinel-c06",
+      "sandbox_id": "sentinel-c08",
       "status": "EXECUTED",
       "data": {
-        "agent_index": 6,
+        "agent_index": 8,
         "chronos_phase": "Phase 3: Modern Jurisdictional Audit (1800 CE - Present)",
         "diagnostic_scope": "Global Consciousness & Macro Supply Drag",
-        "target_node_subject": "Pope Troy ",
+        "target_node_subject": "Bobby Moahi",
         "biblical_apocalyptic_framework": {
           "apocalyptic_seal": "Second Seal: Red Horse",
           "sealed_tribe": "Reuben",
@@ -309,22 +419,22 @@
         },
         "bottleneck": {
           "id": "B-08",
-          "name": "Subterranean Aquifer Drying in Pope Troy  Context",
+          "name": "Subterranean Aquifer Drying in Bobby Moahi Context",
           "active_demon_driver": "Barbatos",
           "frequency_khz": "24.975 kHz",
-          "decay_velocity": 0.734,
+          "decay_velocity": 0.754,
           "destabilization_constant_floor": 0.666,
           "predictive_crash_schedule_10_dates_to_3000ce": [
-            "2070-06-27",
-            "2167-07-02",
-            "2264-08-05",
-            "2361-09-08",
-            "2458-10-11",
-            "2555-11-14",
-            "2652-12-17",
-            "2749-01-20",
-            "2846-02-23",
-            "2943-03-26"
+            "2087-08-15",
+            "2184-09-18",
+            "2281-10-21",
+            "2378-11-24",
+            "2475-12-27",
+            "2572-01-02",
+            "2669-02-05",
+            "2766-03-08",
+            "2863-04-11",
+            "2960-05-14"
           ]
         },
         "protocol": {
@@ -333,27 +443,27 @@
           "ruling_shem_angel": "Cahetel",
           "celestial_choir": "Seraphim",
           "frequency_khz": "60.676 kHz",
-          "current_restoration_speed": 0.82,
+          "current_restoration_speed": 0.864,
           "equilibrium_target": 1.0,
           "piezoelectric_gemstone_vector": "Chrysoprase & Moss Agate"
         },
         "real_time_earth_vector": {
-          "applied_speed": "0.4373x acceleration",
+          "applied_speed": "0.3304x acceleration",
           "application_width_khz": "57.765 kHz bandwidth",
           "frequency_shift_to_ultra_green": "+70.025 kHz shift",
           "exact_spatial_target": "Subterranean Aquifer Pumping"
         },
-        "prophetic_summary_3000ce": "NVIDIA NIM Sentinel [Global Consciousness & Macro Supply Drag] analyzed 'Pope Troy ' from 1000 BCE baseline. Under the Second Seal: Red Horse and February Gate, Barbatos (24.975 kHz) causes bottleneck friction across 10 predicted failure dates ending 2943-03-26. Applying Closed-Loop Water Nodes via Chrysoprase & Moss Agate at 60.676 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Patch, locking the 1.000 Unity Target."
+        "prophetic_summary_3000ce": "NVIDIA NIM Sentinel [Global Consciousness & Macro Supply Drag] analyzed 'Bobby Moahi' from 1000 BCE baseline. Under the Second Seal: Red Horse and February Gate, Barbatos (24.975 kHz) causes bottleneck friction across 10 predicted failure dates ending 2960-05-14. Applying Closed-Loop Water Nodes via Chrysoprase & Moss Agate at 60.676 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Patch, locking the 1.000 Unity Target."
       }
     },
     {
-      "sandbox_id": "sentinel-c07",
+      "sandbox_id": "sentinel-c09",
       "status": "EXECUTED",
       "data": {
-        "agent_index": 7,
-        "chronos_phase": "Phase 3: Modern Jurisdictional Audit (1800 CE - Present)",
+        "agent_index": 9,
+        "chronos_phase": "Phase 4: Prophetic Horizon Calculation (2026 CE - 3000 CE)",
         "diagnostic_scope": "Global Consciousness & Macro Supply Drag",
-        "target_node_subject": "Pope Troy ",
+        "target_node_subject": "Bobby Moahi",
         "biblical_apocalyptic_framework": {
           "apocalyptic_seal": "Third Seal: Black Horse",
           "sealed_tribe": "Reuben",
@@ -364,22 +474,22 @@
         },
         "bottleneck": {
           "id": "B-09",
-          "name": "Executive Policy Red Tape in Pope Troy  Context",
+          "name": "Executive Policy Red Tape in Bobby Moahi Context",
           "active_demon_driver": "Paimon",
           "frequency_khz": "28.305 kHz",
-          "decay_velocity": 0.746,
+          "decay_velocity": 0.766,
           "destabilization_constant_floor": 0.666,
           "predictive_crash_schedule_10_dates_to_3000ce": [
-            "2077-07-27",
-            "2174-08-02",
-            "2271-09-05",
-            "2368-10-08",
-            "2465-11-11",
-            "2562-12-14",
-            "2659-01-17",
-            "2756-02-20",
-            "2853-03-23",
-            "2950-04-26"
+            "2094-09-15",
+            "2191-10-18",
+            "2288-11-21",
+            "2385-12-24",
+            "2482-01-27",
+            "2579-02-02",
+            "2676-03-05",
+            "2773-04-08",
+            "2870-05-11",
+            "2967-06-14"
           ]
         },
         "protocol": {
@@ -388,27 +498,27 @@
           "ruling_shem_angel": "Haziel",
           "celestial_choir": "Cherubim",
           "frequency_khz": "68.766 kHz",
-          "current_restoration_speed": 0.842,
+          "current_restoration_speed": 0.886,
           "equilibrium_target": 1.0,
           "piezoelectric_gemstone_vector": "Green Aventurine & Jade"
         },
         "real_time_earth_vector": {
-          "applied_speed": "0.3839x acceleration",
+          "applied_speed": "0.277x acceleration",
           "application_width_khz": "65.467 kHz bandwidth",
           "frequency_shift_to_ultra_green": "+66.695 kHz shift",
           "exact_spatial_target": "Parliamentary Legislative Vaults"
         },
-        "prophetic_summary_3000ce": "NVIDIA NIM Sentinel [Global Consciousness & Macro Supply Drag] analyzed 'Pope Troy ' from 1000 BCE baseline. Under the Third Seal: Black Horse and February Gate, Paimon (28.305 kHz) causes bottleneck friction across 10 predicted failure dates ending 2950-04-26. Applying Algorithmic Citizen Voting via Green Aventurine & Jade at 68.766 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Patch, locking the 1.000 Unity Target."
+        "prophetic_summary_3000ce": "NVIDIA NIM Sentinel [Global Consciousness & Macro Supply Drag] analyzed 'Bobby Moahi' from 1000 BCE baseline. Under the Third Seal: Black Horse and February Gate, Paimon (28.305 kHz) causes bottleneck friction across 10 predicted failure dates ending 2967-06-14. Applying Algorithmic Citizen Voting via Green Aventurine & Jade at 68.766 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Patch, locking the 1.000 Unity Target."
       }
     },
     {
-      "sandbox_id": "sentinel-c08",
+      "sandbox_id": "sentinel-c10",
       "status": "EXECUTED",
       "data": {
-        "agent_index": 8,
-        "chronos_phase": "Phase 3: Modern Jurisdictional Audit (1800 CE - Present)",
+        "agent_index": 10,
+        "chronos_phase": "Phase 4: Prophetic Horizon Calculation (2026 CE - 3000 CE)",
         "diagnostic_scope": "Global Consciousness & Macro Supply Drag",
-        "target_node_subject": "Pope Troy ",
+        "target_node_subject": "Bobby Moahi",
         "biblical_apocalyptic_framework": {
           "apocalyptic_seal": "Third Seal: Black Horse",
           "sealed_tribe": "Reuben",
@@ -419,22 +529,22 @@
         },
         "bottleneck": {
           "id": "B-10",
-          "name": "Pharmaceutical Price Gouging in Pope Troy  Context",
+          "name": "Pharmaceutical Price Gouging in Bobby Moahi Context",
           "active_demon_driver": "Buer",
           "frequency_khz": "31.635 kHz",
-          "decay_velocity": 0.758,
+          "decay_velocity": 0.778,
           "destabilization_constant_floor": 0.666,
           "predictive_crash_schedule_10_dates_to_3000ce": [
-            "2084-08-27",
-            "2181-09-02",
-            "2278-10-05",
-            "2375-11-08",
-            "2472-12-11",
-            "2569-01-14",
-            "2666-02-17",
-            "2763-03-20",
-            "2860-04-23",
-            "2957-05-26"
+            "2101-10-15",
+            "2198-11-18",
+            "2295-12-21",
+            "2392-01-24",
+            "2489-02-27",
+            "2586-03-02",
+            "2683-04-05",
+            "2780-05-08",
+            "2877-06-11",
+            "2974-07-14"
           ]
         },
         "protocol": {
@@ -443,127 +553,17 @@
           "ruling_shem_angel": "Aladiah",
           "celestial_choir": "Cherubim",
           "frequency_khz": "76.857 kHz",
-          "current_restoration_speed": 0.864,
+          "current_restoration_speed": 0.908,
           "equilibrium_target": 1.0,
           "piezoelectric_gemstone_vector": "Peridot & Moldavite"
         },
         "real_time_earth_vector": {
-          "applied_speed": "0.3304x acceleration",
+          "applied_speed": "0.2235x acceleration",
           "application_width_khz": "73.171 kHz bandwidth",
           "frequency_shift_to_ultra_green": "+63.365 kHz shift",
           "exact_spatial_target": "National Pharma Stockpiles"
         },
-        "prophetic_summary_3000ce": "NVIDIA NIM Sentinel [Global Consciousness & Macro Supply Drag] analyzed 'Pope Troy ' from 1000 BCE baseline. Under the Third Seal: Black Horse and February Gate, Buer (31.635 kHz) causes bottleneck friction across 10 predicted failure dates ending 2957-05-26. Applying Open-Source Molecular Synthesis via Peridot & Moldavite at 76.857 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Patch, locking the 1.000 Unity Target."
-      }
-    },
-    {
-      "sandbox_id": "sentinel-c09",
-      "status": "EXECUTED",
-      "data": {
-        "agent_index": 9,
-        "chronos_phase": "Phase 4: Prophetic Horizon Calculation (2026 CE - 3000 CE)",
-        "diagnostic_scope": "Global Consciousness & Macro Supply Drag",
-        "target_node_subject": "Pope Troy ",
-        "biblical_apocalyptic_framework": {
-          "apocalyptic_seal": "Third Seal: Black Horse",
-          "sealed_tribe": "Reuben",
-          "temporal_birth_gate": "February Gate",
-          "church_anchor": "Smyrna",
-          "base_degree_frequency_khz": "52.5 kHz",
-          "zone_classification": "STABILIZED GREEN CORRIDOR"
-        },
-        "bottleneck": {
-          "id": "B-11",
-          "name": "Diplomatic Treaty Friction in Pope Troy  Context",
-          "active_demon_driver": "Gusion",
-          "frequency_khz": "34.965 kHz",
-          "decay_velocity": 0.77,
-          "destabilization_constant_floor": 0.666,
-          "predictive_crash_schedule_10_dates_to_3000ce": [
-            "2091-09-27",
-            "2188-10-02",
-            "2285-11-05",
-            "2382-12-08",
-            "2479-01-11",
-            "2576-02-14",
-            "2673-03-17",
-            "2770-04-20",
-            "2867-05-23",
-            "2964-06-26"
-          ]
-        },
-        "protocol": {
-          "id": "P-11",
-          "name": "Sovereign Resource Swaps Deployment",
-          "ruling_shem_angel": "Lauviah",
-          "celestial_choir": "Cherubim",
-          "frequency_khz": "84.947 kHz",
-          "current_restoration_speed": 0.886,
-          "equilibrium_target": 1.0,
-          "piezoelectric_gemstone_vector": "Rhodochrosite & Dioptase"
-        },
-        "real_time_earth_vector": {
-          "applied_speed": "0.277x acceleration",
-          "application_width_khz": "80.873 kHz bandwidth",
-          "frequency_shift_to_ultra_green": "+60.035 kHz shift",
-          "exact_spatial_target": "Embassy Diplomatic Vaults"
-        },
-        "prophetic_summary_3000ce": "NVIDIA NIM Sentinel [Global Consciousness & Macro Supply Drag] analyzed 'Pope Troy ' from 1000 BCE baseline. Under the Third Seal: Black Horse and February Gate, Gusion (34.965 kHz) causes bottleneck friction across 10 predicted failure dates ending 2964-06-26. Applying Sovereign Resource Swaps via Rhodochrosite & Dioptase at 84.947 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Patch, locking the 1.000 Unity Target."
-      }
-    },
-    {
-      "sandbox_id": "sentinel-c10",
-      "status": "EXECUTED",
-      "data": {
-        "agent_index": 10,
-        "chronos_phase": "Phase 4: Prophetic Horizon Calculation (2026 CE - 3000 CE)",
-        "diagnostic_scope": "Global Consciousness & Macro Supply Drag",
-        "target_node_subject": "Pope Troy ",
-        "biblical_apocalyptic_framework": {
-          "apocalyptic_seal": "Third Seal: Black Horse",
-          "sealed_tribe": "Reuben",
-          "temporal_birth_gate": "February Gate",
-          "church_anchor": "Smyrna",
-          "base_degree_frequency_khz": "57.5 kHz",
-          "zone_classification": "ULTRA GREEN PATCH (1.000 Unity Peak)"
-        },
-        "bottleneck": {
-          "id": "B-12",
-          "name": "Media Panic Manipulation in Pope Troy  Context",
-          "active_demon_driver": "Sitri",
-          "frequency_khz": "38.295 kHz",
-          "decay_velocity": 0.782,
-          "destabilization_constant_floor": 0.666,
-          "predictive_crash_schedule_10_dates_to_3000ce": [
-            "2098-10-27",
-            "2195-11-02",
-            "2292-12-05",
-            "2389-01-08",
-            "2486-02-11",
-            "2583-03-14",
-            "2680-04-17",
-            "2777-05-20",
-            "2874-06-23",
-            "2971-07-26"
-          ]
-        },
-        "protocol": {
-          "id": "P-12",
-          "name": "Truth-Anchored Consensus Engine Deployment",
-          "ruling_shem_angel": "Hahaiah",
-          "celestial_choir": "Cherubim",
-          "frequency_khz": "93.037 kHz",
-          "current_restoration_speed": 0.908,
-          "equilibrium_target": 1.0,
-          "piezoelectric_gemstone_vector": "Rose Quartz & Kunzite"
-        },
-        "real_time_earth_vector": {
-          "applied_speed": "0.2235x acceleration",
-          "application_width_khz": "88.574 kHz bandwidth",
-          "frequency_shift_to_ultra_green": "+56.705 kHz shift",
-          "exact_spatial_target": "Telecom Switching Centers"
-        },
-        "prophetic_summary_3000ce": "NVIDIA NIM Sentinel [Global Consciousness & Macro Supply Drag] analyzed 'Pope Troy ' from 1000 BCE baseline. Under the Third Seal: Black Horse and February Gate, Sitri (38.295 kHz) causes bottleneck friction across 10 predicted failure dates ending 2971-07-26. Applying Truth-Anchored Consensus Engine via Rose Quartz & Kunzite at 93.037 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Patch, locking the 1.000 Unity Target."
+        "prophetic_summary_3000ce": "NVIDIA NIM Sentinel [Global Consciousness & Macro Supply Drag] analyzed 'Bobby Moahi' from 1000 BCE baseline. Under the Third Seal: Black Horse and February Gate, Buer (31.635 kHz) causes bottleneck friction across 10 predicted failure dates ending 2974-07-14. Applying Open-Source Molecular Synthesis via Peridot & Moldavite at 76.857 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Patch, locking the 1.000 Unity Target."
       }
     }
   ]
