@@ -8,7 +8,9 @@ on:
       node_payload:
         description: 'Target Subject / Node'
         required: true
-        default: 'Sovereign Node Input'
+      session_id:
+        description: 'Session Identifier'
+        required: false
 
 permissions:
   contents: write
@@ -37,13 +39,14 @@ jobs:
           NVIDIA_NIM_API_KEY: ${{ secrets.NVIDIA_NIM_API_KEY }}
           EVENT_PAYLOAD: ${{ toJson(github.event.client_payload) }}
           INPUT_NODE: ${{ inputs.node_payload }}
+          INPUT_SESSION_ID: ${{ inputs.session_id }}
         run: python cli_audit.py
 
-      - name: Commit Multi-User Session Results
+      - name: Commit Session Results
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git pull origin main --rebase || true
           git add sessions/ last_audit_results.json
-          git commit -m "Commit session results [skip ci]" || exit 0
+          git commit -m "Commit session diagnostic output [skip ci]" || exit 0
           git push origin main
