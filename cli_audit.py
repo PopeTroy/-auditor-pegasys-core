@@ -5,60 +5,71 @@ from sweep.chronos import FullStackChronosEngine
 from core.inference_router import InferenceEngineRouter
 
 def run_cli_audit():
-    # 1. Parse trigger metadata passed from WordPress/GitHub event
+    # Parse payload sent via GitHub repository dispatch event
     event_payload_str = os.getenv("EVENT_PAYLOAD", "{}")
-    input_node = os.getenv("INPUT_NODE", "")
+    input_node_env = os.getenv("INPUT_NODE", "").strip()
 
-    session_id = "default_session"
-    target_node = "South Africa"
+    target_node = ""
+    session_id = ""
 
     try:
         event_data = json.loads(event_payload_str)
-        client_payload = event_data.get("client_payload", {})
         
-        target_node = client_payload.get("node_payload") or input_node or "South Africa"
-        session_id = client_payload.get("session_id") or "default_session"
+        # Extract direct properties from github.event.client_payload
+        if isinstance(event_data, dict):
+            target_node = event_data.get("node_payload") or event_data.get("client_payload", {}).get("node_payload")
+            session_id = event_data.get("session_id") or event_data.get("client_payload", {}).get("session_id")
     except Exception as e:
-        print(f"[!] Warning: Could not parse event payload ({e}). Falling back to defaults.")
+        print(f"[!] Warning: Payload JSON parsing error: {e}")
 
-    print(f"[*] Initializing Chronos Calculus Execution...")
-    print(f"[*] Target Node: '{target_node}'")
-    print(f"[*] Session ID : '{session_id}'")
+    # Fall back to workflow input environment variables if event dict parsing is empty
+    if not target_node:
+        target_node = input_node_env
+    if not session_id:
+        session_id = os.getenv("INPUT_SESSION_ID", "session_standalone")
 
-    # 2. Initialize NVIDIA NIM AI Router & Engine
+    # Ensure execution halts if no target subject was supplied from WordPress
+    if not target_node:
+        print("[X] Critical Error: No target node subject provided from WordPress input. Aborting sweep.")
+        sys.exit(1)
+
+    print(f"[*] Starting Chronos Calculus Engine...")
+    print(f"[*] Active Session ID: '{session_id}'")
+    print(f"[*] Target Node     : '{target_node}'")
+
+    # Initialize NIM AI Router & Chronos Engine
     router = InferenceEngineRouter()
     engine = FullStackChronosEngine(router=router)
 
-    # 3. Execute 4,000-Year Sweep (1000 BCE to 3000 CE)
+    # Execute 4,000-Year Sweep (1000 BCE to 3000 CE)
     sweep_results = engine.execute_full_sweep(
         industry="Socio-Economic Infrastructure",
         payload=target_node,
         cycle=59763
     )
 
-    # 4. Construct Final Payload Wrapper
+    # Construct Final JSON Payload
     final_output_payload = {
         "security": {
             "session_guid": session_id,
-            "utc_timestamp": os.getenv("GITHUB_RUN_ID", "2026-07-21T12:00:00Z")
+            "utc_timestamp": os.getenv("GITHUB_RUN_ID", "")
         },
         "quantum_header": "QUANTUM-CYCLE: 059763 / 144000",
         "quantum_cycle": 59763,
         "chronos_sweep": sweep_results
     }
 
-    # 5. Save to Isolated Session Path for Multi-User Isolation
+    # Save to isolated session file for multi-user isolation
     os.makedirs("sessions", exist_ok=True)
     session_file_path = f"sessions/{session_id}.json"
     
     with open(session_file_path, "w") as f:
         json.dump(final_output_payload, f, indent=2)
-    print(f"[✓] Session results written to: {session_file_path}")
+    print(f"[✓] Session isolated file successfully created: {session_file_path}")
 
-    # 6. Backward-compatibility output
+    # Legacy output file update
     with open("last_audit_results.json", "w") as f:
         json.dump(final_output_payload, f, indent=2)
-    print(f"[✓] Legacy root results written to: last_audit_results.json")
 
 if __name__ == "__main__":
     run_cli_audit()
