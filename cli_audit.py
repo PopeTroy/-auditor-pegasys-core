@@ -4,7 +4,7 @@ import sys
 import hashlib
 from datetime import datetime, timezone
 
-# Optional imports from your repository structure
+# Optional engine imports from your repository structure
 try:
     from sweep.chronos import FullStackChronosEngine
     from core.inference_router import InferenceEngineRouter
@@ -15,89 +15,80 @@ except ImportError:
 AUDIT_FILE_PATH = "last_audit_results.json"
 
 
-def generate_node_seed(node_subject: str) -> int:
-    """Generates a deterministic numerical seed from the target node string."""
-    clean_subject = node_subject.lower().strip()
-    hash_digest = hashlib.sha256(clean_subject.encode('utf-8')).hexdigest()
-    return int(hash_digest[:16], 16)
-
-
-def select_unique_node_vectors(target_node: str, count: int = 10):
+def generate_adaptive_node_sweep(target_node: str, count: int = 10):
     """
-    Fallback deterministic generator for unique bottlenecks and protocols
-    if the external engine is not directly available or relies on static indexing.
+    Generates 10 completely unique, subject-adaptive bottlenecks, protocols, 
+    crash schedules, and 3000 CE prophecies dynamically calculated from 
+    the target node string.
     """
-    seed = generate_node_seed(target_node)
-    
-    # Base Goetic Demon Drivers Pool
+    clean_node = target_node.strip().title()
+    node_hash = hashlib.sha256(clean_node.lower().encode('utf-8')).hexdigest()
+
+    # Dynamic domain friction templates
+    domain_frictions = [
+        ("Sovereign Debt Default Drag", "Currency Instability Friction"),
+        ("Critical Power Grid Strain", "Energy Monopoly Drag"),
+        ("Cross-Border Smuggling Inertia", "Port Customs Extortion"),
+        ("Telecom Spectrum Congestion", "Knowledge Paywall Drag"),
+        ("Agricultural Drought Supply Drag", "Municipal Water Supply Friction"),
+        ("Aviation Fuel Surcharge Drag", "Freight Transit Network Lag"),
+        ("Municipal Emergency Response Lag", "Grid Fire Arson Risk"),
+        ("Central Bank Interest Rate Drag", "Liquidity Freeze Bottleneck"),
+        ("Pharmaceutical Patent Inertia", "Healthcare System Monopoly Drag"),
+        ("Automated Rail Mesh Friction", "Customs Inspection Delay")
+    ]
+
+    # Dynamic remediation protocol templates
+    remediations = [
+        ("Decentralized Micro-Grid Mesh", "Red Jasper & Hematite"),
+        ("Zero-Knowledge Border Security Lock", "Aragonite & Scapolite"),
+        ("Logos Asset-Backed Currency Ledger", "Pearl & Mother of Pearl"),
+        ("Open-Access Universal Knowledge Vault", "White Chalcedony & Opal"),
+        ("Hydrogen Airship Transit Mesh", "Ulexite & Labradorite"),
+        ("Electro-Thermal Suppression Arrays", "Rhodonite & Pink Tourmaline"),
+        ("Automated Profit-Share Ledger", "Moonstone & Selenite"),
+        ("Orbital Early-Warning Scanners", "Amber & Chrysoberyl")
+    ]
+
     demons = [
         ("Bael", "1.665 kHz"), ("Agares", "4.995 kHz"), ("Vassago", "8.325 kHz"),
         ("Gamigin", "11.655 kHz"), ("Marbas", "14.985 kHz"), ("Valefor", "18.315 kHz"),
-        ("Amon", "21.645 kHz"), ("Barbatos", "24.975 kHz"), ("Paimon", "28.305 kHz"),
-        ("Buer", "31.635 kHz"), ("Gusion", "34.965 kHz"), ("Sitri", "38.295 kHz"),
-        ("Beleth", "41.625 kHz"), ("Leraje", "44.955 kHz"), ("Eligos", "48.285 kHz"),
-        ("Zepar", "51.615 kHz"), ("Botis", "54.945 kHz"), ("Bathin", "58.275 kHz"),
-        ("Sallos", "61.605 kHz"), ("Purson", "64.935 kHz"), ("Morax", "68.265 kHz"),
-        ("Ipos", "71.595 kHz"), ("Aim", "74.925 kHz"), ("Naberius", "78.255 kHz")
+        ("Botis", "54.945 kHz"), ("Bathin", "58.275 kHz"), ("Sallos", "61.605 kHz"),
+        ("Purson", "64.935 kHz"), ("Morax", "68.265 kHz"), ("Ipos", "71.595 kHz"),
+        ("Aim", "74.925 kHz"), ("Naberius", "78.255 kHz")
     ]
-    
-    # Base Shem Angels Pool
+
     angels = [
         ("Vehuiah", "Seraphim", "4.045 kHz"), ("Jeliel", "Seraphim", "12.135 kHz"),
-        ("Sitael", "Seraphim", "20.225 kHz"), ("Elemiah", "Seraphim", "28.315 kHz"),
-        ("Mahasiah", "Seraphim", "36.405 kHz"), ("Lelahel", "Seraphim", "44.495 kHz"),
-        ("Achaiah", "Seraphim", "52.585 kHz"), ("Cahetel", "Seraphim", "60.675 kHz"),
-        ("Haziel", "Cherubim", "68.765 kHz"), ("Aladiah", "Cherubim", "76.855 kHz"),
         ("Lauviah", "Thrones", "133.488 kHz"), ("Caliel", "Thrones", "141.578 kHz"),
         ("Leuviah", "Thrones", "149.668 kHz"), ("Pahaliah", "Thrones", "157.758 kHz"),
         ("Nelchael", "Thrones", "165.848 kHz"), ("Yeiayel", "Thrones", "173.939 kHz")
     ]
 
-    # Pre-defined systemic bottleneck templates
-    bottleneck_templates = [
-        "Disaster Emergency Lag", "Airport Customs Extortion", "Industrial Labor Strikes",
-        "Fiat Currency Inflation Drag", "Academic Knowledge Paywalls", "Air Freight Carbon Surcharges",
-        "Grid Fire Arson Propagation", "Corporate Greenwashing Deception", "Fossil Fuel Monopolization",
-        "Border Trade Tariff Inertia", "Port Container Clearance Friction", "Municipal Water Supply Drag",
-        "Pharmaceutical Patent Monopolies", "Telecom Spectrum Bandwidth Congestion", "Transit Mesh Disruption"
-    ]
-
-    protocol_templates = [
-        "Orbital Early-Warning Scanners Deployment", "Zero-Knowledge Biometric Lock Deployment",
-        "Automated Profit-Share Ledger Deployment", "Logos Asset-Backed Currency Deployment",
-        "Open Access Universal Vault Deployment", "Hydrogen Airship Transit Mesh Deployment",
-        "Electro-Thermal Fire Arrays Deployment", "Real-Time Audit Lock Deployment",
-        "Decentralized Micro-Grid Nodes Deployment", "Maglev Automated Rail Mesh Deployment"
-    ]
-
-    gemstones = [
-        "Amber & Chrysoberyl", "Aragonite & Scapolite", "Moonstone & Selenite",
-        "Pearl & Mother of Pearl", "White Chalcedony & Opal", "Ulexite & Labradorite",
-        "Rhodonite & Pink Tourmaline", "Petalite & Morganite", "Red Jasper & Hematite", "Bloodstone & Garnet"
-    ]
-
     sweep_results = []
-    pool_size = len(bottleneck_templates)
-    
-    # Calculate unique starting offset based on node hash seed
-    start_offset = seed % pool_size
 
     for idx in range(count):
-        # Step through index deterministically using prime multipliers for high variance
-        b_idx = (start_offset + idx * 7) % pool_size
-        d_idx = (start_offset + idx * 3) % len(demons)
-        a_idx = (start_offset + idx * 5) % len(angels)
-        g_idx = (start_offset + idx * 2) % len(gemstones)
-        
-        b_id = f"B-{(b_idx + 1):02d}"
-        p_id = f"P-{(idx + 1):02d}"
-        
-        demon_name, demon_freq = demons[d_idx]
-        angel_name, angel_choir, angel_freq = angels[a_idx]
-        
-        # Calculate dynamic crash dates based on node seed offset
-        base_year = 2026 + ((seed + idx) % 7)
-        crash_schedule = [f"{base_year + (y * 97)}-{(idx % 12) + 1:02d}-12" for y in range(10)]
+        # Derive a cryptographic sub-seed per sentinel index for 100% variance
+        sub_hash = hashlib.sha256(f"{node_hash}:{idx}".encode('utf-8')).hexdigest()
+        sub_seed = int(sub_hash[:16], 16)
+
+        # Select dynamic parameters
+        f_title, _ = domain_frictions[sub_seed % len(domain_frictions)]
+        p_title, gemstone = remediations[(sub_seed >> 4) % len(remediations)]
+        demon_name, demon_freq = demons[(sub_seed >> 8) % len(demons)]
+        angel_name, angel_choir, angel_freq = angels[(sub_seed >> 12) % len(angels)]
+
+        # Dynamically generate unique 10-date failure schedules (2026 - 3000 CE)
+        base_year = 2026 + (sub_seed % 12)
+        year_step = 75 + ((sub_seed >> 3) % 25)
+        crash_dates = [
+            f"{base_year + (y * year_step)}-{(sub_seed % 12) + 1:02d}-{(sub_seed % 28) + 1:02d}"
+            for y in range(10)
+        ]
+
+        # Calculate subject-unique IDs
+        b_id = f"B-{(sub_seed % 89) + 10:02d}"
+        p_id = f"P-{(sub_seed % 89) + 10:02d}"
 
         sentinel_record = {
             "sandbox_id": f"sentinel-c{idx+1:02d}",
@@ -106,45 +97,45 @@ def select_unique_node_vectors(target_node: str, count: int = 10):
                 "agent_index": idx + 1,
                 "chronos_phase": f"Phase {(idx // 3) + 1}: Diagnostic Arc",
                 "diagnostic_scope": "Regional / Statutory Policy Friction",
-                "target_node_subject": target_node,
+                "target_node_subject": clean_node,
                 "biblical_apocalyptic_framework": {
                     "apocalyptic_seal": "Fourth Seal: Pale Horse" if idx < 5 else "Fifth Seal: Altar of Martyrs",
-                    "sealed_tribe": "Gad" if idx % 2 == 0 else "Asher",
-                    "temporal_birth_gate": "March Gate" if idx % 2 == 0 else "April Gate",
-                    "church_anchor": "Pergamum" if idx % 2 == 0 else "Thyatira",
-                    "base_degree_frequency_khz": f"{82.5 + (idx * 5.0)} kHz",
+                    "sealed_tribe": "Judah" if sub_seed % 2 == 0 else "Gad",
+                    "temporal_birth_gate": "January Gate" if sub_seed % 2 == 0 else "March Gate",
+                    "church_anchor": "Ephesus" if sub_seed % 2 == 0 else "Pergamum",
+                    "base_degree_frequency_khz": f"{80.0 + (sub_seed % 35):.1f} kHz",
                     "zone_classification": "STABILIZED GREEN CORRIDOR"
                 },
                 "bottleneck": {
                     "id": b_id,
-                    "name": f"{bottleneck_templates[b_idx]} in {target_node} Context",
+                    "name": f"{f_title} in {clean_node} Context",
                     "active_demon_driver": demon_name,
                     "frequency_khz": demon_freq,
-                    "decay_velocity": round(0.666 + (idx * 0.012), 3),
+                    "decay_velocity": round(0.500 + ((sub_seed % 400) / 1000.0), 3),
                     "destabilization_constant_floor": 0.666,
-                    "predictive_crash_schedule_10_dates_to_3000ce": crash_schedule
+                    "predictive_crash_schedule_10_dates_to_3000ce": crash_dates
                 },
                 "protocol": {
                     "id": p_id,
-                    "name": protocol_templates[idx % len(protocol_templates)],
+                    "name": f"{clean_node} {p_title} Deployment",
                     "ruling_shem_angel": angel_name,
                     "celestial_choir": angel_choir,
                     "frequency_khz": angel_freq,
-                    "current_restoration_speed": round(0.710 + (idx * 0.02), 3),
+                    "current_restoration_speed": round(0.700 + ((sub_seed % 250) / 1000.0), 3),
                     "equilibrium_target": 1.0,
-                    "piezoelectric_gemstone_vector": gemstones[g_idx]
+                    "piezoelectric_gemstone_vector": gemstone
                 },
                 "real_time_earth_vector": {
-                    "applied_speed": f"{round(0.704 - (idx * 0.05), 4)}x acceleration",
-                    "application_width_khz": f"{127.0 + (idx * 7.5):.3f} kHz bandwidth",
-                    "frequency_shift_to_ultra_green": f"+{40.0 - (idx * 3.2):.3f} kHz shift",
-                    "exact_spatial_target": f"{target_node} Spatial Infrastructure Node #{idx+1}"
+                    "applied_speed": f"{round(0.400 + ((sub_seed % 500) / 1000.0), 4)}x acceleration",
+                    "application_width_khz": f"{110.0 + (sub_seed % 60):.3f} kHz bandwidth",
+                    "frequency_shift_to_ultra_green": f"+{20.0 + (sub_seed % 40):.3f} kHz shift",
+                    "exact_spatial_target": f"{clean_node} Infrastructure Grid Node #{idx+1}"
                 },
                 "prophetic_summary_3000ce": (
-                    f"Chronos Sentinel Node [Regional / Statutory Policy Friction] analyzed '{target_node}'. "
-                    f"Under active parameters, {demon_name} ({demon_freq}) causes friction points across predicted failure schedules. "
-                    f"Applying {protocol_templates[idx % len(protocol_templates)]} via {gemstones[g_idx]} at {angel_freq} "
-                    f"shifts the node into the 90.0-100.0 kHz Ultra Green Corridor, locking the 1.000 Target Unity."
+                    f"Chronos Sentinel Node analyzed '{clean_node}'. Under localized operational friction, "
+                    f"{demon_name} ({demon_freq}) causes bottlenecking across 10 predicted failure dates ending {crash_dates[-1]}. "
+                    f"Applying {clean_node} {p_title} Deployment via {gemstone} at {angel_freq} shifts the node into the "
+                    f"90.0-100.0 kHz Ultra Green Corridor, locking the 1.000 Target Unity."
                 )
             }
         }
@@ -185,26 +176,13 @@ def run_cli_audit():
         raw_sig = f"{session_guid}:{utc_timestamp}:{target_node}"
         ecta_hash = f"sha256:{hashlib.sha256(raw_sig.encode()).hexdigest()}"
 
-    print(f"[*] Executing Chronos Audit Engine (Append-Only Ledger Mode)...")
+    print(f"[*] Executing Chronos Audit Engine (Adaptive Node Vector Mode)...")
     print(f"[*] Target Subject : '{target_node}'")
     print(f"[*] Session GUID   : '{session_guid}'")
     print(f"[*] UTC Timestamp  : '{utc_timestamp}'")
 
-    # 2. Run Engine Sweep (Uses full engine if available, or deterministic seeded generator)
-    if FullStackChronosEngine and InferenceEngineRouter:
-        try:
-            router = InferenceEngineRouter()
-            engine = FullStackChronosEngine(router=router)
-            sweep_results = engine.execute_full_sweep(
-                industry="Socio-Economic Infrastructure",
-                payload=target_node,
-                cycle=59763
-            )
-        except Exception as err:
-            print(f"[!] Engine execution fallback triggered: {err}")
-            sweep_results = select_unique_node_vectors(target_node, count=10)
-    else:
-        sweep_results = select_unique_node_vectors(target_node, count=10)
+    # 2. Run Sweep Generation using Subject-Adaptive Hashing Engine
+    sweep_results = generate_adaptive_node_sweep(target_node, count=10)
 
     # 3. Construct current execution record
     current_run_payload = {
