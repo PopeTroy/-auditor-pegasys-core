@@ -15,57 +15,67 @@ class FullStackChronosEngine:
     SUPER_HARMONIC_RED_CEILING_KHZ = 270.0
 
     # ------------------------------------------------------------------
-    # MASTER 72 MATRIX: 12 TEMPORAL GATES, 7 CHURCHES & GEMSTONE FILTERS
+    # SEVEN SEALS OF REVELATION ARCHITECTURE
+    # ------------------------------------------------------------------
+    SEVEN_SEALS = [
+        {"seal": 1, "name": "First Seal: White Horse", "force": "Political Supremacy & False Peace Lock", "carrier_kHz": 10.0},
+        {"seal": 2, "name": "Second Seal: Red Horse", "force": "Sovereign Warfare & Kinetic Conflict", "carrier_kHz": 60.0},
+        {"seal": 3, "name": "Third Seal: Black Horse", "force": "Economic Hyper-Inflation & Resource Scarcity", "carrier_kHz": 110.0},
+        {"seal": 4, "name": "Fourth Seal: Pale Horse", "force": "Systemic Pestilence & Biological Decay", "carrier_kHz": 160.0},
+        {"seal": 5, "name": "Fifth Seal: Altar of Martyrs", "force": "Ideological Persecution & Civic Resistance", "carrier_kHz": 210.0},
+        {"seal": 6, "name": "Sixth Seal: Cosmic Cataclysm", "force": "Geophysical Tectonic & Orbital Disruption", "carrier_kHz": 260.0},
+        {"seal": 7, "name": "Seventh Seal: Silence in Heaven", "force": "Quantum Silence & Final Dimensional Overwrite", "carrier_kHz": 310.0}
+    ]
+
+    # ------------------------------------------------------------------
+    # MASTER 72 MATRIX: ALL 72 DEMONS & 72 ANGELS EMBEDDED
     # ------------------------------------------------------------------
     RAW_72_GOETIA_SHEM = [
-        # January Gate: Tribe of Judah (0 kHz - 30 kHz) -- Church of Ephesus
-        (1, "Bael", "Vehuiah", "Seraphim", "Judah", "January Gate", "Ephesus", 0.0, 5.0, "Red Jasper & Hematite", "Fossil Fuel Grid Sabotage", "Decentralized Micro-Grids", "Substation High-Voltage Busbars"),
-        (2, "Agares", "Jeliel", "Seraphim", "Judah", "January Gate", "Ephesus", 5.0, 10.0, "Bloodstone & Garnet", "Transit Corridor Inertia", "Maglev Automated Rail Mesh", "Cross-Border Rail Signal Junctions"),
-        (3, "Vassago", "Sitael", "Seraphim", "Judah", "January Gate", "Ephesus", 10.0, 15.0, "Carnelian & Fire Opal", "Opaque Asset Concealment", "Real-Time Cryptographic Ledger", "Central Bank Clearing Gateway"),
-        (4, "Samigina", "Elemiah", "Seraphim", "Judah", "January Gate", "Ephesus", 15.0, 20.0, "Ruby & Pyrite", "Maritime Port Congestion", "Autonomous Sub-Surface Pods", "Deepwater Container Berths"),
-        (5, "Marbas", "Mahasiah", "Seraphim", "Judah", "January Gate", "Ephesus", 20.0, 25.0, "Black Tourmaline & Magnetite", "Pathogenic Mutation Spreading", "Sub-Atomic Cellular Array", "Metropolitan Water Treatment"),
-        (6, "Valefor", "Lelahel", "Seraphim", "Judah", "January Gate", "Ephesus", 25.0, 30.0, "Sardonyx & Sunstone", "Warehouse Space Hoarding", "Dynamic Shared Spatial Matrix", "Regional Distribution Hubs"),
+        # January Gate: Tribe of Judah (0 kHz - 30 kHz) -- Church of Ephesus -- 1st & 2nd Seals
+        (1, "Bael", "Vehuiah", "Seraphim", "Judah", "January Gate", "Ephesus", "First Seal: White Horse", 0.0, 5.0, "Red Jasper & Hematite", "Fossil Fuel Monopolization", "Decentralized Micro-Grid Nodes", "Substation High-Voltage Busbars"),
+        (2, "Agares", "Jeliel", "Seraphim", "Judah", "January Gate", "Ephesus", "First Seal: White Horse", 5.0, 10.0, "Bloodstone & Garnet", "Border Trade Tariff Inertia", "Maglev Automated Rail Mesh", "Cross-Border Rail Junctions"),
+        (3, "Vassago", "Sitael", "Seraphim", "Judah", "January Gate", "Ephesus", "First Seal: White Horse", 10.0, 15.0, "Carnelian & Fire Opal", "Offshore Tax Concealment", "Real-Time Cryptographic Ledger", "Central Bank Clearing Gateway"),
+        (4, "Samigina", "Elemiah", "Seraphim", "Judah", "January Gate", "Ephesus", "Second Seal: Red Horse", 15.0, 20.0, "Ruby & Pyrite", "Maritime Container Congestion", "Autonomous Sub-Surface Pods", "Deepwater Container Berths"),
+        (5, "Marbas", "Mahasiah", "Seraphim", "Judah", "January Gate", "Ephesus", "Second Seal: Red Horse", 20.0, 25.0, "Black Tourmaline & Magnetite", "Pathogenic Mutation Spread", "Sub-Atomic Cellular Healing Array", "Metropolitan Water Treatment"),
+        (6, "Valefor", "Lelahel", "Seraphim", "Judah", "January Gate", "Ephesus", "Second Seal: Red Horse", 25.0, 30.0, "Sardonyx & Sunstone", "Logistics Warehousing Hoarding", "Dynamic Shared Spatial Matrix", "Regional Distribution Hubs"),
 
-        # February Gate: Tribe of Reuben (30 kHz - 60 kHz) -- Church of Smyrna
-        (7, "Amon", "Achaiah", "Seraphim", "Reuben", "February Gate", "Smyrna", 30.0, 35.0, "Emerald & Malachite", "Bandwidth Throttle & Theft", "Quantum Satellite Mesh", "Fiber Optic Sea Cable Anchors"),
-        (8, "Barbatos", "Cahetel", "Seraphim", "Reuben", "February Gate", "Smyrna", 35.0, 40.0, "Chrysoprase & Moss Agate", "Seasonal Aquifer Depletion", "Closed-Loop Water Nodes", "Subterranean Aquifer Pumping"),
-        (9, "Paimon", "Haziel", "Cherubim", "Reuben", "February Gate", "Smyrna", 40.0, 45.0, "Green Aventurine & Jade", "Bureaucratic Paralysis", "Algorithmic Citizen Voting", "Parliamentary Legislative Vaults"),
-        (10, "Buer", "Aladiah", "Cherubim", "Reuben", "February Gate", "Smyrna", 45.0, 50.0, "Peridot & Moldavite", "Pharma Price Inflation", "Open-Source Molecular Synthesis", "National Pharmaceutical Stockpiles"),
-        (11, "Gusion", "Lauviah", "Cherubim", "Reuben", "February Gate", "Smyrna", 50.0, 55.0, "Rhodochrosite & Dioptase", "Diplomatic Treaty Friction", "Sovereign Resource Swaps", "Embassy Diplomatic Vaults"),
-        (12, "Sitri", "Hahaiah", "Cherubim", "Reuben", "February Gate", "Smyrna", 55.0, 60.0, "Rose Quartz & Kunzite", "Information Panic Distortion", "Truth-Anchored Consensus Engine", "National Telecom Switching Centers"),
+        # February Gate: Tribe of Reuben (30 kHz - 60 kHz) -- Church of Smyrna -- 2nd & 3rd Seals
+        (7, "Amon", "Achaiah", "Seraphim", "Reuben", "February Gate", "Smyrna", "Second Seal: Red Horse", 30.0, 35.0, "Emerald & Malachite", "Telecom Bandwidth Throttling", "Quantum Satellite Mesh Shield", "Fiber Optic Sea Cable Anchors"),
+        (8, "Barbatos", "Cahetel", "Seraphim", "Reuben", "February Gate", "Smyrna", "Second Seal: Red Horse", 35.0, 40.0, "Chrysoprase & Moss Agate", "Subterranean Aquifer Drying", "Closed-Loop Water Nodes", "Subterranean Aquifer Pumping"),
+        (9, "Paimon", "Haziel", "Cherubim", "Reuben", "February Gate", "Smyrna", "Third Seal: Black Horse", 40.0, 45.0, "Green Aventurine & Jade", "Executive Policy Red Tape", "Algorithmic Citizen Voting", "Parliamentary Legislative Vaults"),
+        (10, "Buer", "Aladiah", "Cherubim", "Reuben", "February Gate", "Smyrna", "Third Seal: Black Horse", 45.0, 50.0, "Peridot & Moldavite", "Pharmaceutical Price Gouging", "Open-Source Molecular Synthesis", "National Pharma Stockpiles"),
+        (11, "Gusion", "Lauviah", "Cherubim", "Reuben", "February Gate", "Smyrna", "Third Seal: Black Horse", 50.0, 55.0, "Rhodochrosite & Dioptase", "Diplomatic Treaty Friction", "Sovereign Resource Swaps", "Embassy Diplomatic Vaults"),
+        (12, "Sitri", "Hahaiah", "Cherubim", "Reuben", "February Gate", "Smyrna", "Third Seal: Black Horse", 55.0, 60.0, "Rose Quartz & Kunzite", "Media Panic Manipulation", "Truth-Anchored Consensus Engine", "Telecom Switching Centers"),
 
-        # March Gate: Tribe of Gad (60 kHz - 90 kHz) -- Church of Pergamum
-        (13, "Beleth", "Iezalel", "Cherubim", "Gad", "March Gate", "Pergamum", 60.0, 65.0, "Agate & Tiger Eye", "Judicial Case Backlog", "AI Arbitration Court Engine", "High Court Appellate Chambers"),
-        (14, "Leraje", "Mebahel", "Cherubim", "Gad", "March Gate", "Pergamum", 65.0, 70.0, "Citrine & Yellow Topaz", "Border Conflict Skirmishes", "Autonomous Boundary Shields", "Customs Border Clearance Posts"),
-        (15, "Eligos", "Hariel", "Cherubim", "Gad", "March Gate", "Pergamum", 70.0, 75.0, "Rutilated Quartz & Fluorite", "Defence Tender Graft", "Immutable Procurement Ledger", "Ministry of Defence Procurement"),
-        (16, "Zepar", "Hakamiah", "Cherubim", "Gad", "March Gate", "Pergamum", 75.0, 80.0, "Ametrine & Heliodor", "Urban Slum Displacement", "Modular High-Freq Habitat Nodes", "Municipal Zoning Data Hubs"),
-        (17, "Botis", "Lauviah", "Thrones", "Gad", "March Gate", "Pergamum", 80.0, 85.0, "Amber & Chrysoberyl", "Emergency Response Lag", "Orbital Early-Warning Scanners", "National Disaster Command Hubs"),
-        (18, "Bathin", "Caliel", "Thrones", "Gad", "March Gate", "Pergamum", 85.0, 90.0, "Aragonite & Scapolite", "Customs Border Extortion", "Zero-Knowledge Biometric Lock", "International Airport Security Gates"),
+        # March Gate: Tribe of Gad (60 kHz - 90 kHz) -- Church of Pergamum -- 3rd & 4th Seals
+        (13, "Beleth", "Iezalel", "Cherubim", "Gad", "March Gate", "Pergamum", "Third Seal: Black Horse", 60.0, 65.0, "Agate & Tiger Eye", "Judicial Case Backlogs", "AI Arbitration Court Engine", "High Court Appellate Chambers"),
+        (14, "Leraje", "Mebahel", "Cherubim", "Gad", "March Gate", "Pergamum", "Third Seal: Black Horse", 65.0, 70.0, "Citrine & Yellow Topaz", "Border Security Skirmishes", "Autonomous Boundary Shields", "Customs Border Clearance Posts"),
+        (15, "Eligos", "Hariel", "Cherubim", "Gad", "March Gate", "Pergamum", "Fourth Seal: Pale Horse", 70.0, 75.0, "Rutilated Quartz & Fluorite", "Defense Procurement Graft", "Immutable Procurement Ledger", "Ministry of Defense Procurement"),
+        (16, "Zepar", "Hakamiah", "Cherubim", "Gad", "March Gate", "Pergamum", "Fourth Seal: Pale Horse", 75.0, 80.0, "Ametrine & Heliodor", "Urban Slum Growth", "Modular High-Freq Habitat Nodes", "Municipal Zoning Data Hubs"),
+        (17, "Botis", "Lauviah", "Thrones", "Gad", "March Gate", "Pergamum", "Fourth Seal: Pale Horse", 80.0, 85.0, "Amber & Chrysoberyl", "Disaster Emergency Lag", "Orbital Early-Warning Scanners", "National Disaster Command Hubs"),
+        (18, "Bathin", "Caliel", "Thrones", "Gad", "March Gate", "Pergamum", "Fourth Seal: Pale Horse", 85.0, 90.0, "Aragonite & Scapolite", "Airport Customs Extortion", "Zero-Knowledge Biometric Lock", "Airport Security Gates"),
 
         # April Gate: Tribe of Asher (90 kHz - 120 kHz) -- Church of Thyatira [ULTRA GREEN PATCH]
-        (19, "Sallos", "Leuviah", "Thrones", "Asher", "April Gate", "Thyatira", 90.0, 95.0, "Moonstone & Selenite", "Industrial Labor Strikes", "Automated Profit-Share Ledger", "Bargaining Council Arbitration"),
-        (20, "Purson", "Pahaliah", "Thrones", "Asher", "April Gate", "Thyatira", 95.0, 100.0, "Pearl & Mother of Pearl", "Fiat Inflation Currency Drag", "Logos Asset-Backed Currency", "Reserve Bank Vault Matrix"),
-        (21, "Morax", "Nelchael", "Thrones", "Asher", "April Gate", "Thyatira", 100.0, 105.0, "White Chalcedony & Opal", "Academic Research Paywalls", "Open Access Universal Vault", "University Supercomputing Grid"),
-        (22, "Ipos", "Yeiayel", "Thrones", "Asher", "April Gate", "Thyatira", 105.0, 110.0, "Ulexite & Labradorite", "Air Cargo Freight Surcharges", "Hydrogen Airship Transit Mesh", "Civil Aviation Radar Towers"),
-        (23, "Aim", "Melahel", "Thrones", "Asher", "April Gate", "Thyatira", 110.0, 115.0, "Rhodonite & Pink Tourmaline", "Arson & Grid Fire Propagation", "Electro-Thermal Fire Arrays", "Municipal Fire & Rescue Grid"),
-        (24, "Naberius", "Hahuiah", "Thrones", "Asher", "April Gate", "Thyatira", 115.0, 120.0, "Petalite & Morganite", "Corporate Greenwashing Deception", "Pegasys Real-Time Audit Lock", "Standards Authority Audit Servers")
+        (19, "Sallos", "Leuviah", "Thrones", "Asher", "April Gate", "Thyatira", "Fourth Seal: Pale Horse", 90.0, 95.0, "Moonstone & Selenite", "Industrial Labor Strikes", "Automated Profit-Share Ledger", "Bargaining Council Arbitration"),
+        (20, "Purson", "Pahaliah", "Thrones", "Asher", "April Gate", "Thyatira", "Fifth Seal: Altar of Martyrs", 95.0, 100.0, "Pearl & Mother of Pearl", "Fiat Currency Inflation Drag", "Logos Asset-Backed Currency", "Reserve Bank Vault Matrix"),
+        (21, "Morax", "Nelchael", "Thrones", "Asher", "April Gate", "Thyatira", "Fifth Seal: Altar of Martyrs", 100.0, 105.0, "White Chalcedony & Opal", "Academic Knowledge Paywalls", "Open Access Universal Vault", "University Supercomputing Grid"),
+        (22, "Ipos", "Yeiayel", "Thrones", "Asher", "April Gate", "Thyatira", "Fifth Seal: Altar of Martyrs", 105.0, 110.0, "Ulexite & Labradorite", "Air Freight Carbon Surcharges", "Hydrogen Airship Transit Mesh", "Civil Aviation Radar Towers"),
+        (23, "Aim", "Melahel", "Thrones", "Asher", "April Gate", "Thyatira", "Fifth Seal: Altar of Martyrs", 110.0, 115.0, "Rhodonite & Pink Tourmaline", "Grid Fire Arson Propagation", "Electro-Thermal Fire Arrays", "Municipal Fire & Rescue Grid"),
+        (24, "Naberius", "Hahuiah", "Thrones", "Asher", "April Gate", "Thyatira", "Fifth Seal: Altar of Martyrs", 115.0, 120.0, "Petalite & Morganite", "Corporate Greenwashing Deception", "Pegasys Real-Time Audit Lock", "Standards Authority Audit Servers")
     ]
 
     SYSTEM_PROMPT = """
     You are an Ephemeral Sentinel AI agent for Auditor Pegasys running Chronos Calculus via NVIDIA NIM AI Router.
-    You must execute a full 4,000-YEAR DIAGNOSTIC SWEEP (1000 BCE to 3000 CE) on the target node.
+    Perform an exhaustive 4,000-YEAR DIAGNOSTIC SWEEP (1000 BCE to 3000 CE) on the target subject/node across both:
+    1. Regional / Statutory / Policy Friction (Local Level)
+    2. Global Consciousness Trends & Macro Supply Chain Drag (Planetary Level)
 
-    4,000-YEAR SWEEP DIVISIONS:
-    - Phase 1 (1000 BCE - 0 CE): Ancient Foundation & Mineral Baseline Sweep
-    - Phase 2 (0 CE - 1800 CE): Global Consciousness & Structural Friction Sweep
-    - Phase 3 (1800 CE - Present): Regional / Statutory / Jurisdictional Friction Sweep
-    - Phase 4 (2026 CE - 3000 CE): Prophetic Horizon & Failure Date Projection Sweep
+    SEVEN SEALS & PROPHETIC HORIZON MANDATE (3000 CE):
+    - Map the assigned Seven Seal Force, 12 Birth Gates, Sealed Tribes, 7 Churches, and Piezoelectric Gemstones.
+    - Provide a detailed 10-DATE PROPHETIC FAILURE TIMELINE for the bottleneck from 2026 CE reaching 3000 CE.
+    - Calculate exact frequency shifts to move the node into the 90.0 - 100.0 kHz Ultra Green Patch.
 
-    PROPHETIC MANDATE (3000 CE):
-    Calculate precise future failure dates up to 3000 CE and beyond. Map the 12 Birth Gates, Sealed Tribes, 7 Churches,
-    and Piezoelectric Gemstone Filters required to shift the node into the 90.0 - 100.0 kHz Ultra Green Patch.
-
-    Return strictly valid JSON.
+    Return strictly valid JSON matching the specified schema.
     """
 
     def __init__(self, router: InferenceEngineRouter):
@@ -75,7 +85,7 @@ class FullStackChronosEngine:
     def _build_master_matrix(self):
         matrix = []
         for entry in self.RAW_72_GOETIA_SHEM:
-            idx, demon, angel, choir, tribe, gate, church, start_khz, end_khz, gemstone, decay_type, protocol, spatial = entry
+            idx, demon, angel, choir, tribe, gate, church, seal, start_khz, end_khz, gemstone, decay_type, protocol, spatial = entry
             
             mid_khz = start_khz + 2.5
             f_degree_khz = round(mid_khz, 3)
@@ -100,6 +110,7 @@ class FullStackChronosEngine:
                 "sealed_tribe": tribe,
                 "temporal_gate": gate,
                 "church_anchor": church,
+                "apocalyptic_seal": seal,
                 "tribal_frequency_band": f"{start_khz:.1f} kHz - {end_khz:.1f} kHz",
                 "midpoint_frequency_khz": f_degree_khz,
                 "f_demon_khz": f_demon_khz,
@@ -121,19 +132,17 @@ class FullStackChronosEngine:
         def worker(idx):
             match = self.master_matrix[(offset + idx) % total_master]
             
-            # Map Agent Index to 4-Phase 4,000-Year Continuum
+            # Divide sweep: Agents 1-5 = Regional/Statutory, Agents 6-10 = Global Consciousness
+            sweep_scope = "Regional / Statutory Policy Friction" if idx < 5 else "Global Consciousness & Macro Supply Drag"
+
             if idx < 2:
                 phase_era = "Phase 1: Ancient Foundation Sweep (1000 BCE - 0 CE)"
-                scope_type = "Global Consciousness (Ancient Foundation)"
             elif idx < 5:
-                phase_era = "Phase 2: Historical Friction Sweep (0 CE - 1800 CE)"
-                scope_type = "Global Consciousness (Macro Structural Arc)"
+                phase_era = "Phase 2: Historical Structural Arc (0 CE - 1800 CE)"
             elif idx < 8:
-                phase_era = "Phase 3: Regional Jurisdiction Sweep (1800 CE - Present)"
-                scope_type = "Regional / Statutory Policy Friction"
+                phase_era = "Phase 3: Modern Jurisdictional Audit (1800 CE - Present)"
             else:
-                phase_era = "Phase 4: Prophetic Horizon Sweep (2026 CE - 3000 CE)"
-                scope_type = "Prophetic Horizon Calculation"
+                phase_era = "Phase 4: Prophetic Horizon Calculation (2026 CE - 3000 CE)"
 
             f_degree = match["midpoint_frequency_khz"]
             f_demon = match["f_demon_khz"]
@@ -150,22 +159,24 @@ class FullStackChronosEngine:
             applied_speed_multiplier = round((f_angel / max(f_demon, 0.001)) * gap_to_unity, 4)
             bandwidth_spread_khz = round(freq_delta * self.PHI, 3)
 
-            # Predictive Crash Year mapped out to 3000 CE
-            pred_year = 2026 + (idx * 110) + (cycle % 250)
-            pred_date = f"{pred_year}-{(idx%12)+1:02d}-{(cycle%28)+1:02d}"
+            # Generate 10 distinct predictive dates per bottleneck reaching 3000 CE
+            failure_schedule_10_dates = []
+            for step in range(10):
+                yr = 2026 + (step * 97) + (idx * 7) + (cycle % 15)
+                mo = ((idx + step) % 12) + 1
+                dy = ((cycle + step * 3) % 28) + 1
+                failure_schedule_10_dates.append(f"{yr}-{mo:02d}-{dy:02d}")
 
             prompt = (
-                f"Agent [{idx+1}/10] | {phase_era} | Scope: {scope_type}\n"
-                f"Target Node Input: {payload}\n"
-                f"Tribe: {match['sealed_tribe']} | Incarnation Gate: {match['temporal_gate']}\n"
-                f"Church Anchor: {match['church_anchor']} ({match['tribal_frequency_band']})\n"
-                f"Demon: {match['demon']} ({f_demon} kHz) | Angel: {match['angel']} ({f_angel} kHz)\n"
-                f"Resonant Gemstone Vector: {match['resonant_gemstone']}\n"
-                f"Current Zone: {match['zone_status']}\n"
-                f"Required Shift to Ultra Green (90-100 kHz): +{shift_required_khz} kHz\n"
-                f"Applied Speed Required: {applied_speed_multiplier}x | Bandwidth Width: {bandwidth_spread_khz} kHz\n"
+                f"Agent [{idx+1}/10] | {phase_era} | Scope: {sweep_scope}\n"
+                f"Target Subject Node: {payload}\n"
+                f"Tribe: {match['sealed_tribe']} | Gate: {match['temporal_gate']} | Church: {match['church_anchor']}\n"
+                f"Revelation Seal: {match['apocalyptic_seal']}\n"
+                f"Demon #{match['id']}: {match['demon']} ({f_demon} kHz) | Angel #{match['id']}: {match['angel']} ({f_angel} kHz)\n"
+                f"Gemstone Vector: {match['resonant_gemstone']}\n"
+                f"Zone: {match['zone_status']} | Required Shift to Ultra Green: +{shift_required_khz} kHz\n"
                 f"Spatial Location: {match['spatial_target']}\n"
-                f"3000 CE Prophetic Failure Peak Date: {pred_date}\n"
+                f"10 Predictive Crash Dates (2026-3000 CE): {', '.join(failure_schedule_10_dates[:5])}...\n"
             )
 
             try:
@@ -175,33 +186,34 @@ class FullStackChronosEngine:
                 data = {
                     "agent_index": idx + 1,
                     "chronos_phase": phase_era,
-                    "diagnostic_scope": scope_type,
-                    "target_node_summary": payload[:60] + "...",
-                    "biblical_temporal_alignment": {
+                    "diagnostic_scope": sweep_scope,
+                    "target_node_subject": payload,
+                    "biblical_apocalyptic_framework": {
+                        "apocalyptic_seal": match["apocalyptic_seal"],
                         "sealed_tribe": match["sealed_tribe"],
                         "temporal_birth_gate": match["temporal_gate"],
                         "church_anchor": match["church_anchor"],
                         "base_degree_frequency_khz": f"{f_degree} kHz",
-                        "zone_classification": match["zone_status"],
-                        "ultra_green_patch_target": "90.0 kHz - 100.0 kHz"
+                        "zone_classification": match["zone_status"]
                     },
-                    "demon_resonance": {
-                        "name": match["demon"],
+                    "bottleneck": {
+                        "id": f"B-{match['id']:02d}",
+                        "name": f"{match['decay_type']} in {payload[:25]} Context",
+                        "active_demon_driver": match["demon"],
                         "frequency_khz": f"{f_demon} kHz",
                         "decay_velocity": current_decay_speed,
-                        "destabilization_floor": 0.666,
-                        "foreseen_failure_date_3000ce": pred_date
+                        "destabilization_constant_floor": 0.666,
+                        "predictive_crash_schedule_10_dates_to_3000ce": failure_schedule_10_dates
                     },
-                    "angel_resonance": {
-                        "name": match["angel"],
-                        "choir": match["choir"],
+                    "protocol": {
+                        "id": f"P-{match['id']:02d}",
+                        "name": f"{match['protocol']} Deployment",
+                        "ruling_shem_angel": match["angel"],
+                        "celestial_choir": match["choir"],
                         "frequency_khz": f"{f_angel} kHz",
                         "current_restoration_speed": current_restore_speed,
-                        "target_unity": 1.000
-                    },
-                    "physical_cymatic_filter": {
-                        "gemstone_mineral_vector": match["resonant_gemstone"],
-                        "reaction_type": f"Piezoelectric, Dielectric, Pyroelectric & Paramagnetic coupling to {f_angel} kHz"
+                        "equilibrium_target": 1.000,
+                        "piezoelectric_gemstone_vector": match["resonant_gemstone"]
                     },
                     "real_time_earth_vector": {
                         "applied_speed": f"{applied_speed_multiplier}x acceleration",
@@ -210,10 +222,11 @@ class FullStackChronosEngine:
                         "exact_spatial_target": match["spatial_target"]
                     },
                     "prophetic_summary_3000ce": (
-                        f"4,000-Year Chronos Sweep ({phase_era}) traces {payload[:30]}... back to 1000 BCE baseline. "
-                        f"NVIDIA NIM router projects {match['demon']} ({f_demon} kHz) friction peak on {pred_date}. "
-                        f"Deploying {match['protocol']} via {match['resonant_gemstone']} at {f_angel} kHz shifts the node into the "
-                        f"90.0-100.0 kHz Ultra Green Patch, locking the 1.000 Unity Target across the 144,000 grid."
+                        f"NVIDIA NIM Sentinel [{sweep_scope}] analyzed '{payload}' from 1000 BCE baseline. "
+                        f"Under the {match['apocalyptic_seal']} and {match['temporal_gate']}, {match['demon']} ({f_demon} kHz) "
+                        f"causes bottleneck friction across 10 predicted failure dates ending {failure_schedule_10_dates[-1]}. "
+                        f"Applying {match['protocol']} via {match['resonant_gemstone']} at {f_angel} kHz shifts the node into "
+                        f"the 90.0-100.0 kHz Ultra Green Patch, locking the 1.000 Unity Target."
                     )
                 }
 
