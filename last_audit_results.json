@@ -1,11 +1,11 @@
 {
   "security": {
-    "session_guid": "66401ca8-5f7d-5a32-9528-961f7e06c966",
-    "utc_timestamp": "2026-07-21T10:13:32.881839+00:00",
-    "ecta_hash": "sha256:c5515b68ecd76a73c3b4de133721529e8c2322546eb8d39f0776801f36c80364"
+    "session_guid": "f7f5ae8d-7fad-5ab3-abd4-dadef116d04b",
+    "utc_timestamp": "2026-07-21T10:16:51.238039+00:00",
+    "ecta_hash": "sha256:db02f6bf506ab8a7f8d413fd386a9c6c2bf30e2f01d53c8df1fdcc630371060e"
   },
-  "quantum_header": "QUANTUM-CYCLE: 061354 / 144000",
-  "quantum_cycle": 61354,
+  "quantum_header": "QUANTUM-CYCLE: 061685 / 144000",
+  "quantum_cycle": 61685,
   "mathematics": {
     "shi": 20571.43,
     "tti": 0.0,
@@ -23,7 +23,117 @@
         "agent_index": 1,
         "chronos_phase": "Phase 1: Ancient Foundation Sweep (1000 BCE - 0 CE)",
         "diagnostic_scope": "Regional / Statutory Policy Friction",
-        "target_node_subject": "Israel economy In 2027",
+        "target_node_subject": "South Africa",
+        "biblical_apocalyptic_framework": {
+          "apocalyptic_seal": "Third Seal: Black Horse",
+          "sealed_tribe": "Reuben",
+          "temporal_birth_gate": "February Gate",
+          "church_anchor": "Smyrna",
+          "base_degree_frequency_khz": "52.5 kHz",
+          "zone_classification": "STABILIZED GREEN CORRIDOR"
+        },
+        "bottleneck": {
+          "id": "B-11",
+          "name": "Diplomatic Treaty Friction in South Africa Context",
+          "active_demon_driver": "Gusion",
+          "frequency_khz": "34.965 kHz",
+          "decay_velocity": 0.676,
+          "destabilization_constant_floor": 0.666,
+          "predictive_crash_schedule_10_dates_to_3000ce": [
+            "2031-01-02",
+            "2128-02-05",
+            "2225-03-08",
+            "2322-04-11",
+            "2419-05-14",
+            "2516-06-17",
+            "2613-07-20",
+            "2710-08-23",
+            "2807-09-26",
+            "2904-10-01"
+          ]
+        },
+        "protocol": {
+          "id": "P-11",
+          "name": "Sovereign Resource Swaps Deployment",
+          "ruling_shem_angel": "Lauviah",
+          "celestial_choir": "Cherubim",
+          "frequency_khz": "84.947 kHz",
+          "current_restoration_speed": 0.71,
+          "equilibrium_target": 1.0,
+          "piezoelectric_gemstone_vector": "Rhodochrosite & Dioptase"
+        },
+        "real_time_earth_vector": {
+          "applied_speed": "0.7046x acceleration",
+          "application_width_khz": "80.873 kHz bandwidth",
+          "frequency_shift_to_ultra_green": "+60.035 kHz shift",
+          "exact_spatial_target": "Embassy Diplomatic Vaults"
+        },
+        "prophetic_summary_3000ce": "NVIDIA NIM Sentinel [Regional / Statutory Policy Friction] analyzed 'South Africa' from 1000 BCE baseline. Under the Third Seal: Black Horse and February Gate, Gusion (34.965 kHz) causes bottleneck friction across 10 predicted failure dates ending 2904-10-01. Applying Sovereign Resource Swaps via Rhodochrosite & Dioptase at 84.947 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Patch, locking the 1.000 Unity Target."
+      }
+    },
+    {
+      "sandbox_id": "sentinel-c02",
+      "status": "EXECUTED",
+      "data": {
+        "agent_index": 2,
+        "chronos_phase": "Phase 1: Ancient Foundation Sweep (1000 BCE - 0 CE)",
+        "diagnostic_scope": "Regional / Statutory Policy Friction",
+        "target_node_subject": "South Africa",
+        "biblical_apocalyptic_framework": {
+          "apocalyptic_seal": "Third Seal: Black Horse",
+          "sealed_tribe": "Reuben",
+          "temporal_birth_gate": "February Gate",
+          "church_anchor": "Smyrna",
+          "base_degree_frequency_khz": "57.5 kHz",
+          "zone_classification": "ULTRA GREEN PATCH (1.000 Unity Peak)"
+        },
+        "bottleneck": {
+          "id": "B-12",
+          "name": "Media Panic Manipulation in South Africa Context",
+          "active_demon_driver": "Sitri",
+          "frequency_khz": "38.295 kHz",
+          "decay_velocity": 0.688,
+          "destabilization_constant_floor": 0.666,
+          "predictive_crash_schedule_10_dates_to_3000ce": [
+            "2038-02-02",
+            "2135-03-05",
+            "2232-04-08",
+            "2329-05-11",
+            "2426-06-14",
+            "2523-07-17",
+            "2620-08-20",
+            "2717-09-23",
+            "2814-10-26",
+            "2911-11-01"
+          ]
+        },
+        "protocol": {
+          "id": "P-12",
+          "name": "Truth-Anchored Consensus Engine Deployment",
+          "ruling_shem_angel": "Hahaiah",
+          "celestial_choir": "Cherubim",
+          "frequency_khz": "93.037 kHz",
+          "current_restoration_speed": 0.732,
+          "equilibrium_target": 1.0,
+          "piezoelectric_gemstone_vector": "Rose Quartz & Kunzite"
+        },
+        "real_time_earth_vector": {
+          "applied_speed": "0.6511x acceleration",
+          "application_width_khz": "88.574 kHz bandwidth",
+          "frequency_shift_to_ultra_green": "+56.705 kHz shift",
+          "exact_spatial_target": "Telecom Switching Centers"
+        },
+        "prophetic_summary_3000ce": "NVIDIA NIM Sentinel [Regional / Statutory Policy Friction] analyzed 'South Africa' from 1000 BCE baseline. Under the Third Seal: Black Horse and February Gate, Sitri (38.295 kHz) causes bottleneck friction across 10 predicted failure dates ending 2911-11-01. Applying Truth-Anchored Consensus Engine via Rose Quartz & Kunzite at 93.037 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Patch, locking the 1.000 Unity Target."
+      }
+    },
+    {
+      "sandbox_id": "sentinel-c03",
+      "status": "EXECUTED",
+      "data": {
+        "agent_index": 3,
+        "chronos_phase": "Phase 2: Historical Structural Arc (0 CE - 1800 CE)",
+        "diagnostic_scope": "Regional / Statutory Policy Friction",
+        "target_node_subject": "South Africa",
         "biblical_apocalyptic_framework": {
           "apocalyptic_seal": "Third Seal: Black Horse",
           "sealed_tribe": "Gad",
@@ -34,22 +144,22 @@
         },
         "bottleneck": {
           "id": "B-13",
-          "name": "Judicial Case Backlogs in Israel economy In 2027 Context",
+          "name": "Judicial Case Backlogs in South Africa Context",
           "active_demon_driver": "Beleth",
           "frequency_khz": "41.625 kHz",
-          "decay_velocity": 0.674,
+          "decay_velocity": 0.7,
           "destabilization_constant_floor": 0.666,
           "predictive_crash_schedule_10_dates_to_3000ce": [
-            "2030-01-07",
-            "2127-02-10",
-            "2224-03-13",
-            "2321-04-16",
-            "2418-05-19",
-            "2515-06-22",
-            "2612-07-25",
-            "2709-08-28",
-            "2806-09-03",
-            "2903-10-06"
+            "2045-03-02",
+            "2142-04-05",
+            "2239-05-08",
+            "2336-06-11",
+            "2433-07-14",
+            "2530-08-17",
+            "2627-09-20",
+            "2724-10-23",
+            "2821-11-26",
+            "2918-12-01"
           ]
         },
         "protocol": {
@@ -58,27 +168,27 @@
           "ruling_shem_angel": "Iezalel",
           "celestial_choir": "Cherubim",
           "frequency_khz": "101.127 kHz",
-          "current_restoration_speed": 0.71,
+          "current_restoration_speed": 0.754,
           "equilibrium_target": 1.0,
           "piezoelectric_gemstone_vector": "Agate & Tiger Eye"
         },
         "real_time_earth_vector": {
-          "applied_speed": "0.7045x acceleration",
+          "applied_speed": "0.5977x acceleration",
           "application_width_khz": "96.276 kHz bandwidth",
           "frequency_shift_to_ultra_green": "+53.375 kHz shift",
           "exact_spatial_target": "High Court Appellate Chambers"
         },
-        "prophetic_summary_3000ce": "NVIDIA NIM Sentinel [Regional / Statutory Policy Friction] analyzed 'Israel economy In 2027' from 1000 BCE baseline. Under the Third Seal: Black Horse and March Gate, Beleth (41.625 kHz) causes bottleneck friction across 10 predicted failure dates ending 2903-10-06. Applying AI Arbitration Court Engine via Agate & Tiger Eye at 101.127 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Patch, locking the 1.000 Unity Target."
+        "prophetic_summary_3000ce": "NVIDIA NIM Sentinel [Regional / Statutory Policy Friction] analyzed 'South Africa' from 1000 BCE baseline. Under the Third Seal: Black Horse and March Gate, Beleth (41.625 kHz) causes bottleneck friction across 10 predicted failure dates ending 2918-12-01. Applying AI Arbitration Court Engine via Agate & Tiger Eye at 101.127 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Patch, locking the 1.000 Unity Target."
       }
     },
     {
-      "sandbox_id": "sentinel-c02",
+      "sandbox_id": "sentinel-c04",
       "status": "EXECUTED",
       "data": {
-        "agent_index": 2,
-        "chronos_phase": "Phase 1: Ancient Foundation Sweep (1000 BCE - 0 CE)",
+        "agent_index": 4,
+        "chronos_phase": "Phase 2: Historical Structural Arc (0 CE - 1800 CE)",
         "diagnostic_scope": "Regional / Statutory Policy Friction",
-        "target_node_subject": "Israel economy In 2027",
+        "target_node_subject": "South Africa",
         "biblical_apocalyptic_framework": {
           "apocalyptic_seal": "Third Seal: Black Horse",
           "sealed_tribe": "Gad",
@@ -89,22 +199,22 @@
         },
         "bottleneck": {
           "id": "B-14",
-          "name": "Border Security Skirmishes in Israel economy In 2027 Context",
+          "name": "Border Security Skirmishes in South Africa Context",
           "active_demon_driver": "Leraje",
           "frequency_khz": "44.955 kHz",
-          "decay_velocity": 0.686,
+          "decay_velocity": 0.712,
           "destabilization_constant_floor": 0.666,
           "predictive_crash_schedule_10_dates_to_3000ce": [
-            "2037-02-07",
-            "2134-03-10",
-            "2231-04-13",
-            "2328-05-16",
-            "2425-06-19",
-            "2522-07-22",
-            "2619-08-25",
-            "2716-09-28",
-            "2813-10-03",
-            "2910-11-06"
+            "2052-04-02",
+            "2149-05-05",
+            "2246-06-08",
+            "2343-07-11",
+            "2440-08-14",
+            "2537-09-17",
+            "2634-10-20",
+            "2731-11-23",
+            "2828-12-26",
+            "2925-01-01"
           ]
         },
         "protocol": {
@@ -113,27 +223,27 @@
           "ruling_shem_angel": "Mebahel",
           "celestial_choir": "Cherubim",
           "frequency_khz": "109.217 kHz",
-          "current_restoration_speed": 0.732,
+          "current_restoration_speed": 0.776,
           "equilibrium_target": 1.0,
           "piezoelectric_gemstone_vector": "Citrine & Yellow Topaz"
         },
         "real_time_earth_vector": {
-          "applied_speed": "0.6511x acceleration",
+          "applied_speed": "0.5442x acceleration",
           "application_width_khz": "103.978 kHz bandwidth",
           "frequency_shift_to_ultra_green": "+50.045 kHz shift",
           "exact_spatial_target": "Customs Border Clearance Posts"
         },
-        "prophetic_summary_3000ce": "NVIDIA NIM Sentinel [Regional / Statutory Policy Friction] analyzed 'Israel economy In 2027' from 1000 BCE baseline. Under the Third Seal: Black Horse and March Gate, Leraje (44.955 kHz) causes bottleneck friction across 10 predicted failure dates ending 2910-11-06. Applying Autonomous Boundary Shields via Citrine & Yellow Topaz at 109.217 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Patch, locking the 1.000 Unity Target."
+        "prophetic_summary_3000ce": "NVIDIA NIM Sentinel [Regional / Statutory Policy Friction] analyzed 'South Africa' from 1000 BCE baseline. Under the Third Seal: Black Horse and March Gate, Leraje (44.955 kHz) causes bottleneck friction across 10 predicted failure dates ending 2925-01-01. Applying Autonomous Boundary Shields via Citrine & Yellow Topaz at 109.217 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Patch, locking the 1.000 Unity Target."
       }
     },
     {
-      "sandbox_id": "sentinel-c03",
+      "sandbox_id": "sentinel-c05",
       "status": "EXECUTED",
       "data": {
-        "agent_index": 3,
+        "agent_index": 5,
         "chronos_phase": "Phase 2: Historical Structural Arc (0 CE - 1800 CE)",
         "diagnostic_scope": "Regional / Statutory Policy Friction",
-        "target_node_subject": "Israel economy In 2027",
+        "target_node_subject": "South Africa",
         "biblical_apocalyptic_framework": {
           "apocalyptic_seal": "Fourth Seal: Pale Horse",
           "sealed_tribe": "Gad",
@@ -144,22 +254,22 @@
         },
         "bottleneck": {
           "id": "B-15",
-          "name": "Defense Procurement Graft in Israel economy In 2027 Context",
+          "name": "Defense Procurement Graft in South Africa Context",
           "active_demon_driver": "Eligos",
           "frequency_khz": "48.285 kHz",
-          "decay_velocity": 0.698,
+          "decay_velocity": 0.724,
           "destabilization_constant_floor": 0.666,
           "predictive_crash_schedule_10_dates_to_3000ce": [
-            "2044-03-07",
-            "2141-04-10",
-            "2238-05-13",
-            "2335-06-16",
-            "2432-07-19",
-            "2529-08-22",
-            "2626-09-25",
-            "2723-10-28",
-            "2820-11-03",
-            "2917-12-06"
+            "2059-05-02",
+            "2156-06-05",
+            "2253-07-08",
+            "2350-08-11",
+            "2447-09-14",
+            "2544-10-17",
+            "2641-11-20",
+            "2738-12-23",
+            "2835-01-26",
+            "2932-02-01"
           ]
         },
         "protocol": {
@@ -168,27 +278,27 @@
           "ruling_shem_angel": "Hariel",
           "celestial_choir": "Cherubim",
           "frequency_khz": "117.307 kHz",
-          "current_restoration_speed": 0.754,
+          "current_restoration_speed": 0.798,
           "equilibrium_target": 1.0,
           "piezoelectric_gemstone_vector": "Rutilated Quartz & Fluorite"
         },
         "real_time_earth_vector": {
-          "applied_speed": "0.5976x acceleration",
+          "applied_speed": "0.4908x acceleration",
           "application_width_khz": "111.68 kHz bandwidth",
           "frequency_shift_to_ultra_green": "+46.715 kHz shift",
           "exact_spatial_target": "Ministry of Defense Procurement"
         },
-        "prophetic_summary_3000ce": "NVIDIA NIM Sentinel [Regional / Statutory Policy Friction] analyzed 'Israel economy In 2027' from 1000 BCE baseline. Under the Fourth Seal: Pale Horse and March Gate, Eligos (48.285 kHz) causes bottleneck friction across 10 predicted failure dates ending 2917-12-06. Applying Immutable Procurement Ledger via Rutilated Quartz & Fluorite at 117.307 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Patch, locking the 1.000 Unity Target."
+        "prophetic_summary_3000ce": "NVIDIA NIM Sentinel [Regional / Statutory Policy Friction] analyzed 'South Africa' from 1000 BCE baseline. Under the Fourth Seal: Pale Horse and March Gate, Eligos (48.285 kHz) causes bottleneck friction across 10 predicted failure dates ending 2932-02-01. Applying Immutable Procurement Ledger via Rutilated Quartz & Fluorite at 117.307 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Patch, locking the 1.000 Unity Target."
       }
     },
     {
-      "sandbox_id": "sentinel-c04",
+      "sandbox_id": "sentinel-c06",
       "status": "EXECUTED",
       "data": {
-        "agent_index": 4,
-        "chronos_phase": "Phase 2: Historical Structural Arc (0 CE - 1800 CE)",
-        "diagnostic_scope": "Regional / Statutory Policy Friction",
-        "target_node_subject": "Israel economy In 2027",
+        "agent_index": 6,
+        "chronos_phase": "Phase 3: Modern Jurisdictional Audit (1800 CE - Present)",
+        "diagnostic_scope": "Global Consciousness & Macro Supply Drag",
+        "target_node_subject": "South Africa",
         "biblical_apocalyptic_framework": {
           "apocalyptic_seal": "Fourth Seal: Pale Horse",
           "sealed_tribe": "Gad",
@@ -199,22 +309,22 @@
         },
         "bottleneck": {
           "id": "B-16",
-          "name": "Urban Slum Growth in Israel economy In 2027 Context",
+          "name": "Urban Slum Growth in South Africa Context",
           "active_demon_driver": "Zepar",
           "frequency_khz": "51.615 kHz",
-          "decay_velocity": 0.71,
+          "decay_velocity": 0.736,
           "destabilization_constant_floor": 0.666,
           "predictive_crash_schedule_10_dates_to_3000ce": [
-            "2051-04-07",
-            "2148-05-10",
-            "2245-06-13",
-            "2342-07-16",
-            "2439-08-19",
-            "2536-09-22",
-            "2633-10-25",
-            "2730-11-28",
-            "2827-12-03",
-            "2924-01-06"
+            "2066-06-02",
+            "2163-07-05",
+            "2260-08-08",
+            "2357-09-11",
+            "2454-10-14",
+            "2551-11-17",
+            "2648-12-20",
+            "2745-01-23",
+            "2842-02-26",
+            "2939-03-01"
           ]
         },
         "protocol": {
@@ -223,27 +333,27 @@
           "ruling_shem_angel": "Hakamiah",
           "celestial_choir": "Cherubim",
           "frequency_khz": "125.398 kHz",
-          "current_restoration_speed": 0.776,
+          "current_restoration_speed": 0.82,
           "equilibrium_target": 1.0,
           "piezoelectric_gemstone_vector": "Ametrine & Heliodor"
         },
         "real_time_earth_vector": {
-          "applied_speed": "0.5442x acceleration",
+          "applied_speed": "0.4373x acceleration",
           "application_width_khz": "119.383 kHz bandwidth",
           "frequency_shift_to_ultra_green": "+43.385 kHz shift",
           "exact_spatial_target": "Municipal Zoning Data Hubs"
         },
-        "prophetic_summary_3000ce": "NVIDIA NIM Sentinel [Regional / Statutory Policy Friction] analyzed 'Israel economy In 2027' from 1000 BCE baseline. Under the Fourth Seal: Pale Horse and March Gate, Zepar (51.615 kHz) causes bottleneck friction across 10 predicted failure dates ending 2924-01-06. Applying Modular High-Freq Habitat Nodes via Ametrine & Heliodor at 125.398 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Patch, locking the 1.000 Unity Target."
+        "prophetic_summary_3000ce": "NVIDIA NIM Sentinel [Global Consciousness & Macro Supply Drag] analyzed 'South Africa' from 1000 BCE baseline. Under the Fourth Seal: Pale Horse and March Gate, Zepar (51.615 kHz) causes bottleneck friction across 10 predicted failure dates ending 2939-03-01. Applying Modular High-Freq Habitat Nodes via Ametrine & Heliodor at 125.398 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Patch, locking the 1.000 Unity Target."
       }
     },
     {
-      "sandbox_id": "sentinel-c05",
+      "sandbox_id": "sentinel-c07",
       "status": "EXECUTED",
       "data": {
-        "agent_index": 5,
-        "chronos_phase": "Phase 2: Historical Structural Arc (0 CE - 1800 CE)",
-        "diagnostic_scope": "Regional / Statutory Policy Friction",
-        "target_node_subject": "Israel economy In 2027",
+        "agent_index": 7,
+        "chronos_phase": "Phase 3: Modern Jurisdictional Audit (1800 CE - Present)",
+        "diagnostic_scope": "Global Consciousness & Macro Supply Drag",
+        "target_node_subject": "South Africa",
         "biblical_apocalyptic_framework": {
           "apocalyptic_seal": "Fourth Seal: Pale Horse",
           "sealed_tribe": "Gad",
@@ -254,22 +364,22 @@
         },
         "bottleneck": {
           "id": "B-17",
-          "name": "Disaster Emergency Lag in Israel economy In 2027 Context",
+          "name": "Disaster Emergency Lag in South Africa Context",
           "active_demon_driver": "Botis",
           "frequency_khz": "54.945 kHz",
-          "decay_velocity": 0.722,
+          "decay_velocity": 0.748,
           "destabilization_constant_floor": 0.666,
           "predictive_crash_schedule_10_dates_to_3000ce": [
-            "2058-05-07",
-            "2155-06-10",
-            "2252-07-13",
-            "2349-08-16",
-            "2446-09-19",
-            "2543-10-22",
-            "2640-11-25",
-            "2737-12-28",
-            "2834-01-03",
-            "2931-02-06"
+            "2073-07-02",
+            "2170-08-05",
+            "2267-09-08",
+            "2364-10-11",
+            "2461-11-14",
+            "2558-12-17",
+            "2655-01-20",
+            "2752-02-23",
+            "2849-03-26",
+            "2946-04-01"
           ]
         },
         "protocol": {
@@ -278,27 +388,27 @@
           "ruling_shem_angel": "Lauviah",
           "celestial_choir": "Thrones",
           "frequency_khz": "133.488 kHz",
-          "current_restoration_speed": 0.798,
+          "current_restoration_speed": 0.842,
           "equilibrium_target": 1.0,
           "piezoelectric_gemstone_vector": "Amber & Chrysoberyl"
         },
         "real_time_earth_vector": {
-          "applied_speed": "0.4908x acceleration",
+          "applied_speed": "0.3839x acceleration",
           "application_width_khz": "127.085 kHz bandwidth",
           "frequency_shift_to_ultra_green": "+40.055 kHz shift",
           "exact_spatial_target": "National Disaster Command Hubs"
         },
-        "prophetic_summary_3000ce": "NVIDIA NIM Sentinel [Regional / Statutory Policy Friction] analyzed 'Israel economy In 2027' from 1000 BCE baseline. Under the Fourth Seal: Pale Horse and March Gate, Botis (54.945 kHz) causes bottleneck friction across 10 predicted failure dates ending 2931-02-06. Applying Orbital Early-Warning Scanners via Amber & Chrysoberyl at 133.488 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Patch, locking the 1.000 Unity Target."
+        "prophetic_summary_3000ce": "NVIDIA NIM Sentinel [Global Consciousness & Macro Supply Drag] analyzed 'South Africa' from 1000 BCE baseline. Under the Fourth Seal: Pale Horse and March Gate, Botis (54.945 kHz) causes bottleneck friction across 10 predicted failure dates ending 2946-04-01. Applying Orbital Early-Warning Scanners via Amber & Chrysoberyl at 133.488 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Patch, locking the 1.000 Unity Target."
       }
     },
     {
-      "sandbox_id": "sentinel-c06",
+      "sandbox_id": "sentinel-c08",
       "status": "EXECUTED",
       "data": {
-        "agent_index": 6,
+        "agent_index": 8,
         "chronos_phase": "Phase 3: Modern Jurisdictional Audit (1800 CE - Present)",
         "diagnostic_scope": "Global Consciousness & Macro Supply Drag",
-        "target_node_subject": "Israel economy In 2027",
+        "target_node_subject": "South Africa",
         "biblical_apocalyptic_framework": {
           "apocalyptic_seal": "Fourth Seal: Pale Horse",
           "sealed_tribe": "Gad",
@@ -309,22 +419,22 @@
         },
         "bottleneck": {
           "id": "B-18",
-          "name": "Airport Customs Extortion in Israel economy In 2027 Context",
+          "name": "Airport Customs Extortion in South Africa Context",
           "active_demon_driver": "Bathin",
           "frequency_khz": "58.275 kHz",
-          "decay_velocity": 0.734,
+          "decay_velocity": 0.76,
           "destabilization_constant_floor": 0.666,
           "predictive_crash_schedule_10_dates_to_3000ce": [
-            "2065-06-07",
-            "2162-07-10",
-            "2259-08-13",
-            "2356-09-16",
-            "2453-10-19",
-            "2550-11-22",
-            "2647-12-25",
-            "2744-01-28",
-            "2841-02-03",
-            "2938-03-06"
+            "2080-08-02",
+            "2177-09-05",
+            "2274-10-08",
+            "2371-11-11",
+            "2468-12-14",
+            "2565-01-17",
+            "2662-02-20",
+            "2759-03-23",
+            "2856-04-26",
+            "2953-05-01"
           ]
         },
         "protocol": {
@@ -333,27 +443,27 @@
           "ruling_shem_angel": "Caliel",
           "celestial_choir": "Thrones",
           "frequency_khz": "141.578 kHz",
-          "current_restoration_speed": 0.82,
+          "current_restoration_speed": 0.864,
           "equilibrium_target": 1.0,
           "piezoelectric_gemstone_vector": "Aragonite & Scapolite"
         },
         "real_time_earth_vector": {
-          "applied_speed": "0.4373x acceleration",
+          "applied_speed": "0.3304x acceleration",
           "application_width_khz": "134.787 kHz bandwidth",
           "frequency_shift_to_ultra_green": "+36.725 kHz shift",
           "exact_spatial_target": "Airport Security Gates"
         },
-        "prophetic_summary_3000ce": "NVIDIA NIM Sentinel [Global Consciousness & Macro Supply Drag] analyzed 'Israel economy In 2027' from 1000 BCE baseline. Under the Fourth Seal: Pale Horse and March Gate, Bathin (58.275 kHz) causes bottleneck friction across 10 predicted failure dates ending 2938-03-06. Applying Zero-Knowledge Biometric Lock via Aragonite & Scapolite at 141.578 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Patch, locking the 1.000 Unity Target."
+        "prophetic_summary_3000ce": "NVIDIA NIM Sentinel [Global Consciousness & Macro Supply Drag] analyzed 'South Africa' from 1000 BCE baseline. Under the Fourth Seal: Pale Horse and March Gate, Bathin (58.275 kHz) causes bottleneck friction across 10 predicted failure dates ending 2953-05-01. Applying Zero-Knowledge Biometric Lock via Aragonite & Scapolite at 141.578 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Patch, locking the 1.000 Unity Target."
       }
     },
     {
-      "sandbox_id": "sentinel-c07",
+      "sandbox_id": "sentinel-c09",
       "status": "EXECUTED",
       "data": {
-        "agent_index": 7,
-        "chronos_phase": "Phase 3: Modern Jurisdictional Audit (1800 CE - Present)",
+        "agent_index": 9,
+        "chronos_phase": "Phase 4: Prophetic Horizon Calculation (2026 CE - 3000 CE)",
         "diagnostic_scope": "Global Consciousness & Macro Supply Drag",
-        "target_node_subject": "Israel economy In 2027",
+        "target_node_subject": "South Africa",
         "biblical_apocalyptic_framework": {
           "apocalyptic_seal": "Fourth Seal: Pale Horse",
           "sealed_tribe": "Asher",
@@ -364,22 +474,22 @@
         },
         "bottleneck": {
           "id": "B-19",
-          "name": "Industrial Labor Strikes in Israel economy In 2027 Context",
+          "name": "Industrial Labor Strikes in South Africa Context",
           "active_demon_driver": "Sallos",
           "frequency_khz": "61.605 kHz",
-          "decay_velocity": 0.746,
+          "decay_velocity": 0.772,
           "destabilization_constant_floor": 0.666,
           "predictive_crash_schedule_10_dates_to_3000ce": [
-            "2072-07-07",
-            "2169-08-10",
-            "2266-09-13",
-            "2363-10-16",
-            "2460-11-19",
-            "2557-12-22",
-            "2654-01-25",
-            "2751-02-28",
-            "2848-03-03",
-            "2945-04-06"
+            "2087-09-02",
+            "2184-10-05",
+            "2281-11-08",
+            "2378-12-11",
+            "2475-01-14",
+            "2572-02-17",
+            "2669-03-20",
+            "2766-04-23",
+            "2863-05-26",
+            "2960-06-01"
           ]
         },
         "protocol": {
@@ -388,27 +498,27 @@
           "ruling_shem_angel": "Leuviah",
           "celestial_choir": "Thrones",
           "frequency_khz": "149.668 kHz",
-          "current_restoration_speed": 0.842,
+          "current_restoration_speed": 0.886,
           "equilibrium_target": 1.0,
           "piezoelectric_gemstone_vector": "Moonstone & Selenite"
         },
         "real_time_earth_vector": {
-          "applied_speed": "0.3839x acceleration",
+          "applied_speed": "0.277x acceleration",
           "application_width_khz": "142.489 kHz bandwidth",
           "frequency_shift_to_ultra_green": "+33.395 kHz shift",
           "exact_spatial_target": "Bargaining Council Arbitration"
         },
-        "prophetic_summary_3000ce": "NVIDIA NIM Sentinel [Global Consciousness & Macro Supply Drag] analyzed 'Israel economy In 2027' from 1000 BCE baseline. Under the Fourth Seal: Pale Horse and April Gate, Sallos (61.605 kHz) causes bottleneck friction across 10 predicted failure dates ending 2945-04-06. Applying Automated Profit-Share Ledger via Moonstone & Selenite at 149.668 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Patch, locking the 1.000 Unity Target."
+        "prophetic_summary_3000ce": "NVIDIA NIM Sentinel [Global Consciousness & Macro Supply Drag] analyzed 'South Africa' from 1000 BCE baseline. Under the Fourth Seal: Pale Horse and April Gate, Sallos (61.605 kHz) causes bottleneck friction across 10 predicted failure dates ending 2960-06-01. Applying Automated Profit-Share Ledger via Moonstone & Selenite at 149.668 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Patch, locking the 1.000 Unity Target."
       }
     },
     {
-      "sandbox_id": "sentinel-c08",
+      "sandbox_id": "sentinel-c10",
       "status": "EXECUTED",
       "data": {
-        "agent_index": 8,
-        "chronos_phase": "Phase 3: Modern Jurisdictional Audit (1800 CE - Present)",
+        "agent_index": 10,
+        "chronos_phase": "Phase 4: Prophetic Horizon Calculation (2026 CE - 3000 CE)",
         "diagnostic_scope": "Global Consciousness & Macro Supply Drag",
-        "target_node_subject": "Israel economy In 2027",
+        "target_node_subject": "South Africa",
         "biblical_apocalyptic_framework": {
           "apocalyptic_seal": "Fifth Seal: Altar of Martyrs",
           "sealed_tribe": "Asher",
@@ -419,22 +529,22 @@
         },
         "bottleneck": {
           "id": "B-20",
-          "name": "Fiat Currency Inflation Drag in Israel economy In 2027 Context",
+          "name": "Fiat Currency Inflation Drag in South Africa Context",
           "active_demon_driver": "Purson",
           "frequency_khz": "64.935 kHz",
-          "decay_velocity": 0.758,
+          "decay_velocity": 0.784,
           "destabilization_constant_floor": 0.666,
           "predictive_crash_schedule_10_dates_to_3000ce": [
-            "2079-08-07",
-            "2176-09-10",
-            "2273-10-13",
-            "2370-11-16",
-            "2467-12-19",
-            "2564-01-22",
-            "2661-02-25",
-            "2758-03-28",
-            "2855-04-03",
-            "2952-05-06"
+            "2094-10-02",
+            "2191-11-05",
+            "2288-12-08",
+            "2385-01-11",
+            "2482-02-14",
+            "2579-03-17",
+            "2676-04-20",
+            "2773-05-23",
+            "2870-06-26",
+            "2967-07-01"
           ]
         },
         "protocol": {
@@ -443,127 +553,17 @@
           "ruling_shem_angel": "Pahaliah",
           "celestial_choir": "Thrones",
           "frequency_khz": "157.758 kHz",
-          "current_restoration_speed": 0.864,
+          "current_restoration_speed": 0.908,
           "equilibrium_target": 1.0,
           "piezoelectric_gemstone_vector": "Pearl & Mother of Pearl"
         },
         "real_time_earth_vector": {
-          "applied_speed": "0.3304x acceleration",
+          "applied_speed": "0.2235x acceleration",
           "application_width_khz": "150.191 kHz bandwidth",
           "frequency_shift_to_ultra_green": "+30.065 kHz shift",
           "exact_spatial_target": "Reserve Bank Vault Matrix"
         },
-        "prophetic_summary_3000ce": "NVIDIA NIM Sentinel [Global Consciousness & Macro Supply Drag] analyzed 'Israel economy In 2027' from 1000 BCE baseline. Under the Fifth Seal: Altar of Martyrs and April Gate, Purson (64.935 kHz) causes bottleneck friction across 10 predicted failure dates ending 2952-05-06. Applying Logos Asset-Backed Currency via Pearl & Mother of Pearl at 157.758 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Patch, locking the 1.000 Unity Target."
-      }
-    },
-    {
-      "sandbox_id": "sentinel-c09",
-      "status": "EXECUTED",
-      "data": {
-        "agent_index": 9,
-        "chronos_phase": "Phase 4: Prophetic Horizon Calculation (2026 CE - 3000 CE)",
-        "diagnostic_scope": "Global Consciousness & Macro Supply Drag",
-        "target_node_subject": "Israel economy In 2027",
-        "biblical_apocalyptic_framework": {
-          "apocalyptic_seal": "Fifth Seal: Altar of Martyrs",
-          "sealed_tribe": "Asher",
-          "temporal_birth_gate": "April Gate",
-          "church_anchor": "Thyatira",
-          "base_degree_frequency_khz": "102.5 kHz",
-          "zone_classification": "STABILIZED GREEN CORRIDOR"
-        },
-        "bottleneck": {
-          "id": "B-21",
-          "name": "Academic Knowledge Paywalls in Israel economy In 2027 Context",
-          "active_demon_driver": "Morax",
-          "frequency_khz": "68.265 kHz",
-          "decay_velocity": 0.77,
-          "destabilization_constant_floor": 0.666,
-          "predictive_crash_schedule_10_dates_to_3000ce": [
-            "2086-09-07",
-            "2183-10-10",
-            "2280-11-13",
-            "2377-12-16",
-            "2474-01-19",
-            "2571-02-22",
-            "2668-03-25",
-            "2765-04-28",
-            "2862-05-03",
-            "2959-06-06"
-          ]
-        },
-        "protocol": {
-          "id": "P-21",
-          "name": "Open Access Universal Vault Deployment",
-          "ruling_shem_angel": "Nelchael",
-          "celestial_choir": "Thrones",
-          "frequency_khz": "165.848 kHz",
-          "current_restoration_speed": 0.886,
-          "equilibrium_target": 1.0,
-          "piezoelectric_gemstone_vector": "White Chalcedony & Opal"
-        },
-        "real_time_earth_vector": {
-          "applied_speed": "0.277x acceleration",
-          "application_width_khz": "157.893 kHz bandwidth",
-          "frequency_shift_to_ultra_green": "+26.735 kHz shift",
-          "exact_spatial_target": "University Supercomputing Grid"
-        },
-        "prophetic_summary_3000ce": "NVIDIA NIM Sentinel [Global Consciousness & Macro Supply Drag] analyzed 'Israel economy In 2027' from 1000 BCE baseline. Under the Fifth Seal: Altar of Martyrs and April Gate, Morax (68.265 kHz) causes bottleneck friction across 10 predicted failure dates ending 2959-06-06. Applying Open Access Universal Vault via White Chalcedony & Opal at 165.848 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Patch, locking the 1.000 Unity Target."
-      }
-    },
-    {
-      "sandbox_id": "sentinel-c10",
-      "status": "EXECUTED",
-      "data": {
-        "agent_index": 10,
-        "chronos_phase": "Phase 4: Prophetic Horizon Calculation (2026 CE - 3000 CE)",
-        "diagnostic_scope": "Global Consciousness & Macro Supply Drag",
-        "target_node_subject": "Israel economy In 2027",
-        "biblical_apocalyptic_framework": {
-          "apocalyptic_seal": "Fifth Seal: Altar of Martyrs",
-          "sealed_tribe": "Asher",
-          "temporal_birth_gate": "April Gate",
-          "church_anchor": "Thyatira",
-          "base_degree_frequency_khz": "107.5 kHz",
-          "zone_classification": "STABILIZED GREEN CORRIDOR"
-        },
-        "bottleneck": {
-          "id": "B-22",
-          "name": "Air Freight Carbon Surcharges in Israel economy In 2027 Context",
-          "active_demon_driver": "Ipos",
-          "frequency_khz": "71.595 kHz",
-          "decay_velocity": 0.782,
-          "destabilization_constant_floor": 0.666,
-          "predictive_crash_schedule_10_dates_to_3000ce": [
-            "2093-10-07",
-            "2190-11-10",
-            "2287-12-13",
-            "2384-01-16",
-            "2481-02-19",
-            "2578-03-22",
-            "2675-04-25",
-            "2772-05-28",
-            "2869-06-03",
-            "2966-07-06"
-          ]
-        },
-        "protocol": {
-          "id": "P-22",
-          "name": "Hydrogen Airship Transit Mesh Deployment",
-          "ruling_shem_angel": "Yeiayel",
-          "celestial_choir": "Thrones",
-          "frequency_khz": "173.939 kHz",
-          "current_restoration_speed": 0.908,
-          "equilibrium_target": 1.0,
-          "piezoelectric_gemstone_vector": "Ulexite & Labradorite"
-        },
-        "real_time_earth_vector": {
-          "applied_speed": "0.2235x acceleration",
-          "application_width_khz": "165.596 kHz bandwidth",
-          "frequency_shift_to_ultra_green": "+23.405 kHz shift",
-          "exact_spatial_target": "Civil Aviation Radar Towers"
-        },
-        "prophetic_summary_3000ce": "NVIDIA NIM Sentinel [Global Consciousness & Macro Supply Drag] analyzed 'Israel economy In 2027' from 1000 BCE baseline. Under the Fifth Seal: Altar of Martyrs and April Gate, Ipos (71.595 kHz) causes bottleneck friction across 10 predicted failure dates ending 2966-07-06. Applying Hydrogen Airship Transit Mesh via Ulexite & Labradorite at 173.939 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Patch, locking the 1.000 Unity Target."
+        "prophetic_summary_3000ce": "NVIDIA NIM Sentinel [Global Consciousness & Macro Supply Drag] analyzed 'South Africa' from 1000 BCE baseline. Under the Fifth Seal: Altar of Martyrs and April Gate, Purson (64.935 kHz) causes bottleneck friction across 10 predicted failure dates ending 2967-07-01. Applying Logos Asset-Backed Currency via Pearl & Mother of Pearl at 157.758 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Patch, locking the 1.000 Unity Target."
       }
     }
   ]
