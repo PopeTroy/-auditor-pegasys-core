@@ -1,11 +1,11 @@
 {
   "security": {
-    "session_guid": "2b8935a0-a36f-539b-9d91-04270363d5b8",
-    "utc_timestamp": "2026-07-21T09:56:56.549855+00:00",
-    "ecta_hash": "sha256:19cc4ac5e2de683e3bbac2a7cd66afa3b432f6f27dfa14c78a486277e13a06c8"
+    "session_guid": "c61047e2-959c-50d9-a890-194eda537d35",
+    "utc_timestamp": "2026-07-21T09:57:38.185185+00:00",
+    "ecta_hash": "sha256:08255e0d13a349522522313b9e4b0f60ff0321e5ad6e8af2767f4aaabc03167f"
   },
-  "quantum_header": "QUANTUM-CYCLE: 059694 / 144000",
-  "quantum_cycle": 59694,
+  "quantum_header": "QUANTUM-CYCLE: 059763 / 144000",
+  "quantum_cycle": 59763,
   "mathematics": {
     "shi": 20571.43,
     "tti": 0.0,
@@ -23,52 +23,52 @@
         "agent_index": 1,
         "chronos_phase": "Phase 1: Ancient Foundation Sweep (1000 BCE - 0 CE)",
         "diagnostic_scope": "Regional / Statutory Policy Friction",
-        "target_node_subject": "Bobby Moahi",
+        "target_node_subject": "South Africa",
         "biblical_apocalyptic_framework": {
-          "apocalyptic_seal": "First Seal: White Horse",
-          "sealed_tribe": "Judah",
-          "temporal_birth_gate": "January Gate",
-          "church_anchor": "Ephesus",
-          "base_degree_frequency_khz": "12.5 kHz",
-          "zone_classification": "SUB-HARMONIC RED ZONE (Entropy Drag)"
+          "apocalyptic_seal": "Fourth Seal: Pale Horse",
+          "sealed_tribe": "Gad",
+          "temporal_birth_gate": "March Gate",
+          "church_anchor": "Pergamum",
+          "base_degree_frequency_khz": "82.5 kHz",
+          "zone_classification": "STABILIZED GREEN CORRIDOR"
         },
         "bottleneck": {
-          "id": "B-03",
-          "name": "Offshore Tax Concealment in Bobby Moahi Context",
-          "active_demon_driver": "Vassago",
-          "frequency_khz": "8.325 kHz",
-          "decay_velocity": 0.674,
+          "id": "B-17",
+          "name": "Disaster Emergency Lag in South Africa Context",
+          "active_demon_driver": "Botis",
+          "frequency_khz": "54.945 kHz",
+          "decay_velocity": 0.672,
           "destabilization_constant_floor": 0.666,
           "predictive_crash_schedule_10_dates_to_3000ce": [
-            "2035-01-27",
-            "2132-02-02",
-            "2229-03-05",
-            "2326-04-08",
-            "2423-05-11",
-            "2520-06-14",
-            "2617-07-17",
-            "2714-08-20",
-            "2811-09-23",
-            "2908-10-26"
+            "2029-01-12",
+            "2126-02-15",
+            "2223-03-18",
+            "2320-04-21",
+            "2417-05-24",
+            "2514-06-27",
+            "2611-07-02",
+            "2708-08-05",
+            "2805-09-08",
+            "2902-10-11"
           ]
         },
         "protocol": {
-          "id": "P-03",
-          "name": "Real-Time Cryptographic Ledger Deployment",
-          "ruling_shem_angel": "Sitael",
-          "celestial_choir": "Seraphim",
-          "frequency_khz": "20.225 kHz",
+          "id": "P-17",
+          "name": "Orbital Early-Warning Scanners Deployment",
+          "ruling_shem_angel": "Lauviah",
+          "celestial_choir": "Thrones",
+          "frequency_khz": "133.488 kHz",
           "current_restoration_speed": 0.71,
           "equilibrium_target": 1.0,
-          "piezoelectric_gemstone_vector": "Carnelian & Fire Opal"
+          "piezoelectric_gemstone_vector": "Amber & Chrysoberyl"
         },
         "real_time_earth_vector": {
-          "applied_speed": "0.7045x acceleration",
-          "application_width_khz": "19.255 kHz bandwidth",
-          "frequency_shift_to_ultra_green": "+86.675 kHz shift",
-          "exact_spatial_target": "Central Bank Clearing Gateway"
+          "applied_speed": "0.7046x acceleration",
+          "application_width_khz": "127.085 kHz bandwidth",
+          "frequency_shift_to_ultra_green": "+40.055 kHz shift",
+          "exact_spatial_target": "National Disaster Command Hubs"
         },
-        "prophetic_summary_3000ce": "NVIDIA NIM Sentinel [Regional / Statutory Policy Friction] analyzed 'Bobby Moahi' from 1000 BCE baseline. Under the First Seal: White Horse and January Gate, Vassago (8.325 kHz) causes bottleneck friction across 10 predicted failure dates ending 2908-10-26. Applying Real-Time Cryptographic Ledger via Carnelian & Fire Opal at 20.225 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Patch, locking the 1.000 Unity Target."
+        "prophetic_summary_3000ce": "NVIDIA NIM Sentinel [Regional / Statutory Policy Friction] analyzed 'South Africa' from 1000 BCE baseline. Under the Fourth Seal: Pale Horse and March Gate, Botis (54.945 kHz) causes bottleneck friction across 10 predicted failure dates ending 2902-10-11. Applying Orbital Early-Warning Scanners via Amber & Chrysoberyl at 133.488 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Patch, locking the 1.000 Unity Target."
       }
     },
     {
@@ -78,52 +78,52 @@
         "agent_index": 2,
         "chronos_phase": "Phase 1: Ancient Foundation Sweep (1000 BCE - 0 CE)",
         "diagnostic_scope": "Regional / Statutory Policy Friction",
-        "target_node_subject": "Bobby Moahi",
+        "target_node_subject": "South Africa",
         "biblical_apocalyptic_framework": {
-          "apocalyptic_seal": "Second Seal: Red Horse",
-          "sealed_tribe": "Judah",
-          "temporal_birth_gate": "January Gate",
-          "church_anchor": "Ephesus",
-          "base_degree_frequency_khz": "17.5 kHz",
-          "zone_classification": "SUB-HARMONIC RED ZONE (Entropy Drag)"
+          "apocalyptic_seal": "Fourth Seal: Pale Horse",
+          "sealed_tribe": "Gad",
+          "temporal_birth_gate": "March Gate",
+          "church_anchor": "Pergamum",
+          "base_degree_frequency_khz": "87.5 kHz",
+          "zone_classification": "STABILIZED GREEN CORRIDOR"
         },
         "bottleneck": {
-          "id": "B-04",
-          "name": "Maritime Container Congestion in Bobby Moahi Context",
-          "active_demon_driver": "Samigina",
-          "frequency_khz": "11.655 kHz",
-          "decay_velocity": 0.686,
+          "id": "B-18",
+          "name": "Airport Customs Extortion in South Africa Context",
+          "active_demon_driver": "Bathin",
+          "frequency_khz": "58.275 kHz",
+          "decay_velocity": 0.684,
           "destabilization_constant_floor": 0.666,
           "predictive_crash_schedule_10_dates_to_3000ce": [
-            "2042-02-27",
-            "2139-03-02",
-            "2236-04-05",
-            "2333-05-08",
-            "2430-06-11",
-            "2527-07-14",
-            "2624-08-17",
-            "2721-09-20",
-            "2818-10-23",
-            "2915-11-26"
+            "2036-02-12",
+            "2133-03-15",
+            "2230-04-18",
+            "2327-05-21",
+            "2424-06-24",
+            "2521-07-27",
+            "2618-08-02",
+            "2715-09-05",
+            "2812-10-08",
+            "2909-11-11"
           ]
         },
         "protocol": {
-          "id": "P-04",
-          "name": "Autonomous Sub-Surface Pods Deployment",
-          "ruling_shem_angel": "Elemiah",
-          "celestial_choir": "Seraphim",
-          "frequency_khz": "28.316 kHz",
+          "id": "P-18",
+          "name": "Zero-Knowledge Biometric Lock Deployment",
+          "ruling_shem_angel": "Caliel",
+          "celestial_choir": "Thrones",
+          "frequency_khz": "141.578 kHz",
           "current_restoration_speed": 0.732,
           "equilibrium_target": 1.0,
-          "piezoelectric_gemstone_vector": "Ruby & Pyrite"
+          "piezoelectric_gemstone_vector": "Aragonite & Scapolite"
         },
         "real_time_earth_vector": {
           "applied_speed": "0.6511x acceleration",
-          "application_width_khz": "26.958 kHz bandwidth",
-          "frequency_shift_to_ultra_green": "+83.345 kHz shift",
-          "exact_spatial_target": "Deepwater Container Berths"
+          "application_width_khz": "134.787 kHz bandwidth",
+          "frequency_shift_to_ultra_green": "+36.725 kHz shift",
+          "exact_spatial_target": "Airport Security Gates"
         },
-        "prophetic_summary_3000ce": "NVIDIA NIM Sentinel [Regional / Statutory Policy Friction] analyzed 'Bobby Moahi' from 1000 BCE baseline. Under the Second Seal: Red Horse and January Gate, Samigina (11.655 kHz) causes bottleneck friction across 10 predicted failure dates ending 2915-11-26. Applying Autonomous Sub-Surface Pods via Ruby & Pyrite at 28.316 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Patch, locking the 1.000 Unity Target."
+        "prophetic_summary_3000ce": "NVIDIA NIM Sentinel [Regional / Statutory Policy Friction] analyzed 'South Africa' from 1000 BCE baseline. Under the Fourth Seal: Pale Horse and March Gate, Bathin (58.275 kHz) causes bottleneck friction across 10 predicted failure dates ending 2909-11-11. Applying Zero-Knowledge Biometric Lock via Aragonite & Scapolite at 141.578 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Patch, locking the 1.000 Unity Target."
       }
     },
     {
@@ -133,52 +133,52 @@
         "agent_index": 3,
         "chronos_phase": "Phase 2: Historical Structural Arc (0 CE - 1800 CE)",
         "diagnostic_scope": "Regional / Statutory Policy Friction",
-        "target_node_subject": "Bobby Moahi",
+        "target_node_subject": "South Africa",
         "biblical_apocalyptic_framework": {
-          "apocalyptic_seal": "Second Seal: Red Horse",
-          "sealed_tribe": "Judah",
-          "temporal_birth_gate": "January Gate",
-          "church_anchor": "Ephesus",
-          "base_degree_frequency_khz": "22.5 kHz",
-          "zone_classification": "SUB-HARMONIC RED ZONE (Entropy Drag)"
+          "apocalyptic_seal": "Fourth Seal: Pale Horse",
+          "sealed_tribe": "Asher",
+          "temporal_birth_gate": "April Gate",
+          "church_anchor": "Thyatira",
+          "base_degree_frequency_khz": "92.5 kHz",
+          "zone_classification": "STABILIZED GREEN CORRIDOR"
         },
         "bottleneck": {
-          "id": "B-05",
-          "name": "Pathogenic Mutation Spread in Bobby Moahi Context",
-          "active_demon_driver": "Marbas",
-          "frequency_khz": "14.985 kHz",
-          "decay_velocity": 0.698,
+          "id": "B-19",
+          "name": "Industrial Labor Strikes in South Africa Context",
+          "active_demon_driver": "Sallos",
+          "frequency_khz": "61.605 kHz",
+          "decay_velocity": 0.696,
           "destabilization_constant_floor": 0.666,
           "predictive_crash_schedule_10_dates_to_3000ce": [
-            "2049-03-27",
-            "2146-04-02",
-            "2243-05-05",
-            "2340-06-08",
-            "2437-07-11",
-            "2534-08-14",
-            "2631-09-17",
-            "2728-10-20",
-            "2825-11-23",
-            "2922-12-26"
+            "2043-03-12",
+            "2140-04-15",
+            "2237-05-18",
+            "2334-06-21",
+            "2431-07-24",
+            "2528-08-27",
+            "2625-09-02",
+            "2722-10-05",
+            "2819-11-08",
+            "2916-12-11"
           ]
         },
         "protocol": {
-          "id": "P-05",
-          "name": "Sub-Atomic Cellular Healing Array Deployment",
-          "ruling_shem_angel": "Mahasiah",
-          "celestial_choir": "Seraphim",
-          "frequency_khz": "36.406 kHz",
+          "id": "P-19",
+          "name": "Automated Profit-Share Ledger Deployment",
+          "ruling_shem_angel": "Leuviah",
+          "celestial_choir": "Thrones",
+          "frequency_khz": "149.668 kHz",
           "current_restoration_speed": 0.754,
           "equilibrium_target": 1.0,
-          "piezoelectric_gemstone_vector": "Black Tourmaline & Magnetite"
+          "piezoelectric_gemstone_vector": "Moonstone & Selenite"
         },
         "real_time_earth_vector": {
           "applied_speed": "0.5977x acceleration",
-          "application_width_khz": "34.66 kHz bandwidth",
-          "frequency_shift_to_ultra_green": "+80.015 kHz shift",
-          "exact_spatial_target": "Metropolitan Water Treatment"
+          "application_width_khz": "142.489 kHz bandwidth",
+          "frequency_shift_to_ultra_green": "+33.395 kHz shift",
+          "exact_spatial_target": "Bargaining Council Arbitration"
         },
-        "prophetic_summary_3000ce": "NVIDIA NIM Sentinel [Regional / Statutory Policy Friction] analyzed 'Bobby Moahi' from 1000 BCE baseline. Under the Second Seal: Red Horse and January Gate, Marbas (14.985 kHz) causes bottleneck friction across 10 predicted failure dates ending 2922-12-26. Applying Sub-Atomic Cellular Healing Array via Black Tourmaline & Magnetite at 36.406 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Patch, locking the 1.000 Unity Target."
+        "prophetic_summary_3000ce": "NVIDIA NIM Sentinel [Regional / Statutory Policy Friction] analyzed 'South Africa' from 1000 BCE baseline. Under the Fourth Seal: Pale Horse and April Gate, Sallos (61.605 kHz) causes bottleneck friction across 10 predicted failure dates ending 2916-12-11. Applying Automated Profit-Share Ledger via Moonstone & Selenite at 149.668 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Patch, locking the 1.000 Unity Target."
       }
     },
     {
@@ -188,52 +188,52 @@
         "agent_index": 4,
         "chronos_phase": "Phase 2: Historical Structural Arc (0 CE - 1800 CE)",
         "diagnostic_scope": "Regional / Statutory Policy Friction",
-        "target_node_subject": "Bobby Moahi",
+        "target_node_subject": "South Africa",
         "biblical_apocalyptic_framework": {
-          "apocalyptic_seal": "Second Seal: Red Horse",
-          "sealed_tribe": "Judah",
-          "temporal_birth_gate": "January Gate",
-          "church_anchor": "Ephesus",
-          "base_degree_frequency_khz": "27.5 kHz",
-          "zone_classification": "SUB-HARMONIC RED ZONE (Entropy Drag)"
+          "apocalyptic_seal": "Fifth Seal: Altar of Martyrs",
+          "sealed_tribe": "Asher",
+          "temporal_birth_gate": "April Gate",
+          "church_anchor": "Thyatira",
+          "base_degree_frequency_khz": "97.5 kHz",
+          "zone_classification": "STABILIZED GREEN CORRIDOR"
         },
         "bottleneck": {
-          "id": "B-06",
-          "name": "Logistics Warehousing Hoarding in Bobby Moahi Context",
-          "active_demon_driver": "Valefor",
-          "frequency_khz": "18.315 kHz",
-          "decay_velocity": 0.71,
+          "id": "B-20",
+          "name": "Fiat Currency Inflation Drag in South Africa Context",
+          "active_demon_driver": "Purson",
+          "frequency_khz": "64.935 kHz",
+          "decay_velocity": 0.708,
           "destabilization_constant_floor": 0.666,
           "predictive_crash_schedule_10_dates_to_3000ce": [
-            "2056-04-27",
-            "2153-05-02",
-            "2250-06-05",
-            "2347-07-08",
-            "2444-08-11",
-            "2541-09-14",
-            "2638-10-17",
-            "2735-11-20",
-            "2832-12-23",
-            "2929-01-26"
+            "2050-04-12",
+            "2147-05-15",
+            "2244-06-18",
+            "2341-07-21",
+            "2438-08-24",
+            "2535-09-27",
+            "2632-10-02",
+            "2729-11-05",
+            "2826-12-08",
+            "2923-01-11"
           ]
         },
         "protocol": {
-          "id": "P-06",
-          "name": "Dynamic Shared Spatial Matrix Deployment",
-          "ruling_shem_angel": "Lelahel",
-          "celestial_choir": "Seraphim",
-          "frequency_khz": "44.496 kHz",
+          "id": "P-20",
+          "name": "Logos Asset-Backed Currency Deployment",
+          "ruling_shem_angel": "Pahaliah",
+          "celestial_choir": "Thrones",
+          "frequency_khz": "157.758 kHz",
           "current_restoration_speed": 0.776,
           "equilibrium_target": 1.0,
-          "piezoelectric_gemstone_vector": "Sardonyx & Sunstone"
+          "piezoelectric_gemstone_vector": "Pearl & Mother of Pearl"
         },
         "real_time_earth_vector": {
           "applied_speed": "0.5442x acceleration",
-          "application_width_khz": "42.362 kHz bandwidth",
-          "frequency_shift_to_ultra_green": "+76.685 kHz shift",
-          "exact_spatial_target": "Regional Distribution Hubs"
+          "application_width_khz": "150.191 kHz bandwidth",
+          "frequency_shift_to_ultra_green": "+30.065 kHz shift",
+          "exact_spatial_target": "Reserve Bank Vault Matrix"
         },
-        "prophetic_summary_3000ce": "NVIDIA NIM Sentinel [Regional / Statutory Policy Friction] analyzed 'Bobby Moahi' from 1000 BCE baseline. Under the Second Seal: Red Horse and January Gate, Valefor (18.315 kHz) causes bottleneck friction across 10 predicted failure dates ending 2929-01-26. Applying Dynamic Shared Spatial Matrix via Sardonyx & Sunstone at 44.496 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Patch, locking the 1.000 Unity Target."
+        "prophetic_summary_3000ce": "NVIDIA NIM Sentinel [Regional / Statutory Policy Friction] analyzed 'South Africa' from 1000 BCE baseline. Under the Fifth Seal: Altar of Martyrs and April Gate, Purson (64.935 kHz) causes bottleneck friction across 10 predicted failure dates ending 2923-01-11. Applying Logos Asset-Backed Currency via Pearl & Mother of Pearl at 157.758 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Patch, locking the 1.000 Unity Target."
       }
     },
     {
@@ -243,52 +243,52 @@
         "agent_index": 5,
         "chronos_phase": "Phase 2: Historical Structural Arc (0 CE - 1800 CE)",
         "diagnostic_scope": "Regional / Statutory Policy Friction",
-        "target_node_subject": "Bobby Moahi",
+        "target_node_subject": "South Africa",
         "biblical_apocalyptic_framework": {
-          "apocalyptic_seal": "Second Seal: Red Horse",
-          "sealed_tribe": "Reuben",
-          "temporal_birth_gate": "February Gate",
-          "church_anchor": "Smyrna",
-          "base_degree_frequency_khz": "32.5 kHz",
-          "zone_classification": "SUB-HARMONIC RED ZONE (Entropy Drag)"
+          "apocalyptic_seal": "Fifth Seal: Altar of Martyrs",
+          "sealed_tribe": "Asher",
+          "temporal_birth_gate": "April Gate",
+          "church_anchor": "Thyatira",
+          "base_degree_frequency_khz": "102.5 kHz",
+          "zone_classification": "STABILIZED GREEN CORRIDOR"
         },
         "bottleneck": {
-          "id": "B-07",
-          "name": "Telecom Bandwidth Throttling in Bobby Moahi Context",
-          "active_demon_driver": "Amon",
-          "frequency_khz": "21.645 kHz",
-          "decay_velocity": 0.722,
+          "id": "B-21",
+          "name": "Academic Knowledge Paywalls in South Africa Context",
+          "active_demon_driver": "Morax",
+          "frequency_khz": "68.265 kHz",
+          "decay_velocity": 0.72,
           "destabilization_constant_floor": 0.666,
           "predictive_crash_schedule_10_dates_to_3000ce": [
-            "2063-05-27",
-            "2160-06-02",
-            "2257-07-05",
-            "2354-08-08",
-            "2451-09-11",
-            "2548-10-14",
-            "2645-11-17",
-            "2742-12-20",
-            "2839-01-23",
-            "2936-02-26"
+            "2057-05-12",
+            "2154-06-15",
+            "2251-07-18",
+            "2348-08-21",
+            "2445-09-24",
+            "2542-10-27",
+            "2639-11-02",
+            "2736-12-05",
+            "2833-01-08",
+            "2930-02-11"
           ]
         },
         "protocol": {
-          "id": "P-07",
-          "name": "Quantum Satellite Mesh Shield Deployment",
-          "ruling_shem_angel": "Achaiah",
-          "celestial_choir": "Seraphim",
-          "frequency_khz": "52.586 kHz",
+          "id": "P-21",
+          "name": "Open Access Universal Vault Deployment",
+          "ruling_shem_angel": "Nelchael",
+          "celestial_choir": "Thrones",
+          "frequency_khz": "165.848 kHz",
           "current_restoration_speed": 0.798,
           "equilibrium_target": 1.0,
-          "piezoelectric_gemstone_vector": "Emerald & Malachite"
+          "piezoelectric_gemstone_vector": "White Chalcedony & Opal"
         },
         "real_time_earth_vector": {
           "applied_speed": "0.4908x acceleration",
-          "application_width_khz": "50.064 kHz bandwidth",
-          "frequency_shift_to_ultra_green": "+73.355 kHz shift",
-          "exact_spatial_target": "Fiber Optic Sea Cable Anchors"
+          "application_width_khz": "157.893 kHz bandwidth",
+          "frequency_shift_to_ultra_green": "+26.735 kHz shift",
+          "exact_spatial_target": "University Supercomputing Grid"
         },
-        "prophetic_summary_3000ce": "NVIDIA NIM Sentinel [Regional / Statutory Policy Friction] analyzed 'Bobby Moahi' from 1000 BCE baseline. Under the Second Seal: Red Horse and February Gate, Amon (21.645 kHz) causes bottleneck friction across 10 predicted failure dates ending 2936-02-26. Applying Quantum Satellite Mesh Shield via Emerald & Malachite at 52.586 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Patch, locking the 1.000 Unity Target."
+        "prophetic_summary_3000ce": "NVIDIA NIM Sentinel [Regional / Statutory Policy Friction] analyzed 'South Africa' from 1000 BCE baseline. Under the Fifth Seal: Altar of Martyrs and April Gate, Morax (68.265 kHz) causes bottleneck friction across 10 predicted failure dates ending 2930-02-11. Applying Open Access Universal Vault via White Chalcedony & Opal at 165.848 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Patch, locking the 1.000 Unity Target."
       }
     },
     {
@@ -298,52 +298,52 @@
         "agent_index": 6,
         "chronos_phase": "Phase 3: Modern Jurisdictional Audit (1800 CE - Present)",
         "diagnostic_scope": "Global Consciousness & Macro Supply Drag",
-        "target_node_subject": "Bobby Moahi",
+        "target_node_subject": "South Africa",
         "biblical_apocalyptic_framework": {
-          "apocalyptic_seal": "Second Seal: Red Horse",
-          "sealed_tribe": "Reuben",
-          "temporal_birth_gate": "February Gate",
-          "church_anchor": "Smyrna",
-          "base_degree_frequency_khz": "37.5 kHz",
+          "apocalyptic_seal": "Fifth Seal: Altar of Martyrs",
+          "sealed_tribe": "Asher",
+          "temporal_birth_gate": "April Gate",
+          "church_anchor": "Thyatira",
+          "base_degree_frequency_khz": "107.5 kHz",
           "zone_classification": "STABILIZED GREEN CORRIDOR"
         },
         "bottleneck": {
-          "id": "B-08",
-          "name": "Subterranean Aquifer Drying in Bobby Moahi Context",
-          "active_demon_driver": "Barbatos",
-          "frequency_khz": "24.975 kHz",
-          "decay_velocity": 0.734,
+          "id": "B-22",
+          "name": "Air Freight Carbon Surcharges in South Africa Context",
+          "active_demon_driver": "Ipos",
+          "frequency_khz": "71.595 kHz",
+          "decay_velocity": 0.732,
           "destabilization_constant_floor": 0.666,
           "predictive_crash_schedule_10_dates_to_3000ce": [
-            "2070-06-27",
-            "2167-07-02",
-            "2264-08-05",
-            "2361-09-08",
-            "2458-10-11",
-            "2555-11-14",
-            "2652-12-17",
-            "2749-01-20",
-            "2846-02-23",
-            "2943-03-26"
+            "2064-06-12",
+            "2161-07-15",
+            "2258-08-18",
+            "2355-09-21",
+            "2452-10-24",
+            "2549-11-27",
+            "2646-12-02",
+            "2743-01-05",
+            "2840-02-08",
+            "2937-03-11"
           ]
         },
         "protocol": {
-          "id": "P-08",
-          "name": "Closed-Loop Water Nodes Deployment",
-          "ruling_shem_angel": "Cahetel",
-          "celestial_choir": "Seraphim",
-          "frequency_khz": "60.676 kHz",
+          "id": "P-22",
+          "name": "Hydrogen Airship Transit Mesh Deployment",
+          "ruling_shem_angel": "Yeiayel",
+          "celestial_choir": "Thrones",
+          "frequency_khz": "173.939 kHz",
           "current_restoration_speed": 0.82,
           "equilibrium_target": 1.0,
-          "piezoelectric_gemstone_vector": "Chrysoprase & Moss Agate"
+          "piezoelectric_gemstone_vector": "Ulexite & Labradorite"
         },
         "real_time_earth_vector": {
           "applied_speed": "0.4373x acceleration",
-          "application_width_khz": "57.765 kHz bandwidth",
-          "frequency_shift_to_ultra_green": "+70.025 kHz shift",
-          "exact_spatial_target": "Subterranean Aquifer Pumping"
+          "application_width_khz": "165.596 kHz bandwidth",
+          "frequency_shift_to_ultra_green": "+23.405 kHz shift",
+          "exact_spatial_target": "Civil Aviation Radar Towers"
         },
-        "prophetic_summary_3000ce": "NVIDIA NIM Sentinel [Global Consciousness & Macro Supply Drag] analyzed 'Bobby Moahi' from 1000 BCE baseline. Under the Second Seal: Red Horse and February Gate, Barbatos (24.975 kHz) causes bottleneck friction across 10 predicted failure dates ending 2943-03-26. Applying Closed-Loop Water Nodes via Chrysoprase & Moss Agate at 60.676 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Patch, locking the 1.000 Unity Target."
+        "prophetic_summary_3000ce": "NVIDIA NIM Sentinel [Global Consciousness & Macro Supply Drag] analyzed 'South Africa' from 1000 BCE baseline. Under the Fifth Seal: Altar of Martyrs and April Gate, Ipos (71.595 kHz) causes bottleneck friction across 10 predicted failure dates ending 2937-03-11. Applying Hydrogen Airship Transit Mesh via Ulexite & Labradorite at 173.939 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Patch, locking the 1.000 Unity Target."
       }
     },
     {
@@ -353,52 +353,52 @@
         "agent_index": 7,
         "chronos_phase": "Phase 3: Modern Jurisdictional Audit (1800 CE - Present)",
         "diagnostic_scope": "Global Consciousness & Macro Supply Drag",
-        "target_node_subject": "Bobby Moahi",
+        "target_node_subject": "South Africa",
         "biblical_apocalyptic_framework": {
-          "apocalyptic_seal": "Third Seal: Black Horse",
-          "sealed_tribe": "Reuben",
-          "temporal_birth_gate": "February Gate",
-          "church_anchor": "Smyrna",
-          "base_degree_frequency_khz": "42.5 kHz",
+          "apocalyptic_seal": "Fifth Seal: Altar of Martyrs",
+          "sealed_tribe": "Asher",
+          "temporal_birth_gate": "April Gate",
+          "church_anchor": "Thyatira",
+          "base_degree_frequency_khz": "112.5 kHz",
           "zone_classification": "STABILIZED GREEN CORRIDOR"
         },
         "bottleneck": {
-          "id": "B-09",
-          "name": "Executive Policy Red Tape in Bobby Moahi Context",
-          "active_demon_driver": "Paimon",
-          "frequency_khz": "28.305 kHz",
-          "decay_velocity": 0.746,
+          "id": "B-23",
+          "name": "Grid Fire Arson Propagation in South Africa Context",
+          "active_demon_driver": "Aim",
+          "frequency_khz": "74.925 kHz",
+          "decay_velocity": 0.744,
           "destabilization_constant_floor": 0.666,
           "predictive_crash_schedule_10_dates_to_3000ce": [
-            "2077-07-27",
-            "2174-08-02",
-            "2271-09-05",
-            "2368-10-08",
-            "2465-11-11",
-            "2562-12-14",
-            "2659-01-17",
-            "2756-02-20",
-            "2853-03-23",
-            "2950-04-26"
+            "2071-07-12",
+            "2168-08-15",
+            "2265-09-18",
+            "2362-10-21",
+            "2459-11-24",
+            "2556-12-27",
+            "2653-01-02",
+            "2750-02-05",
+            "2847-03-08",
+            "2944-04-11"
           ]
         },
         "protocol": {
-          "id": "P-09",
-          "name": "Algorithmic Citizen Voting Deployment",
-          "ruling_shem_angel": "Haziel",
-          "celestial_choir": "Cherubim",
-          "frequency_khz": "68.766 kHz",
+          "id": "P-23",
+          "name": "Electro-Thermal Fire Arrays Deployment",
+          "ruling_shem_angel": "Melahel",
+          "celestial_choir": "Thrones",
+          "frequency_khz": "182.029 kHz",
           "current_restoration_speed": 0.842,
           "equilibrium_target": 1.0,
-          "piezoelectric_gemstone_vector": "Green Aventurine & Jade"
+          "piezoelectric_gemstone_vector": "Rhodonite & Pink Tourmaline"
         },
         "real_time_earth_vector": {
           "applied_speed": "0.3839x acceleration",
-          "application_width_khz": "65.467 kHz bandwidth",
-          "frequency_shift_to_ultra_green": "+66.695 kHz shift",
-          "exact_spatial_target": "Parliamentary Legislative Vaults"
+          "application_width_khz": "173.298 kHz bandwidth",
+          "frequency_shift_to_ultra_green": "+20.075 kHz shift",
+          "exact_spatial_target": "Municipal Fire & Rescue Grid"
         },
-        "prophetic_summary_3000ce": "NVIDIA NIM Sentinel [Global Consciousness & Macro Supply Drag] analyzed 'Bobby Moahi' from 1000 BCE baseline. Under the Third Seal: Black Horse and February Gate, Paimon (28.305 kHz) causes bottleneck friction across 10 predicted failure dates ending 2950-04-26. Applying Algorithmic Citizen Voting via Green Aventurine & Jade at 68.766 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Patch, locking the 1.000 Unity Target."
+        "prophetic_summary_3000ce": "NVIDIA NIM Sentinel [Global Consciousness & Macro Supply Drag] analyzed 'South Africa' from 1000 BCE baseline. Under the Fifth Seal: Altar of Martyrs and April Gate, Aim (74.925 kHz) causes bottleneck friction across 10 predicted failure dates ending 2944-04-11. Applying Electro-Thermal Fire Arrays via Rhodonite & Pink Tourmaline at 182.029 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Patch, locking the 1.000 Unity Target."
       }
     },
     {
@@ -408,52 +408,52 @@
         "agent_index": 8,
         "chronos_phase": "Phase 3: Modern Jurisdictional Audit (1800 CE - Present)",
         "diagnostic_scope": "Global Consciousness & Macro Supply Drag",
-        "target_node_subject": "Bobby Moahi",
+        "target_node_subject": "South Africa",
         "biblical_apocalyptic_framework": {
-          "apocalyptic_seal": "Third Seal: Black Horse",
-          "sealed_tribe": "Reuben",
-          "temporal_birth_gate": "February Gate",
-          "church_anchor": "Smyrna",
-          "base_degree_frequency_khz": "47.5 kHz",
+          "apocalyptic_seal": "Fifth Seal: Altar of Martyrs",
+          "sealed_tribe": "Asher",
+          "temporal_birth_gate": "April Gate",
+          "church_anchor": "Thyatira",
+          "base_degree_frequency_khz": "117.5 kHz",
           "zone_classification": "STABILIZED GREEN CORRIDOR"
         },
         "bottleneck": {
-          "id": "B-10",
-          "name": "Pharmaceutical Price Gouging in Bobby Moahi Context",
-          "active_demon_driver": "Buer",
-          "frequency_khz": "31.635 kHz",
-          "decay_velocity": 0.758,
+          "id": "B-24",
+          "name": "Corporate Greenwashing Deception in South Africa Context",
+          "active_demon_driver": "Naberius",
+          "frequency_khz": "78.255 kHz",
+          "decay_velocity": 0.756,
           "destabilization_constant_floor": 0.666,
           "predictive_crash_schedule_10_dates_to_3000ce": [
-            "2084-08-27",
-            "2181-09-02",
-            "2278-10-05",
-            "2375-11-08",
-            "2472-12-11",
-            "2569-01-14",
-            "2666-02-17",
-            "2763-03-20",
-            "2860-04-23",
-            "2957-05-26"
+            "2078-08-12",
+            "2175-09-15",
+            "2272-10-18",
+            "2369-11-21",
+            "2466-12-24",
+            "2563-01-27",
+            "2660-02-02",
+            "2757-03-05",
+            "2854-04-08",
+            "2951-05-11"
           ]
         },
         "protocol": {
-          "id": "P-10",
-          "name": "Open-Source Molecular Synthesis Deployment",
-          "ruling_shem_angel": "Aladiah",
-          "celestial_choir": "Cherubim",
-          "frequency_khz": "76.857 kHz",
+          "id": "P-24",
+          "name": "Pegasys Real-Time Audit Lock Deployment",
+          "ruling_shem_angel": "Hahuiah",
+          "celestial_choir": "Thrones",
+          "frequency_khz": "190.119 kHz",
           "current_restoration_speed": 0.864,
           "equilibrium_target": 1.0,
-          "piezoelectric_gemstone_vector": "Peridot & Moldavite"
+          "piezoelectric_gemstone_vector": "Petalite & Morganite"
         },
         "real_time_earth_vector": {
           "applied_speed": "0.3304x acceleration",
-          "application_width_khz": "73.171 kHz bandwidth",
-          "frequency_shift_to_ultra_green": "+63.365 kHz shift",
-          "exact_spatial_target": "National Pharma Stockpiles"
+          "application_width_khz": "181.0 kHz bandwidth",
+          "frequency_shift_to_ultra_green": "+16.745 kHz shift",
+          "exact_spatial_target": "Standards Authority Audit Servers"
         },
-        "prophetic_summary_3000ce": "NVIDIA NIM Sentinel [Global Consciousness & Macro Supply Drag] analyzed 'Bobby Moahi' from 1000 BCE baseline. Under the Third Seal: Black Horse and February Gate, Buer (31.635 kHz) causes bottleneck friction across 10 predicted failure dates ending 2957-05-26. Applying Open-Source Molecular Synthesis via Peridot & Moldavite at 76.857 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Patch, locking the 1.000 Unity Target."
+        "prophetic_summary_3000ce": "NVIDIA NIM Sentinel [Global Consciousness & Macro Supply Drag] analyzed 'South Africa' from 1000 BCE baseline. Under the Fifth Seal: Altar of Martyrs and April Gate, Naberius (78.255 kHz) causes bottleneck friction across 10 predicted failure dates ending 2951-05-11. Applying Pegasys Real-Time Audit Lock via Petalite & Morganite at 190.119 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Patch, locking the 1.000 Unity Target."
       }
     },
     {
@@ -463,52 +463,52 @@
         "agent_index": 9,
         "chronos_phase": "Phase 4: Prophetic Horizon Calculation (2026 CE - 3000 CE)",
         "diagnostic_scope": "Global Consciousness & Macro Supply Drag",
-        "target_node_subject": "Bobby Moahi",
+        "target_node_subject": "South Africa",
         "biblical_apocalyptic_framework": {
-          "apocalyptic_seal": "Third Seal: Black Horse",
-          "sealed_tribe": "Reuben",
-          "temporal_birth_gate": "February Gate",
-          "church_anchor": "Smyrna",
-          "base_degree_frequency_khz": "52.5 kHz",
-          "zone_classification": "STABILIZED GREEN CORRIDOR"
+          "apocalyptic_seal": "First Seal: White Horse",
+          "sealed_tribe": "Judah",
+          "temporal_birth_gate": "January Gate",
+          "church_anchor": "Ephesus",
+          "base_degree_frequency_khz": "2.5 kHz",
+          "zone_classification": "SUB-HARMONIC RED ZONE (Entropy Drag)"
         },
         "bottleneck": {
-          "id": "B-11",
-          "name": "Diplomatic Treaty Friction in Bobby Moahi Context",
-          "active_demon_driver": "Gusion",
-          "frequency_khz": "34.965 kHz",
-          "decay_velocity": 0.77,
+          "id": "B-01",
+          "name": "Fossil Fuel Monopolization in South Africa Context",
+          "active_demon_driver": "Bael",
+          "frequency_khz": "1.665 kHz",
+          "decay_velocity": 0.768,
           "destabilization_constant_floor": 0.666,
           "predictive_crash_schedule_10_dates_to_3000ce": [
-            "2091-09-27",
-            "2188-10-02",
-            "2285-11-05",
-            "2382-12-08",
-            "2479-01-11",
-            "2576-02-14",
-            "2673-03-17",
-            "2770-04-20",
-            "2867-05-23",
-            "2964-06-26"
+            "2085-09-12",
+            "2182-10-15",
+            "2279-11-18",
+            "2376-12-21",
+            "2473-01-24",
+            "2570-02-27",
+            "2667-03-02",
+            "2764-04-05",
+            "2861-05-08",
+            "2958-06-11"
           ]
         },
         "protocol": {
-          "id": "P-11",
-          "name": "Sovereign Resource Swaps Deployment",
-          "ruling_shem_angel": "Lauviah",
-          "celestial_choir": "Cherubim",
-          "frequency_khz": "84.947 kHz",
+          "id": "P-01",
+          "name": "Decentralized Micro-Grid Nodes Deployment",
+          "ruling_shem_angel": "Vehuiah",
+          "celestial_choir": "Seraphim",
+          "frequency_khz": "4.045 kHz",
           "current_restoration_speed": 0.886,
           "equilibrium_target": 1.0,
-          "piezoelectric_gemstone_vector": "Rhodochrosite & Dioptase"
+          "piezoelectric_gemstone_vector": "Red Jasper & Hematite"
         },
         "real_time_earth_vector": {
           "applied_speed": "0.277x acceleration",
-          "application_width_khz": "80.873 kHz bandwidth",
-          "frequency_shift_to_ultra_green": "+60.035 kHz shift",
-          "exact_spatial_target": "Embassy Diplomatic Vaults"
+          "application_width_khz": "3.851 kHz bandwidth",
+          "frequency_shift_to_ultra_green": "+93.335 kHz shift",
+          "exact_spatial_target": "Substation High-Voltage Busbars"
         },
-        "prophetic_summary_3000ce": "NVIDIA NIM Sentinel [Global Consciousness & Macro Supply Drag] analyzed 'Bobby Moahi' from 1000 BCE baseline. Under the Third Seal: Black Horse and February Gate, Gusion (34.965 kHz) causes bottleneck friction across 10 predicted failure dates ending 2964-06-26. Applying Sovereign Resource Swaps via Rhodochrosite & Dioptase at 84.947 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Patch, locking the 1.000 Unity Target."
+        "prophetic_summary_3000ce": "NVIDIA NIM Sentinel [Global Consciousness & Macro Supply Drag] analyzed 'South Africa' from 1000 BCE baseline. Under the First Seal: White Horse and January Gate, Bael (1.665 kHz) causes bottleneck friction across 10 predicted failure dates ending 2958-06-11. Applying Decentralized Micro-Grid Nodes via Red Jasper & Hematite at 4.045 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Patch, locking the 1.000 Unity Target."
       }
     },
     {
@@ -518,52 +518,52 @@
         "agent_index": 10,
         "chronos_phase": "Phase 4: Prophetic Horizon Calculation (2026 CE - 3000 CE)",
         "diagnostic_scope": "Global Consciousness & Macro Supply Drag",
-        "target_node_subject": "Bobby Moahi",
+        "target_node_subject": "South Africa",
         "biblical_apocalyptic_framework": {
-          "apocalyptic_seal": "Third Seal: Black Horse",
-          "sealed_tribe": "Reuben",
-          "temporal_birth_gate": "February Gate",
-          "church_anchor": "Smyrna",
-          "base_degree_frequency_khz": "57.5 kHz",
-          "zone_classification": "ULTRA GREEN PATCH (1.000 Unity Peak)"
+          "apocalyptic_seal": "First Seal: White Horse",
+          "sealed_tribe": "Judah",
+          "temporal_birth_gate": "January Gate",
+          "church_anchor": "Ephesus",
+          "base_degree_frequency_khz": "7.5 kHz",
+          "zone_classification": "SUB-HARMONIC RED ZONE (Entropy Drag)"
         },
         "bottleneck": {
-          "id": "B-12",
-          "name": "Media Panic Manipulation in Bobby Moahi Context",
-          "active_demon_driver": "Sitri",
-          "frequency_khz": "38.295 kHz",
-          "decay_velocity": 0.782,
+          "id": "B-02",
+          "name": "Border Trade Tariff Inertia in South Africa Context",
+          "active_demon_driver": "Agares",
+          "frequency_khz": "4.995 kHz",
+          "decay_velocity": 0.78,
           "destabilization_constant_floor": 0.666,
           "predictive_crash_schedule_10_dates_to_3000ce": [
-            "2098-10-27",
-            "2195-11-02",
-            "2292-12-05",
-            "2389-01-08",
-            "2486-02-11",
-            "2583-03-14",
-            "2680-04-17",
-            "2777-05-20",
-            "2874-06-23",
-            "2971-07-26"
+            "2092-10-12",
+            "2189-11-15",
+            "2286-12-18",
+            "2383-01-21",
+            "2480-02-24",
+            "2577-03-27",
+            "2674-04-02",
+            "2771-05-05",
+            "2868-06-08",
+            "2965-07-11"
           ]
         },
         "protocol": {
-          "id": "P-12",
-          "name": "Truth-Anchored Consensus Engine Deployment",
-          "ruling_shem_angel": "Hahaiah",
-          "celestial_choir": "Cherubim",
-          "frequency_khz": "93.037 kHz",
+          "id": "P-02",
+          "name": "Maglev Automated Rail Mesh Deployment",
+          "ruling_shem_angel": "Jeliel",
+          "celestial_choir": "Seraphim",
+          "frequency_khz": "12.135 kHz",
           "current_restoration_speed": 0.908,
           "equilibrium_target": 1.0,
-          "piezoelectric_gemstone_vector": "Rose Quartz & Kunzite"
+          "piezoelectric_gemstone_vector": "Bloodstone & Garnet"
         },
         "real_time_earth_vector": {
           "applied_speed": "0.2235x acceleration",
-          "application_width_khz": "88.574 kHz bandwidth",
-          "frequency_shift_to_ultra_green": "+56.705 kHz shift",
-          "exact_spatial_target": "Telecom Switching Centers"
+          "application_width_khz": "11.553 kHz bandwidth",
+          "frequency_shift_to_ultra_green": "+90.005 kHz shift",
+          "exact_spatial_target": "Cross-Border Rail Junctions"
         },
-        "prophetic_summary_3000ce": "NVIDIA NIM Sentinel [Global Consciousness & Macro Supply Drag] analyzed 'Bobby Moahi' from 1000 BCE baseline. Under the Third Seal: Black Horse and February Gate, Sitri (38.295 kHz) causes bottleneck friction across 10 predicted failure dates ending 2971-07-26. Applying Truth-Anchored Consensus Engine via Rose Quartz & Kunzite at 93.037 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Patch, locking the 1.000 Unity Target."
+        "prophetic_summary_3000ce": "NVIDIA NIM Sentinel [Global Consciousness & Macro Supply Drag] analyzed 'South Africa' from 1000 BCE baseline. Under the First Seal: White Horse and January Gate, Agares (4.995 kHz) causes bottleneck friction across 10 predicted failure dates ending 2965-07-11. Applying Maglev Automated Rail Mesh via Bloodstone & Garnet at 12.135 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Patch, locking the 1.000 Unity Target."
       }
     }
   ]
