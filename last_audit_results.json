@@ -14759,5 +14759,566 @@
         }
       }
     ]
+  },
+  {
+    "security": {
+      "session_guid": "7e35c33d-810d-4479-9c36-67fc4ece230e",
+      "utc_timestamp": "2026-07-22T10:46:20.074000+00:00",
+      "ecta_hash": "sha256:0b50fbd280e19717e9de3bed1fcdb4a4f1b047368b06db0d93e0315366f4aac9",
+      "popia_status": "COMPLIANT_NO_PII_EXPOSED"
+    },
+    "quantum_header": "QUANTUM-CYCLE: 059763 / 144000",
+    "quantum_cycle": 59763,
+    "mathematics": {
+      "shi": 20571.43,
+      "tti": 0.0,
+      "frequency": 144000.0,
+      "logos": 10368000,
+      "resistance": 504,
+      "constraints": 1.0,
+      "override_triggered": true
+    },
+    "chronos_sweep": [
+      {
+        "sandbox_id": "sentinel-c01",
+        "status": "EXECUTED",
+        "data": {
+          "agent_index": 1,
+          "chronos_phase": "Phase 1: Diagnostic Arc",
+          "diagnostic_scope": "Regional / Statutory Policy Friction",
+          "target_node_subject": "Israel Economy After The Iran Post War",
+          "biblical_apocalyptic_framework": {
+            "apocalyptic_seal": "Fourth Seal: Pale Horse",
+            "sealed_tribe": "Gad",
+            "temporal_birth_gate": "March Gate",
+            "church_anchor": "Pergamum",
+            "base_degree_frequency_khz": "87.0 kHz",
+            "zone_classification": "STABILIZED GREEN CORRIDOR"
+          },
+          "bottleneck": {
+            "id": "B-54",
+            "name": "Public Transit Rail Maintenance Disruption in Israel Economy After The Iran Post War Context",
+            "active_demon_driver": "#41 Focalor",
+            "frequency_khz": "136.530 kHz",
+            "decay_velocity": 0.537,
+            "destabilization_constant_floor": 0.666,
+            "predictive_crash_schedule_10_dates_to_3000ce": [
+              "2028-06-22",
+              "2122-06-22",
+              "2216-06-22",
+              "2310-06-22",
+              "2404-06-22",
+              "2498-06-22",
+              "2592-06-22",
+              "2686-06-22",
+              "2780-06-22",
+              "2874-06-22"
+            ]
+          },
+          "protocol": {
+            "id": "P-67",
+            "name": "Israel Economy After The Iran Post War Public Procurement Transparency Ledger",
+            "ruling_shem_angel": "Caliel",
+            "celestial_choir": "Thrones",
+            "frequency_khz": "141.578 kHz",
+            "current_restoration_speed": 0.837,
+            "equilibrium_target": 1.0
+          },
+          "real_time_earth_vector": {
+            "applied_speed": "0.537x acceleration",
+            "application_width_khz": "127.000 kHz bandwidth",
+            "frequency_shift_to_ultra_green": "+57.000 kHz shift",
+            "exact_spatial_target": "Israel Economy After The Iran Post War Infrastructure Grid Node #1"
+          },
+          "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Israel Economy After The Iran Post War'. Under localized operational friction, Goetic Driver #41 Focalor (136.530 kHz) induces bottleneck friction across 10 predicted failure dates ending 2874-06-22. Applying Israel Economy After The Iran Post War Public Procurement Transparency Ledger via Shem Angel Caliel at 141.578 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Corridor, locking the 1.000 Target Unity."
+        }
+      },
+      {
+        "sandbox_id": "sentinel-c02",
+        "status": "EXECUTED",
+        "data": {
+          "agent_index": 2,
+          "chronos_phase": "Phase 1: Diagnostic Arc",
+          "diagnostic_scope": "Regional / Statutory Policy Friction",
+          "target_node_subject": "Israel Economy After The Iran Post War",
+          "biblical_apocalyptic_framework": {
+            "apocalyptic_seal": "Fourth Seal: Pale Horse",
+            "sealed_tribe": "Judah",
+            "temporal_birth_gate": "January Gate",
+            "church_anchor": "Ephesus",
+            "base_degree_frequency_khz": "97.0 kHz",
+            "zone_classification": "STABILIZED GREEN CORRIDOR"
+          },
+          "bottleneck": {
+            "id": "B-11",
+            "name": "Micro-Grid Synchronization Lag in Israel Economy After The Iran Post War Context",
+            "active_demon_driver": "#15 Eligos",
+            "frequency_khz": "49.950 kHz",
+            "decay_velocity": 0.782,
+            "destabilization_constant_floor": 0.666,
+            "predictive_crash_schedule_10_dates_to_3000ce": [
+              "2033-11-11",
+              "2128-11-11",
+              "2223-11-11",
+              "2318-11-11",
+              "2413-11-11",
+              "2508-11-11",
+              "2603-11-11",
+              "2698-11-11",
+              "2793-11-11",
+              "2888-11-11"
+            ]
+          },
+          "protocol": {
+            "id": "P-19",
+            "name": "Israel Economy After The Iran Post War High-Bandwidth Quantum Encryption Uplink",
+            "ruling_shem_angel": "Leuviah",
+            "celestial_choir": "Thrones",
+            "frequency_khz": "149.668 kHz",
+            "current_restoration_speed": 0.732,
+            "equilibrium_target": 1.0
+          },
+          "real_time_earth_vector": {
+            "applied_speed": "0.682x acceleration",
+            "application_width_khz": "132.000 kHz bandwidth",
+            "frequency_shift_to_ultra_green": "+22.000 kHz shift",
+            "exact_spatial_target": "Israel Economy After The Iran Post War Infrastructure Grid Node #2"
+          },
+          "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Israel Economy After The Iran Post War'. Under localized operational friction, Goetic Driver #15 Eligos (49.950 kHz) induces bottleneck friction across 10 predicted failure dates ending 2888-11-11. Applying Israel Economy After The Iran Post War High-Bandwidth Quantum Encryption Uplink via Shem Angel Leuviah at 149.668 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Corridor, locking the 1.000 Target Unity."
+        }
+      },
+      {
+        "sandbox_id": "sentinel-c03",
+        "status": "EXECUTED",
+        "data": {
+          "agent_index": 3,
+          "chronos_phase": "Phase 1: Diagnostic Arc",
+          "diagnostic_scope": "Regional / Statutory Policy Friction",
+          "target_node_subject": "Israel Economy After The Iran Post War",
+          "biblical_apocalyptic_framework": {
+            "apocalyptic_seal": "Fourth Seal: Pale Horse",
+            "sealed_tribe": "Judah",
+            "temporal_birth_gate": "January Gate",
+            "church_anchor": "Ephesus",
+            "base_degree_frequency_khz": "103.0 kHz",
+            "zone_classification": "STABILIZED GREEN CORRIDOR"
+          },
+          "bottleneck": {
+            "id": "B-07",
+            "name": "Thermal Power Station Cooling Friction in Israel Economy After The Iran Post War Context",
+            "active_demon_driver": "#60 Vapula",
+            "frequency_khz": "199.800 kHz",
+            "decay_velocity": 0.778,
+            "destabilization_constant_floor": 0.666,
+            "predictive_crash_schedule_10_dates_to_3000ce": [
+              "2029-07-03",
+              "2123-07-03",
+              "2217-07-03",
+              "2311-07-03",
+              "2405-07-03",
+              "2499-07-03",
+              "2593-07-03",
+              "2687-07-03",
+              "2781-07-03",
+              "2875-07-03"
+            ]
+          },
+          "protocol": {
+            "id": "P-19",
+            "name": "Israel Economy After The Iran Post War High-Bandwidth Quantum Encryption Uplink",
+            "ruling_shem_angel": "Lauviah",
+            "celestial_choir": "Thrones",
+            "frequency_khz": "133.488 kHz",
+            "current_restoration_speed": 0.828,
+            "equilibrium_target": 1.0
+          },
+          "real_time_earth_vector": {
+            "applied_speed": "0.778x acceleration",
+            "application_width_khz": "128.000 kHz bandwidth",
+            "frequency_shift_to_ultra_green": "+58.000 kHz shift",
+            "exact_spatial_target": "Israel Economy After The Iran Post War Infrastructure Grid Node #3"
+          },
+          "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Israel Economy After The Iran Post War'. Under localized operational friction, Goetic Driver #60 Vapula (199.800 kHz) induces bottleneck friction across 10 predicted failure dates ending 2875-07-03. Applying Israel Economy After The Iran Post War High-Bandwidth Quantum Encryption Uplink via Shem Angel Lauviah at 133.488 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Corridor, locking the 1.000 Target Unity."
+        }
+      },
+      {
+        "sandbox_id": "sentinel-c04",
+        "status": "EXECUTED",
+        "data": {
+          "agent_index": 4,
+          "chronos_phase": "Phase 2: Diagnostic Arc",
+          "diagnostic_scope": "Regional / Statutory Policy Friction",
+          "target_node_subject": "Israel Economy After The Iran Post War",
+          "biblical_apocalyptic_framework": {
+            "apocalyptic_seal": "Fourth Seal: Pale Horse",
+            "sealed_tribe": "Judah",
+            "temporal_birth_gate": "January Gate",
+            "church_anchor": "Ephesus",
+            "base_degree_frequency_khz": "83.0 kHz",
+            "zone_classification": "STABILIZED GREEN CORRIDOR"
+          },
+          "bottleneck": {
+            "id": "B-35",
+            "name": "Border Post Truck Queue Inertia in Israel Economy After The Iran Post War Context",
+            "active_demon_driver": "#36 Stolas",
+            "frequency_khz": "119.880 kHz",
+            "decay_velocity": 0.678,
+            "destabilization_constant_floor": 0.666,
+            "predictive_crash_schedule_10_dates_to_3000ce": [
+              "2039-11-11",
+              "2131-11-11",
+              "2223-11-11",
+              "2315-11-11",
+              "2407-11-11",
+              "2499-11-11",
+              "2591-11-11",
+              "2683-11-11",
+              "2775-11-11",
+              "2867-11-11"
+            ]
+          },
+          "protocol": {
+            "id": "P-57",
+            "name": "Israel Economy After The Iran Post War Decentralized IP Clearing Vault",
+            "ruling_shem_angel": "Nelchael",
+            "celestial_choir": "Thrones",
+            "frequency_khz": "165.848 kHz",
+            "current_restoration_speed": 0.728,
+            "equilibrium_target": 1.0
+          },
+          "real_time_earth_vector": {
+            "applied_speed": "0.678x acceleration",
+            "application_width_khz": "168.000 kHz bandwidth",
+            "frequency_shift_to_ultra_green": "+38.000 kHz shift",
+            "exact_spatial_target": "Israel Economy After The Iran Post War Infrastructure Grid Node #4"
+          },
+          "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Israel Economy After The Iran Post War'. Under localized operational friction, Goetic Driver #36 Stolas (119.880 kHz) induces bottleneck friction across 10 predicted failure dates ending 2867-11-11. Applying Israel Economy After The Iran Post War Decentralized IP Clearing Vault via Shem Angel Nelchael at 165.848 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Corridor, locking the 1.000 Target Unity."
+        }
+      },
+      {
+        "sandbox_id": "sentinel-c05",
+        "status": "EXECUTED",
+        "data": {
+          "agent_index": 5,
+          "chronos_phase": "Phase 2: Diagnostic Arc",
+          "diagnostic_scope": "Regional / Statutory Policy Friction",
+          "target_node_subject": "Israel Economy After The Iran Post War",
+          "biblical_apocalyptic_framework": {
+            "apocalyptic_seal": "Fourth Seal: Pale Horse",
+            "sealed_tribe": "Gad",
+            "temporal_birth_gate": "March Gate",
+            "church_anchor": "Pergamum",
+            "base_degree_frequency_khz": "109.0 kHz",
+            "zone_classification": "STABILIZED GREEN CORRIDOR"
+          },
+          "bottleneck": {
+            "id": "B-30",
+            "name": "Last-Mile Logistics Fleet Attrition in Israel Economy After The Iran Post War Context",
+            "active_demon_driver": "#24 Naberius",
+            "frequency_khz": "79.920 kHz",
+            "decay_velocity": 0.849,
+            "destabilization_constant_floor": 0.666,
+            "predictive_crash_schedule_10_dates_to_3000ce": [
+              "2040-06-02",
+              "2113-06-02",
+              "2186-06-02",
+              "2259-06-02",
+              "2332-06-02",
+              "2405-06-02",
+              "2478-06-02",
+              "2551-06-02",
+              "2624-06-02",
+              "2697-06-02"
+            ]
+          },
+          "protocol": {
+            "id": "P-20",
+            "name": "Israel Economy After The Iran Post War Open-Source Patent Vault Release Vector",
+            "ruling_shem_angel": "Elemiah",
+            "celestial_choir": "Seraphim",
+            "frequency_khz": "28.315 kHz",
+            "current_restoration_speed": 0.799,
+            "equilibrium_target": 1.0
+          },
+          "real_time_earth_vector": {
+            "applied_speed": "0.749x acceleration",
+            "application_width_khz": "139.000 kHz bandwidth",
+            "frequency_shift_to_ultra_green": "+49.000 kHz shift",
+            "exact_spatial_target": "Israel Economy After The Iran Post War Infrastructure Grid Node #5"
+          },
+          "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Israel Economy After The Iran Post War'. Under localized operational friction, Goetic Driver #24 Naberius (79.920 kHz) induces bottleneck friction across 10 predicted failure dates ending 2697-06-02. Applying Israel Economy After The Iran Post War Open-Source Patent Vault Release Vector via Shem Angel Elemiah at 28.315 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Corridor, locking the 1.000 Target Unity."
+        }
+      },
+      {
+        "sandbox_id": "sentinel-c06",
+        "status": "EXECUTED",
+        "data": {
+          "agent_index": 6,
+          "chronos_phase": "Phase 2: Diagnostic Arc",
+          "diagnostic_scope": "Regional / Statutory Policy Friction",
+          "target_node_subject": "Israel Economy After The Iran Post War",
+          "biblical_apocalyptic_framework": {
+            "apocalyptic_seal": "Fifth Seal: Altar of Martyrs",
+            "sealed_tribe": "Judah",
+            "temporal_birth_gate": "January Gate",
+            "church_anchor": "Ephesus",
+            "base_degree_frequency_khz": "89.0 kHz",
+            "zone_classification": "STABILIZED GREEN CORRIDOR"
+          },
+          "bottleneck": {
+            "id": "B-43",
+            "name": "Satellite Ground Station Uplink Interference in Israel Economy After The Iran Post War Context",
+            "active_demon_driver": "#15 Eligos",
+            "frequency_khz": "49.950 kHz",
+            "decay_velocity": 0.774,
+            "destabilization_constant_floor": 0.666,
+            "predictive_crash_schedule_10_dates_to_3000ce": [
+              "2035-07-03",
+              "2119-07-03",
+              "2203-07-03",
+              "2287-07-03",
+              "2371-07-03",
+              "2455-07-03",
+              "2539-07-03",
+              "2623-07-03",
+              "2707-07-03",
+              "2791-07-03"
+            ]
+          },
+          "protocol": {
+            "id": "P-17",
+            "name": "Israel Economy After The Iran Post War Cold-Chain Solar-Powered Refrigeration Pods",
+            "ruling_shem_angel": "Nelchael",
+            "celestial_choir": "Thrones",
+            "frequency_khz": "165.848 kHz",
+            "current_restoration_speed": 0.774,
+            "equilibrium_target": 1.0
+          },
+          "real_time_earth_vector": {
+            "applied_speed": "0.474x acceleration",
+            "application_width_khz": "164.000 kHz bandwidth",
+            "frequency_shift_to_ultra_green": "+54.000 kHz shift",
+            "exact_spatial_target": "Israel Economy After The Iran Post War Infrastructure Grid Node #6"
+          },
+          "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Israel Economy After The Iran Post War'. Under localized operational friction, Goetic Driver #15 Eligos (49.950 kHz) induces bottleneck friction across 10 predicted failure dates ending 2791-07-03. Applying Israel Economy After The Iran Post War Cold-Chain Solar-Powered Refrigeration Pods via Shem Angel Nelchael at 165.848 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Corridor, locking the 1.000 Target Unity."
+        }
+      },
+      {
+        "sandbox_id": "sentinel-c07",
+        "status": "EXECUTED",
+        "data": {
+          "agent_index": 7,
+          "chronos_phase": "Phase 3: Diagnostic Arc",
+          "diagnostic_scope": "Regional / Statutory Policy Friction",
+          "target_node_subject": "Israel Economy After The Iran Post War",
+          "biblical_apocalyptic_framework": {
+            "apocalyptic_seal": "Fifth Seal: Altar of Martyrs",
+            "sealed_tribe": "Gad",
+            "temporal_birth_gate": "March Gate",
+            "church_anchor": "Pergamum",
+            "base_degree_frequency_khz": "103.0 kHz",
+            "zone_classification": "STABILIZED GREEN CORRIDOR"
+          },
+          "bottleneck": {
+            "id": "B-08",
+            "name": "Wastewater Pipeline Bottleneck in Israel Economy After The Iran Post War Context",
+            "active_demon_driver": "#39 Malphas",
+            "frequency_khz": "129.870 kHz",
+            "decay_velocity": 0.683,
+            "destabilization_constant_floor": 0.666,
+            "predictive_crash_schedule_10_dates_to_3000ce": [
+              "2039-08-24",
+              "2121-08-24",
+              "2203-08-24",
+              "2285-08-24",
+              "2367-08-24",
+              "2449-08-24",
+              "2531-08-24",
+              "2613-08-24",
+              "2695-08-24",
+              "2777-08-24"
+            ]
+          },
+          "protocol": {
+            "id": "P-46",
+            "name": "Israel Economy After The Iran Post War Maritime Route Optimization Array",
+            "ruling_shem_angel": "Pahaliah",
+            "celestial_choir": "Thrones",
+            "frequency_khz": "157.758 kHz",
+            "current_restoration_speed": 0.733,
+            "equilibrium_target": 1.0
+          },
+          "real_time_earth_vector": {
+            "applied_speed": "0.683x acceleration",
+            "application_width_khz": "153.000 kHz bandwidth",
+            "frequency_shift_to_ultra_green": "+43.000 kHz shift",
+            "exact_spatial_target": "Israel Economy After The Iran Post War Infrastructure Grid Node #7"
+          },
+          "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Israel Economy After The Iran Post War'. Under localized operational friction, Goetic Driver #39 Malphas (129.870 kHz) induces bottleneck friction across 10 predicted failure dates ending 2777-08-24. Applying Israel Economy After The Iran Post War Maritime Route Optimization Array via Shem Angel Pahaliah at 157.758 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Corridor, locking the 1.000 Target Unity."
+        }
+      },
+      {
+        "sandbox_id": "sentinel-c08",
+        "status": "EXECUTED",
+        "data": {
+          "agent_index": 8,
+          "chronos_phase": "Phase 3: Diagnostic Arc",
+          "diagnostic_scope": "Regional / Statutory Policy Friction",
+          "target_node_subject": "Israel Economy After The Iran Post War",
+          "biblical_apocalyptic_framework": {
+            "apocalyptic_seal": "Fifth Seal: Altar of Martyrs",
+            "sealed_tribe": "Judah",
+            "temporal_birth_gate": "January Gate",
+            "church_anchor": "Ephesus",
+            "base_degree_frequency_khz": "112.0 kHz",
+            "zone_classification": "STABILIZED GREEN CORRIDOR"
+          },
+          "bottleneck": {
+            "id": "B-37",
+            "name": "Telecom Spectrum Bandwidth Congestion in Israel Economy After The Iran Post War Context",
+            "active_demon_driver": "#41 Focalor",
+            "frequency_khz": "136.530 kHz",
+            "decay_velocity": 0.752,
+            "destabilization_constant_floor": 0.666,
+            "predictive_crash_schedule_10_dates_to_3000ce": [
+              "2038-01-05",
+              "2109-01-05",
+              "2180-01-05",
+              "2251-01-05",
+              "2322-01-05",
+              "2393-01-05",
+              "2464-01-05",
+              "2535-01-05",
+              "2606-01-05",
+              "2677-01-05"
+            ]
+          },
+          "protocol": {
+            "id": "P-07",
+            "name": "Israel Economy After The Iran Post War Electro-Thermal Suppression Array Deployment",
+            "ruling_shem_angel": "Leuviah",
+            "celestial_choir": "Thrones",
+            "frequency_khz": "149.668 kHz",
+            "current_restoration_speed": 0.752,
+            "equilibrium_target": 1.0
+          },
+          "real_time_earth_vector": {
+            "applied_speed": "0.452x acceleration",
+            "application_width_khz": "122.000 kHz bandwidth",
+            "frequency_shift_to_ultra_green": "+32.000 kHz shift",
+            "exact_spatial_target": "Israel Economy After The Iran Post War Infrastructure Grid Node #8"
+          },
+          "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Israel Economy After The Iran Post War'. Under localized operational friction, Goetic Driver #41 Focalor (136.530 kHz) induces bottleneck friction across 10 predicted failure dates ending 2677-01-05. Applying Israel Economy After The Iran Post War Electro-Thermal Suppression Array Deployment via Shem Angel Leuviah at 149.668 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Corridor, locking the 1.000 Target Unity."
+        }
+      },
+      {
+        "sandbox_id": "sentinel-c09",
+        "status": "EXECUTED",
+        "data": {
+          "agent_index": 9,
+          "chronos_phase": "Phase 3: Diagnostic Arc",
+          "diagnostic_scope": "Regional / Statutory Policy Friction",
+          "target_node_subject": "Israel Economy After The Iran Post War",
+          "biblical_apocalyptic_framework": {
+            "apocalyptic_seal": "Fifth Seal: Altar of Martyrs",
+            "sealed_tribe": "Gad",
+            "temporal_birth_gate": "March Gate",
+            "church_anchor": "Pergamum",
+            "base_degree_frequency_khz": "104.0 kHz",
+            "zone_classification": "STABILIZED GREEN CORRIDOR"
+          },
+          "bottleneck": {
+            "id": "B-30",
+            "name": "Last-Mile Logistics Fleet Attrition in Israel Economy After The Iran Post War Context",
+            "active_demon_driver": "#48 Haagenti",
+            "frequency_khz": "159.840 kHz",
+            "decay_velocity": 0.769,
+            "destabilization_constant_floor": 0.666,
+            "predictive_crash_schedule_10_dates_to_3000ce": [
+              "2040-06-18",
+              "2113-06-18",
+              "2186-06-18",
+              "2259-06-18",
+              "2332-06-18",
+              "2405-06-18",
+              "2478-06-18",
+              "2551-06-18",
+              "2624-06-18",
+              "2697-06-18"
+            ]
+          },
+          "protocol": {
+            "id": "P-47",
+            "name": "Israel Economy After The Iran Post War Border Control Automated Access Gate",
+            "ruling_shem_angel": "Sitael",
+            "celestial_choir": "Seraphim",
+            "frequency_khz": "20.225 kHz",
+            "current_restoration_speed": 0.719,
+            "equilibrium_target": 1.0
+          },
+          "real_time_earth_vector": {
+            "applied_speed": "0.669x acceleration",
+            "application_width_khz": "139.000 kHz bandwidth",
+            "frequency_shift_to_ultra_green": "+49.000 kHz shift",
+            "exact_spatial_target": "Israel Economy After The Iran Post War Infrastructure Grid Node #9"
+          },
+          "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Israel Economy After The Iran Post War'. Under localized operational friction, Goetic Driver #48 Haagenti (159.840 kHz) induces bottleneck friction across 10 predicted failure dates ending 2697-06-18. Applying Israel Economy After The Iran Post War Border Control Automated Access Gate via Shem Angel Sitael at 20.225 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Corridor, locking the 1.000 Target Unity."
+        }
+      },
+      {
+        "sandbox_id": "sentinel-c10",
+        "status": "EXECUTED",
+        "data": {
+          "agent_index": 10,
+          "chronos_phase": "Phase 4: Diagnostic Arc",
+          "diagnostic_scope": "Regional / Statutory Policy Friction",
+          "target_node_subject": "Israel Economy After The Iran Post War",
+          "biblical_apocalyptic_framework": {
+            "apocalyptic_seal": "Fifth Seal: Altar of Martyrs",
+            "sealed_tribe": "Gad",
+            "temporal_birth_gate": "March Gate",
+            "church_anchor": "Pergamum",
+            "base_degree_frequency_khz": "97.0 kHz",
+            "zone_classification": "STABILIZED GREEN CORRIDOR"
+          },
+          "bottleneck": {
+            "id": "B-16",
+            "name": "Tariff & Customs Regulatory Inertia in Israel Economy After The Iran Post War Context",
+            "active_demon_driver": "#18 Bathin",
+            "frequency_khz": "59.940 kHz",
+            "decay_velocity": 0.747,
+            "destabilization_constant_floor": 0.666,
+            "predictive_crash_schedule_10_dates_to_3000ce": [
+              "2038-04-04",
+              "2118-04-04",
+              "2198-04-04",
+              "2278-04-04",
+              "2358-04-04",
+              "2438-04-04",
+              "2518-04-04",
+              "2598-04-04",
+              "2678-04-04",
+              "2758-04-04"
+            ]
+          },
+          "protocol": {
+            "id": "P-60",
+            "name": "Israel Economy After The Iran Post War Urban Traffic Flow Signal Optimizer",
+            "ruling_shem_angel": "Elemiah",
+            "celestial_choir": "Seraphim",
+            "frequency_khz": "28.315 kHz",
+            "current_restoration_speed": 0.797,
+            "equilibrium_target": 1.0
+          },
+          "real_time_earth_vector": {
+            "applied_speed": "0.747x acceleration",
+            "application_width_khz": "137.000 kHz bandwidth",
+            "frequency_shift_to_ultra_green": "+27.000 kHz shift",
+            "exact_spatial_target": "Israel Economy After The Iran Post War Infrastructure Grid Node #10"
+          },
+          "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Israel Economy After The Iran Post War'. Under localized operational friction, Goetic Driver #18 Bathin (59.940 kHz) induces bottleneck friction across 10 predicted failure dates ending 2758-04-04. Applying Israel Economy After The Iran Post War Urban Traffic Flow Signal Optimizer via Shem Angel Elemiah at 28.315 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Corridor, locking the 1.000 Target Unity."
+        }
+      }
+    ]
   }
 ]
