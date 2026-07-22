@@ -16442,5 +16442,566 @@
         }
       }
     ]
+  },
+  {
+    "security": {
+      "session_guid": "e91a2848-d926-49aa-b8ff-b1647c4d1383",
+      "utc_timestamp": "2026-07-22T11:46:00.102000+00:00",
+      "ecta_hash": "sha256:c3e6cd2cec137e8009a8d93b0c836a3b8cfd63392273c00abf15fd8726b86b17",
+      "popia_status": "COMPLIANT_NO_PII_EXPOSED"
+    },
+    "quantum_header": "QUANTUM-CYCLE: 059763 / 144000",
+    "quantum_cycle": 59763,
+    "mathematics": {
+      "shi": 20571.43,
+      "tti": 0.0,
+      "frequency": 144000.0,
+      "logos": 10368000,
+      "resistance": 504,
+      "constraints": 1.0,
+      "override_triggered": true
+    },
+    "chronos_sweep": [
+      {
+        "sandbox_id": "sentinel-c01",
+        "status": "EXECUTED",
+        "data": {
+          "agent_index": 1,
+          "chronos_phase": "Phase 1: Diagnostic Arc",
+          "diagnostic_scope": "Regional / Statutory Policy Friction",
+          "target_node_subject": "New Zealand",
+          "biblical_apocalyptic_framework": {
+            "apocalyptic_seal": "Fourth Seal: Pale Horse",
+            "sealed_tribe": "Gad",
+            "temporal_birth_gate": "March Gate",
+            "church_anchor": "Pergamum",
+            "base_degree_frequency_khz": "94.0 kHz",
+            "zone_classification": "STABILIZED GREEN CORRIDOR"
+          },
+          "bottleneck": {
+            "id": "B-66",
+            "name": "Public School Infrastructure Decay in New Zealand Context",
+            "active_demon_driver": "#43 Sabnock",
+            "frequency_khz": "143.190 kHz",
+            "decay_velocity": 0.749,
+            "destabilization_constant_floor": 0.666,
+            "predictive_crash_schedule_10_dates_to_3000ce": [
+              "2040-06-22",
+              "2121-06-22",
+              "2202-06-22",
+              "2283-06-22",
+              "2364-06-22",
+              "2445-06-22",
+              "2526-06-22",
+              "2607-06-22",
+              "2688-06-22",
+              "2769-06-22"
+            ]
+          },
+          "protocol": {
+            "id": "P-36",
+            "name": "New Zealand Decentralized Currency Clearing Array",
+            "ruling_shem_angel": "Lauviah",
+            "celestial_choir": "Thrones",
+            "frequency_khz": "133.488 kHz",
+            "current_restoration_speed": 0.949,
+            "equilibrium_target": 1.0
+          },
+          "real_time_earth_vector": {
+            "applied_speed": "0.649x acceleration",
+            "application_width_khz": "139.000 kHz bandwidth",
+            "frequency_shift_to_ultra_green": "+29.000 kHz shift",
+            "exact_spatial_target": "New Zealand Infrastructure Grid Node #1"
+          },
+          "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'New Zealand'. Under localized operational friction, Goetic Driver #43 Sabnock (143.190 kHz) induces bottleneck friction across 10 predicted failure dates ending 2769-06-22. Applying New Zealand Decentralized Currency Clearing Array via Shem Angel Lauviah at 133.488 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Corridor, locking the 1.000 Target Unity."
+        }
+      },
+      {
+        "sandbox_id": "sentinel-c02",
+        "status": "EXECUTED",
+        "data": {
+          "agent_index": 2,
+          "chronos_phase": "Phase 1: Diagnostic Arc",
+          "diagnostic_scope": "Regional / Statutory Policy Friction",
+          "target_node_subject": "New Zealand",
+          "biblical_apocalyptic_framework": {
+            "apocalyptic_seal": "Fourth Seal: Pale Horse",
+            "sealed_tribe": "Judah",
+            "temporal_birth_gate": "January Gate",
+            "church_anchor": "Ephesus",
+            "base_degree_frequency_khz": "85.0 kHz",
+            "zone_classification": "STABILIZED GREEN CORRIDOR"
+          },
+          "bottleneck": {
+            "id": "B-65",
+            "name": "Vaccine Cold-Chain Storage Disruption in New Zealand Context",
+            "active_demon_driver": "#49 Crocell",
+            "frequency_khz": "163.170 kHz",
+            "decay_velocity": 0.86,
+            "destabilization_constant_floor": 0.666,
+            "predictive_crash_schedule_10_dates_to_3000ce": [
+              "2036-05-13",
+              "2111-05-13",
+              "2186-05-13",
+              "2261-05-13",
+              "2336-05-13",
+              "2411-05-13",
+              "2486-05-13",
+              "2561-05-13",
+              "2636-05-13",
+              "2711-05-13"
+            ]
+          },
+          "protocol": {
+            "id": "P-63",
+            "name": "New Zealand Municipal Recycled Material Sorting Node",
+            "ruling_shem_angel": "Caliel",
+            "celestial_choir": "Thrones",
+            "frequency_khz": "141.578 kHz",
+            "current_restoration_speed": 0.71,
+            "equilibrium_target": 1.0
+          },
+          "real_time_earth_vector": {
+            "applied_speed": "0.66x acceleration",
+            "application_width_khz": "150.000 kHz bandwidth",
+            "frequency_shift_to_ultra_green": "+20.000 kHz shift",
+            "exact_spatial_target": "New Zealand Infrastructure Grid Node #2"
+          },
+          "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'New Zealand'. Under localized operational friction, Goetic Driver #49 Crocell (163.170 kHz) induces bottleneck friction across 10 predicted failure dates ending 2711-05-13. Applying New Zealand Municipal Recycled Material Sorting Node via Shem Angel Caliel at 141.578 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Corridor, locking the 1.000 Target Unity."
+        }
+      },
+      {
+        "sandbox_id": "sentinel-c03",
+        "status": "EXECUTED",
+        "data": {
+          "agent_index": 3,
+          "chronos_phase": "Phase 1: Diagnostic Arc",
+          "diagnostic_scope": "Regional / Statutory Policy Friction",
+          "target_node_subject": "New Zealand",
+          "biblical_apocalyptic_framework": {
+            "apocalyptic_seal": "Fourth Seal: Pale Horse",
+            "sealed_tribe": "Gad",
+            "temporal_birth_gate": "March Gate",
+            "church_anchor": "Pergamum",
+            "base_degree_frequency_khz": "81.0 kHz",
+            "zone_classification": "STABILIZED GREEN CORRIDOR"
+          },
+          "bottleneck": {
+            "id": "B-06",
+            "name": "Hydroelectric Reservoir Sediment Accumulation in New Zealand Context",
+            "active_demon_driver": "#58 Amy",
+            "frequency_khz": "193.140 kHz",
+            "decay_velocity": 0.841,
+            "destabilization_constant_floor": 0.666,
+            "predictive_crash_schedule_10_dates_to_3000ce": [
+              "2037-06-02",
+              "2119-06-02",
+              "2201-06-02",
+              "2283-06-02",
+              "2365-06-02",
+              "2447-06-02",
+              "2529-06-02",
+              "2611-06-02",
+              "2693-06-02",
+              "2775-06-02"
+            ]
+          },
+          "protocol": {
+            "id": "P-64",
+            "name": "New Zealand Emergency Supply Logistics Network",
+            "ruling_shem_angel": "Vehuiah",
+            "celestial_choir": "Seraphim",
+            "frequency_khz": "4.045 kHz",
+            "current_restoration_speed": 0.941,
+            "equilibrium_target": 1.0
+          },
+          "real_time_earth_vector": {
+            "applied_speed": "0.641x acceleration",
+            "application_width_khz": "151.000 kHz bandwidth",
+            "frequency_shift_to_ultra_green": "+41.000 kHz shift",
+            "exact_spatial_target": "New Zealand Infrastructure Grid Node #3"
+          },
+          "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'New Zealand'. Under localized operational friction, Goetic Driver #58 Amy (193.140 kHz) induces bottleneck friction across 10 predicted failure dates ending 2775-06-02. Applying New Zealand Emergency Supply Logistics Network via Shem Angel Vehuiah at 4.045 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Corridor, locking the 1.000 Target Unity."
+        }
+      },
+      {
+        "sandbox_id": "sentinel-c04",
+        "status": "EXECUTED",
+        "data": {
+          "agent_index": 4,
+          "chronos_phase": "Phase 2: Diagnostic Arc",
+          "diagnostic_scope": "Regional / Statutory Policy Friction",
+          "target_node_subject": "New Zealand",
+          "biblical_apocalyptic_framework": {
+            "apocalyptic_seal": "Fourth Seal: Pale Horse",
+            "sealed_tribe": "Gad",
+            "temporal_birth_gate": "March Gate",
+            "church_anchor": "Pergamum",
+            "base_degree_frequency_khz": "89.0 kHz",
+            "zone_classification": "STABILIZED GREEN CORRIDOR"
+          },
+          "bottleneck": {
+            "id": "B-48",
+            "name": "High-Frequency Trading Signal Distortion in New Zealand Context",
+            "active_demon_driver": "#25 Glasya-Labolas",
+            "frequency_khz": "83.250 kHz",
+            "decay_velocity": 0.819,
+            "destabilization_constant_floor": 0.666,
+            "predictive_crash_schedule_10_dates_to_3000ce": [
+              "2040-12-24",
+              "2139-12-24",
+              "2238-12-24",
+              "2337-12-24",
+              "2436-12-24",
+              "2535-12-24",
+              "2634-12-24",
+              "2733-12-24",
+              "2832-12-24",
+              "2931-12-24"
+            ]
+          },
+          "protocol": {
+            "id": "P-39",
+            "name": "New Zealand Port Freight Buffer Storage Network",
+            "ruling_shem_angel": "Caliel",
+            "celestial_choir": "Thrones",
+            "frequency_khz": "141.578 kHz",
+            "current_restoration_speed": 0.919,
+            "equilibrium_target": 1.0
+          },
+          "real_time_earth_vector": {
+            "applied_speed": "0.619x acceleration",
+            "application_width_khz": "169.000 kHz bandwidth",
+            "frequency_shift_to_ultra_green": "+59.000 kHz shift",
+            "exact_spatial_target": "New Zealand Infrastructure Grid Node #4"
+          },
+          "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'New Zealand'. Under localized operational friction, Goetic Driver #25 Glasya-Labolas (83.250 kHz) induces bottleneck friction across 10 predicted failure dates ending 2931-12-24. Applying New Zealand Port Freight Buffer Storage Network via Shem Angel Caliel at 141.578 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Corridor, locking the 1.000 Target Unity."
+        }
+      },
+      {
+        "sandbox_id": "sentinel-c05",
+        "status": "EXECUTED",
+        "data": {
+          "agent_index": 5,
+          "chronos_phase": "Phase 2: Diagnostic Arc",
+          "diagnostic_scope": "Regional / Statutory Policy Friction",
+          "target_node_subject": "New Zealand",
+          "biblical_apocalyptic_framework": {
+            "apocalyptic_seal": "Fourth Seal: Pale Horse",
+            "sealed_tribe": "Gad",
+            "temporal_birth_gate": "March Gate",
+            "church_anchor": "Pergamum",
+            "base_degree_frequency_khz": "86.0 kHz",
+            "zone_classification": "STABILIZED GREEN CORRIDOR"
+          },
+          "bottleneck": {
+            "id": "B-20",
+            "name": "Trade Deficit Accumulation in New Zealand Context",
+            "active_demon_driver": "#45 Vine",
+            "frequency_khz": "149.850 kHz",
+            "decay_velocity": 0.591,
+            "destabilization_constant_floor": 0.666,
+            "predictive_crash_schedule_10_dates_to_3000ce": [
+              "2027-08-28",
+              "2108-08-28",
+              "2189-08-28",
+              "2270-08-28",
+              "2351-08-28",
+              "2432-08-28",
+              "2513-08-28",
+              "2594-08-28",
+              "2675-08-28",
+              "2756-08-28"
+            ]
+          },
+          "protocol": {
+            "id": "P-60",
+            "name": "New Zealand Urban Traffic Flow Signal Optimizer",
+            "ruling_shem_angel": "Vehuiah",
+            "celestial_choir": "Seraphim",
+            "frequency_khz": "4.045 kHz",
+            "current_restoration_speed": 0.891,
+            "equilibrium_target": 1.0
+          },
+          "real_time_earth_vector": {
+            "applied_speed": "0.591x acceleration",
+            "application_width_khz": "141.000 kHz bandwidth",
+            "frequency_shift_to_ultra_green": "+31.000 kHz shift",
+            "exact_spatial_target": "New Zealand Infrastructure Grid Node #5"
+          },
+          "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'New Zealand'. Under localized operational friction, Goetic Driver #45 Vine (149.850 kHz) induces bottleneck friction across 10 predicted failure dates ending 2756-08-28. Applying New Zealand Urban Traffic Flow Signal Optimizer via Shem Angel Vehuiah at 4.045 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Corridor, locking the 1.000 Target Unity."
+        }
+      },
+      {
+        "sandbox_id": "sentinel-c06",
+        "status": "EXECUTED",
+        "data": {
+          "agent_index": 6,
+          "chronos_phase": "Phase 2: Diagnostic Arc",
+          "diagnostic_scope": "Regional / Statutory Policy Friction",
+          "target_node_subject": "New Zealand",
+          "biblical_apocalyptic_framework": {
+            "apocalyptic_seal": "Fifth Seal: Altar of Martyrs",
+            "sealed_tribe": "Gad",
+            "temporal_birth_gate": "March Gate",
+            "church_anchor": "Pergamum",
+            "base_degree_frequency_khz": "108.0 kHz",
+            "zone_classification": "STABILIZED GREEN CORRIDOR"
+          },
+          "bottleneck": {
+            "id": "B-40",
+            "name": "Cloud Data Center Power Allocation Friction in New Zealand Context",
+            "active_demon_driver": "#70 Seere",
+            "frequency_khz": "233.100 kHz",
+            "decay_velocity": 0.803,
+            "destabilization_constant_floor": 0.666,
+            "predictive_crash_schedule_10_dates_to_3000ce": [
+              "2029-04-08",
+              "2106-04-08",
+              "2183-04-08",
+              "2260-04-08",
+              "2337-04-08",
+              "2414-04-08",
+              "2491-04-08",
+              "2568-04-08",
+              "2645-04-08",
+              "2722-04-08"
+            ]
+          },
+          "protocol": {
+            "id": "P-34",
+            "name": "New Zealand Nuclear Isotope Recycling Closed Loop",
+            "ruling_shem_angel": "Lauviah",
+            "celestial_choir": "Thrones",
+            "frequency_khz": "133.488 kHz",
+            "current_restoration_speed": 0.903,
+            "equilibrium_target": 1.0
+          },
+          "real_time_earth_vector": {
+            "applied_speed": "0.603x acceleration",
+            "application_width_khz": "113.000 kHz bandwidth",
+            "frequency_shift_to_ultra_green": "+43.000 kHz shift",
+            "exact_spatial_target": "New Zealand Infrastructure Grid Node #6"
+          },
+          "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'New Zealand'. Under localized operational friction, Goetic Driver #70 Seere (233.100 kHz) induces bottleneck friction across 10 predicted failure dates ending 2722-04-08. Applying New Zealand Nuclear Isotope Recycling Closed Loop via Shem Angel Lauviah at 133.488 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Corridor, locking the 1.000 Target Unity."
+        }
+      },
+      {
+        "sandbox_id": "sentinel-c07",
+        "status": "EXECUTED",
+        "data": {
+          "agent_index": 7,
+          "chronos_phase": "Phase 3: Diagnostic Arc",
+          "diagnostic_scope": "Regional / Statutory Policy Friction",
+          "target_node_subject": "New Zealand",
+          "biblical_apocalyptic_framework": {
+            "apocalyptic_seal": "Fifth Seal: Altar of Martyrs",
+            "sealed_tribe": "Gad",
+            "temporal_birth_gate": "March Gate",
+            "church_anchor": "Pergamum",
+            "base_degree_frequency_khz": "86.0 kHz",
+            "zone_classification": "STABILIZED GREEN CORRIDOR"
+          },
+          "bottleneck": {
+            "id": "B-62",
+            "name": "Hospital Emergency Ward Bed Shortage in New Zealand Context",
+            "active_demon_driver": "#32 Asmodai",
+            "frequency_khz": "106.560 kHz",
+            "decay_velocity": 0.801,
+            "destabilization_constant_floor": 0.666,
+            "predictive_crash_schedule_10_dates_to_3000ce": [
+              "2027-02-14",
+              "2104-02-14",
+              "2181-02-14",
+              "2258-02-14",
+              "2335-02-14",
+              "2412-02-14",
+              "2489-02-14",
+              "2566-02-14",
+              "2643-02-14",
+              "2720-02-14"
+            ]
+          },
+          "protocol": {
+            "id": "P-67",
+            "name": "New Zealand Public Procurement Transparency Ledger",
+            "ruling_shem_angel": "Jeliel",
+            "celestial_choir": "Seraphim",
+            "frequency_khz": "12.135 kHz",
+            "current_restoration_speed": 0.901,
+            "equilibrium_target": 1.0
+          },
+          "real_time_earth_vector": {
+            "applied_speed": "0.601x acceleration",
+            "application_width_khz": "111.000 kHz bandwidth",
+            "frequency_shift_to_ultra_green": "+41.000 kHz shift",
+            "exact_spatial_target": "New Zealand Infrastructure Grid Node #7"
+          },
+          "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'New Zealand'. Under localized operational friction, Goetic Driver #32 Asmodai (106.560 kHz) induces bottleneck friction across 10 predicted failure dates ending 2720-02-14. Applying New Zealand Public Procurement Transparency Ledger via Shem Angel Jeliel at 12.135 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Corridor, locking the 1.000 Target Unity."
+        }
+      },
+      {
+        "sandbox_id": "sentinel-c08",
+        "status": "EXECUTED",
+        "data": {
+          "agent_index": 8,
+          "chronos_phase": "Phase 3: Diagnostic Arc",
+          "diagnostic_scope": "Regional / Statutory Policy Friction",
+          "target_node_subject": "New Zealand",
+          "biblical_apocalyptic_framework": {
+            "apocalyptic_seal": "Fifth Seal: Altar of Martyrs",
+            "sealed_tribe": "Judah",
+            "temporal_birth_gate": "January Gate",
+            "church_anchor": "Ephesus",
+            "base_degree_frequency_khz": "107.0 kHz",
+            "zone_classification": "STABILIZED GREEN CORRIDOR"
+          },
+          "bottleneck": {
+            "id": "B-01",
+            "name": "Sovereign Debt Default Drag in New Zealand Context",
+            "active_demon_driver": "#7 Amon",
+            "frequency_khz": "23.310 kHz",
+            "decay_velocity": 0.812,
+            "destabilization_constant_floor": 0.666,
+            "predictive_crash_schedule_10_dates_to_3000ce": [
+              "2038-01-21",
+              "2117-01-21",
+              "2196-01-21",
+              "2275-01-21",
+              "2354-01-21",
+              "2433-01-21",
+              "2512-01-21",
+              "2591-01-21",
+              "2670-01-21",
+              "2749-01-21"
+            ]
+          },
+          "protocol": {
+            "id": "P-32",
+            "name": "New Zealand High-Voltage Direct Current Transmission Mesh",
+            "ruling_shem_angel": "Leuviah",
+            "celestial_choir": "Thrones",
+            "frequency_khz": "149.668 kHz",
+            "current_restoration_speed": 0.912,
+            "equilibrium_target": 1.0
+          },
+          "real_time_earth_vector": {
+            "applied_speed": "0.612x acceleration",
+            "application_width_khz": "122.000 kHz bandwidth",
+            "frequency_shift_to_ultra_green": "+52.000 kHz shift",
+            "exact_spatial_target": "New Zealand Infrastructure Grid Node #8"
+          },
+          "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'New Zealand'. Under localized operational friction, Goetic Driver #7 Amon (23.310 kHz) induces bottleneck friction across 10 predicted failure dates ending 2749-01-21. Applying New Zealand High-Voltage Direct Current Transmission Mesh via Shem Angel Leuviah at 149.668 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Corridor, locking the 1.000 Target Unity."
+        }
+      },
+      {
+        "sandbox_id": "sentinel-c09",
+        "status": "EXECUTED",
+        "data": {
+          "agent_index": 9,
+          "chronos_phase": "Phase 3: Diagnostic Arc",
+          "diagnostic_scope": "Regional / Statutory Policy Friction",
+          "target_node_subject": "New Zealand",
+          "biblical_apocalyptic_framework": {
+            "apocalyptic_seal": "Fifth Seal: Altar of Martyrs",
+            "sealed_tribe": "Judah",
+            "temporal_birth_gate": "January Gate",
+            "church_anchor": "Ephesus",
+            "base_degree_frequency_khz": "99.0 kHz",
+            "zone_classification": "STABILIZED GREEN CORRIDOR"
+          },
+          "bottleneck": {
+            "id": "B-51",
+            "name": "Civil Service Labor Strike Inertia in New Zealand Context",
+            "active_demon_driver": "#35 Marchosias",
+            "frequency_khz": "116.550 kHz",
+            "decay_velocity": 0.774,
+            "destabilization_constant_floor": 0.666,
+            "predictive_crash_schedule_10_dates_to_3000ce": [
+              "2040-03-27",
+              "2134-03-27",
+              "2228-03-27",
+              "2322-03-27",
+              "2416-03-27",
+              "2510-03-27",
+              "2604-03-27",
+              "2698-03-27",
+              "2792-03-27",
+              "2886-03-27"
+            ]
+          },
+          "protocol": {
+            "id": "P-49",
+            "name": "New Zealand Dynamic Spectrum Allocation Vector",
+            "ruling_shem_angel": "Lauviah",
+            "celestial_choir": "Thrones",
+            "frequency_khz": "133.488 kHz",
+            "current_restoration_speed": 0.924,
+            "equilibrium_target": 1.0
+          },
+          "real_time_earth_vector": {
+            "applied_speed": "0.874x acceleration",
+            "application_width_khz": "124.000 kHz bandwidth",
+            "frequency_shift_to_ultra_green": "+54.000 kHz shift",
+            "exact_spatial_target": "New Zealand Infrastructure Grid Node #9"
+          },
+          "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'New Zealand'. Under localized operational friction, Goetic Driver #35 Marchosias (116.550 kHz) induces bottleneck friction across 10 predicted failure dates ending 2886-03-27. Applying New Zealand Dynamic Spectrum Allocation Vector via Shem Angel Lauviah at 133.488 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Corridor, locking the 1.000 Target Unity."
+        }
+      },
+      {
+        "sandbox_id": "sentinel-c10",
+        "status": "EXECUTED",
+        "data": {
+          "agent_index": 10,
+          "chronos_phase": "Phase 4: Diagnostic Arc",
+          "diagnostic_scope": "Regional / Statutory Policy Friction",
+          "target_node_subject": "New Zealand",
+          "biblical_apocalyptic_framework": {
+            "apocalyptic_seal": "Fifth Seal: Altar of Martyrs",
+            "sealed_tribe": "Judah",
+            "temporal_birth_gate": "January Gate",
+            "church_anchor": "Ephesus",
+            "base_degree_frequency_khz": "108.0 kHz",
+            "zone_classification": "STABILIZED GREEN CORRIDOR"
+          },
+          "bottleneck": {
+            "id": "B-69",
+            "name": "Food Distribution Food Desert Isolation in New Zealand Context",
+            "active_demon_driver": "#37 Phenex",
+            "frequency_khz": "123.210 kHz",
+            "decay_velocity": 0.888,
+            "destabilization_constant_floor": 0.666,
+            "predictive_crash_schedule_10_dates_to_3000ce": [
+              "2034-09-01",
+              "2112-09-01",
+              "2190-09-01",
+              "2268-09-01",
+              "2346-09-01",
+              "2424-09-01",
+              "2502-09-01",
+              "2580-09-01",
+              "2658-09-01",
+              "2736-09-01"
+            ]
+          },
+          "protocol": {
+            "id": "P-05",
+            "name": "New Zealand Decentralized Micro-Grid Mesh Deployment",
+            "ruling_shem_angel": "Leuviah",
+            "celestial_choir": "Thrones",
+            "frequency_khz": "149.668 kHz",
+            "current_restoration_speed": 0.788,
+            "equilibrium_target": 1.0
+          },
+          "real_time_earth_vector": {
+            "applied_speed": "0.488x acceleration",
+            "application_width_khz": "118.000 kHz bandwidth",
+            "frequency_shift_to_ultra_green": "+48.000 kHz shift",
+            "exact_spatial_target": "New Zealand Infrastructure Grid Node #10"
+          },
+          "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'New Zealand'. Under localized operational friction, Goetic Driver #37 Phenex (123.210 kHz) induces bottleneck friction across 10 predicted failure dates ending 2736-09-01. Applying New Zealand Decentralized Micro-Grid Mesh Deployment via Shem Angel Leuviah at 149.668 kHz shifts the node into the 90.0-100.0 kHz Ultra Green Corridor, locking the 1.000 Target Unity."
+        }
+      }
+    ]
   }
 ]
