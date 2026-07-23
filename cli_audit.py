@@ -2,6 +2,8 @@ import os
 import json
 import sys
 import hashlib
+import tempfile
+import time
 from datetime import datetime, timezone
 
 AUDIT_FILE_PATH = "last_audit_results.json"
@@ -104,20 +106,57 @@ ANGELS_72 = [
     ("Nelchael", "Thrones", "165.848 kHz"), ("Yeiayel", "Thrones", "173.939 kHz")
 ]
 
+# Shinobi Tactical Seals (Kuji-Kiri Operational Constants)
+SHINOBI_TACTICAL_SEALS = ["Rin", "Pyo", "To", "Sha", "Kai", "Jin", "Retsus", "Zai", "Zen"]
+
+# Ocular Ability Matrix (Dōjutsu Systems)
+OCULAR_SYSTEMS = [
+    ("Sharingan 3-Tomoe", "Micro-Decay Motion Perception"),
+    ("Mangekyō Sharingan", "Spatial Dimension Distortion Isolation"),
+    ("Rinnegan", "Chakra Flow & Gravitational Vector Mapping"),
+    ("Byakugan", "360° Sub-Harmonic Chakra Node Vision"),
+    ("Tenseigan", "Gravitational Field Equilibrium Analysis"),
+    ("Jōgan", "Interdimensional Barrier Energy Sensing")
+]
+
+# Tailed Beasts Chakra Matrix (Bijū Energy Resonators)
+TAILED_BEASTS_CHAKRA = [
+    (1, "Shukaku", "Magnet Release Density Vector"),
+    (2, "Matatabi", "Blue Fire Thermal Acceleration"),
+    (3, "Isobu", "Coral Hardening Flow Defense"),
+    (4, "Son Gokū", "Lava Release Dynamic Heat Mesh"),
+    (5, "Kokuō", "Boil Release Steam Acceleration"),
+    (6, "Saiken", "Corrosive Acid Solute Barrier"),
+    (7, "Chōmei", "Frequency Dust Particle Flight"),
+    (8, "Gyūki", "Ink Suppression Sealing Wave"),
+    (9, "Kurama", "Nine-Tails Dense Yang Energy Surge")
+]
+
+
+def shinobi_reconcile_target(node_payload: str) -> str:
+    """Shinobi Chouhou (Reconnaissance) - Infiltrate and normalize target string."""
+    clean_node = node_payload.strip().title()
+    if not clean_node:
+        clean_node = "Sovereign Grid Node"
+    return clean_node
+
 
 def generate_adaptive_node_sweep(target_node: str, count: int = 10):
     """
     Dynamically maps target_node across the 72-Vector spectrum to calculate
     10 unique bottlenecks, protocols, crash schedules, and 3000 CE prophecies.
+    Integrates Shinobi Tactics, Dōjutsu Ocular Analysis, Bijū Chakra Amplification,
+    and Flying Raijin Spatial Formula Markings.
     """
-    clean_node = target_node.strip().title()
+    clean_node = shinobi_reconcile_target(target_node)
     node_hash = hashlib.sha256(clean_node.lower().encode('utf-8')).hexdigest()
 
     sweep_results = []
 
     for idx in range(count):
-        # Cryptographic sub-seed for 100% variance per sentinel card
-        sub_hash = hashlib.sha256(f"{node_hash}:{idx}".encode('utf-8')).hexdigest()
+        # Kage Bunshin & Flying Raijin Formula Marking: Sub-seed generation
+        hiraishin_seal_code = f"HIRAISHIN-FORMULA-MARK-#{idx+1:02d}-{node_hash[:8].upper()}"
+        sub_hash = hashlib.sha256(f"{node_hash}:{idx}:{hiraishin_seal_code}".encode('utf-8')).hexdigest()
         sub_seed = int(sub_hash[:16], 16)
 
         # Map to the full 72 catalog arrays without truncation
@@ -125,6 +164,10 @@ def generate_adaptive_node_sweep(target_node: str, count: int = 10):
         p_index = (sub_seed >> 4) % len(PROTOCOLS_72)
         d_index = (sub_seed >> 8) % len(GOETIC_DRIVERS_72)
         a_index = (sub_seed >> 12) % len(ANGELS_72)
+
+        # Map Ocular System & Tailed Beast Chakra Amplification
+        ocular_type, ocular_capability = OCULAR_SYSTEMS[sub_seed % len(OCULAR_SYSTEMS)]
+        biju_tails, biju_name, biju_attribute = TAILED_BEASTS_CHAKRA[(sub_seed >> 3) % len(TAILED_BEASTS_CHAKRA)]
 
         b_name = BOTTLENECKS_72[b_index]
         p_name = PROTOCOLS_72[p_index]
@@ -134,7 +177,7 @@ def generate_adaptive_node_sweep(target_node: str, count: int = 10):
         b_id = f"B-{(b_index + 1):02d}"
         p_id = f"P-{(p_index + 1):02d}"
 
-        # Calculate subject-unique 10-date crash schedule (2026 – 3000 CE)
+        # Mizuchidori / Dynamic Flow: Calculate subject-unique 10-date crash schedule (2026 – 3000 CE)
         base_year = 2026 + (sub_seed % 15)
         step = 70 + ((sub_seed >> 3) % 30)
         crash_dates = [
@@ -142,9 +185,23 @@ def generate_adaptive_node_sweep(target_node: str, count: int = 10):
             for y in range(10)
         ]
 
+        tactical_seal = SHINOBI_TACTICAL_SEALS[idx % len(SHINOBI_TACTICAL_SEALS)]
+
         sentinel_record = {
             "sandbox_id": f"sentinel-c{idx+1:02d}",
             "status": "EXECUTED",
+            "shinobi_vector_seal": tactical_seal,
+            "flying_raijin_spatial_formula": hiraishin_seal_code,
+            "ocular_perception_matrix": {
+                "dojutsu": ocular_type,
+                "perception_mode": ocular_capability
+            },
+            "biju_chakra_resonator": {
+                "tails_count": biju_tails,
+                "beast_name": biju_name,
+                "chakra_attribute": biju_attribute,
+                "amplification_factor": f"{1.0 + ((sub_seed % 900) / 100.0):.2f}x Chakra Density"
+            },
             "data": {
                 "agent_index": idx + 1,
                 "chronos_phase": f"Phase {(idx // 3) + 1}: Diagnostic Arc",
@@ -180,12 +237,13 @@ def generate_adaptive_node_sweep(target_node: str, count: int = 10):
                     "applied_speed": f"{round(0.400 + ((sub_seed % 500) / 1000.0), 4)}x acceleration",
                     "application_width_khz": f"{110.0 + (sub_seed % 60):.3f} kHz bandwidth",
                     "frequency_shift_to_ultra_green": f"+{20.0 + (sub_seed % 40):.3f} kHz shift",
-                    "exact_spatial_target": f"{clean_node} Infrastructure Grid Node #{idx+1}"
+                    "exact_spatial_target": f"{clean_node} Infrastructure Grid Node #{idx+1} [{hiraishin_seal_code}]"
                 },
                 "prophetic_summary_3000ce": (
-                    f"Chronos Sentinel Node analyzed '{clean_node}'. Under localized operational friction, "
+                    f"Chronos Sentinel Node analyzed '{clean_node}' via {ocular_type} ({ocular_capability}). Under localized operational friction, "
                     f"Goetic Driver #{goetic_id} {demon_name} ({demon_freq}) induces bottleneck friction across 10 predicted failure dates ending {crash_dates[-1]}. "
-                    f"Applying {clean_node} {p_name} via Shem Angel {angel_name} at {angel_freq} shifts the node into the "
+                    f"Deploying Flying Raijin Formula [{hiraishin_seal_code}] powered by {biju_name}'s {biju_attribute}, "
+                    f"and applying {clean_node} {p_name} via Shem Angel {angel_name} at {angel_freq} instantly teleports and shifts the node into the "
                     f"90.0-100.0 kHz Ultra Green Corridor, locking the 1.000 Target Unity."
                 )
             }
@@ -193,6 +251,36 @@ def generate_adaptive_node_sweep(target_node: str, count: int = 10):
         sweep_results.append(sentinel_record)
 
     return sweep_results
+
+
+def shinobi_atomic_write_ledger(file_path: str, payload: dict):
+    """
+    Shinobi Kakushizuki (Stealth Ledger Inscription): Uses an atomic temporary
+    file mechanism to update last_audit_results.json safely without lock contention.
+    """
+    audit_history = []
+    if os.path.exists(file_path):
+        try:
+            with open(file_path, "r", encoding="utf-8") as f:
+                existing_data = json.load(f)
+                
+            if isinstance(existing_data, list):
+                audit_history = existing_data
+            elif isinstance(existing_data, dict):
+                audit_history = [existing_data]
+        except Exception as err:
+            print(f"[!] Shinobi Recon Warning: Error reading ledger ({err}). Re-initializing array.")
+            audit_history = []
+
+    audit_history.append(payload)
+
+    dir_name = os.path.dirname(os.path.abspath(file_path))
+    with tempfile.NamedTemporaryFile("w", dir=dir_name, delete=False, encoding="utf-8") as tf:
+        json.dump(audit_history, tf, indent=2, ensure_ascii=False)
+        temp_name = tf.name
+
+    os.replace(temp_name, file_path)
+    return len(audit_history)
 
 
 def run_cli_audit():
@@ -225,7 +313,7 @@ def run_cli_audit():
         raw_sig = f"{session_guid}:{utc_timestamp}:{target_node}"
         ecta_hash = f"sha256:{hashlib.sha256(raw_sig.encode()).hexdigest()}"
 
-    print(f"[*] Executing Chronos Audit Engine (72-Vector Spectrum)...")
+    print(f"[*] Executing Chronos Audit Engine (72-Vector + Ocular + Bijū + Flying Raijin)...")
     print(f"[*] Target Subject : '{target_node}'")
     print(f"[*] Session GUID   : '{session_guid}'")
     print(f"[*] UTC Timestamp  : '{utc_timestamp}'")
@@ -237,7 +325,9 @@ def run_cli_audit():
             "session_guid": session_guid,
             "utc_timestamp": utc_timestamp,
             "ecta_hash": ecta_hash,
-            "popia_status": "COMPLIANT_NO_PII_EXPOSED"
+            "popia_status": "COMPLIANT_NO_PII_EXPOSED",
+            "shinobi_stealth_seal": "KUJI-KIRI-9-CUTS-VERIFIED",
+            "flying_raijin_spatial_status": "ZERO-LATENCY-NODE-ANCHORED"
         },
         "quantum_header": "QUANTUM-CYCLE: 059763 / 144000",
         "quantum_cycle": 59763,
@@ -253,26 +343,10 @@ def run_cli_audit():
         "chronos_sweep": sweep_results
     }
 
-    audit_history = []
-    if os.path.exists(AUDIT_FILE_PATH):
-        try:
-            with open(AUDIT_FILE_PATH, "r", encoding="utf-8") as f:
-                existing_data = json.load(f)
-                
-            if isinstance(existing_data, list):
-                audit_history = existing_data
-            elif isinstance(existing_data, dict):
-                audit_history = [existing_data]
-        except Exception as err:
-            print(f"[!] Warning reading existing ledger ({err}). Initializing new ledger array.")
-            audit_history = []
+    # Atomic, stealthy write to the audit ledger
+    total_records = shinobi_atomic_write_ledger(AUDIT_FILE_PATH, current_run_payload)
 
-    audit_history.append(current_run_payload)
-
-    with open(AUDIT_FILE_PATH, "w", encoding="utf-8") as f:
-        json.dump(audit_history, f, indent=2, ensure_ascii=False)
-
-    print(f"[✓] Success! Master ledger updated in '{AUDIT_FILE_PATH}'. Total historical records: {len(audit_history)}")
+    print(f"[✓] Success! Master ledger updated in '{AUDIT_FILE_PATH}'. Total historical records: {total_records}")
 
 
 if __name__ == "__main__":
