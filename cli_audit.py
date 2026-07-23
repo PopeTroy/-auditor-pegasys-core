@@ -106,10 +106,9 @@ ANGELS_72 = [
     ("Nelchael", "Thrones", "165.848 kHz"), ("Yeiayel", "Thrones", "173.939 kHz")
 ]
 
-# Shinobi Tactical Seals (Kuji-Kiri Operational Constants)
+# Shinobi Tactical Constants
 SHINOBI_TACTICAL_SEALS = ["Rin", "Pyo", "To", "Sha", "Kai", "Jin", "Retsus", "Zai", "Zen"]
 
-# Ocular Ability Matrix (Dōjutsu Systems)
 OCULAR_SYSTEMS = [
     ("Sharingan 3-Tomoe", "Micro-Decay Motion Perception"),
     ("Mangekyō Sharingan", "Spatial Dimension Distortion Isolation"),
@@ -119,7 +118,6 @@ OCULAR_SYSTEMS = [
     ("Jōgan", "Interdimensional Barrier Energy Sensing")
 ]
 
-# Tailed Beasts Chakra Matrix (Bijū Energy Resonators)
 TAILED_BEASTS_CHAKRA = [
     (1, "Shukaku", "Magnet Release Density Vector"),
     (2, "Matatabi", "Blue Fire Thermal Acceleration"),
@@ -132,9 +130,45 @@ TAILED_BEASTS_CHAKRA = [
     (9, "Kurama", "Nine-Tails Dense Yang Energy Surge")
 ]
 
+SENJUTSU_MODES = [
+    ("Toad Sage Mode", "Natural Energy Physical Resonance Balance"),
+    ("Snake Sage Mode", "Inorganic Reanimation & Physical Mold Control"),
+    ("Slug Sage Mode", "Universal Liquid Healing Transmission Mesh"),
+    ("Six Paths Sage Mode", "Truth-Seeker Universal Nullification Vector")
+]
+
+FUINJUTSU_SEALS = [
+    ("Four Symbols Seal", "Dual Layer Sub-Harmonic Containment"),
+    ("Eight Trigrams Sealing Formula", "Continuous Chakra Transformation Lock"),
+    ("Reaper Death Seal", "Absolute Zero-Trust Node Isolation"),
+    ("Adamantine Attacking Chains", "Chakra Binding Structural Immobilizer")
+]
+
+# PEAK ADDITIONS: Eight Gates, Dust Release, Kinjutsu, & Mokuton
+EIGHT_GATES_OVERCLOCK = [
+    ("Gate 1: Gate of Opening", "125% Overclock Limit", "Brain Limiter Removal"),
+    ("Gate 2: Gate of Healing", "150% Overclock Limit", "Structural Energy Rejuvenation"),
+    ("Gate 3: Gate of Life", "200% Overclock Limit", "Red-Skin Hyper-Flow Acceleration"),
+    ("Gate 4: Gate of Pain", "275% Overclock Limit", "Sub-Harmonic Velocity Surge"),
+    ("Gate 5: Gate of Limit", "350% Overclock Limit", "Network Load Limit Break"),
+    ("Gate 6: Gate of View", "500% Overclock Limit", "Aero-Dynamic Friction Combustion"),
+    ("Gate 7: Gate of Wonder", "750% Overclock Limit", "Daytime Tiger Wave Shockwave"),
+    ("Gate 8: Gate of Death", "1000% Overclock Limit", "Night Guy Quantum Space Distortion")
+]
+
+JINTON_DUST_RELEASE = [
+    "Atomic Disintegration Trap", "Triangular Particle Molecular Isolation",
+    "Cube Structure Error Vaporization", "Cone Particle Sub-Atomic Sweep"
+]
+
+KINJUTSU_STATE_RECOVERY = [
+    ("Izanagi Active", "Automated State Rewind to Zero-Point Failure"),
+    ("Izanami Active", "Loop Trap Until System Achieves Target Unity"),
+    ("Mokuton Regeneration Grid", "Self-Sprouting Dynamic Mesh Expansion")
+]
+
 
 def shinobi_reconcile_target(node_payload: str) -> str:
-    """Shinobi Chouhou (Reconnaissance) - Infiltrate and normalize target string."""
     clean_node = node_payload.strip().title()
     if not clean_node:
         clean_node = "Sovereign Grid Node"
@@ -142,32 +176,30 @@ def shinobi_reconcile_target(node_payload: str) -> str:
 
 
 def generate_adaptive_node_sweep(target_node: str, count: int = 10):
-    """
-    Dynamically maps target_node across the 72-Vector spectrum to calculate
-    10 unique bottlenecks, protocols, crash schedules, and 3000 CE prophecies.
-    Integrates Shinobi Tactics, Dōjutsu Ocular Analysis, Bijū Chakra Amplification,
-    and Flying Raijin Spatial Formula Markings.
-    """
     clean_node = shinobi_reconcile_target(target_node)
     node_hash = hashlib.sha256(clean_node.lower().encode('utf-8')).hexdigest()
 
     sweep_results = []
 
     for idx in range(count):
-        # Kage Bunshin & Flying Raijin Formula Marking: Sub-seed generation
         hiraishin_seal_code = f"HIRAISHIN-FORMULA-MARK-#{idx+1:02d}-{node_hash[:8].upper()}"
         sub_hash = hashlib.sha256(f"{node_hash}:{idx}:{hiraishin_seal_code}".encode('utf-8')).hexdigest()
         sub_seed = int(sub_hash[:16], 16)
 
-        # Map to the full 72 catalog arrays without truncation
         b_index = sub_seed % len(BOTTLENECKS_72)
         p_index = (sub_seed >> 4) % len(PROTOCOLS_72)
         d_index = (sub_seed >> 8) % len(GOETIC_DRIVERS_72)
         a_index = (sub_seed >> 12) % len(ANGELS_72)
 
-        # Map Ocular System & Tailed Beast Chakra Amplification
         ocular_type, ocular_capability = OCULAR_SYSTEMS[sub_seed % len(OCULAR_SYSTEMS)]
         biju_tails, biju_name, biju_attribute = TAILED_BEASTS_CHAKRA[(sub_seed >> 3) % len(TAILED_BEASTS_CHAKRA)]
+        sage_type, sage_resonance = SENJUTSU_MODES[(sub_seed >> 5) % len(SENJUTSU_MODES)]
+        fuin_name, fuin_function = FUINJUTSU_SEALS[(sub_seed >> 7) % len(FUINJUTSU_SEALS)]
+
+        # Peak Tactical Mappings
+        gate_name, gate_limit, gate_effect = EIGHT_GATES_OVERCLOCK[idx % len(EIGHT_GATES_OVERCLOCK)]
+        jinton_mode = JINTON_DUST_RELEASE[(sub_seed >> 9) % len(JINTON_DUST_RELEASE)]
+        kinjutsu_type, kinjutsu_desc = KINJUTSU_STATE_RECOVERY[(sub_seed >> 11) % len(KINJUTSU_STATE_RECOVERY)]
 
         b_name = BOTTLENECKS_72[b_index]
         p_name = PROTOCOLS_72[p_index]
@@ -177,7 +209,6 @@ def generate_adaptive_node_sweep(target_node: str, count: int = 10):
         b_id = f"B-{(b_index + 1):02d}"
         p_id = f"P-{(p_index + 1):02d}"
 
-        # Mizuchidori / Dynamic Flow: Calculate subject-unique 10-date crash schedule (2026 – 3000 CE)
         base_year = 2026 + (sub_seed % 15)
         step = 70 + ((sub_seed >> 3) % 30)
         crash_dates = [
@@ -186,6 +217,8 @@ def generate_adaptive_node_sweep(target_node: str, count: int = 10):
         ]
 
         tactical_seal = SHINOBI_TACTICAL_SEALS[idx % len(SHINOBI_TACTICAL_SEALS)]
+        shadow_bind_efficiency = round(0.850 + ((sub_seed % 140) / 1000.0), 3)
+        medical_regen_rate = round(0.910 + ((sub_seed % 85) / 1000.0), 3)
 
         sentinel_record = {
             "sandbox_id": f"sentinel-c{idx+1:02d}",
@@ -201,6 +234,33 @@ def generate_adaptive_node_sweep(target_node: str, count: int = 10):
                 "beast_name": biju_name,
                 "chakra_attribute": biju_attribute,
                 "amplification_factor": f"{1.0 + ((sub_seed % 900) / 100.0):.2f}x Chakra Density"
+            },
+            "senjutsu_environmental_balancer": {
+                "sage_mode": sage_type,
+                "resonance_profile": sage_resonance,
+                "ambient_natural_energy_ratio": f"{92.5 + (sub_seed % 75) / 10.0:.1f}% Balance"
+            },
+            "fuinjutsu_containment_array": {
+                "seal_formula": fuin_name,
+                "containment_function": fuin_function,
+                "stability_lock": "100% UNBROKEN"
+            },
+            "hachimon_tonko_overclock": {
+                "active_gate": gate_name,
+                "overclock_capacity": gate_limit,
+                "structural_impact": gate_effect
+            },
+            "jinton_dust_release_deconstruction": {
+                "error_tracing_mode": jinton_mode,
+                "micro_molecular_resolution": "0.001 Angstrom Packet Inspection"
+            },
+            "kinjutsu_state_recovery": {
+                "recovery_protocol": kinjutsu_type,
+                "operational_function": kinjutsu_desc
+            },
+            "tactical_jutsu_telemetry": {
+                "kage_mane_shadow_bind": f"{shadow_bind_efficiency * 100:.1f}% Velocity Immobilization",
+                "iryo_ninjutsu_regeneration": f"{medical_regen_rate * 100:.1f}% Structural Node Recovery Speed"
             },
             "data": {
                 "agent_index": idx + 1,
@@ -240,11 +300,13 @@ def generate_adaptive_node_sweep(target_node: str, count: int = 10):
                     "exact_spatial_target": f"{clean_node} Infrastructure Grid Node #{idx+1} [{hiraishin_seal_code}]"
                 },
                 "prophetic_summary_3000ce": (
-                    f"Chronos Sentinel Node analyzed '{clean_node}' via {ocular_type} ({ocular_capability}). Under localized operational friction, "
-                    f"Goetic Driver #{goetic_id} {demon_name} ({demon_freq}) induces bottleneck friction across 10 predicted failure dates ending {crash_dates[-1]}. "
-                    f"Deploying Flying Raijin Formula [{hiraishin_seal_code}] powered by {biju_name}'s {biju_attribute}, "
-                    f"and applying {clean_node} {p_name} via Shem Angel {angel_name} at {angel_freq} instantly teleports and shifts the node into the "
-                    f"90.0-100.0 kHz Ultra Green Corridor, locking the 1.000 Target Unity."
+                    f"Chronos Sentinel Node analyzed '{clean_node}' via {ocular_type}, {sage_type}, and Jinton ({jinton_mode}). "
+                    f"Under localized operational friction, Goetic Driver #{goetic_id} {demon_name} ({demon_freq}) induces bottleneck friction "
+                    f"across 10 predicted failure dates ending {crash_dates[-1]}. Overclocking node capacity via {gate_name} ({gate_limit}), "
+                    f"binding decay velocity using Kage Mane Matrix ({shadow_bind_efficiency*100:.1f}%), triggering {kinjutsu_type}, "
+                    f"applying {fuin_name} and Flying Raijin Formula [{hiraishin_seal_code}] powered by {biju_name}'s {biju_attribute}, "
+                    f"and executing {clean_node} {p_name} via Shem Angel {angel_name} at {angel_freq} accelerates Iryō Ninjutsu recovery "
+                    f"to {medical_regen_rate*100:.1f}%, shifting the node into the 90.0-100.0 kHz Ultra Green Corridor and locking the 1.000 Target Unity."
                 )
             }
         }
@@ -254,10 +316,6 @@ def generate_adaptive_node_sweep(target_node: str, count: int = 10):
 
 
 def shinobi_atomic_write_ledger(file_path: str, payload: dict):
-    """
-    Shinobi Kakushizuki (Stealth Ledger Inscription): Uses an atomic temporary
-    file mechanism to update last_audit_results.json safely without lock contention.
-    """
     audit_history = []
     if os.path.exists(file_path):
         try:
@@ -313,7 +371,7 @@ def run_cli_audit():
         raw_sig = f"{session_guid}:{utc_timestamp}:{target_node}"
         ecta_hash = f"sha256:{hashlib.sha256(raw_sig.encode()).hexdigest()}"
 
-    print(f"[*] Executing Chronos Audit Engine (72-Vector + Ocular + Bijū + Flying Raijin)...")
+    print(f"[*] Executing Chronos Audit Engine (Peak Tactical Suite)...")
     print(f"[*] Target Subject : '{target_node}'")
     print(f"[*] Session GUID   : '{session_guid}'")
     print(f"[*] UTC Timestamp  : '{utc_timestamp}'")
@@ -327,7 +385,8 @@ def run_cli_audit():
             "ecta_hash": ecta_hash,
             "popia_status": "COMPLIANT_NO_PII_EXPOSED",
             "shinobi_stealth_seal": "KUJI-KIRI-9-CUTS-VERIFIED",
-            "flying_raijin_spatial_status": "ZERO-LATENCY-NODE-ANCHORED"
+            "flying_raijin_spatial_status": "ZERO-LATENCY-NODE-ANCHORED",
+            "izanagi_state_recovery_status": "ZERO-POINT-RECOVERY-ACTIVE"
         },
         "quantum_header": "QUANTUM-CYCLE: 059763 / 144000",
         "quantum_cycle": 59763,
@@ -343,9 +402,7 @@ def run_cli_audit():
         "chronos_sweep": sweep_results
     }
 
-    # Atomic, stealthy write to the audit ledger
     total_records = shinobi_atomic_write_ledger(AUDIT_FILE_PATH, current_run_payload)
-
     print(f"[✓] Success! Master ledger updated in '{AUDIT_FILE_PATH}'. Total historical records: {total_records}")
 
 
