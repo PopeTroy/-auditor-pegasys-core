@@ -681,5 +681,959 @@
         }
       }
     ]
+  },
+  {
+    "security": {
+      "session_guid": "805acfa6-156b-415e-b237-ac43132c38ea",
+      "utc_timestamp": "2026-07-23T14:58:01.478000+00:00",
+      "ecta_hash": "sha256:ae1111a2814db260e79af9985d4f28bded2cfa4e3985d810a560f0b4ba5d7a1b",
+      "popia_status": "COMPLIANT_NO_PII_EXPOSED",
+      "shinobi_stealth_seal": "KUJI-KIRI-9-CUTS-VERIFIED",
+      "flying_raijin_spatial_status": "ZERO-LATENCY-NODE-ANCHORED",
+      "izanagi_state_recovery_status": "ZERO-POINT-RECOVERY-ACTIVE"
+    },
+    "quantum_header": "QUANTUM-CYCLE: 059763 / 144000",
+    "quantum_cycle": 59763,
+    "mathematics": {
+      "shi": 20571.43,
+      "tti": 0.0,
+      "frequency": 144000.0,
+      "logos": 10368000,
+      "resistance": 504,
+      "constraints": 1.0,
+      "override_triggered": true
+    },
+    "chronos_sweep": [
+      {
+        "sandbox_id": "sentinel-c01",
+        "status": "EXECUTED",
+        "shinobi_vector_seal": "Rin",
+        "flying_raijin_spatial_formula": "HIRAISHIN-FORMULA-MARK-#01-77173ACE",
+        "ocular_perception_matrix": {
+          "dojutsu": "Sharingan 3-Tomoe",
+          "perception_mode": "Micro-Decay Motion Perception"
+        },
+        "biju_chakra_resonator": {
+          "tails_count": 1,
+          "beast_name": "Shukaku",
+          "chakra_attribute": "Magnet Release Density Vector",
+          "amplification_factor": "1.36x Chakra Density"
+        },
+        "senjutsu_environmental_balancer": {
+          "sage_mode": "Six Paths Sage Mode",
+          "resonance_profile": "Truth-Seeker Universal Nullification Vector",
+          "ambient_natural_energy_ratio": "96.1% Balance"
+        },
+        "fuinjutsu_containment_array": {
+          "seal_formula": "Reaper Death Seal",
+          "containment_function": "Absolute Zero-Trust Node Isolation",
+          "stability_lock": "100% UNBROKEN"
+        },
+        "hachimon_tonko_overclock": {
+          "active_gate": "Gate 1: Gate of Opening",
+          "overclock_capacity": "125% Overclock Limit",
+          "structural_impact": "Brain Limiter Removal"
+        },
+        "jinton_dust_release_deconstruction": {
+          "error_tracing_mode": "Cube Structure Error Vaporization",
+          "micro_molecular_resolution": "0.001 Angstrom Packet Inspection"
+        },
+        "kinjutsu_state_recovery": {
+          "recovery_protocol": "Mokuton Regeneration Grid",
+          "operational_function": "Self-Sprouting Dynamic Mesh Expansion"
+        },
+        "tactical_jutsu_telemetry": {
+          "kage_mane_shadow_bind": "98.6% Velocity Immobilization",
+          "iryo_ninjutsu_regeneration": "97.1% Structural Node Recovery Speed"
+        },
+        "data": {
+          "agent_index": 1,
+          "chronos_phase": "Phase 1: Diagnostic Arc",
+          "diagnostic_scope": "Regional / Statutory Policy Friction",
+          "target_node_subject": "Israel",
+          "biblical_apocalyptic_framework": {
+            "apocalyptic_seal": "Fourth Seal: Pale Horse",
+            "sealed_tribe": "Judah",
+            "temporal_birth_gate": "January Gate",
+            "church_anchor": "Ephesus",
+            "base_degree_frequency_khz": "111.0 kHz",
+            "zone_classification": "STABILIZED GREEN CORRIDOR"
+          },
+          "bottleneck": {
+            "id": "B-01",
+            "name": "Sovereign Debt Default Drag in Israel Context",
+            "active_demon_driver": "#70 Seere",
+            "frequency_khz": "233.100 kHz",
+            "decay_velocity": 0.636,
+            "destabilization_constant_floor": 0.666,
+            "predictive_crash_schedule_10_dates_to_3000ce": [
+              "2032-01-25",
+              "2129-01-25",
+              "2226-01-25",
+              "2323-01-25",
+              "2420-01-25",
+              "2517-01-25",
+              "2614-01-25",
+              "2711-01-25",
+              "2808-01-25",
+              "2905-01-25"
+            ]
+          },
+          "protocol": {
+            "id": "P-32",
+            "name": "Israel High-Voltage Direct Current Transmission Mesh",
+            "ruling_shem_angel": "Nelchael",
+            "celestial_choir": "Thrones",
+            "frequency_khz": "165.848 kHz",
+            "current_restoration_speed": 0.886,
+            "equilibrium_target": 1.0
+          },
+          "real_time_earth_vector": {
+            "applied_speed": "0.836x acceleration",
+            "application_width_khz": "146.000 kHz bandwidth",
+            "frequency_shift_to_ultra_green": "+36.000 kHz shift",
+            "exact_spatial_target": "Israel Infrastructure Grid Node #1 [HIRAISHIN-FORMULA-MARK-#01-77173ACE]"
+          },
+          "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Israel' via Sharingan 3-Tomoe, Six Paths Sage Mode, and Jinton (Cube Structure Error Vaporization). Under localized operational friction, Goetic Driver #70 Seere (233.100 kHz) induces bottleneck friction across 10 predicted failure dates ending 2905-01-25. Overclocking node capacity via Gate 1: Gate of Opening (125% Overclock Limit), binding decay velocity using Kage Mane Matrix (98.6%), triggering Mokuton Regeneration Grid, applying Reaper Death Seal and Flying Raijin Formula [HIRAISHIN-FORMULA-MARK-#01-77173ACE] powered by Shukaku's Magnet Release Density Vector, and executing Israel High-Voltage Direct Current Transmission Mesh via Shem Angel Nelchael at 165.848 kHz accelerates Iryō Ninjutsu recovery to 97.1%, shifting the node into the 90.0-100.0 kHz Ultra Green Corridor and locking the 1.000 Target Unity."
+        }
+      },
+      {
+        "sandbox_id": "sentinel-c02",
+        "status": "EXECUTED",
+        "shinobi_vector_seal": "Pyo",
+        "flying_raijin_spatial_formula": "HIRAISHIN-FORMULA-MARK-#02-77173ACE",
+        "ocular_perception_matrix": {
+          "dojutsu": "Tenseigan",
+          "perception_mode": "Gravitational Field Equilibrium Analysis"
+        },
+        "biju_chakra_resonator": {
+          "tails_count": 8,
+          "beast_name": "Gyūki",
+          "chakra_attribute": "Ink Suppression Sealing Wave",
+          "amplification_factor": "1.22x Chakra Density"
+        },
+        "senjutsu_environmental_balancer": {
+          "sage_mode": "Snake Sage Mode",
+          "resonance_profile": "Inorganic Reanimation & Physical Mold Control",
+          "ambient_natural_energy_ratio": "94.7% Balance"
+        },
+        "fuinjutsu_containment_array": {
+          "seal_formula": "Adamantine Attacking Chains",
+          "containment_function": "Chakra Binding Structural Immobilizer",
+          "stability_lock": "100% UNBROKEN"
+        },
+        "hachimon_tonko_overclock": {
+          "active_gate": "Gate 2: Gate of Healing",
+          "overclock_capacity": "150% Overclock Limit",
+          "structural_impact": "Structural Energy Rejuvenation"
+        },
+        "jinton_dust_release_deconstruction": {
+          "error_tracing_mode": "Cone Particle Sub-Atomic Sweep",
+          "micro_molecular_resolution": "0.001 Angstrom Packet Inspection"
+        },
+        "kinjutsu_state_recovery": {
+          "recovery_protocol": "Izanami Active",
+          "operational_function": "Loop Trap Until System Achieves Target Unity"
+        },
+        "tactical_jutsu_telemetry": {
+          "kage_mane_shadow_bind": "97.2% Velocity Immobilization",
+          "iryo_ninjutsu_regeneration": "96.2% Structural Node Recovery Speed"
+        },
+        "data": {
+          "agent_index": 2,
+          "chronos_phase": "Phase 1: Diagnostic Arc",
+          "diagnostic_scope": "Regional / Statutory Policy Friction",
+          "target_node_subject": "Israel",
+          "biblical_apocalyptic_framework": {
+            "apocalyptic_seal": "Fourth Seal: Pale Horse",
+            "sealed_tribe": "Judah",
+            "temporal_birth_gate": "January Gate",
+            "church_anchor": "Ephesus",
+            "base_degree_frequency_khz": "97.0 kHz",
+            "zone_classification": "STABILIZED GREEN CORRIDOR"
+          },
+          "bottleneck": {
+            "id": "B-59",
+            "name": "Zoning Board Regulatory Freeze in Israel Context",
+            "active_demon_driver": "#16 Zepar",
+            "frequency_khz": "53.280 kHz",
+            "decay_velocity": 0.822,
+            "destabilization_constant_floor": 0.666,
+            "predictive_crash_schedule_10_dates_to_3000ce": [
+              "2033-11-11",
+              "2113-11-11",
+              "2193-11-11",
+              "2273-11-11",
+              "2353-11-11",
+              "2433-11-11",
+              "2513-11-11",
+              "2593-11-11",
+              "2673-11-11",
+              "2753-11-11"
+            ]
+          },
+          "protocol": {
+            "id": "P-36",
+            "name": "Israel Decentralized Currency Clearing Array",
+            "ruling_shem_angel": "Yeiayel",
+            "celestial_choir": "Thrones",
+            "frequency_khz": "173.939 kHz",
+            "current_restoration_speed": 0.922,
+            "equilibrium_target": 1.0
+          },
+          "real_time_earth_vector": {
+            "applied_speed": "0.622x acceleration",
+            "application_width_khz": "132.000 kHz bandwidth",
+            "frequency_shift_to_ultra_green": "+22.000 kHz shift",
+            "exact_spatial_target": "Israel Infrastructure Grid Node #2 [HIRAISHIN-FORMULA-MARK-#02-77173ACE]"
+          },
+          "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Israel' via Tenseigan, Snake Sage Mode, and Jinton (Cone Particle Sub-Atomic Sweep). Under localized operational friction, Goetic Driver #16 Zepar (53.280 kHz) induces bottleneck friction across 10 predicted failure dates ending 2753-11-11. Overclocking node capacity via Gate 2: Gate of Healing (150% Overclock Limit), binding decay velocity using Kage Mane Matrix (97.2%), triggering Izanami Active, applying Adamantine Attacking Chains and Flying Raijin Formula [HIRAISHIN-FORMULA-MARK-#02-77173ACE] powered by Gyūki's Ink Suppression Sealing Wave, and executing Israel Decentralized Currency Clearing Array via Shem Angel Yeiayel at 173.939 kHz accelerates Iryō Ninjutsu recovery to 96.2%, shifting the node into the 90.0-100.0 kHz Ultra Green Corridor and locking the 1.000 Target Unity."
+        }
+      },
+      {
+        "sandbox_id": "sentinel-c03",
+        "status": "EXECUTED",
+        "shinobi_vector_seal": "To",
+        "flying_raijin_spatial_formula": "HIRAISHIN-FORMULA-MARK-#03-77173ACE",
+        "ocular_perception_matrix": {
+          "dojutsu": "Byakugan",
+          "perception_mode": "360° Sub-Harmonic Chakra Node Vision"
+        },
+        "biju_chakra_resonator": {
+          "tails_count": 6,
+          "beast_name": "Saiken",
+          "chakra_attribute": "Corrosive Acid Solute Barrier",
+          "amplification_factor": "8.65x Chakra Density"
+        },
+        "senjutsu_environmental_balancer": {
+          "sage_mode": "Toad Sage Mode",
+          "resonance_profile": "Natural Energy Physical Resonance Balance",
+          "ambient_natural_energy_ratio": "94.0% Balance"
+        },
+        "fuinjutsu_containment_array": {
+          "seal_formula": "Eight Trigrams Sealing Formula",
+          "containment_function": "Continuous Chakra Transformation Lock",
+          "stability_lock": "100% UNBROKEN"
+        },
+        "hachimon_tonko_overclock": {
+          "active_gate": "Gate 3: Gate of Life",
+          "overclock_capacity": "200% Overclock Limit",
+          "structural_impact": "Red-Skin Hyper-Flow Acceleration"
+        },
+        "jinton_dust_release_deconstruction": {
+          "error_tracing_mode": "Cone Particle Sub-Atomic Sweep",
+          "micro_molecular_resolution": "0.001 Angstrom Packet Inspection"
+        },
+        "kinjutsu_state_recovery": {
+          "recovery_protocol": "Izanagi Active",
+          "operational_function": "Automated State Rewind to Zero-Point Failure"
+        },
+        "tactical_jutsu_telemetry": {
+          "kage_mane_shadow_bind": "89.5% Velocity Immobilization",
+          "iryo_ninjutsu_regeneration": "98.0% Structural Node Recovery Speed"
+        },
+        "data": {
+          "agent_index": 3,
+          "chronos_phase": "Phase 1: Diagnostic Arc",
+          "diagnostic_scope": "Regional / Statutory Policy Friction",
+          "target_node_subject": "Israel",
+          "biblical_apocalyptic_framework": {
+            "apocalyptic_seal": "Fourth Seal: Pale Horse",
+            "sealed_tribe": "Gad",
+            "temporal_birth_gate": "March Gate",
+            "church_anchor": "Pergamum",
+            "base_degree_frequency_khz": "90.0 kHz",
+            "zone_classification": "STABILIZED GREEN CORRIDOR"
+          },
+          "bottleneck": {
+            "id": "B-46",
+            "name": "Intellectual Property Patent Litigation Drag in Israel Context",
+            "active_demon_driver": "#31 Foras",
+            "frequency_khz": "103.230 kHz",
+            "decay_velocity": 0.865,
+            "destabilization_constant_floor": 0.666,
+            "predictive_crash_schedule_10_dates_to_3000ce": [
+              "2026-10-18",
+              "2101-10-18",
+              "2176-10-18",
+              "2251-10-18",
+              "2326-10-18",
+              "2401-10-18",
+              "2476-10-18",
+              "2551-10-18",
+              "2626-10-18",
+              "2701-10-18"
+            ]
+          },
+          "protocol": {
+            "id": "P-57",
+            "name": "Israel Decentralized IP Clearing Vault",
+            "ruling_shem_angel": "Caliel",
+            "celestial_choir": "Thrones",
+            "frequency_khz": "141.578 kHz",
+            "current_restoration_speed": 0.915,
+            "equilibrium_target": 1.0
+          },
+          "real_time_earth_vector": {
+            "applied_speed": "0.865x acceleration",
+            "application_width_khz": "155.000 kHz bandwidth",
+            "frequency_shift_to_ultra_green": "+25.000 kHz shift",
+            "exact_spatial_target": "Israel Infrastructure Grid Node #3 [HIRAISHIN-FORMULA-MARK-#03-77173ACE]"
+          },
+          "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Israel' via Byakugan, Toad Sage Mode, and Jinton (Cone Particle Sub-Atomic Sweep). Under localized operational friction, Goetic Driver #31 Foras (103.230 kHz) induces bottleneck friction across 10 predicted failure dates ending 2701-10-18. Overclocking node capacity via Gate 3: Gate of Life (200% Overclock Limit), binding decay velocity using Kage Mane Matrix (89.5%), triggering Izanagi Active, applying Eight Trigrams Sealing Formula and Flying Raijin Formula [HIRAISHIN-FORMULA-MARK-#03-77173ACE] powered by Saiken's Corrosive Acid Solute Barrier, and executing Israel Decentralized IP Clearing Vault via Shem Angel Caliel at 141.578 kHz accelerates Iryō Ninjutsu recovery to 98.0%, shifting the node into the 90.0-100.0 kHz Ultra Green Corridor and locking the 1.000 Target Unity."
+        }
+      },
+      {
+        "sandbox_id": "sentinel-c04",
+        "status": "EXECUTED",
+        "shinobi_vector_seal": "Sha",
+        "flying_raijin_spatial_formula": "HIRAISHIN-FORMULA-MARK-#04-77173ACE",
+        "ocular_perception_matrix": {
+          "dojutsu": "Mangekyō Sharingan",
+          "perception_mode": "Spatial Dimension Distortion Isolation"
+        },
+        "biju_chakra_resonator": {
+          "tails_count": 1,
+          "beast_name": "Shukaku",
+          "chakra_attribute": "Magnet Release Density Vector",
+          "amplification_factor": "8.57x Chakra Density"
+        },
+        "senjutsu_environmental_balancer": {
+          "sage_mode": "Slug Sage Mode",
+          "resonance_profile": "Universal Liquid Healing Transmission Mesh",
+          "ambient_natural_energy_ratio": "93.2% Balance"
+        },
+        "fuinjutsu_containment_array": {
+          "seal_formula": "Eight Trigrams Sealing Formula",
+          "containment_function": "Continuous Chakra Transformation Lock",
+          "stability_lock": "100% UNBROKEN"
+        },
+        "hachimon_tonko_overclock": {
+          "active_gate": "Gate 4: Gate of Pain",
+          "overclock_capacity": "275% Overclock Limit",
+          "structural_impact": "Sub-Harmonic Velocity Surge"
+        },
+        "jinton_dust_release_deconstruction": {
+          "error_tracing_mode": "Cube Structure Error Vaporization",
+          "micro_molecular_resolution": "0.001 Angstrom Packet Inspection"
+        },
+        "kinjutsu_state_recovery": {
+          "recovery_protocol": "Mokuton Regeneration Grid",
+          "operational_function": "Self-Sprouting Dynamic Mesh Expansion"
+        },
+        "tactical_jutsu_telemetry": {
+          "kage_mane_shadow_bind": "92.7% Velocity Immobilization",
+          "iryo_ninjutsu_regeneration": "92.7% Structural Node Recovery Speed"
+        },
+        "data": {
+          "agent_index": 4,
+          "chronos_phase": "Phase 2: Diagnostic Arc",
+          "diagnostic_scope": "Regional / Statutory Policy Friction",
+          "target_node_subject": "Israel",
+          "biblical_apocalyptic_framework": {
+            "apocalyptic_seal": "Fourth Seal: Pale Horse",
+            "sealed_tribe": "Gad",
+            "temporal_birth_gate": "March Gate",
+            "church_anchor": "Pergamum",
+            "base_degree_frequency_khz": "87.0 kHz",
+            "zone_classification": "STABILIZED GREEN CORRIDOR"
+          },
+          "bottleneck": {
+            "id": "B-02",
+            "name": "High-Voltage Transmission Line Impedance in Israel Context",
+            "active_demon_driver": "#21 Marax",
+            "frequency_khz": "69.930 kHz",
+            "decay_velocity": 0.757,
+            "destabilization_constant_floor": 0.666,
+            "predictive_crash_schedule_10_dates_to_3000ce": [
+              "2033-02-22",
+              "2115-02-22",
+              "2197-02-22",
+              "2279-02-22",
+              "2361-02-22",
+              "2443-02-22",
+              "2525-02-22",
+              "2607-02-22",
+              "2689-02-22",
+              "2771-02-22"
+            ]
+          },
+          "protocol": {
+            "id": "P-46",
+            "name": "Israel Maritime Route Optimization Array",
+            "ruling_shem_angel": "Jeliel",
+            "celestial_choir": "Seraphim",
+            "frequency_khz": "12.135 kHz",
+            "current_restoration_speed": 0.857,
+            "equilibrium_target": 1.0
+          },
+          "real_time_earth_vector": {
+            "applied_speed": "0.557x acceleration",
+            "application_width_khz": "147.000 kHz bandwidth",
+            "frequency_shift_to_ultra_green": "+37.000 kHz shift",
+            "exact_spatial_target": "Israel Infrastructure Grid Node #4 [HIRAISHIN-FORMULA-MARK-#04-77173ACE]"
+          },
+          "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Israel' via Mangekyō Sharingan, Slug Sage Mode, and Jinton (Cube Structure Error Vaporization). Under localized operational friction, Goetic Driver #21 Marax (69.930 kHz) induces bottleneck friction across 10 predicted failure dates ending 2771-02-22. Overclocking node capacity via Gate 4: Gate of Pain (275% Overclock Limit), binding decay velocity using Kage Mane Matrix (92.7%), triggering Mokuton Regeneration Grid, applying Eight Trigrams Sealing Formula and Flying Raijin Formula [HIRAISHIN-FORMULA-MARK-#04-77173ACE] powered by Shukaku's Magnet Release Density Vector, and executing Israel Maritime Route Optimization Array via Shem Angel Jeliel at 12.135 kHz accelerates Iryō Ninjutsu recovery to 92.7%, shifting the node into the 90.0-100.0 kHz Ultra Green Corridor and locking the 1.000 Target Unity."
+        }
+      },
+      {
+        "sandbox_id": "sentinel-c05",
+        "status": "EXECUTED",
+        "shinobi_vector_seal": "Kai",
+        "flying_raijin_spatial_formula": "HIRAISHIN-FORMULA-MARK-#05-77173ACE",
+        "ocular_perception_matrix": {
+          "dojutsu": "Byakugan",
+          "perception_mode": "360° Sub-Harmonic Chakra Node Vision"
+        },
+        "biju_chakra_resonator": {
+          "tails_count": 2,
+          "beast_name": "Matatabi",
+          "chakra_attribute": "Blue Fire Thermal Acceleration",
+          "amplification_factor": "9.79x Chakra Density"
+        },
+        "senjutsu_environmental_balancer": {
+          "sage_mode": "Toad Sage Mode",
+          "resonance_profile": "Natural Energy Physical Resonance Balance",
+          "ambient_natural_energy_ratio": "97.9% Balance"
+        },
+        "fuinjutsu_containment_array": {
+          "seal_formula": "Reaper Death Seal",
+          "containment_function": "Absolute Zero-Trust Node Isolation",
+          "stability_lock": "100% UNBROKEN"
+        },
+        "hachimon_tonko_overclock": {
+          "active_gate": "Gate 5: Gate of Limit",
+          "overclock_capacity": "350% Overclock Limit",
+          "structural_impact": "Network Load Limit Break"
+        },
+        "jinton_dust_release_deconstruction": {
+          "error_tracing_mode": "Cone Particle Sub-Atomic Sweep",
+          "micro_molecular_resolution": "0.001 Angstrom Packet Inspection"
+        },
+        "kinjutsu_state_recovery": {
+          "recovery_protocol": "Izanagi Active",
+          "operational_function": "Automated State Rewind to Zero-Point Failure"
+        },
+        "tactical_jutsu_telemetry": {
+          "kage_mane_shadow_bind": "86.9% Velocity Immobilization",
+          "iryo_ninjutsu_regeneration": "98.4% Structural Node Recovery Speed"
+        },
+        "data": {
+          "agent_index": 5,
+          "chronos_phase": "Phase 2: Diagnostic Arc",
+          "diagnostic_scope": "Regional / Statutory Policy Friction",
+          "target_node_subject": "Israel",
+          "biblical_apocalyptic_framework": {
+            "apocalyptic_seal": "Fourth Seal: Pale Horse",
+            "sealed_tribe": "Gad",
+            "temporal_birth_gate": "March Gate",
+            "church_anchor": "Pergamum",
+            "base_degree_frequency_khz": "99.0 kHz",
+            "zone_classification": "STABILIZED GREEN CORRIDOR"
+          },
+          "bottleneck": {
+            "id": "B-16",
+            "name": "Tariff & Customs Regulatory Inertia in Israel Context",
+            "active_demon_driver": "#8 Barbatos",
+            "frequency_khz": "26.640 kHz",
+            "decay_velocity": 0.779,
+            "destabilization_constant_floor": 0.666,
+            "predictive_crash_schedule_10_dates_to_3000ce": [
+              "2035-04-20",
+              "2109-04-20",
+              "2183-04-20",
+              "2257-04-20",
+              "2331-04-20",
+              "2405-04-20",
+              "2479-04-20",
+              "2553-04-20",
+              "2627-04-20",
+              "2701-04-20"
+            ]
+          },
+          "protocol": {
+            "id": "P-42",
+            "name": "Israel Last-Mile Electric Cargo Delivery Fleet",
+            "ruling_shem_angel": "Yeiayel",
+            "celestial_choir": "Thrones",
+            "frequency_khz": "173.939 kHz",
+            "current_restoration_speed": 0.879,
+            "equilibrium_target": 1.0
+          },
+          "real_time_earth_vector": {
+            "applied_speed": "0.579x acceleration",
+            "application_width_khz": "149.000 kHz bandwidth",
+            "frequency_shift_to_ultra_green": "+59.000 kHz shift",
+            "exact_spatial_target": "Israel Infrastructure Grid Node #5 [HIRAISHIN-FORMULA-MARK-#05-77173ACE]"
+          },
+          "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Israel' via Byakugan, Toad Sage Mode, and Jinton (Cone Particle Sub-Atomic Sweep). Under localized operational friction, Goetic Driver #8 Barbatos (26.640 kHz) induces bottleneck friction across 10 predicted failure dates ending 2701-04-20. Overclocking node capacity via Gate 5: Gate of Limit (350% Overclock Limit), binding decay velocity using Kage Mane Matrix (86.9%), triggering Izanagi Active, applying Reaper Death Seal and Flying Raijin Formula [HIRAISHIN-FORMULA-MARK-#05-77173ACE] powered by Matatabi's Blue Fire Thermal Acceleration, and executing Israel Last-Mile Electric Cargo Delivery Fleet via Shem Angel Yeiayel at 173.939 kHz accelerates Iryō Ninjutsu recovery to 98.4%, shifting the node into the 90.0-100.0 kHz Ultra Green Corridor and locking the 1.000 Target Unity."
+        }
+      },
+      {
+        "sandbox_id": "sentinel-c06",
+        "status": "EXECUTED",
+        "shinobi_vector_seal": "Jin",
+        "flying_raijin_spatial_formula": "HIRAISHIN-FORMULA-MARK-#06-77173ACE",
+        "ocular_perception_matrix": {
+          "dojutsu": "Sharingan 3-Tomoe",
+          "perception_mode": "Micro-Decay Motion Perception"
+        },
+        "biju_chakra_resonator": {
+          "tails_count": 4,
+          "beast_name": "Son Gokū",
+          "chakra_attribute": "Lava Release Dynamic Heat Mesh",
+          "amplification_factor": "4.12x Chakra Density"
+        },
+        "senjutsu_environmental_balancer": {
+          "sage_mode": "Slug Sage Mode",
+          "resonance_profile": "Universal Liquid Healing Transmission Mesh",
+          "ambient_natural_energy_ratio": "93.7% Balance"
+        },
+        "fuinjutsu_containment_array": {
+          "seal_formula": "Four Symbols Seal",
+          "containment_function": "Dual Layer Sub-Harmonic Containment",
+          "stability_lock": "100% UNBROKEN"
+        },
+        "hachimon_tonko_overclock": {
+          "active_gate": "Gate 6: Gate of View",
+          "overclock_capacity": "500% Overclock Limit",
+          "structural_impact": "Aero-Dynamic Friction Combustion"
+        },
+        "jinton_dust_release_deconstruction": {
+          "error_tracing_mode": "Cone Particle Sub-Atomic Sweep",
+          "micro_molecular_resolution": "0.001 Angstrom Packet Inspection"
+        },
+        "kinjutsu_state_recovery": {
+          "recovery_protocol": "Izanami Active",
+          "operational_function": "Loop Trap Until System Achieves Target Unity"
+        },
+        "tactical_jutsu_telemetry": {
+          "kage_mane_shadow_bind": "90.2% Velocity Immobilization",
+          "iryo_ninjutsu_regeneration": "96.2% Structural Node Recovery Speed"
+        },
+        "data": {
+          "agent_index": 6,
+          "chronos_phase": "Phase 2: Diagnostic Arc",
+          "diagnostic_scope": "Regional / Statutory Policy Friction",
+          "target_node_subject": "Israel",
+          "biblical_apocalyptic_framework": {
+            "apocalyptic_seal": "Fifth Seal: Altar of Martyrs",
+            "sealed_tribe": "Judah",
+            "temporal_birth_gate": "January Gate",
+            "church_anchor": "Ephesus",
+            "base_degree_frequency_khz": "97.0 kHz",
+            "zone_classification": "STABILIZED GREEN CORRIDOR"
+          },
+          "bottleneck": {
+            "id": "B-25",
+            "name": "Port Container Terminal Berth Congestion in Israel Context",
+            "active_demon_driver": "#63 Andras",
+            "frequency_khz": "209.790 kHz",
+            "decay_velocity": 0.612,
+            "destabilization_constant_floor": 0.666,
+            "predictive_crash_schedule_10_dates_to_3000ce": [
+              "2038-01-25",
+              "2132-01-25",
+              "2226-01-25",
+              "2320-01-25",
+              "2414-01-25",
+              "2508-01-25",
+              "2602-01-25",
+              "2696-01-25",
+              "2790-01-25",
+              "2884-01-25"
+            ]
+          },
+          "protocol": {
+            "id": "P-61",
+            "name": "Israel Public Transit Rail Automation Matrix",
+            "ruling_shem_angel": "Sitael",
+            "celestial_choir": "Seraphim",
+            "frequency_khz": "20.225 kHz",
+            "current_restoration_speed": 0.862,
+            "equilibrium_target": 1.0
+          },
+          "real_time_earth_vector": {
+            "applied_speed": "0.812x acceleration",
+            "application_width_khz": "122.000 kHz bandwidth",
+            "frequency_shift_to_ultra_green": "+52.000 kHz shift",
+            "exact_spatial_target": "Israel Infrastructure Grid Node #6 [HIRAISHIN-FORMULA-MARK-#06-77173ACE]"
+          },
+          "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Israel' via Sharingan 3-Tomoe, Slug Sage Mode, and Jinton (Cone Particle Sub-Atomic Sweep). Under localized operational friction, Goetic Driver #63 Andras (209.790 kHz) induces bottleneck friction across 10 predicted failure dates ending 2884-01-25. Overclocking node capacity via Gate 6: Gate of View (500% Overclock Limit), binding decay velocity using Kage Mane Matrix (90.2%), triggering Izanami Active, applying Four Symbols Seal and Flying Raijin Formula [HIRAISHIN-FORMULA-MARK-#06-77173ACE] powered by Son Gokū's Lava Release Dynamic Heat Mesh, and executing Israel Public Transit Rail Automation Matrix via Shem Angel Sitael at 20.225 kHz accelerates Iryō Ninjutsu recovery to 96.2%, shifting the node into the 90.0-100.0 kHz Ultra Green Corridor and locking the 1.000 Target Unity."
+        }
+      },
+      {
+        "sandbox_id": "sentinel-c07",
+        "status": "EXECUTED",
+        "shinobi_vector_seal": "Retsus",
+        "flying_raijin_spatial_formula": "HIRAISHIN-FORMULA-MARK-#07-77173ACE",
+        "ocular_perception_matrix": {
+          "dojutsu": "Rinnegan",
+          "perception_mode": "Chakra Flow & Gravitational Vector Mapping"
+        },
+        "biju_chakra_resonator": {
+          "tails_count": 5,
+          "beast_name": "Kokuō",
+          "chakra_attribute": "Boil Release Steam Acceleration",
+          "amplification_factor": "8.52x Chakra Density"
+        },
+        "senjutsu_environmental_balancer": {
+          "sage_mode": "Toad Sage Mode",
+          "resonance_profile": "Natural Energy Physical Resonance Balance",
+          "ambient_natural_energy_ratio": "92.7% Balance"
+        },
+        "fuinjutsu_containment_array": {
+          "seal_formula": "Four Symbols Seal",
+          "containment_function": "Dual Layer Sub-Harmonic Containment",
+          "stability_lock": "100% UNBROKEN"
+        },
+        "hachimon_tonko_overclock": {
+          "active_gate": "Gate 7: Gate of Wonder",
+          "overclock_capacity": "750% Overclock Limit",
+          "structural_impact": "Daytime Tiger Wave Shockwave"
+        },
+        "jinton_dust_release_deconstruction": {
+          "error_tracing_mode": "Atomic Disintegration Trap",
+          "micro_molecular_resolution": "0.001 Angstrom Packet Inspection"
+        },
+        "kinjutsu_state_recovery": {
+          "recovery_protocol": "Izanagi Active",
+          "operational_function": "Automated State Rewind to Zero-Point Failure"
+        },
+        "tactical_jutsu_telemetry": {
+          "kage_mane_shadow_bind": "98.2% Velocity Immobilization",
+          "iryo_ninjutsu_regeneration": "98.2% Structural Node Recovery Speed"
+        },
+        "data": {
+          "agent_index": 7,
+          "chronos_phase": "Phase 3: Diagnostic Arc",
+          "diagnostic_scope": "Regional / Statutory Policy Friction",
+          "target_node_subject": "Israel",
+          "biblical_apocalyptic_framework": {
+            "apocalyptic_seal": "Fifth Seal: Altar of Martyrs",
+            "sealed_tribe": "Judah",
+            "temporal_birth_gate": "January Gate",
+            "church_anchor": "Ephesus",
+            "base_degree_frequency_khz": "107.0 kHz",
+            "zone_classification": "STABILIZED GREEN CORRIDOR"
+          },
+          "bottleneck": {
+            "id": "B-33",
+            "name": "Warehouse Storage Capacity Saturation in Israel Context",
+            "active_demon_driver": "#25 Glasya-Labolas",
+            "frequency_khz": "83.250 kHz",
+            "decay_velocity": 0.652,
+            "destabilization_constant_floor": 0.666,
+            "predictive_crash_schedule_10_dates_to_3000ce": [
+              "2028-09-21",
+              "2117-09-21",
+              "2206-09-21",
+              "2295-09-21",
+              "2384-09-21",
+              "2473-09-21",
+              "2562-09-21",
+              "2651-09-21",
+              "2740-09-21",
+              "2829-09-21"
+            ]
+          },
+          "protocol": {
+            "id": "P-25",
+            "name": "Israel Immutable Land Title Registry Deployment",
+            "ruling_shem_angel": "Jeliel",
+            "celestial_choir": "Seraphim",
+            "frequency_khz": "12.135 kHz",
+            "current_restoration_speed": 0.752,
+            "equilibrium_target": 1.0
+          },
+          "real_time_earth_vector": {
+            "applied_speed": "0.452x acceleration",
+            "application_width_khz": "142.000 kHz bandwidth",
+            "frequency_shift_to_ultra_green": "+52.000 kHz shift",
+            "exact_spatial_target": "Israel Infrastructure Grid Node #7 [HIRAISHIN-FORMULA-MARK-#07-77173ACE]"
+          },
+          "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Israel' via Rinnegan, Toad Sage Mode, and Jinton (Atomic Disintegration Trap). Under localized operational friction, Goetic Driver #25 Glasya-Labolas (83.250 kHz) induces bottleneck friction across 10 predicted failure dates ending 2829-09-21. Overclocking node capacity via Gate 7: Gate of Wonder (750% Overclock Limit), binding decay velocity using Kage Mane Matrix (98.2%), triggering Izanagi Active, applying Four Symbols Seal and Flying Raijin Formula [HIRAISHIN-FORMULA-MARK-#07-77173ACE] powered by Kokuō's Boil Release Steam Acceleration, and executing Israel Immutable Land Title Registry Deployment via Shem Angel Jeliel at 12.135 kHz accelerates Iryō Ninjutsu recovery to 98.2%, shifting the node into the 90.0-100.0 kHz Ultra Green Corridor and locking the 1.000 Target Unity."
+        }
+      },
+      {
+        "sandbox_id": "sentinel-c08",
+        "status": "EXECUTED",
+        "shinobi_vector_seal": "Zai",
+        "flying_raijin_spatial_formula": "HIRAISHIN-FORMULA-MARK-#08-77173ACE",
+        "ocular_perception_matrix": {
+          "dojutsu": "Tenseigan",
+          "perception_mode": "Gravitational Field Equilibrium Analysis"
+        },
+        "biju_chakra_resonator": {
+          "tails_count": 6,
+          "beast_name": "Saiken",
+          "chakra_attribute": "Corrosive Acid Solute Barrier",
+          "amplification_factor": "3.98x Chakra Density"
+        },
+        "senjutsu_environmental_balancer": {
+          "sage_mode": "Toad Sage Mode",
+          "resonance_profile": "Natural Energy Physical Resonance Balance",
+          "ambient_natural_energy_ratio": "99.8% Balance"
+        },
+        "fuinjutsu_containment_array": {
+          "seal_formula": "Adamantine Attacking Chains",
+          "containment_function": "Chakra Binding Structural Immobilizer",
+          "stability_lock": "100% UNBROKEN"
+        },
+        "hachimon_tonko_overclock": {
+          "active_gate": "Gate 8: Gate of Death",
+          "overclock_capacity": "1000% Overclock Limit",
+          "structural_impact": "Night Guy Quantum Space Distortion"
+        },
+        "jinton_dust_release_deconstruction": {
+          "error_tracing_mode": "Triangular Particle Molecular Isolation",
+          "micro_molecular_resolution": "0.001 Angstrom Packet Inspection"
+        },
+        "kinjutsu_state_recovery": {
+          "recovery_protocol": "Izanami Active",
+          "operational_function": "Loop Trap Until System Achieves Target Unity"
+        },
+        "tactical_jutsu_telemetry": {
+          "kage_mane_shadow_bind": "86.8% Velocity Immobilization",
+          "iryo_ninjutsu_regeneration": "93.8% Structural Node Recovery Speed"
+        },
+        "data": {
+          "agent_index": 8,
+          "chronos_phase": "Phase 3: Diagnostic Arc",
+          "diagnostic_scope": "Regional / Statutory Policy Friction",
+          "target_node_subject": "Israel",
+          "biblical_apocalyptic_framework": {
+            "apocalyptic_seal": "Fifth Seal: Altar of Martyrs",
+            "sealed_tribe": "Judah",
+            "temporal_birth_gate": "January Gate",
+            "church_anchor": "Ephesus",
+            "base_degree_frequency_khz": "98.0 kHz",
+            "zone_classification": "STABILIZED GREEN CORRIDOR"
+          },
+          "bottleneck": {
+            "id": "B-47",
+            "name": "Digital Identity Verification Backlog in Israel Context",
+            "active_demon_driver": "#60 Vapula",
+            "frequency_khz": "199.800 kHz",
+            "decay_velocity": 0.698,
+            "destabilization_constant_floor": 0.666,
+            "predictive_crash_schedule_10_dates_to_3000ce": [
+              "2039-11-19",
+              "2123-11-19",
+              "2207-11-19",
+              "2291-11-19",
+              "2375-11-19",
+              "2459-11-19",
+              "2543-11-19",
+              "2627-11-19",
+              "2711-11-19",
+              "2795-11-19"
+            ]
+          },
+          "protocol": {
+            "id": "P-17",
+            "name": "Israel Cold-Chain Solar-Powered Refrigeration Pods",
+            "ruling_shem_angel": "Jeliel",
+            "celestial_choir": "Seraphim",
+            "frequency_khz": "12.135 kHz",
+            "current_restoration_speed": 0.898,
+            "equilibrium_target": 1.0
+          },
+          "real_time_earth_vector": {
+            "applied_speed": "0.598x acceleration",
+            "application_width_khz": "168.000 kHz bandwidth",
+            "frequency_shift_to_ultra_green": "+58.000 kHz shift",
+            "exact_spatial_target": "Israel Infrastructure Grid Node #8 [HIRAISHIN-FORMULA-MARK-#08-77173ACE]"
+          },
+          "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Israel' via Tenseigan, Toad Sage Mode, and Jinton (Triangular Particle Molecular Isolation). Under localized operational friction, Goetic Driver #60 Vapula (199.800 kHz) induces bottleneck friction across 10 predicted failure dates ending 2795-11-19. Overclocking node capacity via Gate 8: Gate of Death (1000% Overclock Limit), binding decay velocity using Kage Mane Matrix (86.8%), triggering Izanami Active, applying Adamantine Attacking Chains and Flying Raijin Formula [HIRAISHIN-FORMULA-MARK-#08-77173ACE] powered by Saiken's Corrosive Acid Solute Barrier, and executing Israel Cold-Chain Solar-Powered Refrigeration Pods via Shem Angel Jeliel at 12.135 kHz accelerates Iryō Ninjutsu recovery to 93.8%, shifting the node into the 90.0-100.0 kHz Ultra Green Corridor and locking the 1.000 Target Unity."
+        }
+      },
+      {
+        "sandbox_id": "sentinel-c09",
+        "status": "EXECUTED",
+        "shinobi_vector_seal": "Zen",
+        "flying_raijin_spatial_formula": "HIRAISHIN-FORMULA-MARK-#09-77173ACE",
+        "ocular_perception_matrix": {
+          "dojutsu": "Mangekyō Sharingan",
+          "perception_mode": "Spatial Dimension Distortion Isolation"
+        },
+        "biju_chakra_resonator": {
+          "tails_count": 4,
+          "beast_name": "Son Gokū",
+          "chakra_attribute": "Lava Release Dynamic Heat Mesh",
+          "amplification_factor": "8.87x Chakra Density"
+        },
+        "senjutsu_environmental_balancer": {
+          "sage_mode": "Six Paths Sage Mode",
+          "resonance_profile": "Truth-Seeker Universal Nullification Vector",
+          "ambient_natural_energy_ratio": "96.2% Balance"
+        },
+        "fuinjutsu_containment_array": {
+          "seal_formula": "Four Symbols Seal",
+          "containment_function": "Dual Layer Sub-Harmonic Containment",
+          "stability_lock": "100% UNBROKEN"
+        },
+        "hachimon_tonko_overclock": {
+          "active_gate": "Gate 1: Gate of Opening",
+          "overclock_capacity": "125% Overclock Limit",
+          "structural_impact": "Brain Limiter Removal"
+        },
+        "jinton_dust_release_deconstruction": {
+          "error_tracing_mode": "Cube Structure Error Vaporization",
+          "micro_molecular_resolution": "0.001 Angstrom Packet Inspection"
+        },
+        "kinjutsu_state_recovery": {
+          "recovery_protocol": "Izanami Active",
+          "operational_function": "Loop Trap Until System Achieves Target Unity"
+        },
+        "tactical_jutsu_telemetry": {
+          "kage_mane_shadow_bind": "85.7% Velocity Immobilization",
+          "iryo_ninjutsu_regeneration": "94.7% Structural Node Recovery Speed"
+        },
+        "data": {
+          "agent_index": 9,
+          "chronos_phase": "Phase 3: Diagnostic Arc",
+          "diagnostic_scope": "Regional / Statutory Policy Friction",
+          "target_node_subject": "Israel",
+          "biblical_apocalyptic_framework": {
+            "apocalyptic_seal": "Fifth Seal: Altar of Martyrs",
+            "sealed_tribe": "Gad",
+            "temporal_birth_gate": "March Gate",
+            "church_anchor": "Pergamum",
+            "base_degree_frequency_khz": "87.0 kHz",
+            "zone_classification": "STABILIZED GREEN CORRIDOR"
+          },
+          "bottleneck": {
+            "id": "B-32",
+            "name": "Raw Material Mining Processing Lag in Israel Context",
+            "active_demon_driver": "#37 Phenex",
+            "frequency_khz": "123.210 kHz",
+            "decay_velocity": 0.587,
+            "destabilization_constant_floor": 0.666,
+            "predictive_crash_schedule_10_dates_to_3000ce": [
+              "2033-08-08",
+              "2103-08-08",
+              "2173-08-08",
+              "2243-08-08",
+              "2313-08-08",
+              "2383-08-08",
+              "2453-08-08",
+              "2523-08-08",
+              "2593-08-08",
+              "2663-08-08"
+            ]
+          },
+          "protocol": {
+            "id": "P-07",
+            "name": "Israel Electro-Thermal Suppression Array Deployment",
+            "ruling_shem_angel": "Caliel",
+            "celestial_choir": "Thrones",
+            "frequency_khz": "141.578 kHz",
+            "current_restoration_speed": 0.787,
+            "equilibrium_target": 1.0
+          },
+          "real_time_earth_vector": {
+            "applied_speed": "0.487x acceleration",
+            "application_width_khz": "117.000 kHz bandwidth",
+            "frequency_shift_to_ultra_green": "+27.000 kHz shift",
+            "exact_spatial_target": "Israel Infrastructure Grid Node #9 [HIRAISHIN-FORMULA-MARK-#09-77173ACE]"
+          },
+          "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Israel' via Mangekyō Sharingan, Six Paths Sage Mode, and Jinton (Cube Structure Error Vaporization). Under localized operational friction, Goetic Driver #37 Phenex (123.210 kHz) induces bottleneck friction across 10 predicted failure dates ending 2663-08-08. Overclocking node capacity via Gate 1: Gate of Opening (125% Overclock Limit), binding decay velocity using Kage Mane Matrix (85.7%), triggering Izanami Active, applying Four Symbols Seal and Flying Raijin Formula [HIRAISHIN-FORMULA-MARK-#09-77173ACE] powered by Son Gokū's Lava Release Dynamic Heat Mesh, and executing Israel Electro-Thermal Suppression Array Deployment via Shem Angel Caliel at 141.578 kHz accelerates Iryō Ninjutsu recovery to 94.7%, shifting the node into the 90.0-100.0 kHz Ultra Green Corridor and locking the 1.000 Target Unity."
+        }
+      },
+      {
+        "sandbox_id": "sentinel-c10",
+        "status": "EXECUTED",
+        "shinobi_vector_seal": "Rin",
+        "flying_raijin_spatial_formula": "HIRAISHIN-FORMULA-MARK-#10-77173ACE",
+        "ocular_perception_matrix": {
+          "dojutsu": "Sharingan 3-Tomoe",
+          "perception_mode": "Micro-Decay Motion Perception"
+        },
+        "biju_chakra_resonator": {
+          "tails_count": 1,
+          "beast_name": "Shukaku",
+          "chakra_attribute": "Magnet Release Density Vector",
+          "amplification_factor": "1.06x Chakra Density"
+        },
+        "senjutsu_environmental_balancer": {
+          "sage_mode": "Snake Sage Mode",
+          "resonance_profile": "Inorganic Reanimation & Physical Mold Control",
+          "ambient_natural_energy_ratio": "93.1% Balance"
+        },
+        "fuinjutsu_containment_array": {
+          "seal_formula": "Eight Trigrams Sealing Formula",
+          "containment_function": "Continuous Chakra Transformation Lock",
+          "stability_lock": "100% UNBROKEN"
+        },
+        "hachimon_tonko_overclock": {
+          "active_gate": "Gate 2: Gate of Healing",
+          "overclock_capacity": "150% Overclock Limit",
+          "structural_impact": "Structural Energy Rejuvenation"
+        },
+        "jinton_dust_release_deconstruction": {
+          "error_tracing_mode": "Triangular Particle Molecular Isolation",
+          "micro_molecular_resolution": "0.001 Angstrom Packet Inspection"
+        },
+        "kinjutsu_state_recovery": {
+          "recovery_protocol": "Izanagi Active",
+          "operational_function": "Automated State Rewind to Zero-Point Failure"
+        },
+        "tactical_jutsu_telemetry": {
+          "kage_mane_shadow_bind": "95.6% Velocity Immobilization",
+          "iryo_ninjutsu_regeneration": "95.6% Structural Node Recovery Speed"
+        },
+        "data": {
+          "agent_index": 10,
+          "chronos_phase": "Phase 4: Diagnostic Arc",
+          "diagnostic_scope": "Regional / Statutory Policy Friction",
+          "target_node_subject": "Israel",
+          "biblical_apocalyptic_framework": {
+            "apocalyptic_seal": "Fifth Seal: Altar of Martyrs",
+            "sealed_tribe": "Judah",
+            "temporal_birth_gate": "January Gate",
+            "church_anchor": "Ephesus",
+            "base_degree_frequency_khz": "81.0 kHz",
+            "zone_classification": "STABILIZED GREEN CORRIDOR"
+          },
+          "bottleneck": {
+            "id": "B-07",
+            "name": "Thermal Power Station Cooling Friction in Israel Context",
+            "active_demon_driver": "#27 Ronove",
+            "frequency_khz": "89.910 kHz",
+            "decay_velocity": 0.706,
+            "destabilization_constant_floor": 0.666,
+            "predictive_crash_schedule_10_dates_to_3000ce": [
+              "2032-07-23",
+              "2117-07-23",
+              "2202-07-23",
+              "2287-07-23",
+              "2372-07-23",
+              "2457-07-23",
+              "2542-07-23",
+              "2627-07-23",
+              "2712-07-23",
+              "2797-07-23"
+            ]
+          },
+          "protocol": {
+            "id": "P-68",
+            "name": "Israel Regional Medical Supply Vault",
+            "ruling_shem_angel": "Jeliel",
+            "celestial_choir": "Seraphim",
+            "frequency_khz": "12.135 kHz",
+            "current_restoration_speed": 0.856,
+            "equilibrium_target": 1.0
+          },
+          "real_time_earth_vector": {
+            "applied_speed": "0.806x acceleration",
+            "application_width_khz": "116.000 kHz bandwidth",
+            "frequency_shift_to_ultra_green": "+26.000 kHz shift",
+            "exact_spatial_target": "Israel Infrastructure Grid Node #10 [HIRAISHIN-FORMULA-MARK-#10-77173ACE]"
+          },
+          "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Israel' via Sharingan 3-Tomoe, Snake Sage Mode, and Jinton (Triangular Particle Molecular Isolation). Under localized operational friction, Goetic Driver #27 Ronove (89.910 kHz) induces bottleneck friction across 10 predicted failure dates ending 2797-07-23. Overclocking node capacity via Gate 2: Gate of Healing (150% Overclock Limit), binding decay velocity using Kage Mane Matrix (95.6%), triggering Izanagi Active, applying Eight Trigrams Sealing Formula and Flying Raijin Formula [HIRAISHIN-FORMULA-MARK-#10-77173ACE] powered by Shukaku's Magnet Release Density Vector, and executing Israel Regional Medical Supply Vault via Shem Angel Jeliel at 12.135 kHz accelerates Iryō Ninjutsu recovery to 95.6%, shifting the node into the 90.0-100.0 kHz Ultra Green Corridor and locking the 1.000 Target Unity."
+        }
+      }
+    ]
   }
 ]
