@@ -1,0 +1,67 @@
+syntax = "proto3";
+package pegasys.audit;
+
+message ApocalypticFramework {
+  string apocalyptic_seal = 1;
+  string sealed_tribe = 2;
+  string temporal_birth_gate = 3;
+  string church_anchor = 4;
+  string base_degree_frequency_khz = 5;
+  string zone_classification = 6;
+}
+
+message Bottleneck {
+  string id = 1;
+  string name = 2;
+  string active_demon_driver = 3;
+  string frequency_khz = 4;
+  double decay_velocity = 5;
+  double destabilization_constant_floor = 6;
+  repeated string predictive_crash_schedule = 7;
+}
+
+message Protocol {
+  string id = 1;
+  string name = 2;
+  string ruling_shem_angel = 3;
+  string celestial_choir = 4;
+  string frequency_khz = 5;
+  double current_restoration_speed = 6;
+  double equilibrium_target = 7;
+}
+
+message ShinobiTelemetry {
+  string dojutsu = 1;
+  string biju_resonator = 2;
+  string senjutsu_balance = 3;
+  string eight_gates_overclock = 4;
+  string dust_release_deconstruction = 5;
+  string state_recovery_protocol = 6;
+  string shadow_bind_efficiency = 7;
+  string medical_regen_rate = 8;
+  string hiraishin_formula = 9;
+}
+
+message SentinelRecord {
+  string sandbox_id = 1;
+  string status = 2;
+  string target_node_subject = 3;
+  ApocalypticFramework framework = 4;
+  Bottleneck bottleneck = 5;
+  Protocol protocol = 6;
+  ShinobiTelemetry telemetry = 7;
+  string prophetic_summary = 8;
+}
+
+message AuditRunPayload {
+  string session_guid = 1;
+  string utc_timestamp = 2;
+  string ecta_hash = 3;
+  uint64 quantum_cycle = 4;
+  repeated SentinelRecord sweep_results = 5;
+}
+
+message MasterLedger {
+  repeated AuditRunPayload runs = 1;
+}
+
