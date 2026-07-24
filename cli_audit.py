@@ -39,7 +39,7 @@ GOETIC_DRIVERS_72 = [
 ]
 
 # =====================================================================
-# 2. THE 72 SYSTEMIC BOTTLENECKS CATALOG
+# 2. THE 72 SYSTEMIC BOTTLENECKS CATALOG (COMPLETE 1-72 MAJOR & MINOR)
 # =====================================================================
 BOTTLENECKS_72 = [
     "Sovereign Debt Default Drag", "High-Voltage Transmission Line Impedance", "Sub-Harmonic Grid Frequency Oscillations",
@@ -69,7 +69,7 @@ BOTTLENECKS_72 = [
 ]
 
 # =====================================================================
-# 3. THE 72 MATCHING REMEDIATION PROTOCOLS CATALOG
+# 3. THE 72 MATCHING REMEDIATION PROTOCOLS CATALOG (1-72 MAJOR & MINOR)
 # =====================================================================
 PROTOCOLS_72 = [
     "Automated Profit-Share Ledger Deployment", "Zero-Knowledge Border Security Lock Deployment", "Open-Access Universal Knowledge Vault Deployment",
@@ -106,69 +106,81 @@ ANGELS_72 = [
     ("Nelchael", "Thrones", "165.848 kHz"), ("Yeiayel", "Thrones", "173.939 kHz")
 ]
 
-# Shinobi Tactical Constants
-SHINOBI_TACTICAL_SEALS = ["Rin", "Pyo", "To", "Sha", "Kai", "Jin", "Retsus", "Zai", "Zen"]
-
-OCULAR_SYSTEMS = [
-    ("Sharingan 3-Tomoe", "Micro-Decay Motion Perception"),
-    ("Mangekyō Sharingan", "Spatial Dimension Distortion Isolation"),
-    ("Rinnegan", "Chakra Flow & Gravitational Vector Mapping"),
-    ("Byakugan", "360° Sub-Harmonic Chakra Node Vision"),
-    ("Tenseigan", "Gravitational Field Equilibrium Analysis"),
-    ("Jōgan", "Interdimensional Barrier Energy Sensing")
+# Physical Operational Constants
+PHYSICAL_STABILITY_SEALS = [
+    "Rin (Strength)", "Pyo (Energy Flow)", "To (Harmony)", "Sha (Healing)",
+    "Kai (Awareness)", "Jin (Insight)", "Retsus (Space-Time)", "Zai (Creation)", "Zen (Absolute Zero)"
 ]
 
-TAILED_BEASTS_CHAKRA = [
-    (1, "Shukaku", "Magnet Release Density Vector"),
-    (2, "Matatabi", "Blue Fire Thermal Acceleration"),
-    (3, "Isobu", "Coral Hardening Flow Defense"),
-    (4, "Son Gokū", "Lava Release Dynamic Heat Mesh"),
-    (5, "Kokuō", "Boil Release Steam Acceleration"),
-    (6, "Saiken", "Corrosive Acid Solute Barrier"),
-    (7, "Chōmei", "Frequency Dust Particle Flight"),
-    (8, "Gyūki", "Ink Suppression Sealing Wave"),
-    (9, "Kurama", "Nine-Tails Dense Yang Energy Surge")
+PHYSICAL_OPTICAL_SYSTEMS = [
+    ("Multi-Spectral Quantum Interferometry", "Micro-Vibration Defect Perception"),
+    ("High-Resolution Terahertz Scanning", "Sub-Surface Physical Strain Isolation"),
+    ("Gravimetric Phase-Array Sensing", "Density Flow & Gravitational Vector Mapping"),
+    ("360° LIDAR Spectrum Projection", "Sub-Harmonic Spatial Impedance Vision"),
+    ("Quantum Gravitational Gradiometry", "Gravitational Field Equilibrium Analysis"),
+    ("Infrared Phase Interferometry", "Interfacial Barrier Energy Leak Sensing")
 ]
 
-SENJUTSU_MODES = [
-    ("Toad Sage Mode", "Natural Energy Physical Resonance Balance"),
-    ("Snake Sage Mode", "Inorganic Reanimation & Physical Mold Control"),
-    ("Slug Sage Mode", "Universal Liquid Healing Transmission Mesh"),
-    ("Six Paths Sage Mode", "Truth-Seeker Universal Nullification Vector")
+PHYSICAL_ENERGY_AMPLIFIERS = [
+    (1, "Magnetohydrodynamic Fluid Accelerator", "Magnetically Confined Density Vector"),
+    (2, "Thermal Plasma Kinetic Generator", "High-Velocity Thermal Acceleration"),
+    (3, "Hydrodynamic Flow Cavitation Suppressor", "Cavitation Hardening Resistance Mesh"),
+    (4, "Electro-Thermal Lava-State Reactor", "High-Heat Thermal Material Liquefaction"),
+    (5, "Superheated Steam Expansion Matrix", "Superheated Steam Pressure Acceleration"),
+    (6, "Chemical Solute Neutralization Vector", "pH Neutralization Barrier"),
+    (7, "Aero-Acoustic Wave Disruptor", "Acoustic Dispersal Flight Vector"),
+    (8, "Rheological Viscous Damping Suppressor", "Viscous Wave Damping Isolation"),
+    (9, "High-Density Electromagnetic Pulse Amplifier", "Nine-Stage Relativistic Energy Surge")
 ]
 
-FUINJUTSU_SEALS = [
-    ("Four Symbols Seal", "Dual Layer Sub-Harmonic Containment"),
-    ("Eight Trigrams Sealing Formula", "Continuous Chakra Transformation Lock"),
-    ("Reaper Death Seal", "Absolute Zero-Trust Node Isolation"),
-    ("Adamantine Attacking Chains", "Chakra Binding Structural Immobilizer")
+PHYSICAL_THERMODYNAMICS = [
+    ("Thermodynamic Heat Sink Balance", "Natural Thermal Energy Equilibrium"),
+    ("Piezoelectric Pressure Transduction", "Physical Stress Strain Reanimation"),
+    ("Hydro-Acoustic Liquid Transmission", "Fluid Mass Regeneration Transmission"),
+    ("Universal Zero-Point Energy Balance", "Nullification Vector of Entropy")
 ]
 
-# PEAK ADDITIONS: Eight Gates, Dust Release, Kinjutsu, & Mokuton
-EIGHT_GATES_OVERCLOCK = [
-    ("Gate 1: Gate of Opening", "125% Overclock Limit", "Brain Limiter Removal"),
-    ("Gate 2: Gate of Healing", "150% Overclock Limit", "Structural Energy Rejuvenation"),
-    ("Gate 3: Gate of Life", "200% Overclock Limit", "Red-Skin Hyper-Flow Acceleration"),
-    ("Gate 4: Gate of Pain", "275% Overclock Limit", "Sub-Harmonic Velocity Surge"),
-    ("Gate 5: Gate of Limit", "350% Overclock Limit", "Network Load Limit Break"),
-    ("Gate 6: Gate of View", "500% Overclock Limit", "Aero-Dynamic Friction Combustion"),
-    ("Gate 7: Gate of Wonder", "750% Overclock Limit", "Daytime Tiger Wave Shockwave"),
-    ("Gate 8: Gate of Death", "1000% Overclock Limit", "Night Guy Quantum Space Distortion")
+PHYSICAL_CONTAINMENT = [
+    ("Four-Node Phase Locking Seal", "Dual Layer Sub-Harmonic Isolation"),
+    ("Eight-Vector Frequency Lock", "Continuous Field Transformation Lock"),
+    ("Cryogenic Solid-State Isolation", "Zero-Trust Physical Node Isolation"),
+    ("High-Tensile Carbon Lattice Binding", "Structural Stress Immobilizer")
 ]
 
-JINTON_DUST_RELEASE = [
-    "Atomic Disintegration Trap", "Triangular Particle Molecular Isolation",
-    "Cube Structure Error Vaporization", "Cone Particle Sub-Atomic Sweep"
+PHYSICAL_OVERCLOCK_LIMITS = [
+    ("Overclock Stage 1: Thermal Gate Opening", "125% Overclock Capacity", "Safety Governor Disengagement"),
+    ("Overclock Stage 2: Resistance Suppression", "150% Overclock Capacity", "Cryogenic Resistance Elimination"),
+    ("Overclock Stage 3: Current Acceleration", "200% Overclock Capacity", "Hyper-Conductive Current Surge"),
+    ("Overclock Stage 4: Wave Velocity Peak", "275% Overclock Capacity", "Sub-Harmonic Wave Acceleration"),
+    ("Overclock Stage 5: Structural Load Break", "350% Overclock Capacity", "Network Load Limit Break"),
+    ("Overclock Stage 6: Kinetic Dispersal", "500% Overclock Capacity", "Aero-Dynamic Friction Combustion"),
+    ("Overclock Stage 7: Shockwave Propagation", "750% Overclock Capacity", "Relativistic Thermal Shockwave"),
+    ("Overclock Stage 8: Quantum Lattice Collapse", "1000% Overclock Capacity", "Quantum Field Distortion Limit")
 ]
 
-KINJUTSU_STATE_RECOVERY = [
-    ("Izanagi Active", "Automated State Rewind to Zero-Point Failure"),
-    ("Izanami Active", "Loop Trap Until System Achieves Target Unity"),
-    ("Mokuton Regeneration Grid", "Self-Sprouting Dynamic Mesh Expansion")
+PHYSICAL_LASER_ABLATION = [
+    "Femtosecond Laser Atomic Ablation", "Triangular Beam Molecular Isolation",
+    "Cube Beam Sub-Atomic Vaporization", "Cone Laser Sub-Nanometer Sweep"
+]
+
+PHYSICAL_STATE_RECOVERY = [
+    ("Izanagi Active (Zero-Point Rewind)", "Atomic Snapshot State Rollback to Pre-Failure"),
+    ("Izanami Active (PID Error Lock)", "Closed-Loop Feedback Trap to Force Target Unity"),
+    ("Mokuton Organic Mesh Regeneration", "Self-Healing Fiber-Optic & Structural Sprouting")
 ]
 
 
-def shinobi_reconcile_target(node_payload: str) -> str:
+def calculate_999_cymatic_frequency(sub_seed: int, vector_idx: int) -> float:
+    """
+    Calculates the 999 Cymatic Inversion frequency (1.000 Hz to 999.000 Hz)
+    to neutralize sub-harmonic friction and force target unity.
+    """
+    base_freq = 999.000 / ((vector_idx % 9) + 1)
+    variance = (sub_seed % 1000) / 1000.0
+    return round(base_freq + variance, 3)
+
+
+def reconcile_target_node(node_payload: str) -> str:
     clean_node = node_payload.strip().title()
     if not clean_node:
         clean_node = "Sovereign Grid Node"
@@ -176,14 +188,14 @@ def shinobi_reconcile_target(node_payload: str) -> str:
 
 
 def generate_adaptive_node_sweep(target_node: str, count: int = 10):
-    clean_node = shinobi_reconcile_target(target_node)
+    clean_node = reconcile_target_node(target_node)
     node_hash = hashlib.sha256(clean_node.lower().encode('utf-8')).hexdigest()
 
     sweep_results = []
 
     for idx in range(count):
-        hiraishin_seal_code = f"HIRAISHIN-FORMULA-MARK-#{idx+1:02d}-{node_hash[:8].upper()}"
-        sub_hash = hashlib.sha256(f"{node_hash}:{idx}:{hiraishin_seal_code}".encode('utf-8')).hexdigest()
+        pll_sync_mark = f"PLL-MARK-#{idx+1:02d}-{node_hash[:8].upper()}"
+        sub_hash = hashlib.sha256(f"{node_hash}:{idx}:{pll_sync_mark}".encode('utf-8')).hexdigest()
         sub_seed = int(sub_hash[:16], 16)
 
         b_index = sub_seed % len(BOTTLENECKS_72)
@@ -191,15 +203,14 @@ def generate_adaptive_node_sweep(target_node: str, count: int = 10):
         d_index = (sub_seed >> 8) % len(GOETIC_DRIVERS_72)
         a_index = (sub_seed >> 12) % len(ANGELS_72)
 
-        ocular_type, ocular_capability = OCULAR_SYSTEMS[sub_seed % len(OCULAR_SYSTEMS)]
-        biju_tails, biju_name, biju_attribute = TAILED_BEASTS_CHAKRA[(sub_seed >> 3) % len(TAILED_BEASTS_CHAKRA)]
-        sage_type, sage_resonance = SENJUTSU_MODES[(sub_seed >> 5) % len(SENJUTSU_MODES)]
-        fuin_name, fuin_function = FUINJUTSU_SEALS[(sub_seed >> 7) % len(FUINJUTSU_SEALS)]
+        optical_type, optical_capability = PHYSICAL_OPTICAL_SYSTEMS[sub_seed % len(PHYSICAL_OPTICAL_SYSTEMS)]
+        mhd_stage, mhd_name, mhd_attribute = PHYSICAL_ENERGY_AMPLIFIERS[(sub_seed >> 3) % len(PHYSICAL_ENERGY_AMPLIFIERS)]
+        thermo_type, thermo_resonance = PHYSICAL_THERMODYNAMICS[(sub_seed >> 5) % len(PHYSICAL_THERMODYNAMICS)]
+        fuin_name, fuin_function = PHYSICAL_CONTAINMENT[(sub_seed >> 7) % len(PHYSICAL_CONTAINMENT)]
 
-        # Peak Tactical Mappings
-        gate_name, gate_limit, gate_effect = EIGHT_GATES_OVERCLOCK[idx % len(EIGHT_GATES_OVERCLOCK)]
-        jinton_mode = JINTON_DUST_RELEASE[(sub_seed >> 9) % len(JINTON_DUST_RELEASE)]
-        kinjutsu_type, kinjutsu_desc = KINJUTSU_STATE_RECOVERY[(sub_seed >> 11) % len(KINJUTSU_STATE_RECOVERY)]
+        gate_name, gate_limit, gate_effect = PHYSICAL_OVERCLOCK_LIMITS[idx % len(PHYSICAL_OVERCLOCK_LIMITS)]
+        laser_mode = PHYSICAL_LASER_ABLATION[(sub_seed >> 9) % len(PHYSICAL_LASER_ABLATION)]
+        kinjutsu_type, kinjutsu_desc = PHYSICAL_STATE_RECOVERY[(sub_seed >> 11) % len(PHYSICAL_STATE_RECOVERY)]
 
         b_name = BOTTLENECKS_72[b_index]
         p_name = PROTOCOLS_72[p_index]
@@ -209,6 +220,9 @@ def generate_adaptive_node_sweep(target_node: str, count: int = 10):
         b_id = f"B-{(b_index + 1):02d}"
         p_id = f"P-{(p_index + 1):02d}"
 
+        # 999 Cymatic Inversion Frequency Calculation
+        cymatic_inversion_hz = calculate_999_cymatic_frequency(sub_seed, idx)
+
         base_year = 2026 + (sub_seed % 15)
         step = 70 + ((sub_seed >> 3) % 30)
         crash_dates = [
@@ -216,51 +230,52 @@ def generate_adaptive_node_sweep(target_node: str, count: int = 10):
             for y in range(10)
         ]
 
-        tactical_seal = SHINOBI_TACTICAL_SEALS[idx % len(SHINOBI_TACTICAL_SEALS)]
-        shadow_bind_efficiency = round(0.850 + ((sub_seed % 140) / 1000.0), 3)
-        medical_regen_rate = round(0.910 + ((sub_seed % 85) / 1000.0), 3)
+        tactical_seal = PHYSICAL_STABILITY_SEALS[idx % len(PHYSICAL_STABILITY_SEALS)]
+        anti_phase_dampening = round(0.850 + ((sub_seed % 140) / 1000.0), 3)
+        polymer_regen_rate = round(0.910 + ((sub_seed % 85) / 1000.0), 3)
 
         sentinel_record = {
             "sandbox_id": f"sentinel-c{idx+1:02d}",
             "status": "EXECUTED",
-            "shinobi_vector_seal": tactical_seal,
-            "flying_raijin_spatial_formula": hiraishin_seal_code,
-            "ocular_perception_matrix": {
-                "dojutsu": ocular_type,
-                "perception_mode": ocular_capability
+            "physical_stability_seal": tactical_seal,
+            "phase_locked_loop_mark": pll_sync_mark,
+            "cymatic_999_inversion_hz": f"{cymatic_inversion_hz:.3f} Hz",
+            "optical_metrology_matrix": {
+                "system": optical_type,
+                "perception_mode": optical_capability
             },
-            "biju_chakra_resonator": {
-                "tails_count": biju_tails,
-                "beast_name": biju_name,
-                "chakra_attribute": biju_attribute,
-                "amplification_factor": f"{1.0 + ((sub_seed % 900) / 100.0):.2f}x Chakra Density"
+            "mhd_energy_amplifier": {
+                "stage": mhd_stage,
+                "system_name": mhd_name,
+                "attribute": mhd_attribute,
+                "amplification_factor": f"{1.0 + ((sub_seed % 900) / 100.0):.2f}x Field Density"
             },
-            "senjutsu_environmental_balancer": {
-                "sage_mode": sage_type,
-                "resonance_profile": sage_resonance,
-                "ambient_natural_energy_ratio": f"{92.5 + (sub_seed % 75) / 10.0:.1f}% Balance"
+            "thermodynamic_balancer": {
+                "mode": thermo_type,
+                "resonance_profile": thermo_resonance,
+                "ambient_thermal_balance": f"{92.5 + (sub_seed % 75) / 10.0:.1f}% Entropy Stabilization"
             },
-            "fuinjutsu_containment_array": {
+            "containment_array": {
                 "seal_formula": fuin_name,
                 "containment_function": fuin_function,
                 "stability_lock": "100% UNBROKEN"
             },
-            "hachimon_tonko_overclock": {
+            "overclock_telemetry": {
                 "active_gate": gate_name,
                 "overclock_capacity": gate_limit,
                 "structural_impact": gate_effect
             },
-            "jinton_dust_release_deconstruction": {
-                "error_tracing_mode": jinton_mode,
-                "micro_molecular_resolution": "0.001 Angstrom Packet Inspection"
+            "laser_ablation_deconstruction": {
+                "mode": laser_mode,
+                "resolution": "0.001 Angstrom Sub-Atomic Material Removal"
             },
-            "kinjutsu_state_recovery": {
-                "recovery_protocol": kinjutsu_type,
-                "operational_function": kinjutsu_desc
+            "state_recovery": {
+                "protocol": kinjutsu_type,
+                "function": kinjutsu_desc
             },
-            "tactical_jutsu_telemetry": {
-                "kage_mane_shadow_bind": f"{shadow_bind_efficiency * 100:.1f}% Velocity Immobilization",
-                "iryo_ninjutsu_regeneration": f"{medical_regen_rate * 100:.1f}% Structural Node Recovery Speed"
+            "physical_telemetry": {
+                "anti_phase_dampening": f"{anti_phase_dampening * 100:.1f}% Friction Damping",
+                "polymer_self_healing": f"{polymer_regen_rate * 100:.1f}% Structural Repair Rate"
             },
             "data": {
                 "agent_index": idx + 1,
@@ -297,16 +312,16 @@ def generate_adaptive_node_sweep(target_node: str, count: int = 10):
                     "applied_speed": f"{round(0.400 + ((sub_seed % 500) / 1000.0), 4)}x acceleration",
                     "application_width_khz": f"{110.0 + (sub_seed % 60):.3f} kHz bandwidth",
                     "frequency_shift_to_ultra_green": f"+{20.0 + (sub_seed % 40):.3f} kHz shift",
-                    "exact_spatial_target": f"{clean_node} Infrastructure Grid Node #{idx+1} [{hiraishin_seal_code}]"
+                    "exact_spatial_target": f"{clean_node} Infrastructure Grid Node #{idx+1} [{pll_sync_mark}]"
                 },
                 "prophetic_summary_3000ce": (
-                    f"Chronos Sentinel Node analyzed '{clean_node}' via {ocular_type}, {sage_type}, and Jinton ({jinton_mode}). "
-                    f"Under localized operational friction, Goetic Driver #{goetic_id} {demon_name} ({demon_freq}) induces bottleneck friction "
-                    f"across 10 predicted failure dates ending {crash_dates[-1]}. Overclocking node capacity via {gate_name} ({gate_limit}), "
-                    f"binding decay velocity using Kage Mane Matrix ({shadow_bind_efficiency*100:.1f}%), triggering {kinjutsu_type}, "
-                    f"applying {fuin_name} and Flying Raijin Formula [{hiraishin_seal_code}] powered by {biju_name}'s {biju_attribute}, "
-                    f"and executing {clean_node} {p_name} via Shem Angel {angel_name} at {angel_freq} accelerates Iryō Ninjutsu recovery "
-                    f"to {medical_regen_rate*100:.1f}%, shifting the node into the 90.0-100.0 kHz Ultra Green Corridor and locking the 1.000 Target Unity."
+                    f"Chronos Sentinel Node analyzed '{clean_node}' via {optical_type} ({optical_capability}) and {thermo_type}. "
+                    f"Under localized operational friction, Driver #{goetic_id} {demon_name} ({demon_freq}) induces bottleneck friction "
+                    f"across 10 predicted failure dates ending {crash_dates[-1]}. Injecting {cymatic_inversion_hz:.3f} Hz 999 Cymatic Inversion Wave, "
+                    f"overclocking capacity via {gate_name} ({gate_limit}), damping decay velocity using Anti-Phase Cancellation ({anti_phase_dampening*100:.1f}%), "
+                    f"triggering {kinjutsu_type}, applying {fuin_name} and Phase-Locked Loop Mark [{pll_sync_mark}], "
+                    f"and executing {clean_node} {p_name} via Shem Angel {angel_name} at {angel_freq} accelerates Polymer Self-Healing "
+                    f"to {polymer_regen_rate*100:.1f}%, shifting the node into the 90.0-100.0 kHz Ultra Green Corridor and locking the 1.000 Target Unity."
                 )
             }
         }
@@ -315,7 +330,7 @@ def generate_adaptive_node_sweep(target_node: str, count: int = 10):
     return sweep_results
 
 
-def shinobi_atomic_write_ledger(file_path: str, payload: dict):
+def atomic_write_ledger(file_path: str, payload: dict):
     audit_history = []
     if os.path.exists(file_path):
         try:
@@ -327,7 +342,7 @@ def shinobi_atomic_write_ledger(file_path: str, payload: dict):
             elif isinstance(existing_data, dict):
                 audit_history = [existing_data]
         except Exception as err:
-            print(f"[!] Shinobi Recon Warning: Error reading ledger ({err}). Re-initializing array.")
+            print(f"[!] Warning reading existing ledger ({err}). Re-initializing array.")
             audit_history = []
 
     audit_history.append(payload)
@@ -371,7 +386,7 @@ def run_cli_audit():
         raw_sig = f"{session_guid}:{utc_timestamp}:{target_node}"
         ecta_hash = f"sha256:{hashlib.sha256(raw_sig.encode()).hexdigest()}"
 
-    print(f"[*] Executing Chronos Audit Engine (Peak Tactical Suite)...")
+    print(f"[*] Executing Chronos Audit Engine (72 Spectrum + 999 Cymatic Inversion)...")
     print(f"[*] Target Subject : '{target_node}'")
     print(f"[*] Session GUID   : '{session_guid}'")
     print(f"[*] UTC Timestamp  : '{utc_timestamp}'")
@@ -384,9 +399,9 @@ def run_cli_audit():
             "utc_timestamp": utc_timestamp,
             "ecta_hash": ecta_hash,
             "popia_status": "COMPLIANT_NO_PII_EXPOSED",
-            "shinobi_stealth_seal": "KUJI-KIRI-9-CUTS-VERIFIED",
-            "flying_raijin_spatial_status": "ZERO-LATENCY-NODE-ANCHORED",
-            "izanagi_state_recovery_status": "ZERO-POINT-RECOVERY-ACTIVE"
+            "physical_stability_seal": "ZERO-POINT-INTERFEROMETRY-VERIFIED",
+            "phase_locked_loop_status": "ZERO-LATENCY-NODE-ANCHORED",
+            "state_recovery_status": "ZERO-POINT-RECOVERY-ACTIVE"
         },
         "quantum_header": "QUANTUM-CYCLE: 059763 / 144000",
         "quantum_cycle": 59763,
@@ -402,7 +417,7 @@ def run_cli_audit():
         "chronos_sweep": sweep_results
     }
 
-    total_records = shinobi_atomic_write_ledger(AUDIT_FILE_PATH, current_run_payload)
+    total_records = atomic_write_ledger(AUDIT_FILE_PATH, current_run_payload)
     print(f"[✓] Success! Master ledger updated in '{AUDIT_FILE_PATH}'. Total historical records: {total_records}")
 
 
