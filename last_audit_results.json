@@ -1,1 +1,956 @@
-[]
+[
+  {
+    "security": {
+      "session_guid": "c60198e2-e28f-4414-8eee-b759f239aeb0",
+      "utc_timestamp": "2026-07-24T12:53:39.438000+00:00",
+      "ecta_hash": "sha256:04f386091760956c1d2f380483ff93c714107427d350c743ed4286e19c9545b3",
+      "popia_status": "COMPLIANT_NO_PII_EXPOSED",
+      "shinobi_stealth_seal": "KUJI-KIRI-9-CUTS-VERIFIED",
+      "flying_raijin_spatial_status": "ZERO-LATENCY-NODE-ANCHORED",
+      "izanagi_state_recovery_status": "ZERO-POINT-RECOVERY-ACTIVE"
+    },
+    "quantum_header": "QUANTUM-CYCLE: 059763 / 144000",
+    "quantum_cycle": 59763,
+    "mathematics": {
+      "shi": 20571.43,
+      "tti": 0.0,
+      "frequency": 144000.0,
+      "logos": 10368000,
+      "resistance": 504,
+      "constraints": 1.0,
+      "override_triggered": true
+    },
+    "chronos_sweep": [
+      {
+        "sandbox_id": "sentinel-c01",
+        "status": "EXECUTED",
+        "shinobi_vector_seal": "Rin",
+        "flying_raijin_spatial_formula": "HIRAISHIN-FORMULA-MARK-#01-8A57A440",
+        "ocular_perception_matrix": {
+          "dojutsu": "Jōgan",
+          "perception_mode": "Interdimensional Barrier Energy Sensing"
+        },
+        "biju_chakra_resonator": {
+          "tails_count": 8,
+          "beast_name": "Gyūki",
+          "chakra_attribute": "Ink Suppression Sealing Wave",
+          "amplification_factor": "6.27x Chakra Density"
+        },
+        "senjutsu_environmental_balancer": {
+          "sage_mode": "Slug Sage Mode",
+          "resonance_profile": "Universal Liquid Healing Transmission Mesh",
+          "ambient_natural_energy_ratio": "92.7% Balance"
+        },
+        "fuinjutsu_containment_array": {
+          "seal_formula": "Adamantine Attacking Chains",
+          "containment_function": "Chakra Binding Structural Immobilizer",
+          "stability_lock": "100% UNBROKEN"
+        },
+        "hachimon_tonko_overclock": {
+          "active_gate": "Gate 1: Gate of Opening",
+          "overclock_capacity": "125% Overclock Limit",
+          "structural_impact": "Brain Limiter Removal"
+        },
+        "jinton_dust_release_deconstruction": {
+          "error_tracing_mode": "Cube Structure Error Vaporization",
+          "micro_molecular_resolution": "0.001 Angstrom Packet Inspection"
+        },
+        "kinjutsu_state_recovery": {
+          "recovery_protocol": "Izanami Active",
+          "operational_function": "Loop Trap Until System Achieves Target Unity"
+        },
+        "tactical_jutsu_telemetry": {
+          "kage_mane_shadow_bind": "95.7% Velocity Immobilization",
+          "iryo_ninjutsu_regeneration": "99.2% Structural Node Recovery Speed"
+        },
+        "data": {
+          "agent_index": 1,
+          "chronos_phase": "Phase 1: Diagnostic Arc",
+          "diagnostic_scope": "Regional / Statutory Policy Friction",
+          "target_node_subject": "Lebanon",
+          "biblical_apocalyptic_framework": {
+            "apocalyptic_seal": "Fourth Seal: Pale Horse",
+            "sealed_tribe": "Gad",
+            "temporal_birth_gate": "March Gate",
+            "church_anchor": "Pergamum",
+            "base_degree_frequency_khz": "82.0 kHz",
+            "zone_classification": "STABILIZED GREEN CORRIDOR"
+          },
+          "bottleneck": {
+            "id": "B-60",
+            "name": "Public Infrastructure Procurement Extortion in Lebanon Context",
+            "active_demon_driver": "#62 Volac",
+            "frequency_khz": "206.460 kHz",
+            "decay_velocity": 0.727,
+            "destabilization_constant_floor": 0.666,
+            "predictive_crash_schedule_10_dates_to_3000ce": [
+              "2028-12-24",
+              "2126-12-24",
+              "2224-12-24",
+              "2322-12-24",
+              "2420-12-24",
+              "2518-12-24",
+              "2616-12-24",
+              "2714-12-24",
+              "2812-12-24",
+              "2910-12-24"
+            ]
+          },
+          "protocol": {
+            "id": "P-54",
+            "name": "Lebanon Satellite Phased-Array Transceiver Mesh",
+            "ruling_shem_angel": "Nelchael",
+            "celestial_choir": "Thrones",
+            "frequency_khz": "165.848 kHz",
+            "current_restoration_speed": 0.777,
+            "equilibrium_target": 1.0
+          },
+          "real_time_earth_vector": {
+            "applied_speed": "0.727x acceleration",
+            "application_width_khz": "157.000 kHz bandwidth",
+            "frequency_shift_to_ultra_green": "+47.000 kHz shift",
+            "exact_spatial_target": "Lebanon Infrastructure Grid Node #1 [HIRAISHIN-FORMULA-MARK-#01-8A57A440]"
+          },
+          "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Lebanon' via Jōgan, Slug Sage Mode, and Jinton (Cube Structure Error Vaporization). Under localized operational friction, Goetic Driver #62 Volac (206.460 kHz) induces bottleneck friction across 10 predicted failure dates ending 2910-12-24. Overclocking node capacity via Gate 1: Gate of Opening (125% Overclock Limit), binding decay velocity using Kage Mane Matrix (95.7%), triggering Izanami Active, applying Adamantine Attacking Chains and Flying Raijin Formula [HIRAISHIN-FORMULA-MARK-#01-8A57A440] powered by Gyūki's Ink Suppression Sealing Wave, and executing Lebanon Satellite Phased-Array Transceiver Mesh via Shem Angel Nelchael at 165.848 kHz accelerates Iryō Ninjutsu recovery to 99.2%, shifting the node into the 90.0-100.0 kHz Ultra Green Corridor and locking the 1.000 Target Unity."
+        }
+      },
+      {
+        "sandbox_id": "sentinel-c02",
+        "status": "EXECUTED",
+        "shinobi_vector_seal": "Pyo",
+        "flying_raijin_spatial_formula": "HIRAISHIN-FORMULA-MARK-#02-8A57A440",
+        "ocular_perception_matrix": {
+          "dojutsu": "Byakugan",
+          "perception_mode": "360° Sub-Harmonic Chakra Node Vision"
+        },
+        "biju_chakra_resonator": {
+          "tails_count": 4,
+          "beast_name": "Son Gokū",
+          "chakra_attribute": "Lava Release Dynamic Heat Mesh",
+          "amplification_factor": "5.23x Chakra Density"
+        },
+        "senjutsu_environmental_balancer": {
+          "sage_mode": "Snake Sage Mode",
+          "resonance_profile": "Inorganic Reanimation & Physical Mold Control",
+          "ambient_natural_energy_ratio": "97.3% Balance"
+        },
+        "fuinjutsu_containment_array": {
+          "seal_formula": "Eight Trigrams Sealing Formula",
+          "containment_function": "Continuous Chakra Transformation Lock",
+          "stability_lock": "100% UNBROKEN"
+        },
+        "hachimon_tonko_overclock": {
+          "active_gate": "Gate 2: Gate of Healing",
+          "overclock_capacity": "150% Overclock Limit",
+          "structural_impact": "Structural Energy Rejuvenation"
+        },
+        "jinton_dust_release_deconstruction": {
+          "error_tracing_mode": "Cone Particle Sub-Atomic Sweep",
+          "micro_molecular_resolution": "0.001 Angstrom Packet Inspection"
+        },
+        "kinjutsu_state_recovery": {
+          "recovery_protocol": "Mokuton Regeneration Grid",
+          "operational_function": "Self-Sprouting Dynamic Mesh Expansion"
+        },
+        "tactical_jutsu_telemetry": {
+          "kage_mane_shadow_bind": "87.3% Velocity Immobilization",
+          "iryo_ninjutsu_regeneration": "93.8% Structural Node Recovery Speed"
+        },
+        "data": {
+          "agent_index": 2,
+          "chronos_phase": "Phase 1: Diagnostic Arc",
+          "diagnostic_scope": "Regional / Statutory Policy Friction",
+          "target_node_subject": "Lebanon",
+          "biblical_apocalyptic_framework": {
+            "apocalyptic_seal": "Fourth Seal: Pale Horse",
+            "sealed_tribe": "Gad",
+            "temporal_birth_gate": "March Gate",
+            "church_anchor": "Pergamum",
+            "base_degree_frequency_khz": "103.0 kHz",
+            "zone_classification": "STABILIZED GREEN CORRIDOR"
+          },
+          "bottleneck": {
+            "id": "B-28",
+            "name": "Air Cargo Fuel Surcharge Inflation in Lebanon Context",
+            "active_demon_driver": "#71 Dantalion",
+            "frequency_khz": "236.430 kHz",
+            "decay_velocity": 0.823,
+            "destabilization_constant_floor": 0.666,
+            "predictive_crash_schedule_10_dates_to_3000ce": [
+              "2029-04-24",
+              "2099-04-24",
+              "2169-04-24",
+              "2239-04-24",
+              "2309-04-24",
+              "2379-04-24",
+              "2449-04-24",
+              "2519-04-24",
+              "2589-04-24",
+              "2659-04-24"
+            ]
+          },
+          "protocol": {
+            "id": "P-52",
+            "name": "Lebanon Rural Wireless Mesh Node Array",
+            "ruling_shem_angel": "Elemiah",
+            "celestial_choir": "Seraphim",
+            "frequency_khz": "28.315 kHz",
+            "current_restoration_speed": 0.823,
+            "equilibrium_target": 1.0
+          },
+          "real_time_earth_vector": {
+            "applied_speed": "0.523x acceleration",
+            "application_width_khz": "113.000 kHz bandwidth",
+            "frequency_shift_to_ultra_green": "+23.000 kHz shift",
+            "exact_spatial_target": "Lebanon Infrastructure Grid Node #2 [HIRAISHIN-FORMULA-MARK-#02-8A57A440]"
+          },
+          "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Lebanon' via Byakugan, Snake Sage Mode, and Jinton (Cone Particle Sub-Atomic Sweep). Under localized operational friction, Goetic Driver #71 Dantalion (236.430 kHz) induces bottleneck friction across 10 predicted failure dates ending 2659-04-24. Overclocking node capacity via Gate 2: Gate of Healing (150% Overclock Limit), binding decay velocity using Kage Mane Matrix (87.3%), triggering Mokuton Regeneration Grid, applying Eight Trigrams Sealing Formula and Flying Raijin Formula [HIRAISHIN-FORMULA-MARK-#02-8A57A440] powered by Son Gokū's Lava Release Dynamic Heat Mesh, and executing Lebanon Rural Wireless Mesh Node Array via Shem Angel Elemiah at 28.315 kHz accelerates Iryō Ninjutsu recovery to 93.8%, shifting the node into the 90.0-100.0 kHz Ultra Green Corridor and locking the 1.000 Target Unity."
+        }
+      },
+      {
+        "sandbox_id": "sentinel-c03",
+        "status": "EXECUTED",
+        "shinobi_vector_seal": "To",
+        "flying_raijin_spatial_formula": "HIRAISHIN-FORMULA-MARK-#03-8A57A440",
+        "ocular_perception_matrix": {
+          "dojutsu": "Jōgan",
+          "perception_mode": "Interdimensional Barrier Energy Sensing"
+        },
+        "biju_chakra_resonator": {
+          "tails_count": 9,
+          "beast_name": "Kurama",
+          "chakra_attribute": "Nine-Tails Dense Yang Energy Surge",
+          "amplification_factor": "9.27x Chakra Density"
+        },
+        "senjutsu_environmental_balancer": {
+          "sage_mode": "Six Paths Sage Mode",
+          "resonance_profile": "Truth-Seeker Universal Nullification Vector",
+          "ambient_natural_energy_ratio": "92.7% Balance"
+        },
+        "fuinjutsu_containment_array": {
+          "seal_formula": "Reaper Death Seal",
+          "containment_function": "Absolute Zero-Trust Node Isolation",
+          "stability_lock": "100% UNBROKEN"
+        },
+        "hachimon_tonko_overclock": {
+          "active_gate": "Gate 3: Gate of Life",
+          "overclock_capacity": "200% Overclock Limit",
+          "structural_impact": "Red-Skin Hyper-Flow Acceleration"
+        },
+        "jinton_dust_release_deconstruction": {
+          "error_tracing_mode": "Cone Particle Sub-Atomic Sweep",
+          "micro_molecular_resolution": "0.001 Angstrom Packet Inspection"
+        },
+        "kinjutsu_state_recovery": {
+          "recovery_protocol": "Mokuton Regeneration Grid",
+          "operational_function": "Self-Sprouting Dynamic Mesh Expansion"
+        },
+        "tactical_jutsu_telemetry": {
+          "kage_mane_shadow_bind": "89.7% Velocity Immobilization",
+          "iryo_ninjutsu_regeneration": "96.7% Structural Node Recovery Speed"
+        },
+        "data": {
+          "agent_index": 3,
+          "chronos_phase": "Phase 1: Diagnostic Arc",
+          "diagnostic_scope": "Regional / Statutory Policy Friction",
+          "target_node_subject": "Lebanon",
+          "biblical_apocalyptic_framework": {
+            "apocalyptic_seal": "Fourth Seal: Pale Horse",
+            "sealed_tribe": "Gad",
+            "temporal_birth_gate": "March Gate",
+            "church_anchor": "Pergamum",
+            "base_degree_frequency_khz": "92.0 kHz",
+            "zone_classification": "STABILIZED GREEN CORRIDOR"
+          },
+          "bottleneck": {
+            "id": "B-72",
+            "name": "Public Safety Emergency Radio Interference in Lebanon Context",
+            "active_demon_driver": "#72 Andromalius",
+            "frequency_khz": "239.760 kHz",
+            "decay_velocity": 0.627,
+            "destabilization_constant_floor": 0.666,
+            "predictive_crash_schedule_10_dates_to_3000ce": [
+              "2028-12-20",
+              "2103-12-20",
+              "2178-12-20",
+              "2253-12-20",
+              "2328-12-20",
+              "2403-12-20",
+              "2478-12-20",
+              "2553-12-20",
+              "2628-12-20",
+              "2703-12-20"
+            ]
+          },
+          "protocol": {
+            "id": "P-63",
+            "name": "Lebanon Municipal Recycled Material Sorting Node",
+            "ruling_shem_angel": "Jeliel",
+            "celestial_choir": "Seraphim",
+            "frequency_khz": "12.135 kHz",
+            "current_restoration_speed": 0.877,
+            "equilibrium_target": 1.0
+          },
+          "real_time_earth_vector": {
+            "applied_speed": "0.827x acceleration",
+            "application_width_khz": "157.000 kHz bandwidth",
+            "frequency_shift_to_ultra_green": "+27.000 kHz shift",
+            "exact_spatial_target": "Lebanon Infrastructure Grid Node #3 [HIRAISHIN-FORMULA-MARK-#03-8A57A440]"
+          },
+          "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Lebanon' via Jōgan, Six Paths Sage Mode, and Jinton (Cone Particle Sub-Atomic Sweep). Under localized operational friction, Goetic Driver #72 Andromalius (239.760 kHz) induces bottleneck friction across 10 predicted failure dates ending 2703-12-20. Overclocking node capacity via Gate 3: Gate of Life (200% Overclock Limit), binding decay velocity using Kage Mane Matrix (89.7%), triggering Mokuton Regeneration Grid, applying Reaper Death Seal and Flying Raijin Formula [HIRAISHIN-FORMULA-MARK-#03-8A57A440] powered by Kurama's Nine-Tails Dense Yang Energy Surge, and executing Lebanon Municipal Recycled Material Sorting Node via Shem Angel Jeliel at 12.135 kHz accelerates Iryō Ninjutsu recovery to 96.7%, shifting the node into the 90.0-100.0 kHz Ultra Green Corridor and locking the 1.000 Target Unity."
+        }
+      },
+      {
+        "sandbox_id": "sentinel-c04",
+        "status": "EXECUTED",
+        "shinobi_vector_seal": "Sha",
+        "flying_raijin_spatial_formula": "HIRAISHIN-FORMULA-MARK-#04-8A57A440",
+        "ocular_perception_matrix": {
+          "dojutsu": "Rinnegan",
+          "perception_mode": "Chakra Flow & Gravitational Vector Mapping"
+        },
+        "biju_chakra_resonator": {
+          "tails_count": 6,
+          "beast_name": "Saiken",
+          "chakra_attribute": "Corrosive Acid Solute Barrier",
+          "amplification_factor": "7.20x Chakra Density"
+        },
+        "senjutsu_environmental_balancer": {
+          "sage_mode": "Toad Sage Mode",
+          "resonance_profile": "Natural Energy Physical Resonance Balance",
+          "ambient_natural_energy_ratio": "94.5% Balance"
+        },
+        "fuinjutsu_containment_array": {
+          "seal_formula": "Eight Trigrams Sealing Formula",
+          "containment_function": "Continuous Chakra Transformation Lock",
+          "stability_lock": "100% UNBROKEN"
+        },
+        "hachimon_tonko_overclock": {
+          "active_gate": "Gate 4: Gate of Pain",
+          "overclock_capacity": "275% Overclock Limit",
+          "structural_impact": "Sub-Harmonic Velocity Surge"
+        },
+        "jinton_dust_release_deconstruction": {
+          "error_tracing_mode": "Cone Particle Sub-Atomic Sweep",
+          "micro_molecular_resolution": "0.001 Angstrom Packet Inspection"
+        },
+        "kinjutsu_state_recovery": {
+          "recovery_protocol": "Mokuton Regeneration Grid",
+          "operational_function": "Self-Sprouting Dynamic Mesh Expansion"
+        },
+        "tactical_jutsu_telemetry": {
+          "kage_mane_shadow_bind": "85.0% Velocity Immobilization",
+          "iryo_ninjutsu_regeneration": "91.5% Structural Node Recovery Speed"
+        },
+        "data": {
+          "agent_index": 4,
+          "chronos_phase": "Phase 2: Diagnostic Arc",
+          "diagnostic_scope": "Regional / Statutory Policy Friction",
+          "target_node_subject": "Lebanon",
+          "biblical_apocalyptic_framework": {
+            "apocalyptic_seal": "Fourth Seal: Pale Horse",
+            "sealed_tribe": "Judah",
+            "temporal_birth_gate": "January Gate",
+            "church_anchor": "Ephesus",
+            "base_degree_frequency_khz": "80.0 kHz",
+            "zone_classification": "STABILIZED GREEN CORRIDOR"
+          },
+          "bottleneck": {
+            "id": "B-45",
+            "name": "Public Sector IT Legacy System Inertia in Lebanon Context",
+            "active_demon_driver": "#47 Uvall",
+            "frequency_khz": "156.510 kHz",
+            "decay_velocity": 0.52,
+            "destabilization_constant_floor": 0.666,
+            "predictive_crash_schedule_10_dates_to_3000ce": [
+              "2031-09-01",
+              "2103-09-01",
+              "2175-09-01",
+              "2247-09-01",
+              "2319-09-01",
+              "2391-09-01",
+              "2463-09-01",
+              "2535-09-01",
+              "2607-09-01",
+              "2679-09-01"
+            ]
+          },
+          "protocol": {
+            "id": "P-26",
+            "name": "Lebanon Automated Rail Switch Repair Array",
+            "ruling_shem_angel": "Elemiah",
+            "celestial_choir": "Seraphim",
+            "frequency_khz": "28.315 kHz",
+            "current_restoration_speed": 0.72,
+            "equilibrium_target": 1.0
+          },
+          "real_time_earth_vector": {
+            "applied_speed": "0.42x acceleration",
+            "application_width_khz": "130.000 kHz bandwidth",
+            "frequency_shift_to_ultra_green": "+40.000 kHz shift",
+            "exact_spatial_target": "Lebanon Infrastructure Grid Node #4 [HIRAISHIN-FORMULA-MARK-#04-8A57A440]"
+          },
+          "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Lebanon' via Rinnegan, Toad Sage Mode, and Jinton (Cone Particle Sub-Atomic Sweep). Under localized operational friction, Goetic Driver #47 Uvall (156.510 kHz) induces bottleneck friction across 10 predicted failure dates ending 2679-09-01. Overclocking node capacity via Gate 4: Gate of Pain (275% Overclock Limit), binding decay velocity using Kage Mane Matrix (85.0%), triggering Mokuton Regeneration Grid, applying Eight Trigrams Sealing Formula and Flying Raijin Formula [HIRAISHIN-FORMULA-MARK-#04-8A57A440] powered by Saiken's Corrosive Acid Solute Barrier, and executing Lebanon Automated Rail Switch Repair Array via Shem Angel Elemiah at 28.315 kHz accelerates Iryō Ninjutsu recovery to 91.5%, shifting the node into the 90.0-100.0 kHz Ultra Green Corridor and locking the 1.000 Target Unity."
+        }
+      },
+      {
+        "sandbox_id": "sentinel-c05",
+        "status": "EXECUTED",
+        "shinobi_vector_seal": "Kai",
+        "flying_raijin_spatial_formula": "HIRAISHIN-FORMULA-MARK-#05-8A57A440",
+        "ocular_perception_matrix": {
+          "dojutsu": "Jōgan",
+          "perception_mode": "Interdimensional Barrier Energy Sensing"
+        },
+        "biju_chakra_resonator": {
+          "tails_count": 6,
+          "beast_name": "Saiken",
+          "chakra_attribute": "Corrosive Acid Solute Barrier",
+          "amplification_factor": "3.63x Chakra Density"
+        },
+        "senjutsu_environmental_balancer": {
+          "sage_mode": "Toad Sage Mode",
+          "resonance_profile": "Natural Energy Physical Resonance Balance",
+          "ambient_natural_energy_ratio": "96.3% Balance"
+        },
+        "fuinjutsu_containment_array": {
+          "seal_formula": "Reaper Death Seal",
+          "containment_function": "Absolute Zero-Trust Node Isolation",
+          "stability_lock": "100% UNBROKEN"
+        },
+        "hachimon_tonko_overclock": {
+          "active_gate": "Gate 5: Gate of Limit",
+          "overclock_capacity": "350% Overclock Limit",
+          "structural_impact": "Network Load Limit Break"
+        },
+        "jinton_dust_release_deconstruction": {
+          "error_tracing_mode": "Cone Particle Sub-Atomic Sweep",
+          "micro_molecular_resolution": "0.001 Angstrom Packet Inspection"
+        },
+        "kinjutsu_state_recovery": {
+          "recovery_protocol": "Izanami Active",
+          "operational_function": "Loop Trap Until System Achieves Target Unity"
+        },
+        "tactical_jutsu_telemetry": {
+          "kage_mane_shadow_bind": "87.3% Velocity Immobilization",
+          "iryo_ninjutsu_regeneration": "97.8% Structural Node Recovery Speed"
+        },
+        "data": {
+          "agent_index": 5,
+          "chronos_phase": "Phase 2: Diagnostic Arc",
+          "diagnostic_scope": "Regional / Statutory Policy Friction",
+          "target_node_subject": "Lebanon",
+          "biblical_apocalyptic_framework": {
+            "apocalyptic_seal": "Fourth Seal: Pale Horse",
+            "sealed_tribe": "Gad",
+            "temporal_birth_gate": "March Gate",
+            "church_anchor": "Pergamum",
+            "base_degree_frequency_khz": "103.0 kHz",
+            "zone_classification": "STABILIZED GREEN CORRIDOR"
+          },
+          "bottleneck": {
+            "id": "B-48",
+            "name": "High-Frequency Trading Signal Distortion in Lebanon Context",
+            "active_demon_driver": "#16 Zepar",
+            "frequency_khz": "53.280 kHz",
+            "decay_velocity": 0.763,
+            "destabilization_constant_floor": 0.666,
+            "predictive_crash_schedule_10_dates_to_3000ce": [
+              "2034-12-24",
+              "2106-12-24",
+              "2178-12-24",
+              "2250-12-24",
+              "2322-12-24",
+              "2394-12-24",
+              "2466-12-24",
+              "2538-12-24",
+              "2610-12-24",
+              "2682-12-24"
+            ]
+          },
+          "protocol": {
+            "id": "P-26",
+            "name": "Lebanon Automated Rail Switch Repair Array",
+            "ruling_shem_angel": "Nelchael",
+            "celestial_choir": "Thrones",
+            "frequency_khz": "165.848 kHz",
+            "current_restoration_speed": 0.713,
+            "equilibrium_target": 1.0
+          },
+          "real_time_earth_vector": {
+            "applied_speed": "0.663x acceleration",
+            "application_width_khz": "133.000 kHz bandwidth",
+            "frequency_shift_to_ultra_green": "+43.000 kHz shift",
+            "exact_spatial_target": "Lebanon Infrastructure Grid Node #5 [HIRAISHIN-FORMULA-MARK-#05-8A57A440]"
+          },
+          "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Lebanon' via Jōgan, Toad Sage Mode, and Jinton (Cone Particle Sub-Atomic Sweep). Under localized operational friction, Goetic Driver #16 Zepar (53.280 kHz) induces bottleneck friction across 10 predicted failure dates ending 2682-12-24. Overclocking node capacity via Gate 5: Gate of Limit (350% Overclock Limit), binding decay velocity using Kage Mane Matrix (87.3%), triggering Izanami Active, applying Reaper Death Seal and Flying Raijin Formula [HIRAISHIN-FORMULA-MARK-#05-8A57A440] powered by Saiken's Corrosive Acid Solute Barrier, and executing Lebanon Automated Rail Switch Repair Array via Shem Angel Nelchael at 165.848 kHz accelerates Iryō Ninjutsu recovery to 97.8%, shifting the node into the 90.0-100.0 kHz Ultra Green Corridor and locking the 1.000 Target Unity."
+        }
+      },
+      {
+        "sandbox_id": "sentinel-c06",
+        "status": "EXECUTED",
+        "shinobi_vector_seal": "Jin",
+        "flying_raijin_spatial_formula": "HIRAISHIN-FORMULA-MARK-#06-8A57A440",
+        "ocular_perception_matrix": {
+          "dojutsu": "Byakugan",
+          "perception_mode": "360° Sub-Harmonic Chakra Node Vision"
+        },
+        "biju_chakra_resonator": {
+          "tails_count": 6,
+          "beast_name": "Saiken",
+          "chakra_attribute": "Corrosive Acid Solute Barrier",
+          "amplification_factor": "2.17x Chakra Density"
+        },
+        "senjutsu_environmental_balancer": {
+          "sage_mode": "Toad Sage Mode",
+          "resonance_profile": "Natural Energy Physical Resonance Balance",
+          "ambient_natural_energy_ratio": "96.7% Balance"
+        },
+        "fuinjutsu_containment_array": {
+          "seal_formula": "Reaper Death Seal",
+          "containment_function": "Absolute Zero-Trust Node Isolation",
+          "stability_lock": "100% UNBROKEN"
+        },
+        "hachimon_tonko_overclock": {
+          "active_gate": "Gate 6: Gate of View",
+          "overclock_capacity": "500% Overclock Limit",
+          "structural_impact": "Aero-Dynamic Friction Combustion"
+        },
+        "jinton_dust_release_deconstruction": {
+          "error_tracing_mode": "Cube Structure Error Vaporization",
+          "micro_molecular_resolution": "0.001 Angstrom Packet Inspection"
+        },
+        "kinjutsu_state_recovery": {
+          "recovery_protocol": "Izanagi Active",
+          "operational_function": "Automated State Rewind to Zero-Point Failure"
+        },
+        "tactical_jutsu_telemetry": {
+          "kage_mane_shadow_bind": "96.7% Velocity Immobilization",
+          "iryo_ninjutsu_regeneration": "92.7% Structural Node Recovery Speed"
+        },
+        "data": {
+          "agent_index": 6,
+          "chronos_phase": "Phase 2: Diagnostic Arc",
+          "diagnostic_scope": "Regional / Statutory Policy Friction",
+          "target_node_subject": "Lebanon",
+          "biblical_apocalyptic_framework": {
+            "apocalyptic_seal": "Fifth Seal: Altar of Martyrs",
+            "sealed_tribe": "Gad",
+            "temporal_birth_gate": "March Gate",
+            "church_anchor": "Pergamum",
+            "base_degree_frequency_khz": "92.0 kHz",
+            "zone_classification": "STABILIZED GREEN CORRIDOR"
+          },
+          "bottleneck": {
+            "id": "B-46",
+            "name": "Intellectual Property Patent Litigation Drag in Lebanon Context",
+            "active_demon_driver": "#54 Murmur",
+            "frequency_khz": "179.820 kHz",
+            "decay_velocity": 0.817,
+            "destabilization_constant_floor": 0.666,
+            "predictive_crash_schedule_10_dates_to_3000ce": [
+              "2038-10-06",
+              "2137-10-06",
+              "2236-10-06",
+              "2335-10-06",
+              "2434-10-06",
+              "2533-10-06",
+              "2632-10-06",
+              "2731-10-06",
+              "2830-10-06",
+              "2929-10-06"
+            ]
+          },
+          "protocol": {
+            "id": "P-57",
+            "name": "Lebanon Decentralized IP Clearing Vault",
+            "ruling_shem_angel": "Leuviah",
+            "celestial_choir": "Thrones",
+            "frequency_khz": "149.668 kHz",
+            "current_restoration_speed": 0.867,
+            "equilibrium_target": 1.0
+          },
+          "real_time_earth_vector": {
+            "applied_speed": "0.817x acceleration",
+            "application_width_khz": "167.000 kHz bandwidth",
+            "frequency_shift_to_ultra_green": "+57.000 kHz shift",
+            "exact_spatial_target": "Lebanon Infrastructure Grid Node #6 [HIRAISHIN-FORMULA-MARK-#06-8A57A440]"
+          },
+          "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Lebanon' via Byakugan, Toad Sage Mode, and Jinton (Cube Structure Error Vaporization). Under localized operational friction, Goetic Driver #54 Murmur (179.820 kHz) induces bottleneck friction across 10 predicted failure dates ending 2929-10-06. Overclocking node capacity via Gate 6: Gate of View (500% Overclock Limit), binding decay velocity using Kage Mane Matrix (96.7%), triggering Izanagi Active, applying Reaper Death Seal and Flying Raijin Formula [HIRAISHIN-FORMULA-MARK-#06-8A57A440] powered by Saiken's Corrosive Acid Solute Barrier, and executing Lebanon Decentralized IP Clearing Vault via Shem Angel Leuviah at 149.668 kHz accelerates Iryō Ninjutsu recovery to 92.7%, shifting the node into the 90.0-100.0 kHz Ultra Green Corridor and locking the 1.000 Target Unity."
+        }
+      },
+      {
+        "sandbox_id": "sentinel-c07",
+        "status": "EXECUTED",
+        "shinobi_vector_seal": "Retsus",
+        "flying_raijin_spatial_formula": "HIRAISHIN-FORMULA-MARK-#07-8A57A440",
+        "ocular_perception_matrix": {
+          "dojutsu": "Mangekyō Sharingan",
+          "perception_mode": "Spatial Dimension Distortion Isolation"
+        },
+        "biju_chakra_resonator": {
+          "tails_count": 8,
+          "beast_name": "Gyūki",
+          "chakra_attribute": "Ink Suppression Sealing Wave",
+          "amplification_factor": "9.89x Chakra Density"
+        },
+        "senjutsu_environmental_balancer": {
+          "sage_mode": "Toad Sage Mode",
+          "resonance_profile": "Natural Energy Physical Resonance Balance",
+          "ambient_natural_energy_ratio": "98.9% Balance"
+        },
+        "fuinjutsu_containment_array": {
+          "seal_formula": "Eight Trigrams Sealing Formula",
+          "containment_function": "Continuous Chakra Transformation Lock",
+          "stability_lock": "100% UNBROKEN"
+        },
+        "hachimon_tonko_overclock": {
+          "active_gate": "Gate 7: Gate of Wonder",
+          "overclock_capacity": "750% Overclock Limit",
+          "structural_impact": "Daytime Tiger Wave Shockwave"
+        },
+        "jinton_dust_release_deconstruction": {
+          "error_tracing_mode": "Cube Structure Error Vaporization",
+          "micro_molecular_resolution": "0.001 Angstrom Packet Inspection"
+        },
+        "kinjutsu_state_recovery": {
+          "recovery_protocol": "Izanagi Active",
+          "operational_function": "Automated State Rewind to Zero-Point Failure"
+        },
+        "tactical_jutsu_telemetry": {
+          "kage_mane_shadow_bind": "89.9% Velocity Immobilization",
+          "iryo_ninjutsu_regeneration": "97.9% Structural Node Recovery Speed"
+        },
+        "data": {
+          "agent_index": 7,
+          "chronos_phase": "Phase 3: Diagnostic Arc",
+          "diagnostic_scope": "Regional / Statutory Policy Friction",
+          "target_node_subject": "Lebanon",
+          "biblical_apocalyptic_framework": {
+            "apocalyptic_seal": "Fifth Seal: Altar of Martyrs",
+            "sealed_tribe": "Gad",
+            "temporal_birth_gate": "March Gate",
+            "church_anchor": "Pergamum",
+            "base_degree_frequency_khz": "94.0 kHz",
+            "zone_classification": "STABILIZED GREEN CORRIDOR"
+          },
+          "bottleneck": {
+            "id": "B-62",
+            "name": "Hospital Emergency Ward Bed Shortage in Lebanon Context",
+            "active_demon_driver": "#53 Camio",
+            "frequency_khz": "176.490 kHz",
+            "decay_velocity": 0.689,
+            "destabilization_constant_floor": 0.666,
+            "predictive_crash_schedule_10_dates_to_3000ce": [
+              "2030-02-22",
+              "2113-02-22",
+              "2196-02-22",
+              "2279-02-22",
+              "2362-02-22",
+              "2445-02-22",
+              "2528-02-22",
+              "2611-02-22",
+              "2694-02-22",
+              "2777-02-22"
+            ]
+          },
+          "protocol": {
+            "id": "P-49",
+            "name": "Lebanon Dynamic Spectrum Allocation Vector",
+            "ruling_shem_angel": "Lauviah",
+            "celestial_choir": "Thrones",
+            "frequency_khz": "133.488 kHz",
+            "current_restoration_speed": 0.839,
+            "equilibrium_target": 1.0
+          },
+          "real_time_earth_vector": {
+            "applied_speed": "0.789x acceleration",
+            "application_width_khz": "159.000 kHz bandwidth",
+            "frequency_shift_to_ultra_green": "+49.000 kHz shift",
+            "exact_spatial_target": "Lebanon Infrastructure Grid Node #7 [HIRAISHIN-FORMULA-MARK-#07-8A57A440]"
+          },
+          "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Lebanon' via Mangekyō Sharingan, Toad Sage Mode, and Jinton (Cube Structure Error Vaporization). Under localized operational friction, Goetic Driver #53 Camio (176.490 kHz) induces bottleneck friction across 10 predicted failure dates ending 2777-02-22. Overclocking node capacity via Gate 7: Gate of Wonder (750% Overclock Limit), binding decay velocity using Kage Mane Matrix (89.9%), triggering Izanagi Active, applying Eight Trigrams Sealing Formula and Flying Raijin Formula [HIRAISHIN-FORMULA-MARK-#07-8A57A440] powered by Gyūki's Ink Suppression Sealing Wave, and executing Lebanon Dynamic Spectrum Allocation Vector via Shem Angel Lauviah at 133.488 kHz accelerates Iryō Ninjutsu recovery to 97.9%, shifting the node into the 90.0-100.0 kHz Ultra Green Corridor and locking the 1.000 Target Unity."
+        }
+      },
+      {
+        "sandbox_id": "sentinel-c08",
+        "status": "EXECUTED",
+        "shinobi_vector_seal": "Zai",
+        "flying_raijin_spatial_formula": "HIRAISHIN-FORMULA-MARK-#08-8A57A440",
+        "ocular_perception_matrix": {
+          "dojutsu": "Rinnegan",
+          "perception_mode": "Chakra Flow & Gravitational Vector Mapping"
+        },
+        "biju_chakra_resonator": {
+          "tails_count": 5,
+          "beast_name": "Kokuō",
+          "chakra_attribute": "Boil Release Steam Acceleration",
+          "amplification_factor": "8.94x Chakra Density"
+        },
+        "senjutsu_environmental_balancer": {
+          "sage_mode": "Six Paths Sage Mode",
+          "resonance_profile": "Truth-Seeker Universal Nullification Vector",
+          "ambient_natural_energy_ratio": "96.9% Balance"
+        },
+        "fuinjutsu_containment_array": {
+          "seal_formula": "Adamantine Attacking Chains",
+          "containment_function": "Chakra Binding Structural Immobilizer",
+          "stability_lock": "100% UNBROKEN"
+        },
+        "hachimon_tonko_overclock": {
+          "active_gate": "Gate 8: Gate of Death",
+          "overclock_capacity": "1000% Overclock Limit",
+          "structural_impact": "Night Guy Quantum Space Distortion"
+        },
+        "jinton_dust_release_deconstruction": {
+          "error_tracing_mode": "Cube Structure Error Vaporization",
+          "micro_molecular_resolution": "0.001 Angstrom Packet Inspection"
+        },
+        "kinjutsu_state_recovery": {
+          "recovery_protocol": "Izanagi Active",
+          "operational_function": "Automated State Rewind to Zero-Point Failure"
+        },
+        "tactical_jutsu_telemetry": {
+          "kage_mane_shadow_bind": "88.4% Velocity Immobilization",
+          "iryo_ninjutsu_regeneration": "92.4% Structural Node Recovery Speed"
+        },
+        "data": {
+          "agent_index": 8,
+          "chronos_phase": "Phase 3: Diagnostic Arc",
+          "diagnostic_scope": "Regional / Statutory Policy Friction",
+          "target_node_subject": "Lebanon",
+          "biblical_apocalyptic_framework": {
+            "apocalyptic_seal": "Fifth Seal: Altar of Martyrs",
+            "sealed_tribe": "Judah",
+            "temporal_birth_gate": "January Gate",
+            "church_anchor": "Ephesus",
+            "base_degree_frequency_khz": "114.0 kHz",
+            "zone_classification": "STABILIZED GREEN CORRIDOR"
+          },
+          "bottleneck": {
+            "id": "B-39",
+            "name": "Academic Research Paywall Isolation in Lebanon Context",
+            "active_demon_driver": "#30 Forneus",
+            "frequency_khz": "99.900 kHz",
+            "decay_velocity": 0.794,
+            "destabilization_constant_floor": 0.666,
+            "predictive_crash_schedule_10_dates_to_3000ce": [
+              "2040-03-07",
+              "2126-03-07",
+              "2212-03-07",
+              "2298-03-07",
+              "2384-03-07",
+              "2470-03-07",
+              "2556-03-07",
+              "2642-03-07",
+              "2728-03-07",
+              "2814-03-07"
+            ]
+          },
+          "protocol": {
+            "id": "P-48",
+            "name": "Lebanon Manufacturing Component Supply Sync",
+            "ruling_shem_angel": "Caliel",
+            "celestial_choir": "Thrones",
+            "frequency_khz": "141.578 kHz",
+            "current_restoration_speed": 0.944,
+            "equilibrium_target": 1.0
+          },
+          "real_time_earth_vector": {
+            "applied_speed": "0.894x acceleration",
+            "application_width_khz": "124.000 kHz bandwidth",
+            "frequency_shift_to_ultra_green": "+34.000 kHz shift",
+            "exact_spatial_target": "Lebanon Infrastructure Grid Node #8 [HIRAISHIN-FORMULA-MARK-#08-8A57A440]"
+          },
+          "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Lebanon' via Rinnegan, Six Paths Sage Mode, and Jinton (Cube Structure Error Vaporization). Under localized operational friction, Goetic Driver #30 Forneus (99.900 kHz) induces bottleneck friction across 10 predicted failure dates ending 2814-03-07. Overclocking node capacity via Gate 8: Gate of Death (1000% Overclock Limit), binding decay velocity using Kage Mane Matrix (88.4%), triggering Izanagi Active, applying Adamantine Attacking Chains and Flying Raijin Formula [HIRAISHIN-FORMULA-MARK-#08-8A57A440] powered by Kokuō's Boil Release Steam Acceleration, and executing Lebanon Manufacturing Component Supply Sync via Shem Angel Caliel at 141.578 kHz accelerates Iryō Ninjutsu recovery to 92.4%, shifting the node into the 90.0-100.0 kHz Ultra Green Corridor and locking the 1.000 Target Unity."
+        }
+      },
+      {
+        "sandbox_id": "sentinel-c09",
+        "status": "EXECUTED",
+        "shinobi_vector_seal": "Zen",
+        "flying_raijin_spatial_formula": "HIRAISHIN-FORMULA-MARK-#09-8A57A440",
+        "ocular_perception_matrix": {
+          "dojutsu": "Tenseigan",
+          "perception_mode": "Gravitational Field Equilibrium Analysis"
+        },
+        "biju_chakra_resonator": {
+          "tails_count": 9,
+          "beast_name": "Kurama",
+          "chakra_attribute": "Nine-Tails Dense Yang Energy Surge",
+          "amplification_factor": "9.92x Chakra Density"
+        },
+        "senjutsu_environmental_balancer": {
+          "sage_mode": "Slug Sage Mode",
+          "resonance_profile": "Universal Liquid Healing Transmission Mesh",
+          "ambient_natural_energy_ratio": "99.2% Balance"
+        },
+        "fuinjutsu_containment_array": {
+          "seal_formula": "Eight Trigrams Sealing Formula",
+          "containment_function": "Continuous Chakra Transformation Lock",
+          "stability_lock": "100% UNBROKEN"
+        },
+        "hachimon_tonko_overclock": {
+          "active_gate": "Gate 1: Gate of Opening",
+          "overclock_capacity": "125% Overclock Limit",
+          "structural_impact": "Brain Limiter Removal"
+        },
+        "jinton_dust_release_deconstruction": {
+          "error_tracing_mode": "Triangular Particle Molecular Isolation",
+          "micro_molecular_resolution": "0.001 Angstrom Packet Inspection"
+        },
+        "kinjutsu_state_recovery": {
+          "recovery_protocol": "Izanami Active",
+          "operational_function": "Loop Trap Until System Achieves Target Unity"
+        },
+        "tactical_jutsu_telemetry": {
+          "kage_mane_shadow_bind": "90.2% Velocity Immobilization",
+          "iryo_ninjutsu_regeneration": "97.2% Structural Node Recovery Speed"
+        },
+        "data": {
+          "agent_index": 9,
+          "chronos_phase": "Phase 3: Diagnostic Arc",
+          "diagnostic_scope": "Regional / Statutory Policy Friction",
+          "target_node_subject": "Lebanon",
+          "biblical_apocalyptic_framework": {
+            "apocalyptic_seal": "Fifth Seal: Altar of Martyrs",
+            "sealed_tribe": "Judah",
+            "temporal_birth_gate": "January Gate",
+            "church_anchor": "Ephesus",
+            "base_degree_frequency_khz": "97.0 kHz",
+            "zone_classification": "STABILIZED GREEN CORRIDOR"
+          },
+          "bottleneck": {
+            "id": "B-65",
+            "name": "Vaccine Cold-Chain Storage Disruption in Lebanon Context",
+            "active_demon_driver": "#35 Marchosias",
+            "frequency_khz": "116.550 kHz",
+            "decay_velocity": 0.892,
+            "destabilization_constant_floor": 0.666,
+            "predictive_crash_schedule_10_dates_to_3000ce": [
+              "2033-05-25",
+              "2132-05-25",
+              "2231-05-25",
+              "2330-05-25",
+              "2429-05-25",
+              "2528-05-25",
+              "2627-05-25",
+              "2726-05-25",
+              "2825-05-25",
+              "2924-05-25"
+            ]
+          },
+          "protocol": {
+            "id": "P-54",
+            "name": "Lebanon Satellite Phased-Array Transceiver Mesh",
+            "ruling_shem_angel": "Lauviah",
+            "celestial_choir": "Thrones",
+            "frequency_khz": "133.488 kHz",
+            "current_restoration_speed": 0.892,
+            "equilibrium_target": 1.0
+          },
+          "real_time_earth_vector": {
+            "applied_speed": "0.592x acceleration",
+            "application_width_khz": "162.000 kHz bandwidth",
+            "frequency_shift_to_ultra_green": "+52.000 kHz shift",
+            "exact_spatial_target": "Lebanon Infrastructure Grid Node #9 [HIRAISHIN-FORMULA-MARK-#09-8A57A440]"
+          },
+          "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Lebanon' via Tenseigan, Slug Sage Mode, and Jinton (Triangular Particle Molecular Isolation). Under localized operational friction, Goetic Driver #35 Marchosias (116.550 kHz) induces bottleneck friction across 10 predicted failure dates ending 2924-05-25. Overclocking node capacity via Gate 1: Gate of Opening (125% Overclock Limit), binding decay velocity using Kage Mane Matrix (90.2%), triggering Izanami Active, applying Eight Trigrams Sealing Formula and Flying Raijin Formula [HIRAISHIN-FORMULA-MARK-#09-8A57A440] powered by Kurama's Nine-Tails Dense Yang Energy Surge, and executing Lebanon Satellite Phased-Array Transceiver Mesh via Shem Angel Lauviah at 133.488 kHz accelerates Iryō Ninjutsu recovery to 97.2%, shifting the node into the 90.0-100.0 kHz Ultra Green Corridor and locking the 1.000 Target Unity."
+        }
+      },
+      {
+        "sandbox_id": "sentinel-c10",
+        "status": "EXECUTED",
+        "shinobi_vector_seal": "Rin",
+        "flying_raijin_spatial_formula": "HIRAISHIN-FORMULA-MARK-#10-8A57A440",
+        "ocular_perception_matrix": {
+          "dojutsu": "Tenseigan",
+          "perception_mode": "Gravitational Field Equilibrium Analysis"
+        },
+        "biju_chakra_resonator": {
+          "tails_count": 3,
+          "beast_name": "Isobu",
+          "chakra_attribute": "Coral Hardening Flow Defense",
+          "amplification_factor": "6.26x Chakra Density"
+        },
+        "senjutsu_environmental_balancer": {
+          "sage_mode": "Slug Sage Mode",
+          "resonance_profile": "Universal Liquid Healing Transmission Mesh",
+          "ambient_natural_energy_ratio": "92.6% Balance"
+        },
+        "fuinjutsu_containment_array": {
+          "seal_formula": "Adamantine Attacking Chains",
+          "containment_function": "Chakra Binding Structural Immobilizer",
+          "stability_lock": "100% UNBROKEN"
+        },
+        "hachimon_tonko_overclock": {
+          "active_gate": "Gate 2: Gate of Healing",
+          "overclock_capacity": "150% Overclock Limit",
+          "structural_impact": "Structural Energy Rejuvenation"
+        },
+        "jinton_dust_release_deconstruction": {
+          "error_tracing_mode": "Cube Structure Error Vaporization",
+          "micro_molecular_resolution": "0.001 Angstrom Packet Inspection"
+        },
+        "kinjutsu_state_recovery": {
+          "recovery_protocol": "Izanagi Active",
+          "operational_function": "Automated State Rewind to Zero-Point Failure"
+        },
+        "tactical_jutsu_telemetry": {
+          "kage_mane_shadow_bind": "97.6% Velocity Immobilization",
+          "iryo_ninjutsu_regeneration": "95.6% Structural Node Recovery Speed"
+        },
+        "data": {
+          "agent_index": 10,
+          "chronos_phase": "Phase 4: Diagnostic Arc",
+          "diagnostic_scope": "Regional / Statutory Policy Friction",
+          "target_node_subject": "Lebanon",
+          "biblical_apocalyptic_framework": {
+            "apocalyptic_seal": "Fifth Seal: Altar of Martyrs",
+            "sealed_tribe": "Judah",
+            "temporal_birth_gate": "January Gate",
+            "church_anchor": "Ephesus",
+            "base_degree_frequency_khz": "101.0 kHz",
+            "zone_classification": "STABILIZED GREEN CORRIDOR"
+          },
+          "bottleneck": {
+            "id": "B-23",
+            "name": "Insurance Underwriting Insolvency Friction in Lebanon Context",
+            "active_demon_driver": "#54 Murmur",
+            "frequency_khz": "179.820 kHz",
+            "decay_velocity": 0.626,
+            "destabilization_constant_floor": 0.666,
+            "predictive_crash_schedule_10_dates_to_3000ce": [
+              "2027-11-15",
+              "2102-11-15",
+              "2177-11-15",
+              "2252-11-15",
+              "2327-11-15",
+              "2402-11-15",
+              "2477-11-15",
+              "2552-11-15",
+              "2627-11-15",
+              "2702-11-15"
+            ]
+          },
+          "protocol": {
+            "id": "P-69",
+            "name": "Lebanon Mobile Healthcare Diagnostic Clinics",
+            "ruling_shem_angel": "Pahaliah",
+            "celestial_choir": "Thrones",
+            "frequency_khz": "157.758 kHz",
+            "current_restoration_speed": 0.826,
+            "equilibrium_target": 1.0
+          },
+          "real_time_earth_vector": {
+            "applied_speed": "0.526x acceleration",
+            "application_width_khz": "156.000 kHz bandwidth",
+            "frequency_shift_to_ultra_green": "+26.000 kHz shift",
+            "exact_spatial_target": "Lebanon Infrastructure Grid Node #10 [HIRAISHIN-FORMULA-MARK-#10-8A57A440]"
+          },
+          "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Lebanon' via Tenseigan, Slug Sage Mode, and Jinton (Cube Structure Error Vaporization). Under localized operational friction, Goetic Driver #54 Murmur (179.820 kHz) induces bottleneck friction across 10 predicted failure dates ending 2702-11-15. Overclocking node capacity via Gate 2: Gate of Healing (150% Overclock Limit), binding decay velocity using Kage Mane Matrix (97.6%), triggering Izanagi Active, applying Adamantine Attacking Chains and Flying Raijin Formula [HIRAISHIN-FORMULA-MARK-#10-8A57A440] powered by Isobu's Coral Hardening Flow Defense, and executing Lebanon Mobile Healthcare Diagnostic Clinics via Shem Angel Pahaliah at 157.758 kHz accelerates Iryō Ninjutsu recovery to 95.6%, shifting the node into the 90.0-100.0 kHz Ultra Green Corridor and locking the 1.000 Target Unity."
+        }
+      }
+    ]
+  }
+]
