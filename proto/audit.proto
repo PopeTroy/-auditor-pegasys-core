@@ -64,4 +64,3 @@ message AuditRunPayload {
 message MasterLedger {
   repeated AuditRunPayload runs = 1;
 }
-
