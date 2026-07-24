@@ -1906,5 +1906,969 @@
         }
       }
     ]
+  },
+  {
+    "security": {
+      "session_guid": "2ee40b9d-7fdb-4f3a-aed7-c7523c0099e7",
+      "utc_timestamp": "2026-07-24T13:20:46.687000+00:00",
+      "ecta_hash": "sha256:06c36317baed68f90e3e78333082bd1f48f372bfa2548d2add0aebc7b7aa43a1",
+      "popia_status": "COMPLIANT_NO_PII_EXPOSED",
+      "physical_stability_seal": "ZERO-POINT-INTERFEROMETRY-VERIFIED",
+      "phase_locked_loop_status": "ZERO-LATENCY-NODE-ANCHORED",
+      "state_recovery_status": "ZERO-POINT-RECOVERY-ACTIVE"
+    },
+    "quantum_header": "QUANTUM-CYCLE: 059763 / 144000",
+    "quantum_cycle": 59763,
+    "mathematics": {
+      "shi": 20571.43,
+      "tti": 0.0,
+      "frequency": 144000.0,
+      "logos": 10368000,
+      "resistance": 504,
+      "constraints": 1.0,
+      "override_triggered": true
+    },
+    "chronos_sweep": [
+      {
+        "sandbox_id": "sentinel-c01",
+        "status": "EXECUTED",
+        "physical_stability_seal": "Rin (Strength)",
+        "phase_locked_loop_mark": "PLL-MARK-#01-77173ACE",
+        "cymatic_999_inversion_hz": "999.858 Hz",
+        "optical_metrology_matrix": {
+          "system": "Gravimetric Phase-Array Sensing",
+          "perception_mode": "Density Flow & Gravitational Vector Mapping"
+        },
+        "mhd_energy_amplifier": {
+          "stage": 7,
+          "system_name": "Aero-Acoustic Wave Disruptor",
+          "attribute": "Acoustic Dispersal Flight Vector",
+          "amplification_factor": "2.58x Field Density"
+        },
+        "thermodynamic_balancer": {
+          "mode": "Thermodynamic Heat Sink Balance",
+          "resonance_profile": "Natural Thermal Energy Equilibrium",
+          "ambient_thermal_balance": "93.3% Entropy Stabilization"
+        },
+        "containment_array": {
+          "seal_formula": "Cryogenic Solid-State Isolation",
+          "containment_function": "Zero-Trust Physical Node Isolation",
+          "stability_lock": "100% UNBROKEN"
+        },
+        "overclock_telemetry": {
+          "active_gate": "Overclock Stage 1: Thermal Gate Opening",
+          "overclock_capacity": "125% Overclock Capacity",
+          "structural_impact": "Safety Governor Disengagement"
+        },
+        "laser_ablation_deconstruction": {
+          "mode": "Triangular Beam Molecular Isolation",
+          "resolution": "0.001 Angstrom Sub-Atomic Material Removal"
+        },
+        "state_recovery": {
+          "protocol": "Izanagi Active (Zero-Point Rewind)",
+          "function": "Atomic Snapshot State Rollback to Pre-Failure"
+        },
+        "physical_telemetry": {
+          "anti_phase_dampening": "90.8% Friction Damping",
+          "polymer_self_healing": "98.3% Structural Repair Rate"
+        },
+        "data": {
+          "agent_index": 1,
+          "chronos_phase": "Phase 1: Diagnostic Arc",
+          "diagnostic_scope": "Regional / Statutory Policy Friction",
+          "target_node_subject": "Israel",
+          "biblical_apocalyptic_framework": {
+            "apocalyptic_seal": "Fourth Seal: Pale Horse",
+            "sealed_tribe": "Judah",
+            "temporal_birth_gate": "January Gate",
+            "church_anchor": "Ephesus",
+            "base_degree_frequency_khz": "103.0 kHz",
+            "zone_classification": "STABILIZED GREEN CORRIDOR"
+          },
+          "bottleneck": {
+            "id": "B-51",
+            "name": "Civil Service Labor Strike Inertia in Israel Context",
+            "active_demon_driver": "#4 Gamigin",
+            "frequency_khz": "13.320 kHz",
+            "decay_velocity": 0.758,
+            "destabilization_constant_floor": 0.666,
+            "predictive_crash_schedule_10_dates_to_3000ce": [
+              "2034-03-03",
+              "2116-03-03",
+              "2198-03-03",
+              "2280-03-03",
+              "2362-03-03",
+              "2444-03-03",
+              "2526-03-03",
+              "2608-03-03",
+              "2690-03-03",
+              "2772-03-03"
+            ]
+          },
+          "protocol": {
+            "id": "P-49",
+            "name": "Israel Dynamic Spectrum Allocation Vector",
+            "ruling_shem_angel": "Caliel",
+            "celestial_choir": "Thrones",
+            "frequency_khz": "141.578 kHz",
+            "current_restoration_speed": 0.808,
+            "equilibrium_target": 1.0
+          },
+          "real_time_earth_vector": {
+            "applied_speed": "0.758x acceleration",
+            "application_width_khz": "148.000 kHz bandwidth",
+            "frequency_shift_to_ultra_green": "+38.000 kHz shift",
+            "exact_spatial_target": "Israel Infrastructure Grid Node #1 [PLL-MARK-#01-77173ACE]"
+          },
+          "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Israel' via Gravimetric Phase-Array Sensing (Density Flow & Gravitational Vector Mapping) and Thermodynamic Heat Sink Balance. Under localized operational friction, Driver #4 Gamigin (13.320 kHz) induces bottleneck friction across 10 predicted failure dates ending 2772-03-03. Injecting 999.858 Hz 999 Cymatic Inversion Wave, overclocking capacity via Overclock Stage 1: Thermal Gate Opening (125% Overclock Capacity), damping decay velocity using Anti-Phase Cancellation (90.8%), triggering Izanagi Active (Zero-Point Rewind), applying Cryogenic Solid-State Isolation and Phase-Locked Loop Mark [PLL-MARK-#01-77173ACE], and executing Israel Dynamic Spectrum Allocation Vector via Shem Angel Caliel at 141.578 kHz accelerates Polymer Self-Healing to 98.3%, shifting the node into the 90.0-100.0 kHz Ultra Green Corridor and locking the 1.000 Target Unity."
+        }
+      },
+      {
+        "sandbox_id": "sentinel-c02",
+        "status": "EXECUTED",
+        "physical_stability_seal": "Pyo (Energy Flow)",
+        "phase_locked_loop_mark": "PLL-MARK-#02-77173ACE",
+        "cymatic_999_inversion_hz": "500.014 Hz",
+        "optical_metrology_matrix": {
+          "system": "Multi-Spectral Quantum Interferometry",
+          "perception_mode": "Micro-Vibration Defect Perception"
+        },
+        "mhd_energy_amplifier": {
+          "stage": 3,
+          "system_name": "Hydrodynamic Flow Cavitation Suppressor",
+          "attribute": "Cavitation Hardening Resistance Mesh",
+          "amplification_factor": "5.14x Field Density"
+        },
+        "thermodynamic_balancer": {
+          "mode": "Universal Zero-Point Energy Balance",
+          "resonance_profile": "Nullification Vector of Entropy",
+          "ambient_thermal_balance": "96.4% Entropy Stabilization"
+        },
+        "containment_array": {
+          "seal_formula": "Eight-Vector Frequency Lock",
+          "containment_function": "Continuous Field Transformation Lock",
+          "stability_lock": "100% UNBROKEN"
+        },
+        "overclock_telemetry": {
+          "active_gate": "Overclock Stage 2: Resistance Suppression",
+          "overclock_capacity": "150% Overclock Capacity",
+          "structural_impact": "Cryogenic Resistance Elimination"
+        },
+        "laser_ablation_deconstruction": {
+          "mode": "Cube Beam Sub-Atomic Vaporization",
+          "resolution": "0.001 Angstrom Sub-Atomic Material Removal"
+        },
+        "state_recovery": {
+          "protocol": "Mokuton Organic Mesh Regeneration",
+          "function": "Self-Healing Fiber-Optic & Structural Sprouting"
+        },
+        "physical_telemetry": {
+          "anti_phase_dampening": "88.4% Friction Damping",
+          "polymer_self_healing": "94.4% Structural Repair Rate"
+        },
+        "data": {
+          "agent_index": 2,
+          "chronos_phase": "Phase 1: Diagnostic Arc",
+          "diagnostic_scope": "Regional / Statutory Policy Friction",
+          "target_node_subject": "Israel",
+          "biblical_apocalyptic_framework": {
+            "apocalyptic_seal": "Fourth Seal: Pale Horse",
+            "sealed_tribe": "Judah",
+            "temporal_birth_gate": "January Gate",
+            "church_anchor": "Ephesus",
+            "base_degree_frequency_khz": "114.0 kHz",
+            "zone_classification": "STABILIZED GREEN CORRIDOR"
+          },
+          "bottleneck": {
+            "id": "B-19",
+            "name": "Capital Outflow Capital Flight Friction in Israel Context",
+            "active_demon_driver": "#69 Decarabia",
+            "frequency_khz": "229.770 kHz",
+            "decay_velocity": 0.814,
+            "destabilization_constant_floor": 0.666,
+            "predictive_crash_schedule_10_dates_to_3000ce": [
+              "2035-07-07",
+              "2134-07-07",
+              "2233-07-07",
+              "2332-07-07",
+              "2431-07-07",
+              "2530-07-07",
+              "2629-07-07",
+              "2728-07-07",
+              "2827-07-07",
+              "2926-07-07"
+            ]
+          },
+          "protocol": {
+            "id": "P-24",
+            "name": "Israel Fast-Track Automated Housing Permit Engine",
+            "ruling_shem_angel": "Pahaliah",
+            "celestial_choir": "Thrones",
+            "frequency_khz": "157.758 kHz",
+            "current_restoration_speed": 0.714,
+            "equilibrium_target": 1.0
+          },
+          "real_time_earth_vector": {
+            "applied_speed": "0.414x acceleration",
+            "application_width_khz": "164.000 kHz bandwidth",
+            "frequency_shift_to_ultra_green": "+54.000 kHz shift",
+            "exact_spatial_target": "Israel Infrastructure Grid Node #2 [PLL-MARK-#02-77173ACE]"
+          },
+          "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Israel' via Multi-Spectral Quantum Interferometry (Micro-Vibration Defect Perception) and Universal Zero-Point Energy Balance. Under localized operational friction, Driver #69 Decarabia (229.770 kHz) induces bottleneck friction across 10 predicted failure dates ending 2926-07-07. Injecting 500.014 Hz 999 Cymatic Inversion Wave, overclocking capacity via Overclock Stage 2: Resistance Suppression (150% Overclock Capacity), damping decay velocity using Anti-Phase Cancellation (88.4%), triggering Mokuton Organic Mesh Regeneration, applying Eight-Vector Frequency Lock and Phase-Locked Loop Mark [PLL-MARK-#02-77173ACE], and executing Israel Fast-Track Automated Housing Permit Engine via Shem Angel Pahaliah at 157.758 kHz accelerates Polymer Self-Healing to 94.4%, shifting the node into the 90.0-100.0 kHz Ultra Green Corridor and locking the 1.000 Target Unity."
+        }
+      },
+      {
+        "sandbox_id": "sentinel-c03",
+        "status": "EXECUTED",
+        "physical_stability_seal": "To (Harmony)",
+        "phase_locked_loop_mark": "PLL-MARK-#03-77173ACE",
+        "cymatic_999_inversion_hz": "333.159 Hz",
+        "optical_metrology_matrix": {
+          "system": "Infrared Phase Interferometry",
+          "perception_mode": "Interfacial Barrier Energy Leak Sensing"
+        },
+        "mhd_energy_amplifier": {
+          "stage": 3,
+          "system_name": "Hydrodynamic Flow Cavitation Suppressor",
+          "attribute": "Cavitation Hardening Resistance Mesh",
+          "amplification_factor": "1.59x Field Density"
+        },
+        "thermodynamic_balancer": {
+          "mode": "Hydro-Acoustic Liquid Transmission",
+          "resonance_profile": "Fluid Mass Regeneration Transmission",
+          "ambient_thermal_balance": "98.4% Entropy Stabilization"
+        },
+        "containment_array": {
+          "seal_formula": "Eight-Vector Frequency Lock",
+          "containment_function": "Continuous Field Transformation Lock",
+          "stability_lock": "100% UNBROKEN"
+        },
+        "overclock_telemetry": {
+          "active_gate": "Overclock Stage 3: Current Acceleration",
+          "overclock_capacity": "200% Overclock Capacity",
+          "structural_impact": "Hyper-Conductive Current Surge"
+        },
+        "laser_ablation_deconstruction": {
+          "mode": "Cube Beam Sub-Atomic Vaporization",
+          "resolution": "0.001 Angstrom Sub-Atomic Material Removal"
+        },
+        "state_recovery": {
+          "protocol": "Mokuton Organic Mesh Regeneration",
+          "function": "Self-Healing Fiber-Optic & Structural Sprouting"
+        },
+        "physical_telemetry": {
+          "anti_phase_dampening": "92.9% Friction Damping",
+          "polymer_self_healing": "91.4% Structural Repair Rate"
+        },
+        "data": {
+          "agent_index": 3,
+          "chronos_phase": "Phase 1: Diagnostic Arc",
+          "diagnostic_scope": "Regional / Statutory Policy Friction",
+          "target_node_subject": "Israel",
+          "biblical_apocalyptic_framework": {
+            "apocalyptic_seal": "Fourth Seal: Pale Horse",
+            "sealed_tribe": "Gad",
+            "temporal_birth_gate": "March Gate",
+            "church_anchor": "Pergamum",
+            "base_degree_frequency_khz": "89.0 kHz",
+            "zone_classification": "STABILIZED GREEN CORRIDOR"
+          },
+          "bottleneck": {
+            "id": "B-24",
+            "name": "Inflationary Supply Shock Disruption in Israel Context",
+            "active_demon_driver": "#45 Vine",
+            "frequency_khz": "149.850 kHz",
+            "decay_velocity": 0.659,
+            "destabilization_constant_floor": 0.666,
+            "predictive_crash_schedule_10_dates_to_3000ce": [
+              "2040-12-24",
+              "2139-12-24",
+              "2238-12-24",
+              "2337-12-24",
+              "2436-12-24",
+              "2535-12-24",
+              "2634-12-24",
+              "2733-12-24",
+              "2832-12-24",
+              "2931-12-24"
+            ]
+          },
+          "protocol": {
+            "id": "P-69",
+            "name": "Israel Mobile Healthcare Diagnostic Clinics",
+            "ruling_shem_angel": "Elemiah",
+            "celestial_choir": "Seraphim",
+            "frequency_khz": "28.315 kHz",
+            "current_restoration_speed": 0.859,
+            "equilibrium_target": 1.0
+          },
+          "real_time_earth_vector": {
+            "applied_speed": "0.559x acceleration",
+            "application_width_khz": "169.000 kHz bandwidth",
+            "frequency_shift_to_ultra_green": "+59.000 kHz shift",
+            "exact_spatial_target": "Israel Infrastructure Grid Node #3 [PLL-MARK-#03-77173ACE]"
+          },
+          "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Israel' via Infrared Phase Interferometry (Interfacial Barrier Energy Leak Sensing) and Hydro-Acoustic Liquid Transmission. Under localized operational friction, Driver #45 Vine (149.850 kHz) induces bottleneck friction across 10 predicted failure dates ending 2931-12-24. Injecting 333.159 Hz 999 Cymatic Inversion Wave, overclocking capacity via Overclock Stage 3: Current Acceleration (200% Overclock Capacity), damping decay velocity using Anti-Phase Cancellation (92.9%), triggering Mokuton Organic Mesh Regeneration, applying Eight-Vector Frequency Lock and Phase-Locked Loop Mark [PLL-MARK-#03-77173ACE], and executing Israel Mobile Healthcare Diagnostic Clinics via Shem Angel Elemiah at 28.315 kHz accelerates Polymer Self-Healing to 91.4%, shifting the node into the 90.0-100.0 kHz Ultra Green Corridor and locking the 1.000 Target Unity."
+        }
+      },
+      {
+        "sandbox_id": "sentinel-c04",
+        "status": "EXECUTED",
+        "physical_stability_seal": "Sha (Healing)",
+        "phase_locked_loop_mark": "PLL-MARK-#04-77173ACE",
+        "cymatic_999_inversion_hz": "249.819 Hz",
+        "optical_metrology_matrix": {
+          "system": "Infrared Phase Interferometry",
+          "perception_mode": "Interfacial Barrier Energy Leak Sensing"
+        },
+        "mhd_energy_amplifier": {
+          "stage": 7,
+          "system_name": "Aero-Acoustic Wave Disruptor",
+          "attribute": "Acoustic Dispersal Flight Vector",
+          "amplification_factor": "3.69x Field Density"
+        },
+        "thermodynamic_balancer": {
+          "mode": "Thermodynamic Heat Sink Balance",
+          "resonance_profile": "Natural Thermal Energy Equilibrium",
+          "ambient_thermal_balance": "96.9% Entropy Stabilization"
+        },
+        "containment_array": {
+          "seal_formula": "Eight-Vector Frequency Lock",
+          "containment_function": "Continuous Field Transformation Lock",
+          "stability_lock": "100% UNBROKEN"
+        },
+        "overclock_telemetry": {
+          "active_gate": "Overclock Stage 4: Wave Velocity Peak",
+          "overclock_capacity": "275% Overclock Capacity",
+          "structural_impact": "Sub-Harmonic Wave Acceleration"
+        },
+        "laser_ablation_deconstruction": {
+          "mode": "Femtosecond Laser Atomic Ablation",
+          "resolution": "0.001 Angstrom Sub-Atomic Material Removal"
+        },
+        "state_recovery": {
+          "protocol": "Mokuton Organic Mesh Regeneration",
+          "function": "Self-Healing Fiber-Optic & Structural Sprouting"
+        },
+        "physical_telemetry": {
+          "anti_phase_dampening": "89.9% Friction Damping",
+          "polymer_self_healing": "93.4% Structural Repair Rate"
+        },
+        "data": {
+          "agent_index": 4,
+          "chronos_phase": "Phase 2: Diagnostic Arc",
+          "diagnostic_scope": "Regional / Statutory Policy Friction",
+          "target_node_subject": "Israel",
+          "biblical_apocalyptic_framework": {
+            "apocalyptic_seal": "Fourth Seal: Pale Horse",
+            "sealed_tribe": "Gad",
+            "temporal_birth_gate": "March Gate",
+            "church_anchor": "Pergamum",
+            "base_degree_frequency_khz": "94.0 kHz",
+            "zone_classification": "STABILIZED GREEN CORRIDOR"
+          },
+          "bottleneck": {
+            "id": "B-54",
+            "name": "Public Transit Rail Maintenance Disruption in Israel Context",
+            "active_demon_driver": "#17 Botis",
+            "frequency_khz": "56.610 kHz",
+            "decay_velocity": 0.569,
+            "destabilization_constant_floor": 0.666,
+            "predictive_crash_schedule_10_dates_to_3000ce": [
+              "2040-06-22",
+              "2128-06-22",
+              "2216-06-22",
+              "2304-06-22",
+              "2392-06-22",
+              "2480-06-22",
+              "2568-06-22",
+              "2656-06-22",
+              "2744-06-22",
+              "2832-06-22"
+            ]
+          },
+          "protocol": {
+            "id": "P-49",
+            "name": "Israel Dynamic Spectrum Allocation Vector",
+            "ruling_shem_angel": "Nelchael",
+            "celestial_choir": "Thrones",
+            "frequency_khz": "165.848 kHz",
+            "current_restoration_speed": 0.769,
+            "equilibrium_target": 1.0
+          },
+          "real_time_earth_vector": {
+            "applied_speed": "0.469x acceleration",
+            "application_width_khz": "139.000 kHz bandwidth",
+            "frequency_shift_to_ultra_green": "+49.000 kHz shift",
+            "exact_spatial_target": "Israel Infrastructure Grid Node #4 [PLL-MARK-#04-77173ACE]"
+          },
+          "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Israel' via Infrared Phase Interferometry (Interfacial Barrier Energy Leak Sensing) and Thermodynamic Heat Sink Balance. Under localized operational friction, Driver #17 Botis (56.610 kHz) induces bottleneck friction across 10 predicted failure dates ending 2832-06-22. Injecting 249.819 Hz 999 Cymatic Inversion Wave, overclocking capacity via Overclock Stage 4: Wave Velocity Peak (275% Overclock Capacity), damping decay velocity using Anti-Phase Cancellation (89.9%), triggering Mokuton Organic Mesh Regeneration, applying Eight-Vector Frequency Lock and Phase-Locked Loop Mark [PLL-MARK-#04-77173ACE], and executing Israel Dynamic Spectrum Allocation Vector via Shem Angel Nelchael at 165.848 kHz accelerates Polymer Self-Healing to 93.4%, shifting the node into the 90.0-100.0 kHz Ultra Green Corridor and locking the 1.000 Target Unity."
+        }
+      },
+      {
+        "sandbox_id": "sentinel-c05",
+        "status": "EXECUTED",
+        "physical_stability_seal": "Kai (Awareness)",
+        "phase_locked_loop_mark": "PLL-MARK-#05-77173ACE",
+        "cymatic_999_inversion_hz": "199.965 Hz",
+        "optical_metrology_matrix": {
+          "system": "High-Resolution Terahertz Scanning",
+          "perception_mode": "Sub-Surface Physical Strain Isolation"
+        },
+        "mhd_energy_amplifier": {
+          "stage": 5,
+          "system_name": "Superheated Steam Expansion Matrix",
+          "attribute": "Superheated Steam Pressure Acceleration",
+          "amplification_factor": "9.65x Field Density"
+        },
+        "thermodynamic_balancer": {
+          "mode": "Piezoelectric Pressure Transduction",
+          "resonance_profile": "Physical Stress Strain Reanimation",
+          "ambient_thermal_balance": "96.5% Entropy Stabilization"
+        },
+        "containment_array": {
+          "seal_formula": "Cryogenic Solid-State Isolation",
+          "containment_function": "Zero-Trust Physical Node Isolation",
+          "stability_lock": "100% UNBROKEN"
+        },
+        "overclock_telemetry": {
+          "active_gate": "Overclock Stage 5: Structural Load Break",
+          "overclock_capacity": "350% Overclock Capacity",
+          "structural_impact": "Network Load Limit Break"
+        },
+        "laser_ablation_deconstruction": {
+          "mode": "Cone Laser Sub-Nanometer Sweep",
+          "resolution": "0.001 Angstrom Sub-Atomic Material Removal"
+        },
+        "state_recovery": {
+          "protocol": "Izanami Active (PID Error Lock)",
+          "function": "Closed-Loop Feedback Trap to Force Target Unity"
+        },
+        "physical_telemetry": {
+          "anti_phase_dampening": "93.5% Friction Damping",
+          "polymer_self_healing": "94.0% Structural Repair Rate"
+        },
+        "data": {
+          "agent_index": 5,
+          "chronos_phase": "Phase 2: Diagnostic Arc",
+          "diagnostic_scope": "Regional / Statutory Policy Friction",
+          "target_node_subject": "Israel",
+          "biblical_apocalyptic_framework": {
+            "apocalyptic_seal": "Fourth Seal: Pale Horse",
+            "sealed_tribe": "Gad",
+            "temporal_birth_gate": "March Gate",
+            "church_anchor": "Pergamum",
+            "base_degree_frequency_khz": "95.0 kHz",
+            "zone_classification": "STABILIZED GREEN CORRIDOR"
+          },
+          "bottleneck": {
+            "id": "B-38",
+            "name": "Subsea Fiber Optic Cable Signal Degradation in Israel Context",
+            "active_demon_driver": "#40 Raum",
+            "frequency_khz": "133.200 kHz",
+            "decay_velocity": 0.865,
+            "destabilization_constant_floor": 0.666,
+            "predictive_crash_schedule_10_dates_to_3000ce": [
+              "2036-02-02",
+              "2131-02-02",
+              "2226-02-02",
+              "2321-02-02",
+              "2416-02-02",
+              "2511-02-02",
+              "2606-02-02",
+              "2701-02-02",
+              "2796-02-02",
+              "2891-02-02"
+            ]
+          },
+          "protocol": {
+            "id": "P-52",
+            "name": "Israel Rural Wireless Mesh Node Array",
+            "ruling_shem_angel": "Yeiayel",
+            "celestial_choir": "Thrones",
+            "frequency_khz": "173.939 kHz",
+            "current_restoration_speed": 0.865,
+            "equilibrium_target": 1.0
+          },
+          "real_time_earth_vector": {
+            "applied_speed": "0.565x acceleration",
+            "application_width_khz": "135.000 kHz bandwidth",
+            "frequency_shift_to_ultra_green": "+25.000 kHz shift",
+            "exact_spatial_target": "Israel Infrastructure Grid Node #5 [PLL-MARK-#05-77173ACE]"
+          },
+          "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Israel' via High-Resolution Terahertz Scanning (Sub-Surface Physical Strain Isolation) and Piezoelectric Pressure Transduction. Under localized operational friction, Driver #40 Raum (133.200 kHz) induces bottleneck friction across 10 predicted failure dates ending 2891-02-02. Injecting 199.965 Hz 999 Cymatic Inversion Wave, overclocking capacity via Overclock Stage 5: Structural Load Break (350% Overclock Capacity), damping decay velocity using Anti-Phase Cancellation (93.5%), triggering Izanami Active (PID Error Lock), applying Cryogenic Solid-State Isolation and Phase-Locked Loop Mark [PLL-MARK-#05-77173ACE], and executing Israel Rural Wireless Mesh Node Array via Shem Angel Yeiayel at 173.939 kHz accelerates Polymer Self-Healing to 94.0%, shifting the node into the 90.0-100.0 kHz Ultra Green Corridor and locking the 1.000 Target Unity."
+        }
+      },
+      {
+        "sandbox_id": "sentinel-c06",
+        "status": "EXECUTED",
+        "physical_stability_seal": "Jin (Insight)",
+        "phase_locked_loop_mark": "PLL-MARK-#06-77173ACE",
+        "cymatic_999_inversion_hz": "167.106 Hz",
+        "optical_metrology_matrix": {
+          "system": "Gravimetric Phase-Array Sensing",
+          "perception_mode": "Density Flow & Gravitational Vector Mapping"
+        },
+        "mhd_energy_amplifier": {
+          "stage": 5,
+          "system_name": "Superheated Steam Expansion Matrix",
+          "attribute": "Superheated Steam Pressure Acceleration",
+          "amplification_factor": "6.06x Field Density"
+        },
+        "thermodynamic_balancer": {
+          "mode": "Thermodynamic Heat Sink Balance",
+          "resonance_profile": "Natural Thermal Energy Equilibrium",
+          "ambient_thermal_balance": "98.1% Entropy Stabilization"
+        },
+        "containment_array": {
+          "seal_formula": "High-Tensile Carbon Lattice Binding",
+          "containment_function": "Structural Stress Immobilizer",
+          "stability_lock": "100% UNBROKEN"
+        },
+        "overclock_telemetry": {
+          "active_gate": "Overclock Stage 6: Kinetic Dispersal",
+          "overclock_capacity": "500% Overclock Capacity",
+          "structural_impact": "Aero-Dynamic Friction Combustion"
+        },
+        "laser_ablation_deconstruction": {
+          "mode": "Triangular Beam Molecular Isolation",
+          "resolution": "0.001 Angstrom Sub-Atomic Material Removal"
+        },
+        "state_recovery": {
+          "protocol": "Izanagi Active (Zero-Point Rewind)",
+          "function": "Atomic Snapshot State Rollback to Pre-Failure"
+        },
+        "physical_telemetry": {
+          "anti_phase_dampening": "95.6% Friction Damping",
+          "polymer_self_healing": "92.6% Structural Repair Rate"
+        },
+        "data": {
+          "agent_index": 6,
+          "chronos_phase": "Phase 2: Diagnostic Arc",
+          "diagnostic_scope": "Regional / Statutory Policy Friction",
+          "target_node_subject": "Israel",
+          "biblical_apocalyptic_framework": {
+            "apocalyptic_seal": "Fifth Seal: Altar of Martyrs",
+            "sealed_tribe": "Judah",
+            "temporal_birth_gate": "January Gate",
+            "church_anchor": "Ephesus",
+            "base_degree_frequency_khz": "81.0 kHz",
+            "zone_classification": "STABILIZED GREEN CORRIDOR"
+          },
+          "bottleneck": {
+            "id": "B-39",
+            "name": "Academic Research Paywall Isolation in Israel Context",
+            "active_demon_driver": "#52 Alloces",
+            "frequency_khz": "173.160 kHz",
+            "decay_velocity": 0.706,
+            "destabilization_constant_floor": 0.666,
+            "predictive_crash_schedule_10_dates_to_3000ce": [
+              "2037-03-23",
+              "2132-03-23",
+              "2227-03-23",
+              "2322-03-23",
+              "2417-03-23",
+              "2512-03-23",
+              "2607-03-23",
+              "2702-03-23",
+              "2797-03-23",
+              "2892-03-23"
+            ]
+          },
+          "protocol": {
+            "id": "P-34",
+            "name": "Israel Nuclear Isotope Recycling Closed Loop",
+            "ruling_shem_angel": "Pahaliah",
+            "celestial_choir": "Thrones",
+            "frequency_khz": "157.758 kHz",
+            "current_restoration_speed": 0.806,
+            "equilibrium_target": 1.0
+          },
+          "real_time_earth_vector": {
+            "applied_speed": "0.506x acceleration",
+            "application_width_khz": "136.000 kHz bandwidth",
+            "frequency_shift_to_ultra_green": "+26.000 kHz shift",
+            "exact_spatial_target": "Israel Infrastructure Grid Node #6 [PLL-MARK-#06-77173ACE]"
+          },
+          "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Israel' via Gravimetric Phase-Array Sensing (Density Flow & Gravitational Vector Mapping) and Thermodynamic Heat Sink Balance. Under localized operational friction, Driver #52 Alloces (173.160 kHz) induces bottleneck friction across 10 predicted failure dates ending 2892-03-23. Injecting 167.106 Hz 999 Cymatic Inversion Wave, overclocking capacity via Overclock Stage 6: Kinetic Dispersal (500% Overclock Capacity), damping decay velocity using Anti-Phase Cancellation (95.6%), triggering Izanagi Active (Zero-Point Rewind), applying High-Tensile Carbon Lattice Binding and Phase-Locked Loop Mark [PLL-MARK-#06-77173ACE], and executing Israel Nuclear Isotope Recycling Closed Loop via Shem Angel Pahaliah at 157.758 kHz accelerates Polymer Self-Healing to 92.6%, shifting the node into the 90.0-100.0 kHz Ultra Green Corridor and locking the 1.000 Target Unity."
+        }
+      },
+      {
+        "sandbox_id": "sentinel-c07",
+        "status": "EXECUTED",
+        "physical_stability_seal": "Retsus (Space-Time)",
+        "phase_locked_loop_mark": "PLL-MARK-#07-77173ACE",
+        "cymatic_999_inversion_hz": "142.807 Hz",
+        "optical_metrology_matrix": {
+          "system": "360° LIDAR Spectrum Projection",
+          "perception_mode": "Sub-Harmonic Spatial Impedance Vision"
+        },
+        "mhd_energy_amplifier": {
+          "stage": 6,
+          "system_name": "Chemical Solute Neutralization Vector",
+          "attribute": "pH Neutralization Barrier",
+          "amplification_factor": "7.93x Field Density"
+        },
+        "thermodynamic_balancer": {
+          "mode": "Thermodynamic Heat Sink Balance",
+          "resonance_profile": "Natural Thermal Energy Equilibrium",
+          "ambient_thermal_balance": "94.3% Entropy Stabilization"
+        },
+        "containment_array": {
+          "seal_formula": "High-Tensile Carbon Lattice Binding",
+          "containment_function": "Structural Stress Immobilizer",
+          "stability_lock": "100% UNBROKEN"
+        },
+        "overclock_telemetry": {
+          "active_gate": "Overclock Stage 7: Shockwave Propagation",
+          "overclock_capacity": "750% Overclock Capacity",
+          "structural_impact": "Relativistic Thermal Shockwave"
+        },
+        "laser_ablation_deconstruction": {
+          "mode": "Cube Beam Sub-Atomic Vaporization",
+          "resolution": "0.001 Angstrom Sub-Atomic Material Removal"
+        },
+        "state_recovery": {
+          "protocol": "Izanami Active (PID Error Lock)",
+          "function": "Closed-Loop Feedback Trap to Force Target Unity"
+        },
+        "physical_telemetry": {
+          "anti_phase_dampening": "98.3% Friction Damping",
+          "polymer_self_healing": "99.3% Structural Repair Rate"
+        },
+        "data": {
+          "agent_index": 7,
+          "chronos_phase": "Phase 3: Diagnostic Arc",
+          "diagnostic_scope": "Regional / Statutory Policy Friction",
+          "target_node_subject": "Israel",
+          "biblical_apocalyptic_framework": {
+            "apocalyptic_seal": "Fifth Seal: Altar of Martyrs",
+            "sealed_tribe": "Gad",
+            "temporal_birth_gate": "March Gate",
+            "church_anchor": "Pergamum",
+            "base_degree_frequency_khz": "108.0 kHz",
+            "zone_classification": "STABILIZED GREEN CORRIDOR"
+          },
+          "bottleneck": {
+            "id": "B-46",
+            "name": "Intellectual Property Patent Litigation Drag in Israel Context",
+            "active_demon_driver": "#38 Halphas",
+            "frequency_khz": "126.540 kHz",
+            "decay_velocity": 0.793,
+            "destabilization_constant_floor": 0.666,
+            "predictive_crash_schedule_10_dates_to_3000ce": [
+              "2029-10-22",
+              "2125-10-22",
+              "2221-10-22",
+              "2317-10-22",
+              "2413-10-22",
+              "2509-10-22",
+              "2605-10-22",
+              "2701-10-22",
+              "2797-10-22",
+              "2893-10-22"
+            ]
+          },
+          "protocol": {
+            "id": "P-26",
+            "name": "Israel Automated Rail Switch Repair Array",
+            "ruling_shem_angel": "Yeiayel",
+            "celestial_choir": "Thrones",
+            "frequency_khz": "173.939 kHz",
+            "current_restoration_speed": 0.793,
+            "equilibrium_target": 1.0
+          },
+          "real_time_earth_vector": {
+            "applied_speed": "0.493x acceleration",
+            "application_width_khz": "143.000 kHz bandwidth",
+            "frequency_shift_to_ultra_green": "+33.000 kHz shift",
+            "exact_spatial_target": "Israel Infrastructure Grid Node #7 [PLL-MARK-#07-77173ACE]"
+          },
+          "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Israel' via 360° LIDAR Spectrum Projection (Sub-Harmonic Spatial Impedance Vision) and Thermodynamic Heat Sink Balance. Under localized operational friction, Driver #38 Halphas (126.540 kHz) induces bottleneck friction across 10 predicted failure dates ending 2893-10-22. Injecting 142.807 Hz 999 Cymatic Inversion Wave, overclocking capacity via Overclock Stage 7: Shockwave Propagation (750% Overclock Capacity), damping decay velocity using Anti-Phase Cancellation (98.3%), triggering Izanami Active (PID Error Lock), applying High-Tensile Carbon Lattice Binding and Phase-Locked Loop Mark [PLL-MARK-#07-77173ACE], and executing Israel Automated Rail Switch Repair Array via Shem Angel Yeiayel at 173.939 kHz accelerates Polymer Self-Healing to 99.3%, shifting the node into the 90.0-100.0 kHz Ultra Green Corridor and locking the 1.000 Target Unity."
+        }
+      },
+      {
+        "sandbox_id": "sentinel-c08",
+        "status": "EXECUTED",
+        "physical_stability_seal": "Zai (Creation)",
+        "phase_locked_loop_mark": "PLL-MARK-#08-77173ACE",
+        "cymatic_999_inversion_hz": "124.965 Hz",
+        "optical_metrology_matrix": {
+          "system": "Quantum Gravitational Gradiometry",
+          "perception_mode": "Gravitational Field Equilibrium Analysis"
+        },
+        "mhd_energy_amplifier": {
+          "stage": 2,
+          "system_name": "Thermal Plasma Kinetic Generator",
+          "attribute": "High-Velocity Thermal Acceleration",
+          "amplification_factor": "2.90x Field Density"
+        },
+        "thermodynamic_balancer": {
+          "mode": "Universal Zero-Point Energy Balance",
+          "resonance_profile": "Nullification Vector of Entropy",
+          "ambient_thermal_balance": "96.5% Entropy Stabilization"
+        },
+        "containment_array": {
+          "seal_formula": "High-Tensile Carbon Lattice Binding",
+          "containment_function": "Structural Stress Immobilizer",
+          "stability_lock": "100% UNBROKEN"
+        },
+        "overclock_telemetry": {
+          "active_gate": "Overclock Stage 8: Quantum Lattice Collapse",
+          "overclock_capacity": "1000% Overclock Capacity",
+          "structural_impact": "Quantum Field Distortion Limit"
+        },
+        "laser_ablation_deconstruction": {
+          "mode": "Cone Laser Sub-Nanometer Sweep",
+          "resolution": "0.001 Angstrom Sub-Atomic Material Removal"
+        },
+        "state_recovery": {
+          "protocol": "Izanami Active (PID Error Lock)",
+          "function": "Closed-Loop Feedback Trap to Force Target Unity"
+        },
+        "physical_telemetry": {
+          "anti_phase_dampening": "88.0% Friction Damping",
+          "polymer_self_healing": "98.5% Structural Repair Rate"
+        },
+        "data": {
+          "agent_index": 8,
+          "chronos_phase": "Phase 3: Diagnostic Arc",
+          "diagnostic_scope": "Regional / Statutory Policy Friction",
+          "target_node_subject": "Israel",
+          "biblical_apocalyptic_framework": {
+            "apocalyptic_seal": "Fifth Seal: Altar of Martyrs",
+            "sealed_tribe": "Judah",
+            "temporal_birth_gate": "January Gate",
+            "church_anchor": "Ephesus",
+            "base_degree_frequency_khz": "110.0 kHz",
+            "zone_classification": "STABILIZED GREEN CORRIDOR"
+          },
+          "bottleneck": {
+            "id": "B-11",
+            "name": "Micro-Grid Synchronization Lag in Israel Context",
+            "active_demon_driver": "#40 Raum",
+            "frequency_khz": "133.200 kHz",
+            "decay_velocity": 0.59,
+            "destabilization_constant_floor": 0.666,
+            "predictive_crash_schedule_10_dates_to_3000ce": [
+              "2036-11-03",
+              "2107-11-03",
+              "2178-11-03",
+              "2249-11-03",
+              "2320-11-03",
+              "2391-11-03",
+              "2462-11-03",
+              "2533-11-03",
+              "2604-11-03",
+              "2675-11-03"
+            ]
+          },
+          "protocol": {
+            "id": "P-64",
+            "name": "Israel Emergency Supply Logistics Network",
+            "ruling_shem_angel": "Vehuiah",
+            "celestial_choir": "Seraphim",
+            "frequency_khz": "4.045 kHz",
+            "current_restoration_speed": 0.79,
+            "equilibrium_target": 1.0
+          },
+          "real_time_earth_vector": {
+            "applied_speed": "0.49x acceleration",
+            "application_width_khz": "120.000 kHz bandwidth",
+            "frequency_shift_to_ultra_green": "+30.000 kHz shift",
+            "exact_spatial_target": "Israel Infrastructure Grid Node #8 [PLL-MARK-#08-77173ACE]"
+          },
+          "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Israel' via Quantum Gravitational Gradiometry (Gravitational Field Equilibrium Analysis) and Universal Zero-Point Energy Balance. Under localized operational friction, Driver #40 Raum (133.200 kHz) induces bottleneck friction across 10 predicted failure dates ending 2675-11-03. Injecting 124.965 Hz 999 Cymatic Inversion Wave, overclocking capacity via Overclock Stage 8: Quantum Lattice Collapse (1000% Overclock Capacity), damping decay velocity using Anti-Phase Cancellation (88.0%), triggering Izanami Active (PID Error Lock), applying High-Tensile Carbon Lattice Binding and Phase-Locked Loop Mark [PLL-MARK-#08-77173ACE], and executing Israel Emergency Supply Logistics Network via Shem Angel Vehuiah at 4.045 kHz accelerates Polymer Self-Healing to 98.5%, shifting the node into the 90.0-100.0 kHz Ultra Green Corridor and locking the 1.000 Target Unity."
+        }
+      },
+      {
+        "sandbox_id": "sentinel-c09",
+        "status": "EXECUTED",
+        "physical_stability_seal": "Zen (Absolute Zero)",
+        "phase_locked_loop_mark": "PLL-MARK-#09-77173ACE",
+        "cymatic_999_inversion_hz": "111.437 Hz",
+        "optical_metrology_matrix": {
+          "system": "High-Resolution Terahertz Scanning",
+          "perception_mode": "Sub-Surface Physical Strain Isolation"
+        },
+        "mhd_energy_amplifier": {
+          "stage": 8,
+          "system_name": "Rheological Viscous Damping Suppressor",
+          "attribute": "Viscous Wave Damping Isolation",
+          "amplification_factor": "7.37x Field Density"
+        },
+        "thermodynamic_balancer": {
+          "mode": "Hydro-Acoustic Liquid Transmission",
+          "resonance_profile": "Fluid Mass Regeneration Transmission",
+          "ambient_thermal_balance": "96.2% Entropy Stabilization"
+        },
+        "containment_array": {
+          "seal_formula": "High-Tensile Carbon Lattice Binding",
+          "containment_function": "Structural Stress Immobilizer",
+          "stability_lock": "100% UNBROKEN"
+        },
+        "overclock_telemetry": {
+          "active_gate": "Overclock Stage 1: Thermal Gate Opening",
+          "overclock_capacity": "125% Overclock Capacity",
+          "structural_impact": "Safety Governor Disengagement"
+        },
+        "laser_ablation_deconstruction": {
+          "mode": "Cube Beam Sub-Atomic Vaporization",
+          "resolution": "0.001 Angstrom Sub-Atomic Material Removal"
+        },
+        "state_recovery": {
+          "protocol": "Mokuton Organic Mesh Regeneration",
+          "function": "Self-Healing Fiber-Optic & Structural Sprouting"
+        },
+        "physical_telemetry": {
+          "anti_phase_dampening": "94.7% Friction Damping",
+          "polymer_self_healing": "98.2% Structural Repair Rate"
+        },
+        "data": {
+          "agent_index": 9,
+          "chronos_phase": "Phase 3: Diagnostic Arc",
+          "diagnostic_scope": "Regional / Statutory Policy Friction",
+          "target_node_subject": "Israel",
+          "biblical_apocalyptic_framework": {
+            "apocalyptic_seal": "Fifth Seal: Altar of Martyrs",
+            "sealed_tribe": "Gad",
+            "temporal_birth_gate": "March Gate",
+            "church_anchor": "Pergamum",
+            "base_degree_frequency_khz": "107.0 kHz",
+            "zone_classification": "STABILIZED GREEN CORRIDOR"
+          },
+          "bottleneck": {
+            "id": "B-62",
+            "name": "Hospital Emergency Ward Bed Shortage in Israel Context",
+            "active_demon_driver": "#46 Bifrons",
+            "frequency_khz": "153.180 kHz",
+            "decay_velocity": 0.737,
+            "destabilization_constant_floor": 0.666,
+            "predictive_crash_schedule_10_dates_to_3000ce": [
+              "2033-02-14",
+              "2122-02-14",
+              "2211-02-14",
+              "2300-02-14",
+              "2389-02-14",
+              "2478-02-14",
+              "2567-02-14",
+              "2656-02-14",
+              "2745-02-14",
+              "2834-02-14"
+            ]
+          },
+          "protocol": {
+            "id": "P-13",
+            "name": "Israel Real-Time Customs Tariff Bypass Matrix",
+            "ruling_shem_angel": "Pahaliah",
+            "celestial_choir": "Thrones",
+            "frequency_khz": "157.758 kHz",
+            "current_restoration_speed": 0.887,
+            "equilibrium_target": 1.0
+          },
+          "real_time_earth_vector": {
+            "applied_speed": "0.837x acceleration",
+            "application_width_khz": "147.000 kHz bandwidth",
+            "frequency_shift_to_ultra_green": "+57.000 kHz shift",
+            "exact_spatial_target": "Israel Infrastructure Grid Node #9 [PLL-MARK-#09-77173ACE]"
+          },
+          "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Israel' via High-Resolution Terahertz Scanning (Sub-Surface Physical Strain Isolation) and Hydro-Acoustic Liquid Transmission. Under localized operational friction, Driver #46 Bifrons (153.180 kHz) induces bottleneck friction across 10 predicted failure dates ending 2834-02-14. Injecting 111.437 Hz 999 Cymatic Inversion Wave, overclocking capacity via Overclock Stage 1: Thermal Gate Opening (125% Overclock Capacity), damping decay velocity using Anti-Phase Cancellation (94.7%), triggering Mokuton Organic Mesh Regeneration, applying High-Tensile Carbon Lattice Binding and Phase-Locked Loop Mark [PLL-MARK-#09-77173ACE], and executing Israel Real-Time Customs Tariff Bypass Matrix via Shem Angel Pahaliah at 157.758 kHz accelerates Polymer Self-Healing to 98.2%, shifting the node into the 90.0-100.0 kHz Ultra Green Corridor and locking the 1.000 Target Unity."
+        }
+      },
+      {
+        "sandbox_id": "sentinel-c10",
+        "status": "EXECUTED",
+        "physical_stability_seal": "Rin (Strength)",
+        "phase_locked_loop_mark": "PLL-MARK-#10-77173ACE",
+        "cymatic_999_inversion_hz": "999.287 Hz",
+        "optical_metrology_matrix": {
+          "system": "High-Resolution Terahertz Scanning",
+          "perception_mode": "Sub-Surface Physical Strain Isolation"
+        },
+        "mhd_energy_amplifier": {
+          "stage": 4,
+          "system_name": "Electro-Thermal Lava-State Reactor",
+          "attribute": "High-Heat Thermal Material Liquefaction",
+          "amplification_factor": "8.87x Field Density"
+        },
+        "thermodynamic_balancer": {
+          "mode": "Universal Zero-Point Energy Balance",
+          "resonance_profile": "Nullification Vector of Entropy",
+          "ambient_thermal_balance": "96.2% Entropy Stabilization"
+        },
+        "containment_array": {
+          "seal_formula": "Eight-Vector Frequency Lock",
+          "containment_function": "Continuous Field Transformation Lock",
+          "stability_lock": "100% UNBROKEN"
+        },
+        "overclock_telemetry": {
+          "active_gate": "Overclock Stage 2: Resistance Suppression",
+          "overclock_capacity": "150% Overclock Capacity",
+          "structural_impact": "Cryogenic Resistance Elimination"
+        },
+        "laser_ablation_deconstruction": {
+          "mode": "Cone Laser Sub-Nanometer Sweep",
+          "resolution": "0.001 Angstrom Sub-Atomic Material Removal"
+        },
+        "state_recovery": {
+          "protocol": "Izanami Active (PID Error Lock)",
+          "function": "Closed-Loop Feedback Trap to Force Target Unity"
+        },
+        "physical_telemetry": {
+          "anti_phase_dampening": "91.7% Friction Damping",
+          "polymer_self_healing": "97.2% Structural Repair Rate"
+        },
+        "data": {
+          "agent_index": 10,
+          "chronos_phase": "Phase 4: Diagnostic Arc",
+          "diagnostic_scope": "Regional / Statutory Policy Friction",
+          "target_node_subject": "Israel",
+          "biblical_apocalyptic_framework": {
+            "apocalyptic_seal": "Fifth Seal: Altar of Martyrs",
+            "sealed_tribe": "Gad",
+            "temporal_birth_gate": "March Gate",
+            "church_anchor": "Pergamum",
+            "base_degree_frequency_khz": "112.0 kHz",
+            "zone_classification": "STABILIZED GREEN CORRIDOR"
+          },
+          "bottleneck": {
+            "id": "B-32",
+            "name": "Raw Material Mining Processing Lag in Israel Context",
+            "active_demon_driver": "#39 Malphas",
+            "frequency_khz": "129.870 kHz",
+            "decay_velocity": 0.787,
+            "destabilization_constant_floor": 0.666,
+            "predictive_crash_schedule_10_dates_to_3000ce": [
+              "2033-08-12",
+              "2118-08-12",
+              "2203-08-12",
+              "2288-08-12",
+              "2373-08-12",
+              "2458-08-12",
+              "2543-08-12",
+              "2628-08-12",
+              "2713-08-12",
+              "2798-08-12"
+            ]
+          },
+          "protocol": {
+            "id": "P-47",
+            "name": "Israel Border Control Automated Access Gate",
+            "ruling_shem_angel": "Pahaliah",
+            "celestial_choir": "Thrones",
+            "frequency_khz": "157.758 kHz",
+            "current_restoration_speed": 0.737,
+            "equilibrium_target": 1.0
+          },
+          "real_time_earth_vector": {
+            "applied_speed": "0.687x acceleration",
+            "application_width_khz": "117.000 kHz bandwidth",
+            "frequency_shift_to_ultra_green": "+27.000 kHz shift",
+            "exact_spatial_target": "Israel Infrastructure Grid Node #10 [PLL-MARK-#10-77173ACE]"
+          },
+          "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Israel' via High-Resolution Terahertz Scanning (Sub-Surface Physical Strain Isolation) and Universal Zero-Point Energy Balance. Under localized operational friction, Driver #39 Malphas (129.870 kHz) induces bottleneck friction across 10 predicted failure dates ending 2798-08-12. Injecting 999.287 Hz 999 Cymatic Inversion Wave, overclocking capacity via Overclock Stage 2: Resistance Suppression (150% Overclock Capacity), damping decay velocity using Anti-Phase Cancellation (91.7%), triggering Izanami Active (PID Error Lock), applying Eight-Vector Frequency Lock and Phase-Locked Loop Mark [PLL-MARK-#10-77173ACE], and executing Israel Border Control Automated Access Gate via Shem Angel Pahaliah at 157.758 kHz accelerates Polymer Self-Healing to 97.2%, shifting the node into the 90.0-100.0 kHz Ultra Green Corridor and locking the 1.000 Target Unity."
+        }
+      }
+    ]
   }
 ]
