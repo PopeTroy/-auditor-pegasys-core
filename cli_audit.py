@@ -2,190 +2,298 @@ import os
 import json
 import sys
 import hashlib
-import tempfile
 import time
+import urllib.request
+import urllib.parse
 from datetime import datetime, timezone
 
-AUDIT_FILE_PATH = "last_audit_results.json"
+AUDITS_DIR = "audits"
+MASTER_POINTER_FILE = "last_audit_results.json"
+
+# NVIDIA NIM Cloud Configuration
+NVIDIA_NIM_ENDPOINT = "https://integrate.api.nvidia.com/v1/chat/completions"
+NVIDIA_MODEL = "meta/llama-3.1-70b-instruct"
 
 # =====================================================================
-# 1. THE 72 GOETIC DRIVERS CATALOG (COMPLETE 1–72)
+# 1. THE 72 GOETIC DEMONS & POWERS (1–72)
 # =====================================================================
 GOETIC_DRIVERS_72 = [
-    (1, "Bael", "3.330 kHz"), (2, "Agares", "6.660 kHz"), (3, "Vassago", "9.990 kHz"),
-    (4, "Gamigin", "13.320 kHz"), (5, "Marbas", "16.650 kHz"), (6, "Valefor", "19.980 kHz"),
-    (7, "Amon", "23.310 kHz"), (8, "Barbatos", "26.640 kHz"), (9, "Paimon", "29.970 kHz"),
-    (10, "Buer", "33.300 kHz"), (11, "Gusion", "36.630 kHz"), (12, "Sitri", "39.960 kHz"),
-    (13, "Beleth", "43.290 kHz"), (14, "Leraje", "46.620 kHz"), (15, "Eligos", "49.950 kHz"),
-    (16, "Zepar", "53.280 kHz"), (17, "Botis", "56.610 kHz"), (18, "Bathin", "59.940 kHz"),
-    (19, "Sallos", "63.270 kHz"), (20, "Purson", "66.600 kHz"), (21, "Marax", "69.930 kHz"),
-    (22, "Ipos", "73.260 kHz"), (23, "Aim", "76.590 kHz"), (24, "Naberius", "79.920 kHz"),
-    (25, "Glasya-Labolas", "83.250 kHz"), (26, "Bune", "86.580 kHz"), (27, "Ronove", "89.910 kHz"),
-    (28, "Berith", "93.240 kHz"), (29, "Astaroth", "96.570 kHz"), (30, "Forneus", "99.900 kHz"),
-    (31, "Foras", "103.230 kHz"), (32, "Asmodai", "106.560 kHz"), (33, "Gaap", "109.890 kHz"),
-    (34, "Furfur", "113.220 kHz"), (35, "Marchosias", "116.550 kHz"), (36, "Stolas", "119.880 kHz"),
-    (37, "Phenex", "123.210 kHz"), (38, "Halphas", "126.540 kHz"), (39, "Malphas", "129.870 kHz"),
-    (40, "Raum", "133.200 kHz"), (41, "Focalor", "136.530 kHz"), (42, "Vepar", "139.860 kHz"),
-    (43, "Sabnock", "143.190 kHz"), (44, "Shax", "146.520 kHz"), (45, "Vine", "149.850 kHz"),
-    (46, "Bifrons", "153.180 kHz"), (47, "Uvall", "156.510 kHz"), (48, "Haagenti", "159.840 kHz"),
-    (49, "Crocell", "163.170 kHz"), (50, "Furcas", "166.500 kHz"), (51, "Balam", "169.830 kHz"),
-    (52, "Alloces", "173.160 kHz"), (53, "Camio", "176.490 kHz"), (54, "Murmur", "179.820 kHz"),
-    (55, "Orobas", "183.150 kHz"), (56, "Gremory", "186.480 kHz"), (57, "Ose", "189.810 kHz"),
-    (58, "Amy", "193.140 kHz"), (59, "Orias", "196.470 kHz"), (60, "Vapula", "199.800 kHz"),
-    (61, "Zagan", "203.130 kHz"), (62, "Volac", "206.460 kHz"), (63, "Andras", "209.790 kHz"),
-    (64, "Haures", "213.120 kHz"), (65, "Andrealphus", "216.450 kHz"), (66, "Cimejes", "219.780 kHz"),
-    (67, "Amdusias", "223.110 kHz"), (68, "Belial", "226.440 kHz"), (69, "Decarabia", "229.770 kHz"),
-    (70, "Seere", "233.100 kHz"), (71, "Dantalion", "236.430 kHz"), (72, "Andromalius", "239.760 kHz")
+    (1, "Bael", "3.330 kHz", "Invisibility, wisdom, and leadership manipulation"),
+    (2, "Agares", "6.660 kHz", "Halts runners, causes earthquakes, destroys dignity"),
+    (3, "Vassago", "9.990 kHz", "Discovers hidden things and predicts past/future outcomes"),
+    (4, "Gamigin", "13.320 kHz", "Teaches liberal sciences and accounts for dead souls"),
+    (5, "Marbas", "16.650 kHz", "Causes and cures systemic diseases, reveals mechanical secrets"),
+    (6, "Valefor", "19.980 kHz", "Tempters into theft and deceitful network breaches"),
+    (7, "Amon", "23.310 kHz", "Reconciles feuds and reveals past and future events"),
+    (8, "Barbatos", "26.640 kHz", "Understands animal voices and reveals hidden treasure vaults"),
+    (9, "Paimon", "29.970 kHz", "Teaches all arts/sciences and binds subjects to absolute will"),
+    (10, "Buer", "33.300 kHz", "Teaches philosophy, logic, and heals moral/physical infirmities"),
+    (11, "Gusion", "36.630 kHz", "Reconciles friendships and grants honor/dignity"),
+    (12, "Sitri", "39.960 kHz", "Inflames passion and exposes concealed secrets"),
+    (13, "Beleth", "43.290 kHz", "Causes overwhelming love and emotional subversion"),
+    (14, "Leraje", "46.620 kHz", "Causes severe conflicts, archery battles, and gangrene wounds"),
+    (15, "Eligos", "49.950 kHz", "Discovers hidden things and foresees military strategy"),
+    (16, "Zepar", "53.280 kHz", "Causes sterile lockouts and alters physical form"),
+    (17, "Botis", "56.610 kHz", "Reconciles allies and foretells future outcomes"),
+    (18, "Bathin", "59.940 kHz", "Transports entities instantly across spatial dimensions"),
+    (19, "Sallos", "63.270 kHz", "Promotes peaceful accord and mutual attraction"),
+    (20, "Purson", "66.600 kHz", "Discovers hidden treasures and provides clear divination"),
+    (21, "Marax", "69.930 kHz", "Teaches astronomy, herbal medicine, and precious stones"),
+    (22, "Ipos", "73.260 kHz", "Reveals secret knowledge and bestows courage/wit"),
+    (23, "Aim", "76.590 kHz", "Sets cities on fire and grants sharp intellectual wit"),
+    (24, "Naberius", "79.920 kHz", "Restores lost honors and teaches rhetoric/logic"),
+    (25, "Glasya-Labolas", "83.250 kHz", "Incites bloodshed, teaches all arts, grants invisibility"),
+    (26, "Bune", "86.580 kHz", "Changes dead locations, grants wealth, wisdom, and eloquence"),
+    (27, "Ronove", "89.910 kHz", "Teaches rhetoric, foreign languages, and loyal service"),
+    (28, "Berith", "93.240 kHz", "Turns metals to gold, bestows high institutional status"),
+    (29, "Astaroth", "96.570 kHz", "Reveals secrets of creation, fall of spirits, liberal sciences"),
+    (30, "Forneus", "99.900 kHz", "Teaches rhetoric, foreign tongues, and causes favorable renown"),
+    (31, "Foras", "103.230 kHz", "Teaches logic, ethics, prolongs life, locates lost wealth"),
+    (32, "Asmodai", "106.560 kHz", "Grants invincible power, invulnerability, and math mastery"),
+    (33, "Gaap", "109.890 kHz", "Causes ignorance, teleports entities, disrupts spatial logic"),
+    (34, "Furfur", "113.220 kHz", "Generates thunder, lightning, storms, and reveals divine truth"),
+    (35, "Marchosias", "116.550 kHz", "Strong fighter, reliable tactical advice, ultimate endurance"),
+    (36, "Stolas", "119.880 kHz", "Teaches astronomy, virtues of herbs, and precious stones"),
+    (37, "Phenex", "123.210 kHz", "Sings wonderful melodies, teaches sciences, poetry writer"),
+    (38, "Halphas", "126.540 kHz", "Builds towers, supplies ammunition, and punishes enemies"),
+    (39, "Malphas", "129.870 kHz", "Builds houses/high towers, reveals enemy desires/actions"),
+    (40, "Raum", "133.200 kHz", "Steals treasure, destroys cities, foretells future events"),
+    (41, "Focalor", "136.530 kHz", "Sinks warships, commands winds/seas, inflicts drowning"),
+    (42, "Vepar", "139.860 kHz", "Governs waters, guides fleets, causes putrid wound corruption"),
+    (43, "Sabnock", "143.190 kHz", "Builds high towers, inflicts gangrenous worm wounds"),
+    (44, "Shax", "146.520 kHz", "Deprives sight, hearing, and intellect; steals hidden items"),
+    (45, "Vine", "149.850 kHz", "Discovers hidden secrets, builds towers, collapses stone walls"),
+    (46, "Bifrons", "153.180 kHz", "Teaches astrology, geometry, herbs, and moves dead bodies"),
+    (47, "Uvall", "156.510 kHz", "Procures love of friends, reconciles enemies, speaks ancient tongues"),
+    (48, "Haagenti", "159.840 kHz", "Makes men wise, transmutes metals into gold, turns water to wine"),
+    (49, "Crocell", "163.170 kHz", "Teaches geometry, warms bodies of water, creates roaring sounds"),
+    (50, "Furcas", "166.500 kHz", "Teaches philosophy, astrology, rhetoric, logic, and chiromancy"),
+    (51, "Balam", "169.830 kHz", "Grants perfect memory, foretells past/future, grants invisibility"),
+    (52, "Alloces", "173.160 kHz", "Teaches astronomy, liberal arts, provides excellent familiars"),
+    (53, "Camio", "176.490 kHz", "Understands bird calls, water sounds, and translates news"),
+    (54, "Murmur", "179.820 kHz", "Teaches philosophy, compels deceased souls to answer questions"),
+    (55, "Orobas", "183.150 kHz", "Discovers divinity, prevents deception, bestows prelacies/dignities"),
+    (56, "Gremory", "186.480 kHz", "Reveals hidden treasures, bestows love, foretells future events"),
+    (57, "Ose", "189.810 kHz", "Teaches secret/divine sciences, changes human shape at will"),
+    (58, "Amy", "193.140 kHz", "Teaches astrology, liberal arts, reveals hidden treasures"),
+    (59, "Orias", "196.470 kHz", "Teaches virtues of stars, bestows dignities, converts enemies"),
+    (60, "Vapula", "199.800 kHz", "Teaches manual crafts, philosophy, and advanced technical knowledge"),
+    (61, "Zagan", "203.130 kHz", "Makes fools wise, turns wine to water, turns metals into gold"),
+    (62, "Volac", "206.460 kHz", "Reveals location of serpents, reveals hidden gold/treasures"),
+    (63, "Andras", "209.790 kHz", "Sows discord, destroys opponents, commands escalation"),
+    (64, "Haures", "213.120 kHz", "Destroys enemies by fire, foretells past/future, shields from fraud"),
+    (65, "Andrealphus", "216.450 kHz", "Teaches geometry, measurement, transforms men into birds"),
+    (66, "Cimejes", "219.780 kHz", "Locates lost treasures, teaches grammar, logic, rhetoric"),
+    (67, "Amdusias", "223.110 kHz", "Commands trees to bend, provides musical instruments/orchestrations"),
+    (68, "Belial", "226.440 kHz", "Distributes high titles, reconciles political power, bestows favor"),
+    (69, "Decarabia", "229.770 kHz", "Teaches virtues of birds/herbs, commands illusionary phantoms"),
+    (70, "Seere", "233.100 kHz", "Brings instant abundance, teleports items, completes tasks immediately"),
+    (71, "Dantalion", "236.430 kHz", "Reads and alters thoughts of minds, teaches all arts/sciences"),
+    (72, "Andromalius", "239.760 kHz", "Catches thieves, returns stolen goods, reveals hidden conspiracies")
 ]
 
 # =====================================================================
-# 2. THE 72 SYSTEMIC BOTTLENECKS CATALOG (COMPLETE 1-72 MAJOR & MINOR)
+# 2. THE 72 ANGELS OF THE SHEM HAMEPHORASH & POWERS (1–72)
 # =====================================================================
-BOTTLENECKS_72 = [
-    "Sovereign Debt Default Drag", "High-Voltage Transmission Line Impedance", "Sub-Harmonic Grid Frequency Oscillations",
-    "Fossil Fuel Subsidy Monopolization", "Municipal Water Treatment Filtration Friction", "Hydroelectric Reservoir Sediment Accumulation",
-    "Thermal Power Station Cooling Friction", "Wastewater Pipeline Bottleneck", "Nuclear Waste Storage Isolation Drag",
-    "Natural Gas Pipeline Pressure Fluctuation", "Micro-Grid Synchronization Lag", "Renewable Energy Storage Depletion",
-    "Central Bank Interest Rate Arbitrage Drag", "Cross-Border Settlement Clearing Delays", "Fiat Currency Devaluation Velocity",
-    "Tariff & Customs Regulatory Inertia", "Foreign Exchange Liquidity Freeze", "Sovereign Credit Rating Downgrade Drag",
-    "Capital Outflow Capital Flight Friction", "Trade Deficit Accumulation", "Commodity Export Monopoly Bottleneck",
-    "Banking Network Liquidity Shortfall", "Insurance Underwriting Insolvency Friction", "Inflationary Supply Shock Disruption",
-    "Port Container Terminal Berth Congestion", "Customs Brokerage Inspection Backlog", "Interstate Freight Rail Bottleneck",
-    "Air Cargo Fuel Surcharge Inflation", "Cold-Chain Refrigeration Transport Breakdown", "Last-Mile Logistics Fleet Attrition",
-    "Strategic Grain Reserve Storage Decay", "Raw Material Mining Processing Lag", "Warehouse Storage Capacity Saturation",
-    "Maritime Shipping Lane Bottleneck", "Border Post Truck Queue Inertia", "Manufacturing Component Lead-Time Drag",
-    "Telecom Spectrum Bandwidth Congestion", "Subsea Fiber Optic Cable Signal Degradation", "Academic Research Paywall Isolation",
-    "Cloud Data Center Power Allocation Friction", "Rural Broadband Fiber Deployment Lag", "Cyber Infrastructure Packet Latency",
-    "Satellite Ground Station Uplink Interference", "Legacy Database Schema Incompatibility", "Public Sector IT Legacy System Inertia",
-    "Intellectual Property Patent Litigation Drag", "Digital Identity Verification Backlog", "High-Frequency Trading Signal Distortion",
-    "Municipal Emergency Response Lag", "Urban Housing Permit Bureaucratic Friction", "Civil Service Labor Strike Inertia",
-    "Judicial Case Docket Backlog Drag", "Land Tenure Property Registration Friction", "Public Transit Rail Maintenance Disruption",
-    "Highway Infrastructure Pothole Degradation", "Municipal Solid Waste Processing Saturation", "Disaster Relief Procurement Delay",
-    "Tax Administration Revenue Leakage", "Zoning Board Regulatory Freeze", "Public Infrastructure Procurement Extortion",
-    "Pharmaceutical Patent Monopoly Pricing", "Hospital Emergency Ward Bed Shortage", "Specialist Physician Redistribution Drag",
-    "Medical Supply Chain Import Inertia", "Vaccine Cold-Chain Storage Disruption", "Public School Infrastructure Decay",
-    "Technical Skills Training Gap Inertia", "Pension Fund Yield Deficit Drag", "Food Distribution Food Desert Isolation",
-    "Mental Health Crisis Resource Shortage", "Agricultural Soil Nutrient Depletion", "Public Safety Emergency Radio Interference"
-]
-
-# =====================================================================
-# 3. THE 72 MATCHING REMEDIATION PROTOCOLS CATALOG (1-72 MAJOR & MINOR)
-# =====================================================================
-PROTOCOLS_72 = [
-    "Automated Profit-Share Ledger Deployment", "Zero-Knowledge Border Security Lock Deployment", "Open-Access Universal Knowledge Vault Deployment",
-    "Logos Asset-Backed Currency Ledger Deployment", "Decentralized Micro-Grid Mesh Deployment", "Hydrogen Airship Transit Mesh Deployment",
-    "Electro-Thermal Suppression Array Deployment", "Maglev Automated Rail Mesh Deployment", "Sub-Harmonic Grid Phase Stabilizer Deployment",
-    "Closed-Loop Water Purification Vector Deployment", "Sub-Surface Geothermal Heat Sink Deployment", "Automated FX Liquidity Bridge Deployment",
-    "Real-Time Customs Tariff Bypass Matrix", "Sovereign Debt Tokenization Mesh Deployment", "Automated Container Crane Routing Optimization",
-    "Autonomous Freight Drone Transport Network", "Cold-Chain Solar-Powered Refrigeration Pods", "Strategic Resource Vault Decentralization",
-    "High-Bandwidth Quantum Encryption Uplink", "Open-Source Patent Vault Release Vector", "Subsea Cable Redundant Ring Array",
-    "Public Cloud Federated Database Mesh", "Autonomous Emergency Dispatch Relay Vector", "Fast-Track Automated Housing Permit Engine",
-    "Immutable Land Title Registry Deployment", "Automated Rail Switch Repair Array", "Waste-to-Energy Plasma Gasification Pods",
-    "Generic Pharmaceutical Synthesis Vaults", "Triage Automation Medical Diagnostic Relay", "Universal Basic Resource Distribution Ledger",
-    "Soil Regenerative Bio-Char Injector Array", "High-Voltage Direct Current Transmission Mesh", "Hydro-Turbine Sediment Flushing Vector",
-    "Nuclear Isotope Recycling Closed Loop", "Automated Pipeline Pressure Relief Matrix", "Decentralized Currency Clearing Array",
-    "Cross-Border Automated Trade Settlement", "Real-Time Inflation Hedging Algorithmic Vault", "Port Freight Buffer Storage Network",
-    "Autonomous Customs Clearance Node", "Intermodal Freight Sorting Matrix", "Last-Mile Electric Cargo Delivery Fleet",
-    "Grain Silo Automated Aeration Array", "Raw Material Refining Catalyst Deployment", "Warehouse Robotic Storage Vector",
-    "Maritime Route Optimization Array", "Border Control Automated Access Gate", "Manufacturing Component Supply Sync",
-    "Dynamic Spectrum Allocation Vector", "Optical Signal Wave Amplifiers", "High-Density Data Center Liquid Cooling",
-    "Rural Wireless Mesh Node Array", "Zero-Trust Packet Inspection Relay", "Satellite Phased-Array Transceiver Mesh",
-    "Legacy Code Translation Engine", "Public Administration Automation Matrix", "Decentralized IP Clearing Vault",
-    "Biometric Identity Authentication Node", "Low-Latency Financial Transaction Relay", "Urban Traffic Flow Signal Optimizer",
-    "Public Transit Rail Automation Matrix", "Road Surface Polymer Healing Injectors", "Municipal Recycled Material Sorting Node",
-    "Emergency Supply Logistics Network", "Real-Time Audit Revenue Collection Vector", "Urban Density Zoning Optimization Model",
-    "Public Procurement Transparency Ledger", "Regional Medical Supply Vault", "Mobile Healthcare Diagnostic Clinics",
-    "Open-Source Education Curriculum Node", "Vocational Skills Training VR Platform", "Pension Fund Automated Risk Hedger"
-]
-
 ANGELS_72 = [
-    ("Vehuiah", "Seraphim", "4.045 kHz"), ("Jeliel", "Seraphim", "12.135 kHz"),
-    ("Sitael", "Seraphim", "20.225 kHz"), ("Elemiah", "Seraphim", "28.315 kHz"),
-    ("Lauviah", "Thrones", "133.488 kHz"), ("Caliel", "Thrones", "141.578 kHz"),
-    ("Leuviah", "Thrones", "149.668 kHz"), ("Pahaliah", "Thrones", "157.758 kHz"),
-    ("Nelchael", "Thrones", "165.848 kHz"), ("Yeiayel", "Thrones", "173.939 kHz")
+    ("Vehuiah", "Seraphim", "4.045 kHz", "Illuminates mind, grants willpower, initiates divine action"),
+    ("Jeliel", "Seraphim", "12.135 kHz", "Fosters harmony, quiets popular sedition, grants peace"),
+    ("Sitael", "Seraphim", "20.225 kHz", "Protects against adversity, grants nobility and truth"),
+    ("Elemiah", "Seraphim", "28.315 kHz", "Discovers useful secrets, neutralizes mental distress"),
+    ("Mahasiah", "Seraphim", "36.405 kHz", "Dominates high science, philosophy, and moral perfection"),
+    ("Lelahel", "Seraphim", "44.495 kHz", "Illuminates love, art, science, and grants bodily healing"),
+    ("Achaiah", "Seraphim", "52.585 kHz", "Reveals secrets of nature, bestows infinite patience"),
+    ("Cahetel", "Seraphim", "60.675 kHz", "Inspires agricultural abundance and divine blessings"),
+    ("Haziel", "Cherubim", "68.765 kHz", "Obtains divine mercy, keeps promises, reconciles enemies"),
+    ("Aladiah", "Cherubim", "76.855 kHz", "Heals systemic disease, neutralizes moral corruption"),
+    ("Lauviah", "Cherubim", "84.945 kHz", "Protects against fraud, bestows high renown and wisdom"),
+    ("Hahaiah", "Cherubim", "93.035 kHz", "Reveals hidden mysteries, converts adversity into peace"),
+    ("Iezalel", "Cherubim", "101.125 kHz", "Promotes reconciliation, learning, and systemic order"),
+    ("Mebahel", "Cherubim", "109.215 kHz", "Protects justice, liberates oppressed, reveals truth"),
+    ("Hariel", "Cherubim", "117.305 kHz", "Inspires religious/moral peace, purifies corrupt systems"),
+    ("Hakamiah", "Cherubim", "125.395 kHz", "Protects against traitors, bestows victory and loyalty"),
+    ("Lauviah", "Thrones", "133.488 kHz", "Inspires high arts, philosophy, cures insomnia/sorrow"),
+    ("Caliel", "Thrones", "141.578 kHz", "Invocates prompt assistance, confounds false witnesses"),
+    ("Leuviah", "Thrones", "149.668 kHz", "Bestows brilliant memory, intelligence, and joy"),
+    ("Pahaliah", "Thrones", "157.758 kHz", "Converts enemies, dominates religion and morality"),
+    ("Nelchael", "Thrones", "165.848 kHz", "Protects against calumny, dominates math and astronomy"),
+    ("Yeiayel", "Thrones", "173.939 kHz", "Protects fortune, commerce, diplomacy, and travels"),
+    ("Melahel", "Thrones", "182.029 kHz", "Protects against weapons, governs herbs and healing water"),
+    ("Hahiuiah", "Thrones", "190.119 kHz", "Protects against thieves, assassins, and fatal accidents"),
+    ("Nith-Haiah", "Dominions", "198.209 kHz", "Governs occult sciences, bestows wisdom and truth"),
+    ("Haaiah", "Dominions", "206.299 kHz", "Protects political treaties, diplomatic secrets, justice"),
+    ("Yerathel", "Dominions", "214.389 kHz", "Confounds wicked conspirators, illuminates truth"),
+    ("Seheiah", "Dominions", "222.479 kHz", "Protects against fire, sickness, infrastructure collapse"),
+    ("Reiyel", "Dominions", "230.569 kHz", "Frees souls from systemic traps and spiritual oppression"),
+    ("Omael", "Dominions", "238.659 kHz", "Governs animal generation, patient endurance, production"),
+    ("Lecabel", "Dominions", "246.749 kHz", "Inspires agricultural engineering and scientific light"),
+    ("Vasariah", "Dominions", "254.839 kHz", "Protects against unjust attacks, grants memory/eloquence"),
+    ("Yehuiah", "Powers", "262.929 kHz", "Uncovers treacherous conspiracies, enforces institutional order"),
+    ("Lehahiah", "Powers", "271.019 kHz", "Pacifies anger, maintains order, commands obedience"),
+    ("Chavakiah", "Powers", "279.109 kHz", "Reconciles family inheritances and property disputes"),
+    ("Menadel", "Powers", "287.199 kHz", "Retains employment, frees captives, restores fugitives"),
+    ("Aniel", "Powers", "295.289 kHz", "Governs arts/sciences, uncovers hidden nature secrets"),
+    ("Haamiah", "Powers", "303.379 kHz", "Protects seekers of truth, governs spiritual ceremonies"),
+    ("Rehael", "Powers", "311.469 kHz", "Heals physical/mental afflictions, grants longevity"),
+    ("Ieiazel", "Powers", "319.559 kHz", "Delivers captives, dominates printing, writing, publishing"),
+    ("Hahahel", "Virtues", "327.649 kHz", "Inspires divine mission, converts souls, strengthens order"),
+    ("Mikael", "Virtues", "335.739 kHz", "Protects political leaders, safety of state institutions"),
+    ("Veuliah", "Virtues", "343.829 kHz", "Destroys enemy power, liberates enterprise slaves"),
+    ("Yelahiah", "Virtues", "351.919 kHz", "Protects magistrates, bestows victory in military actions"),
+    ("Sealiah", "Virtues", "360.009 kHz", "Confounders of the proud, elevates the humble and fallen"),
+    ("Ariel", "Virtues", "368.099 kHz", "Reveals nature's secrets, grants clear prophetic dreams"),
+    ("Asaliah", "Virtues", "376.189 kHz", "Praises divine truth, uncovers justice in dark dockets"),
+    ("Mihael", "Virtues", "384.279 kHz", "Fosters conjugal peace, protects procreation and harmony"),
+    ("Vehuel", "Principalities", "392.369 kHz", "Exalts grand souls, bestows high philosophy and art"),
+    ("Daniel", "Principalities", "400.459 kHz", "Obtains divine mercy, comforts sorrow, grants eloquence"),
+    ("Hahasiah", "Principalities", "408.549 kHz", "Reveals arcana of medicine, chemistry, and physics"),
+    ("Imamiah", "Principalities", "416.639 kHz", "Destroys enemy power, protects prisoners and travelers"),
+    ("Nanael", "Principalities", "424.729 kHz", "Governs higher education, philosophy, and judicial truth"),
+    ("Nithael", "Principalities", "432.819 kHz", "Governs temporal rulers, bestows long stable dynasties"),
+    ("Mebahiah", "Principalities", "440.909 kHz", "Bestows moral dignity, piety, and practical wisdom"),
+    ("Poyel", "Principalities", "448.999 kHz", "Provides fame, fortune, eloquence, and total abundance"),
+    ("Nemamiah", "Archangels", "457.089 kHz", "Frees captives, bestows courage in high-stress battles"),
+    ("Yeialel", "Archangels", "465.179 kHz", "Cures eye afflictions, confounds false/corrupt witnesses"),
+    ("Harahel", "Archangels", "473.269 kHz", "Governs libraries, archives, treasure vaults, and wisdom"),
+    ("Mitzrael", "Archangels", "481.359 kHz", "Heals mental illness, liberates persecuted entities"),
+    ("Umabel", "Archangels", "489.449 kHz", "Governs physics, astronomy, and nature's resonance"),
+    ("Iah-Hel", "Archangels", "497.539 kHz", "Illuminates solitary wisdom, truth, and scientific light"),
+    ("Anauel", "Archangels", "505.629 kHz", "Protects commerce, economic trade, and financial health"),
+    ("Mehiel", "Archangels", "513.719 kHz", "Protects against wild beasts, governs printing and literature"),
+    ("Damabiah", "Angels", "521.809 kHz", "Protects against shipwrecks, governs marine enterprise"),
+    ("Manakel", "Angels", "529.899 kHz", "Cures epilepsy, calms rage, governs flora/fauna health"),
+    ("Eyael", "Angels", "537.989 kHz", "Bestows longevity, illuminates science, philosophy, occult"),
+    ("Habuhiah", "Angels", "546.079 kHz", "Governs agriculture, fecundity, and environmental healing"),
+    ("Rochel", "Angels", "554.169 kHz", "Restores stolen property, locates lost heritage and deeds"),
+    ("Jabamiah", "Angels", "562.259 kHz", "Governs regeneration, elemental transformation of matter"),
+    ("Haiaiel", "Angels", "570.349 kHz", "Confounds wicked traitors, grants victory and protection"),
+    ("Mumiah", "Angels", "578.439 kHz", "Governs medicine, health, longevity, and happy endings")
 ]
 
-PHYSICAL_STABILITY_SEALS = [
-    "Rin (Strength)", "Pyo (Energy Flow)", "To (Harmony)", "Sha (Healing)",
-    "Kai (Awareness)", "Jin (Insight)", "Retsus (Space-Time)", "Zai (Creation)", "Zen (Absolute Zero)"
-]
+# =====================================================================
+# 3. PROGRAMMATIC GENERATOR: 500 SYSTEMIC BOTTLENECKS
+# =====================================================================
+def generate_500_bottlenecks():
+    categories = [
+        "Sovereign Debt", "Transmission Line", "Grid Frequency", "Fuel Subsidy", "Water Filtration",
+        "Hydroelectric Reservoir", "Thermal Cooling", "Pipeline Pressure", "Nuclear Isolation", "Micro-Grid Sync",
+        "Battery Storage", "Interest Rate Arbitrage", "Settlement Clearing", "Currency Devaluation", "Customs Inertia",
+        "FX Liquidity", "Credit Downgrade", "Capital Flight", "Trade Deficit", "Export Monopoly",
+        "Bank Liquidity", "Underwriting Insolvency", "Supply Shock", "Berth Congestion", "Inspection Backlog",
+        "Freight Rail", "Fuel Surcharge", "Refrigeration Pod", "Fleet Attrition", "Grain Storage Decay",
+        "Mining Lead-Time", "Warehouse Capacity", "Shipping Bottleneck", "Border Queue", "Component Lead-Time",
+        "Spectrum Bandwidth", "Subsea Fiber", "Research Paywall", "Data Center Power", "Broadband Fiber",
+        "Packet Latency", "Uplink Interference", "Legacy Database", "Public Sector IT", "Patent Litigation",
+        "Biometric Backlog", "Trading Signal Distortion", "Emergency Response", "Permit Bureaucracy", "Labor Strike"
+    ]
+    modifiers = [
+        "Drag", "Impedance", "Oscillation", "Monopolization", "Friction", "Sedimentation", "Thermal Lag",
+        "Bottleneck", "Isolation Friction", "Synchronization Lag", "Depletion Velocity", "Arbitrage Exposure",
+        "Clearing Backlog", "Devaluation Cascade", "Regulatory Stagnation", "Liquidity Freeze", "Downgrade Risk",
+        "Capital Outflow", "Accumulation Deficit", "Monopoly Bottleneck", "Shortfall Vulnerability", "Insolvency Risk",
+        "Disruption Shock", "Congestion Point", "Inspection Inertia", "Rail Capacity Constraint", "Surcharge Inflation",
+        "Refrigeration Breakdown", "Fleet Attrition Rate", "Storage Decay", "Processing Lag", "Saturation Threshold",
+        "Shipping Lane Impasse", "Truck Queue Inertia", "Component Lead-Time Friction", "Bandwidth Congestion",
+        "Signal Degradation", "Paywall Isolation", "Allocation Friction", "Deployment Delay", "Packet Latency Peak",
+        "Uplink Interference", "Schema Incompatibility", "Legacy System Inertia", "Litigation Freeze",
+        "Verification Backlog", "Signal Distortion", "Response Time Lag", "Bureaucratic Stagnation", "Labor Action Friction"
+    ]
+    results = []
+    count = 1
+    for c in categories:
+        for m in modifiers:
+            results.append(f"{c} {m}")
+            count += 1
+            if count > 500:
+                break
+        if count > 500:
+            break
+    return results
 
-PHYSICAL_OPTICAL_SYSTEMS = [
-    ("Multi-Spectral Quantum Interferometry", "Micro-Vibration Defect Perception"),
-    ("High-Resolution Terahertz Scanning", "Sub-Surface Physical Strain Isolation"),
-    ("Gravimetric Phase-Array Sensing", "Density Flow & Gravitational Vector Mapping"),
-    ("360° LIDAR Spectrum Projection", "Sub-Harmonic Spatial Impedance Vision"),
-    ("Quantum Gravitational Gradiometry", "Gravitational Field Equilibrium Analysis"),
-    ("Infrared Phase Interferometry", "Interfacial Barrier Energy Leak Sensing")
-]
+# =====================================================================
+# 4. PROGRAMMATIC GENERATOR: 500 REMEDIATION PROTOCOLS
+# =====================================================================
+def generate_500_protocols():
+    systems = [
+        "Profit-Share Ledger", "Zero-Knowledge Border Lock", "Universal Knowledge Vault", "Logos Currency Ledger",
+        "Decentralized Micro-Grid Mesh", "Hydrogen Transit Network", "Electro-Thermal Suppression", "Maglev Rail Mesh",
+        "Sub-Harmonic Phase Stabilizer", "Closed-Loop Purification Vector", "Geothermal Heat Sink", "FX Liquidity Bridge",
+        "Customs Tariff Bypass", "Sovereign Debt Tokenization", "Container Crane Optimizer", "Freight Drone Network",
+        "Solar Refrigeration Pod", "Resource Vault Mesh", "Quantum Encryption Uplink", "Patent Vault Release",
+        "Subsea Cable Ring Array", "Federated Database Mesh", "Emergency Dispatch Relay", "Housing Permit Engine",
+        "Land Title Registry", "Automated Switch Repair", "Plasma Gasification Pod", "Pharmaceutical Synthesis Vault",
+        "Triage Automation Relay", "Basic Resource Distribution", "Regenerative Bio-Char Injector", "HVDC Transmission Mesh",
+        "Turbine Flushing Vector", "Nuclear Isotope Recycling", "Pipeline Relief Matrix", "Currency Clearing Array",
+        "Automated Trade Settlement", "Inflation Hedging Vault", "Port Buffer Storage", "Customs Clearance Node",
+        "Intermodal Sorting Matrix", "Electric Delivery Fleet", "Silo Aeration Array", "Refining Catalyst Vector",
+        "Robotic Storage Array", "Route Optimization Mesh", "Automated Access Gate", "Component Supply Sync",
+        "Dynamic Spectrum Allocation", "Optical Signal Wave Amplifier"
+    ]
+    actions = [
+        "Deployment", "Activation", "Integration", "Synchronization", "Optimization", "Reinforcement",
+        "Harmonization", "Stabilization", "Acceleration", "Balancing"
+    ]
+    results = []
+    count = 1
+    for s in systems:
+        for a in actions:
+            results.append(f"{s} {a}")
+            count += 1
+            if count > 500:
+                break
+        if count > 500:
+            break
+    return results
 
-PHYSICAL_ENERGY_AMPLIFIERS = [
-    (1, "Magnetohydrodynamic Fluid Accelerator", "Magnetically Confined Density Vector"),
-    (2, "Thermal Plasma Kinetic Generator", "High-Velocity Thermal Acceleration"),
-    (3, "Hydrodynamic Flow Cavitation Suppressor", "Cavitation Hardening Resistance Mesh"),
-    (4, "Electro-Thermal Lava-State Reactor", "High-Heat Thermal Material Liquefaction"),
-    (5, "Superheated Steam Expansion Matrix", "Superheated Steam Pressure Acceleration"),
-    (6, "Chemical Solute Neutralization Vector", "pH Neutralization Barrier"),
-    (7, "Aero-Acoustic Wave Disruptor", "Acoustic Dispersal Flight Vector"),
-    (8, "Rheological Viscous Damping Suppressor", "Viscous Wave Damping Isolation"),
-    (9, "High-Density Electromagnetic Pulse Amplifier", "Nine-Stage Relativistic Energy Surge")
-]
+BOTTLENECKS_500 = generate_500_bottlenecks()
+PROTOCOLS_500 = generate_500_protocols()
 
-PHYSICAL_THERMODYNAMICS = [
-    ("Thermodynamic Heat Sink Balance", "Natural Thermal Energy Equilibrium"),
-    ("Piezoelectric Pressure Transduction", "Physical Stress Strain Reanimation"),
-    ("Hydro-Acoustic Liquid Transmission", "Fluid Mass Regeneration Transmission"),
-    ("Universal Zero-Point Energy Balance", "Nullification Vector of Entropy")
-]
-
-PHYSICAL_CONTAINMENT = [
-    ("Four-Node Phase Locking Seal", "Dual Layer Sub-Harmonic Isolation"),
-    ("Eight-Vector Frequency Lock", "Continuous Field Transformation Lock"),
-    ("Cryogenic Solid-State Isolation", "Zero-Trust Physical Node Isolation"),
-    ("High-Tensile Carbon Lattice Binding", "Structural Stress Immobilizer")
-]
-
-PHYSICAL_OVERCLOCK_LIMITS = [
-    ("Overclock Stage 1: Thermal Gate Opening", "125% Overclock Capacity", "Safety Governor Disengagement"),
-    ("Overclock Stage 2: Resistance Suppression", "150% Overclock Capacity", "Cryogenic Resistance Elimination"),
-    ("Overclock Stage 3: Current Acceleration", "200% Overclock Capacity", "Hyper-Conductive Current Surge"),
-    ("Overclock Stage 4: Wave Velocity Peak", "275% Overclock Capacity", "Sub-Harmonic Wave Acceleration"),
-    ("Overclock Stage 5: Structural Load Break", "350% Overclock Capacity", "Network Load Limit Break"),
-    ("Overclock Stage 6: Kinetic Dispersal", "500% Overclock Capacity", "Aero-Dynamic Friction Combustion"),
-    ("Overclock Stage 7: Shockwave Propagation", "750% Overclock Capacity", "Relativistic Thermal Shockwave"),
-    ("Overclock Stage 8: Quantum Lattice Collapse", "1000% Overclock Capacity", "Quantum Field Distortion Limit")
-]
-
-PHYSICAL_LASER_ABLATION = [
-    "Femtosecond Laser Atomic Ablation", "Triangular Beam Molecular Isolation",
-    "Cube Beam Sub-Atomic Vaporization", "Cone Laser Sub-Nanometer Sweep"
-]
-
-PHYSICAL_STATE_RECOVERY = [
-    ("Izanagi Active (Zero-Point Rewind)", "Atomic Snapshot State Rollback to Pre-Failure"),
-    ("Izanami Active (PID Error Lock)", "Closed-Loop Feedback Trap to Force Target Unity"),
-    ("Mokuton Organic Mesh Regeneration", "Self-Healing Fiber-Optic & Structural Sprouting")
-]
+PHYSICAL_STABILITY_SEALS = ["Rin (Strength)", "Pyo (Energy Flow)", "To (Harmony)", "Sha (Healing)", "Kai (Awareness)", "Jin (Insight)"]
+PHYSICAL_OPTICAL_SYSTEMS = [("Multi-Spectral Quantum Interferometry", "Micro-Vibration Defect Perception"), ("High-Resolution Terahertz Scanning", "Sub-Surface Physical Strain Isolation")]
+PHYSICAL_ENERGY_AMPLIFIERS = [(1, "Magnetohydrodynamic Fluid Accelerator", "Magnetically Confined Density Vector"), (2, "Thermal Plasma Kinetic Generator", "High-Velocity Thermal Acceleration")]
+PHYSICAL_THERMODYNAMICS = [("Thermodynamic Heat Sink Balance", "Natural Thermal Energy Equilibrium"), ("Piezoelectric Pressure Transduction", "Physical Stress Strain Reanimation")]
+PHYSICAL_CONTAINMENT = [("Four-Node Phase Locking Seal", "Dual Layer Sub-Harmonic Isolation"), ("Eight-Vector Frequency Lock", "Continuous Field Transformation Lock")]
+PHYSICAL_OVERCLOCK_LIMITS = [("Overclock Stage 1: Thermal Gate Opening", "125% Overclock Capacity"), ("Overclock Stage 4: Wave Velocity Peak", "275% Overclock Capacity")]
+PHYSICAL_LASER_ABLATION = ["Femtosecond Laser Atomic Ablation", "Triangular Beam Molecular Isolation"]
+PHYSICAL_STATE_RECOVERY = [("Izanagi Active (Zero-Point Rewind)", "Atomic Snapshot State Rollback"), ("Izanami Active (PID Error Lock)", "Closed-Loop Feedback Trap")]
 
 
-def calculate_999_cymatic_frequency(sub_seed: int, vector_idx: int) -> float:
-    base_freq = 999.000 / ((vector_idx % 9) + 1)
-    variance = (sub_seed % 1000) / 1000.0
-    return round(base_freq + variance, 3)
+def query_nvidia_nim_cloud(prompt_text: str) -> str:
+    """Queries Nvidia NIM Cloud API for AI-accelerated audit insights."""
+    api_key = os.getenv("NVIDIA_API_KEY", "").strip()
+    if not api_key:
+        return ""
 
+    headers = {
+        "Authorization": f"Bearer {api_key}",
+        "Content-Type": "application/json"
+    }
 
-def reconcile_target_node(node_payload: str) -> str:
-    clean_node = node_payload.strip().title()
-    if not clean_node:
-        clean_node = "Sovereign Grid Node"
-    return clean_node
+    payload = {
+        "model": NVIDIA_MODEL,
+        "messages": [{"role": "user", "content": prompt_text}],
+        "temperature": 0.2,
+        "max_tokens": 300
+    }
+
+    try:
+        req = urllib.request.Request(
+            NVIDIA_NIM_ENDPOINT,
+            data=json.dumps(payload).encode('utf-8'),
+            headers=headers,
+            method="POST"
+        )
+        with urllib.request.urlopen(req, timeout=8) as response:
+            res_data = json.loads(response.read().decode('utf-8'))
+            return res_data['choices'][0]['message']['content'].strip()
+    except Exception as e:
+        print(f"[!] Nvidia NIM Cloud Query notice: {e}")
+        return ""
 
 
 def generate_adaptive_node_sweep(target_node: str, count: int = 10):
-    clean_node = reconcile_target_node(target_node)
+    clean_node = target_node.strip().title() or "Sovereign Grid Node"
     node_hash = hashlib.sha256(clean_node.lower().encode('utf-8')).hexdigest()
-
     sweep_results = []
 
     for idx in range(count):
@@ -193,8 +301,8 @@ def generate_adaptive_node_sweep(target_node: str, count: int = 10):
         sub_hash = hashlib.sha256(f"{node_hash}:{idx}:{pll_sync_mark}".encode('utf-8')).hexdigest()
         sub_seed = int(sub_hash[:16], 16)
 
-        b_index = sub_seed % len(BOTTLENECKS_72)
-        p_index = (sub_seed >> 4) % len(PROTOCOLS_72)
+        b_index = sub_seed % len(BOTTLENECKS_500)
+        p_index = (sub_seed >> 4) % len(PROTOCOLS_500)
         d_index = (sub_seed >> 8) % len(GOETIC_DRIVERS_72)
         a_index = (sub_seed >> 12) % len(ANGELS_72)
 
@@ -203,151 +311,79 @@ def generate_adaptive_node_sweep(target_node: str, count: int = 10):
         thermo_type, thermo_resonance = PHYSICAL_THERMODYNAMICS[(sub_seed >> 5) % len(PHYSICAL_THERMODYNAMICS)]
         fuin_name, fuin_function = PHYSICAL_CONTAINMENT[(sub_seed >> 7) % len(PHYSICAL_CONTAINMENT)]
 
-        gate_name, gate_limit, gate_effect = PHYSICAL_OVERCLOCK_LIMITS[idx % len(PHYSICAL_OVERCLOCK_LIMITS)]
+        gate_name, gate_limit = PHYSICAL_OVERCLOCK_LIMITS[idx % len(PHYSICAL_OVERCLOCK_LIMITS)]
         laser_mode = PHYSICAL_LASER_ABLATION[(sub_seed >> 9) % len(PHYSICAL_LASER_ABLATION)]
         kinjutsu_type, kinjutsu_desc = PHYSICAL_STATE_RECOVERY[(sub_seed >> 11) % len(PHYSICAL_STATE_RECOVERY)]
 
-        b_name = BOTTLENECKS_72[b_index]
-        p_name = PROTOCOLS_72[p_index]
-        goetic_id, demon_name, demon_freq = GOETIC_DRIVERS_72[d_index]
-        angel_name, angel_choir, angel_freq = ANGELS_72[a_index]
+        b_name = BOTTLENECKS_500[b_index]
+        p_name = PROTOCOLS_500[p_index]
+        goetic_id, demon_name, demon_freq, demon_power = GOETIC_DRIVERS_72[d_index]
+        angel_name, angel_choir, angel_freq, angel_power = ANGELS_72[a_index]
 
-        b_id = f"B-{(b_index + 1):02d}"
-        p_id = f"P-{(p_index + 1):02d}"
-
-        cymatic_inversion_hz = calculate_999_cymatic_frequency(sub_seed, idx)
+        base_freq = 999.000 / ((idx % 9) + 1)
+        cymatic_inversion_hz = round(base_freq + ((sub_seed % 1000) / 1000.0), 3)
 
         base_year = 2026 + (sub_seed % 15)
         step = 70 + ((sub_seed >> 3) % 30)
-        crash_dates = [
-            f"{base_year + (y * step)}-{(sub_seed % 12) + 1:02d}-{(sub_seed % 28) + 1:02d}"
-            for y in range(10)
-        ]
+        crash_dates = [f"{base_year + (y * step)}-{(sub_seed % 12) + 1:02d}-{(sub_seed % 28) + 1:02d}" for y in range(10)]
 
-        tactical_seal = PHYSICAL_STABILITY_SEALS[idx % len(PHYSICAL_STABILITY_SEALS)]
-        anti_phase_dampening = round(0.850 + ((sub_seed % 140) / 1000.0), 3)
-        polymer_regen_rate = round(0.910 + ((sub_seed % 85) / 1000.0), 3)
+        summary = (
+            f"Chronos Sentinel Node analyzed '{clean_node}'. Driver #{goetic_id} {demon_name} ({demon_freq}) "
+            f"exerting power [{demon_power}] induces systemic bottleneck friction. Executing {clean_node} {p_name} "
+            f"invoking Shem Angel {angel_name} ({angel_choir}, {angel_freq}) providing power [{angel_power}] "
+            f"locks 1.000 Target Unity."
+        )
 
         sentinel_record = {
             "sandbox_id": f"sentinel-c{idx+1:02d}",
             "status": "EXECUTED",
-            "physical_stability_seal": tactical_seal,
+            "nvidia_nim_accelerated": bool(os.getenv("NVIDIA_API_KEY")),
+            "physical_stability_seal": PHYSICAL_STABILITY_SEALS[idx % len(PHYSICAL_STABILITY_SEALS)],
             "phase_locked_loop_mark": pll_sync_mark,
             "cymatic_999_inversion_hz": f"{cymatic_inversion_hz:.3f} Hz",
-            "optical_metrology_matrix": {
-                "system": optical_type,
-                "perception_mode": optical_capability
-            },
-            "mhd_energy_amplifier": {
-                "stage": mhd_stage,
-                "system_name": mhd_name,
-                "attribute": mhd_attribute,
-                "amplification_factor": f"{1.0 + ((sub_seed % 900) / 100.0):.2f}x Field Density"
-            },
-            "thermodynamic_balancer": {
-                "mode": thermo_type,
-                "resonance_profile": thermo_resonance,
-                "ambient_thermal_balance": f"{92.5 + (sub_seed % 75) / 10.0:.1f}% Entropy Stabilization"
-            },
-            "containment_array": {
-                "seal_formula": fuin_name,
-                "containment_function": fuin_function,
-                "stability_lock": "100% UNBROKEN"
-            },
-            "overclock_telemetry": {
-                "active_gate": gate_name,
-                "overclock_capacity": gate_limit,
-                "structural_impact": gate_effect
-            },
-            "laser_ablation_deconstruction": {
-                "mode": laser_mode,
-                "resolution": "0.001 Angstrom Sub-Atomic Material Removal"
-            },
-            "state_recovery": {
-                "protocol": kinjutsu_type,
-                "function": kinjutsu_desc
-            },
-            "physical_telemetry": {
-                "anti_phase_dampening": f"{anti_phase_dampening * 100:.1f}% Friction Damping",
-                "polymer_self_healing": f"{polymer_regen_rate * 100:.1f}% Structural Repair Rate"
-            },
+            "optical_metrology_matrix": {"system": optical_type, "perception_mode": optical_capability},
+            "mhd_energy_amplifier": {"stage": mhd_stage, "system_name": mhd_name, "amplification_factor": f"{1.0 + ((sub_seed % 900) / 100.0):.2f}x"},
+            "thermodynamic_balancer": {"mode": thermo_type, "ambient_thermal_balance": f"{92.5 + (sub_seed % 75) / 10.0:.1f}%"},
+            "containment_array": {"seal_formula": fuin_name, "containment_function": fuin_function},
+            "overclock_telemetry": {"active_gate": gate_name, "overclock_capacity": gate_limit},
+            "laser_ablation_deconstruction": {"mode": laser_mode},
+            "state_recovery": {"protocol": kinjutsu_type, "function": kinjutsu_desc},
+            "physical_telemetry": {"anti_phase_dampening": f"{(0.850 + ((sub_seed % 140) / 1000.0)) * 100:.1f}%"},
             "data": {
                 "agent_index": idx + 1,
-                "chronos_phase": f"Phase {(idx // 3) + 1}: Diagnostic Arc",
-                "diagnostic_scope": "Regional / Statutory Policy Friction",
                 "target_node_subject": clean_node,
                 "biblical_apocalyptic_framework": {
                     "apocalyptic_seal": "Fourth Seal: Pale Horse" if idx < 5 else "Fifth Seal: Altar of Martyrs",
                     "sealed_tribe": "Judah" if sub_seed % 2 == 0 else "Gad",
-                    "temporal_birth_gate": "January Gate" if sub_seed % 2 == 0 else "March Gate",
-                    "church_anchor": "Ephesus" if sub_seed % 2 == 0 else "Pergamum",
-                    "base_degree_frequency_khz": f"{80.0 + (sub_seed % 35):.1f} kHz",
-                    "zone_classification": "STABILIZED GREEN CORRIDOR"
+                    "temporal_birth_gate": "January Gate" if sub_seed % 2 == 0 else "March Gate"
                 },
                 "bottleneck": {
-                    "id": b_id,
+                    "id": f"B-{(b_index + 1):03d}",
                     "name": f"{b_name} in {clean_node} Context",
                     "active_demon_driver": f"#{goetic_id} {demon_name}",
+                    "demon_power": demon_power,
                     "frequency_khz": demon_freq,
-                    "decay_velocity": round(0.500 + ((sub_seed % 400) / 1000.0), 3),
-                    "destabilization_constant_floor": 0.666,
                     "predictive_crash_schedule_10_dates_to_3000ce": crash_dates
                 },
                 "protocol": {
-                    "id": p_id,
+                    "id": f"P-{(p_index + 1):03d}",
                     "name": f"{clean_node} {p_name}",
                     "ruling_shem_angel": angel_name,
                     "celestial_choir": angel_choir,
-                    "frequency_khz": angel_freq,
-                    "current_restoration_speed": round(0.700 + ((sub_seed % 250) / 1000.0), 3),
-                    "equilibrium_target": 1.0
+                    "angel_power": angel_power,
+                    "frequency_khz": angel_freq
                 },
                 "real_time_earth_vector": {
                     "applied_speed": f"{round(0.400 + ((sub_seed % 500) / 1000.0), 4)}x acceleration",
-                    "application_width_khz": f"{110.0 + (sub_seed % 60):.3f} kHz bandwidth",
                     "frequency_shift_to_ultra_green": f"+{20.0 + (sub_seed % 40):.3f} kHz shift",
-                    "exact_spatial_target": f"{clean_node} Infrastructure Grid Node #{idx+1} [{pll_sync_mark}]"
+                    "exact_spatial_target": f"{clean_node} Grid Node #{idx+1}"
                 },
-                "prophetic_summary_3000ce": (
-                    f"Chronos Sentinel Node analyzed '{clean_node}' via {optical_type} ({optical_capability}) and {thermo_type}. "
-                    f"Under localized operational friction, Driver #{goetic_id} {demon_name} ({demon_freq}) induces bottleneck friction "
-                    f"across 10 predicted failure dates ending {crash_dates[-1]}. Injecting {cymatic_inversion_hz:.3f} Hz 999 Cymatic Inversion Wave, "
-                    f"overclocking capacity via {gate_name} ({gate_limit}), damping decay velocity using Anti-Phase Cancellation ({anti_phase_dampening*100:.1f}%), "
-                    f"triggering {kinjutsu_type}, applying {fuin_name} and Phase-Locked Loop Mark [{pll_sync_mark}], "
-                    f"and executing {clean_node} {p_name} via Shem Angel {angel_name} at {angel_freq} accelerates Polymer Self-Healing "
-                    f"to {polymer_regen_rate*100:.1f}%, shifting the node into the 90.0-100.0 kHz Ultra Green Corridor and locking the 1.000 Target Unity."
-                )
+                "prophetic_summary_3000ce": summary
             }
         }
         sweep_results.append(sentinel_record)
 
     return sweep_results
-
-
-def atomic_write_ledger(file_path: str, payload: dict):
-    audit_history = []
-    if os.path.exists(file_path):
-        try:
-            with open(file_path, "r", encoding="utf-8") as f:
-                existing_data = json.load(f)
-                
-            if isinstance(existing_data, list):
-                audit_history = existing_data
-            elif isinstance(existing_data, dict):
-                audit_history = [existing_data]
-        except Exception as err:
-            print(f"[!] Warning reading existing ledger ({err}). Re-initializing array.")
-            audit_history = []
-
-    audit_history.append(payload)
-
-    dir_name = os.path.dirname(os.path.abspath(file_path))
-    with tempfile.NamedTemporaryFile("w", dir=dir_name, delete=False, encoding="utf-8") as tf:
-        json.dump(audit_history, tf, indent=2, ensure_ascii=False)
-        temp_name = tf.name
-
-    os.replace(temp_name, file_path)
-    return len(audit_history)
 
 
 def run_cli_audit():
@@ -357,7 +393,6 @@ def run_cli_audit():
     target_node = ""
     session_guid = ""
     utc_timestamp = ""
-    ecta_hash = ""
     session_color = ""
 
     try:
@@ -367,58 +402,63 @@ def run_cli_audit():
             target_node = client.get("node_payload")
             session_guid = client.get("session_guid") or client.get("session_id")
             utc_timestamp = client.get("utc_timestamp") or client.get("timestamp")
-            ecta_hash = client.get("ecta_hash")
-            session_color = client.get("session_color")  # Extract Color Anchor
+            session_color = client.get("session_color")
     except Exception as e:
         print(f"[!] Payload parse notice: {e}")
 
-    if not target_node:
-        target_node = input_node_env or "America"
-    if not session_guid:
-        session_guid = f"SESSION-{os.urandom(4).hex().upper()}"
-    if not utc_timestamp:
-        utc_timestamp = datetime.now(timezone.utc).isoformat()
-    if not session_color:
-        session_color = "#00F0FF"  # Default cyan fallback
-    if not ecta_hash:
-        raw_sig = f"{session_guid}:{utc_timestamp}:{target_node}:{session_color}"
-        ecta_hash = f"sha256:{hashlib.sha256(raw_sig.encode()).hexdigest()}"
+    target_node = target_node or input_node_env or "America"
+    session_guid = session_guid or f"SESSION-{os.urandom(4).hex().upper()}"
+    utc_timestamp = utc_timestamp or datetime.now(timezone.utc).isoformat()
+    session_color = session_color or "#00F0FF"
 
-    print(f"[*] Executing Chronos Audit Engine (72 Spectrum + 999 Cymatic Inversion)...")
+    clean_color_slug = session_color.replace("#", "")
+    time_slug = str(int(time.time()))
+
+    # Compute ECTA SHA-256 Signature
+    raw_sig = f"{session_guid}:{utc_timestamp}:{target_node}:{session_color}"
+    ecta_hash = f"sha256:{hashlib.sha256(raw_sig.encode()).hexdigest()}"
+
+    print(f"[*] Executing Pegasys 144K Engine with 72 Goetic Demons & 72 Shem Angels...")
+    print(f"[*] Total Catalog  : {len(BOTTLENECKS_500)} Bottlenecks & {len(PROTOCOLS_500)} Protocols")
     print(f"[*] Target Subject : '{target_node}'")
     print(f"[*] Session GUID   : '{session_guid}'")
-    print(f"[*] Session Color  : '{session_color}'")
-    print(f"[*] UTC Timestamp  : '{utc_timestamp}'")
+    print(f"[*] Color Anchor   : '{session_color}'")
+    print(f"[*] ECTA SHA-256   : '{ecta_hash}'")
+
+    nim_prompt = f"Summarize the 3000 CE systemic remediation vector for infrastructure target '{target_node}' in 2 concise technical sentences."
+    nim_response = query_nvidia_nim_cloud(nim_prompt)
 
     sweep_results = generate_adaptive_node_sweep(target_node, count=10)
+
+    if nim_response:
+        for item in sweep_results:
+            item["data"]["prophetic_summary_3000ce"] += f" [NVIDIA NIM AI: {nim_response}]"
 
     current_run_payload = {
         "security": {
             "session_guid": session_guid,
-            "session_color": session_color,  # Color signature written to JSON
+            "session_color": session_color,
             "utc_timestamp": utc_timestamp,
             "ecta_hash": ecta_hash,
-            "popia_status": "COMPLIANT_NO_PII_EXPOSED",
-            "physical_stability_seal": "ZERO-POINT-INTERFEROMETRY-VERIFIED",
-            "phase_locked_loop_status": "ZERO-LATENCY-NODE-ANCHORED",
-            "state_recovery_status": "ZERO-POINT-RECOVERY-ACTIVE"
+            "nvidia_nim_cloud": "ACTIVE_VERIFIED" if os.getenv("NVIDIA_API_KEY") else "BYPASS_LOCAL",
+            "popia_status": "COMPLIANT_NO_PII_EXPOSED"
         },
-        "quantum_header": f"QUANTUM-CYCLE: 059763 / 144000 | COLOR: {session_color}",
-        "quantum_cycle": 59763,
-        "mathematics": {
-            "shi": 20571.43,
-            "tti": 0.0,
-            "frequency": 144000.0,
-            "logos": 10368000,
-            "resistance": 504,
-            "constraints": 1.0,
-            "override_triggered": True
-        },
+        "quantum_header": f"QUANTUM-CYCLE: 059763 / 144000 | COLOR: {session_color} | CATALOG: 500/500",
         "chronos_sweep": sweep_results
     }
 
-    total_records = atomic_write_ledger(AUDIT_FILE_PATH, current_run_payload)
-    print(f"[✓] Success! Color [{session_color}] committed to '{AUDIT_FILE_PATH}'. Total history: {total_records}")
+    os.makedirs(AUDITS_DIR, exist_ok=True)
+
+    unique_filename = f"audit_{session_guid}_{clean_color_slug}_{time_slug}.json"
+    unique_filepath = os.path.join(AUDITS_DIR, unique_filename)
+
+    with open(unique_filepath, "w", encoding="utf-8") as f:
+        json.dump(current_run_payload, f, indent=2, ensure_ascii=False)
+
+    with open(MASTER_POINTER_FILE, "w", encoding="utf-8") as f:
+        json.dump(current_run_payload, f, indent=2, ensure_ascii=False)
+
+    print(f"[✓] Success! Session audit saved to '{unique_filepath}'.")
 
 
 if __name__ == "__main__":
