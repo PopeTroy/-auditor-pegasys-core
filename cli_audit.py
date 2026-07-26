@@ -106,7 +106,6 @@ ANGELS_72 = [
     ("Nelchael", "Thrones", "165.848 kHz"), ("Yeiayel", "Thrones", "173.939 kHz")
 ]
 
-# Physical Operational Constants
 PHYSICAL_STABILITY_SEALS = [
     "Rin (Strength)", "Pyo (Energy Flow)", "To (Harmony)", "Sha (Healing)",
     "Kai (Awareness)", "Jin (Insight)", "Retsus (Space-Time)", "Zai (Creation)", "Zen (Absolute Zero)"
@@ -171,10 +170,6 @@ PHYSICAL_STATE_RECOVERY = [
 
 
 def calculate_999_cymatic_frequency(sub_seed: int, vector_idx: int) -> float:
-    """
-    Calculates the 999 Cymatic Inversion frequency (1.000 Hz to 999.000 Hz)
-    to neutralize sub-harmonic friction and force target unity.
-    """
     base_freq = 999.000 / ((vector_idx % 9) + 1)
     variance = (sub_seed % 1000) / 1000.0
     return round(base_freq + variance, 3)
@@ -220,7 +215,6 @@ def generate_adaptive_node_sweep(target_node: str, count: int = 10):
         b_id = f"B-{(b_index + 1):02d}"
         p_id = f"P-{(p_index + 1):02d}"
 
-        # 999 Cymatic Inversion Frequency Calculation
         cymatic_inversion_hz = calculate_999_cymatic_frequency(sub_seed, idx)
 
         base_year = 2026 + (sub_seed % 15)
@@ -364,6 +358,7 @@ def run_cli_audit():
     session_guid = ""
     utc_timestamp = ""
     ecta_hash = ""
+    session_color = ""
 
     try:
         event_data = json.loads(event_payload_str)
@@ -373,6 +368,7 @@ def run_cli_audit():
             session_guid = client.get("session_guid") or client.get("session_id")
             utc_timestamp = client.get("utc_timestamp") or client.get("timestamp")
             ecta_hash = client.get("ecta_hash")
+            session_color = client.get("session_color")  # Extract Color Anchor
     except Exception as e:
         print(f"[!] Payload parse notice: {e}")
 
@@ -382,13 +378,16 @@ def run_cli_audit():
         session_guid = f"SESSION-{os.urandom(4).hex().upper()}"
     if not utc_timestamp:
         utc_timestamp = datetime.now(timezone.utc).isoformat()
+    if not session_color:
+        session_color = "#00F0FF"  # Default cyan fallback
     if not ecta_hash:
-        raw_sig = f"{session_guid}:{utc_timestamp}:{target_node}"
+        raw_sig = f"{session_guid}:{utc_timestamp}:{target_node}:{session_color}"
         ecta_hash = f"sha256:{hashlib.sha256(raw_sig.encode()).hexdigest()}"
 
     print(f"[*] Executing Chronos Audit Engine (72 Spectrum + 999 Cymatic Inversion)...")
     print(f"[*] Target Subject : '{target_node}'")
     print(f"[*] Session GUID   : '{session_guid}'")
+    print(f"[*] Session Color  : '{session_color}'")
     print(f"[*] UTC Timestamp  : '{utc_timestamp}'")
 
     sweep_results = generate_adaptive_node_sweep(target_node, count=10)
@@ -396,6 +395,7 @@ def run_cli_audit():
     current_run_payload = {
         "security": {
             "session_guid": session_guid,
+            "session_color": session_color,  # Color signature written to JSON
             "utc_timestamp": utc_timestamp,
             "ecta_hash": ecta_hash,
             "popia_status": "COMPLIANT_NO_PII_EXPOSED",
@@ -403,7 +403,7 @@ def run_cli_audit():
             "phase_locked_loop_status": "ZERO-LATENCY-NODE-ANCHORED",
             "state_recovery_status": "ZERO-POINT-RECOVERY-ACTIVE"
         },
-        "quantum_header": "QUANTUM-CYCLE: 059763 / 144000",
+        "quantum_header": f"QUANTUM-CYCLE: 059763 / 144000 | COLOR: {session_color}",
         "quantum_cycle": 59763,
         "mathematics": {
             "shi": 20571.43,
@@ -418,7 +418,7 @@ def run_cli_audit():
     }
 
     total_records = atomic_write_ledger(AUDIT_FILE_PATH, current_run_payload)
-    print(f"[✓] Success! Master ledger updated in '{AUDIT_FILE_PATH}'. Total historical records: {total_records}")
+    print(f"[✓] Success! Color [{session_color}] committed to '{AUDIT_FILE_PATH}'. Total history: {total_records}")
 
 
 if __name__ == "__main__":
