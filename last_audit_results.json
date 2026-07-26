@@ -1,21 +1,264 @@
 {
   "security": {
-    "session_guid": "SESSION-2B917BCE",
-    "session_color": "#00F0FF",
-    "utc_timestamp": "2026-07-26T13:46:47.175566+00:00",
-    "ecta_hash": "sha256:69bde68723abfa4d35cc6d627648720ad0062c1a788132c28ce9ac56c27624ed",
+    "session_guid": "SESSION-Z1GVZUPR",
+    "session_color": "#F97316",
+    "utc_timestamp": "2026-07-26T13:51:02.193Z",
+    "ecta_hash": "sha256:41dac6638e25579221f9e78a9b2f54b72e4d90ad57014d994af60de523fc2726",
     "nvidia_nim_cloud": "BYPASS_LOCAL",
     "popia_status": "COMPLIANT_NO_PII_EXPOSED"
   },
-  "quantum_header": "QUANTUM-CYCLE: 059763 / 144000 | COLOR: #00F0FF | CATALOG: 500/500",
+  "quantum_header": "QUANTUM-CYCLE: 059763 / 144000 | COLOR: #F97316 | CATALOG: 500/500",
   "chronos_sweep": [
     {
       "sandbox_id": "sentinel-c01",
       "status": "EXECUTED",
       "nvidia_nim_accelerated": false,
       "physical_stability_seal": "Rin (Strength)",
-      "phase_locked_loop_mark": "PLL-MARK-#01-77173ACE",
-      "cymatic_999_inversion_hz": "999.858 Hz",
+      "phase_locked_loop_mark": "PLL-MARK-#01-B41E6560",
+      "cymatic_999_inversion_hz": "999.199 Hz",
+      "optical_metrology_matrix": {
+        "system": "High-Resolution Terahertz Scanning",
+        "perception_mode": "Sub-Surface Physical Strain Isolation"
+      },
+      "mhd_energy_amplifier": {
+        "stage": 1,
+        "system_name": "Magnetohydrodynamic Fluid Accelerator",
+        "amplification_factor": "5.99x"
+      },
+      "thermodynamic_balancer": {
+        "mode": "Thermodynamic Heat Sink Balance",
+        "ambient_thermal_balance": "97.4%"
+      },
+      "containment_array": {
+        "seal_formula": "Eight-Vector Frequency Lock",
+        "containment_function": "Continuous Field Transformation Lock"
+      },
+      "overclock_telemetry": {
+        "active_gate": "Overclock Stage 1: Thermal Gate Opening",
+        "overclock_capacity": "125% Overclock Capacity"
+      },
+      "laser_ablation_deconstruction": {
+        "mode": "Triangular Beam Molecular Isolation"
+      },
+      "state_recovery": {
+        "protocol": "Izanagi Active (Zero-Point Rewind)",
+        "function": "Atomic Snapshot State Rollback"
+      },
+      "physical_telemetry": {
+        "anti_phase_dampening": "86.9%"
+      },
+      "data": {
+        "agent_index": 1,
+        "target_node_subject": "America",
+        "biblical_apocalyptic_framework": {
+          "apocalyptic_seal": "Fourth Seal: Pale Horse",
+          "sealed_tribe": "Gad",
+          "temporal_birth_gate": "March Gate"
+        },
+        "bottleneck": {
+          "id": "B-200",
+          "name": "Fuel Subsidy Labor Action Friction in America Context",
+          "active_demon_driver": "#27 Ronove",
+          "demon_power": "Teaches rhetoric, foreign languages, and loyal service",
+          "frequency_khz": "89.910 kHz",
+          "predictive_crash_schedule_10_dates_to_3000ce": [
+            "2030-08-20",
+            "2124-08-20",
+            "2218-08-20",
+            "2312-08-20",
+            "2406-08-20",
+            "2500-08-20",
+            "2594-08-20",
+            "2688-08-20",
+            "2782-08-20",
+            "2876-08-20"
+          ]
+        },
+        "protocol": {
+          "id": "P-138",
+          "name": "America Sovereign Debt Tokenization Stabilization",
+          "ruling_shem_angel": "Imamiah",
+          "celestial_choir": "Principalities",
+          "angel_power": "Destroys enemy power, protects prisoners and travelers",
+          "frequency_khz": "416.639 kHz"
+        },
+        "real_time_earth_vector": {
+          "applied_speed": "0.599x acceleration",
+          "frequency_shift_to_ultra_green": "+59.000 kHz shift",
+          "exact_spatial_target": "America Grid Node #1"
+        },
+        "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'America'. Driver #27 Ronove (89.910 kHz) exerting power [Teaches rhetoric, foreign languages, and loyal service] induces systemic bottleneck friction. Executing America Sovereign Debt Tokenization Stabilization invoking Shem Angel Imamiah (Principalities, 416.639 kHz) providing power [Destroys enemy power, protects prisoners and travelers] locks 1.000 Target Unity."
+      }
+    },
+    {
+      "sandbox_id": "sentinel-c02",
+      "status": "EXECUTED",
+      "nvidia_nim_accelerated": false,
+      "physical_stability_seal": "Pyo (Energy Flow)",
+      "phase_locked_loop_mark": "PLL-MARK-#02-B41E6560",
+      "cymatic_999_inversion_hz": "499.655 Hz",
+      "optical_metrology_matrix": {
+        "system": "High-Resolution Terahertz Scanning",
+        "perception_mode": "Sub-Surface Physical Strain Isolation"
+      },
+      "mhd_energy_amplifier": {
+        "stage": 1,
+        "system_name": "Magnetohydrodynamic Fluid Accelerator",
+        "amplification_factor": "2.55x"
+      },
+      "thermodynamic_balancer": {
+        "mode": "Thermodynamic Heat Sink Balance",
+        "ambient_thermal_balance": "93.0%"
+      },
+      "containment_array": {
+        "seal_formula": "Eight-Vector Frequency Lock",
+        "containment_function": "Continuous Field Transformation Lock"
+      },
+      "overclock_telemetry": {
+        "active_gate": "Overclock Stage 4: Wave Velocity Peak",
+        "overclock_capacity": "275% Overclock Capacity"
+      },
+      "laser_ablation_deconstruction": {
+        "mode": "Triangular Beam Molecular Isolation"
+      },
+      "state_recovery": {
+        "protocol": "Izanagi Active (Zero-Point Rewind)",
+        "function": "Atomic Snapshot State Rollback"
+      },
+      "physical_telemetry": {
+        "anti_phase_dampening": "90.5%"
+      },
+      "data": {
+        "agent_index": 2,
+        "target_node_subject": "America",
+        "biblical_apocalyptic_framework": {
+          "apocalyptic_seal": "Fourth Seal: Pale Horse",
+          "sealed_tribe": "Gad",
+          "temporal_birth_gate": "March Gate"
+        },
+        "bottleneck": {
+          "id": "B-156",
+          "name": "Fuel Subsidy Sedimentation in America Context",
+          "active_demon_driver": "#52 Alloces",
+          "demon_power": "Teaches astronomy, liberal arts, provides excellent familiars",
+          "frequency_khz": "173.160 kHz",
+          "predictive_crash_schedule_10_dates_to_3000ce": [
+            "2031-12-28",
+            "2105-12-28",
+            "2179-12-28",
+            "2253-12-28",
+            "2327-12-28",
+            "2401-12-28",
+            "2475-12-28",
+            "2549-12-28",
+            "2623-12-28",
+            "2697-12-28"
+          ]
+        },
+        "protocol": {
+          "id": "P-073",
+          "name": "America Maglev Rail Mesh Integration",
+          "ruling_shem_angel": "Lecabel",
+          "celestial_choir": "Dominions",
+          "angel_power": "Inspires agricultural engineering and scientific light",
+          "frequency_khz": "246.749 kHz"
+        },
+        "real_time_earth_vector": {
+          "applied_speed": "0.555x acceleration",
+          "frequency_shift_to_ultra_green": "+55.000 kHz shift",
+          "exact_spatial_target": "America Grid Node #2"
+        },
+        "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'America'. Driver #52 Alloces (173.160 kHz) exerting power [Teaches astronomy, liberal arts, provides excellent familiars] induces systemic bottleneck friction. Executing America Maglev Rail Mesh Integration invoking Shem Angel Lecabel (Dominions, 246.749 kHz) providing power [Inspires agricultural engineering and scientific light] locks 1.000 Target Unity."
+      }
+    },
+    {
+      "sandbox_id": "sentinel-c03",
+      "status": "EXECUTED",
+      "nvidia_nim_accelerated": false,
+      "physical_stability_seal": "To (Harmony)",
+      "phase_locked_loop_mark": "PLL-MARK-#03-B41E6560",
+      "cymatic_999_inversion_hz": "333.577 Hz",
+      "optical_metrology_matrix": {
+        "system": "High-Resolution Terahertz Scanning",
+        "perception_mode": "Sub-Surface Physical Strain Isolation"
+      },
+      "mhd_energy_amplifier": {
+        "stage": 1,
+        "system_name": "Magnetohydrodynamic Fluid Accelerator",
+        "amplification_factor": "1.77x"
+      },
+      "thermodynamic_balancer": {
+        "mode": "Thermodynamic Heat Sink Balance",
+        "ambient_thermal_balance": "92.7%"
+      },
+      "containment_array": {
+        "seal_formula": "Four-Node Phase Locking Seal",
+        "containment_function": "Dual Layer Sub-Harmonic Isolation"
+      },
+      "overclock_telemetry": {
+        "active_gate": "Overclock Stage 1: Thermal Gate Opening",
+        "overclock_capacity": "125% Overclock Capacity"
+      },
+      "laser_ablation_deconstruction": {
+        "mode": "Femtosecond Laser Atomic Ablation"
+      },
+      "state_recovery": {
+        "protocol": "Izanami Active (PID Error Lock)",
+        "function": "Closed-Loop Feedback Trap"
+      },
+      "physical_telemetry": {
+        "anti_phase_dampening": "92.7%"
+      },
+      "data": {
+        "agent_index": 3,
+        "target_node_subject": "America",
+        "biblical_apocalyptic_framework": {
+          "apocalyptic_seal": "Fourth Seal: Pale Horse",
+          "sealed_tribe": "Gad",
+          "temporal_birth_gate": "March Gate"
+        },
+        "bottleneck": {
+          "id": "B-078",
+          "name": "Transmission Line Refrigeration Breakdown in America Context",
+          "active_demon_driver": "#13 Beleth",
+          "demon_power": "Causes overwhelming love and emotional subversion",
+          "frequency_khz": "43.290 kHz",
+          "predictive_crash_schedule_10_dates_to_3000ce": [
+            "2028-06-22",
+            "2100-06-22",
+            "2172-06-22",
+            "2244-06-22",
+            "2316-06-22",
+            "2388-06-22",
+            "2460-06-22",
+            "2532-06-22",
+            "2604-06-22",
+            "2676-06-22"
+          ]
+        },
+        "protocol": {
+          "id": "P-037",
+          "name": "America Logos Currency Ledger Harmonization",
+          "ruling_shem_angel": "Aladiah",
+          "celestial_choir": "Cherubim",
+          "angel_power": "Heals systemic disease, neutralizes moral corruption",
+          "frequency_khz": "76.855 kHz"
+        },
+        "real_time_earth_vector": {
+          "applied_speed": "0.477x acceleration",
+          "frequency_shift_to_ultra_green": "+37.000 kHz shift",
+          "exact_spatial_target": "America Grid Node #3"
+        },
+        "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'America'. Driver #13 Beleth (43.290 kHz) exerting power [Causes overwhelming love and emotional subversion] induces systemic bottleneck friction. Executing America Logos Currency Ledger Harmonization invoking Shem Angel Aladiah (Cherubim, 76.855 kHz) providing power [Heals systemic disease, neutralizes moral corruption] locks 1.000 Target Unity."
+      }
+    },
+    {
+      "sandbox_id": "sentinel-c04",
+      "status": "EXECUTED",
+      "nvidia_nim_accelerated": false,
+      "physical_stability_seal": "Sha (Healing)",
+      "phase_locked_loop_mark": "PLL-MARK-#04-B41E6560",
+      "cymatic_999_inversion_hz": "250.694 Hz",
       "optical_metrology_matrix": {
         "system": "Multi-Spectral Quantum Interferometry",
         "perception_mode": "Micro-Vibration Defect Perception"
@@ -23,15 +266,96 @@
       "mhd_energy_amplifier": {
         "stage": 1,
         "system_name": "Magnetohydrodynamic Fluid Accelerator",
-        "amplification_factor": "2.58x"
+        "amplification_factor": "8.44x"
       },
       "thermodynamic_balancer": {
-        "mode": "Thermodynamic Heat Sink Balance",
-        "ambient_thermal_balance": "93.3%"
+        "mode": "Piezoelectric Pressure Transduction",
+        "ambient_thermal_balance": "99.4%"
       },
       "containment_array": {
-        "seal_formula": "Four-Node Phase Locking Seal",
-        "containment_function": "Dual Layer Sub-Harmonic Isolation"
+        "seal_formula": "Eight-Vector Frequency Lock",
+        "containment_function": "Continuous Field Transformation Lock"
+      },
+      "overclock_telemetry": {
+        "active_gate": "Overclock Stage 4: Wave Velocity Peak",
+        "overclock_capacity": "275% Overclock Capacity"
+      },
+      "laser_ablation_deconstruction": {
+        "mode": "Triangular Beam Molecular Isolation"
+      },
+      "state_recovery": {
+        "protocol": "Izanami Active (PID Error Lock)",
+        "function": "Closed-Loop Feedback Trap"
+      },
+      "physical_telemetry": {
+        "anti_phase_dampening": "97.4%"
+      },
+      "data": {
+        "agent_index": 4,
+        "target_node_subject": "America",
+        "biblical_apocalyptic_framework": {
+          "apocalyptic_seal": "Fourth Seal: Pale Horse",
+          "sealed_tribe": "Judah",
+          "temporal_birth_gate": "January Gate"
+        },
+        "bottleneck": {
+          "id": "B-445",
+          "name": "Nuclear Isolation Litigation Freeze in America Context",
+          "active_demon_driver": "#55 Orobas",
+          "demon_power": "Discovers divinity, prevents deception, bestows prelacies/dignities",
+          "frequency_khz": "183.150 kHz",
+          "predictive_crash_schedule_10_dates_to_3000ce": [
+            "2035-01-13",
+            "2123-01-13",
+            "2211-01-13",
+            "2299-01-13",
+            "2387-01-13",
+            "2475-01-13",
+            "2563-01-13",
+            "2651-01-13",
+            "2739-01-13",
+            "2827-01-13"
+          ]
+        },
+        "protocol": {
+          "id": "P-060",
+          "name": "America Hydrogen Transit Network Balancing",
+          "ruling_shem_angel": "Haiaiel",
+          "celestial_choir": "Angels",
+          "angel_power": "Confounds wicked traitors, grants victory and protection",
+          "frequency_khz": "570.349 kHz"
+        },
+        "real_time_earth_vector": {
+          "applied_speed": "0.844x acceleration",
+          "frequency_shift_to_ultra_green": "+44.000 kHz shift",
+          "exact_spatial_target": "America Grid Node #4"
+        },
+        "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'America'. Driver #55 Orobas (183.150 kHz) exerting power [Discovers divinity, prevents deception, bestows prelacies/dignities] induces systemic bottleneck friction. Executing America Hydrogen Transit Network Balancing invoking Shem Angel Haiaiel (Angels, 570.349 kHz) providing power [Confounds wicked traitors, grants victory and protection] locks 1.000 Target Unity."
+      }
+    },
+    {
+      "sandbox_id": "sentinel-c05",
+      "status": "EXECUTED",
+      "nvidia_nim_accelerated": false,
+      "physical_stability_seal": "Kai (Awareness)",
+      "phase_locked_loop_mark": "PLL-MARK-#05-B41E6560",
+      "cymatic_999_inversion_hz": "200.060 Hz",
+      "optical_metrology_matrix": {
+        "system": "Multi-Spectral Quantum Interferometry",
+        "perception_mode": "Micro-Vibration Defect Perception"
+      },
+      "mhd_energy_amplifier": {
+        "stage": 1,
+        "system_name": "Magnetohydrodynamic Fluid Accelerator",
+        "amplification_factor": "2.60x"
+      },
+      "thermodynamic_balancer": {
+        "mode": "Piezoelectric Pressure Transduction",
+        "ambient_thermal_balance": "93.5%"
+      },
+      "containment_array": {
+        "seal_formula": "Eight-Vector Frequency Lock",
+        "containment_function": "Continuous Field Transformation Lock"
       },
       "overclock_telemetry": {
         "active_gate": "Overclock Stage 1: Thermal Gate Opening",
@@ -45,58 +369,220 @@
         "function": "Closed-Loop Feedback Trap"
       },
       "physical_telemetry": {
-        "anti_phase_dampening": "90.8%"
+        "anti_phase_dampening": "93.0%"
       },
       "data": {
-        "agent_index": 1,
-        "target_node_subject": "Israel",
+        "agent_index": 5,
+        "target_node_subject": "America",
         "biblical_apocalyptic_framework": {
           "apocalyptic_seal": "Fourth Seal: Pale Horse",
           "sealed_tribe": "Judah",
           "temporal_birth_gate": "January Gate"
         },
         "bottleneck": {
-          "id": "B-359",
-          "name": "Pipeline Pressure Isolation Friction in Israel Context",
-          "active_demon_driver": "#4 Gamigin",
-          "demon_power": "Teaches liberal sciences and accounts for dead souls",
-          "frequency_khz": "13.320 kHz",
+          "id": "B-261",
+          "name": "Hydroelectric Reservoir Depletion Velocity in America Context",
+          "active_demon_driver": "#7 Amon",
+          "demon_power": "Reconciles feuds and reveals past and future events",
+          "frequency_khz": "23.310 kHz",
           "predictive_crash_schedule_10_dates_to_3000ce": [
-            "2034-03-03",
-            "2116-03-03",
-            "2198-03-03",
-            "2280-03-03",
-            "2362-03-03",
-            "2444-03-03",
-            "2526-03-03",
-            "2608-03-03",
-            "2690-03-03",
-            "2772-03-03"
+            "2036-05-25",
+            "2118-05-25",
+            "2200-05-25",
+            "2282-05-25",
+            "2364-05-25",
+            "2446-05-25",
+            "2528-05-25",
+            "2610-05-25",
+            "2692-05-25",
+            "2774-05-25"
           ]
         },
         "protocol": {
-          "id": "P-117",
-          "name": "Israel FX Liquidity Bridge Harmonization",
-          "ruling_shem_angel": "Habuhiah",
-          "celestial_choir": "Angels",
-          "angel_power": "Governs agriculture, fecundity, and environmental healing",
-          "frequency_khz": "546.079 kHz"
+          "id": "P-392",
+          "name": "America Customs Clearance Node Activation",
+          "ruling_shem_angel": "Mahasiah",
+          "celestial_choir": "Seraphim",
+          "angel_power": "Dominates high science, philosophy, and moral perfection",
+          "frequency_khz": "36.405 kHz"
         },
         "real_time_earth_vector": {
-          "applied_speed": "0.758x acceleration",
-          "frequency_shift_to_ultra_green": "+38.000 kHz shift",
-          "exact_spatial_target": "Israel Grid Node #1"
+          "applied_speed": "0.66x acceleration",
+          "frequency_shift_to_ultra_green": "+40.000 kHz shift",
+          "exact_spatial_target": "America Grid Node #5"
         },
-        "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Israel'. Driver #4 Gamigin (13.320 kHz) exerting power [Teaches liberal sciences and accounts for dead souls] induces systemic bottleneck friction. Executing Israel FX Liquidity Bridge Harmonization invoking Shem Angel Habuhiah (Angels, 546.079 kHz) providing power [Governs agriculture, fecundity, and environmental healing] locks 1.000 Target Unity."
+        "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'America'. Driver #7 Amon (23.310 kHz) exerting power [Reconciles feuds and reveals past and future events] induces systemic bottleneck friction. Executing America Customs Clearance Node Activation invoking Shem Angel Mahasiah (Seraphim, 36.405 kHz) providing power [Dominates high science, philosophy, and moral perfection] locks 1.000 Target Unity."
       }
     },
     {
-      "sandbox_id": "sentinel-c02",
+      "sandbox_id": "sentinel-c06",
+      "status": "EXECUTED",
+      "nvidia_nim_accelerated": false,
+      "physical_stability_seal": "Jin (Insight)",
+      "phase_locked_loop_mark": "PLL-MARK-#06-B41E6560",
+      "cymatic_999_inversion_hz": "167.489 Hz",
+      "optical_metrology_matrix": {
+        "system": "High-Resolution Terahertz Scanning",
+        "perception_mode": "Sub-Surface Physical Strain Isolation"
+      },
+      "mhd_energy_amplifier": {
+        "stage": 2,
+        "system_name": "Thermal Plasma Kinetic Generator",
+        "amplification_factor": "2.89x"
+      },
+      "thermodynamic_balancer": {
+        "mode": "Thermodynamic Heat Sink Balance",
+        "ambient_thermal_balance": "96.4%"
+      },
+      "containment_array": {
+        "seal_formula": "Eight-Vector Frequency Lock",
+        "containment_function": "Continuous Field Transformation Lock"
+      },
+      "overclock_telemetry": {
+        "active_gate": "Overclock Stage 4: Wave Velocity Peak",
+        "overclock_capacity": "275% Overclock Capacity"
+      },
+      "laser_ablation_deconstruction": {
+        "mode": "Femtosecond Laser Atomic Ablation"
+      },
+      "state_recovery": {
+        "protocol": "Izanagi Active (Zero-Point Rewind)",
+        "function": "Atomic Snapshot State Rollback"
+      },
+      "physical_telemetry": {
+        "anti_phase_dampening": "89.9%"
+      },
+      "data": {
+        "agent_index": 6,
+        "target_node_subject": "America",
+        "biblical_apocalyptic_framework": {
+          "apocalyptic_seal": "Fifth Seal: Altar of Martyrs",
+          "sealed_tribe": "Gad",
+          "temporal_birth_gate": "March Gate"
+        },
+        "bottleneck": {
+          "id": "B-490",
+          "name": "Micro-Grid Sync Deployment Delay in America Context",
+          "active_demon_driver": "#69 Decarabia",
+          "demon_power": "Teaches virtues of birds/herbs, commands illusionary phantoms",
+          "frequency_khz": "229.770 kHz",
+          "predictive_crash_schedule_10_dates_to_3000ce": [
+            "2035-10-22",
+            "2128-10-22",
+            "2221-10-22",
+            "2314-10-22",
+            "2407-10-22",
+            "2500-10-22",
+            "2593-10-22",
+            "2686-10-22",
+            "2779-10-22",
+            "2872-10-22"
+          ]
+        },
+        "protocol": {
+          "id": "P-437",
+          "name": "America Refining Catalyst Vector Harmonization",
+          "ruling_shem_angel": "Vasariah",
+          "celestial_choir": "Dominions",
+          "angel_power": "Protects against unjust attacks, grants memory/eloquence",
+          "frequency_khz": "254.839 kHz"
+        },
+        "real_time_earth_vector": {
+          "applied_speed": "0.889x acceleration",
+          "frequency_shift_to_ultra_green": "+49.000 kHz shift",
+          "exact_spatial_target": "America Grid Node #6"
+        },
+        "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'America'. Driver #69 Decarabia (229.770 kHz) exerting power [Teaches virtues of birds/herbs, commands illusionary phantoms] induces systemic bottleneck friction. Executing America Refining Catalyst Vector Harmonization invoking Shem Angel Vasariah (Dominions, 254.839 kHz) providing power [Protects against unjust attacks, grants memory/eloquence] locks 1.000 Target Unity."
+      }
+    },
+    {
+      "sandbox_id": "sentinel-c07",
+      "status": "EXECUTED",
+      "nvidia_nim_accelerated": false,
+      "physical_stability_seal": "Rin (Strength)",
+      "phase_locked_loop_mark": "PLL-MARK-#07-B41E6560",
+      "cymatic_999_inversion_hz": "143.173 Hz",
+      "optical_metrology_matrix": {
+        "system": "High-Resolution Terahertz Scanning",
+        "perception_mode": "Sub-Surface Physical Strain Isolation"
+      },
+      "mhd_energy_amplifier": {
+        "stage": 2,
+        "system_name": "Thermal Plasma Kinetic Generator",
+        "amplification_factor": "4.59x"
+      },
+      "thermodynamic_balancer": {
+        "mode": "Thermodynamic Heat Sink Balance",
+        "ambient_thermal_balance": "98.4%"
+      },
+      "containment_array": {
+        "seal_formula": "Four-Node Phase Locking Seal",
+        "containment_function": "Dual Layer Sub-Harmonic Isolation"
+      },
+      "overclock_telemetry": {
+        "active_gate": "Overclock Stage 1: Thermal Gate Opening",
+        "overclock_capacity": "125% Overclock Capacity"
+      },
+      "laser_ablation_deconstruction": {
+        "mode": "Triangular Beam Molecular Isolation"
+      },
+      "state_recovery": {
+        "protocol": "Izanagi Active (Zero-Point Rewind)",
+        "function": "Atomic Snapshot State Rollback"
+      },
+      "physical_telemetry": {
+        "anti_phase_dampening": "96.9%"
+      },
+      "data": {
+        "agent_index": 7,
+        "target_node_subject": "America",
+        "biblical_apocalyptic_framework": {
+          "apocalyptic_seal": "Fifth Seal: Altar of Martyrs",
+          "sealed_tribe": "Gad",
+          "temporal_birth_gate": "March Gate"
+        },
+        "bottleneck": {
+          "id": "B-460",
+          "name": "Micro-Grid Sync Synchronization Lag in America Context",
+          "active_demon_driver": "#36 Stolas",
+          "demon_power": "Teaches astronomy, virtues of herbs, and precious stones",
+          "frequency_khz": "119.880 kHz",
+          "predictive_crash_schedule_10_dates_to_3000ce": [
+            "2040-12-08",
+            "2117-12-08",
+            "2194-12-08",
+            "2271-12-08",
+            "2348-12-08",
+            "2425-12-08",
+            "2502-12-08",
+            "2579-12-08",
+            "2656-12-08",
+            "2733-12-08"
+          ]
+        },
+        "protocol": {
+          "id": "P-029",
+          "name": "America Universal Knowledge Vault Acceleration",
+          "ruling_shem_angel": "Manakel",
+          "celestial_choir": "Angels",
+          "angel_power": "Cures epilepsy, calms rage, governs flora/fauna health",
+          "frequency_khz": "529.899 kHz"
+        },
+        "real_time_earth_vector": {
+          "applied_speed": "0.859x acceleration",
+          "frequency_shift_to_ultra_green": "+39.000 kHz shift",
+          "exact_spatial_target": "America Grid Node #7"
+        },
+        "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'America'. Driver #36 Stolas (119.880 kHz) exerting power [Teaches astronomy, virtues of herbs, and precious stones] induces systemic bottleneck friction. Executing America Universal Knowledge Vault Acceleration invoking Shem Angel Manakel (Angels, 529.899 kHz) providing power [Cures epilepsy, calms rage, governs flora/fauna health] locks 1.000 Target Unity."
+      }
+    },
+    {
+      "sandbox_id": "sentinel-c08",
       "status": "EXECUTED",
       "nvidia_nim_accelerated": false,
       "physical_stability_seal": "Pyo (Energy Flow)",
-      "phase_locked_loop_mark": "PLL-MARK-#02-77173ACE",
-      "cymatic_999_inversion_hz": "500.014 Hz",
+      "phase_locked_loop_mark": "PLL-MARK-#08-B41E6560",
+      "cymatic_999_inversion_hz": "125.739 Hz",
       "optical_metrology_matrix": {
         "system": "Multi-Spectral Quantum Interferometry",
         "perception_mode": "Micro-Vibration Defect Perception"
@@ -104,7 +590,7 @@
       "mhd_energy_amplifier": {
         "stage": 2,
         "system_name": "Thermal Plasma Kinetic Generator",
-        "amplification_factor": "5.14x"
+        "amplification_factor": "6.64x"
       },
       "thermodynamic_balancer": {
         "mode": "Piezoelectric Pressure Transduction",
@@ -126,232 +612,70 @@
         "function": "Closed-Loop Feedback Trap"
       },
       "physical_telemetry": {
-        "anti_phase_dampening": "88.4%"
+        "anti_phase_dampening": "95.4%"
       },
       "data": {
-        "agent_index": 2,
-        "target_node_subject": "Israel",
+        "agent_index": 8,
+        "target_node_subject": "America",
         "biblical_apocalyptic_framework": {
-          "apocalyptic_seal": "Fourth Seal: Pale Horse",
+          "apocalyptic_seal": "Fifth Seal: Altar of Martyrs",
           "sealed_tribe": "Judah",
           "temporal_birth_gate": "January Gate"
         },
         "bottleneck": {
-          "id": "B-015",
-          "name": "Sovereign Debt Regulatory Stagnation in Israel Context",
-          "active_demon_driver": "#69 Decarabia",
-          "demon_power": "Teaches virtues of birds/herbs, commands illusionary phantoms",
-          "frequency_khz": "229.770 kHz",
+          "id": "B-365",
+          "name": "Pipeline Pressure Regulatory Stagnation in America Context",
+          "active_demon_driver": "#46 Bifrons",
+          "demon_power": "Teaches astrology, geometry, herbs, and moves dead bodies",
+          "frequency_khz": "153.180 kHz",
           "predictive_crash_schedule_10_dates_to_3000ce": [
-            "2035-07-07",
-            "2134-07-07",
-            "2233-07-07",
-            "2332-07-07",
-            "2431-07-07",
-            "2530-07-07",
-            "2629-07-07",
-            "2728-07-07",
-            "2827-07-07",
-            "2926-07-07"
+            "2035-01-21",
+            "2108-01-21",
+            "2181-01-21",
+            "2254-01-21",
+            "2327-01-21",
+            "2400-01-21",
+            "2473-01-21",
+            "2546-01-21",
+            "2619-01-21",
+            "2692-01-21"
           ]
         },
         "protocol": {
-          "id": "P-220",
-          "name": "Israel Federated Database Mesh Balancing",
-          "ruling_shem_angel": "Menadel",
-          "celestial_choir": "Powers",
-          "angel_power": "Retains employment, frees captives, restores fugitives",
-          "frequency_khz": "287.199 kHz"
+          "id": "P-367",
+          "name": "America Automated Trade Settlement Harmonization",
+          "ruling_shem_angel": "Sitael",
+          "celestial_choir": "Seraphim",
+          "angel_power": "Protects against adversity, grants nobility and truth",
+          "frequency_khz": "20.225 kHz"
         },
         "real_time_earth_vector": {
-          "applied_speed": "0.414x acceleration",
-          "frequency_shift_to_ultra_green": "+54.000 kHz shift",
-          "exact_spatial_target": "Israel Grid Node #2"
+          "applied_speed": "0.764x acceleration",
+          "frequency_shift_to_ultra_green": "+44.000 kHz shift",
+          "exact_spatial_target": "America Grid Node #8"
         },
-        "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Israel'. Driver #69 Decarabia (229.770 kHz) exerting power [Teaches virtues of birds/herbs, commands illusionary phantoms] induces systemic bottleneck friction. Executing Israel Federated Database Mesh Balancing invoking Shem Angel Menadel (Powers, 287.199 kHz) providing power [Retains employment, frees captives, restores fugitives] locks 1.000 Target Unity."
+        "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'America'. Driver #46 Bifrons (153.180 kHz) exerting power [Teaches astrology, geometry, herbs, and moves dead bodies] induces systemic bottleneck friction. Executing America Automated Trade Settlement Harmonization invoking Shem Angel Sitael (Seraphim, 20.225 kHz) providing power [Protects against adversity, grants nobility and truth] locks 1.000 Target Unity."
       }
     },
     {
-      "sandbox_id": "sentinel-c03",
+      "sandbox_id": "sentinel-c09",
       "status": "EXECUTED",
       "nvidia_nim_accelerated": false,
       "physical_stability_seal": "To (Harmony)",
-      "phase_locked_loop_mark": "PLL-MARK-#03-77173ACE",
-      "cymatic_999_inversion_hz": "333.159 Hz",
+      "phase_locked_loop_mark": "PLL-MARK-#09-B41E6560",
+      "cymatic_999_inversion_hz": "111.878 Hz",
       "optical_metrology_matrix": {
-        "system": "High-Resolution Terahertz Scanning",
-        "perception_mode": "Sub-Surface Physical Strain Isolation"
+        "system": "Multi-Spectral Quantum Interferometry",
+        "perception_mode": "Micro-Vibration Defect Perception"
       },
       "mhd_energy_amplifier": {
         "stage": 2,
         "system_name": "Thermal Plasma Kinetic Generator",
-        "amplification_factor": "1.59x"
+        "amplification_factor": "3.78x"
       },
       "thermodynamic_balancer": {
         "mode": "Thermodynamic Heat Sink Balance",
-        "ambient_thermal_balance": "98.4%"
-      },
-      "containment_array": {
-        "seal_formula": "Eight-Vector Frequency Lock",
-        "containment_function": "Continuous Field Transformation Lock"
-      },
-      "overclock_telemetry": {
-        "active_gate": "Overclock Stage 1: Thermal Gate Opening",
-        "overclock_capacity": "125% Overclock Capacity"
-      },
-      "laser_ablation_deconstruction": {
-        "mode": "Femtosecond Laser Atomic Ablation"
-      },
-      "state_recovery": {
-        "protocol": "Izanagi Active (Zero-Point Rewind)",
-        "function": "Atomic Snapshot State Rollback"
-      },
-      "physical_telemetry": {
-        "anti_phase_dampening": "92.9%"
-      },
-      "data": {
-        "agent_index": 3,
-        "target_node_subject": "Israel",
-        "biblical_apocalyptic_framework": {
-          "apocalyptic_seal": "Fourth Seal: Pale Horse",
-          "sealed_tribe": "Gad",
-          "temporal_birth_gate": "March Gate"
-        },
-        "bottleneck": {
-          "id": "B-160",
-          "name": "Fuel Subsidy Synchronization Lag in Israel Context",
-          "active_demon_driver": "#45 Vine",
-          "demon_power": "Discovers hidden secrets, builds towers, collapses stone walls",
-          "frequency_khz": "149.850 kHz",
-          "predictive_crash_schedule_10_dates_to_3000ce": [
-            "2040-12-24",
-            "2139-12-24",
-            "2238-12-24",
-            "2337-12-24",
-            "2436-12-24",
-            "2535-12-24",
-            "2634-12-24",
-            "2733-12-24",
-            "2832-12-24",
-            "2931-12-24"
-          ]
-        },
-        "protocol": {
-          "id": "P-385",
-          "name": "Israel Port Buffer Storage Optimization",
-          "ruling_shem_angel": "Iah-Hel",
-          "celestial_choir": "Archangels",
-          "angel_power": "Illuminates solitary wisdom, truth, and scientific light",
-          "frequency_khz": "497.539 kHz"
-        },
-        "real_time_earth_vector": {
-          "applied_speed": "0.559x acceleration",
-          "frequency_shift_to_ultra_green": "+59.000 kHz shift",
-          "exact_spatial_target": "Israel Grid Node #3"
-        },
-        "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Israel'. Driver #45 Vine (149.850 kHz) exerting power [Discovers hidden secrets, builds towers, collapses stone walls] induces systemic bottleneck friction. Executing Israel Port Buffer Storage Optimization invoking Shem Angel Iah-Hel (Archangels, 497.539 kHz) providing power [Illuminates solitary wisdom, truth, and scientific light] locks 1.000 Target Unity."
-      }
-    },
-    {
-      "sandbox_id": "sentinel-c04",
-      "status": "EXECUTED",
-      "nvidia_nim_accelerated": false,
-      "physical_stability_seal": "Sha (Healing)",
-      "phase_locked_loop_mark": "PLL-MARK-#04-77173ACE",
-      "cymatic_999_inversion_hz": "249.819 Hz",
-      "optical_metrology_matrix": {
-        "system": "High-Resolution Terahertz Scanning",
-        "perception_mode": "Sub-Surface Physical Strain Isolation"
-      },
-      "mhd_energy_amplifier": {
-        "stage": 1,
-        "system_name": "Magnetohydrodynamic Fluid Accelerator",
-        "amplification_factor": "3.69x"
-      },
-      "thermodynamic_balancer": {
-        "mode": "Thermodynamic Heat Sink Balance",
-        "ambient_thermal_balance": "96.9%"
-      },
-      "containment_array": {
-        "seal_formula": "Eight-Vector Frequency Lock",
-        "containment_function": "Continuous Field Transformation Lock"
-      },
-      "overclock_telemetry": {
-        "active_gate": "Overclock Stage 4: Wave Velocity Peak",
-        "overclock_capacity": "275% Overclock Capacity"
-      },
-      "laser_ablation_deconstruction": {
-        "mode": "Femtosecond Laser Atomic Ablation"
-      },
-      "state_recovery": {
-        "protocol": "Izanami Active (PID Error Lock)",
-        "function": "Closed-Loop Feedback Trap"
-      },
-      "physical_telemetry": {
-        "anti_phase_dampening": "89.9%"
-      },
-      "data": {
-        "agent_index": 4,
-        "target_node_subject": "Israel",
-        "biblical_apocalyptic_framework": {
-          "apocalyptic_seal": "Fourth Seal: Pale Horse",
-          "sealed_tribe": "Gad",
-          "temporal_birth_gate": "March Gate"
-        },
-        "bottleneck": {
-          "id": "B-070",
-          "name": "Transmission Line Monopoly Bottleneck in Israel Context",
-          "active_demon_driver": "#17 Botis",
-          "demon_power": "Reconciles allies and foretells future outcomes",
-          "frequency_khz": "56.610 kHz",
-          "predictive_crash_schedule_10_dates_to_3000ce": [
-            "2040-06-22",
-            "2128-06-22",
-            "2216-06-22",
-            "2304-06-22",
-            "2392-06-22",
-            "2480-06-22",
-            "2568-06-22",
-            "2656-06-22",
-            "2744-06-22",
-            "2832-06-22"
-          ]
-        },
-        "protocol": {
-          "id": "P-005",
-          "name": "Israel Profit-Share Ledger Optimization",
-          "ruling_shem_angel": "Hariel",
-          "celestial_choir": "Cherubim",
-          "angel_power": "Inspires religious/moral peace, purifies corrupt systems",
-          "frequency_khz": "117.305 kHz"
-        },
-        "real_time_earth_vector": {
-          "applied_speed": "0.469x acceleration",
-          "frequency_shift_to_ultra_green": "+49.000 kHz shift",
-          "exact_spatial_target": "Israel Grid Node #4"
-        },
-        "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Israel'. Driver #17 Botis (56.610 kHz) exerting power [Reconciles allies and foretells future outcomes] induces systemic bottleneck friction. Executing Israel Profit-Share Ledger Optimization invoking Shem Angel Hariel (Cherubim, 117.305 kHz) providing power [Inspires religious/moral peace, purifies corrupt systems] locks 1.000 Target Unity."
-      }
-    },
-    {
-      "sandbox_id": "sentinel-c05",
-      "status": "EXECUTED",
-      "nvidia_nim_accelerated": false,
-      "physical_stability_seal": "Kai (Awareness)",
-      "phase_locked_loop_mark": "PLL-MARK-#05-77173ACE",
-      "cymatic_999_inversion_hz": "199.965 Hz",
-      "optical_metrology_matrix": {
-        "system": "High-Resolution Terahertz Scanning",
-        "perception_mode": "Sub-Surface Physical Strain Isolation"
-      },
-      "mhd_energy_amplifier": {
-        "stage": 2,
-        "system_name": "Thermal Plasma Kinetic Generator",
-        "amplification_factor": "9.65x"
-      },
-      "thermodynamic_balancer": {
-        "mode": "Piezoelectric Pressure Transduction",
-        "ambient_thermal_balance": "96.5%"
+        "ambient_thermal_balance": "97.8%"
       },
       "containment_array": {
         "seal_formula": "Four-Node Phase Locking Seal",
@@ -365,377 +689,53 @@
         "mode": "Triangular Beam Molecular Isolation"
       },
       "state_recovery": {
-        "protocol": "Izanami Active (PID Error Lock)",
-        "function": "Closed-Loop Feedback Trap"
-      },
-      "physical_telemetry": {
-        "anti_phase_dampening": "93.5%"
-      },
-      "data": {
-        "agent_index": 5,
-        "target_node_subject": "Israel",
-        "biblical_apocalyptic_framework": {
-          "apocalyptic_seal": "Fourth Seal: Pale Horse",
-          "sealed_tribe": "Gad",
-          "temporal_birth_gate": "March Gate"
-        },
-        "bottleneck": {
-          "id": "B-166",
-          "name": "Fuel Subsidy Liquidity Freeze in Israel Context",
-          "active_demon_driver": "#40 Raum",
-          "demon_power": "Steals treasure, destroys cities, foretells future events",
-          "frequency_khz": "133.200 kHz",
-          "predictive_crash_schedule_10_dates_to_3000ce": [
-            "2036-02-02",
-            "2131-02-02",
-            "2226-02-02",
-            "2321-02-02",
-            "2416-02-02",
-            "2511-02-02",
-            "2606-02-02",
-            "2701-02-02",
-            "2796-02-02",
-            "2891-02-02"
-          ]
-        },
-        "protocol": {
-          "id": "P-448",
-          "name": "Israel Robotic Storage Array Stabilization",
-          "ruling_shem_angel": "Imamiah",
-          "celestial_choir": "Principalities",
-          "angel_power": "Destroys enemy power, protects prisoners and travelers",
-          "frequency_khz": "416.639 kHz"
-        },
-        "real_time_earth_vector": {
-          "applied_speed": "0.565x acceleration",
-          "frequency_shift_to_ultra_green": "+25.000 kHz shift",
-          "exact_spatial_target": "Israel Grid Node #5"
-        },
-        "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Israel'. Driver #40 Raum (133.200 kHz) exerting power [Steals treasure, destroys cities, foretells future events] induces systemic bottleneck friction. Executing Israel Robotic Storage Array Stabilization invoking Shem Angel Imamiah (Principalities, 416.639 kHz) providing power [Destroys enemy power, protects prisoners and travelers] locks 1.000 Target Unity."
-      }
-    },
-    {
-      "sandbox_id": "sentinel-c06",
-      "status": "EXECUTED",
-      "nvidia_nim_accelerated": false,
-      "physical_stability_seal": "Jin (Insight)",
-      "phase_locked_loop_mark": "PLL-MARK-#06-77173ACE",
-      "cymatic_999_inversion_hz": "167.106 Hz",
-      "optical_metrology_matrix": {
-        "system": "Multi-Spectral Quantum Interferometry",
-        "perception_mode": "Micro-Vibration Defect Perception"
-      },
-      "mhd_energy_amplifier": {
-        "stage": 2,
-        "system_name": "Thermal Plasma Kinetic Generator",
-        "amplification_factor": "6.06x"
-      },
-      "thermodynamic_balancer": {
-        "mode": "Thermodynamic Heat Sink Balance",
-        "ambient_thermal_balance": "98.1%"
-      },
-      "containment_array": {
-        "seal_formula": "Eight-Vector Frequency Lock",
-        "containment_function": "Continuous Field Transformation Lock"
-      },
-      "overclock_telemetry": {
-        "active_gate": "Overclock Stage 4: Wave Velocity Peak",
-        "overclock_capacity": "275% Overclock Capacity"
-      },
-      "laser_ablation_deconstruction": {
-        "mode": "Triangular Beam Molecular Isolation"
-      },
-      "state_recovery": {
-        "protocol": "Izanami Active (PID Error Lock)",
-        "function": "Closed-Loop Feedback Trap"
-      },
-      "physical_telemetry": {
-        "anti_phase_dampening": "95.6%"
-      },
-      "data": {
-        "agent_index": 6,
-        "target_node_subject": "Israel",
-        "biblical_apocalyptic_framework": {
-          "apocalyptic_seal": "Fifth Seal: Altar of Martyrs",
-          "sealed_tribe": "Judah",
-          "temporal_birth_gate": "January Gate"
-        },
-        "bottleneck": {
-          "id": "B-107",
-          "name": "Grid Frequency Thermal Lag in Israel Context",
-          "active_demon_driver": "#52 Alloces",
-          "demon_power": "Teaches astronomy, liberal arts, provides excellent familiars",
-          "frequency_khz": "173.160 kHz",
-          "predictive_crash_schedule_10_dates_to_3000ce": [
-            "2037-03-23",
-            "2132-03-23",
-            "2227-03-23",
-            "2322-03-23",
-            "2417-03-23",
-            "2512-03-23",
-            "2607-03-23",
-            "2702-03-23",
-            "2797-03-23",
-            "2892-03-23"
-          ]
-        },
-        "protocol": {
-          "id": "P-038",
-          "name": "Israel Logos Currency Ledger Stabilization",
-          "ruling_shem_angel": "Cahetel",
-          "celestial_choir": "Seraphim",
-          "angel_power": "Inspires agricultural abundance and divine blessings",
-          "frequency_khz": "60.675 kHz"
-        },
-        "real_time_earth_vector": {
-          "applied_speed": "0.506x acceleration",
-          "frequency_shift_to_ultra_green": "+26.000 kHz shift",
-          "exact_spatial_target": "Israel Grid Node #6"
-        },
-        "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Israel'. Driver #52 Alloces (173.160 kHz) exerting power [Teaches astronomy, liberal arts, provides excellent familiars] induces systemic bottleneck friction. Executing Israel Logos Currency Ledger Stabilization invoking Shem Angel Cahetel (Seraphim, 60.675 kHz) providing power [Inspires agricultural abundance and divine blessings] locks 1.000 Target Unity."
-      }
-    },
-    {
-      "sandbox_id": "sentinel-c07",
-      "status": "EXECUTED",
-      "nvidia_nim_accelerated": false,
-      "physical_stability_seal": "Rin (Strength)",
-      "phase_locked_loop_mark": "PLL-MARK-#07-77173ACE",
-      "cymatic_999_inversion_hz": "142.807 Hz",
-      "optical_metrology_matrix": {
-        "system": "High-Resolution Terahertz Scanning",
-        "perception_mode": "Sub-Surface Physical Strain Isolation"
-      },
-      "mhd_energy_amplifier": {
-        "stage": 1,
-        "system_name": "Magnetohydrodynamic Fluid Accelerator",
-        "amplification_factor": "7.93x"
-      },
-      "thermodynamic_balancer": {
-        "mode": "Thermodynamic Heat Sink Balance",
-        "ambient_thermal_balance": "94.3%"
-      },
-      "containment_array": {
-        "seal_formula": "Eight-Vector Frequency Lock",
-        "containment_function": "Continuous Field Transformation Lock"
-      },
-      "overclock_telemetry": {
-        "active_gate": "Overclock Stage 1: Thermal Gate Opening",
-        "overclock_capacity": "125% Overclock Capacity"
-      },
-      "laser_ablation_deconstruction": {
-        "mode": "Femtosecond Laser Atomic Ablation"
-      },
-      "state_recovery": {
         "protocol": "Izanagi Active (Zero-Point Rewind)",
         "function": "Atomic Snapshot State Rollback"
       },
       "physical_telemetry": {
-        "anti_phase_dampening": "98.3%"
-      },
-      "data": {
-        "agent_index": 7,
-        "target_node_subject": "Israel",
-        "biblical_apocalyptic_framework": {
-          "apocalyptic_seal": "Fifth Seal: Altar of Martyrs",
-          "sealed_tribe": "Gad",
-          "temporal_birth_gate": "March Gate"
-        },
-        "bottleneck": {
-          "id": "B-094",
-          "name": "Transmission Line Legacy System Inertia in Israel Context",
-          "active_demon_driver": "#38 Halphas",
-          "demon_power": "Builds towers, supplies ammunition, and punishes enemies",
-          "frequency_khz": "126.540 kHz",
-          "predictive_crash_schedule_10_dates_to_3000ce": [
-            "2029-10-22",
-            "2125-10-22",
-            "2221-10-22",
-            "2317-10-22",
-            "2413-10-22",
-            "2509-10-22",
-            "2605-10-22",
-            "2701-10-22",
-            "2797-10-22",
-            "2893-10-22"
-          ]
-        },
-        "protocol": {
-          "id": "P-194",
-          "name": "Israel Patent Vault Release Synchronization",
-          "ruling_shem_angel": "Omael",
-          "celestial_choir": "Dominions",
-          "angel_power": "Governs animal generation, patient endurance, production",
-          "frequency_khz": "238.659 kHz"
-        },
-        "real_time_earth_vector": {
-          "applied_speed": "0.493x acceleration",
-          "frequency_shift_to_ultra_green": "+33.000 kHz shift",
-          "exact_spatial_target": "Israel Grid Node #7"
-        },
-        "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Israel'. Driver #38 Halphas (126.540 kHz) exerting power [Builds towers, supplies ammunition, and punishes enemies] induces systemic bottleneck friction. Executing Israel Patent Vault Release Synchronization invoking Shem Angel Omael (Dominions, 238.659 kHz) providing power [Governs animal generation, patient endurance, production] locks 1.000 Target Unity."
-      }
-    },
-    {
-      "sandbox_id": "sentinel-c08",
-      "status": "EXECUTED",
-      "nvidia_nim_accelerated": false,
-      "physical_stability_seal": "Pyo (Energy Flow)",
-      "phase_locked_loop_mark": "PLL-MARK-#08-77173ACE",
-      "cymatic_999_inversion_hz": "124.965 Hz",
-      "optical_metrology_matrix": {
-        "system": "Multi-Spectral Quantum Interferometry",
-        "perception_mode": "Micro-Vibration Defect Perception"
-      },
-      "mhd_energy_amplifier": {
-        "stage": 2,
-        "system_name": "Thermal Plasma Kinetic Generator",
-        "amplification_factor": "2.90x"
-      },
-      "thermodynamic_balancer": {
-        "mode": "Piezoelectric Pressure Transduction",
-        "ambient_thermal_balance": "96.5%"
-      },
-      "containment_array": {
-        "seal_formula": "Eight-Vector Frequency Lock",
-        "containment_function": "Continuous Field Transformation Lock"
-      },
-      "overclock_telemetry": {
-        "active_gate": "Overclock Stage 4: Wave Velocity Peak",
-        "overclock_capacity": "275% Overclock Capacity"
-      },
-      "laser_ablation_deconstruction": {
-        "mode": "Triangular Beam Molecular Isolation"
-      },
-      "state_recovery": {
-        "protocol": "Izanami Active (PID Error Lock)",
-        "function": "Closed-Loop Feedback Trap"
-      },
-      "physical_telemetry": {
-        "anti_phase_dampening": "88.0%"
-      },
-      "data": {
-        "agent_index": 8,
-        "target_node_subject": "Israel",
-        "biblical_apocalyptic_framework": {
-          "apocalyptic_seal": "Fifth Seal: Altar of Martyrs",
-          "sealed_tribe": "Judah",
-          "temporal_birth_gate": "January Gate"
-        },
-        "bottleneck": {
-          "id": "B-091",
-          "name": "Transmission Line Packet Latency Peak in Israel Context",
-          "active_demon_driver": "#40 Raum",
-          "demon_power": "Steals treasure, destroys cities, foretells future events",
-          "frequency_khz": "133.200 kHz",
-          "predictive_crash_schedule_10_dates_to_3000ce": [
-            "2036-11-03",
-            "2107-11-03",
-            "2178-11-03",
-            "2249-11-03",
-            "2320-11-03",
-            "2391-11-03",
-            "2462-11-03",
-            "2533-11-03",
-            "2604-11-03",
-            "2675-11-03"
-          ]
-        },
-        "protocol": {
-          "id": "P-256",
-          "name": "Israel Automated Switch Repair Reinforcement",
-          "ruling_shem_angel": "Nith-Haiah",
-          "celestial_choir": "Dominions",
-          "angel_power": "Governs occult sciences, bestows wisdom and truth",
-          "frequency_khz": "198.209 kHz"
-        },
-        "real_time_earth_vector": {
-          "applied_speed": "0.49x acceleration",
-          "frequency_shift_to_ultra_green": "+30.000 kHz shift",
-          "exact_spatial_target": "Israel Grid Node #8"
-        },
-        "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Israel'. Driver #40 Raum (133.200 kHz) exerting power [Steals treasure, destroys cities, foretells future events] induces systemic bottleneck friction. Executing Israel Automated Switch Repair Reinforcement invoking Shem Angel Nith-Haiah (Dominions, 198.209 kHz) providing power [Governs occult sciences, bestows wisdom and truth] locks 1.000 Target Unity."
-      }
-    },
-    {
-      "sandbox_id": "sentinel-c09",
-      "status": "EXECUTED",
-      "nvidia_nim_accelerated": false,
-      "physical_stability_seal": "To (Harmony)",
-      "phase_locked_loop_mark": "PLL-MARK-#09-77173ACE",
-      "cymatic_999_inversion_hz": "111.437 Hz",
-      "optical_metrology_matrix": {
-        "system": "High-Resolution Terahertz Scanning",
-        "perception_mode": "Sub-Surface Physical Strain Isolation"
-      },
-      "mhd_energy_amplifier": {
-        "stage": 2,
-        "system_name": "Thermal Plasma Kinetic Generator",
-        "amplification_factor": "7.37x"
-      },
-      "thermodynamic_balancer": {
-        "mode": "Thermodynamic Heat Sink Balance",
-        "ambient_thermal_balance": "96.2%"
-      },
-      "containment_array": {
-        "seal_formula": "Eight-Vector Frequency Lock",
-        "containment_function": "Continuous Field Transformation Lock"
-      },
-      "overclock_telemetry": {
-        "active_gate": "Overclock Stage 1: Thermal Gate Opening",
-        "overclock_capacity": "125% Overclock Capacity"
-      },
-      "laser_ablation_deconstruction": {
-        "mode": "Femtosecond Laser Atomic Ablation"
-      },
-      "state_recovery": {
-        "protocol": "Izanagi Active (Zero-Point Rewind)",
-        "function": "Atomic Snapshot State Rollback"
-      },
-      "physical_telemetry": {
-        "anti_phase_dampening": "94.7%"
+        "anti_phase_dampening": "90.8%"
       },
       "data": {
         "agent_index": 9,
-        "target_node_subject": "Israel",
+        "target_node_subject": "America",
         "biblical_apocalyptic_framework": {
           "apocalyptic_seal": "Fifth Seal: Altar of Martyrs",
-          "sealed_tribe": "Gad",
-          "temporal_birth_gate": "March Gate"
+          "sealed_tribe": "Judah",
+          "temporal_birth_gate": "January Gate"
         },
         "bottleneck": {
-          "id": "B-438",
-          "name": "Nuclear Isolation Paywall Isolation in Israel Context",
-          "active_demon_driver": "#46 Bifrons",
-          "demon_power": "Teaches astrology, geometry, herbs, and moves dead bodies",
-          "frequency_khz": "153.180 kHz",
+          "id": "B-379",
+          "name": "Pipeline Pressure Fleet Attrition Rate in America Context",
+          "active_demon_driver": "#60 Vapula",
+          "demon_power": "Teaches manual crafts, philosophy, and advanced technical knowledge",
+          "frequency_khz": "199.800 kHz",
           "predictive_crash_schedule_10_dates_to_3000ce": [
-            "2033-02-14",
-            "2122-02-14",
-            "2211-02-14",
-            "2300-02-14",
-            "2389-02-14",
-            "2478-02-14",
-            "2567-02-14",
-            "2656-02-14",
-            "2745-02-14",
-            "2834-02-14"
+            "2034-03-03",
+            "2123-03-03",
+            "2212-03-03",
+            "2301-03-03",
+            "2390-03-03",
+            "2479-03-03",
+            "2568-03-03",
+            "2657-03-03",
+            "2746-03-03",
+            "2835-03-03"
           ]
         },
         "protocol": {
-          "id": "P-465",
-          "name": "Israel Automated Access Gate Optimization",
-          "ruling_shem_angel": "Cahetel",
-          "celestial_choir": "Seraphim",
-          "angel_power": "Inspires agricultural abundance and divine blessings",
-          "frequency_khz": "60.675 kHz"
+          "id": "P-305",
+          "name": "America Regenerative Bio-Char Injector Optimization",
+          "ruling_shem_angel": "Mumiah",
+          "celestial_choir": "Angels",
+          "angel_power": "Governs medicine, health, longevity, and happy endings",
+          "frequency_khz": "578.439 kHz"
         },
         "real_time_earth_vector": {
-          "applied_speed": "0.837x acceleration",
-          "frequency_shift_to_ultra_green": "+57.000 kHz shift",
-          "exact_spatial_target": "Israel Grid Node #9"
+          "applied_speed": "0.778x acceleration",
+          "frequency_shift_to_ultra_green": "+58.000 kHz shift",
+          "exact_spatial_target": "America Grid Node #9"
         },
-        "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Israel'. Driver #46 Bifrons (153.180 kHz) exerting power [Teaches astrology, geometry, herbs, and moves dead bodies] induces systemic bottleneck friction. Executing Israel Automated Access Gate Optimization invoking Shem Angel Cahetel (Seraphim, 60.675 kHz) providing power [Inspires agricultural abundance and divine blessings] locks 1.000 Target Unity."
+        "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'America'. Driver #60 Vapula (199.800 kHz) exerting power [Teaches manual crafts, philosophy, and advanced technical knowledge] induces systemic bottleneck friction. Executing America Regenerative Bio-Char Injector Optimization invoking Shem Angel Mumiah (Angels, 578.439 kHz) providing power [Governs medicine, health, longevity, and happy endings] locks 1.000 Target Unity."
       }
     },
     {
@@ -743,80 +743,80 @@
       "status": "EXECUTED",
       "nvidia_nim_accelerated": false,
       "physical_stability_seal": "Sha (Healing)",
-      "phase_locked_loop_mark": "PLL-MARK-#10-77173ACE",
-      "cymatic_999_inversion_hz": "999.287 Hz",
+      "phase_locked_loop_mark": "PLL-MARK-#10-B41E6560",
+      "cymatic_999_inversion_hz": "999.988 Hz",
       "optical_metrology_matrix": {
-        "system": "High-Resolution Terahertz Scanning",
-        "perception_mode": "Sub-Surface Physical Strain Isolation"
+        "system": "Multi-Spectral Quantum Interferometry",
+        "perception_mode": "Micro-Vibration Defect Perception"
       },
       "mhd_energy_amplifier": {
         "stage": 2,
         "system_name": "Thermal Plasma Kinetic Generator",
-        "amplification_factor": "8.87x"
+        "amplification_factor": "1.88x"
       },
       "thermodynamic_balancer": {
         "mode": "Piezoelectric Pressure Transduction",
-        "ambient_thermal_balance": "96.2%"
+        "ambient_thermal_balance": "93.8%"
       },
       "containment_array": {
-        "seal_formula": "Eight-Vector Frequency Lock",
-        "containment_function": "Continuous Field Transformation Lock"
+        "seal_formula": "Four-Node Phase Locking Seal",
+        "containment_function": "Dual Layer Sub-Harmonic Isolation"
       },
       "overclock_telemetry": {
         "active_gate": "Overclock Stage 4: Wave Velocity Peak",
         "overclock_capacity": "275% Overclock Capacity"
       },
       "laser_ablation_deconstruction": {
-        "mode": "Triangular Beam Molecular Isolation"
+        "mode": "Femtosecond Laser Atomic Ablation"
       },
       "state_recovery": {
         "protocol": "Izanagi Active (Zero-Point Rewind)",
         "function": "Atomic Snapshot State Rollback"
       },
       "physical_telemetry": {
-        "anti_phase_dampening": "91.7%"
+        "anti_phase_dampening": "85.8%"
       },
       "data": {
         "agent_index": 10,
-        "target_node_subject": "Israel",
+        "target_node_subject": "America",
         "biblical_apocalyptic_framework": {
           "apocalyptic_seal": "Fifth Seal: Altar of Martyrs",
-          "sealed_tribe": "Gad",
-          "temporal_birth_gate": "March Gate"
+          "sealed_tribe": "Judah",
+          "temporal_birth_gate": "January Gate"
         },
         "bottleneck": {
-          "id": "B-288",
-          "name": "Hydroelectric Reservoir Paywall Isolation in Israel Context",
-          "active_demon_driver": "#39 Malphas",
-          "demon_power": "Builds houses/high towers, reveals enemy desires/actions",
-          "frequency_khz": "129.870 kHz",
+          "id": "B-489",
+          "name": "Micro-Grid Sync Allocation Friction in America Context",
+          "active_demon_driver": "#30 Forneus",
+          "demon_power": "Teaches rhetoric, foreign tongues, and causes favorable renown",
+          "frequency_khz": "99.900 kHz",
           "predictive_crash_schedule_10_dates_to_3000ce": [
-            "2033-08-12",
-            "2118-08-12",
-            "2203-08-12",
-            "2288-08-12",
-            "2373-08-12",
-            "2458-08-12",
-            "2543-08-12",
-            "2628-08-12",
-            "2713-08-12",
-            "2798-08-12"
+            "2039-05-09",
+            "2112-05-09",
+            "2185-05-09",
+            "2258-05-09",
+            "2331-05-09",
+            "2404-05-09",
+            "2477-05-09",
+            "2550-05-09",
+            "2623-05-09",
+            "2696-05-09"
           ]
         },
         "protocol": {
-          "id": "P-143",
-          "name": "Israel Container Crane Optimizer Integration",
-          "ruling_shem_angel": "Hahaiah",
-          "celestial_choir": "Cherubim",
-          "angel_power": "Reveals hidden mysteries, converts adversity into peace",
-          "frequency_khz": "93.035 kHz"
+          "id": "P-187",
+          "name": "America Quantum Encryption Uplink Harmonization",
+          "ruling_shem_angel": "Jabamiah",
+          "celestial_choir": "Angels",
+          "angel_power": "Governs regeneration, elemental transformation of matter",
+          "frequency_khz": "562.259 kHz"
         },
         "real_time_earth_vector": {
-          "applied_speed": "0.687x acceleration",
-          "frequency_shift_to_ultra_green": "+27.000 kHz shift",
-          "exact_spatial_target": "Israel Grid Node #10"
+          "applied_speed": "0.888x acceleration",
+          "frequency_shift_to_ultra_green": "+48.000 kHz shift",
+          "exact_spatial_target": "America Grid Node #10"
         },
-        "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Israel'. Driver #39 Malphas (129.870 kHz) exerting power [Builds houses/high towers, reveals enemy desires/actions] induces systemic bottleneck friction. Executing Israel Container Crane Optimizer Integration invoking Shem Angel Hahaiah (Cherubim, 93.035 kHz) providing power [Reveals hidden mysteries, converts adversity into peace] locks 1.000 Target Unity."
+        "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'America'. Driver #30 Forneus (99.900 kHz) exerting power [Teaches rhetoric, foreign tongues, and causes favorable renown] induces systemic bottleneck friction. Executing America Quantum Encryption Uplink Harmonization invoking Shem Angel Jabamiah (Angels, 562.259 kHz) providing power [Governs regeneration, elemental transformation of matter] locks 1.000 Target Unity."
       }
     }
   ]
