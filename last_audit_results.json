@@ -1,13 +1,13 @@
 {
   "security": {
-    "session_guid": "SESSION-Z1GVZUPR",
-    "session_color": "#F97316",
-    "utc_timestamp": "2026-07-26T13:51:02.193Z",
-    "ecta_hash": "sha256:41dac6638e25579221f9e78a9b2f54b72e4d90ad57014d994af60de523fc2726",
+    "session_guid": "SESSION-VOJ027JZ",
+    "session_color": "#00FF66",
+    "utc_timestamp": "2026-07-26T14:15:58.653Z",
+    "ecta_hash": "sha256:c04bc5f08c29208a2cc614e99fe36347b5b56819da01e3646f46d462f144d541",
     "nvidia_nim_cloud": "BYPASS_LOCAL",
     "popia_status": "COMPLIANT_NO_PII_EXPOSED"
   },
-  "quantum_header": "QUANTUM-CYCLE: 059763 / 144000 | COLOR: #F97316 | CATALOG: 500/500",
+  "quantum_header": "QUANTUM-CYCLE: 059763 / 144000 | COLOR: #00FF66 | CATALOG: 500/500",
   "chronos_sweep": [
     {
       "sandbox_id": "sentinel-c01",
