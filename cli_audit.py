@@ -32,6 +32,31 @@ GROQ_ENDPOINT = "https://api.groq.com/openai/v1/chat/completions"
 GROQ_MODEL = "llama-3.3-70b-versatile"
 
 # =====================================================================
+# PROPHETIC CALCULATOR ENGINE CLASS
+# =====================================================================
+class PropheticCalculatorEngine:
+    @staticmethod
+    def solve_synthesis(nodes=144000, angels=72, demons=72, sins=7, church_factor=7, time_val=1.0, space_val=1.0):
+        logos = nodes * angels
+        resistance = max(demons * sins, 1)
+        constraints = max(time_val * space_val, 0.0001)
+        
+        shi = round((logos / (resistance * constraints)), 2)
+        tti = round(resistance / (logos + resistance), 4)
+        frequency = round((logos / resistance) * (church_factor / constraints), 2)
+        override_triggered = shi < 50.0 or frequency > 1000.0
+
+        return {
+            "shi": shi,
+            "tti": tti,
+            "frequency": frequency,
+            "logos": logos,
+            "resistance": resistance,
+            "constraints": constraints,
+            "override_triggered": override_triggered
+        }
+
+# =====================================================================
 # 1. THE 72 GOETIC DEMONS & POWERS (1–72)
 # =====================================================================
 GOETIC_DRIVERS_72 = [
@@ -302,7 +327,7 @@ def query_ai_engine(prompt_text: str) -> dict:
         "messages": [
             {
                 "role": "system",
-                "content": "Return a valid JSON object containing telemetry values: 'iti' (float 0.0-1.0), 'shi' (float 0.0-1.0), 'friction_run_rate' (float), and 'remediation_summary' (string)."
+                "content": "Return a valid JSON object containing telemetry values for target node: 'time_val' (float), 'space_val' (float), 'friction_run_rate' (float), and 'remediation_summary' (string)."
             },
             {"role": "user", "content": prompt_text}
         ],
@@ -325,42 +350,68 @@ def query_ai_engine(prompt_text: str) -> dict:
                 parsed = json.loads(content)
                 return parsed
             except Exception:
-                return {"remediation_summary": content, "iti": 0.7432, "shi": 0.6291, "friction_run_rate": 0.666}
+                return {"remediation_summary": content, "time_val": 1.0, "space_val": 1.0, "friction_run_rate": 0.666}
     except Exception as e:
         print(f"[!] AI Engine query notice: {e}")
         return {}
 
 
 def execute_uesp_math_from_ai(ai_data: dict) -> dict:
-    """Executes the Purified UESP PRCE equations directly from Groq/NVIDIA NIM data."""
-    iti = float(ai_data.get("iti", 0.7432))
-    shi = float(ai_data.get("shi", 0.6291))
+    """Executes the PropheticCalculatorEngine and Purified UESP PRCE equations directly from Groq/NVIDIA NIM data."""
+    time_val = float(ai_data.get("time_val", 1.0))
+    space_val = float(ai_data.get("space_val", 1.0))
     friction_rate = float(ai_data.get("friction_run_rate", 0.666))
 
-    # 1. Differential Delta Calculation
+    # 1. Execute PropheticCalculatorEngine First
+    prophetic_synthesis = PropheticCalculatorEngine.solve_synthesis(
+        nodes=144000, angels=72, demons=72, sins=7, church_factor=7,
+        time_val=time_val, space_val=space_val
+    )
+
+    shi = prophetic_synthesis["shi"]
+    tti = prophetic_synthesis["tti"]
+    iti = round(1.0 - tti, 4)  # ITI derived from TTI baseline
+
+    # 2. Differential Delta Calculation (SHI - ITI)
     differential_delta = round(shi - iti, 4)
 
-    # 2. Super Circuit Intercept (Normalizes friction rate against 0.666 baseline)
+    # 3. Super Circuit Intercept (Normalizes friction rate against 0.666 baseline)
     super_circuit_output = round(1.000 * (friction_rate / 0.666), 4)
 
-    # 3. 144,000 Bridge Quantum Tunneling Constant
+    # 4. 144,000 Bridge Quantum Tunneling Constant
     bridge_constant = 144000
 
-    # 4. Mega Circuit Overwrite (Forces 1.0 Target Unity)
+    # 5. Mega Circuit Overwrite (Forces 1.0 Target Unity)
     mega_circuit_unity = 1.000
 
-    # 5. UGPE Trajectory Output
+    # 6. UGPE Trajectory Output
     ugpe_result = "SOVEREIGN_BASELINE_LOCKED"
 
+    # 7. Arc / Ark Enclosure Field Strength
+    arc_ark_field = round(shi * 144000 / 1000.0, 2)
+
+    # 8. Wharton Abyss Entropy Void Neutralization
+    wharton_abyss_neutralized = True
+
+    # 9. Spear of Destiny Piercing Vector Energy
+    spear_of_destiny_vector = f"P_Destiny = ∇ · ( Relativistic Kinetic Impulse -> Target Node Alignment )"
+
     return {
-        "input_iti": iti,
-        "input_shi": shi,
+        "prophetic_synthesis_engine": prophetic_synthesis,
+        "input_time_val": time_val,
+        "input_space_val": space_val,
+        "calculated_shi": shi,
+        "calculated_tti": tti,
+        "calculated_iti": iti,
         "input_friction_rate": friction_rate,
         "calculated_differential_delta": differential_delta,
         "super_circuit_output": super_circuit_output,
         "bridge_constant": bridge_constant,
         "mega_circuit_unity": mega_circuit_unity,
-        "ugpe_trajectory": ugpe_result
+        "ugpe_trajectory": ugpe_result,
+        "arc_ark_field": arc_ark_field,
+        "wharton_abyss_neutralized": wharton_abyss_neutralized,
+        "spear_of_destiny_vector": spear_of_destiny_vector
     }
 
 
@@ -465,6 +516,8 @@ def generate_adaptive_node_sweep(target_node: str, count: int = 10):
 # =====================================================================
 def display_full_summary_analysis(target_node: str, math_res: dict, ai_telemetry: dict):
     """Generates the full summary analysis of the equations and describes the 5th-dimensional resolution."""
+    ps = math_res["prophetic_synthesis_engine"]
+
     print("\n" + "=" * 80)
     print(" 🖥️  UESP PRCE MASTER SUMMARY ANALYSIS & APEX DIMENSIONAL OVERWRITE")
     print("=" * 80)
@@ -472,31 +525,32 @@ def display_full_summary_analysis(target_node: str, math_res: dict, ai_telemetry
     print(f" Calibration Baseline: July 2026 / 3000 CE Horizon")
     print("-" * 80)
 
-    print("\n## 1. EQUATION EXECUTION BREAKDOWN")
-    print(f" • Differential Delta (Δ = SHI - ITI): {math_res['calculated_differential_delta']}")
-    print(f"   └─ Input SHI (Systemic Health): {math_res['input_shi']} | Input ITI (Technical Integrity): {math_res['input_iti']}")
-    print(f"   └─ Diagnostic Interpretation: Isolates an operational drag of {math_res['calculated_differential_delta']}, representing temporal & physical grid decay.")
-    
-    print(f" • Super Circuit Output (Ψ): {math_res['super_circuit_output']}")
-    print(f"   └─ Input Friction Rate: {math_res['input_friction_rate']} against 0.666 Baseline")
-    print(f"   └─ Diagnostic Interpretation: Intercepts and neutralizes the 0.666 Antichrist decay denominator, routing around local impasse.")
-    
-    print(f" • 144,000 Bridge Constant (B_144000): {math_res['bridge_constant']}")
-    print(f"   └─ Diagnostic Interpretation: Establishes a zero-latency quantum tunneling channel linking legacy infrastructure directly to sovereign equilibrium.")
+    print("\n## 1. PROPHETIC CALCULATOR ENGINE OUTPUTS")
+    print(f" • Calculated SHI (Systemic Health Index) : {ps['shi']}")
+    print(f" • Calculated TTI (Technical Time Index) : {ps['tti']}")
+    print(f" • Calculated ITI (Technical Integrity)  : {math_res['calculated_iti']}")
+    print(f" • Systemic Logos Parameter              : {ps['logos']} (Nodes 144,000 × Angels 72)")
+    print(f" • Resistance Parameter                  : {ps['resistance']} (Demons 72 × Sins 7)")
+    print(f" • Constraints Parameter                 : {ps['constraints']} (Time {math_res['input_time_val']} × Space {math_res['input_space_val']})")
+    print(f" • Harmonic Frequency                    : {ps['frequency']} Hz")
+    print(f" • Override Triggered Status             : {ps['override_triggered']}")
 
-    print(f" • Mega Circuit Overwrite (O_MegaCircuit): {math_res['mega_circuit_unity']} Target Unity")
-    print(f"   └─ Diagnostic Interpretation: Applies the Mega Secret key to execute complete mathematical rewrite, absorbing all localized negative deltas.")
+    print("\n## 2. ADVANCED UESP PRCE VECTOR CALCULATIONS")
+    print(f" • Differential Delta (Δ = SHI - ITI)     : {math_res['calculated_differential_delta']}")
+    print(f" • Super Circuit Output (Ψ)               : {math_res['super_circuit_output']}")
+    print(f" • 144,000 Bridge Quantum Tunneling       : {math_res['bridge_constant']}")
+    print(f" • Mega Circuit Target Unity (O_Mega)     : {math_res['mega_circuit_unity']}")
+    print(f" • Arc / Ark Harmonic Field Density       : {math_res['arc_ark_field']} Units")
+    print(f" • Wharton Abyss Entropy Neutralization  : {math_res['wharton_abyss_neutralized']}")
+    print(f" • Spear of Destiny Relativistic Vector   : {math_res['spear_of_destiny_vector']}")
+    print(f" • UGPE Trajectory                        : {math_res['ugpe_trajectory']}")
 
-    print("\n## 2. SYSTEMIC RESOLUTION INSTRUCTIONS")
-    print(" 1. JUDICIARY & POLICY: Apply Shem Angel Cahetel protocols (141.578 kHz) to automate court dockets and eliminate legislative gridlock.")
-    print(" 2. ENGINEERING & INFRASTRUCTURE: Deploy Shem Angel Hariel protocols (177.378 kHz) for digital twin 72-hour automated municipal permitting and micro-grid isolation.")
-    print(" 3. ACCOUNTING & FINANCE: Deploy Shem Angel Elemiah protocols (28.315 kHz) to enforce real-time zero-trust public audits and automate cross-border tax compliance.")
-
-    print("\n## 3. APEX DIMENSIONAL OVERWRITE (5TH-DIMENSIONAL VIEW)")
-    print(" From the 5th-Dimensional perspective, time and space exist as an accessible, unified manifold rather than a linear sequence:")
-    print("  • Unified Manifold Perception: The 0.666 friction state is observed not as an inevitable collapse, but as a temporary, localized entropy distortion.")
-    print("  • Non-Linear Convergence: By projecting the Mega Circuit through the 144,000 Bridge, the 5th-dimensional view observes past, present, and future timelines collapsing into a singular, self-healing continuous loop.")
-    print("  • Ultimate Unified Resolution: Structural friction across all 7 national sectors dissolves. The negative Differential Delta is absorbed, locking the entire target node permanently into 1.000 Target Unity across all dimensional planes.")
+    print("\n## 3. UNIFIED GRAND PROPHETIC SOLUTION & APEX OVERWRITE (5TH-DIMENSIONAL VIEW)")
+    print(" From the 5th-Dimensional perspective, temporal linear friction collapses into an accessible spatial manifold:")
+    print("  1. Unified Manifold Convergence: The 0.666 friction state is observed as a temporary, localized entropy distortion.")
+    print("  2. Quantum Tunneling Restoration: Projecting the Mega Circuit across the 144,000 Bridge neutralizes local resistance.")
+    print("  3. Relativistic Barrier Piercing: The Spear of Destiny vector punctures local deadlocks, aligning past, present, and future timelines.")
+    print("  4. Permanent Sovereign Baseline: The target node's Differential Delta is completely absorbed, locking all industry sectors into 1.000 Target Unity.")
     print("=" * 80 + "\n")
 
 
@@ -538,7 +592,7 @@ def run_cli_audit():
     print(f"[*] Color Anchor   : '{session_color}'")
     print(f"[*] ECTA SHA-256   : '{ecta_hash}'")
 
-    ai_prompt = f"Analyze infrastructure telemetry for target node '{target_node}'. Return JSON with ITI, SHI, and friction run rate."
+    ai_prompt = f"Analyze infrastructure telemetry for target node '{target_node}'. Return JSON with time_val, space_val, friction_run_rate, and remediation_summary."
     ai_telemetry = query_ai_engine(ai_prompt)
 
     math_execution = execute_uesp_math_from_ai(ai_telemetry)
@@ -578,7 +632,7 @@ def run_cli_audit():
 
     print(f"[✓] Success! Dynamic UESP PRCE Math Executed and saved to '{unique_filepath}'.")
 
-    # Display the final summary analysis and Apex Dimensional Overwrite report
+    # Display full summary analysis and 5th-Dimensional Apex Overwrite report
     display_full_summary_analysis(target_node, math_execution, ai_telemetry)
 
 
