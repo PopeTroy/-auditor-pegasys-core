@@ -1,9 +1,9 @@
 {
   "security": {
-    "session_guid": "SESSION-D6849B07",
+    "session_guid": "SESSION-2FE3D64A",
     "session_color": "#00F0FF",
-    "utc_timestamp": "2026-07-27T12:51:52.257294+00:00",
-    "ecta_hash": "sha256:f1e6d6706f0c7d4fed962d0eede48ac6b2b06be485936115d9a58b0bb1e91aff",
+    "utc_timestamp": "2026-07-27T14:16:16.901841+00:00",
+    "ecta_hash": "sha256:e44aae1afac3b1a8b00398f4e56810bd974f851bb69e9879ae4191998110daf1",
     "ai_cloud_status": "GROQ_ACTIVE",
     "popia_status": "COMPLIANT_NO_PII_EXPOSED"
   },
@@ -19,32 +19,125 @@
     "SPEAR_OF_DESTINY": "\\mathbf{P}_{\\text{Destiny}} = \\vec{\\nabla} \\cdot \\left( \\frac{\\frac{1}{2} MV^2}{\\sqrt{1 - V^2/c^2}} \\cdot \\mathbf{\\hat{u}} \\right)"
   },
   "executed_uesp_math_results": {
-    "prophetic_synthesis_engine": {
-      "shi": 74057.14,
-      "tti": 0.0,
-      "frequency": 518400.0,
-      "logos": 10368000,
-      "resistance": 140,
-      "constraints": 1.0,
-      "override_triggered": true
-    },
-    "input_time_val": 1.0,
-    "input_space_val": 1.0,
-    "calculated_shi": 74057.14,
-    "calculated_tti": 0.0,
-    "calculated_iti": 1.0,
+    "input_time_val": "24h Cycle (24.0h) UTC+3",
+    "input_space_val": "22,145 sq km (Landmass Area)",
+    "calculated_shi": 0.0344,
+    "calculated_tti": 4.9e-05,
+    "calculated_iti": 0.8085,
     "input_friction_rate": 0.666,
-    "calculated_differential_delta": 74056.14,
+    "total_bottlenecks_above_10": 10,
+    "calculated_differential_delta": -0.7741,
     "super_circuit_output": 1.0,
     "bridge_constant": 144000,
-    "mega_circuit_unity": 1.0,
+    "mega_circuit_unity": "144000 Bridge | 72 Demons | 72 Angels | 36 Cosmic Elements -> 1.0 Target Unity",
     "ugpe_trajectory": "SOVEREIGN_BASELINE_LOCKED",
-    "arc_ark_field": 10664228.16,
-    "wharton_abyss_neutralized": true,
-    "spear_of_destiny_vector": "P_Destiny = ∇ · ( Relativistic Kinetic Impulse -> Target Node Alignment )",
-    "accumulated_demon_friction_avg_khz": 142.52,
-    "accumulated_angel_filter_avg_khz": 188.5,
-    "total_crash_dates_processed": 100
+    "arc_ark_field": "2.5 Cubits (L) x 1.5 Cubits (W) x 1.5 Cubits (H) Gold Enclosure -> 0.129 Harmonic Shield Units",
+    "wharton_abyss_neutralized": "Depth: 17.96 km Void Intercept -> NEUTRALIZED",
+    "spear_of_destiny_vector": "P_Destiny = ∇ · [ Sharpening Angles: 33° Alignment & 150° Thermodynamic Focus ] -> Target Barrier Pierced",
+    "accumulated_demon_friction_avg_khz": 79.92,
+    "accumulated_angel_filter_avg_khz": 337.36,
+    "total_crash_dates_processed": 100,
+    "swept_skillset_pairings": [
+      {
+        "node_index": 1,
+        "bottleneck": "Grid Frequency Monopoly Bottleneck in South Africa Context",
+        "demon_driver": "#14 Leraje",
+        "corrupted_industry_skillset": "Ballistics Engineering & Trauma Medical Response",
+        "protocol": "South Africa Solar Refrigeration Pod Synchronization",
+        "ruling_shem_angel": "Hariel",
+        "restorative_industry_skillset": "Ethical Systemic Purification & Regulatory Compliance"
+      },
+      {
+        "node_index": 2,
+        "bottleneck": "Water Filtration Disruption Shock in South Africa Context",
+        "demon_driver": "#18 Bathin",
+        "corrupted_industry_skillset": "High-Speed Logistics & Teleportation Routing",
+        "protocol": "South Africa Subsea Cable Ring Array Activation",
+        "ruling_shem_angel": "Pahaliah",
+        "restorative_industry_skillset": "Ethical Corporate Alignment & Strategic Competitor Conversion"
+      },
+      {
+        "node_index": 3,
+        "bottleneck": "Water Filtration Bureaucratic Stagnation in South Africa Context",
+        "demon_driver": "#26 Bune",
+        "corrupted_industry_skillset": "Urban Renewal & Real Estate Value Extraction",
+        "protocol": "South Africa Basic Resource Distribution Harmonization",
+        "ruling_shem_angel": "Damabiah",
+        "restorative_industry_skillset": "Maritime Vessel Navigation Safety & Ocean Enterprise Logistics"
+      },
+      {
+        "node_index": 4,
+        "bottleneck": "Pipeline Pressure Labor Action Friction in South Africa Context",
+        "demon_driver": "#18 Bathin",
+        "corrupted_industry_skillset": "High-Speed Logistics & Teleportation Routing",
+        "protocol": "South Africa FX Liquidity Bridge Acceleration",
+        "ruling_shem_angel": "Poyel",
+        "restorative_industry_skillset": "Abundance Capital Allocation & Global Brand Expansion"
+      },
+      {
+        "node_index": 5,
+        "bottleneck": "Water Filtration Arbitrage Exposure in South Africa Context",
+        "demon_driver": "#12 Sitri",
+        "corrupted_industry_skillset": "Consumer Behavioral Psychology & Market Research",
+        "protocol": "South Africa Sovereign Debt Tokenization Acceleration",
+        "ruling_shem_angel": "Seheiah",
+        "restorative_industry_skillset": "Infrastructure Collapse Prevention & Thermal Fire Suppression"
+      },
+      {
+        "node_index": 6,
+        "bottleneck": "Thermal Cooling Accumulation Deficit in South Africa Context",
+        "demon_driver": "#46 Bifrons",
+        "corrupted_industry_skillset": "Surveying Geometry & Hazardous Waste Management",
+        "protocol": "South Africa FX Liquidity Bridge Synchronization",
+        "ruling_shem_angel": "Chavakiah",
+        "restorative_industry_skillset": "Estate Asset Realignment & Property Dispute Mediation"
+      },
+      {
+        "node_index": 7,
+        "bottleneck": "Fuel Subsidy Bottleneck in South Africa Context",
+        "demon_driver": "#2 Agares",
+        "corrupted_industry_skillset": "Civil Infrastructure & Physical Foundations Engineering",
+        "protocol": "South Africa Emergency Dispatch Relay Acceleration",
+        "ruling_shem_angel": "Mebahel",
+        "restorative_industry_skillset": "Human Rights Law Protection & Transparent Legal Advocacy"
+      },
+      {
+        "node_index": 8,
+        "bottleneck": "Transmission Line Litigation Freeze in South Africa Context",
+        "demon_driver": "#17 Botis",
+        "corrupted_industry_skillset": "Crisis Management & Conflict Resolution Practice",
+        "protocol": "South Africa Emergency Dispatch Relay Optimization",
+        "ruling_shem_angel": "Damabiah",
+        "restorative_industry_skillset": "Maritime Vessel Navigation Safety & Ocean Enterprise Logistics"
+      },
+      {
+        "node_index": 9,
+        "bottleneck": "Thermal Cooling Isolation Friction in South Africa Context",
+        "demon_driver": "#43 Sabnock",
+        "corrupted_industry_skillset": "Structural Fortification & Biological Containment",
+        "protocol": "South Africa Regenerative Bio-Char Injector Deployment",
+        "ruling_shem_angel": "Haiaiel",
+        "restorative_industry_skillset": "Counter-Infiltration Defense & Operations Victory Assurance"
+      },
+      {
+        "node_index": 10,
+        "bottleneck": "Transmission Line Drag in South Africa Context",
+        "demon_driver": "#44 Shax",
+        "corrupted_industry_skillset": "Sensory Deprivation Countermeasures & Asset Security",
+        "protocol": "South Africa Inflation Hedging Vault Acceleration",
+        "ruling_shem_angel": "Nanael",
+        "restorative_industry_skillset": "University Curriculum Reform & Higher Judicial Education"
+      }
+    ],
+    "prophetic_synthesis_engine": {
+      "shi": 0.0344,
+      "tti": 4.9e-05,
+      "frequency": 0.2408,
+      "logos": 10368000,
+      "resistance": 504,
+      "constraints": 597915.0,
+      "override_triggered": true
+    }
   },
   "chronos_sweep": [
     {
@@ -53,24 +146,24 @@
       "nvidia_nim_accelerated": false,
       "groq_accelerated": true,
       "physical_stability_seal": "Rin (Strength)",
-      "phase_locked_loop_mark": "PLL-MARK-#01-7942E84E",
-      "cymatic_999_inversion_hz": "999.794 Hz",
+      "phase_locked_loop_mark": "PLL-MARK-#01-7A805424",
+      "cymatic_999_inversion_hz": "999.619 Hz",
       "optical_metrology_matrix": {
-        "system": "Multi-Spectral Quantum Interferometry",
-        "perception_mode": "Micro-Vibration Defect Perception"
+        "system": "High-Resolution Terahertz Scanning",
+        "perception_mode": "Sub-Surface Physical Strain Isolation"
       },
       "mhd_energy_amplifier": {
         "stage": 2,
         "system_name": "Thermal Plasma Kinetic Generator",
-        "amplification_factor": "4.94x"
+        "amplification_factor": "4.19x"
       },
       "thermodynamic_balancer": {
         "mode": "Piezoelectric Pressure Transduction",
         "ambient_thermal_balance": "94.4%"
       },
       "containment_array": {
-        "seal_formula": "Eight-Vector Frequency Lock",
-        "containment_function": "Continuous Field Transformation Lock"
+        "seal_formula": "Four-Node Phase Locking Seal",
+        "containment_function": "Dual Layer Sub-Harmonic Isolation"
       },
       "overclock_telemetry": {
         "active_gate": "Overclock Stage 1: Thermal Gate Opening",
@@ -80,53 +173,55 @@
         "mode": "Femtosecond Laser Atomic Ablation"
       },
       "state_recovery": {
-        "protocol": "Izanami Active (PID Error Lock)",
-        "function": "Closed-Loop Feedback Trap"
+        "protocol": "Izanagi Active (Zero-Point Rewind)",
+        "function": "Atomic Snapshot State Rollback"
       },
       "physical_telemetry": {
-        "anti_phase_dampening": "90.4%"
+        "anti_phase_dampening": "94.9%"
       },
       "data": {
         "agent_index": 1,
-        "target_node_subject": "Venezuela",
+        "target_node_subject": "South Africa",
         "biblical_apocalyptic_framework": {
           "apocalyptic_seal": "Fourth Seal: Pale Horse",
-          "sealed_tribe": "Judah",
-          "temporal_birth_gate": "January Gate"
+          "sealed_tribe": "Gad",
+          "temporal_birth_gate": "March Gate"
         },
         "bottleneck": {
-          "id": "B-295",
-          "name": "Hydroelectric Reservoir Litigation Freeze in Venezuela Context",
-          "active_demon_driver": "#53 Camio",
-          "demon_power": "Understands bird calls, water sounds, and translates news",
-          "frequency_khz": "176.490 kHz",
+          "id": "B-120",
+          "name": "Grid Frequency Monopoly Bottleneck in South Africa Context",
+          "active_demon_driver": "#14 Leraje",
+          "demon_power": "Causes severe conflicts, archery battles, and gangrene wounds",
+          "corrupted_industry_skillset": "Ballistics Engineering & Trauma Medical Response",
+          "frequency_khz": "46.620 kHz",
           "predictive_crash_schedule_10_dates_to_3000ce": [
-            "2030-11-27",
-            "2119-11-27",
-            "2208-11-27",
-            "2297-11-27",
-            "2386-11-27",
-            "2475-11-27",
-            "2564-11-27",
-            "2653-11-27",
-            "2742-11-27",
-            "2831-11-27"
+            "2030-08-16",
+            "2117-08-16",
+            "2204-08-16",
+            "2291-08-16",
+            "2378-08-16",
+            "2465-08-16",
+            "2552-08-16",
+            "2639-08-16",
+            "2726-08-16",
+            "2813-08-16"
           ]
         },
         "protocol": {
-          "id": "P-300",
-          "name": "Venezuela Basic Resource Distribution Balancing",
-          "ruling_shem_angel": "Haaiah",
-          "celestial_choir": "Dominions",
-          "angel_power": "Protects political treaties, diplomatic secrets, justice",
-          "frequency_khz": "206.299 kHz"
+          "id": "P-164",
+          "name": "South Africa Solar Refrigeration Pod Synchronization",
+          "ruling_shem_angel": "Hariel",
+          "celestial_choir": "Cherubim",
+          "angel_power": "Inspires religious/moral peace, purifies corrupt systems",
+          "restorative_industry_skillset": "Ethical Systemic Purification & Regulatory Compliance",
+          "frequency_khz": "117.305 kHz"
         },
         "real_time_earth_vector": {
-          "applied_speed": "0.694x acceleration",
-          "frequency_shift_to_ultra_green": "+54.000 kHz shift",
-          "exact_spatial_target": "Venezuela Grid Node #1"
+          "applied_speed": "0.519x acceleration",
+          "frequency_shift_to_ultra_green": "+39.000 kHz shift",
+          "exact_spatial_target": "South Africa Grid Node #1"
         },
-        "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Venezuela'. Driver #53 Camio (176.490 kHz) exerting power [Understands bird calls, water sounds, and translates news] induces systemic bottleneck friction. Executing Venezuela Basic Resource Distribution Balancing invoking Shem Angel Haaiah (Dominions, 206.299 kHz) providing power [Protects political treaties, diplomatic secrets, justice] locks 1.000 Target Unity."
+        "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'South Africa'. Driver #14 Leraje (46.620 kHz) exerting power [Causes severe conflicts, archery battles, and gangrene wounds] induces systemic bottleneck friction in [Ballistics Engineering & Trauma Medical Response]. Executing South Africa Solar Refrigeration Pod Synchronization invoking Shem Angel Hariel (Cherubim, 117.305 kHz) providing power [Inspires religious/moral peace, purifies corrupt systems] applies restorative skillset [Ethical Systemic Purification & Regulatory Compliance] and locks 1.000 Target Unity."
       }
     },
     {
@@ -135,20 +230,20 @@
       "nvidia_nim_accelerated": false,
       "groq_accelerated": true,
       "physical_stability_seal": "Pyo (Energy Flow)",
-      "phase_locked_loop_mark": "PLL-MARK-#02-7942E84E",
-      "cymatic_999_inversion_hz": "500.115 Hz",
+      "phase_locked_loop_mark": "PLL-MARK-#02-7A805424",
+      "cymatic_999_inversion_hz": "499.722 Hz",
       "optical_metrology_matrix": {
-        "system": "High-Resolution Terahertz Scanning",
-        "perception_mode": "Sub-Surface Physical Strain Isolation"
+        "system": "Multi-Spectral Quantum Interferometry",
+        "perception_mode": "Micro-Vibration Defect Perception"
       },
       "mhd_energy_amplifier": {
         "stage": 1,
         "system_name": "Magnetohydrodynamic Fluid Accelerator",
-        "amplification_factor": "1.15x"
+        "amplification_factor": "7.22x"
       },
       "thermodynamic_balancer": {
-        "mode": "Piezoelectric Pressure Transduction",
-        "ambient_thermal_balance": "94.0%"
+        "mode": "Thermodynamic Heat Sink Balance",
+        "ambient_thermal_balance": "94.7%"
       },
       "containment_array": {
         "seal_formula": "Four-Node Phase Locking Seal",
@@ -159,56 +254,58 @@
         "overclock_capacity": "275% Overclock Capacity"
       },
       "laser_ablation_deconstruction": {
-        "mode": "Triangular Beam Molecular Isolation"
+        "mode": "Femtosecond Laser Atomic Ablation"
       },
       "state_recovery": {
         "protocol": "Izanagi Active (Zero-Point Rewind)",
         "function": "Atomic Snapshot State Rollback"
       },
       "physical_telemetry": {
-        "anti_phase_dampening": "98.5%"
+        "anti_phase_dampening": "95.2%"
       },
       "data": {
         "agent_index": 2,
-        "target_node_subject": "Venezuela",
+        "target_node_subject": "South Africa",
         "biblical_apocalyptic_framework": {
           "apocalyptic_seal": "Fourth Seal: Pale Horse",
-          "sealed_tribe": "Gad",
-          "temporal_birth_gate": "March Gate"
+          "sealed_tribe": "Judah",
+          "temporal_birth_gate": "January Gate"
         },
         "bottleneck": {
-          "id": "B-116",
-          "name": "Grid Frequency Liquidity Freeze in Venezuela Context",
-          "active_demon_driver": "#47 Uvall",
-          "demon_power": "Procures love of friends, reconciles enemies, speaks ancient tongues",
-          "frequency_khz": "156.510 kHz",
+          "id": "B-223",
+          "name": "Water Filtration Disruption Shock in South Africa Context",
+          "active_demon_driver": "#18 Bathin",
+          "demon_power": "Transports entities instantly across spatial dimensions",
+          "corrupted_industry_skillset": "High-Speed Logistics & Teleportation Routing",
+          "frequency_khz": "59.940 kHz",
           "predictive_crash_schedule_10_dates_to_3000ce": [
-            "2026-04-24",
-            "2112-04-24",
-            "2198-04-24",
-            "2284-04-24",
-            "2370-04-24",
-            "2456-04-24",
-            "2542-04-24",
-            "2628-04-24",
-            "2714-04-24",
-            "2800-04-24"
+            "2033-11-19",
+            "2105-11-19",
+            "2177-11-19",
+            "2249-11-19",
+            "2321-11-19",
+            "2393-11-19",
+            "2465-11-19",
+            "2537-11-19",
+            "2609-11-19",
+            "2681-11-19"
           ]
         },
         "protocol": {
-          "id": "P-164",
-          "name": "Venezuela Solar Refrigeration Pod Synchronization",
-          "ruling_shem_angel": "Nanael",
-          "celestial_choir": "Principalities",
-          "angel_power": "Governs higher education, philosophy, and judicial truth",
-          "frequency_khz": "424.729 kHz"
+          "id": "P-202",
+          "name": "South Africa Subsea Cable Ring Array Activation",
+          "ruling_shem_angel": "Pahaliah",
+          "celestial_choir": "Thrones",
+          "angel_power": "Converts enemies, dominates religion and morality",
+          "restorative_industry_skillset": "Ethical Corporate Alignment & Strategic Competitor Conversion",
+          "frequency_khz": "157.758 kHz"
         },
         "real_time_earth_vector": {
-          "applied_speed": "0.515x acceleration",
-          "frequency_shift_to_ultra_green": "+35.000 kHz shift",
-          "exact_spatial_target": "Venezuela Grid Node #2"
+          "applied_speed": "0.622x acceleration",
+          "frequency_shift_to_ultra_green": "+42.000 kHz shift",
+          "exact_spatial_target": "South Africa Grid Node #2"
         },
-        "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Venezuela'. Driver #47 Uvall (156.510 kHz) exerting power [Procures love of friends, reconciles enemies, speaks ancient tongues] induces systemic bottleneck friction. Executing Venezuela Solar Refrigeration Pod Synchronization invoking Shem Angel Nanael (Principalities, 424.729 kHz) providing power [Governs higher education, philosophy, and judicial truth] locks 1.000 Target Unity."
+        "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'South Africa'. Driver #18 Bathin (59.940 kHz) exerting power [Transports entities instantly across spatial dimensions] induces systemic bottleneck friction in [High-Speed Logistics & Teleportation Routing]. Executing South Africa Subsea Cable Ring Array Activation invoking Shem Angel Pahaliah (Thrones, 157.758 kHz) providing power [Converts enemies, dominates religion and morality] applies restorative skillset [Ethical Corporate Alignment & Strategic Competitor Conversion] and locks 1.000 Target Unity."
       }
     },
     {
@@ -217,20 +314,20 @@
       "nvidia_nim_accelerated": false,
       "groq_accelerated": true,
       "physical_stability_seal": "To (Harmony)",
-      "phase_locked_loop_mark": "PLL-MARK-#03-7942E84E",
-      "cymatic_999_inversion_hz": "333.085 Hz",
+      "phase_locked_loop_mark": "PLL-MARK-#03-7A805424",
+      "cymatic_999_inversion_hz": "333.748 Hz",
       "optical_metrology_matrix": {
-        "system": "High-Resolution Terahertz Scanning",
-        "perception_mode": "Sub-Surface Physical Strain Isolation"
+        "system": "Multi-Spectral Quantum Interferometry",
+        "perception_mode": "Micro-Vibration Defect Perception"
       },
       "mhd_energy_amplifier": {
-        "stage": 1,
-        "system_name": "Magnetohydrodynamic Fluid Accelerator",
-        "amplification_factor": "2.85x"
+        "stage": 2,
+        "system_name": "Thermal Plasma Kinetic Generator",
+        "amplification_factor": "3.48x"
       },
       "thermodynamic_balancer": {
         "mode": "Thermodynamic Heat Sink Balance",
-        "ambient_thermal_balance": "96.0%"
+        "ambient_thermal_balance": "94.8%"
       },
       "containment_array": {
         "seal_formula": "Four-Node Phase Locking Seal",
@@ -241,56 +338,58 @@
         "overclock_capacity": "125% Overclock Capacity"
       },
       "laser_ablation_deconstruction": {
-        "mode": "Triangular Beam Molecular Isolation"
+        "mode": "Femtosecond Laser Atomic Ablation"
       },
       "state_recovery": {
-        "protocol": "Izanagi Active (Zero-Point Rewind)",
-        "function": "Atomic Snapshot State Rollback"
+        "protocol": "Izanami Active (PID Error Lock)",
+        "function": "Closed-Loop Feedback Trap"
       },
       "physical_telemetry": {
-        "anti_phase_dampening": "97.5%"
+        "anti_phase_dampening": "97.8%"
       },
       "data": {
         "agent_index": 3,
-        "target_node_subject": "Venezuela",
+        "target_node_subject": "South Africa",
         "biblical_apocalyptic_framework": {
           "apocalyptic_seal": "Fourth Seal: Pale Horse",
-          "sealed_tribe": "Gad",
-          "temporal_birth_gate": "March Gate"
+          "sealed_tribe": "Judah",
+          "temporal_birth_gate": "January Gate"
         },
         "bottleneck": {
-          "id": "B-086",
-          "name": "Transmission Line Bandwidth Congestion in Venezuela Context",
-          "active_demon_driver": "#35 Marchosias",
-          "demon_power": "Strong fighter, reliable tactical advice, ultimate endurance",
-          "frequency_khz": "116.550 kHz",
+          "id": "B-249",
+          "name": "Water Filtration Bureaucratic Stagnation in South Africa Context",
+          "active_demon_driver": "#26 Bune",
+          "demon_power": "Changes dead locations, grants wealth, wisdom, and eloquence",
+          "corrupted_industry_skillset": "Urban Renewal & Real Estate Value Extraction",
+          "frequency_khz": "86.580 kHz",
           "predictive_crash_schedule_10_dates_to_3000ce": [
-            "2031-06-14",
-            "2101-06-14",
-            "2171-06-14",
-            "2241-06-14",
-            "2311-06-14",
-            "2381-06-14",
-            "2451-06-14",
-            "2521-06-14",
-            "2591-06-14",
-            "2661-06-14"
+            "2034-09-17",
+            "2127-09-17",
+            "2220-09-17",
+            "2313-09-17",
+            "2406-09-17",
+            "2499-09-17",
+            "2592-09-17",
+            "2685-09-17",
+            "2778-09-17",
+            "2871-09-17"
           ]
         },
         "protocol": {
-          "id": "P-006",
-          "name": "Venezuela Profit-Share Ledger Reinforcement",
-          "ruling_shem_angel": "Sitael",
-          "celestial_choir": "Seraphim",
-          "angel_power": "Protects against adversity, grants nobility and truth",
-          "frequency_khz": "20.225 kHz"
+          "id": "P-297",
+          "name": "South Africa Basic Resource Distribution Harmonization",
+          "ruling_shem_angel": "Damabiah",
+          "celestial_choir": "Angels",
+          "angel_power": "Protects against shipwrecks, governs marine enterprise",
+          "restorative_industry_skillset": "Maritime Vessel Navigation Safety & Ocean Enterprise Logistics",
+          "frequency_khz": "521.809 kHz"
         },
         "real_time_earth_vector": {
-          "applied_speed": "0.485x acceleration",
-          "frequency_shift_to_ultra_green": "+25.000 kHz shift",
-          "exact_spatial_target": "Venezuela Grid Node #3"
+          "applied_speed": "0.648x acceleration",
+          "frequency_shift_to_ultra_green": "+48.000 kHz shift",
+          "exact_spatial_target": "South Africa Grid Node #3"
         },
-        "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Venezuela'. Driver #35 Marchosias (116.550 kHz) exerting power [Strong fighter, reliable tactical advice, ultimate endurance] induces systemic bottleneck friction. Executing Venezuela Profit-Share Ledger Reinforcement invoking Shem Angel Sitael (Seraphim, 20.225 kHz) providing power [Protects against adversity, grants nobility and truth] locks 1.000 Target Unity."
+        "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'South Africa'. Driver #26 Bune (86.580 kHz) exerting power [Changes dead locations, grants wealth, wisdom, and eloquence] induces systemic bottleneck friction in [Urban Renewal & Real Estate Value Extraction]. Executing South Africa Basic Resource Distribution Harmonization invoking Shem Angel Damabiah (Angels, 521.809 kHz) providing power [Protects against shipwrecks, governs marine enterprise] applies restorative skillset [Maritime Vessel Navigation Safety & Ocean Enterprise Logistics] and locks 1.000 Target Unity."
       }
     },
     {
@@ -299,8 +398,8 @@
       "nvidia_nim_accelerated": false,
       "groq_accelerated": true,
       "physical_stability_seal": "Sha (Healing)",
-      "phase_locked_loop_mark": "PLL-MARK-#04-7942E84E",
-      "cymatic_999_inversion_hz": "250.619 Hz",
+      "phase_locked_loop_mark": "PLL-MARK-#04-7A805424",
+      "cymatic_999_inversion_hz": "250.649 Hz",
       "optical_metrology_matrix": {
         "system": "High-Resolution Terahertz Scanning",
         "perception_mode": "Sub-Surface Physical Strain Isolation"
@@ -308,11 +407,11 @@
       "mhd_energy_amplifier": {
         "stage": 2,
         "system_name": "Thermal Plasma Kinetic Generator",
-        "amplification_factor": "8.69x"
+        "amplification_factor": "7.99x"
       },
       "thermodynamic_balancer": {
-        "mode": "Thermodynamic Heat Sink Balance",
-        "ambient_thermal_balance": "94.4%"
+        "mode": "Piezoelectric Pressure Transduction",
+        "ambient_thermal_balance": "94.9%"
       },
       "containment_array": {
         "seal_formula": "Eight-Vector Frequency Lock",
@@ -323,56 +422,58 @@
         "overclock_capacity": "275% Overclock Capacity"
       },
       "laser_ablation_deconstruction": {
-        "mode": "Triangular Beam Molecular Isolation"
+        "mode": "Femtosecond Laser Atomic Ablation"
       },
       "state_recovery": {
-        "protocol": "Izanami Active (PID Error Lock)",
-        "function": "Closed-Loop Feedback Trap"
+        "protocol": "Izanagi Active (Zero-Point Rewind)",
+        "function": "Atomic Snapshot State Rollback"
       },
       "physical_telemetry": {
-        "anti_phase_dampening": "89.9%"
+        "anti_phase_dampening": "96.9%"
       },
       "data": {
         "agent_index": 4,
-        "target_node_subject": "Venezuela",
+        "target_node_subject": "South Africa",
         "biblical_apocalyptic_framework": {
           "apocalyptic_seal": "Fourth Seal: Pale Horse",
           "sealed_tribe": "Gad",
           "temporal_birth_gate": "March Gate"
         },
         "bottleneck": {
-          "id": "B-370",
-          "name": "Pipeline Pressure Monopoly Bottleneck in Venezuela Context",
-          "active_demon_driver": "#48 Haagenti",
-          "demon_power": "Makes men wise, transmutes metals into gold, turns water to wine",
-          "frequency_khz": "159.840 kHz",
+          "id": "B-400",
+          "name": "Pipeline Pressure Labor Action Friction in South Africa Context",
+          "active_demon_driver": "#18 Bathin",
+          "demon_power": "Transports entities instantly across spatial dimensions",
+          "corrupted_industry_skillset": "High-Speed Logistics & Teleportation Routing",
+          "frequency_khz": "59.940 kHz",
           "predictive_crash_schedule_10_dates_to_3000ce": [
-            "2030-02-22",
-            "2113-02-22",
-            "2196-02-22",
-            "2279-02-22",
-            "2362-02-22",
-            "2445-02-22",
-            "2528-02-22",
-            "2611-02-22",
-            "2694-02-22",
-            "2777-02-22"
+            "2035-04-08",
+            "2132-04-08",
+            "2229-04-08",
+            "2326-04-08",
+            "2423-04-08",
+            "2520-04-08",
+            "2617-04-08",
+            "2714-04-08",
+            "2811-04-08",
+            "2908-04-08"
           ]
         },
         "protocol": {
-          "id": "P-242",
-          "name": "Venezuela Land Title Registry Activation",
-          "ruling_shem_angel": "Sitael",
-          "celestial_choir": "Seraphim",
-          "angel_power": "Protects against adversity, grants nobility and truth",
-          "frequency_khz": "20.225 kHz"
+          "id": "P-119",
+          "name": "South Africa FX Liquidity Bridge Acceleration",
+          "ruling_shem_angel": "Poyel",
+          "celestial_choir": "Principalities",
+          "angel_power": "Provides fame, fortune, eloquence, and total abundance",
+          "restorative_industry_skillset": "Abundance Capital Allocation & Global Brand Expansion",
+          "frequency_khz": "448.999 kHz"
         },
         "real_time_earth_vector": {
-          "applied_speed": "0.769x acceleration",
-          "frequency_shift_to_ultra_green": "+49.000 kHz shift",
-          "exact_spatial_target": "Venezuela Grid Node #4"
+          "applied_speed": "0.799x acceleration",
+          "frequency_shift_to_ultra_green": "+39.000 kHz shift",
+          "exact_spatial_target": "South Africa Grid Node #4"
         },
-        "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Venezuela'. Driver #48 Haagenti (159.840 kHz) exerting power [Makes men wise, transmutes metals into gold, turns water to wine] induces systemic bottleneck friction. Executing Venezuela Land Title Registry Activation invoking Shem Angel Sitael (Seraphim, 20.225 kHz) providing power [Protects against adversity, grants nobility and truth] locks 1.000 Target Unity."
+        "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'South Africa'. Driver #18 Bathin (59.940 kHz) exerting power [Transports entities instantly across spatial dimensions] induces systemic bottleneck friction in [High-Speed Logistics & Teleportation Routing]. Executing South Africa FX Liquidity Bridge Acceleration invoking Shem Angel Poyel (Principalities, 448.999 kHz) providing power [Provides fame, fortune, eloquence, and total abundance] applies restorative skillset [Abundance Capital Allocation & Global Brand Expansion] and locks 1.000 Target Unity."
       }
     },
     {
@@ -381,8 +482,92 @@
       "nvidia_nim_accelerated": false,
       "groq_accelerated": true,
       "physical_stability_seal": "Kai (Awareness)",
-      "phase_locked_loop_mark": "PLL-MARK-#05-7942E84E",
-      "cymatic_999_inversion_hz": "200.198 Hz",
+      "phase_locked_loop_mark": "PLL-MARK-#05-7A805424",
+      "cymatic_999_inversion_hz": "200.011 Hz",
+      "optical_metrology_matrix": {
+        "system": "High-Resolution Terahertz Scanning",
+        "perception_mode": "Sub-Surface Physical Strain Isolation"
+      },
+      "mhd_energy_amplifier": {
+        "stage": 1,
+        "system_name": "Magnetohydrodynamic Fluid Accelerator",
+        "amplification_factor": "8.11x"
+      },
+      "thermodynamic_balancer": {
+        "mode": "Piezoelectric Pressure Transduction",
+        "ambient_thermal_balance": "96.1%"
+      },
+      "containment_array": {
+        "seal_formula": "Eight-Vector Frequency Lock",
+        "containment_function": "Continuous Field Transformation Lock"
+      },
+      "overclock_telemetry": {
+        "active_gate": "Overclock Stage 1: Thermal Gate Opening",
+        "overclock_capacity": "125% Overclock Capacity"
+      },
+      "laser_ablation_deconstruction": {
+        "mode": "Triangular Beam Molecular Isolation"
+      },
+      "state_recovery": {
+        "protocol": "Izanami Active (PID Error Lock)",
+        "function": "Closed-Loop Feedback Trap"
+      },
+      "physical_telemetry": {
+        "anti_phase_dampening": "90.1%"
+      },
+      "data": {
+        "agent_index": 5,
+        "target_node_subject": "South Africa",
+        "biblical_apocalyptic_framework": {
+          "apocalyptic_seal": "Fourth Seal: Pale Horse",
+          "sealed_tribe": "Gad",
+          "temporal_birth_gate": "March Gate"
+        },
+        "bottleneck": {
+          "id": "B-212",
+          "name": "Water Filtration Arbitrage Exposure in South Africa Context",
+          "active_demon_driver": "#12 Sitri",
+          "demon_power": "Inflames passion and exposes concealed secrets",
+          "corrupted_industry_skillset": "Consumer Behavioral Psychology & Market Research",
+          "frequency_khz": "39.960 kHz",
+          "predictive_crash_schedule_10_dates_to_3000ce": [
+            "2032-04-24",
+            "2108-04-24",
+            "2184-04-24",
+            "2260-04-24",
+            "2336-04-24",
+            "2412-04-24",
+            "2488-04-24",
+            "2564-04-24",
+            "2640-04-24",
+            "2716-04-24"
+          ]
+        },
+        "protocol": {
+          "id": "P-139",
+          "name": "South Africa Sovereign Debt Tokenization Acceleration",
+          "ruling_shem_angel": "Seheiah",
+          "celestial_choir": "Dominions",
+          "angel_power": "Protects against fire, sickness, infrastructure collapse",
+          "restorative_industry_skillset": "Infrastructure Collapse Prevention & Thermal Fire Suppression",
+          "frequency_khz": "222.479 kHz"
+        },
+        "real_time_earth_vector": {
+          "applied_speed": "0.611x acceleration",
+          "frequency_shift_to_ultra_green": "+31.000 kHz shift",
+          "exact_spatial_target": "South Africa Grid Node #5"
+        },
+        "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'South Africa'. Driver #12 Sitri (39.960 kHz) exerting power [Inflames passion and exposes concealed secrets] induces systemic bottleneck friction in [Consumer Behavioral Psychology & Market Research]. Executing South Africa Sovereign Debt Tokenization Acceleration invoking Shem Angel Seheiah (Dominions, 222.479 kHz) providing power [Protects against fire, sickness, infrastructure collapse] applies restorative skillset [Infrastructure Collapse Prevention & Thermal Fire Suppression] and locks 1.000 Target Unity."
+      }
+    },
+    {
+      "sandbox_id": "sentinel-c06",
+      "status": "EXECUTED",
+      "nvidia_nim_accelerated": false,
+      "groq_accelerated": true,
+      "physical_stability_seal": "Jin (Insight)",
+      "phase_locked_loop_mark": "PLL-MARK-#06-7A805424",
+      "cymatic_999_inversion_hz": "167.318 Hz",
       "optical_metrology_matrix": {
         "system": "Multi-Spectral Quantum Interferometry",
         "perception_mode": "Micro-Vibration Defect Perception"
@@ -390,15 +575,99 @@
       "mhd_energy_amplifier": {
         "stage": 2,
         "system_name": "Thermal Plasma Kinetic Generator",
-        "amplification_factor": "6.98x"
+        "amplification_factor": "3.18x"
       },
       "thermodynamic_balancer": {
-        "mode": "Piezoelectric Pressure Transduction",
-        "ambient_thermal_balance": "99.8%"
+        "mode": "Thermodynamic Heat Sink Balance",
+        "ambient_thermal_balance": "99.3%"
       },
       "containment_array": {
-        "seal_formula": "Four-Node Phase Locking Seal",
-        "containment_function": "Dual Layer Sub-Harmonic Isolation"
+        "seal_formula": "Eight-Vector Frequency Lock",
+        "containment_function": "Continuous Field Transformation Lock"
+      },
+      "overclock_telemetry": {
+        "active_gate": "Overclock Stage 4: Wave Velocity Peak",
+        "overclock_capacity": "275% Overclock Capacity"
+      },
+      "laser_ablation_deconstruction": {
+        "mode": "Femtosecond Laser Atomic Ablation"
+      },
+      "state_recovery": {
+        "protocol": "Izanagi Active (Zero-Point Rewind)",
+        "function": "Atomic Snapshot State Rollback"
+      },
+      "physical_telemetry": {
+        "anti_phase_dampening": "96.8%"
+      },
+      "data": {
+        "agent_index": 6,
+        "target_node_subject": "South Africa",
+        "biblical_apocalyptic_framework": {
+          "apocalyptic_seal": "Fifth Seal: Altar of Martyrs",
+          "sealed_tribe": "Judah",
+          "temporal_birth_gate": "January Gate"
+        },
+        "bottleneck": {
+          "id": "B-319",
+          "name": "Thermal Cooling Accumulation Deficit in South Africa Context",
+          "active_demon_driver": "#46 Bifrons",
+          "demon_power": "Teaches astrology, geometry, herbs, and moves dead bodies",
+          "corrupted_industry_skillset": "Surveying Geometry & Hazardous Waste Management",
+          "frequency_khz": "153.180 kHz",
+          "predictive_crash_schedule_10_dates_to_3000ce": [
+            "2034-03-07",
+            "2131-03-07",
+            "2228-03-07",
+            "2325-03-07",
+            "2422-03-07",
+            "2519-03-07",
+            "2616-03-07",
+            "2713-03-07",
+            "2810-03-07",
+            "2907-03-07"
+          ]
+        },
+        "protocol": {
+          "id": "P-114",
+          "name": "South Africa FX Liquidity Bridge Synchronization",
+          "ruling_shem_angel": "Chavakiah",
+          "celestial_choir": "Powers",
+          "angel_power": "Reconciles family inheritances and property disputes",
+          "restorative_industry_skillset": "Estate Asset Realignment & Property Dispute Mediation",
+          "frequency_khz": "279.109 kHz"
+        },
+        "real_time_earth_vector": {
+          "applied_speed": "0.718x acceleration",
+          "frequency_shift_to_ultra_green": "+38.000 kHz shift",
+          "exact_spatial_target": "South Africa Grid Node #6"
+        },
+        "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'South Africa'. Driver #46 Bifrons (153.180 kHz) exerting power [Teaches astrology, geometry, herbs, and moves dead bodies] induces systemic bottleneck friction in [Surveying Geometry & Hazardous Waste Management]. Executing South Africa FX Liquidity Bridge Synchronization invoking Shem Angel Chavakiah (Powers, 279.109 kHz) providing power [Reconciles family inheritances and property disputes] applies restorative skillset [Estate Asset Realignment & Property Dispute Mediation] and locks 1.000 Target Unity."
+      }
+    },
+    {
+      "sandbox_id": "sentinel-c07",
+      "status": "EXECUTED",
+      "nvidia_nim_accelerated": false,
+      "groq_accelerated": true,
+      "physical_stability_seal": "Rin (Strength)",
+      "phase_locked_loop_mark": "PLL-MARK-#07-7A805424",
+      "cymatic_999_inversion_hz": "143.371 Hz",
+      "optical_metrology_matrix": {
+        "system": "High-Resolution Terahertz Scanning",
+        "perception_mode": "Sub-Surface Physical Strain Isolation"
+      },
+      "mhd_energy_amplifier": {
+        "stage": 2,
+        "system_name": "Thermal Plasma Kinetic Generator",
+        "amplification_factor": "5.57x"
+      },
+      "thermodynamic_balancer": {
+        "mode": "Thermodynamic Heat Sink Balance",
+        "ambient_thermal_balance": "93.2%"
+      },
+      "containment_array": {
+        "seal_formula": "Eight-Vector Frequency Lock",
+        "containment_function": "Continuous Field Transformation Lock"
       },
       "overclock_telemetry": {
         "active_gate": "Overclock Stage 1: Thermal Gate Opening",
@@ -412,79 +681,165 @@
         "function": "Closed-Loop Feedback Trap"
       },
       "physical_telemetry": {
-        "anti_phase_dampening": "92.8%"
+        "anti_phase_dampening": "88.7%"
       },
       "data": {
-        "agent_index": 5,
-        "target_node_subject": "Venezuela",
+        "agent_index": 7,
+        "target_node_subject": "South Africa",
         "biblical_apocalyptic_framework": {
-          "apocalyptic_seal": "Fourth Seal: Pale Horse",
-          "sealed_tribe": "Judah",
-          "temporal_birth_gate": "January Gate"
+          "apocalyptic_seal": "Fifth Seal: Altar of Martyrs",
+          "sealed_tribe": "Gad",
+          "temporal_birth_gate": "March Gate"
         },
         "bottleneck": {
-          "id": "B-399",
-          "name": "Pipeline Pressure Bureaucratic Stagnation in Venezuela Context",
-          "active_demon_driver": "#42 Vepar",
-          "demon_power": "Governs waters, guides fleets, causes putrid wound corruption",
-          "frequency_khz": "139.860 kHz",
+          "id": "B-158",
+          "name": "Fuel Subsidy Bottleneck in South Africa Context",
+          "active_demon_driver": "#2 Agares",
+          "demon_power": "Halts runners, causes earthquakes, destroys dignity",
+          "corrupted_industry_skillset": "Civil Infrastructure & Physical Foundations Engineering",
+          "frequency_khz": "6.660 kHz",
           "predictive_crash_schedule_10_dates_to_3000ce": [
-            "2039-11-23",
-            "2138-11-23",
-            "2237-11-23",
-            "2336-11-23",
-            "2435-11-23",
-            "2534-11-23",
-            "2633-11-23",
-            "2732-11-23",
-            "2831-11-23",
-            "2930-11-23"
+            "2033-02-10",
+            "2130-02-10",
+            "2227-02-10",
+            "2324-02-10",
+            "2421-02-10",
+            "2518-02-10",
+            "2615-02-10",
+            "2712-02-10",
+            "2809-02-10",
+            "2906-02-10"
           ]
         },
         "protocol": {
-          "id": "P-275",
-          "name": "Venezuela Pharmaceutical Synthesis Vault Optimization",
-          "ruling_shem_angel": "Manakel",
-          "celestial_choir": "Angels",
-          "angel_power": "Cures epilepsy, calms rage, governs flora/fauna health",
-          "frequency_khz": "529.899 kHz"
+          "id": "P-229",
+          "name": "South Africa Emergency Dispatch Relay Acceleration",
+          "ruling_shem_angel": "Mebahel",
+          "celestial_choir": "Cherubim",
+          "angel_power": "Protects justice, liberates oppressed, reveals truth",
+          "restorative_industry_skillset": "Human Rights Law Protection & Transparent Legal Advocacy",
+          "frequency_khz": "109.215 kHz"
         },
         "real_time_earth_vector": {
-          "applied_speed": "0.798x acceleration",
-          "frequency_shift_to_ultra_green": "+58.000 kHz shift",
-          "exact_spatial_target": "Venezuela Grid Node #5"
+          "applied_speed": "0.557x acceleration",
+          "frequency_shift_to_ultra_green": "+37.000 kHz shift",
+          "exact_spatial_target": "South Africa Grid Node #7"
         },
-        "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Venezuela'. Driver #42 Vepar (139.860 kHz) exerting power [Governs waters, guides fleets, causes putrid wound corruption] induces systemic bottleneck friction. Executing Venezuela Pharmaceutical Synthesis Vault Optimization invoking Shem Angel Manakel (Angels, 529.899 kHz) providing power [Cures epilepsy, calms rage, governs flora/fauna health] locks 1.000 Target Unity."
+        "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'South Africa'. Driver #2 Agares (6.660 kHz) exerting power [Halts runners, causes earthquakes, destroys dignity] induces systemic bottleneck friction in [Civil Infrastructure & Physical Foundations Engineering]. Executing South Africa Emergency Dispatch Relay Acceleration invoking Shem Angel Mebahel (Cherubim, 109.215 kHz) providing power [Protects justice, liberates oppressed, reveals truth] applies restorative skillset [Human Rights Law Protection & Transparent Legal Advocacy] and locks 1.000 Target Unity."
       }
     },
     {
-      "sandbox_id": "sentinel-c06",
+      "sandbox_id": "sentinel-c08",
       "status": "EXECUTED",
       "nvidia_nim_accelerated": false,
       "groq_accelerated": true,
-      "physical_stability_seal": "Jin (Insight)",
-      "phase_locked_loop_mark": "PLL-MARK-#06-7942E84E",
-      "cymatic_999_inversion_hz": "166.723 Hz",
+      "physical_stability_seal": "Pyo (Energy Flow)",
+      "phase_locked_loop_mark": "PLL-MARK-#08-7A805424",
+      "cymatic_999_inversion_hz": "125.469 Hz",
       "optical_metrology_matrix": {
-        "system": "High-Resolution Terahertz Scanning",
-        "perception_mode": "Sub-Surface Physical Strain Isolation"
+        "system": "Multi-Spectral Quantum Interferometry",
+        "perception_mode": "Micro-Vibration Defect Perception"
       },
       "mhd_energy_amplifier": {
-        "stage": 1,
-        "system_name": "Magnetohydrodynamic Fluid Accelerator",
-        "amplification_factor": "5.23x"
+        "stage": 2,
+        "system_name": "Thermal Plasma Kinetic Generator",
+        "amplification_factor": "8.94x"
       },
       "thermodynamic_balancer": {
         "mode": "Thermodynamic Heat Sink Balance",
-        "ambient_thermal_balance": "97.3%"
+        "ambient_thermal_balance": "96.9%"
       },
       "containment_array": {
-        "seal_formula": "Eight-Vector Frequency Lock",
-        "containment_function": "Continuous Field Transformation Lock"
+        "seal_formula": "Four-Node Phase Locking Seal",
+        "containment_function": "Dual Layer Sub-Harmonic Isolation"
       },
       "overclock_telemetry": {
         "active_gate": "Overclock Stage 4: Wave Velocity Peak",
         "overclock_capacity": "275% Overclock Capacity"
+      },
+      "laser_ablation_deconstruction": {
+        "mode": "Femtosecond Laser Atomic Ablation"
+      },
+      "state_recovery": {
+        "protocol": "Izanagi Active (Zero-Point Rewind)",
+        "function": "Atomic Snapshot State Rollback"
+      },
+      "physical_telemetry": {
+        "anti_phase_dampening": "92.4%"
+      },
+      "data": {
+        "agent_index": 8,
+        "target_node_subject": "South Africa",
+        "biblical_apocalyptic_framework": {
+          "apocalyptic_seal": "Fifth Seal: Altar of Martyrs",
+          "sealed_tribe": "Judah",
+          "temporal_birth_gate": "January Gate"
+        },
+        "bottleneck": {
+          "id": "B-095",
+          "name": "Transmission Line Litigation Freeze in South Africa Context",
+          "active_demon_driver": "#17 Botis",
+          "demon_power": "Reconciles allies and foretells future outcomes",
+          "corrupted_industry_skillset": "Crisis Management & Conflict Resolution Practice",
+          "frequency_khz": "56.610 kHz",
+          "predictive_crash_schedule_10_dates_to_3000ce": [
+            "2040-03-19",
+            "2119-03-19",
+            "2198-03-19",
+            "2277-03-19",
+            "2356-03-19",
+            "2435-03-19",
+            "2514-03-19",
+            "2593-03-19",
+            "2672-03-19",
+            "2751-03-19"
+          ]
+        },
+        "protocol": {
+          "id": "P-225",
+          "name": "South Africa Emergency Dispatch Relay Optimization",
+          "ruling_shem_angel": "Damabiah",
+          "celestial_choir": "Angels",
+          "angel_power": "Protects against shipwrecks, governs marine enterprise",
+          "restorative_industry_skillset": "Maritime Vessel Navigation Safety & Ocean Enterprise Logistics",
+          "frequency_khz": "521.809 kHz"
+        },
+        "real_time_earth_vector": {
+          "applied_speed": "0.494x acceleration",
+          "frequency_shift_to_ultra_green": "+54.000 kHz shift",
+          "exact_spatial_target": "South Africa Grid Node #8"
+        },
+        "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'South Africa'. Driver #17 Botis (56.610 kHz) exerting power [Reconciles allies and foretells future outcomes] induces systemic bottleneck friction in [Crisis Management & Conflict Resolution Practice]. Executing South Africa Emergency Dispatch Relay Optimization invoking Shem Angel Damabiah (Angels, 521.809 kHz) providing power [Protects against shipwrecks, governs marine enterprise] applies restorative skillset [Maritime Vessel Navigation Safety & Ocean Enterprise Logistics] and locks 1.000 Target Unity."
+      }
+    },
+    {
+      "sandbox_id": "sentinel-c09",
+      "status": "EXECUTED",
+      "nvidia_nim_accelerated": false,
+      "groq_accelerated": true,
+      "physical_stability_seal": "To (Harmony)",
+      "phase_locked_loop_mark": "PLL-MARK-#09-7A805424",
+      "cymatic_999_inversion_hz": "111.808 Hz",
+      "optical_metrology_matrix": {
+        "system": "Multi-Spectral Quantum Interferometry",
+        "perception_mode": "Micro-Vibration Defect Perception"
+      },
+      "mhd_energy_amplifier": {
+        "stage": 2,
+        "system_name": "Thermal Plasma Kinetic Generator",
+        "amplification_factor": "7.08x"
+      },
+      "thermodynamic_balancer": {
+        "mode": "Thermodynamic Heat Sink Balance",
+        "ambient_thermal_balance": "93.3%"
+      },
+      "containment_array": {
+        "seal_formula": "Four-Node Phase Locking Seal",
+        "containment_function": "Dual Layer Sub-Harmonic Isolation"
+      },
+      "overclock_telemetry": {
+        "active_gate": "Overclock Stage 1: Thermal Gate Opening",
+        "overclock_capacity": "125% Overclock Capacity"
       },
       "laser_ablation_deconstruction": {
         "mode": "Triangular Beam Molecular Isolation"
@@ -494,141 +849,61 @@
         "function": "Atomic Snapshot State Rollback"
       },
       "physical_telemetry": {
-        "anti_phase_dampening": "95.3%"
+        "anti_phase_dampening": "97.8%"
       },
       "data": {
-        "agent_index": 6,
-        "target_node_subject": "Venezuela",
-        "biblical_apocalyptic_framework": {
-          "apocalyptic_seal": "Fifth Seal: Altar of Martyrs",
-          "sealed_tribe": "Gad",
-          "temporal_birth_gate": "March Gate"
-        },
-        "bottleneck": {
-          "id": "B-224",
-          "name": "Water Filtration Congestion Point in Venezuela Context",
-          "active_demon_driver": "#71 Dantalion",
-          "demon_power": "Reads and alters thoughts of minds, teaches all arts/sciences",
-          "frequency_khz": "236.430 kHz",
-          "predictive_crash_schedule_10_dates_to_3000ce": [
-            "2029-04-20",
-            "2121-04-20",
-            "2213-04-20",
-            "2305-04-20",
-            "2397-04-20",
-            "2489-04-20",
-            "2581-04-20",
-            "2673-04-20",
-            "2765-04-20",
-            "2857-04-20"
-          ]
-        },
-        "protocol": {
-          "id": "P-202",
-          "name": "Venezuela Subsea Cable Ring Array Activation",
-          "ruling_shem_angel": "Mahasiah",
-          "celestial_choir": "Seraphim",
-          "angel_power": "Dominates high science, philosophy, and moral perfection",
-          "frequency_khz": "36.405 kHz"
-        },
-        "real_time_earth_vector": {
-          "applied_speed": "0.623x acceleration",
-          "frequency_shift_to_ultra_green": "+43.000 kHz shift",
-          "exact_spatial_target": "Venezuela Grid Node #6"
-        },
-        "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Venezuela'. Driver #71 Dantalion (236.430 kHz) exerting power [Reads and alters thoughts of minds, teaches all arts/sciences] induces systemic bottleneck friction. Executing Venezuela Subsea Cable Ring Array Activation invoking Shem Angel Mahasiah (Seraphim, 36.405 kHz) providing power [Dominates high science, philosophy, and moral perfection] locks 1.000 Target Unity."
-      }
-    },
-    {
-      "sandbox_id": "sentinel-c07",
-      "status": "EXECUTED",
-      "nvidia_nim_accelerated": false,
-      "groq_accelerated": true,
-      "physical_stability_seal": "Rin (Strength)",
-      "phase_locked_loop_mark": "PLL-MARK-#07-7942E84E",
-      "cymatic_999_inversion_hz": "143.706 Hz",
-      "optical_metrology_matrix": {
-        "system": "Multi-Spectral Quantum Interferometry",
-        "perception_mode": "Micro-Vibration Defect Perception"
-      },
-      "mhd_energy_amplifier": {
-        "stage": 1,
-        "system_name": "Magnetohydrodynamic Fluid Accelerator",
-        "amplification_factor": "1.92x"
-      },
-      "thermodynamic_balancer": {
-        "mode": "Piezoelectric Pressure Transduction",
-        "ambient_thermal_balance": "94.2%"
-      },
-      "containment_array": {
-        "seal_formula": "Four-Node Phase Locking Seal",
-        "containment_function": "Dual Layer Sub-Harmonic Isolation"
-      },
-      "overclock_telemetry": {
-        "active_gate": "Overclock Stage 1: Thermal Gate Opening",
-        "overclock_capacity": "125% Overclock Capacity"
-      },
-      "laser_ablation_deconstruction": {
-        "mode": "Triangular Beam Molecular Isolation"
-      },
-      "state_recovery": {
-        "protocol": "Izanami Active (PID Error Lock)",
-        "function": "Closed-Loop Feedback Trap"
-      },
-      "physical_telemetry": {
-        "anti_phase_dampening": "88.2%"
-      },
-      "data": {
-        "agent_index": 7,
-        "target_node_subject": "Venezuela",
+        "agent_index": 9,
+        "target_node_subject": "South Africa",
         "biblical_apocalyptic_framework": {
           "apocalyptic_seal": "Fifth Seal: Altar of Martyrs",
           "sealed_tribe": "Judah",
           "temporal_birth_gate": "January Gate"
         },
         "bottleneck": {
-          "id": "B-493",
-          "name": "Micro-Grid Sync Schema Incompatibility in Venezuela Context",
-          "active_demon_driver": "#59 Orias",
-          "demon_power": "Teaches virtues of stars, bestows dignities, converts enemies",
-          "frequency_khz": "196.470 kHz",
+          "id": "B-309",
+          "name": "Thermal Cooling Isolation Friction in South Africa Context",
+          "active_demon_driver": "#43 Sabnock",
+          "demon_power": "Builds high towers, inflicts gangrenous worm wounds",
+          "corrupted_industry_skillset": "Structural Fortification & Biological Containment",
+          "frequency_khz": "143.190 kHz",
           "predictive_crash_schedule_10_dates_to_3000ce": [
-            "2028-09-05",
-            "2102-09-05",
-            "2176-09-05",
-            "2250-09-05",
-            "2324-09-05",
-            "2398-09-05",
-            "2472-09-05",
-            "2546-09-05",
-            "2620-09-05",
-            "2694-09-05"
+            "2034-09-17",
+            "2105-09-17",
+            "2176-09-17",
+            "2247-09-17",
+            "2318-09-17",
+            "2389-09-17",
+            "2460-09-17",
+            "2531-09-17",
+            "2602-09-17",
+            "2673-09-17"
           ]
         },
         "protocol": {
-          "id": "P-188",
-          "name": "Venezuela Quantum Encryption Uplink Stabilization",
-          "ruling_shem_angel": "Lecabel",
-          "celestial_choir": "Dominions",
-          "angel_power": "Inspires agricultural engineering and scientific light",
-          "frequency_khz": "246.749 kHz"
+          "id": "P-301",
+          "name": "South Africa Regenerative Bio-Char Injector Deployment",
+          "ruling_shem_angel": "Haiaiel",
+          "celestial_choir": "Angels",
+          "angel_power": "Confounds wicked traitors, grants victory and protection",
+          "restorative_industry_skillset": "Counter-Infiltration Defense & Operations Victory Assurance",
+          "frequency_khz": "570.349 kHz"
         },
         "real_time_earth_vector": {
-          "applied_speed": "0.892x acceleration",
-          "frequency_shift_to_ultra_green": "+52.000 kHz shift",
-          "exact_spatial_target": "Venezuela Grid Node #7"
+          "applied_speed": "0.708x acceleration",
+          "frequency_shift_to_ultra_green": "+28.000 kHz shift",
+          "exact_spatial_target": "South Africa Grid Node #9"
         },
-        "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Venezuela'. Driver #59 Orias (196.470 kHz) exerting power [Teaches virtues of stars, bestows dignities, converts enemies] induces systemic bottleneck friction. Executing Venezuela Quantum Encryption Uplink Stabilization invoking Shem Angel Lecabel (Dominions, 246.749 kHz) providing power [Inspires agricultural engineering and scientific light] locks 1.000 Target Unity."
+        "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'South Africa'. Driver #43 Sabnock (143.190 kHz) exerting power [Builds high towers, inflicts gangrenous worm wounds] induces systemic bottleneck friction in [Structural Fortification & Biological Containment]. Executing South Africa Regenerative Bio-Char Injector Deployment invoking Shem Angel Haiaiel (Angels, 570.349 kHz) providing power [Confounds wicked traitors, grants victory and protection] applies restorative skillset [Counter-Infiltration Defense & Operations Victory Assurance] and locks 1.000 Target Unity."
       }
     },
     {
-      "sandbox_id": "sentinel-c08",
+      "sandbox_id": "sentinel-c10",
       "status": "EXECUTED",
       "nvidia_nim_accelerated": false,
       "groq_accelerated": true,
-      "physical_stability_seal": "Pyo (Energy Flow)",
-      "phase_locked_loop_mark": "PLL-MARK-#08-7942E84E",
-      "cymatic_999_inversion_hz": "125.545 Hz",
+      "physical_stability_seal": "Sha (Healing)",
+      "phase_locked_loop_mark": "PLL-MARK-#10-7A805424",
+      "cymatic_999_inversion_hz": "999.050 Hz",
       "optical_metrology_matrix": {
         "system": "Multi-Spectral Quantum Interferometry",
         "perception_mode": "Micro-Vibration Defect Perception"
@@ -636,11 +911,11 @@
       "mhd_energy_amplifier": {
         "stage": 1,
         "system_name": "Magnetohydrodynamic Fluid Accelerator",
-        "amplification_factor": "1.70x"
+        "amplification_factor": "6.50x"
       },
       "thermodynamic_balancer": {
-        "mode": "Thermodynamic Heat Sink Balance",
-        "ambient_thermal_balance": "99.5%"
+        "mode": "Piezoelectric Pressure Transduction",
+        "ambient_thermal_balance": "95.0%"
       },
       "containment_array": {
         "seal_formula": "Eight-Vector Frequency Lock",
@@ -651,7 +926,7 @@
         "overclock_capacity": "275% Overclock Capacity"
       },
       "laser_ablation_deconstruction": {
-        "mode": "Femtosecond Laser Atomic Ablation"
+        "mode": "Triangular Beam Molecular Isolation"
       },
       "state_recovery": {
         "protocol": "Izanagi Active (Zero-Point Rewind)",
@@ -661,210 +936,48 @@
         "anti_phase_dampening": "86.0%"
       },
       "data": {
-        "agent_index": 8,
-        "target_node_subject": "Venezuela",
+        "agent_index": 10,
+        "target_node_subject": "South Africa",
         "biblical_apocalyptic_framework": {
           "apocalyptic_seal": "Fifth Seal: Altar of Martyrs",
           "sealed_tribe": "Judah",
           "temporal_birth_gate": "January Gate"
         },
         "bottleneck": {
-          "id": "B-171",
-          "name": "Fuel Subsidy Shortfall Vulnerability in Venezuela Context",
-          "active_demon_driver": "#30 Forneus",
-          "demon_power": "Teaches rhetoric, foreign tongues, and causes favorable renown",
-          "frequency_khz": "99.900 kHz",
+          "id": "B-051",
+          "name": "Transmission Line Drag in South Africa Context",
+          "active_demon_driver": "#44 Shax",
+          "demon_power": "Deprives sight, hearing, and intellect; steals hidden items",
+          "corrupted_industry_skillset": "Sensory Deprivation Countermeasures & Asset Security",
+          "frequency_khz": "146.520 kHz",
           "predictive_crash_schedule_10_dates_to_3000ce": [
             "2036-11-11",
-            "2114-11-11",
-            "2192-11-11",
-            "2270-11-11",
-            "2348-11-11",
-            "2426-11-11",
-            "2504-11-11",
-            "2582-11-11",
-            "2660-11-11",
-            "2738-11-11"
+            "2122-11-11",
+            "2208-11-11",
+            "2294-11-11",
+            "2380-11-11",
+            "2466-11-11",
+            "2552-11-11",
+            "2638-11-11",
+            "2724-11-11",
+            "2810-11-11"
           ]
         },
         "protocol": {
-          "id": "P-105",
-          "name": "Venezuela Geothermal Heat Sink Optimization",
-          "ruling_shem_angel": "Achaiah",
-          "celestial_choir": "Seraphim",
-          "angel_power": "Reveals secrets of nature, bestows infinite patience",
-          "frequency_khz": "52.585 kHz"
+          "id": "P-379",
+          "name": "South Africa Inflation Hedging Vault Acceleration",
+          "ruling_shem_angel": "Nanael",
+          "celestial_choir": "Principalities",
+          "angel_power": "Governs higher education, philosophy, and judicial truth",
+          "restorative_industry_skillset": "University Curriculum Reform & Higher Judicial Education",
+          "frequency_khz": "424.729 kHz"
         },
         "real_time_earth_vector": {
-          "applied_speed": "0.57x acceleration",
-          "frequency_shift_to_ultra_green": "+50.000 kHz shift",
-          "exact_spatial_target": "Venezuela Grid Node #8"
+          "applied_speed": "0.45x acceleration",
+          "frequency_shift_to_ultra_green": "+30.000 kHz shift",
+          "exact_spatial_target": "South Africa Grid Node #10"
         },
-        "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Venezuela'. Driver #30 Forneus (99.900 kHz) exerting power [Teaches rhetoric, foreign tongues, and causes favorable renown] induces systemic bottleneck friction. Executing Venezuela Geothermal Heat Sink Optimization invoking Shem Angel Achaiah (Seraphim, 52.585 kHz) providing power [Reveals secrets of nature, bestows infinite patience] locks 1.000 Target Unity."
-      }
-    },
-    {
-      "sandbox_id": "sentinel-c09",
-      "status": "EXECUTED",
-      "nvidia_nim_accelerated": false,
-      "groq_accelerated": true,
-      "physical_stability_seal": "To (Harmony)",
-      "phase_locked_loop_mark": "PLL-MARK-#09-7942E84E",
-      "cymatic_999_inversion_hz": "111.294 Hz",
-      "optical_metrology_matrix": {
-        "system": "Multi-Spectral Quantum Interferometry",
-        "perception_mode": "Micro-Vibration Defect Perception"
-      },
-      "mhd_energy_amplifier": {
-        "stage": 2,
-        "system_name": "Thermal Plasma Kinetic Generator",
-        "amplification_factor": "6.94x"
-      },
-      "thermodynamic_balancer": {
-        "mode": "Piezoelectric Pressure Transduction",
-        "ambient_thermal_balance": "99.4%"
-      },
-      "containment_array": {
-        "seal_formula": "Four-Node Phase Locking Seal",
-        "containment_function": "Dual Layer Sub-Harmonic Isolation"
-      },
-      "overclock_telemetry": {
-        "active_gate": "Overclock Stage 1: Thermal Gate Opening",
-        "overclock_capacity": "125% Overclock Capacity"
-      },
-      "laser_ablation_deconstruction": {
-        "mode": "Triangular Beam Molecular Isolation"
-      },
-      "state_recovery": {
-        "protocol": "Izanami Active (PID Error Lock)",
-        "function": "Closed-Loop Feedback Trap"
-      },
-      "physical_telemetry": {
-        "anti_phase_dampening": "98.4%"
-      },
-      "data": {
-        "agent_index": 9,
-        "target_node_subject": "Venezuela",
-        "biblical_apocalyptic_framework": {
-          "apocalyptic_seal": "Fifth Seal: Altar of Martyrs",
-          "sealed_tribe": "Judah",
-          "temporal_birth_gate": "January Gate"
-        },
-        "bottleneck": {
-          "id": "B-295",
-          "name": "Hydroelectric Reservoir Litigation Freeze in Venezuela Context",
-          "active_demon_driver": "#32 Asmodai",
-          "demon_power": "Grants invincible power, invulnerability, and math mastery",
-          "frequency_khz": "106.560 kHz",
-          "predictive_crash_schedule_10_dates_to_3000ce": [
-            "2035-07-23",
-            "2126-07-23",
-            "2217-07-23",
-            "2308-07-23",
-            "2399-07-23",
-            "2490-07-23",
-            "2581-07-23",
-            "2672-07-23",
-            "2763-07-23",
-            "2854-07-23"
-          ]
-        },
-        "protocol": {
-          "id": "P-331",
-          "name": "Venezuela Nuclear Isotope Recycling Deployment",
-          "ruling_shem_angel": "Lauviah",
-          "celestial_choir": "Cherubim",
-          "angel_power": "Protects against fraud, bestows high renown and wisdom",
-          "frequency_khz": "84.945 kHz"
-        },
-        "real_time_earth_vector": {
-          "applied_speed": "0.694x acceleration",
-          "frequency_shift_to_ultra_green": "+34.000 kHz shift",
-          "exact_spatial_target": "Venezuela Grid Node #9"
-        },
-        "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Venezuela'. Driver #32 Asmodai (106.560 kHz) exerting power [Grants invincible power, invulnerability, and math mastery] induces systemic bottleneck friction. Executing Venezuela Nuclear Isotope Recycling Deployment invoking Shem Angel Lauviah (Cherubim, 84.945 kHz) providing power [Protects against fraud, bestows high renown and wisdom] locks 1.000 Target Unity."
-      }
-    },
-    {
-      "sandbox_id": "sentinel-c10",
-      "status": "EXECUTED",
-      "nvidia_nim_accelerated": false,
-      "groq_accelerated": true,
-      "physical_stability_seal": "Sha (Healing)",
-      "phase_locked_loop_mark": "PLL-MARK-#10-7942E84E",
-      "cymatic_999_inversion_hz": "999.712 Hz",
-      "optical_metrology_matrix": {
-        "system": "Multi-Spectral Quantum Interferometry",
-        "perception_mode": "Micro-Vibration Defect Perception"
-      },
-      "mhd_energy_amplifier": {
-        "stage": 2,
-        "system_name": "Thermal Plasma Kinetic Generator",
-        "amplification_factor": "9.12x"
-      },
-      "thermodynamic_balancer": {
-        "mode": "Thermodynamic Heat Sink Balance",
-        "ambient_thermal_balance": "98.7%"
-      },
-      "containment_array": {
-        "seal_formula": "Four-Node Phase Locking Seal",
-        "containment_function": "Dual Layer Sub-Harmonic Isolation"
-      },
-      "overclock_telemetry": {
-        "active_gate": "Overclock Stage 4: Wave Velocity Peak",
-        "overclock_capacity": "275% Overclock Capacity"
-      },
-      "laser_ablation_deconstruction": {
-        "mode": "Triangular Beam Molecular Isolation"
-      },
-      "state_recovery": {
-        "protocol": "Izanagi Active (Zero-Point Rewind)",
-        "function": "Atomic Snapshot State Rollback"
-      },
-      "physical_telemetry": {
-        "anti_phase_dampening": "88.2%"
-      },
-      "data": {
-        "agent_index": 10,
-        "target_node_subject": "Venezuela",
-        "biblical_apocalyptic_framework": {
-          "apocalyptic_seal": "Fifth Seal: Altar of Martyrs",
-          "sealed_tribe": "Judah",
-          "temporal_birth_gate": "January Gate"
-        },
-        "bottleneck": {
-          "id": "B-213",
-          "name": "Water Filtration Clearing Backlog in Venezuela Context",
-          "active_demon_driver": "#11 Gusion",
-          "demon_power": "Reconciles friendships and grants honor/dignity",
-          "frequency_khz": "36.630 kHz",
-          "predictive_crash_schedule_10_dates_to_3000ce": [
-            "2028-09-05",
-            "2117-09-05",
-            "2206-09-05",
-            "2295-09-05",
-            "2384-09-05",
-            "2473-09-05",
-            "2562-09-05",
-            "2651-09-05",
-            "2740-09-05",
-            "2829-09-05"
-          ]
-        },
-        "protocol": {
-          "id": "P-170",
-          "name": "Venezuela Solar Refrigeration Pod Balancing",
-          "ruling_shem_angel": "Yehuiah",
-          "celestial_choir": "Powers",
-          "angel_power": "Uncovers treacherous conspiracies, enforces institutional order",
-          "frequency_khz": "262.929 kHz"
-        },
-        "real_time_earth_vector": {
-          "applied_speed": "0.612x acceleration",
-          "frequency_shift_to_ultra_green": "+52.000 kHz shift",
-          "exact_spatial_target": "Venezuela Grid Node #10"
-        },
-        "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Venezuela'. Driver #11 Gusion (36.630 kHz) exerting power [Reconciles friendships and grants honor/dignity] induces systemic bottleneck friction. Executing Venezuela Solar Refrigeration Pod Balancing invoking Shem Angel Yehuiah (Powers, 262.929 kHz) providing power [Uncovers treacherous conspiracies, enforces institutional order] locks 1.000 Target Unity."
+        "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'South Africa'. Driver #44 Shax (146.520 kHz) exerting power [Deprives sight, hearing, and intellect; steals hidden items] induces systemic bottleneck friction in [Sensory Deprivation Countermeasures & Asset Security]. Executing South Africa Inflation Hedging Vault Acceleration invoking Shem Angel Nanael (Principalities, 424.729 kHz) providing power [Governs higher education, philosophy, and judicial truth] applies restorative skillset [University Curriculum Reform & Higher Judicial Education] and locks 1.000 Target Unity."
       }
     }
   ]
