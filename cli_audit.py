@@ -321,7 +321,6 @@ def query_ai_engine(prompt_text: str) -> dict:
             res_data = json.loads(response.read().decode('utf-8'))
             content = res_data['choices'][0]['message']['content'].strip()
 
-            # Attempt JSON extraction
             try:
                 parsed = json.loads(content)
                 return parsed
@@ -461,6 +460,46 @@ def generate_adaptive_node_sweep(target_node: str, count: int = 10):
     return sweep_results
 
 
+# =====================================================================
+# 5. FULL SUMMARY ANALYSIS & APEX DIMENSIONAL OVERWRITE REPORT
+# =====================================================================
+def display_full_summary_analysis(target_node: str, math_res: dict, ai_telemetry: dict):
+    """Generates the full summary analysis of the equations and describes the 5th-dimensional resolution."""
+    print("\n" + "=" * 80)
+    print(" 🖥️  UESP PRCE MASTER SUMMARY ANALYSIS & APEX DIMENSIONAL OVERWRITE")
+    print("=" * 80)
+    print(f" Target Subject Node : {target_node}")
+    print(f" Calibration Baseline: July 2026 / 3000 CE Horizon")
+    print("-" * 80)
+
+    print("\n## 1. EQUATION EXECUTION BREAKDOWN")
+    print(f" • Differential Delta (Δ = SHI - ITI): {math_res['calculated_differential_delta']}")
+    print(f"   └─ Input SHI (Systemic Health): {math_res['input_shi']} | Input ITI (Technical Integrity): {math_res['input_iti']}")
+    print(f"   └─ Diagnostic Interpretation: Isolates an operational drag of {math_res['calculated_differential_delta']}, representing temporal & physical grid decay.")
+    
+    print(f" • Super Circuit Output (Ψ): {math_res['super_circuit_output']}")
+    print(f"   └─ Input Friction Rate: {math_res['input_friction_rate']} against 0.666 Baseline")
+    print(f"   └─ Diagnostic Interpretation: Intercepts and neutralizes the 0.666 Antichrist decay denominator, routing around local impasse.")
+    
+    print(f" • 144,000 Bridge Constant (B_144000): {math_res['bridge_constant']}")
+    print(f"   └─ Diagnostic Interpretation: Establishes a zero-latency quantum tunneling channel linking legacy infrastructure directly to sovereign equilibrium.")
+
+    print(f" • Mega Circuit Overwrite (O_MegaCircuit): {math_res['mega_circuit_unity']} Target Unity")
+    print(f"   └─ Diagnostic Interpretation: Applies the Mega Secret key to execute complete mathematical rewrite, absorbing all localized negative deltas.")
+
+    print("\n## 2. SYSTEMIC RESOLUTION INSTRUCTIONS")
+    print(" 1. JUDICIARY & POLICY: Apply Shem Angel Cahetel protocols (141.578 kHz) to automate court dockets and eliminate legislative gridlock.")
+    print(" 2. ENGINEERING & INFRASTRUCTURE: Deploy Shem Angel Hariel protocols (177.378 kHz) for digital twin 72-hour automated municipal permitting and micro-grid isolation.")
+    print(" 3. ACCOUNTING & FINANCE: Deploy Shem Angel Elemiah protocols (28.315 kHz) to enforce real-time zero-trust public audits and automate cross-border tax compliance.")
+
+    print("\n## 3. APEX DIMENSIONAL OVERWRITE (5TH-DIMENSIONAL VIEW)")
+    print(" From the 5th-Dimensional perspective, time and space exist as an accessible, unified manifold rather than a linear sequence:")
+    print("  • Unified Manifold Perception: The 0.666 friction state is observed not as an inevitable collapse, but as a temporary, localized entropy distortion.")
+    print("  • Non-Linear Convergence: By projecting the Mega Circuit through the 144,000 Bridge, the 5th-dimensional view observes past, present, and future timelines collapsing into a singular, self-healing continuous loop.")
+    print("  • Ultimate Unified Resolution: Structural friction across all 7 national sectors dissolves. The negative Differential Delta is absorbed, locking the entire target node permanently into 1.000 Target Unity across all dimensional planes.")
+    print("=" * 80 + "\n")
+
+
 def run_cli_audit():
     event_payload_str = os.getenv("EVENT_PAYLOAD", "{}")
     input_node_env = os.getenv("INPUT_NODE", "").strip()
@@ -481,7 +520,7 @@ def run_cli_audit():
     except Exception as e:
         print(f"[!] Payload parse notice: {e}")
 
-    target_node = target_node or input_node_env or "America"
+    target_node = target_node or input_node_env or "Israel"
     session_guid = session_guid or f"SESSION-{os.urandom(4).hex().upper()}"
     utc_timestamp = utc_timestamp or datetime.now(timezone.utc).isoformat()
     session_color = session_color or "#00F0FF"
@@ -489,7 +528,6 @@ def run_cli_audit():
     clean_color_slug = session_color.replace("#", "")
     time_slug = str(int(time.time()))
 
-    # Compute ECTA SHA-256 Signature
     raw_sig = f"{session_guid}:{utc_timestamp}:{target_node}:{session_color}"
     ecta_hash = f"sha256:{hashlib.sha256(raw_sig.encode()).hexdigest()}"
 
@@ -500,11 +538,9 @@ def run_cli_audit():
     print(f"[*] Color Anchor   : '{session_color}'")
     print(f"[*] ECTA SHA-256   : '{ecta_hash}'")
 
-    # Fetch dynamic intelligence from Groq or Nvidia NIM
     ai_prompt = f"Analyze infrastructure telemetry for target node '{target_node}'. Return JSON with ITI, SHI, and friction run rate."
     ai_telemetry = query_ai_engine(ai_prompt)
 
-    # Execute math directly based off Groq / Nvidia NIM AI data
     math_execution = execute_uesp_math_from_ai(ai_telemetry)
 
     sweep_results = generate_adaptive_node_sweep(target_node, count=10)
@@ -541,6 +577,9 @@ def run_cli_audit():
         json.dump(current_run_payload, f, indent=2, ensure_ascii=False)
 
     print(f"[✓] Success! Dynamic UESP PRCE Math Executed and saved to '{unique_filepath}'.")
+
+    # Display the final summary analysis and Apex Dimensional Overwrite report
+    display_full_summary_analysis(target_node, math_execution, ai_telemetry)
 
 
 if __name__ == "__main__":
