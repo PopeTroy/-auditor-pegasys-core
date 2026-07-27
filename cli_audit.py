@@ -356,15 +356,45 @@ def query_ai_engine(prompt_text: str) -> dict:
         return {}
 
 
-def execute_uesp_math_from_ai(ai_data: dict) -> dict:
-    """Executes the PropheticCalculatorEngine and Purified UESP PRCE equations directly from Groq/NVIDIA NIM data."""
+def execute_uesp_math_from_ai(ai_data: dict, sweep_results: list) -> dict:
+    """Executes the PropheticCalculatorEngine and Purified UESP PRCE equations directly using calculated sweep units."""
     time_val = float(ai_data.get("time_val", 1.0))
     space_val = float(ai_data.get("space_val", 1.0))
     friction_rate = float(ai_data.get("friction_run_rate", 0.666))
 
-    # 1. Execute PropheticCalculatorEngine First
+    # Extract dynamic friction frequencies and filter frequencies from the 10 sweep nodes
+    demon_frequencies = []
+    angel_frequencies = []
+    all_crash_dates = []
+
+    for item in sweep_results:
+        b_data = item["data"]["bottleneck"]
+        p_data = item["data"]["protocol"]
+
+        # Parse demon friction frequency (kHz)
+        d_freq_str = b_data.get("frequency_khz", "150.0 kHz").replace(" kHz", "")
+        try:
+            demon_frequencies.append(float(d_freq_str))
+        except ValueError:
+            demon_frequencies.append(150.0)
+
+        # Parse angel filter frequency (kHz)
+        a_freq_str = p_data.get("frequency_khz", "100.0 kHz").replace(" kHz", "")
+        try:
+            angel_frequencies.append(float(a_freq_str))
+        except ValueError:
+            angel_frequencies.append(100.0)
+
+        # Extract 10 crash dates
+        all_crash_dates.extend(b_data.get("predictive_crash_schedule_10_dates_to_3000ce", []))
+
+    # Accumulate real-world resistance (R) from 10 demon friction frequencies & 10 bottlenecks
+    accumulated_resistance = sum(demon_frequencies) / len(demon_frequencies) if demon_frequencies else 504.0
+    accumulated_logos = sum(angel_frequencies) * 1440.0 if angel_frequencies else 10368000.0
+
+    # 1. Execute PropheticCalculatorEngine with accumulated resistance & logos
     prophetic_synthesis = PropheticCalculatorEngine.solve_synthesis(
-        nodes=144000, angels=72, demons=72, sins=7, church_factor=7,
+        nodes=144000, angels=72, demons=int(accumulated_resistance / 7.0), sins=7, church_factor=7,
         time_val=time_val, space_val=space_val
     )
 
@@ -411,7 +441,10 @@ def execute_uesp_math_from_ai(ai_data: dict) -> dict:
         "ugpe_trajectory": ugpe_result,
         "arc_ark_field": arc_ark_field,
         "wharton_abyss_neutralized": wharton_abyss_neutralized,
-        "spear_of_destiny_vector": spear_of_destiny_vector
+        "spear_of_destiny_vector": spear_of_destiny_vector,
+        "accumulated_demon_friction_avg_khz": round(accumulated_resistance, 2),
+        "accumulated_angel_filter_avg_khz": round(sum(angel_frequencies)/len(angel_frequencies), 2) if angel_frequencies else 0.0,
+        "total_crash_dates_processed": len(all_crash_dates)
     }
 
 
@@ -525,15 +558,18 @@ def display_full_summary_analysis(target_node: str, math_res: dict, ai_telemetry
     print(f" Calibration Baseline: July 2026 / 3000 CE Horizon")
     print("-" * 80)
 
-    print("\n## 1. PROPHETIC CALCULATOR ENGINE OUTPUTS")
+    print("\n## 1. PROPHETIC CALCULATOR ENGINE OUTPUTS (ACCUMULATED FROM 10 SWEEP NODES)")
     print(f" • Calculated SHI (Systemic Health Index) : {ps['shi']}")
     print(f" • Calculated TTI (Technical Time Index) : {ps['tti']}")
     print(f" • Calculated ITI (Technical Integrity)  : {math_res['calculated_iti']}")
     print(f" • Systemic Logos Parameter              : {ps['logos']} (Nodes 144,000 × Angels 72)")
-    print(f" • Resistance Parameter                  : {ps['resistance']} (Demons 72 × Sins 7)")
+    print(f" • Resistance Parameter                  : {ps['resistance']} (Demon Friction Frequencies)")
     print(f" • Constraints Parameter                 : {ps['constraints']} (Time {math_res['input_time_val']} × Space {math_res['input_space_val']})")
     print(f" • Harmonic Frequency                    : {ps['frequency']} Hz")
     print(f" • Override Triggered Status             : {ps['override_triggered']}")
+    print(f" • Avg Demon Friction Frequency          : {math_res['accumulated_demon_friction_avg_khz']} kHz")
+    print(f" • Avg Angel Filter Frequency            : {math_res['accumulated_angel_filter_avg_khz']} kHz")
+    print(f" • Total Crash Schedule Dates Processed  : {math_res['total_crash_dates_processed']}")
 
     print("\n## 2. ADVANCED UESP PRCE VECTOR CALCULATIONS")
     print(f" • Differential Delta (Δ = SHI - ITI)     : {math_res['calculated_differential_delta']}")
@@ -595,9 +631,11 @@ def run_cli_audit():
     ai_prompt = f"Analyze infrastructure telemetry for target node '{target_node}'. Return JSON with time_val, space_val, friction_run_rate, and remediation_summary."
     ai_telemetry = query_ai_engine(ai_prompt)
 
-    math_execution = execute_uesp_math_from_ai(ai_telemetry)
-
+    # First generate the 10 adaptive sweep nodes containing the bottlenecks, protocols, frequencies, and dates
     sweep_results = generate_adaptive_node_sweep(target_node, count=10)
+
+    # Now execute math directly passing the accumulated 10 sweep units
+    math_execution = execute_uesp_math_from_ai(ai_telemetry, sweep_results)
 
     remediation_summary = ai_telemetry.get("remediation_summary")
     if remediation_summary:
