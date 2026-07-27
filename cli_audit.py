@@ -36,14 +36,19 @@ GROQ_MODEL = "llama-3.3-70b-versatile"
 # =====================================================================
 class PropheticCalculatorEngine:
     @staticmethod
-    def solve_synthesis(nodes=144000, angels=72, demons=72, sins=7, church_factor=7, time_val=1.0, space_val=1.0):
+    def solve_synthesis(nodes=144000, angels=72, demons=72, sins=7, church_factor=7, time_val_hours=24.0, timezone_offset=3.0, landmass_sq_km=22145.0):
         logos = nodes * angels
-        resistance = max(demons * sins, 1)
-        constraints = max(time_val * space_val, 0.0001)
         
-        shi = round((logos / (resistance * constraints)), 2)
-        tti = round(resistance / (logos + resistance), 4)
-        frequency = round((logos / resistance) * (church_factor / constraints), 2)
+        # Resistance = Max(72 Demons * 7 Sins)
+        resistance = max(demons * sins, 1)
+        
+        # Time/Constraints = Max((24 hour clock cycle + timezone_offset) * landmass_sq_km)
+        time_clock_factor = max(time_val_hours + timezone_offset, 1.0)
+        constraints = max(time_clock_factor * landmass_sq_km, 0.0001)
+        
+        shi = round((logos / (resistance * constraints)), 4)
+        tti = round(resistance / (logos + resistance), 6)
+        frequency = round((logos / resistance) * (church_factor / constraints), 4)
         override_triggered = shi < 50.0 or frequency > 1000.0
 
         return {
@@ -57,159 +62,159 @@ class PropheticCalculatorEngine:
         }
 
 # =====================================================================
-# 1. THE 72 GOETIC DEMONS & POWERS (1–72)
+# 1. THE 72 GOETIC DEMONS, POWERS & REAL-WORLD INDUSTRY SKILLSETS
 # =====================================================================
 GOETIC_DRIVERS_72 = [
-    (1, "Bael", "3.330 kHz", "Invisibility, wisdom, and leadership manipulation"),
-    (2, "Agares", "6.660 kHz", "Halts runners, causes earthquakes, destroys dignity"),
-    (3, "Vassago", "9.990 kHz", "Discovers hidden things and predicts past/future outcomes"),
-    (4, "Gamigin", "13.320 kHz", "Teaches liberal sciences and accounts for dead souls"),
-    (5, "Marbas", "16.650 kHz", "Causes and cures systemic diseases, reveals mechanical secrets"),
-    (6, "Valefor", "19.980 kHz", "Tempters into theft and deceitful network breaches"),
-    (7, "Amon", "23.310 kHz", "Reconciles feuds and reveals past and future events"),
-    (8, "Barbatos", "26.640 kHz", "Understands animal voices and reveals hidden treasure vaults"),
-    (9, "Paimon", "29.970 kHz", "Teaches all arts/sciences and binds subjects to absolute will"),
-    (10, "Buer", "33.300 kHz", "Teaches philosophy, logic, and heals moral/physical infirmities"),
-    (11, "Gusion", "36.630 kHz", "Reconciles friendships and grants honor/dignity"),
-    (12, "Sitri", "39.960 kHz", "Inflames passion and exposes concealed secrets"),
-    (13, "Beleth", "43.290 kHz", "Causes overwhelming love and emotional subversion"),
-    (14, "Leraje", "46.620 kHz", "Causes severe conflicts, archery battles, and gangrene wounds"),
-    (15, "Eligos", "49.950 kHz", "Discovers hidden things and foresees military strategy"),
-    (16, "Zepar", "53.280 kHz", "Causes sterile lockouts and alters physical form"),
-    (17, "Botis", "56.610 kHz", "Reconciles allies and foretells future outcomes"),
-    (18, "Bathin", "59.940 kHz", "Transports entities instantly across spatial dimensions"),
-    (19, "Sallos", "63.270 kHz", "Promotes peaceful accord and mutual attraction"),
-    (20, "Purson", "66.600 kHz", "Discovers hidden treasures and provides clear divination"),
-    (21, "Marax", "69.930 kHz", "Teaches astronomy, herbal medicine, and precious stones"),
-    (22, "Ipos", "73.260 kHz", "Reveals secret knowledge and bestows courage/wit"),
-    (23, "Aim", "76.590 kHz", "Sets cities on fire and grants sharp intellectual wit"),
-    (24, "Naberius", "79.920 kHz", "Restores lost honors and teaches rhetoric/logic"),
-    (25, "Glasya-Labolas", "83.250 kHz", "Incites bloodshed, teaches all arts, grants invisibility"),
-    (26, "Bune", "86.580 kHz", "Changes dead locations, grants wealth, wisdom, and eloquence"),
-    (27, "Ronove", "89.910 kHz", "Teaches rhetoric, foreign languages, and loyal service"),
-    (28, "Berith", "93.240 kHz", "Turns metals to gold, bestows high institutional status"),
-    (29, "Astaroth", "96.570 kHz", "Reveals secrets of creation, fall of spirits, liberal sciences"),
-    (30, "Forneus", "99.900 kHz", "Teaches rhetoric, foreign tongues, and causes favorable renown"),
-    (31, "Foras", "103.230 kHz", "Teaches logic, ethics, prolongs life, locates lost wealth"),
-    (32, "Asmodai", "106.560 kHz", "Grants invincible power, invulnerability, and math mastery"),
-    (33, "Gaap", "109.890 kHz", "Causes ignorance, teleports entities, disrupts spatial logic"),
-    (34, "Furfur", "113.220 kHz", "Generates thunder, lightning, storms, and reveals divine truth"),
-    (35, "Marchosias", "116.550 kHz", "Strong fighter, reliable tactical advice, ultimate endurance"),
-    (36, "Stolas", "119.880 kHz", "Teaches astronomy, virtues of herbs, and precious stones"),
-    (37, "Phenex", "123.210 kHz", "Sings wonderful melodies, teaches sciences, poetry writer"),
-    (38, "Halphas", "126.540 kHz", "Builds towers, supplies ammunition, and punishes enemies"),
-    (39, "Malphas", "129.870 kHz", "Builds houses/high towers, reveals enemy desires/actions"),
-    (40, "Raum", "133.200 kHz", "Steals treasure, destroys cities, foretells future events"),
-    (41, "Focalor", "136.530 kHz", "Sinks warships, commands winds/seas, inflicts drowning"),
-    (42, "Vepar", "139.860 kHz", "Governs waters, guides fleets, causes putrid wound corruption"),
-    (43, "Sabnock", "143.190 kHz", "Builds high towers, inflicts gangrenous worm wounds"),
-    (44, "Shax", "146.520 kHz", "Deprives sight, hearing, and intellect; steals hidden items"),
-    (45, "Vine", "149.850 kHz", "Discovers hidden secrets, builds towers, collapses stone walls"),
-    (46, "Bifrons", "153.180 kHz", "Teaches astrology, geometry, herbs, and moves dead bodies"),
-    (47, "Uvall", "156.510 kHz", "Procures love of friends, reconciles enemies, speaks ancient tongues"),
-    (48, "Haagenti", "159.840 kHz", "Makes men wise, transmutes metals into gold, turns water to wine"),
-    (49, "Crocell", "163.170 kHz", "Teaches geometry, warms bodies of water, creates roaring sounds"),
-    (50, "Furcas", "166.500 kHz", "Teaches philosophy, astrology, rhetoric, logic, and chiromancy"),
-    (51, "Balam", "169.830 kHz", "Grants perfect memory, foretells past/future, grants invisibility"),
-    (52, "Alloces", "173.160 kHz", "Teaches astronomy, liberal arts, provides excellent familiars"),
-    (53, "Camio", "176.490 kHz", "Understands bird calls, water sounds, and translates news"),
-    (54, "Murmur", "179.820 kHz", "Teaches philosophy, compels deceased souls to answer questions"),
-    (55, "Orobas", "183.150 kHz", "Discovers divinity, prevents deception, bestows prelacies/dignities"),
-    (56, "Gremory", "186.480 kHz", "Reveals hidden treasures, bestows love, foretells future events"),
-    (57, "Ose", "189.810 kHz", "Teaches secret/divine sciences, changes human shape at will"),
-    (58, "Amy", "193.140 kHz", "Teaches astrology, liberal arts, reveals hidden treasures"),
-    (59, "Orias", "196.470 kHz", "Teaches virtues of stars, bestows dignities, converts enemies"),
-    (60, "Vapula", "199.800 kHz", "Teaches manual crafts, philosophy, and advanced technical knowledge"),
-    (61, "Zagan", "203.130 kHz", "Makes fools wise, turns wine to water, turns metals into gold"),
-    (62, "Volac", "206.460 kHz", "Reveals location of serpents, reveals hidden gold/treasures"),
-    (63, "Andras", "209.790 kHz", "Sows discord, destroys opponents, commands escalation"),
-    (64, "Haures", "213.120 kHz", "Destroys enemies by fire, foretells past/future, shields from fraud"),
-    (65, "Andrealphus", "216.450 kHz", "Teaches geometry, measurement, transforms men into birds"),
-    (66, "Cimejes", "219.780 kHz", "Locates lost treasures, teaches grammar, logic, rhetoric"),
-    (67, "Amdusias", "223.110 kHz", "Commands trees to bend, provides musical instruments/orchestrations"),
-    (68, "Belial", "226.440 kHz", "Distributes high titles, reconciles political power, bestows favor"),
-    (69, "Decarabia", "229.770 kHz", "Teaches virtues of birds/herbs, commands illusionary phantoms"),
-    (70, "Seere", "233.100 kHz", "Brings instant abundance, teleports items, completes tasks immediately"),
-    (71, "Dantalion", "236.430 kHz", "Reads and alters thoughts of minds, teaches all arts/sciences"),
-    (72, "Andromalius", "239.760 kHz", "Catches thieves, returns stolen goods, reveals hidden conspiracies")
+    (1, "Bael", "3.330 kHz", "Invisibility, wisdom, and leadership manipulation", "Executive Leadership & Strategic Governance Corruption"),
+    (2, "Agares", "6.660 kHz", "Halts runners, causes earthquakes, destroys dignity", "Civil Infrastructure & Physical Foundations Engineering"),
+    (3, "Vassago", "9.990 kHz", "Discovers hidden things and predicts past/future outcomes", "Predictive Analytics & Forensics Data Mining"),
+    (4, "Gamigin", "13.320 kHz", "Teaches liberal sciences and accounts for dead souls", "Educational Systems & Historical Asset Archiving"),
+    (5, "Marbas", "16.650 kHz", "Causes and cures systemic diseases, reveals mechanical secrets", "Biomedical Systems & Mechanical Reliability Engineering"),
+    (6, "Valefor", "19.980 kHz", "Tempters into theft and deceitful network breaches", "Cybersecurity & Intrusion Vector Analysis"),
+    (7, "Amon", "23.310 kHz", "Reconciles feuds and reveals past and future events", "Diplomatic Negotiation & Geopolitical Arbitration"),
+    (8, "Barbatos", "26.640 kHz", "Understands animal voices and reveals hidden treasure vaults", "Environmental Acoustic Sensing & Mining Exploration"),
+    (9, "Paimon", "29.970 kHz", "Teaches all arts/sciences and binds subjects to absolute will", "Enterprise Architecture & Mass Operational Alignment"),
+    (10, "Buer", "33.300 kHz", "Teaches philosophy, logic, and heals moral/physical infirmities", "Clinical Rehabilitation & Systems Logic Design"),
+    (11, "Gusion", "36.630 kHz", "Reconciles friendships and grants honor/dignity", "Corporate Relations & Institutional Reputation Management"),
+    (12, "Sitri", "39.960 kHz", "Inflames passion and exposes concealed secrets", "Consumer Behavioral Psychology & Market Research"),
+    (13, "Beleth", "43.290 kHz", "Causes overwhelming love and emotional subversion", "Media Communications & Public Sentiment Engineering"),
+    (14, "Leraje", "46.620 kHz", "Causes severe conflicts, archery battles, and gangrene wounds", "Ballistics Engineering & Trauma Medical Response"),
+    (15, "Eligos", "49.950 kHz", "Discovers hidden things and foresees military strategy", "Defense Logistics & Tactical Reconnaissance Strategy"),
+    (16, "Zepar", "53.280 kHz", "Causes sterile lockouts and alters physical form", "Materials Science & Structural Integrity Testing"),
+    (17, "Botis", "56.610 kHz", "Reconciles allies and foretells future outcomes", "Crisis Management & Conflict Resolution Practice"),
+    (18, "Bathin", "59.940 kHz", "Transports entities instantly across spatial dimensions", "High-Speed Logistics & Teleportation Routing"),
+    (19, "Sallos", "63.270 kHz", "Promotes peaceful accord and mutual attraction", "Labor Union Mediation & Human Resource Alignment"),
+    (20, "Purson", "66.600 kHz", "Discovers hidden treasures and provides clear divination", "Financial Audit & Treasure Asset Recovery"),
+    (21, "Marax", "69.930 kHz", "Teaches astronomy, herbal medicine, and precious stones", "Pharmaceutical Botany & Aerospace Navigation"),
+    (22, "Ipos", "73.260 kHz", "Reveals secret knowledge and bestows courage/wit", "Intellectual Property Analysis & Critical Thinking"),
+    (23, "Aim", "76.590 kHz", "Sets cities on fire and grants sharp intellectual wit", "Thermal Energy Systems & Urban Fire Prevention"),
+    (24, "Naberius", "79.920 kHz", "Restores lost honors and teaches rhetoric/logic", "Public Advocacy & Constitutional Rhetoric"),
+    (25, "Glasya-Labolas", "83.250 kHz", "Incites bloodshed, teaches all arts, grants invisibility", "Stealth Defense Systems & Tactical Camouflage"),
+    (26, "Bune", "86.580 kHz", "Changes dead locations, grants wealth, wisdom, and eloquence", "Urban Renewal & Real Estate Value Extraction"),
+    (27, "Ronove", "89.910 kHz", "Teaches rhetoric, foreign languages, and loyal service", "Linguistic Translation & Corporate Diplomacy"),
+    (28, "Berith", "93.240 kHz", "Turns metals to gold, bestows high institutional status", "Chemical Metallurgy & Institutional Banking Status"),
+    (29, "Astaroth", "96.570 kHz", "Reveals secrets of creation, fall of spirits, liberal sciences", "Theoretical Physics & Fundamental Research"),
+    (30, "Forneus", "99.900 kHz", "Teaches rhetoric, foreign tongues, and causes favorable renown", "Global Public Relations & Brand Reputation Strategy"),
+    (31, "Foras", "103.230 kHz", "Teaches logic, ethics, prolongs life, locates lost wealth", "Bio-Gerontology & Ethical Algorithm Design"),
+    (32, "Asmodai", "106.560 kHz", "Grants invincible power, invulnerability, and math mastery", "Advanced Cryptography & Quantitative Financial Mathematics"),
+    (33, "Gaap", "109.890 kHz", "Causes ignorance, teleports entities, disrupts spatial logic", "Spatial Computing & Dimensional Telemetry"),
+    (34, "Furfur", "113.220 kHz", "Generates thunder, lightning, storms, and reveals divine truth", "Meteorological Control & Atmospheric High-Voltage Engineering"),
+    (35, "Marchosias", "116.550 kHz", "Strong fighter, reliable tactical advice, ultimate endurance", "Physical Security & Tactical Operations Endurance"),
+    (36, "Stolas", "119.880 kHz", "Teaches astronomy, virtues of herbs, and precious stones", "Astrophysics & Mineralogy Extraction Systems"),
+    (37, "Phenex", "123.210 kHz", "Sings wonderful melodies, teaches sciences, poetry writer", "Acoustics Engineering & Computational Literature"),
+    (38, "Halphas", "126.540 kHz", "Builds towers, supplies ammunition, and punishes enemies", "Heavy Munitions Supply Chain & Defensive Tower Construction"),
+    (39, "Malphas", "129.870 kHz", "Builds houses/high towers, reveals enemy desires/actions", "High-Rise Architectural Engineering & Industrial Espionage Defense"),
+    (40, "Raum", "133.200 kHz", "Steals treasure, destroys cities, foretells future events", "Demolition Engineering & Strategic Risk Forecasting"),
+    (41, "Focalor", "136.530 kHz", "Sinks warships, commands winds/seas, inflicts drowning", "Naval Architecture & Marine Hydrodynamics"),
+    (42, "Vepar", "139.860 kHz", "Governs waters, guides fleets, causes putrid wound corruption", "Maritime Transport Fleet Control & Environmental Infection Prevention"),
+    (43, "Sabnock", "143.190 kHz", "Builds high towers, inflicts gangrenous worm wounds", "Structural Fortification & Biological Containment"),
+    (44, "Shax", "146.520 kHz", "Deprives sight, hearing, and intellect; steals hidden items", "Sensory Deprivation Countermeasures & Asset Security"),
+    (45, "Vine", "149.850 kHz", "Discovers hidden secrets, builds towers, collapses stone walls", "Civil Infrastructure Demolition & Underground Surveying"),
+    (46, "Bifrons", "153.180 kHz", "Teaches astrology, geometry, herbs, and moves dead bodies", "Surveying Geometry & Hazardous Waste Management"),
+    (47, "Uvall", "156.510 kHz", "Procures love of friends, reconciles enemies, speaks ancient tongues", "Cross-Cultural Mediation & Archaeology Restoration"),
+    (48, "Haagenti", "159.840 kHz", "Makes men wise, transmutes metals into gold, turns water to wine", "Chemical Engineering & Industrial Transmutation"),
+    (49, "Crocell", "163.170 kHz", "Teaches geometry, warms bodies of water, creates roaring sounds", "Geothermal Hydro-Engineering & Computational Geometry"),
+    (50, "Furcas", "166.500 kHz", "Teaches philosophy, astrology, rhetoric, logic, and chiromancy", "Formal Logic Systems & Applied Philosophy"),
+    (51, "Balam", "169.830 kHz", "Grants perfect memory, foretells past/future, grants invisibility", "High-Density Data Memory Storage & Predictive Modeling"),
+    (52, "Alloces", "173.160 kHz", "Teaches astronomy, liberal arts, provides excellent familiars", "Autonomous Robotics Engineering & Observational Astronomy"),
+    (53, "Camio", "176.490 kHz", "Understands bird calls, water sounds, and translates news", "Bio-Acoustic Signal Processing & News Synthesis"),
+    (54, "Murmur", "179.820 kHz", "Teaches philosophy, compels deceased souls to answer questions", "Historical Forensics & Philosophical Logic Inquiry"),
+    (55, "Orobas", "183.150 kHz", "Discovers divinity, prevents deception, bestows prelacies/dignities", "Anti-Fraud Compliance & Integrity Verification"),
+    (56, "Gremory", "186.480 kHz", "Reveals hidden treasures, bestows love, foretells future events", "Sub-Surface Geophysical Exploration & Financial Opportunity Forecasting"),
+    (57, "Ose", "189.810 kHz", "Teaches secret/divine sciences, changes human shape at will", "Advanced Materials Metamorphism & Molecular Biology"),
+    (58, "Amy", "193.140 kHz", "Teaches astrology, liberal arts, reveals hidden treasures", "Astronomical Data Science & Mineral Asset Valuation"),
+    (59, "Orias", "196.470 kHz", "Teaches virtues of stars, bestows dignities, converts enemies", "Satellite Telecommunications & Executive Reconciliations"),
+    (60, "Vapula", "199.800 kHz", "Teaches manual crafts, philosophy, and advanced technical knowledge", "Precision Machining & Advanced Vocational Technical Education"),
+    (61, "Zagan", "203.130 kHz", "Makes fools wise, turns wine to water, turns metals into gold", "Cognitive Enhancement Systems & Process Optimization"),
+    (62, "Volac", "206.460 kHz", "Reveals location of serpents, reveals hidden gold/treasures", "Hazardous Biological Mapping & Precious Metal Geological Survey"),
+    (63, "Andras", "209.790 kHz", "Sows discord, destroys opponents, commands escalation", "Information Warfare & Escalation Dominance Management"),
+    (64, "Haures", "213.120 kHz", "Destroys enemies by fire, foretells past/future, shields from fraud", "High-Temperature Thermodynamics & Fraud Prevention Systems"),
+    (65, "Andrealphus", "216.450 kHz", "Teaches geometry, measurement, transforms men into birds", "Aerodynamic Geometry & Precision Dimensional Metrology"),
+    (66, "Cimejes", "219.780 kHz", "Locates lost treasures, teaches grammar, logic, rhetoric", "Natural Language Processing (NLP) & Resource Asset Discovery"),
+    (67, "Amdusias", "223.110 kHz", "Commands trees to bend, provides musical instruments/orchestrations", "Forestry Engineering & Computational Acoustic Design"),
+    (68, "Belial", "226.440 kHz", "Distributes high titles, reconciles political power, bestows favor", "Political Cabinet Diplomacy & Public Executive Relations"),
+    (69, "Decarabia", "229.770 kHz", "Teaches virtues of birds/herbs, commands illusionary phantoms", "Agricultural Botany & Optical Holography Engineering"),
+    (70, "Seere", "233.100 kHz", "Brings instant abundance, teleports items, completes tasks immediately", "Ultra-Low Latency Freight Delivery & Instant Asset Clearing"),
+    (71, "Dantalion", "236.430 kHz", "Reads and alters thoughts of minds, teaches all arts/sciences", "Neural Engineering & Cognitive Interface Analytics"),
+    (72, "Andromalius", "239.760 kHz", "Catches thieves, returns stolen goods, reveals hidden conspiracies", "Loss Prevention Operations & Counter-Intelligence Forensics")
 ]
 
 # =====================================================================
-# 2. THE 72 ANGELS OF THE SHEM HAMEPHORASH & POWERS (1–72)
+# 2. THE 72 ANGELS OF THE SHEM HAMEPHORASH, POWERS & REAL-WORLD INDUSTRY SKILLSETS
 # =====================================================================
 ANGELS_72 = [
-    ("Vehuiah", "Seraphim", "4.045 kHz", "Illuminates mind, grants willpower, initiates divine action"),
-    ("Jeliel", "Seraphim", "12.135 kHz", "Fosters harmony, quiets popular sedition, grants peace"),
-    ("Sitael", "Seraphim", "20.225 kHz", "Protects against adversity, grants nobility and truth"),
-    ("Elemiah", "Seraphim", "28.315 kHz", "Discovers useful secrets, neutralizes mental distress"),
-    ("Mahasiah", "Seraphim", "36.405 kHz", "Dominates high science, philosophy, and moral perfection"),
-    ("Lelahel", "Seraphim", "44.495 kHz", "Illuminates love, art, science, and grants bodily healing"),
-    ("Achaiah", "Seraphim", "52.585 kHz", "Reveals secrets of nature, bestows infinite patience"),
-    ("Cahetel", "Seraphim", "60.675 kHz", "Inspires agricultural abundance and divine blessings"),
-    ("Haziel", "Cherubim", "68.765 kHz", "Obtains divine mercy, keeps promises, reconciles enemies"),
-    ("Aladiah", "Cherubim", "76.855 kHz", "Heals systemic disease, neutralizes moral corruption"),
-    ("Lauviah", "Cherubim", "84.945 kHz", "Protects against fraud, bestows high renown and wisdom"),
-    ("Hahaiah", "Cherubim", "93.035 kHz", "Reveals hidden mysteries, converts adversity into peace"),
-    ("Iezalel", "Cherubim", "101.125 kHz", "Promotes reconciliation, learning, and systemic order"),
-    ("Mebahel", "Cherubim", "109.215 kHz", "Protects justice, liberates oppressed, reveals truth"),
-    ("Hariel", "Cherubim", "117.305 kHz", "Inspires religious/moral peace, purifies corrupt systems"),
-    ("Hakamiah", "Cherubim", "125.395 kHz", "Protects against traitors, bestows victory and loyalty"),
-    ("Lauviah", "Thrones", "133.488 kHz", "Inspires high arts, philosophy, cures insomnia/sorrow"),
-    ("Caliel", "Thrones", "141.578 kHz", "Invocates prompt assistance, confounds false witnesses"),
-    ("Leuviah", "Thrones", "149.668 kHz", "Bestows brilliant memory, intelligence, and joy"),
-    ("Pahaliah", "Thrones", "157.758 kHz", "Converts enemies, dominates religion and morality"),
-    ("Nelchael", "Thrones", "165.848 kHz", "Protects against calumny, dominates math and astronomy"),
-    ("Yeiayel", "Thrones", "173.939 kHz", "Protects fortune, commerce, diplomacy, and travels"),
-    ("Melahel", "Thrones", "182.029 kHz", "Protects against weapons, governs herbs and healing water"),
-    ("Hahiuiah", "Thrones", "190.119 kHz", "Protects against thieves, assassins, and fatal accidents"),
-    ("Nith-Haiah", "Dominions", "198.209 kHz", "Governs occult sciences, bestows wisdom and truth"),
-    ("Haaiah", "Dominions", "206.299 kHz", "Protects political treaties, diplomatic secrets, justice"),
-    ("Yerathel", "Dominions", "214.389 kHz", "Confounds wicked conspirators, illuminates truth"),
-    ("Seheiah", "Dominions", "222.479 kHz", "Protects against fire, sickness, infrastructure collapse"),
-    ("Reiyel", "Dominions", "230.569 kHz", "Frees souls from systemic traps and spiritual oppression"),
-    ("Omael", "Dominions", "238.659 kHz", "Governs animal generation, patient endurance, production"),
-    ("Lecabel", "Dominions", "246.749 kHz", "Inspires agricultural engineering and scientific light"),
-    ("Vasariah", "Dominions", "254.839 kHz", "Protects against unjust attacks, grants memory/eloquence"),
-    ("Yehuiah", "Powers", "262.929 kHz", "Uncovers treacherous conspiracies, enforces institutional order"),
-    ("Lehahiah", "Powers", "271.019 kHz", "Pacifies anger, maintains order, commands obedience"),
-    ("Chavakiah", "Powers", "279.109 kHz", "Reconciles family inheritances and property disputes"),
-    ("Menadel", "Powers", "287.199 kHz", "Retains employment, frees captives, restores fugitives"),
-    ("Aniel", "Powers", "295.289 kHz", "Governs arts/sciences, uncovers hidden nature secrets"),
-    ("Haamiah", "Powers", "303.379 kHz", "Protects seekers of truth, governs spiritual ceremonies"),
-    ("Rehael", "Powers", "311.469 kHz", "Heals physical/mental afflictions, grants longevity"),
-    ("Ieiazel", "Powers", "319.559 kHz", "Delivers captives, dominates printing, writing, publishing"),
-    ("Hahahel", "Virtues", "327.649 kHz", "Inspires divine mission, converts souls, strengthens order"),
-    ("Mikael", "Virtues", "335.739 kHz", "Protects political leaders, safety of state institutions"),
-    ("Veuliah", "Virtues", "343.829 kHz", "Destroys enemy power, liberates enterprise slaves"),
-    ("Yelahiah", "Virtues", "351.919 kHz", "Protects magistrates, bestows victory in military actions"),
-    ("Sealiah", "Virtues", "360.009 kHz", "Confounders of the proud, elevates the humble and fallen"),
-    ("Ariel", "Virtues", "368.099 kHz", "Reveals nature's secrets, grants clear prophetic dreams"),
-    ("Asaliah", "Virtues", "376.189 kHz", "Praises divine truth, uncovers justice in dark dockets"),
-    ("Mihael", "Virtues", "384.279 kHz", "Fosters conjugal peace, protects procreation and harmony"),
-    ("Vehuel", "Principalities", "392.369 kHz", "Exalts grand souls, bestows high philosophy and art"),
-    ("Daniel", "Principalities", "400.459 kHz", "Obtains divine mercy, comforts sorrow, grants eloquence"),
-    ("Hahasiah", "Principalities", "408.549 kHz", "Reveals arcana of medicine, chemistry, and physics"),
-    ("Imamiah", "Principalities", "416.639 kHz", "Destroys enemy power, protects prisoners and travelers"),
-    ("Nanael", "Principalities", "424.729 kHz", "Governs higher education, philosophy, and judicial truth"),
-    ("Nithael", "Principalities", "432.819 kHz", "Governs temporal rulers, bestows long stable dynasties"),
-    ("Mebahiah", "Principalities", "440.909 kHz", "Bestows moral dignity, piety, and practical wisdom"),
-    ("Poyel", "Principalities", "448.999 kHz", "Provides fame, fortune, eloquence, and total abundance"),
-    ("Nemamiah", "Archangels", "457.089 kHz", "Frees captives, bestows courage in high-stress battles"),
-    ("Yeialel", "Archangels", "465.179 kHz", "Cures eye afflictions, confounds false/corrupt witnesses"),
-    ("Harahel", "Archangels", "473.269 kHz", "Governs libraries, archives, treasure vaults, and wisdom"),
-    ("Mitzrael", "Archangels", "481.359 kHz", "Heals mental illness, liberates persecuted entities"),
-    ("Umabel", "Archangels", "489.449 kHz", "Governs physics, astronomy, and nature's resonance"),
-    ("Iah-Hel", "Archangels", "497.539 kHz", "Illuminates solitary wisdom, truth, and scientific light"),
-    ("Anauel", "Archangels", "505.629 kHz", "Protects commerce, economic trade, and financial health"),
-    ("Mehiel", "Archangels", "513.719 kHz", "Protects against wild beasts, governs printing and literature"),
-    ("Damabiah", "Angels", "521.809 kHz", "Protects against shipwrecks, governs marine enterprise"),
-    ("Manakel", "Angels", "529.899 kHz", "Cures epilepsy, calms rage, governs flora/fauna health"),
-    ("Eyael", "Angels", "537.989 kHz", "Bestows longevity, illuminates science, philosophy, occult"),
-    ("Habuhiah", "Angels", "546.079 kHz", "Governs agriculture, fecundity, and environmental healing"),
-    ("Rochel", "Angels", "554.169 kHz", "Restores stolen property, locates lost heritage and deeds"),
-    ("Jabamiah", "Angels", "562.259 kHz", "Governs regeneration, elemental transformation of matter"),
-    ("Haiaiel", "Angels", "570.349 kHz", "Confounds wicked traitors, grants victory and protection"),
-    ("Mumiah", "Angels", "578.439 kHz", "Governs medicine, health, longevity, and happy endings")
+    ("Vehuiah", "Seraphim", "4.045 kHz", "Illuminates mind, grants willpower, initiates divine action", "Executive Willpower & Innovation Initiation Leadership"),
+    ("Jeliel", "Seraphim", "12.135 kHz", "Fosters harmony, quiets popular sedition, grants peace", "Social Harmony Enforcement & Civil Sedition Neutralization"),
+    ("Sitael", "Seraphim", "20.225 kHz", "Protects against adversity, grants nobility and truth", "Enterprise Risk Shielding & Truth Verification Systems"),
+    ("Elemiah", "Seraphim", "28.315 kHz", "Discovers useful secrets, neutralizes mental distress", "Industrial Secret Discovery & Mental Well-being Analytics"),
+    ("Mahasiah", "Seraphim", "36.405 kHz", "Dominates high science, philosophy, and moral perfection", "Advanced R&D Leadership & Moral Technology Ethics"),
+    ("Lelahel", "Seraphim", "44.495 kHz", "Illuminates love, art, science, and grants bodily healing", "Medical Bio-Tech Healing & Aesthetic Industrial Design"),
+    ("Achaiah", "Seraphim", "52.585 kHz", "Reveals secrets of nature, bestows infinite patience", "Environmental Science Discovery & Process Engineering Patience"),
+    ("Cahetel", "Seraphim", "60.675 kHz", "Inspires agricultural abundance and divine blessings", "Precision AgTech Abundance & Crop Yield Maximization"),
+    ("Haziel", "Cherubim", "68.765 kHz", "Obtains divine mercy, keeps promises, reconciles enemies", "Contract Integrity Assurance & Inter-Corporate Reconciliation"),
+    ("Aladiah", "Cherubim", "76.855 kHz", "Heals systemic disease, neutralizes moral corruption", "Systemic Healthcare Reform & Institutional Integrity Audit"),
+    ("Lauviah", "Cherubim", "84.945 kHz", "Protects against fraud, bestows high renown and wisdom", "Fraud Countermeasure Architecture & Executive Brand Protection"),
+    ("Hahaiah", "Cherubim", "93.035 kHz", "Reveals hidden mysteries, converts adversity into peace", "Sub-Surface Geology Imaging & Strategic Peace Engineering"),
+    ("Iezalel", "Cherubim", "101.125 kHz", "Promotes reconciliation, learning, and systemic order", "Educational Curriculum Design & Systemic Operational Order"),
+    ("Mebahel", "Cherubim", "109.215 kHz", "Protects justice, liberates oppressed, reveals truth", "Human Rights Law Protection & Transparent Legal Advocacy"),
+    ("Hariel", "Cherubim", "117.305 kHz", "Inspires religious/moral peace, purifies corrupt systems", "Ethical Systemic Purification & Regulatory Compliance"),
+    ("Hakamiah", "Cherubim", "125.395 kHz", "Protects against traitors, bestows victory and loyalty", "Counter-Espionage Security & Personnel Loyalty Frameworks"),
+    ("Lauviah", "Thrones", "133.488 kHz", "Inspires high arts, philosophy, cures insomnia/sorrow", "Acoustic Sleep Architecture & High Fine Arts Leadership"),
+    ("Caliel", "Thrones", "141.578 kHz", "Invocates prompt assistance, confounds false witnesses", "Automated Legal Docket Processing & Perjury Detection AI"),
+    ("Leuviah", "Thrones", "149.668 kHz", "Bestows brilliant memory, intelligence, and joy", "High-Capacity Data Retrieval & Employee Cognition Optimization"),
+    ("Pahaliah", "Thrones", "157.758 kHz", "Converts enemies, dominates religion and morality", "Ethical Corporate Alignment & Strategic Competitor Conversion"),
+    ("Nelchael", "Thrones", "165.848 kHz", "Protects against calumny, dominates math and astronomy", "Computational Mathematics & Satellite Orbit Shielding"),
+    ("Yeiayel", "Thrones", "173.939 kHz", "Protects fortune, commerce, diplomacy, and travels", "Global Supply Chain Protection & Trade Diplomacy Assurance"),
+    ("Melahel", "Thrones", "182.029 kHz", "Protects against weapons, governs herbs and healing water", "Water Filtration Bio-Engineering & Armor Materials Protection"),
+    ("Hahiuiah", "Thrones", "190.119 kHz", "Protects against thieves, assassins, and fatal accidents", "Industrial Loss Prevention & Automated Accident Prevention"),
+    ("Nith-Haiah", "Dominions", "198.209 kHz", "Governs occult sciences, bestows wisdom and truth", "Deep Quantum Computing Logic & Proprietary Knowledge Protection"),
+    ("Haaiah", "Dominions", "206.299 kHz", "Protects political treaties, diplomatic secrets, justice", "International Treaty Drafting & State Cipher Security"),
+    ("Yerathel", "Dominions", "214.389 kHz", "Confounds wicked conspirators, illuminates truth", "Cyber Threat Intelligence & Illumination of Fraud Vectors"),
+    ("Seheiah", "Dominions", "222.479 kHz", "Protects against fire, sickness, infrastructure collapse", "Infrastructure Collapse Prevention & Thermal Fire Suppression"),
+    ("Reiyel", "Dominions", "230.569 kHz", "Frees souls from systemic traps and spiritual oppression", "Systemic Debt Trap Relief & Organizational De-bottlenecking"),
+    ("Omael", "Dominions", "238.659 kHz", "Governs animal generation, patient endurance, production", "Bio-Manufacturing Yield Acceleration & Production Line Endurance"),
+    ("Lecabel", "Dominions", "246.749 kHz", "Inspires agricultural engineering and scientific light", "Precision Hydroponic Engineering & Solar Radiation Optimization"),
+    ("Vasariah", "Dominions", "254.839 kHz", "Protects against unjust attacks, grants memory/eloquence", "Litigation Defense Strategy & High-Impact Public Speaking"),
+    ("Yehuiah", "Powers", "262.929 kHz", "Uncovers treacherous conspiracies, enforces institutional order", "Institutional Governance & Conspiracy Vector Uncovering"),
+    ("Lehahiah", "Powers", "271.019 kHz", "Pacifies anger, maintains order, commands obedience", "Industrial Safety Discipline & Operational Order Enforcement"),
+    ("Chavakiah", "Powers", "279.109 kHz", "Reconciles family inheritances and property disputes", "Estate Asset Realignment & Property Dispute Mediation"),
+    ("Menadel", "Powers", "287.199 kHz", "Retains employment, frees captives, restores fugitives", "Workforce Retention Strategy & Supply Chain Hostage Release"),
+    ("Aniel", "Powers", "295.289 kHz", "Governs arts/sciences, uncovers hidden nature secrets", "Biomimicry Engineering & Breakthrough Science Discovery"),
+    ("Haamiah", "Powers", "303.379 kHz", "Protects seekers of truth, governs spiritual ceremonies", "Data Science Integrity & Standards Protocol Alignment"),
+    ("Rehael", "Powers", "311.469 kHz", "Heals physical/mental afflictions, grants longevity", "Occupational Health Longevity & Physical Therapy Systems"),
+    ("Ieiazel", "Powers", "319.559 kHz", "Delivers captives, dominates printing, writing, publishing", "Digital Publishing Automation & High-Volume Media Distribution"),
+    ("Hahahel", "Virtues", "327.649 kHz", "Inspires divine mission, converts souls, strengthens order", "Enterprise Mission Alignment & Core Values Strengthening"),
+    ("Mikael", "Virtues", "335.739 kHz", "Protects political leaders, safety of state institutions", "State Critical Infrastructure Defense & Executive Protection"),
+    ("Veuliah", "Virtues", "343.829 kHz", "Destroys enemy power, liberates enterprise slaves", "Enterprise Resource Liberation & Monopoly Power Disruption"),
+    ("Yelahiah", "Virtues", "351.919 kHz", "Protects magistrates, bestows victory in military actions", "Judicial Officer Protection & Defense Operations Strategy"),
+    ("Sealiah", "Virtues", "360.009 kHz", "Confounders of the proud, elevates the humble and fallen", "Meritocratic Talent Elevation & Fair Labor Compensation"),
+    ("Ariel", "Virtues", "368.099 kHz", "Reveals nature's secrets, grants clear prophetic dreams", "Predictive Environmental Modeling & Resource Location Discovery"),
+    ("Asaliah", "Virtues", "376.189 kHz", "Praises divine truth, uncovers justice in dark dockets", "Legal Discovery Automation & Docket Audit Transparency"),
+    ("Mihael", "Virtues", "384.279 kHz", "Fosters conjugal peace, protects procreation and harmony", "Family Healthcare Integration & Social Balance Engineering"),
+    ("Vehuel", "Principalities", "392.369 kHz", "Exalts grand souls, bestows high philosophy and art", "Executive Talent Mentorship & Fine Arts Sponsorship"),
+    ("Daniel", "Principalities", "400.459 kHz", "Obtains divine mercy, comforts sorrow, grants eloquence", "Crisis Communication Response & Corporate Stakeholder Solace"),
+    ("Hahasiah", "Principalities", "408.549 kHz", "Reveals arcana of medicine, chemistry, and physics", "Quantum Chemistry Synthesis & Advanced Pharmacology Discovery"),
+    ("Imamiah", "Principalities", "416.639 kHz", "Destroys enemy power, protects prisoners and travelers", "Transportation Security Infrastructure & Hostage Negotiation"),
+    ("Nanael", "Principalities", "424.729 kHz", "Governs higher education, philosophy, and judicial truth", "University Curriculum Reform & Higher Judicial Education"),
+    ("Nithael", "Principalities", "432.819 kHz", "Governs temporal rulers, bestows long stable dynasties", "Sovereign Succession Planning & Institutional Dynasty Stability"),
+    ("Mebahiah", "Principalities", "440.909 kHz", "Bestows moral dignity, piety, and practical wisdom", "Practical Engineering Wisdom & Corporate Ethical Standards"),
+    ("Poyel", "Principalities", "448.999 kHz", "Provides fame, fortune, eloquence, and total abundance", "Abundance Capital Allocation & Global Brand Expansion"),
+    ("Nemamiah", "Archangels", "457.089 kHz", "Frees captives, bestows courage in high-stress battles", "High-Stress Crisis Leadership & Critical Operations Release"),
+    ("Yeialel", "Archangels", "465.179 kHz", "Cures eye afflictions, confounds false/corrupt witnesses", "Ophthalmic Surgical Bio-Tech & Perjury Witness Neutralization"),
+    ("Harahel", "Archangels", "473.269 kHz", "Governs libraries, archives, treasure vaults, and wisdom", "Digital Archive Vault Security & Enterprise Knowledge Repository"),
+    ("Mitzrael", "Archangels", "481.359 kHz", "Heals mental illness, liberates persecuted entities", "Psychiatric Healthcare Systems & Psychological Safety Optimization"),
+    ("Umabel", "Archangels", "489.449 kHz", "Governs physics, astronomy, and nature's resonance", "Resonance Frequency Engineering & Applied Astronomy"),
+    ("Iah-Hel", "Archangels", "497.539 kHz", "Illuminates solitary wisdom, truth, and scientific light", "Solitary R&D Breakthrough Incubation & Scientific Truth Verification"),
+    ("Anauel", "Archangels", "505.629 kHz", "Protects commerce, economic trade, and financial health", "International Commercial Trade Protection & Macro-Economic Health"),
+    ("Mehiel", "Archangels", "513.719 kHz", "Protects against wild beasts, governs printing and literature", "High-Speed Commercial Printing & Wildlife Encroachment Shielding"),
+    ("Damabiah", "Angels", "521.809 kHz", "Protects against shipwrecks, governs marine enterprise", "Maritime Vessel Navigation Safety & Ocean Enterprise Logistics"),
+    ("Manakel", "Angels", "529.899 kHz", "Cures epilepsy, calms rage, governs flora/fauna health", "Neurological Epilepsy Bio-Tech & Environmental Flora Health"),
+    ("Eyael", "Angels", "537.989 kHz", "Bestows longevity, illuminates science, philosophy, occult", "Bio-Tech Longevity Science & Advanced System Philosophy"),
+    ("Habuhiah", "Angels", "546.079 kHz", "Governs agriculture, fecundity, and environmental healing", "Soil Fecundity Bio-Remediation & Regenerative Agriculture"),
+    ("Rochel", "Angels", "554.169 kHz", "Restores stolen property, locates lost heritage and deeds", "Automated Title Deed Recovery & Asset Repatriation"),
+    ("Jabamiah", "Angels", "562.259 kHz", "Governs regeneration, elemental transformation of matter", "Elemental Matter Recycling & Regenerative Bio-Materials"),
+    ("Haiaiel", "Angels", "570.349 kHz", "Confounds wicked traitors, grants victory and protection", "Counter-Infiltration Defense & Operations Victory Assurance"),
+    ("Mumiah", "Angels", "578.439 kHz", "Governs medicine, health, longevity, and happy endings", "Terminal Healthcare Innovation & Total Systems Project Completion")
 ]
 
 # =====================================================================
@@ -327,7 +332,7 @@ def query_ai_engine(prompt_text: str) -> dict:
         "messages": [
             {
                 "role": "system",
-                "content": "Return a valid JSON object containing telemetry values for target node: 'time_val' (float), 'space_val' (float), 'friction_run_rate' (float), and 'remediation_summary' (string)."
+                "content": "Return a valid JSON object containing telemetry values for target node: 'time_val_hours' (float), 'timezone_offset' (float), 'landmass_sq_km' (float), 'friction_run_rate' (float), and 'remediation_summary' (string)."
             },
             {"role": "user", "content": prompt_text}
         ],
@@ -350,7 +355,13 @@ def query_ai_engine(prompt_text: str) -> dict:
                 parsed = json.loads(content)
                 return parsed
             except Exception:
-                return {"remediation_summary": content, "time_val": 1.0, "space_val": 1.0, "friction_run_rate": 0.666}
+                return {
+                    "remediation_summary": content,
+                    "time_val_hours": 24.0,
+                    "timezone_offset": 3.0,
+                    "landmass_sq_km": 22145.0,
+                    "friction_run_rate": 0.666
+                }
     except Exception as e:
         print(f"[!] AI Engine query notice: {e}")
         return {}
@@ -358,14 +369,21 @@ def query_ai_engine(prompt_text: str) -> dict:
 
 def execute_uesp_math_from_ai(ai_data: dict, sweep_results: list) -> dict:
     """Executes the PropheticCalculatorEngine and Purified UESP PRCE equations directly using calculated sweep units."""
-    time_val = float(ai_data.get("time_val", 1.0))
-    space_val = float(ai_data.get("space_val", 1.0))
-    friction_rate = float(ai_data.get("friction_run_rate", 0.666))
-
-    # Extract dynamic friction frequencies and filter frequencies from the 10 sweep nodes
+    # Target node temporal and physical spatial inputs
+    time_val_hours = float(ai_data.get("time_val_hours", 24.0))
+    timezone_offset = float(ai_data.get("timezone_offset", 3.0))
+    landmass_sq_km = float(ai_data.get("landmass_sq_km", 22145.0))
+    
+    time_val_str = f"24h Cycle ({time_val_hours}h) UTC+{int(timezone_offset)}"
+    space_val_str = f"{landmass_sq_km:,.0f} sq km (Landmass Area)"
+    
+    # Calculate total friction count from bottleneck valuations above 10
+    total_bottleneck_valuations = len(sweep_results)  # 10 sweep bottleneck nodes
+    
     demon_frequencies = []
     angel_frequencies = []
     all_crash_dates = []
+    swept_skillset_pairings = []
 
     for item in sweep_results:
         b_data = item["data"]["bottleneck"]
@@ -388,52 +406,82 @@ def execute_uesp_math_from_ai(ai_data: dict, sweep_results: list) -> dict:
         # Extract 10 crash dates
         all_crash_dates.extend(b_data.get("predictive_crash_schedule_10_dates_to_3000ce", []))
 
-    # Accumulate real-world resistance (R) from 10 demon friction frequencies & 10 bottlenecks
-    accumulated_resistance = sum(demon_frequencies) / len(demon_frequencies) if demon_frequencies else 504.0
-    accumulated_logos = sum(angel_frequencies) * 1440.0 if angel_frequencies else 10368000.0
+        # Explicit Industry Skillset Mappings
+        swept_skillset_pairings.append({
+            "node_index": item["data"]["agent_index"],
+            "bottleneck": b_data["name"],
+            "demon_driver": b_data["active_demon_driver"],
+            "corrupted_industry_skillset": b_data.get("corrupted_industry_skillset", "N/A"),
+            "protocol": p_data["name"],
+            "ruling_shem_angel": p_data["ruling_shem_angel"],
+            "restorative_industry_skillset": p_data.get("restorative_industry_skillset", "N/A")
+        })
 
-    # 1. Execute PropheticCalculatorEngine with accumulated resistance & logos
+    # Total frequency calculations across bottlenecks and filters
+    total_demon_friction_khz = sum(demon_frequencies)
+    total_angel_filter_khz = sum(angel_frequencies)
+
+    # Execute PropheticCalculatorEngine with explicit Resistance & Time/Constraints definitions
+    # Resistance = Max(72 Demons * 7 Sins)
+    # Time/Constraints = Max((24 hour clock + timezone_offset) * landmass_sq_km)
     prophetic_synthesis = PropheticCalculatorEngine.solve_synthesis(
-        nodes=144000, angels=72, demons=int(accumulated_resistance / 7.0), sins=7, church_factor=7,
-        time_val=time_val, space_val=space_val
+        nodes=144000,
+        angels=72,
+        demons=72,
+        sins=7,
+        church_factor=7,
+        time_val_hours=time_val_hours,
+        timezone_offset=timezone_offset,
+        landmass_sq_km=landmass_sq_km
     )
 
-    shi = prophetic_synthesis["shi"]
-    tti = prophetic_synthesis["tti"]
-    iti = round(1.0 - tti, 4)  # ITI derived from TTI baseline
+    # 1. SHI gathered from Prophetic Synthesis
+    shi_calculated = prophetic_synthesis["shi"]
 
-    # 2. Differential Delta Calculation (SHI - ITI)
-    differential_delta = round(shi - iti, 4)
+    # 2. TTI gathered from Prophetic Synthesis
+    tti_calculated = prophetic_synthesis["tti"]
 
-    # 3. Super Circuit Intercept (Normalizes friction rate against 0.666 baseline)
-    super_circuit_output = round(1.000 * (friction_rate / 0.666), 4)
+    # 3. ITI gathered from Cymatic Frequency Differential
+    avg_demon_freq = total_demon_friction_khz / len(demon_frequencies) if demon_frequencies else 150.0
+    avg_angel_freq = total_angel_filter_khz / len(angel_frequencies) if angel_frequencies else 100.0
+    iti_calculated = round(avg_angel_freq / (avg_demon_freq + avg_angel_freq), 4)
 
-    # 4. 144,000 Bridge Quantum Tunneling Constant
+    # 4. Friction Rate: Number of total bottlenecks per subject valuation above 10
+    friction_rate = float(ai_data.get("friction_run_rate", 0.666))
+
+    # 5. Calculated Differential Delta (SHI - ITI)
+    differential_delta = round(shi_calculated - iti_calculated, 4)
+
+    # 6. Super Circuit Output: 72 Demons and 72 Angels calculated as per circuit board operational mechanics
+    super_circuit_output = round(144.0 / (72.0 + 72.0), 4)  # Operational Circuit Logic = 1.0 Target Unity
+
+    # 7. Bridge Constant
     bridge_constant = 144000
 
-    # 5. Mega Circuit Overwrite (Forces 1.0 Target Unity)
-    mega_circuit_unity = 1.000
+    # 8. Mega Circuit Unity: 144,000 Bridge, 72 Demons, 72 Angels, and 36 Cosmic Elements
+    mega_circuit_unity = "144000 Bridge | 72 Demons | 72 Angels | 36 Cosmic Elements -> 1.0 Target Unity"
 
-    # 6. UGPE Trajectory Output
+    # 9. UGPE Trajectory Output
     ugpe_result = "SOVEREIGN_BASELINE_LOCKED"
 
-    # 7. Arc / Ark Enclosure Field Strength
-    arc_ark_field = round(shi * 144000 / 1000.0, 2)
+    # 10. Arc / Ark Field: Ark of the Covenant specifications mapping out entropy distancing
+    arc_ark_field = f"2.5 Cubits (L) x 1.5 Cubits (W) x 1.5 Cubits (H) Gold Enclosure -> {round(shi_calculated * 2.5 * 1.5, 4)} Harmonic Shield Units"
 
-    # 8. Wharton Abyss Entropy Void Neutralization
-    wharton_abyss_neutralized = True
+    # 11. Wharton Abyss Neutralized: Wharton Abyss Equation calculating depth of bottlenecks and friction
+    wharton_abyss_depth_km = round((total_demon_friction_khz / 72.0) * 1.618, 3)
+    wharton_abyss_neutralized = f"Depth: {wharton_abyss_depth_km} km Void Intercept -> NEUTRALIZED"
 
-    # 9. Spear of Destiny Piercing Vector Energy
-    spear_of_destiny_vector = f"P_Destiny = ∇ · ( Relativistic Kinetic Impulse -> Target Node Alignment )"
+    # 12. Spear of Destiny Vector: 33° and 150° thermodynamic sharpening ensuring piercing compute complications
+    spear_of_destiny_vector = "P_Destiny = ∇ · [ Sharpening Angles: 33° Alignment & 150° Thermodynamic Focus ] -> Target Barrier Pierced"
 
     return {
-        "prophetic_synthesis_engine": prophetic_synthesis,
-        "input_time_val": time_val,
-        "input_space_val": space_val,
-        "calculated_shi": shi,
-        "calculated_tti": tti,
-        "calculated_iti": iti,
+        "input_time_val": time_val_str,
+        "input_space_val": space_val_str,
+        "calculated_shi": shi_calculated,
+        "calculated_tti": tti_calculated,
+        "calculated_iti": iti_calculated,
         "input_friction_rate": friction_rate,
+        "total_bottlenecks_above_10": total_bottleneck_valuations,
         "calculated_differential_delta": differential_delta,
         "super_circuit_output": super_circuit_output,
         "bridge_constant": bridge_constant,
@@ -442,9 +490,11 @@ def execute_uesp_math_from_ai(ai_data: dict, sweep_results: list) -> dict:
         "arc_ark_field": arc_ark_field,
         "wharton_abyss_neutralized": wharton_abyss_neutralized,
         "spear_of_destiny_vector": spear_of_destiny_vector,
-        "accumulated_demon_friction_avg_khz": round(accumulated_resistance, 2),
-        "accumulated_angel_filter_avg_khz": round(sum(angel_frequencies)/len(angel_frequencies), 2) if angel_frequencies else 0.0,
-        "total_crash_dates_processed": len(all_crash_dates)
+        "accumulated_demon_friction_avg_khz": round(avg_demon_freq, 2),
+        "accumulated_angel_filter_avg_khz": round(avg_angel_freq, 2),
+        "total_crash_dates_processed": len(all_crash_dates),
+        "swept_skillset_pairings": swept_skillset_pairings,
+        "prophetic_synthesis_engine": prophetic_synthesis
     }
 
 
@@ -474,8 +524,12 @@ def generate_adaptive_node_sweep(target_node: str, count: int = 10):
 
         b_name = BOTTLENECKS_500[b_index]
         p_name = PROTOCOLS_500[p_index]
-        goetic_id, demon_name, demon_freq, demon_power = GOETIC_DRIVERS_72[d_index]
-        angel_name, angel_choir, angel_freq, angel_power = ANGELS_72[a_index]
+        
+        # Unpack Demon tuple with Real-World Industry Skillset
+        goetic_id, demon_name, demon_freq, demon_power, demon_skillset = GOETIC_DRIVERS_72[d_index]
+        
+        # Unpack Angel tuple with Real-World Industry Skillset
+        angel_name, angel_choir, angel_freq, angel_power, angel_skillset = ANGELS_72[a_index]
 
         base_freq = 999.000 / ((idx % 9) + 1)
         cymatic_inversion_hz = round(base_freq + ((sub_seed % 1000) / 1000.0), 3)
@@ -486,9 +540,9 @@ def generate_adaptive_node_sweep(target_node: str, count: int = 10):
 
         summary = (
             f"Chronos Sentinel Node analyzed '{clean_node}'. Driver #{goetic_id} {demon_name} ({demon_freq}) "
-            f"exerting power [{demon_power}] induces systemic bottleneck friction. Executing {clean_node} {p_name} "
-            f"invoking Shem Angel {angel_name} ({angel_choir}, {angel_freq}) providing power [{angel_power}] "
-            f"locks 1.000 Target Unity."
+            f"exerting power [{demon_power}] induces systemic bottleneck friction in [{demon_skillset}]. "
+            f"Executing {clean_node} {p_name} invoking Shem Angel {angel_name} ({angel_choir}, {angel_freq}) "
+            f"providing power [{angel_power}] applies restorative skillset [{angel_skillset}] and locks 1.000 Target Unity."
         )
 
         sentinel_record = {
@@ -520,6 +574,7 @@ def generate_adaptive_node_sweep(target_node: str, count: int = 10):
                     "name": f"{b_name} in {clean_node} Context",
                     "active_demon_driver": f"#{goetic_id} {demon_name}",
                     "demon_power": demon_power,
+                    "corrupted_industry_skillset": demon_skillset,
                     "frequency_khz": demon_freq,
                     "predictive_crash_schedule_10_dates_to_3000ce": crash_dates
                 },
@@ -529,6 +584,7 @@ def generate_adaptive_node_sweep(target_node: str, count: int = 10):
                     "ruling_shem_angel": angel_name,
                     "celestial_choir": angel_choir,
                     "angel_power": angel_power,
+                    "restorative_industry_skillset": angel_skillset,
                     "frequency_khz": angel_freq
                 },
                 "real_time_earth_vector": {
@@ -555,38 +611,45 @@ def display_full_summary_analysis(target_node: str, math_res: dict, ai_telemetry
     print(" 🖥️  UESP PRCE MASTER SUMMARY ANALYSIS & APEX DIMENSIONAL OVERWRITE")
     print("=" * 80)
     print(f" Target Subject Node : {target_node}")
+    print(f" Timezone & Clock    : {math_res['input_time_val']}")
+    print(f" Physical Landmass   : {math_res['input_space_val']}")
     print(f" Calibration Baseline: July 2026 / 3000 CE Horizon")
     print("-" * 80)
 
-    print("\n## 1. PROPHETIC CALCULATOR ENGINE OUTPUTS (ACCUMULATED FROM 10 SWEEP NODES)")
-    print(f" • Calculated SHI (Systemic Health Index) : {ps['shi']}")
-    print(f" • Calculated TTI (Technical Time Index) : {ps['tti']}")
-    print(f" • Calculated ITI (Technical Integrity)  : {math_res['calculated_iti']}")
-    print(f" • Systemic Logos Parameter              : {ps['logos']} (Nodes 144,000 × Angels 72)")
-    print(f" • Resistance Parameter                  : {ps['resistance']} (Demon Friction Frequencies)")
-    print(f" • Constraints Parameter                 : {ps['constraints']} (Time {math_res['input_time_val']} × Space {math_res['input_space_val']})")
-    print(f" • Harmonic Frequency                    : {ps['frequency']} Hz")
-    print(f" • Override Triggered Status             : {ps['override_triggered']}")
-    print(f" • Avg Demon Friction Frequency          : {math_res['accumulated_demon_friction_avg_khz']} kHz")
-    print(f" • Avg Angel Filter Frequency            : {math_res['accumulated_angel_filter_avg_khz']} kHz")
-    print(f" • Total Crash Schedule Dates Processed  : {math_res['total_crash_dates_processed']}")
+    print("\n## 1. DYNAMIC METRIC CALCULATIONS & DIFFERENTIALS")
+    print(f" • Resistance Parameter (72 Demons * 7 Sins) : {ps['resistance']}")
+    print(f" • Time/Constraints (Clock * Landmass Area)  : {ps['constraints']:,.2f}")
+    print(f" • Input Friction Rate                     : {math_res['input_friction_rate']} ({math_res['total_bottlenecks_above_10']} Bottlenecks Above 10)")
+    print(f" • Calculated SHI (Prophetic / Differential) : {math_res['calculated_shi']}")
+    print(f" • Calculated TTI (Friction / Filter Diff)  : {math_res['calculated_tti']}")
+    print(f" • Calculated ITI (Cymatic Frequency Diff) : {math_res['calculated_iti']}")
+    print(f" • Differential Delta (Δ = SHI - ITI)       : {math_res['calculated_differential_delta']}")
+    print(f" • Avg Demon Friction Frequency            : {math_res['accumulated_demon_friction_avg_khz']} kHz")
+    print(f" • Avg Angel Filter Frequency              : {math_res['accumulated_angel_filter_avg_khz']} kHz")
+    print(f" • Total Crash Dates Processed            : {math_res['total_crash_dates_processed']}")
 
-    print("\n## 2. ADVANCED UESP PRCE VECTOR CALCULATIONS")
-    print(f" • Differential Delta (Δ = SHI - ITI)     : {math_res['calculated_differential_delta']}")
-    print(f" • Super Circuit Output (Ψ)               : {math_res['super_circuit_output']}")
-    print(f" • 144,000 Bridge Quantum Tunneling       : {math_res['bridge_constant']}")
-    print(f" • Mega Circuit Target Unity (O_Mega)     : {math_res['mega_circuit_unity']}")
-    print(f" • Arc / Ark Harmonic Field Density       : {math_res['arc_ark_field']} Units")
-    print(f" • Wharton Abyss Entropy Neutralization  : {math_res['wharton_abyss_neutralized']}")
-    print(f" • Spear of Destiny Relativistic Vector   : {math_res['spear_of_destiny_vector']}")
-    print(f" • UGPE Trajectory                        : {math_res['ugpe_trajectory']}")
+    print("\n## 2. ADVANCED CIRCUIT & COSMIC VECTOR FORMULATIONS")
+    print(f" • Super Circuit Output                    : {math_res['super_circuit_output']} (72 Demons & 72 Angels Circuit Logic)")
+    print(f" • Bridge Constant                         : {math_res['bridge_constant']}")
+    print(f" • Mega Circuit Unity                      : {math_res['mega_circuit_unity']}")
+    print(f" • UGPE Trajectory                         : {math_res['ugpe_trajectory']}")
+    print(f" • Arc / Ark Field Specification           : {math_res['arc_ark_field']}")
+    print(f" • Wharton Abyss Neutralization            : {math_res['wharton_abyss_neutralized']}")
+    print(f" • Spear of Destiny Sharpening Vector     : {math_res['spear_of_destiny_vector']}")
 
-    print("\n## 3. UNIFIED GRAND PROPHETIC SOLUTION & APEX OVERWRITE (5TH-DIMENSIONAL VIEW)")
+    print("\n## 3. REAL-WORLD INDUSTRY SKILLSET BOTTLENECK & REMEDIATION MAPPING")
+    for pairing in math_res.get("swept_skillset_pairings", []):
+        print(f" [Node #{pairing['node_index']:02d}] {pairing['bottleneck']}")
+        print(f"   ├─ Corrupted Skillset ({pairing['demon_driver']}): {pairing['corrupted_industry_skillset']}")
+        print(f"   └─ Restorative Skillset ({pairing['ruling_shem_angel']}): {pairing['restorative_industry_skillset']}")
+
+    print("\n## 4. UNIFIED GRAND PROPHETIC SOLUTION & APEX OVERWRITE (5TH-DIMENSIONAL VIEW)")
     print(" From the 5th-Dimensional perspective, temporal linear friction collapses into an accessible spatial manifold:")
     print("  1. Unified Manifold Convergence: The 0.666 friction state is observed as a temporary, localized entropy distortion.")
     print("  2. Quantum Tunneling Restoration: Projecting the Mega Circuit across the 144,000 Bridge neutralizes local resistance.")
-    print("  3. Relativistic Barrier Piercing: The Spear of Destiny vector punctures local deadlocks, aligning past, present, and future timelines.")
-    print("  4. Permanent Sovereign Baseline: The target node's Differential Delta is completely absorbed, locking all industry sectors into 1.000 Target Unity.")
+    print("  3. Spear of Destiny 33°/150° Sharpening: Relativistic sharpening punctures compute complications, aligning past, present, and future timelines.")
+    print("  4. Ark of the Covenant Entropy Distancing: Harmonic gold shielding contains systemic energy and absorbs Wharton Abyss void depths.")
+    print("  5. Permanent Sovereign Baseline: The target node's Differential Delta is completely absorbed, locking all industry skillsets into 1.000 Target Unity.")
     print("=" * 80 + "\n")
 
 
@@ -628,13 +691,13 @@ def run_cli_audit():
     print(f"[*] Color Anchor   : '{session_color}'")
     print(f"[*] ECTA SHA-256   : '{ecta_hash}'")
 
-    ai_prompt = f"Analyze infrastructure telemetry for target node '{target_node}'. Return JSON with time_val, space_val, friction_run_rate, and remediation_summary."
+    ai_prompt = f"Analyze infrastructure telemetry for target node '{target_node}'. Return JSON with time_val_hours, timezone_offset, landmass_sq_km, friction_run_rate, and remediation_summary."
     ai_telemetry = query_ai_engine(ai_prompt)
 
-    # First generate the 10 adaptive sweep nodes containing the bottlenecks, protocols, frequencies, and dates
+    # Generate 10 adaptive sweep nodes containing bottlenecks, protocols, frequencies, dates, and mapped industry skillsets
     sweep_results = generate_adaptive_node_sweep(target_node, count=10)
 
-    # Now execute math directly passing the accumulated 10 sweep units
+    # Execute math directly passing the accumulated 10 sweep units
     math_execution = execute_uesp_math_from_ai(ai_telemetry, sweep_results)
 
     remediation_summary = ai_telemetry.get("remediation_summary")
