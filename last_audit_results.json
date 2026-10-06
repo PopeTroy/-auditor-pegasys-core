@@ -1,13 +1,13 @@
 {
   "security": {
-    "session_guid": "sess_yoz9fm0",
-    "session_color": "#A855F7",
-    "utc_timestamp": "2026-10-06T11:38:24.922162+00:00",
-    "ecta_hash": "sha256:d85e4802d37ce82e6256100ec053cb3db29a1d5e4e4922eceaabe4d7eb3c6706",
+    "session_guid": "sess_zpdtwh9",
+    "session_color": "#FF0055",
+    "utc_timestamp": "2026-10-06T12:42:22.068080+00:00",
+    "ecta_hash": "sha256:dcd1c2c8ffefffd854d3b2d5ab576756ed3c0b7ae9f0f2a59337c96f1ca6e26b",
     "ai_cloud_status": "GROQ_ACTIVE",
     "popia_status": "COMPLIANT_NO_PII_EXPOSED"
   },
-  "quantum_header": "QUANTUM-CYCLE: 059763 / 144000 | COLOR: #A855F7 | CATALOG: 500/500",
+  "quantum_header": "QUANTUM-CYCLE: 059763 / 144000 | COLOR: #FF0055 | CATALOG: 500/500",
   "uesp_prce_equations": {
     "SUPER_CIRCUIT": "\\Psi_{\\text{SuperCircuit}} = \\int \\left( \\frac{\\mathcal{F}(t)}{0.666} \\cdot e^{-\\lambda \\Delta t} \\right) dt",
     "BRIDGE_144000": "\\mathcal{B}_{144000} = \\sum_{k=1}^{144000} \\left( \\Phi_k \\Omega \\right) \\cdot \\frac{\\hbar}{\\sqrt{1 - v^2/c^2}}",
@@ -23,110 +23,110 @@
     "input_space_val": "22,145 sq km (Landmass Area)",
     "calculated_shi": 0.0344,
     "calculated_tti": 4.9e-05,
-    "calculated_iti": 0.7146,
+    "calculated_iti": 0.7318,
     "input_friction_rate": 0.666,
     "total_bottlenecks_above_10": 10,
-    "calculated_differential_delta": -0.6802,
+    "calculated_differential_delta": -0.6974,
     "super_circuit_output": 1.0,
     "bridge_constant": 144000,
     "mega_circuit_unity": "144000 Bridge | 72 Demons | 72 Angels | 36 Cosmic Elements -> 1.0 Target Unity",
     "ugpe_trajectory": "SOVEREIGN_BASELINE_LOCKED",
     "arc_ark_field": "2.5 Cubits (L) x 1.5 Cubits (W) x 1.5 Cubits (H) Gold Enclosure -> 0.129 Harmonic Shield Units",
-    "wharton_abyss_neutralized": "Depth: 29.559 km Void Intercept -> NEUTRALIZED",
+    "wharton_abyss_neutralized": "Depth: 20.055 km Void Intercept -> NEUTRALIZED",
     "spear_of_destiny_vector": "P_Destiny = ∇ · [ Sharpening Angles: 33° Alignment & 150° Thermodynamic Focus ] -> Target Barrier Pierced",
-    "accumulated_demon_friction_avg_khz": 131.53,
-    "accumulated_angel_filter_avg_khz": 329.27,
+    "accumulated_demon_friction_avg_khz": 89.24,
+    "accumulated_angel_filter_avg_khz": 243.51,
     "total_crash_dates_processed": 100,
     "swept_skillset_pairings": [
       {
         "node_index": 1,
-        "bottleneck": "Fuel Subsidy Labor Action Friction in America Context",
-        "demon_driver": "#27 Ronove",
-        "corrupted_industry_skillset": "Linguistic Translation & Corporate Diplomacy",
-        "protocol": "America Sovereign Debt Tokenization Stabilization",
-        "ruling_shem_angel": "Imamiah",
-        "restorative_industry_skillset": "Transportation Security Infrastructure & Hostage Negotiation"
+        "bottleneck": "Nuclear Isolation Deployment Delay in Afghanistan Context",
+        "demon_driver": "#6 Valefor",
+        "corrupted_industry_skillset": "Cybersecurity & Intrusion Vector Analysis",
+        "protocol": "Afghanistan Pharmaceutical Synthesis Vault Stabilization",
+        "ruling_shem_angel": "Leuviah",
+        "restorative_industry_skillset": "High-Capacity Data Retrieval & Employee Cognition Optimization"
       },
       {
         "node_index": 2,
-        "bottleneck": "Fuel Subsidy Sedimentation in America Context",
-        "demon_driver": "#52 Alloces",
-        "corrupted_industry_skillset": "Autonomous Robotics Engineering & Observational Astronomy",
-        "protocol": "America Maglev Rail Mesh Integration",
-        "ruling_shem_angel": "Lecabel",
-        "restorative_industry_skillset": "Precision Hydroponic Engineering & Solar Radiation Optimization"
+        "bottleneck": "Pipeline Pressure Verification Backlog in Afghanistan Context",
+        "demon_driver": "#11 Gusion",
+        "corrupted_industry_skillset": "Corporate Relations & Institutional Reputation Management",
+        "protocol": "Afghanistan Pharmaceutical Synthesis Vault Optimization",
+        "ruling_shem_angel": "Yehuiah",
+        "restorative_industry_skillset": "Institutional Governance & Conspiracy Vector Uncovering"
       },
       {
         "node_index": 3,
-        "bottleneck": "Transmission Line Refrigeration Breakdown in America Context",
-        "demon_driver": "#13 Beleth",
-        "corrupted_industry_skillset": "Media Communications & Public Sentiment Engineering",
-        "protocol": "America Logos Currency Ledger Harmonization",
-        "ruling_shem_angel": "Aladiah",
-        "restorative_industry_skillset": "Systemic Healthcare Reform & Institutional Integrity Audit"
+        "bottleneck": "Fuel Subsidy Isolation Friction in Afghanistan Context",
+        "demon_driver": "#20 Purson",
+        "corrupted_industry_skillset": "Financial Audit & Treasure Asset Recovery",
+        "protocol": "Afghanistan Geothermal Heat Sink Synchronization",
+        "ruling_shem_angel": "Lauviah",
+        "restorative_industry_skillset": "Fraud Countermeasure Architecture & Executive Brand Protection"
       },
       {
         "node_index": 4,
-        "bottleneck": "Nuclear Isolation Litigation Freeze in America Context",
-        "demon_driver": "#55 Orobas",
-        "corrupted_industry_skillset": "Anti-Fraud Compliance & Integrity Verification",
-        "protocol": "America Hydrogen Transit Network Balancing",
-        "ruling_shem_angel": "Haiaiel",
-        "restorative_industry_skillset": "Counter-Infiltration Defense & Operations Victory Assurance"
+        "bottleneck": "Micro-Grid Sync Monopolization in Afghanistan Context",
+        "demon_driver": "#25 Glasya-Labolas",
+        "corrupted_industry_skillset": "Stealth Defense Systems & Tactical Camouflage",
+        "protocol": "Afghanistan Intermodal Sorting Matrix Synchronization",
+        "ruling_shem_angel": "Pahaliah",
+        "restorative_industry_skillset": "Ethical Corporate Alignment & Strategic Competitor Conversion"
       },
       {
         "node_index": 5,
-        "bottleneck": "Hydroelectric Reservoir Depletion Velocity in America Context",
-        "demon_driver": "#7 Amon",
-        "corrupted_industry_skillset": "Diplomatic Negotiation & Geopolitical Arbitration",
-        "protocol": "America Customs Clearance Node Activation",
-        "ruling_shem_angel": "Mahasiah",
-        "restorative_industry_skillset": "Advanced R&D Leadership & Moral Technology Ethics"
+        "bottleneck": "Water Filtration Schema Incompatibility in Afghanistan Context",
+        "demon_driver": "#9 Paimon",
+        "corrupted_industry_skillset": "Enterprise Architecture & Mass Operational Alignment",
+        "protocol": "Afghanistan Maglev Rail Mesh Stabilization",
+        "ruling_shem_angel": "Rochel",
+        "restorative_industry_skillset": "Automated Title Deed Recovery & Asset Repatriation"
       },
       {
         "node_index": 6,
-        "bottleneck": "Micro-Grid Sync Deployment Delay in America Context",
-        "demon_driver": "#69 Decarabia",
-        "corrupted_industry_skillset": "Agricultural Botany & Optical Holography Engineering",
-        "protocol": "America Refining Catalyst Vector Harmonization",
-        "ruling_shem_angel": "Vasariah",
-        "restorative_industry_skillset": "Litigation Defense Strategy & High-Impact Public Speaking"
+        "bottleneck": "Sovereign Debt Uplink Interference in Afghanistan Context",
+        "demon_driver": "#46 Bifrons",
+        "corrupted_industry_skillset": "Surveying Geometry & Hazardous Waste Management",
+        "protocol": "Afghanistan Customs Tariff Bypass Stabilization",
+        "ruling_shem_angel": "Hahaiah",
+        "restorative_industry_skillset": "Sub-Surface Geology Imaging & Strategic Peace Engineering"
       },
       {
         "node_index": 7,
-        "bottleneck": "Micro-Grid Sync Synchronization Lag in America Context",
-        "demon_driver": "#36 Stolas",
-        "corrupted_industry_skillset": "Astrophysics & Mineralogy Extraction Systems",
-        "protocol": "America Universal Knowledge Vault Acceleration",
-        "ruling_shem_angel": "Manakel",
-        "restorative_industry_skillset": "Neurological Epilepsy Bio-Tech & Environmental Flora Health"
+        "bottleneck": "Pipeline Pressure Devaluation Cascade in Afghanistan Context",
+        "demon_driver": "#52 Alloces",
+        "corrupted_industry_skillset": "Autonomous Robotics Engineering & Observational Astronomy",
+        "protocol": "Afghanistan Container Crane Optimizer Stabilization",
+        "ruling_shem_angel": "Yelahiah",
+        "restorative_industry_skillset": "Judicial Officer Protection & Defense Operations Strategy"
       },
       {
         "node_index": 8,
-        "bottleneck": "Pipeline Pressure Regulatory Stagnation in America Context",
-        "demon_driver": "#46 Bifrons",
-        "corrupted_industry_skillset": "Surveying Geometry & Hazardous Waste Management",
-        "protocol": "America Automated Trade Settlement Harmonization",
-        "ruling_shem_angel": "Sitael",
-        "restorative_industry_skillset": "Enterprise Risk Shielding & Truth Verification Systems"
+        "bottleneck": "Hydroelectric Reservoir Bottleneck in Afghanistan Context",
+        "demon_driver": "#38 Halphas",
+        "corrupted_industry_skillset": "Heavy Munitions Supply Chain & Defensive Tower Construction",
+        "protocol": "Afghanistan Silo Aeration Array Integration",
+        "ruling_shem_angel": "Hakamiah",
+        "restorative_industry_skillset": "Counter-Espionage Security & Personnel Loyalty Frameworks"
       },
       {
         "node_index": 9,
-        "bottleneck": "Pipeline Pressure Fleet Attrition Rate in America Context",
-        "demon_driver": "#60 Vapula",
-        "corrupted_industry_skillset": "Precision Machining & Advanced Vocational Technical Education",
-        "protocol": "America Regenerative Bio-Char Injector Optimization",
-        "ruling_shem_angel": "Mumiah",
-        "restorative_industry_skillset": "Terminal Healthcare Innovation & Total Systems Project Completion"
+        "bottleneck": "Water Filtration Impedance in Afghanistan Context",
+        "demon_driver": "#28 Berith",
+        "corrupted_industry_skillset": "Chemical Metallurgy & Institutional Banking Status",
+        "protocol": "Afghanistan Subsea Cable Ring Array Deployment",
+        "ruling_shem_angel": "Umabel",
+        "restorative_industry_skillset": "Resonance Frequency Engineering & Applied Astronomy"
       },
       {
         "node_index": 10,
-        "bottleneck": "Micro-Grid Sync Allocation Friction in America Context",
-        "demon_driver": "#30 Forneus",
-        "corrupted_industry_skillset": "Global Public Relations & Brand Reputation Strategy",
-        "protocol": "America Quantum Encryption Uplink Harmonization",
-        "ruling_shem_angel": "Jabamiah",
-        "restorative_industry_skillset": "Elemental Matter Recycling & Regenerative Bio-Materials"
+        "bottleneck": "Thermal Cooling Monopolization in Afghanistan Context",
+        "demon_driver": "#33 Gaap",
+        "corrupted_industry_skillset": "Spatial Computing & Dimensional Telemetry",
+        "protocol": "Afghanistan Silo Aeration Array Reinforcement",
+        "ruling_shem_angel": "Nelchael",
+        "restorative_industry_skillset": "Computational Mathematics & Satellite Orbit Shielding"
       }
     ],
     "prophetic_synthesis_engine": {
@@ -146,8 +146,8 @@
       "nvidia_nim_accelerated": false,
       "groq_accelerated": true,
       "physical_stability_seal": "Rin (Strength)",
-      "phase_locked_loop_mark": "PLL-MARK-#01-B41E6560",
-      "cymatic_999_inversion_hz": "999.199 Hz",
+      "phase_locked_loop_mark": "PLL-MARK-#01-F04AD4D2",
+      "cymatic_999_inversion_hz": "999.439 Hz",
       "optical_metrology_matrix": {
         "system": "High-Resolution Terahertz Scanning",
         "perception_mode": "Sub-Surface Physical Strain Isolation"
@@ -155,11 +155,11 @@
       "mhd_energy_amplifier": {
         "stage": 1,
         "system_name": "Magnetohydrodynamic Fluid Accelerator",
-        "amplification_factor": "5.99x"
+        "amplification_factor": "8.39x"
       },
       "thermodynamic_balancer": {
         "mode": "Thermodynamic Heat Sink Balance",
-        "ambient_thermal_balance": "97.4%"
+        "ambient_thermal_balance": "98.9%"
       },
       "containment_array": {
         "seal_formula": "Eight-Vector Frequency Lock",
@@ -170,7 +170,7 @@
         "overclock_capacity": "125% Overclock Capacity"
       },
       "laser_ablation_deconstruction": {
-        "mode": "Triangular Beam Molecular Isolation"
+        "mode": "Femtosecond Laser Atomic Ablation"
       },
       "state_recovery": {
         "protocol": "Izanagi Active (Zero-Point Rewind)",
@@ -181,19 +181,19 @@
       },
       "data": {
         "agent_index": 1,
-        "target_node_subject": "America",
+        "target_node_subject": "Afghanistan",
         "biblical_apocalyptic_framework": {
           "apocalyptic_seal": "Fourth Seal: Pale Horse",
           "sealed_tribe": "Gad",
           "temporal_birth_gate": "March Gate"
         },
         "bottleneck": {
-          "id": "B-200",
-          "name": "Fuel Subsidy Labor Action Friction in America Context",
-          "active_demon_driver": "#27 Ronove",
-          "demon_power": "Teaches rhetoric, foreign languages, and loyal service",
-          "corrupted_industry_skillset": "Linguistic Translation & Corporate Diplomacy",
-          "frequency_khz": "89.910 kHz",
+          "id": "B-440",
+          "name": "Nuclear Isolation Deployment Delay in Afghanistan Context",
+          "active_demon_driver": "#6 Valefor",
+          "demon_power": "Tempters into theft and deceitful network breaches",
+          "corrupted_industry_skillset": "Cybersecurity & Intrusion Vector Analysis",
+          "frequency_khz": "19.980 kHz",
           "predictive_crash_schedule_10_dates_to_3000ce": [
             "2030-08-20",
             "2124-08-20",
@@ -208,20 +208,20 @@
           ]
         },
         "protocol": {
-          "id": "P-138",
-          "name": "America Sovereign Debt Tokenization Stabilization",
-          "ruling_shem_angel": "Imamiah",
-          "celestial_choir": "Principalities",
-          "angel_power": "Destroys enemy power, protects prisoners and travelers",
-          "restorative_industry_skillset": "Transportation Security Infrastructure & Hostage Negotiation",
-          "frequency_khz": "416.639 kHz"
+          "id": "P-278",
+          "name": "Afghanistan Pharmaceutical Synthesis Vault Stabilization",
+          "ruling_shem_angel": "Leuviah",
+          "celestial_choir": "Thrones",
+          "angel_power": "Bestows brilliant memory, intelligence, and joy",
+          "restorative_industry_skillset": "High-Capacity Data Retrieval & Employee Cognition Optimization",
+          "frequency_khz": "149.668 kHz"
         },
         "real_time_earth_vector": {
-          "applied_speed": "0.599x acceleration",
+          "applied_speed": "0.839x acceleration",
           "frequency_shift_to_ultra_green": "+59.000 kHz shift",
-          "exact_spatial_target": "America Grid Node #1"
+          "exact_spatial_target": "Afghanistan Grid Node #1"
         },
-        "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'America'. Driver #27 Ronove (89.910 kHz) exerting power [Teaches rhetoric, foreign languages, and loyal service] induces systemic bottleneck friction in [Linguistic Translation & Corporate Diplomacy]. Executing America Sovereign Debt Tokenization Stabilization invoking Shem Angel Imamiah (Principalities, 416.639 kHz) providing power [Destroys enemy power, protects prisoners and travelers] applies restorative skillset [Transportation Security Infrastructure & Hostage Negotiation] and locks 1.000 Target Unity."
+        "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Afghanistan'. Driver #6 Valefor (19.980 kHz) exerting power [Tempters into theft and deceitful network breaches] induces systemic bottleneck friction in [Cybersecurity & Intrusion Vector Analysis]. Executing Afghanistan Pharmaceutical Synthesis Vault Stabilization invoking Shem Angel Leuviah (Thrones, 149.668 kHz) providing power [Bestows brilliant memory, intelligence, and joy] applies restorative skillset [High-Capacity Data Retrieval & Employee Cognition Optimization] and locks 1.000 Target Unity."
       }
     },
     {
@@ -230,20 +230,20 @@
       "nvidia_nim_accelerated": false,
       "groq_accelerated": true,
       "physical_stability_seal": "Pyo (Energy Flow)",
-      "phase_locked_loop_mark": "PLL-MARK-#02-B41E6560",
-      "cymatic_999_inversion_hz": "499.655 Hz",
+      "phase_locked_loop_mark": "PLL-MARK-#02-F04AD4D2",
+      "cymatic_999_inversion_hz": "499.895 Hz",
       "optical_metrology_matrix": {
         "system": "High-Resolution Terahertz Scanning",
         "perception_mode": "Sub-Surface Physical Strain Isolation"
       },
       "mhd_energy_amplifier": {
-        "stage": 1,
-        "system_name": "Magnetohydrodynamic Fluid Accelerator",
-        "amplification_factor": "2.55x"
+        "stage": 2,
+        "system_name": "Thermal Plasma Kinetic Generator",
+        "amplification_factor": "1.95x"
       },
       "thermodynamic_balancer": {
-        "mode": "Thermodynamic Heat Sink Balance",
-        "ambient_thermal_balance": "93.0%"
+        "mode": "Piezoelectric Pressure Transduction",
+        "ambient_thermal_balance": "94.5%"
       },
       "containment_array": {
         "seal_formula": "Eight-Vector Frequency Lock",
@@ -261,51 +261,51 @@
         "function": "Atomic Snapshot State Rollback"
       },
       "physical_telemetry": {
-        "anti_phase_dampening": "90.5%"
+        "anti_phase_dampening": "96.5%"
       },
       "data": {
         "agent_index": 2,
-        "target_node_subject": "America",
+        "target_node_subject": "Afghanistan",
         "biblical_apocalyptic_framework": {
           "apocalyptic_seal": "Fourth Seal: Pale Horse",
           "sealed_tribe": "Gad",
           "temporal_birth_gate": "March Gate"
         },
         "bottleneck": {
-          "id": "B-156",
-          "name": "Fuel Subsidy Sedimentation in America Context",
-          "active_demon_driver": "#52 Alloces",
-          "demon_power": "Teaches astronomy, liberal arts, provides excellent familiars",
-          "corrupted_industry_skillset": "Autonomous Robotics Engineering & Observational Astronomy",
-          "frequency_khz": "173.160 kHz",
+          "id": "B-396",
+          "name": "Pipeline Pressure Verification Backlog in Afghanistan Context",
+          "active_demon_driver": "#11 Gusion",
+          "demon_power": "Reconciles friendships and grants honor/dignity",
+          "corrupted_industry_skillset": "Corporate Relations & Institutional Reputation Management",
+          "frequency_khz": "36.630 kHz",
           "predictive_crash_schedule_10_dates_to_3000ce": [
-            "2031-12-28",
-            "2105-12-28",
-            "2179-12-28",
-            "2253-12-28",
-            "2327-12-28",
-            "2401-12-28",
-            "2475-12-28",
-            "2549-12-28",
-            "2623-12-28",
-            "2697-12-28"
+            "2031-12-04",
+            "2120-12-04",
+            "2209-12-04",
+            "2298-12-04",
+            "2387-12-04",
+            "2476-12-04",
+            "2565-12-04",
+            "2654-12-04",
+            "2743-12-04",
+            "2832-12-04"
           ]
         },
         "protocol": {
-          "id": "P-073",
-          "name": "America Maglev Rail Mesh Integration",
-          "ruling_shem_angel": "Lecabel",
-          "celestial_choir": "Dominions",
-          "angel_power": "Inspires agricultural engineering and scientific light",
-          "restorative_industry_skillset": "Precision Hydroponic Engineering & Solar Radiation Optimization",
-          "frequency_khz": "246.749 kHz"
+          "id": "P-275",
+          "name": "Afghanistan Pharmaceutical Synthesis Vault Optimization",
+          "ruling_shem_angel": "Yehuiah",
+          "celestial_choir": "Powers",
+          "angel_power": "Uncovers treacherous conspiracies, enforces institutional order",
+          "restorative_industry_skillset": "Institutional Governance & Conspiracy Vector Uncovering",
+          "frequency_khz": "262.929 kHz"
         },
         "real_time_earth_vector": {
-          "applied_speed": "0.555x acceleration",
+          "applied_speed": "0.795x acceleration",
           "frequency_shift_to_ultra_green": "+55.000 kHz shift",
-          "exact_spatial_target": "America Grid Node #2"
+          "exact_spatial_target": "Afghanistan Grid Node #2"
         },
-        "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'America'. Driver #52 Alloces (173.160 kHz) exerting power [Teaches astronomy, liberal arts, provides excellent familiars] induces systemic bottleneck friction in [Autonomous Robotics Engineering & Observational Astronomy]. Executing America Maglev Rail Mesh Integration invoking Shem Angel Lecabel (Dominions, 246.749 kHz) providing power [Inspires agricultural engineering and scientific light] applies restorative skillset [Precision Hydroponic Engineering & Solar Radiation Optimization] and locks 1.000 Target Unity."
+        "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Afghanistan'. Driver #11 Gusion (36.630 kHz) exerting power [Reconciles friendships and grants honor/dignity] induces systemic bottleneck friction in [Corporate Relations & Institutional Reputation Management]. Executing Afghanistan Pharmaceutical Synthesis Vault Optimization invoking Shem Angel Yehuiah (Powers, 262.929 kHz) providing power [Uncovers treacherous conspiracies, enforces institutional order] applies restorative skillset [Institutional Governance & Conspiracy Vector Uncovering] and locks 1.000 Target Unity."
       }
     },
     {
@@ -314,20 +314,20 @@
       "nvidia_nim_accelerated": false,
       "groq_accelerated": true,
       "physical_stability_seal": "To (Harmony)",
-      "phase_locked_loop_mark": "PLL-MARK-#03-B41E6560",
-      "cymatic_999_inversion_hz": "333.577 Hz",
+      "phase_locked_loop_mark": "PLL-MARK-#03-F04AD4D2",
+      "cymatic_999_inversion_hz": "333.658 Hz",
       "optical_metrology_matrix": {
-        "system": "High-Resolution Terahertz Scanning",
-        "perception_mode": "Sub-Surface Physical Strain Isolation"
+        "system": "Multi-Spectral Quantum Interferometry",
+        "perception_mode": "Micro-Vibration Defect Perception"
       },
       "mhd_energy_amplifier": {
-        "stage": 1,
-        "system_name": "Magnetohydrodynamic Fluid Accelerator",
-        "amplification_factor": "1.77x"
+        "stage": 2,
+        "system_name": "Thermal Plasma Kinetic Generator",
+        "amplification_factor": "6.58x"
       },
       "thermodynamic_balancer": {
-        "mode": "Thermodynamic Heat Sink Balance",
-        "ambient_thermal_balance": "92.7%"
+        "mode": "Piezoelectric Pressure Transduction",
+        "ambient_thermal_balance": "95.8%"
       },
       "containment_array": {
         "seal_formula": "Four-Node Phase Locking Seal",
@@ -338,58 +338,58 @@
         "overclock_capacity": "125% Overclock Capacity"
       },
       "laser_ablation_deconstruction": {
-        "mode": "Femtosecond Laser Atomic Ablation"
+        "mode": "Triangular Beam Molecular Isolation"
       },
       "state_recovery": {
-        "protocol": "Izanami Active (PID Error Lock)",
-        "function": "Closed-Loop Feedback Trap"
+        "protocol": "Izanagi Active (Zero-Point Rewind)",
+        "function": "Atomic Snapshot State Rollback"
       },
       "physical_telemetry": {
-        "anti_phase_dampening": "92.7%"
+        "anti_phase_dampening": "98.8%"
       },
       "data": {
         "agent_index": 3,
-        "target_node_subject": "America",
+        "target_node_subject": "Afghanistan",
         "biblical_apocalyptic_framework": {
           "apocalyptic_seal": "Fourth Seal: Pale Horse",
-          "sealed_tribe": "Gad",
-          "temporal_birth_gate": "March Gate"
+          "sealed_tribe": "Judah",
+          "temporal_birth_gate": "January Gate"
         },
         "bottleneck": {
-          "id": "B-078",
-          "name": "Transmission Line Refrigeration Breakdown in America Context",
-          "active_demon_driver": "#13 Beleth",
-          "demon_power": "Causes overwhelming love and emotional subversion",
-          "corrupted_industry_skillset": "Media Communications & Public Sentiment Engineering",
-          "frequency_khz": "43.290 kHz",
+          "id": "B-159",
+          "name": "Fuel Subsidy Isolation Friction in Afghanistan Context",
+          "active_demon_driver": "#20 Purson",
+          "demon_power": "Discovers hidden treasures and provides clear divination",
+          "corrupted_industry_skillset": "Financial Audit & Treasure Asset Recovery",
+          "frequency_khz": "66.600 kHz",
           "predictive_crash_schedule_10_dates_to_3000ce": [
-            "2028-06-22",
-            "2100-06-22",
-            "2172-06-22",
-            "2244-06-22",
-            "2316-06-22",
-            "2388-06-22",
-            "2460-06-22",
-            "2532-06-22",
-            "2604-06-22",
-            "2676-06-22"
+            "2029-07-27",
+            "2116-07-27",
+            "2203-07-27",
+            "2290-07-27",
+            "2377-07-27",
+            "2464-07-27",
+            "2551-07-27",
+            "2638-07-27",
+            "2725-07-27",
+            "2812-07-27"
           ]
         },
         "protocol": {
-          "id": "P-037",
-          "name": "America Logos Currency Ledger Harmonization",
-          "ruling_shem_angel": "Aladiah",
+          "id": "P-104",
+          "name": "Afghanistan Geothermal Heat Sink Synchronization",
+          "ruling_shem_angel": "Lauviah",
           "celestial_choir": "Cherubim",
-          "angel_power": "Heals systemic disease, neutralizes moral corruption",
-          "restorative_industry_skillset": "Systemic Healthcare Reform & Institutional Integrity Audit",
-          "frequency_khz": "76.855 kHz"
+          "angel_power": "Protects against fraud, bestows high renown and wisdom",
+          "restorative_industry_skillset": "Fraud Countermeasure Architecture & Executive Brand Protection",
+          "frequency_khz": "84.945 kHz"
         },
         "real_time_earth_vector": {
-          "applied_speed": "0.477x acceleration",
-          "frequency_shift_to_ultra_green": "+37.000 kHz shift",
-          "exact_spatial_target": "America Grid Node #3"
+          "applied_speed": "0.558x acceleration",
+          "frequency_shift_to_ultra_green": "+38.000 kHz shift",
+          "exact_spatial_target": "Afghanistan Grid Node #3"
         },
-        "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'America'. Driver #13 Beleth (43.290 kHz) exerting power [Causes overwhelming love and emotional subversion] induces systemic bottleneck friction in [Media Communications & Public Sentiment Engineering]. Executing America Logos Currency Ledger Harmonization invoking Shem Angel Aladiah (Cherubim, 76.855 kHz) providing power [Heals systemic disease, neutralizes moral corruption] applies restorative skillset [Systemic Healthcare Reform & Institutional Integrity Audit] and locks 1.000 Target Unity."
+        "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Afghanistan'. Driver #20 Purson (66.600 kHz) exerting power [Discovers hidden treasures and provides clear divination] induces systemic bottleneck friction in [Financial Audit & Treasure Asset Recovery]. Executing Afghanistan Geothermal Heat Sink Synchronization invoking Shem Angel Lauviah (Cherubim, 84.945 kHz) providing power [Protects against fraud, bestows high renown and wisdom] applies restorative skillset [Fraud Countermeasure Architecture & Executive Brand Protection] and locks 1.000 Target Unity."
       }
     },
     {
@@ -398,82 +398,82 @@
       "nvidia_nim_accelerated": false,
       "groq_accelerated": true,
       "physical_stability_seal": "Sha (Healing)",
-      "phase_locked_loop_mark": "PLL-MARK-#04-B41E6560",
-      "cymatic_999_inversion_hz": "250.694 Hz",
+      "phase_locked_loop_mark": "PLL-MARK-#04-F04AD4D2",
+      "cymatic_999_inversion_hz": "250.203 Hz",
       "optical_metrology_matrix": {
-        "system": "Multi-Spectral Quantum Interferometry",
-        "perception_mode": "Micro-Vibration Defect Perception"
+        "system": "High-Resolution Terahertz Scanning",
+        "perception_mode": "Sub-Surface Physical Strain Isolation"
       },
       "mhd_energy_amplifier": {
         "stage": 1,
         "system_name": "Magnetohydrodynamic Fluid Accelerator",
-        "amplification_factor": "8.44x"
+        "amplification_factor": "8.53x"
       },
       "thermodynamic_balancer": {
         "mode": "Piezoelectric Pressure Transduction",
-        "ambient_thermal_balance": "99.4%"
+        "ambient_thermal_balance": "92.8%"
       },
       "containment_array": {
-        "seal_formula": "Eight-Vector Frequency Lock",
-        "containment_function": "Continuous Field Transformation Lock"
+        "seal_formula": "Four-Node Phase Locking Seal",
+        "containment_function": "Dual Layer Sub-Harmonic Isolation"
       },
       "overclock_telemetry": {
         "active_gate": "Overclock Stage 4: Wave Velocity Peak",
         "overclock_capacity": "275% Overclock Capacity"
       },
       "laser_ablation_deconstruction": {
-        "mode": "Triangular Beam Molecular Isolation"
+        "mode": "Femtosecond Laser Atomic Ablation"
       },
       "state_recovery": {
         "protocol": "Izanami Active (PID Error Lock)",
         "function": "Closed-Loop Feedback Trap"
       },
       "physical_telemetry": {
-        "anti_phase_dampening": "97.4%"
+        "anti_phase_dampening": "86.3%"
       },
       "data": {
         "agent_index": 4,
-        "target_node_subject": "America",
+        "target_node_subject": "Afghanistan",
         "biblical_apocalyptic_framework": {
           "apocalyptic_seal": "Fourth Seal: Pale Horse",
-          "sealed_tribe": "Judah",
-          "temporal_birth_gate": "January Gate"
+          "sealed_tribe": "Gad",
+          "temporal_birth_gate": "March Gate"
         },
         "bottleneck": {
-          "id": "B-445",
-          "name": "Nuclear Isolation Litigation Freeze in America Context",
-          "active_demon_driver": "#55 Orobas",
-          "demon_power": "Discovers divinity, prevents deception, bestows prelacies/dignities",
-          "corrupted_industry_skillset": "Anti-Fraud Compliance & Integrity Verification",
-          "frequency_khz": "183.150 kHz",
+          "id": "B-454",
+          "name": "Micro-Grid Sync Monopolization in Afghanistan Context",
+          "active_demon_driver": "#25 Glasya-Labolas",
+          "demon_power": "Incites bloodshed, teaches all arts, grants invisibility",
+          "corrupted_industry_skillset": "Stealth Defense Systems & Tactical Camouflage",
+          "frequency_khz": "83.250 kHz",
           "predictive_crash_schedule_10_dates_to_3000ce": [
-            "2035-01-13",
-            "2123-01-13",
-            "2211-01-13",
-            "2299-01-13",
-            "2387-01-13",
-            "2475-01-13",
-            "2563-01-13",
-            "2651-01-13",
-            "2739-01-13",
-            "2827-01-13"
+            "2029-10-14",
+            "2125-10-14",
+            "2221-10-14",
+            "2317-10-14",
+            "2413-10-14",
+            "2509-10-14",
+            "2605-10-14",
+            "2701-10-14",
+            "2797-10-14",
+            "2893-10-14"
           ]
         },
         "protocol": {
-          "id": "P-060",
-          "name": "America Hydrogen Transit Network Balancing",
-          "ruling_shem_angel": "Haiaiel",
-          "celestial_choir": "Angels",
-          "angel_power": "Confounds wicked traitors, grants victory and protection",
-          "restorative_industry_skillset": "Counter-Infiltration Defense & Operations Victory Assurance",
-          "frequency_khz": "570.349 kHz"
+          "id": "P-404",
+          "name": "Afghanistan Intermodal Sorting Matrix Synchronization",
+          "ruling_shem_angel": "Pahaliah",
+          "celestial_choir": "Thrones",
+          "angel_power": "Converts enemies, dominates religion and morality",
+          "restorative_industry_skillset": "Ethical Corporate Alignment & Strategic Competitor Conversion",
+          "frequency_khz": "157.758 kHz"
         },
         "real_time_earth_vector": {
-          "applied_speed": "0.844x acceleration",
-          "frequency_shift_to_ultra_green": "+44.000 kHz shift",
-          "exact_spatial_target": "America Grid Node #4"
+          "applied_speed": "0.853x acceleration",
+          "frequency_shift_to_ultra_green": "+33.000 kHz shift",
+          "exact_spatial_target": "Afghanistan Grid Node #4"
         },
-        "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'America'. Driver #55 Orobas (183.150 kHz) exerting power [Discovers divinity, prevents deception, bestows prelacies/dignities] induces systemic bottleneck friction in [Anti-Fraud Compliance & Integrity Verification]. Executing America Hydrogen Transit Network Balancing invoking Shem Angel Haiaiel (Angels, 570.349 kHz) providing power [Confounds wicked traitors, grants victory and protection] applies restorative skillset [Counter-Infiltration Defense & Operations Victory Assurance] and locks 1.000 Target Unity."
+        "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Afghanistan'. Driver #25 Glasya-Labolas (83.250 kHz) exerting power [Incites bloodshed, teaches all arts, grants invisibility] induces systemic bottleneck friction in [Stealth Defense Systems & Tactical Camouflage]. Executing Afghanistan Intermodal Sorting Matrix Synchronization invoking Shem Angel Pahaliah (Thrones, 157.758 kHz) providing power [Converts enemies, dominates religion and morality] applies restorative skillset [Ethical Corporate Alignment & Strategic Competitor Conversion] and locks 1.000 Target Unity."
       }
     },
     {
@@ -482,20 +482,20 @@
       "nvidia_nim_accelerated": false,
       "groq_accelerated": true,
       "physical_stability_seal": "Kai (Awareness)",
-      "phase_locked_loop_mark": "PLL-MARK-#05-B41E6560",
-      "cymatic_999_inversion_hz": "200.060 Hz",
+      "phase_locked_loop_mark": "PLL-MARK-#05-F04AD4D2",
+      "cymatic_999_inversion_hz": "200.042 Hz",
       "optical_metrology_matrix": {
         "system": "Multi-Spectral Quantum Interferometry",
         "perception_mode": "Micro-Vibration Defect Perception"
       },
       "mhd_energy_amplifier": {
-        "stage": 1,
-        "system_name": "Magnetohydrodynamic Fluid Accelerator",
-        "amplification_factor": "2.60x"
+        "stage": 2,
+        "system_name": "Thermal Plasma Kinetic Generator",
+        "amplification_factor": "2.42x"
       },
       "thermodynamic_balancer": {
-        "mode": "Piezoelectric Pressure Transduction",
-        "ambient_thermal_balance": "93.5%"
+        "mode": "Thermodynamic Heat Sink Balance",
+        "ambient_thermal_balance": "99.2%"
       },
       "containment_array": {
         "seal_formula": "Eight-Vector Frequency Lock",
@@ -506,58 +506,58 @@
         "overclock_capacity": "125% Overclock Capacity"
       },
       "laser_ablation_deconstruction": {
-        "mode": "Triangular Beam Molecular Isolation"
+        "mode": "Femtosecond Laser Atomic Ablation"
       },
       "state_recovery": {
-        "protocol": "Izanami Active (PID Error Lock)",
-        "function": "Closed-Loop Feedback Trap"
+        "protocol": "Izanagi Active (Zero-Point Rewind)",
+        "function": "Atomic Snapshot State Rollback"
       },
       "physical_telemetry": {
-        "anti_phase_dampening": "93.0%"
+        "anti_phase_dampening": "95.2%"
       },
       "data": {
         "agent_index": 5,
-        "target_node_subject": "America",
+        "target_node_subject": "Afghanistan",
         "biblical_apocalyptic_framework": {
           "apocalyptic_seal": "Fourth Seal: Pale Horse",
           "sealed_tribe": "Judah",
           "temporal_birth_gate": "January Gate"
         },
         "bottleneck": {
-          "id": "B-261",
-          "name": "Hydroelectric Reservoir Depletion Velocity in America Context",
-          "active_demon_driver": "#7 Amon",
-          "demon_power": "Reconciles feuds and reveals past and future events",
-          "corrupted_industry_skillset": "Diplomatic Negotiation & Geopolitical Arbitration",
-          "frequency_khz": "23.310 kHz",
+          "id": "B-243",
+          "name": "Water Filtration Schema Incompatibility in Afghanistan Context",
+          "active_demon_driver": "#9 Paimon",
+          "demon_power": "Teaches all arts/sciences and binds subjects to absolute will",
+          "corrupted_industry_skillset": "Enterprise Architecture & Mass Operational Alignment",
+          "frequency_khz": "29.970 kHz",
           "predictive_crash_schedule_10_dates_to_3000ce": [
-            "2036-05-25",
-            "2118-05-25",
-            "2200-05-25",
-            "2282-05-25",
-            "2364-05-25",
-            "2446-05-25",
-            "2528-05-25",
-            "2610-05-25",
-            "2692-05-25",
-            "2774-05-25"
+            "2033-11-19",
+            "2128-11-19",
+            "2223-11-19",
+            "2318-11-19",
+            "2413-11-19",
+            "2508-11-19",
+            "2603-11-19",
+            "2698-11-19",
+            "2793-11-19",
+            "2888-11-19"
           ]
         },
         "protocol": {
-          "id": "P-392",
-          "name": "America Customs Clearance Node Activation",
-          "ruling_shem_angel": "Mahasiah",
-          "celestial_choir": "Seraphim",
-          "angel_power": "Dominates high science, philosophy, and moral perfection",
-          "restorative_industry_skillset": "Advanced R&D Leadership & Moral Technology Ethics",
-          "frequency_khz": "36.405 kHz"
+          "id": "P-078",
+          "name": "Afghanistan Maglev Rail Mesh Stabilization",
+          "ruling_shem_angel": "Rochel",
+          "celestial_choir": "Angels",
+          "angel_power": "Restores stolen property, locates lost heritage and deeds",
+          "restorative_industry_skillset": "Automated Title Deed Recovery & Asset Repatriation",
+          "frequency_khz": "554.169 kHz"
         },
         "real_time_earth_vector": {
-          "applied_speed": "0.66x acceleration",
-          "frequency_shift_to_ultra_green": "+40.000 kHz shift",
-          "exact_spatial_target": "America Grid Node #5"
+          "applied_speed": "0.642x acceleration",
+          "frequency_shift_to_ultra_green": "+22.000 kHz shift",
+          "exact_spatial_target": "Afghanistan Grid Node #5"
         },
-        "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'America'. Driver #7 Amon (23.310 kHz) exerting power [Reconciles feuds and reveals past and future events] induces systemic bottleneck friction in [Diplomatic Negotiation & Geopolitical Arbitration]. Executing America Customs Clearance Node Activation invoking Shem Angel Mahasiah (Seraphim, 36.405 kHz) providing power [Dominates high science, philosophy, and moral perfection] applies restorative skillset [Advanced R&D Leadership & Moral Technology Ethics] and locks 1.000 Target Unity."
+        "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Afghanistan'. Driver #9 Paimon (29.970 kHz) exerting power [Teaches all arts/sciences and binds subjects to absolute will] induces systemic bottleneck friction in [Enterprise Architecture & Mass Operational Alignment]. Executing Afghanistan Maglev Rail Mesh Stabilization invoking Shem Angel Rochel (Angels, 554.169 kHz) providing power [Restores stolen property, locates lost heritage and deeds] applies restorative skillset [Automated Title Deed Recovery & Asset Repatriation] and locks 1.000 Target Unity."
       }
     },
     {
@@ -566,8 +566,8 @@
       "nvidia_nim_accelerated": false,
       "groq_accelerated": true,
       "physical_stability_seal": "Jin (Insight)",
-      "phase_locked_loop_mark": "PLL-MARK-#06-B41E6560",
-      "cymatic_999_inversion_hz": "167.489 Hz",
+      "phase_locked_loop_mark": "PLL-MARK-#06-F04AD4D2",
+      "cymatic_999_inversion_hz": "166.541 Hz",
       "optical_metrology_matrix": {
         "system": "High-Resolution Terahertz Scanning",
         "perception_mode": "Sub-Surface Physical Strain Isolation"
@@ -575,179 +575,11 @@
       "mhd_energy_amplifier": {
         "stage": 2,
         "system_name": "Thermal Plasma Kinetic Generator",
-        "amplification_factor": "2.89x"
-      },
-      "thermodynamic_balancer": {
-        "mode": "Thermodynamic Heat Sink Balance",
-        "ambient_thermal_balance": "96.4%"
-      },
-      "containment_array": {
-        "seal_formula": "Eight-Vector Frequency Lock",
-        "containment_function": "Continuous Field Transformation Lock"
-      },
-      "overclock_telemetry": {
-        "active_gate": "Overclock Stage 4: Wave Velocity Peak",
-        "overclock_capacity": "275% Overclock Capacity"
-      },
-      "laser_ablation_deconstruction": {
-        "mode": "Femtosecond Laser Atomic Ablation"
-      },
-      "state_recovery": {
-        "protocol": "Izanagi Active (Zero-Point Rewind)",
-        "function": "Atomic Snapshot State Rollback"
-      },
-      "physical_telemetry": {
-        "anti_phase_dampening": "89.9%"
-      },
-      "data": {
-        "agent_index": 6,
-        "target_node_subject": "America",
-        "biblical_apocalyptic_framework": {
-          "apocalyptic_seal": "Fifth Seal: Altar of Martyrs",
-          "sealed_tribe": "Gad",
-          "temporal_birth_gate": "March Gate"
-        },
-        "bottleneck": {
-          "id": "B-490",
-          "name": "Micro-Grid Sync Deployment Delay in America Context",
-          "active_demon_driver": "#69 Decarabia",
-          "demon_power": "Teaches virtues of birds/herbs, commands illusionary phantoms",
-          "corrupted_industry_skillset": "Agricultural Botany & Optical Holography Engineering",
-          "frequency_khz": "229.770 kHz",
-          "predictive_crash_schedule_10_dates_to_3000ce": [
-            "2035-10-22",
-            "2128-10-22",
-            "2221-10-22",
-            "2314-10-22",
-            "2407-10-22",
-            "2500-10-22",
-            "2593-10-22",
-            "2686-10-22",
-            "2779-10-22",
-            "2872-10-22"
-          ]
-        },
-        "protocol": {
-          "id": "P-437",
-          "name": "America Refining Catalyst Vector Harmonization",
-          "ruling_shem_angel": "Vasariah",
-          "celestial_choir": "Dominions",
-          "angel_power": "Protects against unjust attacks, grants memory/eloquence",
-          "restorative_industry_skillset": "Litigation Defense Strategy & High-Impact Public Speaking",
-          "frequency_khz": "254.839 kHz"
-        },
-        "real_time_earth_vector": {
-          "applied_speed": "0.889x acceleration",
-          "frequency_shift_to_ultra_green": "+49.000 kHz shift",
-          "exact_spatial_target": "America Grid Node #6"
-        },
-        "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'America'. Driver #69 Decarabia (229.770 kHz) exerting power [Teaches virtues of birds/herbs, commands illusionary phantoms] induces systemic bottleneck friction in [Agricultural Botany & Optical Holography Engineering]. Executing America Refining Catalyst Vector Harmonization invoking Shem Angel Vasariah (Dominions, 254.839 kHz) providing power [Protects against unjust attacks, grants memory/eloquence] applies restorative skillset [Litigation Defense Strategy & High-Impact Public Speaking] and locks 1.000 Target Unity."
-      }
-    },
-    {
-      "sandbox_id": "sentinel-c07",
-      "status": "EXECUTED",
-      "nvidia_nim_accelerated": false,
-      "groq_accelerated": true,
-      "physical_stability_seal": "Rin (Strength)",
-      "phase_locked_loop_mark": "PLL-MARK-#07-B41E6560",
-      "cymatic_999_inversion_hz": "143.173 Hz",
-      "optical_metrology_matrix": {
-        "system": "High-Resolution Terahertz Scanning",
-        "perception_mode": "Sub-Surface Physical Strain Isolation"
-      },
-      "mhd_energy_amplifier": {
-        "stage": 2,
-        "system_name": "Thermal Plasma Kinetic Generator",
-        "amplification_factor": "4.59x"
-      },
-      "thermodynamic_balancer": {
-        "mode": "Thermodynamic Heat Sink Balance",
-        "ambient_thermal_balance": "98.4%"
-      },
-      "containment_array": {
-        "seal_formula": "Four-Node Phase Locking Seal",
-        "containment_function": "Dual Layer Sub-Harmonic Isolation"
-      },
-      "overclock_telemetry": {
-        "active_gate": "Overclock Stage 1: Thermal Gate Opening",
-        "overclock_capacity": "125% Overclock Capacity"
-      },
-      "laser_ablation_deconstruction": {
-        "mode": "Triangular Beam Molecular Isolation"
-      },
-      "state_recovery": {
-        "protocol": "Izanagi Active (Zero-Point Rewind)",
-        "function": "Atomic Snapshot State Rollback"
-      },
-      "physical_telemetry": {
-        "anti_phase_dampening": "96.9%"
-      },
-      "data": {
-        "agent_index": 7,
-        "target_node_subject": "America",
-        "biblical_apocalyptic_framework": {
-          "apocalyptic_seal": "Fifth Seal: Altar of Martyrs",
-          "sealed_tribe": "Gad",
-          "temporal_birth_gate": "March Gate"
-        },
-        "bottleneck": {
-          "id": "B-460",
-          "name": "Micro-Grid Sync Synchronization Lag in America Context",
-          "active_demon_driver": "#36 Stolas",
-          "demon_power": "Teaches astronomy, virtues of herbs, and precious stones",
-          "corrupted_industry_skillset": "Astrophysics & Mineralogy Extraction Systems",
-          "frequency_khz": "119.880 kHz",
-          "predictive_crash_schedule_10_dates_to_3000ce": [
-            "2040-12-08",
-            "2117-12-08",
-            "2194-12-08",
-            "2271-12-08",
-            "2348-12-08",
-            "2425-12-08",
-            "2502-12-08",
-            "2579-12-08",
-            "2656-12-08",
-            "2733-12-08"
-          ]
-        },
-        "protocol": {
-          "id": "P-029",
-          "name": "America Universal Knowledge Vault Acceleration",
-          "ruling_shem_angel": "Manakel",
-          "celestial_choir": "Angels",
-          "angel_power": "Cures epilepsy, calms rage, governs flora/fauna health",
-          "restorative_industry_skillset": "Neurological Epilepsy Bio-Tech & Environmental Flora Health",
-          "frequency_khz": "529.899 kHz"
-        },
-        "real_time_earth_vector": {
-          "applied_speed": "0.859x acceleration",
-          "frequency_shift_to_ultra_green": "+39.000 kHz shift",
-          "exact_spatial_target": "America Grid Node #7"
-        },
-        "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'America'. Driver #36 Stolas (119.880 kHz) exerting power [Teaches astronomy, virtues of herbs, and precious stones] induces systemic bottleneck friction in [Astrophysics & Mineralogy Extraction Systems]. Executing America Universal Knowledge Vault Acceleration invoking Shem Angel Manakel (Angels, 529.899 kHz) providing power [Cures epilepsy, calms rage, governs flora/fauna health] applies restorative skillset [Neurological Epilepsy Bio-Tech & Environmental Flora Health] and locks 1.000 Target Unity."
-      }
-    },
-    {
-      "sandbox_id": "sentinel-c08",
-      "status": "EXECUTED",
-      "nvidia_nim_accelerated": false,
-      "groq_accelerated": true,
-      "physical_stability_seal": "Pyo (Energy Flow)",
-      "phase_locked_loop_mark": "PLL-MARK-#08-B41E6560",
-      "cymatic_999_inversion_hz": "125.739 Hz",
-      "optical_metrology_matrix": {
-        "system": "Multi-Spectral Quantum Interferometry",
-        "perception_mode": "Micro-Vibration Defect Perception"
-      },
-      "mhd_energy_amplifier": {
-        "stage": 2,
-        "system_name": "Thermal Plasma Kinetic Generator",
-        "amplification_factor": "6.64x"
+        "amplification_factor": "2.41x"
       },
       "thermodynamic_balancer": {
         "mode": "Piezoelectric Pressure Transduction",
-        "ambient_thermal_balance": "96.4%"
+        "ambient_thermal_balance": "99.1%"
       },
       "containment_array": {
         "seal_formula": "Eight-Vector Frequency Lock",
@@ -765,77 +597,77 @@
         "function": "Closed-Loop Feedback Trap"
       },
       "physical_telemetry": {
-        "anti_phase_dampening": "95.4%"
+        "anti_phase_dampening": "85.1%"
       },
       "data": {
-        "agent_index": 8,
-        "target_node_subject": "America",
+        "agent_index": 6,
+        "target_node_subject": "Afghanistan",
         "biblical_apocalyptic_framework": {
           "apocalyptic_seal": "Fifth Seal: Altar of Martyrs",
-          "sealed_tribe": "Judah",
-          "temporal_birth_gate": "January Gate"
+          "sealed_tribe": "Gad",
+          "temporal_birth_gate": "March Gate"
         },
         "bottleneck": {
-          "id": "B-365",
-          "name": "Pipeline Pressure Regulatory Stagnation in America Context",
+          "id": "B-042",
+          "name": "Sovereign Debt Uplink Interference in Afghanistan Context",
           "active_demon_driver": "#46 Bifrons",
           "demon_power": "Teaches astrology, geometry, herbs, and moves dead bodies",
           "corrupted_industry_skillset": "Surveying Geometry & Hazardous Waste Management",
           "frequency_khz": "153.180 kHz",
           "predictive_crash_schedule_10_dates_to_3000ce": [
-            "2035-01-21",
-            "2108-01-21",
-            "2181-01-21",
-            "2254-01-21",
-            "2327-01-21",
-            "2400-01-21",
-            "2473-01-21",
-            "2546-01-21",
-            "2619-01-21",
-            "2692-01-21"
+            "2032-10-02",
+            "2127-10-02",
+            "2222-10-02",
+            "2317-10-02",
+            "2412-10-02",
+            "2507-10-02",
+            "2602-10-02",
+            "2697-10-02",
+            "2792-10-02",
+            "2887-10-02"
           ]
         },
         "protocol": {
-          "id": "P-367",
-          "name": "America Automated Trade Settlement Harmonization",
-          "ruling_shem_angel": "Sitael",
-          "celestial_choir": "Seraphim",
-          "angel_power": "Protects against adversity, grants nobility and truth",
-          "restorative_industry_skillset": "Enterprise Risk Shielding & Truth Verification Systems",
-          "frequency_khz": "20.225 kHz"
+          "id": "P-128",
+          "name": "Afghanistan Customs Tariff Bypass Stabilization",
+          "ruling_shem_angel": "Hahaiah",
+          "celestial_choir": "Cherubim",
+          "angel_power": "Reveals hidden mysteries, converts adversity into peace",
+          "restorative_industry_skillset": "Sub-Surface Geology Imaging & Strategic Peace Engineering",
+          "frequency_khz": "93.035 kHz"
         },
         "real_time_earth_vector": {
-          "applied_speed": "0.764x acceleration",
-          "frequency_shift_to_ultra_green": "+44.000 kHz shift",
-          "exact_spatial_target": "America Grid Node #8"
+          "applied_speed": "0.441x acceleration",
+          "frequency_shift_to_ultra_green": "+21.000 kHz shift",
+          "exact_spatial_target": "Afghanistan Grid Node #6"
         },
-        "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'America'. Driver #46 Bifrons (153.180 kHz) exerting power [Teaches astrology, geometry, herbs, and moves dead bodies] induces systemic bottleneck friction in [Surveying Geometry & Hazardous Waste Management]. Executing America Automated Trade Settlement Harmonization invoking Shem Angel Sitael (Seraphim, 20.225 kHz) providing power [Protects against adversity, grants nobility and truth] applies restorative skillset [Enterprise Risk Shielding & Truth Verification Systems] and locks 1.000 Target Unity."
+        "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Afghanistan'. Driver #46 Bifrons (153.180 kHz) exerting power [Teaches astrology, geometry, herbs, and moves dead bodies] induces systemic bottleneck friction in [Surveying Geometry & Hazardous Waste Management]. Executing Afghanistan Customs Tariff Bypass Stabilization invoking Shem Angel Hahaiah (Cherubim, 93.035 kHz) providing power [Reveals hidden mysteries, converts adversity into peace] applies restorative skillset [Sub-Surface Geology Imaging & Strategic Peace Engineering] and locks 1.000 Target Unity."
       }
     },
     {
-      "sandbox_id": "sentinel-c09",
+      "sandbox_id": "sentinel-c07",
       "status": "EXECUTED",
       "nvidia_nim_accelerated": false,
       "groq_accelerated": true,
-      "physical_stability_seal": "To (Harmony)",
-      "phase_locked_loop_mark": "PLL-MARK-#09-B41E6560",
-      "cymatic_999_inversion_hz": "111.878 Hz",
+      "physical_stability_seal": "Rin (Strength)",
+      "phase_locked_loop_mark": "PLL-MARK-#07-F04AD4D2",
+      "cymatic_999_inversion_hz": "143.077 Hz",
       "optical_metrology_matrix": {
-        "system": "Multi-Spectral Quantum Interferometry",
-        "perception_mode": "Micro-Vibration Defect Perception"
+        "system": "High-Resolution Terahertz Scanning",
+        "perception_mode": "Sub-Surface Physical Strain Isolation"
       },
       "mhd_energy_amplifier": {
         "stage": 2,
         "system_name": "Thermal Plasma Kinetic Generator",
-        "amplification_factor": "3.78x"
+        "amplification_factor": "6.63x"
       },
       "thermodynamic_balancer": {
-        "mode": "Thermodynamic Heat Sink Balance",
-        "ambient_thermal_balance": "97.8%"
+        "mode": "Piezoelectric Pressure Transduction",
+        "ambient_thermal_balance": "96.3%"
       },
       "containment_array": {
-        "seal_formula": "Four-Node Phase Locking Seal",
-        "containment_function": "Dual Layer Sub-Harmonic Isolation"
+        "seal_formula": "Eight-Vector Frequency Lock",
+        "containment_function": "Continuous Field Transformation Lock"
       },
       "overclock_telemetry": {
         "active_gate": "Overclock Stage 1: Thermal Gate Opening",
@@ -845,77 +677,77 @@
         "mode": "Triangular Beam Molecular Isolation"
       },
       "state_recovery": {
-        "protocol": "Izanagi Active (Zero-Point Rewind)",
-        "function": "Atomic Snapshot State Rollback"
+        "protocol": "Izanami Active (PID Error Lock)",
+        "function": "Closed-Loop Feedback Trap"
       },
       "physical_telemetry": {
-        "anti_phase_dampening": "90.8%"
+        "anti_phase_dampening": "97.3%"
       },
       "data": {
-        "agent_index": 9,
-        "target_node_subject": "America",
+        "agent_index": 7,
+        "target_node_subject": "Afghanistan",
         "biblical_apocalyptic_framework": {
           "apocalyptic_seal": "Fifth Seal: Altar of Martyrs",
-          "sealed_tribe": "Judah",
-          "temporal_birth_gate": "January Gate"
+          "sealed_tribe": "Gad",
+          "temporal_birth_gate": "March Gate"
         },
         "bottleneck": {
-          "id": "B-379",
-          "name": "Pipeline Pressure Fleet Attrition Rate in America Context",
-          "active_demon_driver": "#60 Vapula",
-          "demon_power": "Teaches manual crafts, philosophy, and advanced technical knowledge",
-          "corrupted_industry_skillset": "Precision Machining & Advanced Vocational Technical Education",
-          "frequency_khz": "199.800 kHz",
+          "id": "B-364",
+          "name": "Pipeline Pressure Devaluation Cascade in Afghanistan Context",
+          "active_demon_driver": "#52 Alloces",
+          "demon_power": "Teaches astronomy, liberal arts, provides excellent familiars",
+          "corrupted_industry_skillset": "Autonomous Robotics Engineering & Observational Astronomy",
+          "frequency_khz": "173.160 kHz",
           "predictive_crash_schedule_10_dates_to_3000ce": [
-            "2034-03-03",
-            "2123-03-03",
-            "2212-03-03",
-            "2301-03-03",
-            "2390-03-03",
-            "2479-03-03",
-            "2568-03-03",
-            "2657-03-03",
-            "2746-03-03",
-            "2835-03-03"
+            "2034-12-12",
+            "2129-12-12",
+            "2224-12-12",
+            "2319-12-12",
+            "2414-12-12",
+            "2509-12-12",
+            "2604-12-12",
+            "2699-12-12",
+            "2794-12-12",
+            "2889-12-12"
           ]
         },
         "protocol": {
-          "id": "P-305",
-          "name": "America Regenerative Bio-Char Injector Optimization",
-          "ruling_shem_angel": "Mumiah",
-          "celestial_choir": "Angels",
-          "angel_power": "Governs medicine, health, longevity, and happy endings",
-          "restorative_industry_skillset": "Terminal Healthcare Innovation & Total Systems Project Completion",
-          "frequency_khz": "578.439 kHz"
+          "id": "P-148",
+          "name": "Afghanistan Container Crane Optimizer Stabilization",
+          "ruling_shem_angel": "Yelahiah",
+          "celestial_choir": "Virtues",
+          "angel_power": "Protects magistrates, bestows victory in military actions",
+          "restorative_industry_skillset": "Judicial Officer Protection & Defense Operations Strategy",
+          "frequency_khz": "351.919 kHz"
         },
         "real_time_earth_vector": {
-          "applied_speed": "0.778x acceleration",
-          "frequency_shift_to_ultra_green": "+58.000 kHz shift",
-          "exact_spatial_target": "America Grid Node #9"
+          "applied_speed": "0.763x acceleration",
+          "frequency_shift_to_ultra_green": "+23.000 kHz shift",
+          "exact_spatial_target": "Afghanistan Grid Node #7"
         },
-        "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'America'. Driver #60 Vapula (199.800 kHz) exerting power [Teaches manual crafts, philosophy, and advanced technical knowledge] induces systemic bottleneck friction in [Precision Machining & Advanced Vocational Technical Education]. Executing America Regenerative Bio-Char Injector Optimization invoking Shem Angel Mumiah (Angels, 578.439 kHz) providing power [Governs medicine, health, longevity, and happy endings] applies restorative skillset [Terminal Healthcare Innovation & Total Systems Project Completion] and locks 1.000 Target Unity."
+        "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Afghanistan'. Driver #52 Alloces (173.160 kHz) exerting power [Teaches astronomy, liberal arts, provides excellent familiars] induces systemic bottleneck friction in [Autonomous Robotics Engineering & Observational Astronomy]. Executing Afghanistan Container Crane Optimizer Stabilization invoking Shem Angel Yelahiah (Virtues, 351.919 kHz) providing power [Protects magistrates, bestows victory in military actions] applies restorative skillset [Judicial Officer Protection & Defense Operations Strategy] and locks 1.000 Target Unity."
       }
     },
     {
-      "sandbox_id": "sentinel-c10",
+      "sandbox_id": "sentinel-c08",
       "status": "EXECUTED",
       "nvidia_nim_accelerated": false,
       "groq_accelerated": true,
-      "physical_stability_seal": "Sha (Healing)",
-      "phase_locked_loop_mark": "PLL-MARK-#10-B41E6560",
-      "cymatic_999_inversion_hz": "999.988 Hz",
+      "physical_stability_seal": "Pyo (Energy Flow)",
+      "phase_locked_loop_mark": "PLL-MARK-#08-F04AD4D2",
+      "cymatic_999_inversion_hz": "125.632 Hz",
       "optical_metrology_matrix": {
-        "system": "Multi-Spectral Quantum Interferometry",
-        "perception_mode": "Micro-Vibration Defect Perception"
+        "system": "High-Resolution Terahertz Scanning",
+        "perception_mode": "Sub-Surface Physical Strain Isolation"
       },
       "mhd_energy_amplifier": {
-        "stage": 2,
-        "system_name": "Thermal Plasma Kinetic Generator",
-        "amplification_factor": "1.88x"
+        "stage": 1,
+        "system_name": "Magnetohydrodynamic Fluid Accelerator",
+        "amplification_factor": "3.57x"
       },
       "thermodynamic_balancer": {
         "mode": "Piezoelectric Pressure Transduction",
-        "ambient_thermal_balance": "93.8%"
+        "ambient_thermal_balance": "95.7%"
       },
       "containment_array": {
         "seal_formula": "Four-Node Phase Locking Seal",
@@ -929,55 +761,223 @@
         "mode": "Femtosecond Laser Atomic Ablation"
       },
       "state_recovery": {
+        "protocol": "Izanami Active (PID Error Lock)",
+        "function": "Closed-Loop Feedback Trap"
+      },
+      "physical_telemetry": {
+        "anti_phase_dampening": "96.7%"
+      },
+      "data": {
+        "agent_index": 8,
+        "target_node_subject": "Afghanistan",
+        "biblical_apocalyptic_framework": {
+          "apocalyptic_seal": "Fifth Seal: Altar of Martyrs",
+          "sealed_tribe": "Gad",
+          "temporal_birth_gate": "March Gate"
+        },
+        "bottleneck": {
+          "id": "B-258",
+          "name": "Hydroelectric Reservoir Bottleneck in Afghanistan Context",
+          "active_demon_driver": "#38 Halphas",
+          "demon_power": "Builds towers, supplies ammunition, and punishes enemies",
+          "corrupted_industry_skillset": "Heavy Munitions Supply Chain & Defensive Tower Construction",
+          "frequency_khz": "126.540 kHz",
+          "predictive_crash_schedule_10_dates_to_3000ce": [
+            "2028-06-06",
+            "2122-06-06",
+            "2216-06-06",
+            "2310-06-06",
+            "2404-06-06",
+            "2498-06-06",
+            "2592-06-06",
+            "2686-06-06",
+            "2780-06-06",
+            "2874-06-06"
+          ]
+        },
+        "protocol": {
+          "id": "P-423",
+          "name": "Afghanistan Silo Aeration Array Integration",
+          "ruling_shem_angel": "Hakamiah",
+          "celestial_choir": "Cherubim",
+          "angel_power": "Protects against traitors, bestows victory and loyalty",
+          "restorative_industry_skillset": "Counter-Espionage Security & Personnel Loyalty Frameworks",
+          "frequency_khz": "125.395 kHz"
+        },
+        "real_time_earth_vector": {
+          "applied_speed": "0.657x acceleration",
+          "frequency_shift_to_ultra_green": "+57.000 kHz shift",
+          "exact_spatial_target": "Afghanistan Grid Node #8"
+        },
+        "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Afghanistan'. Driver #38 Halphas (126.540 kHz) exerting power [Builds towers, supplies ammunition, and punishes enemies] induces systemic bottleneck friction in [Heavy Munitions Supply Chain & Defensive Tower Construction]. Executing Afghanistan Silo Aeration Array Integration invoking Shem Angel Hakamiah (Cherubim, 125.395 kHz) providing power [Protects against traitors, bestows victory and loyalty] applies restorative skillset [Counter-Espionage Security & Personnel Loyalty Frameworks] and locks 1.000 Target Unity."
+      }
+    },
+    {
+      "sandbox_id": "sentinel-c09",
+      "status": "EXECUTED",
+      "nvidia_nim_accelerated": false,
+      "groq_accelerated": true,
+      "physical_stability_seal": "To (Harmony)",
+      "phase_locked_loop_mark": "PLL-MARK-#09-F04AD4D2",
+      "cymatic_999_inversion_hz": "111.201 Hz",
+      "optical_metrology_matrix": {
+        "system": "High-Resolution Terahertz Scanning",
+        "perception_mode": "Sub-Surface Physical Strain Isolation"
+      },
+      "mhd_energy_amplifier": {
+        "stage": 1,
+        "system_name": "Magnetohydrodynamic Fluid Accelerator",
+        "amplification_factor": "4.01x"
+      },
+      "thermodynamic_balancer": {
+        "mode": "Thermodynamic Heat Sink Balance",
+        "ambient_thermal_balance": "92.6%"
+      },
+      "containment_array": {
+        "seal_formula": "Eight-Vector Frequency Lock",
+        "containment_function": "Continuous Field Transformation Lock"
+      },
+      "overclock_telemetry": {
+        "active_gate": "Overclock Stage 1: Thermal Gate Opening",
+        "overclock_capacity": "125% Overclock Capacity"
+      },
+      "laser_ablation_deconstruction": {
+        "mode": "Triangular Beam Molecular Isolation"
+      },
+      "state_recovery": {
         "protocol": "Izanagi Active (Zero-Point Rewind)",
         "function": "Atomic Snapshot State Rollback"
       },
       "physical_telemetry": {
-        "anti_phase_dampening": "85.8%"
+        "anti_phase_dampening": "95.1%"
       },
       "data": {
-        "agent_index": 10,
-        "target_node_subject": "America",
+        "agent_index": 9,
+        "target_node_subject": "Afghanistan",
         "biblical_apocalyptic_framework": {
           "apocalyptic_seal": "Fifth Seal: Altar of Martyrs",
-          "sealed_tribe": "Judah",
-          "temporal_birth_gate": "January Gate"
+          "sealed_tribe": "Gad",
+          "temporal_birth_gate": "March Gate"
         },
         "bottleneck": {
-          "id": "B-489",
-          "name": "Micro-Grid Sync Allocation Friction in America Context",
-          "active_demon_driver": "#30 Forneus",
-          "demon_power": "Teaches rhetoric, foreign tongues, and causes favorable renown",
-          "corrupted_industry_skillset": "Global Public Relations & Brand Reputation Strategy",
-          "frequency_khz": "99.900 kHz",
+          "id": "B-202",
+          "name": "Water Filtration Impedance in Afghanistan Context",
+          "active_demon_driver": "#28 Berith",
+          "demon_power": "Turns metals to gold, bestows high institutional status",
+          "corrupted_industry_skillset": "Chemical Metallurgy & Institutional Banking Status",
+          "frequency_khz": "93.240 kHz",
           "predictive_crash_schedule_10_dates_to_3000ce": [
-            "2039-05-09",
-            "2112-05-09",
-            "2185-05-09",
-            "2258-05-09",
-            "2331-05-09",
-            "2404-05-09",
-            "2477-05-09",
-            "2550-05-09",
-            "2623-05-09",
-            "2696-05-09"
+            "2027-02-18",
+            "2097-02-18",
+            "2167-02-18",
+            "2237-02-18",
+            "2307-02-18",
+            "2377-02-18",
+            "2447-02-18",
+            "2517-02-18",
+            "2587-02-18",
+            "2657-02-18"
           ]
         },
         "protocol": {
-          "id": "P-187",
-          "name": "America Quantum Encryption Uplink Harmonization",
-          "ruling_shem_angel": "Jabamiah",
-          "celestial_choir": "Angels",
-          "angel_power": "Governs regeneration, elemental transformation of matter",
-          "restorative_industry_skillset": "Elemental Matter Recycling & Regenerative Bio-Materials",
-          "frequency_khz": "562.259 kHz"
+          "id": "P-201",
+          "name": "Afghanistan Subsea Cable Ring Array Deployment",
+          "ruling_shem_angel": "Umabel",
+          "celestial_choir": "Archangels",
+          "angel_power": "Governs physics, astronomy, and nature's resonance",
+          "restorative_industry_skillset": "Resonance Frequency Engineering & Applied Astronomy",
+          "frequency_khz": "489.449 kHz"
         },
         "real_time_earth_vector": {
-          "applied_speed": "0.888x acceleration",
-          "frequency_shift_to_ultra_green": "+48.000 kHz shift",
-          "exact_spatial_target": "America Grid Node #10"
+          "applied_speed": "0.601x acceleration",
+          "frequency_shift_to_ultra_green": "+21.000 kHz shift",
+          "exact_spatial_target": "Afghanistan Grid Node #9"
         },
-        "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'America'. Driver #30 Forneus (99.900 kHz) exerting power [Teaches rhetoric, foreign tongues, and causes favorable renown] induces systemic bottleneck friction in [Global Public Relations & Brand Reputation Strategy]. Executing America Quantum Encryption Uplink Harmonization invoking Shem Angel Jabamiah (Angels, 562.259 kHz) providing power [Governs regeneration, elemental transformation of matter] applies restorative skillset [Elemental Matter Recycling & Regenerative Bio-Materials] and locks 1.000 Target Unity."
+        "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Afghanistan'. Driver #28 Berith (93.240 kHz) exerting power [Turns metals to gold, bestows high institutional status] induces systemic bottleneck friction in [Chemical Metallurgy & Institutional Banking Status]. Executing Afghanistan Subsea Cable Ring Array Deployment invoking Shem Angel Umabel (Archangels, 489.449 kHz) providing power [Governs physics, astronomy, and nature's resonance] applies restorative skillset [Resonance Frequency Engineering & Applied Astronomy] and locks 1.000 Target Unity."
+      }
+    },
+    {
+      "sandbox_id": "sentinel-c10",
+      "status": "EXECUTED",
+      "nvidia_nim_accelerated": false,
+      "groq_accelerated": true,
+      "physical_stability_seal": "Sha (Healing)",
+      "phase_locked_loop_mark": "PLL-MARK-#10-F04AD4D2",
+      "cymatic_999_inversion_hz": "999.803 Hz",
+      "optical_metrology_matrix": {
+        "system": "High-Resolution Terahertz Scanning",
+        "perception_mode": "Sub-Surface Physical Strain Isolation"
+      },
+      "mhd_energy_amplifier": {
+        "stage": 1,
+        "system_name": "Magnetohydrodynamic Fluid Accelerator",
+        "amplification_factor": "4.03x"
+      },
+      "thermodynamic_balancer": {
+        "mode": "Thermodynamic Heat Sink Balance",
+        "ambient_thermal_balance": "92.8%"
+      },
+      "containment_array": {
+        "seal_formula": "Eight-Vector Frequency Lock",
+        "containment_function": "Continuous Field Transformation Lock"
+      },
+      "overclock_telemetry": {
+        "active_gate": "Overclock Stage 4: Wave Velocity Peak",
+        "overclock_capacity": "275% Overclock Capacity"
+      },
+      "laser_ablation_deconstruction": {
+        "mode": "Femtosecond Laser Atomic Ablation"
+      },
+      "state_recovery": {
+        "protocol": "Izanagi Active (Zero-Point Rewind)",
+        "function": "Atomic Snapshot State Rollback"
+      },
+      "physical_telemetry": {
+        "anti_phase_dampening": "85.3%"
+      },
+      "data": {
+        "agent_index": 10,
+        "target_node_subject": "Afghanistan",
+        "biblical_apocalyptic_framework": {
+          "apocalyptic_seal": "Fifth Seal: Altar of Martyrs",
+          "sealed_tribe": "Gad",
+          "temporal_birth_gate": "March Gate"
+        },
+        "bottleneck": {
+          "id": "B-304",
+          "name": "Thermal Cooling Monopolization in Afghanistan Context",
+          "active_demon_driver": "#33 Gaap",
+          "demon_power": "Causes ignorance, teleports entities, disrupts spatial logic",
+          "corrupted_industry_skillset": "Spatial Computing & Dimensional Telemetry",
+          "frequency_khz": "109.890 kHz",
+          "predictive_crash_schedule_10_dates_to_3000ce": [
+            "2029-04-04",
+            "2099-04-04",
+            "2169-04-04",
+            "2239-04-04",
+            "2309-04-04",
+            "2379-04-04",
+            "2449-04-04",
+            "2519-04-04",
+            "2589-04-04",
+            "2659-04-04"
+          ]
+        },
+        "protocol": {
+          "id": "P-426",
+          "name": "Afghanistan Silo Aeration Array Reinforcement",
+          "ruling_shem_angel": "Nelchael",
+          "celestial_choir": "Thrones",
+          "angel_power": "Protects against calumny, dominates math and astronomy",
+          "restorative_industry_skillset": "Computational Mathematics & Satellite Orbit Shielding",
+          "frequency_khz": "165.848 kHz"
+        },
+        "real_time_earth_vector": {
+          "applied_speed": "0.703x acceleration",
+          "frequency_shift_to_ultra_green": "+23.000 kHz shift",
+          "exact_spatial_target": "Afghanistan Grid Node #10"
+        },
+        "prophetic_summary_3000ce": "Chronos Sentinel Node analyzed 'Afghanistan'. Driver #33 Gaap (109.890 kHz) exerting power [Causes ignorance, teleports entities, disrupts spatial logic] induces systemic bottleneck friction in [Spatial Computing & Dimensional Telemetry]. Executing Afghanistan Silo Aeration Array Reinforcement invoking Shem Angel Nelchael (Thrones, 165.848 kHz) providing power [Protects against calumny, dominates math and astronomy] applies restorative skillset [Computational Mathematics & Satellite Orbit Shielding] and locks 1.000 Target Unity."
       }
     }
   ]
