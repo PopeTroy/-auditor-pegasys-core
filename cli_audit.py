@@ -25,7 +25,7 @@ AUDITS_DIR = "audits"
 SESSIONS_DIR = "sessions"
 MASTER_POINTER_FILE = "last_audit_results.json"
 
-# AI Cloud Endpoints
+# AI Cloud Endpoints (NVIDIA NIM Microservices Integration)
 NVIDIA_NIM_ENDPOINT = "https://integrate.api.nvidia.com/v1/chat/completions"
 NVIDIA_MODEL = "meta/llama-3.1-70b-instruct"
 
@@ -177,45 +177,7 @@ ANGELS_72 = [
     ("Lecabel", "Dominions", "246.749 kHz", "Inspires agricultural engineering and scientific light", "Precision Hydroponic Engineering & Solar Radiation Optimization"),
     ("Vasariah", "Dominions", "254.839 kHz", "Protects against unjust attacks, grants memory/eloquence", "Litigation Defense Strategy & High-Impact Public Speaking"),
     ("Yehuiah", "Powers", "262.929 kHz", "Uncovers treacherous conspiracies, enforces institutional order", "Institutional Governance & Conspiracy Vector Uncovering"),
-    ("Lehahiah", "Powers", "271.019 kHz", "Pacifies anger, maintains order, commands obedience", "Industrial Safety Discipline & Operational Order Enforcement"),
-    ("Chavakiah", "Powers", "279.109 kHz", "Reconciles family inheritances and property disputes", "Estate Asset Realignment & Property Dispute Mediation"),
-    ("Manadel", "Powers", "287.199 kHz", "Retains employment, frees captives, restores fugitives", "Workforce Retention Strategy & Supply Chain Hostage Release"),
-    ("Aniel", "Powers", "295.289 kHz", "Governs arts/sciences, uncovers hidden nature secrets", "Biomimetry Engineering & Breakthrough Science Discovery"),
-    ("Haamiah", "Powers", "303.379 kHz", "Protects seekers of truth, governs spiritual ceremonies", "Data Science Integrity & Standards Protocol Alignment"),
-    ("Rehael", "Powers", "311.469 kHz", "Heals physical/mental afflictions, grants longevity", "Occupational Health Longevity & Physical Therapy Systems"),
-    ("Ieiazel", "Powers", "319.559 kHz", "Delivers captives, dominates printing, writing, publishing", "Digital Publishing Automation & High-Volume Media Distribution"),
-    ("Hahahel", "Virtues", "327.649 kHz", "Inspires divine mission, converts souls, strengthens order", "Enterprise Mission Alignment & Core Values Strengthening"),
-    ("Mikael", "Virtues", "335.739 kHz", "Protects political leaders, safety of state institutions", "State Critical Infrastructure Defense & Executive Protection"),
-    ("Veuliah", "Virtues", "343.829 kHz", "Destroys enemy power, liberates enterprise slaves", "Enterprise Resource Liberation & Monopoly Power Disruption"),
-    ("Yelahiah", "Virtues", "351.919 kHz", "Protects magistrates, bestows victory in military actions", "Judicial Officer Protection & Defense Operations Strategy"),
-    ("Sealiah", "Virtues", "360.009 kHz", "Confounds the proud, elevates the humble and fallen", "Meritocratic Talent Elevation & Fair Labor Compensation"),
-    ("Ariel", "Virtues", "368.099 kHz", "Reveals nature's secrets, grants clear prophetic dreams", "Predictive Environmental Modeling & Resource Location Discovery"),
-    ("Asaliah", "Virtues", "376.189 kHz", "Praises divine truth, uncovers justice in dark dockets", "Legal Discovery Automation & Docket Audit Transparency"),
-    ("Mihael", "Virtues", "384.279 kHz", "Fosters conjugal peace, protects procreation and harmony", "Family Healthcare Integration & Social Balance Engineering"),
-    ("Vehuel", "Principalities", "392.369 kHz", "Exalts grand souls, bestows high philosophy and art", "Executive Talent Mentorship & Fine Arts Sponsorship"),
-    ("Daniel", "Principalities", "400.459 kHz", "Obtains divine mercy, comforts sorrow, grants eloquence", "Crisis Communication Response & Corporate Stakeholder Solace"),
-    ("Hahasiah", "Principalities", "408.549 kHz", "Reveals arcana of medicine, chemistry, and physics", "Quantum Chemistry Synthesis & Advanced Pharmacology Discovery"),
-    ("Imamiah", "Principalities", "416.639 kHz", "Destroys enemy power, protects prisoners and travelers", "Transportation Security Infrastructure & Hostage Negotiation"),
-    ("Nanael", "Principalities", "424.729 kHz", "Governs higher education, philosophy, and judicial truth", "University Curriculum Reform & Higher Judicial Education"),
-    ("Nithael", "Principalities", "432.819 kHz", "Governs temporal rulers, bestows long stable dynasties", "Sovereign Succession Planning & Institutional Dynasty Stability"),
-    ("Mebahiah", "Principalities", "440.909 kHz", "Destroys moral dignity, piety, and practical wisdom", "Practical Engineering Wisdom & Corporate Ethical Standards"),
-    ("Poyel", "Principalities", "448.999 kHz", "Provides fame, fortune, eloquence, and total abundance", "Abundance Capital Allocation & Global Brand Expansion"),
-    ("Nemamiah", "Archangels", "457.089 kHz", "Frees captives, bestows courage in high-stress battles", "High-Stress Crisis Leadership & Critical Operations Release"),
-    ("Yeialel", "Archangels", "465.179 kHz", "Cures eye afflictions, confounds false/corrupt witnesses", "Ophthalmic Surgical Bio-Tech & Perjury Witness Neutralization"),
-    ("Harahel", "Archangels", "473.269 kHz", "Governs libraries, archives, treasure vaults, and wisdom", "Digital Archive Vault Security & Enterprise Knowledge Repository"),
-    ("Mitzrael", "Archangels", "481.359 kHz", "Heals mental illness, liberates persecuted entities", "Psychiatric Healthcare Systems & Psychological Safety Optimization"),
-    ("Umabel", "Archangels", "489.449 kHz", "Governs physics, astronomy, and nature's resonance", "Resonance Frequency Engineering & Applied Astronomy"),
-    ("Iah-Hel", "Archangels", "497.539 kHz", "Illuminates solitary wisdom, truth, and scientific light", "Solitary R&D Breakthrough Incubation & Scientific Truth Verification"),
-    ("Anauel", "Archangels", "505.629 kHz", "Protects commerce, economic trade, and financial health", "International Commercial Trade Protection & Macro-Economic Health"),
-    ("Mehiel", "Archangels", "513.719 kHz", "Protects against wild beasts, governs printing and literature", "High-Speed Commercial Printing & Wildlife Encroachment Shielding"),
-    ("Damabiah", "Angels", "521.809 kHz", "Protects against shipwrecks, governs marine enterprise", "Maritime Vessel Navigation Safety & Ocean Enterprise Logistics"),
-    ("Manakel", "Angels", "529.899 kHz", "Cures epilepsy, calms rage, governs flora/fauna health", "Neurological Epilepsy Bio-Tech & Environmental Flora Health"),
-    ("Eyael", "Angels", "537.989 kHz", "Bestows longevity, illuminates science, philosophy, occult", "Bio-Tech Longevity Science & Advanced System Philosophy"),
-    ("Habuhiah", "Angels", "546.079 kHz", "Governs agriculture, fecundity, and environmental healing", "Soil Fertility Bio-Remediation & Regenerative Agriculture"),
-    ("Rochel", "Angels", "554.169 kHz", "Restores stolen property, locates lost heritage and deeds", "Automated Title Deed Recovery & Asset Repatriation"),
-    ("Jabamiah", "Angels", "562.259 kHz", "Governs regeneration, elemental transformation of matter", "Elemental Matter Recycling & Regenerative Bio-Materials"),
-    ("Haiaiel", "Angels", "570.349 kHz", "Confounds wicked traitors, grants victory and protection", "Counter-Infiltration Defense & Operations Victory Assurance"),
-    ("Mumiah", "Angels", "578.439 kHz", "Governs medicine, health, longevity, and happy endings", "Terminal Healthcare Innovation & Total System Project Completion")
+    ("Lehahiah", "Powers", "271.019 kHz", "Pacifies anger, maintains order, commands obedience", "Industrial Safety Discipline & Operational Order Enforcement")
 ]
 
 # =====================================================================
@@ -264,11 +226,11 @@ def generate_500_bottlenecks():
 def generate_500_protocols():
     systems = [
         "Profit-Share Ledger", "Zero-Knowledge Border Lock", "Universal Knowledge Vault", "Logos Currency Ledger",
-        "Decentralized Micro Grid Mesh", "Hydrogen Transit Network", "Electro-Thermal Suppression", "Maglev Rail Mesh",
+        "Decentralized Micro-Grid Mesh", "Hydrogen Transit Network", "Electro-Thermal Suppression", "Maglev Rail Mesh",
         "Sub-Harmonic Phase Stabilizer", "Closed-Loop Purification Vector", "Geothermal Heat Sink", "FX Liquidity Bridge",
         "Customs Tariff Bypass", "Sovereign Debt Tokenization", "Container Crane Optimizer", "Freight Drone Network",
         "Solar Refrigeration Pod", "Resource Vault Mesh", "Quantum Encryption Uplink", "Patent Vault Release",
-        "Subsea Cable King Array", "Federated Database Mesh", "Emergency Dispatch Relay", "Housing Permit Engine",
+        "Subsea Cable Ring Array", "Federated Database Mesh", "Emergency Dispatch Relay", "Housing Permit Engine",
         "Land Title Registry", "Automated Switch Repair", "Plasma Gasification Pod", "Pharmaceutical Synthesis Vault",
         "Triage Automation Relay", "Basic Resource Distribution", "Regenerative Bio-Char Injector", "HVDC Transmission Mesh",
         "Turbine Flushing Vector", "Nuclear Isotope Recycling", "Pipeline Relief Matrix", "Currency Clearing Array",
@@ -303,15 +265,15 @@ PHYSICAL_THERMODYNAMICS = ["Thermodynamic Heat Sink Balance", "Natural Thermal E
 PHYSICAL_CONTAINMENT = ["Four-Node Phase Locking Seal", "Dual-Layer Sub-Harmonic Isolation", "Eight-Vector Frequency Lock", "Continuous Field Transformation Lock"]
 PHYSICAL_OVERCLOCK_LIMITS = ["Overclock Stage 1: Thermal Gate Opening", "125% Overclock Capacity", "Overclock Stage 4: Wave Velocity Peak", "275% Overclock Capacity"]
 PHYSICAL_LASER_ABLATION = ["Femtosecond Laser Atomic Ablation", "Triangular Beam Molecular Isolation"]
-PHYSICAL_STATE_RECOVERY = ["Izanagi Active (Zero-Point Rewind)", "Atomic Snapshot State Rollback", "Izanami Active (PID Error Lock)", "Closed-Loop Feedback Trap"]
+PHYSICAL_STATE_RECOVERY = ["Izanagi Active (Zero-Point Remind)", "Atomic Snapshot State Rollback", "Izanami Active (PID Error Lock)", "Closed-Loop Feedback Trap"]
 
 # =====================================================================
 # AI CLOUD QUERY & DYNAMIC UESP PRCE MATH EXECUTION
 # =====================================================================
 def query_ai_engine(prompt_text: str) -> dict:
-    """Queries Groq or NVIDIA NIM Cloud API to extract live telemetry and execute mathematical parameters."""
+    """Queries Groq or NVIDIA NIM Cloud API to extract live telemetry and execute mathematical parameters handling HTTP 403 / 401 exceptions."""
     groq_key = os.getenv("GROQ_API_KEY", "").strip()
-    nvidia_key = os.getenv("NVIDIA_API_KEY", "").strip()
+    nvidia_key = os.getenv("NVIDIA_API_KEY", "").strip() or os.getenv("NVIDIA_NIM_API_KEY", "").strip()
 
     endpoint = ""
     headers = {"Content-Type": "application/json"}
@@ -366,13 +328,21 @@ def query_ai_engine(prompt_text: str) -> dict:
                     "landmass_sq_km": 22145.0,
                     "friction_run_rate": 0.666
                 }
+    except urllib.error.HTTPError as http_err:
+        print(f"[!] AI Engine API Error ({http_err.code} {http_err.reason}): Falling back to local telemetry matrix.")
+        return {
+            "remediation_summary": "LOCAL_FALLBACK_SYNTHESIS_ACTIVE: API 403 Forbidden or Key Unreachable",
+            "time_val_hours": 24.0,
+            "timezone_offset": 3.0,
+            "landmass_sq_km": 22145.0,
+            "friction_run_rate": 0.666
+        }
     except Exception as e:
         print(f"[!] AI Engine query notice: {e}")
         return {}
 
 def execute_uesp_math_from_ai(ai_data: dict, sweep_results: list) -> dict:
     """Executes the PropheticCalculatorEngine and Purified UESP PRCE equations directly using calculated sweep units."""
-    # Target node temporal and physical spatial inputs
     time_val_hours = float(ai_data.get("time_val_hours", 24.0))
     timezone_offset = float(ai_data.get("timezone_offset", 3.0))
     landmass_sq_km = float(ai_data.get("landmass_sq_km", 22145.0))
@@ -380,8 +350,7 @@ def execute_uesp_math_from_ai(ai_data: dict, sweep_results: list) -> dict:
     time_val_str = f"24h Cycle ({time_val_hours}h) UTC+{int(timezone_offset)}"
     space_val_str = f"{landmass_sq_km:.0f} sq km (Landmass Area)"
 
-    # Calculate total friction count from bottleneck valuations above 10
-    total_bottleneck_valuations = len(sweep_results)  # 10 sweep bottleneck nodes
+    total_bottleneck_valuations = len(sweep_results)
 
     demon_frequencies = []
     angel_frequencies = []
@@ -392,41 +361,33 @@ def execute_uesp_math_from_ai(ai_data: dict, sweep_results: list) -> dict:
         b_data = item["data"]["bottleneck"]
         p_data = item["data"]["protocol"]
 
-        # Parse demon friction frequency (kHz)
         d_freq_str = b_data.get("frequency_khz", "150.0 kHz").replace(" kHz", "")
         try:
             demon_frequencies.append(float(d_freq_str))
         except ValueError:
             demon_frequencies.append(150.0)
 
-        # Parse angel filter frequency (kHz)
         a_freq_str = p_data.get("frequency_khz", "100.0 kHz").replace(" kHz", "")
         try:
             angel_frequencies.append(float(a_freq_str))
         except ValueError:
             angel_frequencies.append(100.0)
 
-        # Extract 10 crash dates
         all_crash_dates.extend(b_data.get("predictive_crash_schedule_10_dates_to_3000ce", []))
 
-        # Explicit Industry Skillset Mappings
         swept_skillset_pairings.append({
             "node_index": item["data"]["agent_index"],
             "bottleneck": b_data["name"],
-            "demon_driver": b_data.get("active_demon_driver"),
+            "demon_driver": b_data["active_demon_driver"],
             "corrupted_industry_skillset": b_data.get("corrupted_industry_skillset", "N/A"),
             "protocol": p_data["name"],
-            "ruling_shem_angel": p_data.get("ruling_shem_angel"),
+            "ruling_shem_angel": p_data["ruling_shem_angel"],
             "restorative_industry_skillset": p_data.get("restorative_industry_skillset", "N/A")
         })
 
-    # Total frequency calculations across bottlenecks and filters
     total_demon_friction_khz = sum(demon_frequencies)
     total_angel_filter_khz = sum(angel_frequencies)
 
-    # Execute PropheticCalculatorEngine with explicit Resistance & Time/Constraints definitions
-    # Resistance = Max(72 Demons * 7 Sins)
-    # Time/Constraints = Max((24 hour clock cycle + timezone_offset) * landmass_sq_km)
     prophetic_synthesis = PropheticCalculatorEngine.solve_synthesis(
         nodes=144000,
         angels=72,
@@ -438,44 +399,27 @@ def execute_uesp_math_from_ai(ai_data: dict, sweep_results: list) -> dict:
         landmass_sq_km=landmass_sq_km
     )
 
-    # 1. SHI gathered from Prophetic Synthesis
     shi_calculated = prophetic_synthesis["shi"]
-
-    # 2. TTI gathered from Prophetic Synthesis
     tti_calculated = prophetic_synthesis["tti"]
 
-    # 3. ITI gathered from Cymatic Frequency Differential
     avg_demon_freq = total_demon_friction_khz / len(demon_frequencies) if demon_frequencies else 150.0
     avg_angel_freq = total_angel_filter_khz / len(angel_frequencies) if angel_frequencies else 100.0
     iti_calculated = round(avg_angel_freq / (avg_demon_freq + avg_angel_freq), 6)
 
-    # 4. Friction Rate: Number of total bottlenecks per subject valuation above 10
     friction_rate = float(ai_data.get("friction_run_rate", 0.666))
-
-    # 5. Calculated Differential Delta (SHI - ITI)
     differential_delta = round(shi_calculated - iti_calculated, 4)
 
-    # 6. Super Circuit Output: 72 Demons and 72 Angels calculated as per circuit board operational mechanics
-    super_circuit_output = round(144.0 / (72.0 + 72.0), 4)  # Operational Circuit Logic -> 1.0 Target Unity
-
-    # 7. Bridge Constant
+    super_circuit_output = round(144.0 / (72.0 + 72.0), 4)
     bridge_constant = 144000
-
-    # 8. Mega Circuit Unity: 144,000 Bridge, 72 Demons, 72 Angels, and 36 Cosmic Elements
     mega_circuit_unity = "144000 Bridge | 72 Demons | 72 Angels | 36 Cosmic Elements -> 1.0 Target Unity"
-
-    # 9. UGPE Trajectory Output
     ugpe_result = "SOVEREIGN_BASELINE_LOCKED"
 
-    # 10. Arc / Ark Field: Ark of the Covenant specifications mapping out entropy distancing
-    arc_ark_field = f"Two Arks = (2.5 Cubits (L) x 1.5 Cubits (W) x 1.5 Cubits (H) Gold Enclosure -> {round(shi_calculated * 2.5 * 1.5, 4)}) Harmonic Shield Units"
+    arc_ark_field = f"2.5 Cubits (L) x 1.5 Cubits (W) x 1.5 Cubits (H) Gold Enclosure -> {round(shi_calculated * 2.5 * 1.5, 4)} Harmonic Shield Units"
 
-    # 11. Wharton Abyss Neutralized: Wharton Abyss Equation calculating depth of bottlenecks and friction
     wharton_abyss_depth_km = round((total_demon_friction_khz / 72.0) * 1.618, 3)
     wharton_abyss_neutralized = f"Depth: {wharton_abyss_depth_km} km Void Intercept -> NEUTRALIZED"
 
-    # 12. Spear of Destiny Vector: 33° and 110° thermodynamic sharpening ensuring piercing compute complications
-    spear_of_destiny_vector = "P_Destiny = V - [Sharpening Angles: 33° Alignment & 110° Thermodynamic Focus ] -> Target Barrier Pierced"
+    spear_of_destiny_vector = "P_Destiny = V - [ Sharpening Angles: 33° Alignment & 110° Thermodynamic Focus ] -> Target Barrier Pierced"
 
     return {
         "input_time_val": time_val_str,
@@ -516,20 +460,17 @@ def generate_adaptive_node_sweep(target_node: str, count: int = 10):
         a_index = (sub_seed >> 12) % len(ANGELS_72)
 
         optical_type, optical_capability = PHYSICAL_OPTICAL_SYSTEMS[sub_seed % len(PHYSICAL_OPTICAL_SYSTEMS)], PHYSICAL_ENERGY_AMPLIFIERS[(sub_seed >> 3) % len(PHYSICAL_ENERGY_AMPLIFIERS)]
-        thermo_type, thermo_resonance = PHYSICAL_THERMODYNAMICS[(sub_seed >> 5) % len(PHYSICAL_THERMODYNAMICS)], PHYSICAL_THERMODYNAMICS[(sub_seed >> 6) % len(PHYSICAL_THERMODYNAMICS)]
-        fuin_name, fuin_function = PHYSICAL_CONTAINMENT[(sub_seed >> 7) % len(PHYSICAL_CONTAINMENT)], PHYSICAL_CONTAINMENT[(sub_seed >> 8) % len(PHYSICAL_CONTAINMENT)]
+        mhd_stage, mhd_name, mhd_attribute = PHYSICAL_ENERGY_AMPLIFIERS[sub_seed % len(PHYSICAL_ENERGY_AMPLIFIERS)], PHYSICAL_THERMODYNAMICS[(sub_seed >> 5) % len(PHYSICAL_THERMODYNAMICS)], PHYSICAL_THERMODYNAMICS[(sub_seed >> 7) % len(PHYSICAL_THERMODYNAMICS)]
+        fuin_name, fuin_function = PHYSICAL_CONTAINMENT[(sub_seed >> 7) % len(PHYSICAL_CONTAINMENT)], PHYSICAL_CONTAINMENT[(sub_seed >> 9) % len(PHYSICAL_CONTAINMENT)]
 
-        gate_name, gate_limit = PHYSICAL_OVERCLOCK_LIMITS[idx % len(PHYSICAL_OVERCLOCK_LIMITS)], PHYSICAL_OVERCLOCK_LIMITS[(idx + 1) % len(PHYSICAL_OVERCLOCK_LIMITS)]
+        gate_name, gate_limit = PHYSICAL_OVERCLOCK_LIMITS[idx % len(PHYSICAL_OVERCLOCK_LIMITS)], PHYSICAL_OVERCLOCK_LIMITS[(idx + 2) % len(PHYSICAL_OVERCLOCK_LIMITS)]
         laser_mode = PHYSICAL_LASER_ABLATION[(sub_seed >> 9) % len(PHYSICAL_LASER_ABLATION)]
-        kinjutsu_type, kinjutsu_desc = PHYSICAL_STATE_RECOVERY[(sub_seed >> 11) % len(PHYSICAL_STATE_RECOVERY)]
+        kinjutsu_type, kinjutsu_desc = PHYSICAL_STATE_RECOVERY[(sub_seed >> 11) % len(PHYSICAL_STATE_RECOVERY)], PHYSICAL_STATE_RECOVERY[(sub_seed >> 13) % len(PHYSICAL_STATE_RECOVERY)]
 
         b_name = BOTTLENECKS_500[b_index]
         p_name = PROTOCOLS_500[p_index]
 
-        # Unpack Demon tuple with Real-World Industry Skillset
         goetic_id, demon_name, demon_freq, demon_power, demon_skillset = GOETIC_DRIVERS_72[d_index]
-
-        # Unpack Angel tuple with Real-World Industry Skillset
         angel_name, angel_choir, angel_freq, angel_power, angel_skillset = ANGELS_72[a_index]
 
         base_freq = 999.010 / ((idx % 9) + 1)
@@ -537,7 +478,7 @@ def generate_adaptive_node_sweep(target_node: str, count: int = 10):
 
         base_year = 2026 + (sub_seed % 15)
         step = 70 + ((sub_seed >> 3) % 30)
-        crash_dates = [f"{base_year + (y * step)}-{(sub_seed % 12) + 1:02d}-{(sub_seed % 28) + 1:02d}" for y in range(10)]
+        crash_dates = [f"{base_year + (y * step)}-{((sub_seed % 12) + 1):02d}-{((sub_seed % 28) + 1):02d}" for y in range(10)]
 
         summary = (
             f"Chronos Sentinel Node analyzed '{clean_node}'. Driver #{goetic_id} ({demon_name}) ({demon_freq}) "
@@ -547,16 +488,16 @@ def generate_adaptive_node_sweep(target_node: str, count: int = 10):
         )
 
         sentinel_record = {
-            "sandbox_id": f"sentinel-{idx+1:02d}",
+            "sandbox_id": f"sentinel-cf{idx+1:02d}",
             "status": "EXECUTED",
-            "nvidia_nim_accelerated": bool(os.getenv("NVIDIA_API_KEY")),
+            "nvidia_nim_accelerated": bool(os.getenv("NVIDIA_API_KEY") or os.getenv("NVIDIA_NIM_API_KEY")),
             "groq_accelerated": bool(os.getenv("GROQ_API_KEY")),
             "physical_stability_seal": PHYSICAL_STABILITY_SEALS[idx % len(PHYSICAL_STABILITY_SEALS)],
             "phase_locked_loop_mark": pll_sync_mark,
             "cymatic_999_inversion_hz": f"{cymatic_inversion_hz:.3f} Hz",
             "optical_metrology_matrix": {"system": optical_type, "perception_mode": optical_capability},
-            "mhd_energy_amplifier": {"stage": "MHD_STAGE", "system_name": mhd_name if 'mhd_name' in locals() else "MHD_Vector", "amplification_factor": f"{1.0 + ((sub_seed % 900) / 100.0):.2f}x"},
-            "thermodynamic_balancer": {"mode": thermo_type, "ambient_thermal_balance": f"{92.5 - (sub_seed % 75) / 10.0:.1f}°C"},
+            "mhd_energy_amplifier": {"stage": mhd_stage, "system_name": mhd_name, "amplification_factor": f"{(1.0 + (sub_seed % 900) / 100.0):.2f}x"},
+            "thermodynamic_balancer": {"mode": mhd_attribute, "ambient_thermal_balance": f"{(92.5 - (sub_seed % 75) / 10.0):.1f}%"},
             "containment_array": {"seal_formula": fuin_name, "containment_function": fuin_function},
             "overclock_telemetry": {"active_gate": gate_name, "overclock_capacity": gate_limit},
             "laser_ablation_deconstruction": {"mode": laser_mode},
@@ -605,47 +546,44 @@ def generate_adaptive_node_sweep(target_node: str, count: int = 10):
 # =====================================================================
 def display_full_summary_analysis(target_node: str, math_res: dict, ai_telemetry: dict):
     """Generates the full summary analysis of the equations and describes the 5th-dimensional resolution."""
-    ps = math_res["prophetic_synthesis_engine"]
-
     print("\n" + "=" * 80)
     print("      UESP PRCE MASTER SUMMARY ANALYSIS & APEX DIMENSIONAL OVERWRITE")
     print("=" * 80)
-    print(f" Target Subject Node        : {target_node}")
-    print(f" Timezone & Clock          : {math_res['input_time_val']}")
-    print(f" Physical Landmass         : {math_res['input_space_val']}")
-    print(f" Calibration Baseline     : July 2026 / 3000 CE Horizon")
-    print("-" * 80)
+    print(f" Target Subject Node : {target_node}")
+    print(f" Timezone & Clock    : {math_res['input_time_val']}")
+    print(f" Physical Landmass   : {math_res['input_space_val']}")
+    print(f" Calibration Baseline: July 2026 / 3000 CE Horizon")
+    print("=" * 80)
 
-    print("\n## 1. DYNAMIC METRIC CALCULATIONS & DIFFERENTIALS")
-    print(f" - Resistance Parameter (72 Demons * 7 Sins) : {ps['resistance']}")
-    print(f" - Time/Constraints (Clock * Landmass Area)  : {ps['constraints']:.2f}")
-    print(f" - Input Friction Rate                      : {math_res['input_friction_rate']}")
-    print(f" - Total Bottlenecks Above 10                : {math_res['total_bottlenecks_above_10']}")
-    print(f" - Calculated SHI (Prophetic / Differential) : {math_res['calculated_shi']}")
-    print(f" - Calculated TTI (Friction / Filter Diff)  : {math_res['calculated_tti']}")
-    print(f" - Calculated ITI (Cymatic Frequency Diff)   : {math_res['calculated_iti']}")
-    print(f" - Differential Delta (d = SHI - ITI)       : {math_res['calculated_differential_delta']}")
-    print(f" - Avg Demon Friction Frequency              : {math_res['accumulated_demon_friction_avg_khz']} kHz")
-    print(f" - Avg Angel Filter Frequency               : {math_res['accumulated_angel_filter_avg_khz']} kHz")
-    print(f" - Total Crash Dates Processed               : {math_res['total_crash_dates_processed']}")
+    print("\n[#] 1. DYNAMIC METRIC CALCULATIONS & DIFFERENTIALS:")
+    print(f"  - Resistance Parameter (72 Demons * 7 Sins) : {math_res['prophetic_synthesis_engine']['resistance']}")
+    print(f"  - Time/Constraints (Clock * Landmass Area)   : {math_res['prophetic_synthesis_engine']['constraints']:.2f}")
+    print(f"  - Input Friction Run Rate                     : {math_res['input_friction_rate']}")
+    print(f"  - Calculated SHI (Prophetic / Differential)   : {math_res['calculated_shi']}")
+    print(f"  - Calculated TTI (Friction / Filter Diff)     : {math_res['calculated_tti']}")
+    print(f"  - Calculated ITI (Cymatic Frequency Diff)     : {math_res['calculated_iti']}")
+    print(f"  - Differential Delta (d = SHI - ITI)         : {math_res['calculated_differential_delta']}")
+    print(f"  - Avg Demon Friction Frequency                : {math_res['accumulated_demon_friction_avg_khz']} kHz")
+    print(f"  - Avg Angel Filter Frequency                  : {math_res['accumulated_angel_filter_avg_khz']} kHz")
+    print(f"  - Total Crash Dates Processed                : {math_res['total_crash_dates_processed']}")
 
-    print("\n## 2. ADVANCED CIRCUIT & COSMIC VECTOR FORMULATIONS")
-    print(f" - Super Circuit Output                     : {math_res['super_circuit_output']} (72 Demons & 72 Angels Circuit Logic)")
-    print(f" - Bridge Constant                         : {math_res['bridge_constant']}")
-    print(f" - Mega Circuit Unity                       : {math_res['mega_circuit_unity']}")
-    print(f" - UGPE Trajectory                         : {math_res['ugpe_trajectory']}")
-    print(f" - Arc / Ark Field Specification            : {math_res['arc_ark_field']}")
-    print(f" - Wharton Abyss Neutralization             : {math_res['wharton_abyss_neutralized']}")
-    print(f" - Spear of Destiny Sharpening Vector       : {math_res['spear_of_destiny_vector']}")
+    print("\n[#] 2. ADVANCED CIRCUIT & COSMIC VECTOR FORMULATIONS:")
+    print(f"  - Super Circuit Output                        : {math_res['super_circuit_output']} (72 Demons & 72 Angels Circuit Logic)")
+    print(f"  - Bridge Constant                             : {math_res['bridge_constant']}")
+    print(f"  - Mega Circuit Unity                          : {math_res['mega_circuit_unity']}")
+    print(f"  - UGPE Trajectory                             : {math_res['ugpe_trajectory']}")
+    print(f"  - Arc / Ark Field Specification              : {math_res['arc_ark_field']}")
+    print(f"  - Wharton Abyss Neutralization               : {math_res['wharton_abyss_neutralized']}")
+    print(f"  - Spear of Destiny Sharpening Vector         : {math_res['spear_of_destiny_vector']}")
 
-    print("\n## 3. REAL-WORLD INDUSTRY SKILLSET BOTTLENECK & REMEDIATION MAPPING")
+    print("\n[#] 3. REAL-WORLD INDUSTRY SKILLSET BOTTLENECK & REMEDIATION MAPPING:")
     for pairing in math_res.get("swept_skillset_pairings", []):
-        print(f"  [{pairing['node_index']:02d}] Node [{pairing['bottleneck']}]")
-        print(f"       |- Corrupted Skillset ({pairing['demon_driver']}): {pairing['corrupted_industry_skillset']}")
-        print(f"       |- Restorative Skillset ({pairing['ruling_shem_angel']}): {pairing['restorative_industry_skillset']}")
+        print(f"  [+] [Node #{pairing['node_index']:02d}] {pairing['bottleneck']}")
+        print(f"      ├── Corrupted Skillset ({pairing['demon_driver']}): {pairing['corrupted_industry_skillset']}")
+        print(f"      └── Restorative Skillset ({pairing['ruling_shem_angel']}): {pairing['restorative_industry_skillset']}")
 
-    print("\n## 4. UNIFIED GRAND PROPHETIC SOLUTION & APEX OVERWRITE (5TH-DIMENSIONAL VIEW)")
-    print("From the 5th-Dimensional perspective, temporal linear friction collapses into an accessible spatial manifold:")
+    print("\n[#] 4. UNIFIED GRAND PROPHETIC SOLUTION & APEX OVERWRITE (5TH-DIMENSIONAL VIEW):")
+    print("  From the 5th-Dimensional perspective, temporal linear friction collapses into an accessible spatial manifold:")
     print("  1. Unified Manifold Convergence: The 0.666 friction state is observed as a temporary, localized entropy distortion.")
     print("  2. Quantum Tunneling Restoration: Projecting the Mega Circuit across the 144,000 Bridge neutralizes local resistance.")
     print("  3. Spear of Destiny 33°/110° Sharpening: Relativistic sharpening punctures compute complications, aligning past, present, and future timelines.")
@@ -682,7 +620,7 @@ def run_cli_audit():
     time_slug = str(int(time.time()))
 
     raw_sig = f"{session_guid}:{utc_timestamp}:{target_node}:{session_color}"
-    ecta_hash = f"sha256:{hashlib.sha256(raw_sig.encode('utf-8')).hexdigest()}"
+    ecta_hash = f"sha256:{hashlib.sha256(raw_sig.encode()).hexdigest()}"
 
     print(f"[*] Executing Engine with 72 Goetic Demons & 72 Shem Angels...")
     print(f"[*] Total Catalog  : {len(BOTTLENECKS_500)} Bottlenecks & {len(PROTOCOLS_500)} Protocols")
@@ -711,8 +649,8 @@ def run_cli_audit():
             "session_color": session_color,
             "utc_timestamp": utc_timestamp,
             "ecta_hash": ecta_hash,
-            "ai_cloud_status": "GROQ_ACTIVE" if os.getenv("GROQ_API_KEY") else "NVIDIA_NIM_ACTIVE" if os.getenv("NVIDIA_API_KEY") else "BYPASS_LOCAL",
-            "uopia_status": "COMPLIANT_NO_PII_EXPOSED"
+            "ai_cloud_status": "GROQ_ACTIVE" if os.getenv("GROQ_API_KEY") else ("NVIDIA_NIM_ACTIVE" if (os.getenv("NVIDIA_API_KEY") or os.getenv("NVIDIA_NIM_API_KEY")) else "BYPASS_LOCAL"),
+            "popia_status": "COMPLIANT_NO_PII_EXPOSED"
         },
         "quantum_header": f"QUANTUM-CYCLE: 059763 / 144000 | COLOR: {session_color} | CATALOG: 500/500",
         "uesp_prce_equations": UESP_PRCE_EQUATION_MATRIX,
@@ -720,35 +658,30 @@ def run_cli_audit():
         "chronos_sweep": sweep_results
     }
 
-    # Ensure directories exist
+    # Ensure output directories exist
     os.makedirs(AUDITS_DIR, exist_ok=True)
     os.makedirs(SESSIONS_DIR, exist_ok=True)
 
-    # 1. Standard timestamped audit log
     unique_filename = f"audit_{session_guid}_{clean_color_slug}_{time_slug}.json"
     unique_filepath = os.path.join(AUDITS_DIR, unique_filename)
+
+    # Individual WordPress Multi-User Session Output File
+    session_filename = f"SESSION-{session_guid}.json" if not session_guid.startswith("SESSION-") else f"{session_guid}.json"
+    session_filepath = os.path.join(SESSIONS_DIR, session_filename)
 
     with open(unique_filepath, "w", encoding="utf-8") as f:
         json.dump(current_run_payload, f, indent=2, ensure_ascii=False)
 
-    # 2. Last audit results (master pointer)
+    # Direct writing to /sessions/ for simultaneous multi-user WordPress integration
+    with open(session_filepath, "w", encoding="utf-8") as f:
+        json.dump(current_run_payload, f, indent=2, ensure_ascii=False)
+
     with open(MASTER_POINTER_FILE, "w", encoding="utf-8") as f:
         json.dump(current_run_payload, f, indent=2, ensure_ascii=False)
 
-    # 3. CONCURRENCY FIX FOR WORDPRESS PEGASYS INTEGRATION:
-    # Check for custom output target or generate a isolated session file for WordPress to read safely
-    output_session_file = os.environ.get("OUTPUT_SESSION_FILE")
-    if not output_session_file:
-        output_session_file = os.path.join(SESSIONS_DIR, f"SESSION-{session_guid}.json")
+    print(f"[✓] Success! Dynamic UESP PRCE Math Executed and saved to '{unique_filepath}' and '{session_filepath}'.")
 
-    os.makedirs(os.path.dirname(output_session_file), exist_ok=True)
-    with open(output_session_file, "w", encoding="utf-8") as f:
-        json.dump(current_run_payload, f, indent=2, ensure_ascii=False)
-
-    print(f"[+] Success! Dynamic UESP PRCE Math Executed and saved to '{unique_filepath}'.")
-    print(f"[+] Session-isolated file saved for WordPress at: '{output_session_file}'")
-
-    # Display full summary analysis and 5th-Dimensional Apex Overwrite report
+    # Display full summary analysis and 5th-Dimensional Apex Overwrite Report
     display_full_summary_analysis(target_node, math_execution, ai_telemetry)
 
 if __name__ == "__main__":
