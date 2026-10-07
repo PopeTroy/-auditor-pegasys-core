@@ -47,11 +47,11 @@ jobs:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           NVIDIA_NIM_API_KEY: ${{ secrets.NVIDIA_NIM_API_KEY }}
           EVENT_PAYLOAD: ${{ toJson(github.event.client_payload || github.event.inputs) }}
-          INPUT_NODE: ${{ github.event.client_payload.target_node || inputs.node_payload }}
+          INPUT_NODE: ${{ github.event.client_payload.node_payload || github.event.client_payload.target_node || inputs.node_payload }}
           INPUT_USER_ALIAS: ${{ github.event.client_payload.user_alias || inputs.user_alias }}
-          INPUT_JURISDICTION: ${{ github.event.client_payload.jurisdiction || inputs.jurisdiction }}
+          INPUT_JURISDICTION: ${{ github.event.client_payload.node_payload || github.event.client_payload.jurisdiction || inputs.jurisdiction }}
           INPUT_INDUSTRY: ${{ github.event.client_payload.industry || inputs.industry }}
-          INPUT_SESSION_ID: ${{ inputs.session_id }}
+          INPUT_SESSION_ID: ${{ github.event.client_payload.session_id || inputs.session_id }}
           SESSION_GUID: ${{ github.event.client_payload.session_guid || github.event.client_payload.session_id || inputs.session_id }}
           SESSION_COLOR: ${{ github.event.client_payload.session_color }}
         run: python cli_audit.py
@@ -61,6 +61,6 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git pull origin main --rebase || true
-          git add sessions/ last_audit_results.json audits/
+          git add sessions/ last_audit_results.json audits/ 2>/dev/null || true
           git commit -m "Commit session diagnostic output [skip ci]" || exit 0
           git push origin main
