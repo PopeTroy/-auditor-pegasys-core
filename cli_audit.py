@@ -456,7 +456,10 @@ def execute_uesp_math_from_ai(ai_data: dict, sweep_results: list) -> dict:
     }
 
 def generate_adaptive_node_sweep(target_node: str, count: int = 10):
-    clean_node = target_node.strip() or "Sovereign Grid Node"
+    clean_node = target_node.strip()
+    if not clean_node or clean_node.lower() == "global grid node":
+        clean_node = "Sovereign Grid Node"
+
     node_hash = hashlib.sha256(clean_node.lower().encode('utf-8')).hexdigest()
     sweep_results = []
 
@@ -470,13 +473,19 @@ def generate_adaptive_node_sweep(target_node: str, count: int = 10):
         d_index = (sub_seed >> 8) % len(GOETIC_DRIVERS_72)
         a_index = (sub_seed >> 12) % len(ANGELS_72)
 
-        optical_type, optical_capability = PHYSICAL_OPTICAL_SYSTEMS[sub_seed % len(PHYSICAL_OPTICAL_SYSTEMS)], PHYSICAL_ENERGY_AMPLIFIERS[(sub_seed >> 3) % len(PHYSICAL_ENERGY_AMPLIFIERS)]
-        mhd_stage, mhd_name, mhd_attribute = PHYSICAL_ENERGY_AMPLIFIERS[sub_seed % len(PHYSICAL_ENERGY_AMPLIFIERS)], PHYSICAL_THERMODYNAMICS[(sub_seed >> 5) % len(PHYSICAL_THERMODYNAMICS)], PHYSICAL_THERMODYNAMICS[(sub_seed >> 7) % len(PHYSICAL_THERMODYNAMICS)]
-        fuin_name, fuin_function = PHYSICAL_CONTAINMENT[(sub_seed >> 7) % len(PHYSICAL_CONTAINMENT)], PHYSICAL_CONTAINMENT[(sub_seed >> 9) % len(PHYSICAL_CONTAINMENT)]
+        optical_type = PHYSICAL_OPTICAL_SYSTEMS[sub_seed % len(PHYSICAL_OPTICAL_SYSTEMS)]
+        optical_capability = PHYSICAL_ENERGY_AMPLIFIERS[(sub_seed >> 3) % len(PHYSICAL_ENERGY_AMPLIFIERS)]
+        mhd_stage = PHYSICAL_ENERGY_AMPLIFIERS[sub_seed % len(PHYSICAL_ENERGY_AMPLIFIERS)]
+        mhd_name = PHYSICAL_THERMODYNAMICS[(sub_seed >> 5) % len(PHYSICAL_THERMODYNAMICS)]
+        mhd_attribute = PHYSICAL_THERMODYNAMICS[(sub_seed >> 7) % len(PHYSICAL_THERMODYNAMICS)]
+        fuin_name = PHYSICAL_CONTAINMENT[(sub_seed >> 7) % len(PHYSICAL_CONTAINMENT)]
+        fuin_function = PHYSICAL_CONTAINMENT[(sub_seed >> 9) % len(PHYSICAL_CONTAINMENT)]
 
-        gate_name, gate_limit = PHYSICAL_OVERCLOCK_LIMITS[idx % len(PHYSICAL_OVERCLOCK_LIMITS)], PHYSICAL_OVERCLOCK_LIMITS[(idx + 2) % len(PHYSICAL_OVERCLOCK_LIMITS)]
+        gate_name = PHYSICAL_OVERCLOCK_LIMITS[idx % len(PHYSICAL_OVERCLOCK_LIMITS)]
+        gate_limit = PHYSICAL_OVERCLOCK_LIMITS[(idx + 2) % len(PHYSICAL_OVERCLOCK_LIMITS)]
         laser_mode = PHYSICAL_LASER_ABLATION[(sub_seed >> 9) % len(PHYSICAL_LASER_ABLATION)]
-        kinjutsu_type, kinjutsu_desc = PHYSICAL_STATE_RECOVERY[(sub_seed >> 11) % len(PHYSICAL_STATE_RECOVERY)], PHYSICAL_STATE_RECOVERY[(sub_seed >> 13) % len(PHYSICAL_STATE_RECOVERY)]
+        kinjutsu_type = PHYSICAL_STATE_RECOVERY[(sub_seed >> 11) % len(PHYSICAL_STATE_RECOVERY)]
+        kinjutsu_desc = PHYSICAL_STATE_RECOVERY[(sub_seed >> 13) % len(PHYSICAL_STATE_RECOVERY)]
 
         b_name = BOTTLENECKS_500[b_index]
         p_name = PROTOCOLS_500[p_index]
@@ -494,7 +503,7 @@ def generate_adaptive_node_sweep(target_node: str, count: int = 10):
         summary = (
             f"Chronos Sentinel Node analyzed '{clean_node}'. Driver #{goetic_id} ({demon_name}) ({demon_freq}) "
             f"exerting power [{demon_power}] induces systemic bottleneck friction in [{demon_skillset}]. "
-            f"Executing {clean_node} {p_name} invoking Shem Angel {angel_name} ({angel_choir}, {angel_freq}) "
+            f"Executing [{clean_node} {p_name}] invoking Shem Angel {angel_name} ({angel_choir}, {angel_freq}) "
             f"providing power [{angel_power}] applies restorative skillset [{angel_skillset}] and locks 1.000 Target Unity."
         )
 
@@ -517,7 +526,7 @@ def generate_adaptive_node_sweep(target_node: str, count: int = 10):
                 "target_node_subject": clean_node,
                 "bottleneck": {
                     "id": f"B-{(b_index + 1):03d}",
-                    "name": f"{b_name} in {clean_node} Context",
+                    "name": f"{b_name} in [{clean_node}] Context",
                     "active_demon_driver": f"#{goetic_id} ({demon_name})",
                     "demon_power": demon_power,
                     "corrupted_industry_skillset": demon_skillset,
@@ -526,7 +535,7 @@ def generate_adaptive_node_sweep(target_node: str, count: int = 10):
                 },
                 "protocol": {
                     "id": f"P-{(p_index + 1):03d}",
-                    "name": f"{clean_node} {p_name}",
+                    "name": f"[{clean_node}] {p_name}",
                     "ruling_shem_angel": angel_name,
                     "celestial_choir": angel_choir,
                     "angel_power": angel_power,
@@ -547,46 +556,48 @@ def generate_adaptive_node_sweep(target_node: str, count: int = 10):
 
 def run_cli_audit():
     event_payload_str = os.getenv("EVENT_PAYLOAD", "{}")
-    input_node_env = os.getenv("INPUT_NODE", "").strip()
-    session_guid_env = os.getenv("SESSION_GUID", "").strip()
+    
+    # Direct environment variable reads from workflow YAML
+    env_user_alias = os.getenv("INPUT_USER_ALIAS", "").strip()
+    env_jurisdiction = os.getenv("INPUT_JURISDICTION", "").strip()
+    env_industry = os.getenv("INPUT_INDUSTRY", "").strip()
+    env_node_payload = os.getenv("INPUT_NODE", "").strip()
+    
+    session_guid_env = os.getenv("SESSION_GUID", "").strip() or os.getenv("INPUT_SESSION_ID", "").strip()
     session_color_env = os.getenv("SESSION_COLOR", "").strip()
 
-    target_node = ""
-    user_alias = ""
-    jurisdiction = ""
-    industry = ""
+    target_node = env_node_payload
+    user_alias = env_user_alias
+    jurisdiction = env_jurisdiction
+    industry = env_industry
     session_guid = session_guid_env
     utc_timestamp = ""
     session_color = session_color_env
 
-    # 1. Extract raw payload from GitHub Actions Event
+    # Extract JSON event payload if present
     try:
         event_data = json.loads(event_payload_str)
         if isinstance(event_data, dict):
             client = event_data.get("client_payload", event_data)
             
-            target_node = client.get("target_node") or client.get("target") or ""
-            user_alias = client.get("user_alias") or client.get("user") or ""
-            jurisdiction = client.get("jurisdiction") or client.get("location") or ""
-            industry = client.get("industry") or client.get("classification") or ""
+            target_node = client.get("target_node") or client.get("target") or target_node
+            user_alias = client.get("user_alias") or client.get("user") or user_alias
+            jurisdiction = client.get("jurisdiction") or client.get("location") or jurisdiction
+            industry = client.get("industry") or client.get("classification") or industry
             
             session_guid = client.get("session_guid") or client.get("session_id") or session_guid
-            utc_timestamp = client.get("utc_timestamp") or client.get("timestamp")
-            session_color = client.get("session_color") or client.get("session_color") or session_color
+            utc_timestamp = client.get("utc_timestamp") or client.get("timestamp") or utc_timestamp
+            session_color = client.get("session_color") or session_color
     except Exception as e:
         print(f"[!] Payload parsing note: {e}")
 
-    # 2. Check direct environment variable fallback
-    if not target_node and input_node_env:
-        target_node = input_node_env
-
-    # 3. Construct Dynamic Target Vector Subject from User Inputs
-    vector_parts = [p for p in [user_alias, jurisdiction, industry, target_node] if p and p != "Global Grid Node"]
+    # Build composite vector from active dashboard fields
+    vector_parts = [p for p in [user_alias, jurisdiction, industry, target_node] if p and p.lower() != "global grid node"]
     
     if vector_parts:
         resolved_target_subject = " | ".join(vector_parts)
     else:
-        resolved_target_subject = "Global Grid Node"
+        resolved_target_subject = "Sovereign Grid Node"
 
     session_guid = session_guid or f"SESSION-{os.urandom(4).hex().upper()}"
     utc_timestamp = utc_timestamp or datetime.now(timezone.utc).isoformat()
@@ -600,6 +611,10 @@ def run_cli_audit():
 
     print(f"[*] Executing Engine with 72 Goetic Demons & 72 Shem Angels...")
     print(f"[*] Target Vector Subject : '{resolved_target_subject}'")
+    print(f"[*] User Alias            : '{user_alias}'")
+    print(f"[*] Jurisdiction          : '{jurisdiction}'")
+    print(f"[*] Industry              : '{industry}'")
+    print(f"[*] Target Node           : '{target_node}'")
     print(f"[*] Session GUID          : '{session_guid}'")
     print(f"[*] Color Anchor          : '{session_color}'")
 
