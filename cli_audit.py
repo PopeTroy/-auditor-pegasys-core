@@ -456,7 +456,7 @@ def execute_uesp_math_from_ai(ai_data: dict, sweep_results: list) -> dict:
     }
 
 def generate_adaptive_node_sweep(target_node: str, count: int = 10):
-    clean_node = target_node.strip().title() or "Sovereign Grid Node"
+    clean_node = target_node.strip() or "Sovereign Grid Node"
     node_hash = hashlib.sha256(clean_node.lower().encode('utf-8')).hexdigest()
     sweep_results = []
 
@@ -552,22 +552,42 @@ def run_cli_audit():
     session_color_env = os.getenv("SESSION_COLOR", "").strip()
 
     target_node = ""
+    user_alias = ""
+    jurisdiction = ""
+    industry = ""
     session_guid = session_guid_env
     utc_timestamp = ""
     session_color = session_color_env
 
+    # 1. Extract raw payload from GitHub Actions Event
     try:
         event_data = json.loads(event_payload_str)
         if isinstance(event_data, dict):
             client = event_data.get("client_payload", event_data)
-            target_node = client.get("target_node") or target_node
+            
+            target_node = client.get("target_node") or client.get("target") or ""
+            user_alias = client.get("user_alias") or client.get("user") or ""
+            jurisdiction = client.get("jurisdiction") or client.get("location") or ""
+            industry = client.get("industry") or client.get("classification") or ""
+            
             session_guid = client.get("session_guid") or client.get("session_id") or session_guid
             utc_timestamp = client.get("utc_timestamp") or client.get("timestamp")
-            session_color = client.get("session_color") or session_color
+            session_color = client.get("session_color") or client.get("session_color") or session_color
     except Exception as e:
         print(f"[!] Payload parsing note: {e}")
 
-    target_node = input_node_env or target_node or "Global Grid Node"
+    # 2. Check direct environment variable fallback
+    if not target_node and input_node_env:
+        target_node = input_node_env
+
+    # 3. Construct Dynamic Target Vector Subject from User Inputs
+    vector_parts = [p for p in [user_alias, jurisdiction, industry, target_node] if p and p != "Global Grid Node"]
+    
+    if vector_parts:
+        resolved_target_subject = " | ".join(vector_parts)
+    else:
+        resolved_target_subject = "Global Grid Node"
+
     session_guid = session_guid or f"SESSION-{os.urandom(4).hex().upper()}"
     utc_timestamp = utc_timestamp or datetime.now(timezone.utc).isoformat()
     session_color = session_color or "#A0F0FF"
@@ -575,18 +595,18 @@ def run_cli_audit():
     clean_color_slug = session_color.replace("#", "")
     time_slug = str(int(time.time()))
 
-    raw_sig = f"{session_guid}:{utc_timestamp}:{target_node}:{session_color}"
+    raw_sig = f"{session_guid}:{utc_timestamp}:{resolved_target_subject}:{session_color}"
     ecta_hash = f"sha256:{hashlib.sha256(raw_sig.encode()).hexdigest()}"
 
     print(f"[*] Executing Engine with 72 Goetic Demons & 72 Shem Angels...")
-    print(f"[*] Target Subject : '{target_node}'")
-    print(f"[*] Session GUID   : '{session_guid}'")
-    print(f"[*] Color Anchor   : '{session_color}'")
+    print(f"[*] Target Vector Subject : '{resolved_target_subject}'")
+    print(f"[*] Session GUID          : '{session_guid}'")
+    print(f"[*] Color Anchor          : '{session_color}'")
 
-    ai_prompt = f"Analyze infrastructure telemetry for target node '{target_node}'."
+    ai_prompt = f"Analyze infrastructure telemetry for target node vector '{resolved_target_subject}'."
     ai_telemetry = query_ai_engine(ai_prompt)
 
-    sweep_results = generate_adaptive_node_sweep(target_node, count=10)
+    sweep_results = generate_adaptive_node_sweep(resolved_target_subject, count=10)
     math_execution = execute_uesp_math_from_ai(ai_telemetry, sweep_results)
 
     current_run_payload = {
@@ -621,7 +641,7 @@ def run_cli_audit():
     with open(MASTER_POINTER_FILE, "w", encoding="utf-8") as f:
         json.dump(current_run_payload, f, indent=2, ensure_ascii=False)
 
-    print(f"[✓] Completed execution for target '{target_node}'. Output saved to '{session_filepath}'.")
+    print(f"[✓] Completed execution for vector target '{resolved_target_subject}'. Output saved to '{session_filepath}'.")
 
 if __name__ == "__main__":
     run_cli_audit()
