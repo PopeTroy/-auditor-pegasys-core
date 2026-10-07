@@ -8,6 +8,7 @@ use prost::Message;
 use serde::Deserialize;
 use sha2::{Digest, Sha256};
 use std::net::SocketAddr;
+use std::path::Path;
 use tokio::fs::{self, File};
 use tokio::io::AsyncWriteExt;
 use tokio::sync::mpsc;
@@ -21,8 +22,7 @@ pub mod pegasys {
 
 use pegasys::audit as pb;
 
-const LEDGER_BIN_PATH: &str = "last_audit_results.bin";
-const LEDGER_JSON_PATH: &str = "last_audit_results.json";
+const SESSIONS_DIR: &str = "/sessions";
 
 #[derive(Debug, Deserialize)]
 struct AuditRequest {
@@ -185,31 +185,40 @@ fn generate_adaptive_node_sweep(
 }
 
 async fn shinobi_ledger_worker(mut rx: mpsc::Receiver<pb::AuditRunPayload>) {
+    // Ensure output session directory exists
+    if let Err(e) = fs::create_dir_all(SESSIONS_DIR).await {
+        eprintln!("[!] Failed to create session target path {}: {}", SESSIONS_DIR, e);
+    }
+
     while let Some(payload) = rx.recv().await {
-        let mut ledger = match fs::read(LEDGER_BIN_PATH).await {
-            Ok(bytes) => pb::MasterLedger::decode(&bytes[..]).unwrap_or_default(),
-            Err(_) => pb::MasterLedger::default(),
-        };
+        // Sanitize timestamp for safe file path creation
+        let safe_timestamp = payload.utc_timestamp.replace([':', '.', ' '], "-");
+        let safe_guid = payload.session_guid.replace('/', "_");
 
-        ledger.runs.push(payload);
+        let bin_path = format!("{}/audit_{}_{}.bin", SESSIONS_DIR, safe_timestamp, safe_guid);
+        let json_path = format!("{}/audit_{}_{}.json", SESSIONS_DIR, safe_timestamp, safe_guid);
 
+        // Encode Protobuf binary payload
         let mut buf = Vec::new();
-        if ledger.encode(&mut buf).is_ok() {
-            let tmp_bin = format!("{}.tmp", LEDGER_BIN_PATH);
+        if payload.encode(&mut buf).is_ok() {
+            let tmp_bin = format!("{}.tmp", bin_path);
             if let Ok(mut file) = File::create(&tmp_bin).await {
-                let _ = file.write_all(&buf).await;
-                let _ = fs::rename(tmp_bin, LEDGER_BIN_PATH).await;
+                if file.write_all(&buf).await.is_ok() {
+                    let _ = fs::rename(&tmp_bin, &bin_path).await;
+                }
             }
         }
 
-        if let Ok(json_str) = serde_json::to_string_pretty(&ledger.runs) {
-            let tmp_json = format!("{}.tmp", LEDGER_JSON_PATH);
+        // Output JSON representation for audit session
+        if let Ok(json_str) = serde_json::to_string_pretty(&payload) {
+            let tmp_json = format!("{}.tmp", json_path);
             if let Ok(mut file) = File::create(&tmp_json).await {
-                let _ = file.write_all(json_str.as_bytes()).await;
-                let _ = fs::rename(tmp_json, LEDGER_JSON_PATH).await;
+                if file.write_all(json_str.as_bytes()).await.is_ok() {
+                    let _ = fs::rename(&tmp_json, &json_path).await;
+                }
             }
         }
 
-        println!("[✓] Atomic Commit Successful. Total Ledger Runs: {}", ledger.runs.len());
+        println!("[✓] Session Audit Committed -> {}", bin_path);
     }
 }
