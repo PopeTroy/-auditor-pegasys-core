@@ -1,4 +1,4 @@
-name: Auditor Pegasys Chronos Engine
+Name: Auditor Pegasys Chronos Engine
 
 on:
   repository_dispatch:
@@ -7,7 +7,16 @@ on:
     inputs:
       node_payload:
         description: 'Target Subject / Node'
-        required: true
+        required: false
+      user_alias:
+        description: 'User Alias'
+        required: false
+      jurisdiction:
+        description: 'Jurisdiction / Location'
+        required: false
+      industry:
+        description: 'Industry Classification'
+        required: false
       session_id:
         description: 'Session Identifier'
         required: false
@@ -37,10 +46,14 @@ jobs:
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           NVIDIA_NIM_API_KEY: ${{ secrets.NVIDIA_NIM_API_KEY }}
-          EVENT_PAYLOAD: ${{ toJson(github.event.client_payload) }}
-          INPUT_NODE: ${{ inputs.node_payload }}
+          EVENT_PAYLOAD: ${{ toJson(github.event.client_payload || github.event.inputs) }}
+          INPUT_NODE: ${{ github.event.client_payload.target_node || inputs.node_payload }}
+          INPUT_USER_ALIAS: ${{ github.event.client_payload.user_alias || inputs.user_alias }}
+          INPUT_JURISDICTION: ${{ github.event.client_payload.jurisdiction || inputs.jurisdiction }}
+          INPUT_INDUSTRY: ${{ github.event.client_payload.industry || inputs.industry }}
           INPUT_SESSION_ID: ${{ inputs.session_id }}
-          OUTPUT_SESSION_FILE: "sessions/SESSION-${{ github.event.client_payload.session_id || inputs.session_id }}.json"
+          SESSION_GUID: ${{ github.event.client_payload.session_guid || github.event.client_payload.session_id || inputs.session_id }}
+          SESSION_COLOR: ${{ github.event.client_payload.session_color }}
         run: python cli_audit.py
 
       - name: Commit Session Results
@@ -48,6 +61,6 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git pull origin main --rebase || true
-          git add sessions/ last_audit_results.json
+          git add sessions/ last_audit_results.json audits/
           git commit -m "Commit session diagnostic output [skip ci]" || exit 0
           git push origin main
