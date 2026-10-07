@@ -26,27 +26,12 @@ AUDITS_DIR = "audits"
 SESSIONS_DIR = "sessions"
 MASTER_POINTER_FILE = "last_audit_results.json"
 
-# AI Cloud Endpoints (NVIDIA NIM Microservices Integration)
+# AI Cloud Endpoints (NVIDIA NIM Microservices Integration / Nemotron)
 NVIDIA_NIM_ENDPOINT = "https://integrate.api.nvidia.com/v1/chat/completions"
-NVIDIA_MODEL = "meta/llama-3.1-70b-instruct"
+NVIDIA_MODEL = "nvidia/nemotron-4-340b-instruct"
 
 GROQ_ENDPOINT = "https://api.groq.com/openai/v1/chat/completions"
 GROQ_MODEL = "llama-3.3-70b-versatile"
-
-# =====================================================================
-# LOCATION TELEMETRY DATABASE
-# =====================================================================
-LOCATION_DATABASE = {
-    "gauteng": {"landmass_sq_km": 18178.0, "timezone_offset": 2.0, "time_val_hours": 24.0, "friction": 0.666},
-    "kempton park": {"landmass_sq_km": 149.0, "timezone_offset": 2.0, "time_val_hours": 24.0, "friction": 0.612},
-    "johannesburg": {"landmass_sq_km": 1645.0, "timezone_offset": 2.0, "time_val_hours": 24.0, "friction": 0.640},
-    "south africa": {"landmass_sq_km": 1221037.0, "timezone_offset": 2.0, "time_val_hours": 24.0, "friction": 0.720},
-    "united states": {"landmass_sq_km": 9833520.0, "timezone_offset": -5.0, "time_val_hours": 24.0, "friction": 0.450},
-    "united kingdom": {"landmass_sq_km": 242495.0, "timezone_offset": 0.0, "time_val_hours": 24.0, "friction": 0.380},
-    "germany": {"landmass_sq_km": 357022.0, "timezone_offset": 1.0, "time_val_hours": 24.0, "friction": 0.310},
-    "japan": {"landmass_sq_km": 377975.0, "timezone_offset": 9.0, "time_val_hours": 24.0, "friction": 0.280},
-    "global": {"landmass_sq_km": 510072000.0, "timezone_offset": 0.0, "time_val_hours": 24.0, "friction": 1.000}
-}
 
 # =====================================================================
 # PROPHETIC CALCULATOR ENGINE CLASS
@@ -74,7 +59,7 @@ class PropheticCalculatorEngine:
         }
 
 # =====================================================================
-# 1. THE 72 GOETIC DEMONS
+# GOETIC DRIVERS & ANGELS ARRAYS
 # =====================================================================
 GOETIC_DRIVERS_72 = [
     (1, "Bael", "3.330 kHz", "Invisibility, wisdom, and leadership manipulation", "Executive Leadership & Strategic Governance Corruption"),
@@ -151,9 +136,6 @@ GOETIC_DRIVERS_72 = [
     (72, "Andromalius", "239.760 kHz", "Catches thieves, returns stolen goods, reveals hidden conspiracies", "Loss Prevention Operations & Counter-Intelligence Forensics")
 ]
 
-# =====================================================================
-# 2. ALL 72 ANGELS OF THE SHEM HAMEPHORASH
-# =====================================================================
 ANGELS_72 = [
     ("Vehuiah", "Seraphim", "4.045 kHz", "Illuminates mind, grants willpower, initiates divine action", "Executive Willpower & Innovation Initiation Leadership"),
     ("Jeliel", "Seraphim", "12.135 kHz", "Fosters harmony, quiets popular sedition, grants peace", "Social Harmony Enforcement & Civil Sedition Neutralization"),
@@ -229,9 +211,6 @@ ANGELS_72 = [
     ("Mumiah", "Angels", "578.439 kHz", "Brings successful completion, governs medicine and longevity", "Lifecycle Completion Management & Bio-Gerontological Health")
 ]
 
-# =====================================================================
-# PROGRAMMATIC BOTTLENECKS & PROTOCOLS
-# =====================================================================
 def generate_500_bottlenecks():
     categories = [
         "Sovereign Debt", "Transmission Line", "Grid Frequency", "Fuel Subsidy", "Water Filtration",
@@ -313,43 +292,8 @@ PHYSICAL_OVERCLOCK_LIMITS = ["Overclock Stage 1: Thermal Gate Opening", "125% Ov
 PHYSICAL_LASER_ABLATION = ["Femtosecond Laser Atomic Ablation", "Triangular Beam Molecular Isolation", "High-Energy Focused Photonic Shearing"]
 PHYSICAL_STATE_RECOVERY = ["Izanagi Active (Zero-Point Remind)", "Atomic Snapshot State Rollback", "Izanami Active (Infinite Loop State Correction)"]
 
-def resolve_node_location_metrics(target_subject: str) -> dict:
-    """Calculates location-based telemetry directly from node subject text."""
-    subject_lower = target_subject.lower()
-    
-    matched_loc = None
-    for key in LOCATION_DATABASE:
-        if key in subject_lower:
-            matched_loc = LOCATION_DATABASE[key]
-            break
-
-    if not matched_loc:
-        node_hash = int(hashlib.sha256(target_subject.encode('utf-8')).hexdigest()[:8], 16)
-        landmass_sq_km = float((node_hash % 500000) + 1000)
-        timezone_offset = float((node_hash % 25) - 12)
-        friction_run_rate = round(0.1 + ((node_hash % 900) / 1000.0), 3)
-        time_val_hours = 24.0
-    else:
-        landmass_sq_km = matched_loc["landmass_sq_km"]
-        timezone_offset = matched_loc["timezone_offset"]
-        friction_run_rate = matched_loc["friction"]
-        time_val_hours = matched_loc["time_val_hours"]
-
-    time_val = round(time_val_hours / 24.0, 4)
-    space_val = round(math.log10(landmass_sq_km + 1.0), 4)
-
-    return {
-        "landmass_sq_km": landmass_sq_km,
-        "timezone_offset": timezone_offset,
-        "time_val_hours": time_val_hours,
-        "time_val": time_val,
-        "space_val": space_val,
-        "friction_run_rate": friction_run_rate
-    }
-
 def query_ai_engine(prompt_text: str, target_subject: str) -> dict:
-    loc_metrics = resolve_node_location_metrics(target_subject)
-
+    """Queries NVIDIA Nemotron / RAG instance to generate geographic and location telemetry directly."""
     groq_key = os.getenv("GROQ_API_KEY", "").strip()
     nvidia_key = os.getenv("NVIDIA_API_KEY", "").strip() or os.getenv("NVIDIA_NIM_API_KEY", "").strip()
 
@@ -357,42 +301,48 @@ def query_ai_engine(prompt_text: str, target_subject: str) -> dict:
     headers = {"Content-Type": "application/json"}
     model = ""
 
-    if groq_key:
-        endpoint = GROQ_ENDPOINT
-        headers["Authorization"] = f"Bearer {groq_key}"
-        model = GROQ_MODEL
-    elif nvidia_key:
+    if nvidia_key:
         endpoint = NVIDIA_NIM_ENDPOINT
         headers["Authorization"] = f"Bearer {nvidia_key}"
         model = NVIDIA_MODEL
+    elif groq_key:
+        endpoint = GROQ_ENDPOINT
+        headers["Authorization"] = f"Bearer {groq_key}"
+        model = GROQ_MODEL
     else:
-        loc_metrics["remediation_summary"] = "LOCAL_DETERMINISTIC_LOCATION_SYNTHESIS"
-        loc_metrics["_rag_tti"] = 0.0500
-        loc_metrics["_rag_iti"] = 10.00
-        return loc_metrics
+        # Emergency local deterministic calculation if no API keys are provided
+        node_hash = int(hashlib.sha256(target_subject.encode('utf-8')).hexdigest()[:8], 16)
+        landmass = float((node_hash % 500000) + 1000)
+        offset = float((node_hash % 25) - 12)
+        friction = round(0.1 + ((node_hash % 900) / 1000.0), 3)
+        return {
+            "landmass_sq_km": landmass,
+            "timezone_offset": offset,
+            "time_val_hours": 24.0,
+            "time_val": 1.0,
+            "space_val": round(math.log10(landmass + 1.0), 4),
+            "friction_run_rate": friction,
+            "remediation_summary": "LOCAL_DETERMINISTIC_LOCATION_SYNTHESIS",
+            "_rag_tti": 0.0500,
+            "_rag_iti": 10.00
+        }
 
-    context_prompt = (
-        f"Target Subject Node: '{target_subject}'\n"
-        f"Calculated Node Location Metrics:\n"
-        f"- Landmass: {loc_metrics['landmass_sq_km']} sq km\n"
-        f"- Timezone Offset: UTC{loc_metrics['timezone_offset']:+g}\n"
-        f"- Computed time_val: {loc_metrics['time_val']}\n"
-        f"- Computed space_val: {loc_metrics['space_val']}\n"
-        f"- Friction Run Rate: {loc_metrics['friction_run_rate']}\n\n"
-        f"Prompt: {prompt_text}"
+    system_instruction = (
+        "You are an AI infrastructure telemetry engine (Nemotron RAG). "
+        "Analyze the provided target vector subject location and extract/estimate its geographic properties. "
+        "Return strictly a JSON object with these keys:\n"
+        "- landmass_sq_km (float: total land area of the target location in sq km)\n"
+        "- timezone_offset (float: UTC offset in hours, e.g. 2.0 for UTC+2, -5.0 for EST)\n"
+        "- time_val_hours (float: standard operational day cycle hours, default 24.0)\n"
+        "- friction_run_rate (float: infrastructure friction factor between 0.1 and 1.0)\n"
+        "- remediation_summary (string: brief dynamic infrastructure telemetry analysis for the node)"
     )
 
     payload = {
         "model": model,
         "messages": [
-            {
-                "role": "system",
-                "content": "Return a JSON object with 'remediation_summary' evaluating this node's geographic telemetry."
-            },
-            {
-                "role": "user",
-                "content": context_prompt
-            }
+            {"role": "system", "content": system_instruction},
+            {"role": "user", "content": f"Target Vector Subject: '{target_subject}'\nTask: {prompt_text}"}
         ],
         "temperature": 0.1,
         "response_format": {"type": "json_object"} if groq_key else None
@@ -406,7 +356,7 @@ def query_ai_engine(prompt_text: str, target_subject: str) -> dict:
             headers=headers,
             method="POST"
         )
-        with urllib.request.urlopen(req, timeout=10) as response:
+        with urllib.request.urlopen(req, timeout=12) as response:
             t_first_byte = time.perf_counter()
             res_data = json.loads(response.read().decode("utf-8"))
             content = res_data["choices"][0]["message"]["content"].strip()
@@ -415,21 +365,42 @@ def query_ai_engine(prompt_text: str, target_subject: str) -> dict:
             iti_calc = round((t_rag_end - t_first_byte) * 1000, 2)
             tti_calc = round(t_first_byte - t_rag_start, 4)
 
-            try:
-                parsed = json.loads(content)
-                loc_metrics.update(parsed)
-            except Exception:
-                loc_metrics["remediation_summary"] = content
+            parsed = json.loads(content)
 
-            loc_metrics["_rag_tti"] = tti_calc
-            loc_metrics["_rag_iti"] = iti_calc
-            return loc_metrics
+            landmass = float(parsed.get("landmass_sq_km", 18178.0))
+            tz_offset = float(parsed.get("timezone_offset", 2.0))
+            time_val_hours = float(parsed.get("time_val_hours", 24.0))
+            friction_rate = float(parsed.get("friction_run_rate", 0.666))
+
+            time_val = round(time_val_hours / 24.0, 4)
+            space_val = round(math.log10(landmass + 1.0), 4)
+
+            return {
+                "landmass_sq_km": landmass,
+                "timezone_offset": tz_offset,
+                "time_val_hours": time_val_hours,
+                "time_val": time_val,
+                "space_val": space_val,
+                "friction_run_rate": friction_rate,
+                "remediation_summary": parsed.get("remediation_summary", "NEMOTRON_RAG_SYNTHESIS_COMPLETE"),
+                "_rag_tti": tti_calc,
+                "_rag_iti": iti_calc
+            }
     except Exception as e:
-        print(f"[!] AI Engine fallback notice: {e}")
-        loc_metrics["remediation_summary"] = "LOCAL_FALLBACK_SYNTHESIS_ACTIVE"
-        loc_metrics["_rag_tti"] = 0.1500
-        loc_metrics["_rag_iti"] = 12.50
-        return loc_metrics
+        print(f"[!] AI Engine query notice: {e}. Falling back to dynamic seed telemetry.")
+        node_hash = int(hashlib.sha256(target_subject.encode('utf-8')).hexdigest()[:8], 16)
+        landmass = float((node_hash % 500000) + 1000)
+        return {
+            "landmass_sq_km": landmass,
+            "timezone_offset": 2.0,
+            "time_val_hours": 24.0,
+            "time_val": 1.0,
+            "space_val": round(math.log10(landmass + 1.0), 4),
+            "friction_run_rate": 0.666,
+            "remediation_summary": "FALLBACK_DYNAMIC_LOCATION_SYNTHESIS",
+            "_rag_tti": 0.1500,
+            "_rag_iti": 12.50
+        }
 
 def execute_uesp_math_from_ai(ai_data: dict, sweep_results: list) -> dict:
     time_val_hours = float(ai_data.get("time_val_hours", 24.0))
@@ -528,7 +499,7 @@ def execute_uesp_math_from_ai(ai_data: dict, sweep_results: list) -> dict:
 
 def generate_adaptive_node_sweep(target_node: str, count: int = 10):
     clean_node = target_node.strip()
-    if not clean_node or clean_node.lower() == "global grid node":
+    if not clean_node:
         clean_node = "Sovereign Grid Node"
 
     node_hash = hashlib.sha256(clean_node.lower().encode('utf-8')).hexdigest()
@@ -662,7 +633,7 @@ def run_cli_audit():
     except Exception as e:
         print(f"[!] Payload parsing notice: {e}")
 
-    vector_parts = [p for p in [user_alias, jurisdiction, industry, target_node] if p and p.lower() != "global grid node"]
+    vector_parts = [p for p in [user_alias, jurisdiction, industry, target_node] if p]
 
     if vector_parts:
         resolved_target_subject = " | ".join(vector_parts)
@@ -688,7 +659,7 @@ def run_cli_audit():
     print(f"[*] Session GUID          : '{session_guid}'")
     print(f"[*] Color Anchor          : '{session_color}'")
 
-    ai_prompt = f"Analyze infrastructure telemetry for target node vector '{resolved_target_subject}'."
+    ai_prompt = f"Analyze geographical infrastructure metrics for target vector '{resolved_target_subject}'."
     ai_telemetry = query_ai_engine(ai_prompt, resolved_target_subject)
 
     sweep_results = generate_adaptive_node_sweep(resolved_target_subject, count=10)
