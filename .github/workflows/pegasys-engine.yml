@@ -1,4 +1,4 @@
-name: Auditor Pegasys Chronos Engine
+Name: Auditor Pegasys Chronos Engine
 
 on:
   repository_dispatch:
@@ -40,6 +40,7 @@ jobs:
           EVENT_PAYLOAD: ${{ toJson(github.event.client_payload) }}
           INPUT_NODE: ${{ inputs.node_payload }}
           INPUT_SESSION_ID: ${{ inputs.session_id }}
+          OUTPUT_SESSION_FILE: "sessions/SESSION-${{ github.event.client_payload.session_id || inputs.session_id }}.json"
         run: python cli_audit.py
 
       - name: Commit Session Results
