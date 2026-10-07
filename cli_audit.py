@@ -310,7 +310,6 @@ def query_ai_engine(prompt_text: str, target_subject: str) -> dict:
         headers["Authorization"] = f"Bearer {groq_key}"
         model = GROQ_MODEL
     else:
-        # Emergency local deterministic calculation if no API keys are provided
         node_hash = int(hashlib.sha256(target_subject.encode('utf-8')).hexdigest()[:8], 16)
         landmass = float((node_hash % 500000) + 1000)
         offset = float((node_hash % 25) - 12)
@@ -500,7 +499,7 @@ def execute_uesp_math_from_ai(ai_data: dict, sweep_results: list) -> dict:
 def generate_adaptive_node_sweep(target_node: str, count: int = 10):
     clean_node = target_node.strip()
     if not clean_node:
-        clean_node = "Sovereign Grid Node"
+        raise ValueError("Target node parameter is empty. Pending dynamic WordPress inputs.")
 
     node_hash = hashlib.sha256(clean_node.lower().encode('utf-8')).hexdigest()
     sweep_results = []
@@ -597,52 +596,66 @@ def generate_adaptive_node_sweep(target_node: str, count: int = 10):
     return sweep_results
 
 # =====================================================================
-# CLI AUDIT EXECUTION ENGINE
+# CLI AUDIT EXECUTION ENGINE (DYNAMIC WORDPRESS HOOK)
 # =====================================================================
-def run_cli_audit():
-    event_payload_str = os.getenv("EVENT_PAYLOAD", "{}")
-
-    env_user_alias = os.getenv("INPUT_USER_ALIAS", "").strip()
-    env_jurisdiction = os.getenv("INPUT_JURISDICTION", "").strip()
-    env_industry = os.getenv("INPUT_INDUSTRY", "").strip()
-    env_node_payload = os.getenv("INPUT_NODE", "").strip()
-    session_guid_env = os.getenv("SESSION_GUID", "").strip() or os.getenv("INPUT_SESSION_ID", "").strip()
-    session_color_env = os.getenv("SESSION_COLOR", "").strip()
-
-    target_node = env_node_payload
-    user_alias = env_user_alias
-    jurisdiction = env_jurisdiction
-    industry = env_industry
-    session_guid = session_guid_env
-    utc_timestamp = ""
-    session_color = session_color_env
+def parse_wordpress_payload(raw_payload_str: str) -> dict:
+    """Recursively extracts dynamic parameters from any structure of WordPress REST API / Form Webhook."""
+    if not raw_payload_str or raw_payload_str == "{}":
+        return {}
 
     try:
-        event_data = json.loads(event_payload_str)
-        if isinstance(event_data, dict):
-            client = event_data.get("client_payload", event_data)
+        data = json.loads(raw_payload_str)
+    except Exception:
+        return {}
 
-            target_node = client.get("target_node") or client.get("target") or target_node
-            user_alias = client.get("user_alias") or client.get("user") or user_alias
-            jurisdiction = client.get("jurisdiction") or client.get("location") or jurisdiction
-            industry = client.get("industry") or client.get("classification") or industry
+    def extract_fields(d):
+        if not isinstance(d, dict):
+            return {}
+        
+        # Flattens nested wrappers like 'client_payload', 'body', 'post_data', 'inputs'
+        candidates = [d, d.get("client_payload", {}), d.get("body", {}), d.get("post_data", {}), d.get("inputs", {})]
+        
+        extracted = {}
+        for c in candidates:
+            if isinstance(c, str):
+                try:
+                    c = json.loads(c)
+                except Exception:
+                    continue
+            if isinstance(c, dict):
+                extracted["user_alias"] = c.get("user_alias") or c.get("user") or c.get("author") or extracted.get("user_alias")
+                extracted["jurisdiction"] = c.get("jurisdiction") or c.get("location") or c.get("region") or extracted.get("jurisdiction")
+                extracted["industry"] = c.get("industry") or c.get("classification") or c.get("category") or extracted.get("industry")
+                extracted["target_node"] = c.get("target_node") or c.get("target") or c.get("node") or extracted.get("target_node")
+                extracted["session_guid"] = c.get("session_guid") or c.get("session_id") or extracted.get("session_guid")
+                extracted["utc_timestamp"] = c.get("utc_timestamp") or c.get("timestamp") or extracted.get("utc_timestamp")
+                extracted["session_color"] = c.get("session_color") or c.get("color") or extracted.get("session_color")
+        return extracted
 
-            session_guid = client.get("session_guid") or client.get("session_id") or session_guid
-            utc_timestamp = client.get("utc_timestamp") or client.get("timestamp") or utc_timestamp
-            session_color = client.get("session_color") or session_color
-    except Exception as e:
-        print(f"[!] Payload parsing notice: {e}")
+    return extract_fields(data)
 
+def run_cli_audit():
+    event_payload_str = os.getenv("EVENT_PAYLOAD", "{}")
+    wp_extracted = parse_wordpress_payload(event_payload_str)
+
+    user_alias = wp_extracted.get("user_alias") or os.getenv("INPUT_USER_ALIAS", "").strip()
+    jurisdiction = wp_extracted.get("jurisdiction") or os.getenv("INPUT_JURISDICTION", "").strip()
+    industry = wp_extracted.get("industry") or os.getenv("INPUT_INDUSTRY", "").strip()
+    target_node = wp_extracted.get("target_node") or os.getenv("INPUT_NODE", "").strip()
+
+    session_guid = wp_extracted.get("session_guid") or os.getenv("SESSION_GUID", "").strip() or os.getenv("INPUT_SESSION_ID", "").strip()
+    utc_timestamp = wp_extracted.get("utc_timestamp") or datetime.now(timezone.utc).isoformat()
+    session_color = wp_extracted.get("session_color") or os.getenv("SESSION_COLOR", "").strip() or "#A0F0FF"
+
+    # Strict check: Do NOT proceed or default to 'Sovereign Grid Node' if no WordPress inputs arrive
     vector_parts = [p for p in [user_alias, jurisdiction, industry, target_node] if p]
+    if not vector_parts:
+        print("[!] WAITING_FOR_WORDPRESS_INPUTS: No dynamic parameters received from WordPress dashboard.")
+        print("[!] Execution suspended. Preventing fallback to global sovereign grid.")
+        sys.exit(0)
 
-    if vector_parts:
-        resolved_target_subject = " | ".join(vector_parts)
-    else:
-        resolved_target_subject = "Sovereign Grid Node"
-
-    session_guid = session_guid or f"SESSION-{os.urandom(4).hex().upper()}"
-    utc_timestamp = utc_timestamp or datetime.now(timezone.utc).isoformat()
-    session_color = session_color or "#A0F0FF"
+    resolved_target_subject = " | ".join(vector_parts)
+    session_guid = session_guid or f"WP-SESSION-{os.urandom(4).hex().upper()}"
 
     clean_color_slug = session_color.replace("#", "")
     time_slug = str(int(time.time()))
@@ -650,16 +663,15 @@ def run_cli_audit():
     raw_sig = f"{session_guid}:{utc_timestamp}:{resolved_target_subject}:{session_color}"
     ecta_hash = "sha256:" + hashlib.sha256(raw_sig.encode()).hexdigest()
 
-    print(f"[*] Executing Engine with 72 Goetic Demons & 72 Shem Angels...")
+    print(f"[*] Dynamic WordPress Payload Intercepted!")
     print(f"[*] Target Vector Subject : '{resolved_target_subject}'")
     print(f"[*] User Alias            : '{user_alias}'")
     print(f"[*] Jurisdiction          : '{jurisdiction}'")
     print(f"[*] Industry              : '{industry}'")
     print(f"[*] Target Node           : '{target_node}'")
     print(f"[*] Session GUID          : '{session_guid}'")
-    print(f"[*] Color Anchor          : '{session_color}'")
 
-    ai_prompt = f"Analyze geographical infrastructure metrics for target vector '{resolved_target_subject}'."
+    ai_prompt = f"Analyze geographical infrastructure metrics for dynamic WordPress target vector '{resolved_target_subject}'."
     ai_telemetry = query_ai_engine(ai_prompt, resolved_target_subject)
 
     sweep_results = generate_adaptive_node_sweep(resolved_target_subject, count=10)
@@ -671,6 +683,7 @@ def run_cli_audit():
             "session_color": session_color,
             "utc_timestamp": utc_timestamp,
             "ecta_hash": ecta_hash,
+            "source_origin": "WORDPRESS_DYNAMIC_FORM",
             "pegasys_status": "COMPLIANT_NO_PII_EXPOSED"
         },
         "quantum_header": f"QUANTUM-CYCLE: 059763 / 144000 | COLOR: {session_color} | CATALOG: 500/500",
@@ -685,7 +698,7 @@ def run_cli_audit():
     unique_filename = f"audit_{session_guid}_{clean_color_slug}_{time_slug}.json"
     unique_filepath = os.path.join(AUDITS_DIR, unique_filename)
 
-    session_filename = f"{session_guid}.json" if session_guid.startswith("SESSION-") else f"SESSION-{session_guid}.json"
+    session_filename = f"{session_guid}.json" if session_guid.startswith("SESSION-") or session_guid.startswith("WP-SESSION-") else f"WP-SESSION-{session_guid}.json"
     session_filepath = os.path.join(SESSIONS_DIR, session_filename)
 
     with open(unique_filepath, "w", encoding="utf-8") as f:
@@ -697,7 +710,7 @@ def run_cli_audit():
     with open(MASTER_POINTER_FILE, "w", encoding="utf-8") as f:
         json.dump(current_run_payload, f, indent=2, ensure_ascii=False)
 
-    print(f"[+] Completed execution for vector target '{resolved_target_subject}'. Output saved to '{session_filepath}'")
+    print(f"[+] Completed execution for WordPress vector target '{resolved_target_subject}'. Saved to '{session_filepath}'")
 
 if __name__ == "__main__":
     run_cli_audit()
