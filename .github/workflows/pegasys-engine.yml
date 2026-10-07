@@ -1,4 +1,4 @@
-Name: Auditor Pegasys Chronos Engine
+name: Auditor Pegasys Chronos Engine
 
 on:
   repository_dispatch:
